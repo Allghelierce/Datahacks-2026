@@ -167,12 +167,12 @@ export default function Home() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
             {/* Title */}
              <div className="mb-10 flex items-center gap-3">
-               <img src="/logo.png" alt="logo" className="w-10 h-10 object-contain" />
+               <img src="/logo.png" alt="logo" className="w-12 h-12 object-contain opacity-80" style={{filter: "brightness(0) invert(1)"}} />
                <div>
                  <h1 className="text-3xl font-bold tracking-tight text-white/80 fancy-brand">
                    bioscope
                  </h1>
-                 <p className="text-sm uppercase tracking-[0.25em] text-white/15">San Diego County</p>
+                 <p className="text-sm uppercase tracking-[0.25em] text-white/40">San Diego County</p>
                </div>
              </div>
 
