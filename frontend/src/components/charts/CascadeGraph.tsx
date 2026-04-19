@@ -615,6 +615,17 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     return s;
   }, [hoveredNode, selectedNode, simLinks]);
 
+  const dynamicKeystoneScores = useMemo(() => {
+    const scores = new Map<string, number>();
+    const activeNodes = graphNodes.filter((n) => !removedNodes.has(n.id));
+    if (activeNodes.length === 0) return scores;
+    for (const node of activeNodes) {
+      const victims = getCascadeVictims(node.id);
+      scores.set(node.id, victims.size / activeNodes.length);
+    }
+    return scores;
+  }, [graphNodes, removedNodes, getCascadeVictims]);
+
   const activeId = hoveredNode ?? selectedNode;
   const selectedData = selectedNode ? graphNodes.find((n) => n.id === selectedNode) ?? null : null;
   const selectedCascadeCount = selectedNode ? getCascadeVictims(selectedNode).size : 0;
@@ -834,7 +845,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                 const isConnected = connectedTo.has(node.data.id); const isCascadeVictim = cascadeVictims.has(node.data.id);
                 const isAnimVictim = animatedVictims.has(node.data.id);
                 const dimmed = activeId && !isHovered && !isSelected && !isConnected && !isCascadeVictim;
-                const isKeystone = (node.data.zone_keystone_score ?? node.data.keystone_score ?? 0) > 0.01;
+                const isKeystone = (dynamicKeystoneScores.get(node.data.id) ?? 0) > 0.01;
                 const r = isHovered || isSelected ? node.radius + 6 : node.radius + 2;
                 let rippleX = 0, rippleY = 0;
                 if (hNode && !isHovered) {
@@ -919,7 +930,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                   <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Observations</div><div className="text-sm font-semibold text-white">{selectedData.observations.toLocaleString()}</div></div>
                   {selectedData.zone_count != null && <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Zones</div><div className="text-sm font-semibold text-white">{selectedData.zone_count}</div></div>}
                   <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Trophic Level</div><div className="text-sm font-semibold capitalize" style={{ color: LEVEL_COLORS[selectedData.trophic_level] }}>{selectedData.trophic_level.replace("_", " ")}</div></div>
-                  <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Keystone</div><div className={`text-sm font-semibold ${((selectedData.zone_keystone_score ?? selectedData.keystone_score) ?? 0) > 0.01 ? "text-orange-400" : "text-white/60"}`}>{(((selectedData.zone_keystone_score ?? selectedData.keystone_score) ?? 0) * 100).toFixed(1)}%</div></div>
+                  <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Keystone</div><div className={`text-sm font-semibold ${(dynamicKeystoneScores.get(selectedData.id) ?? 0) > 0.01 ? "text-orange-400" : "text-white/60"}`}>{((dynamicKeystoneScores.get(selectedData.id) ?? 0) * 100).toFixed(1)}%</div></div>
                   <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">YoY Trend</div><div className={`text-sm font-semibold ${selectedData.decline_trend < -30 ? "text-red-400" : selectedData.decline_trend < 0 ? "text-orange-400" : "text-emerald-400"}`}>{selectedData.decline_trend > 0 ? "+" : ""}{selectedData.decline_trend.toFixed(1)}%</div></div>
                   <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Cascade</div><div className={`text-sm font-semibold ${selectedCascadePct > 30 ? "text-red-400" : selectedCascadePct > 15 ? "text-orange-400" : "text-emerald-400"}`}>{selectedCascadePct.toFixed(1)}%</div></div>
                 </div>

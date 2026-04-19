@@ -5,15 +5,24 @@ snowflake.configure({ logLevel: "OFF" });
 
 function getConnection(): Promise<snowflake.Connection> {
   return new Promise((resolve, reject) => {
+    const database = process.env.SNOWFLAKE_DATABASE || "BIOSCOPE";
+    const schema = process.env.SNOWFLAKE_SCHEMA || "PUBLIC";
     const conn = snowflake.createConnection({
       account: process.env.SNOWFLAKE_ACCOUNT!,
       username: process.env.SNOWFLAKE_USER!,
       password: process.env.SNOWFLAKE_PASSWORD!,
-      database: "BIOSCOPE",
-      schema: "PUBLIC",
+      database: database,
+      schema: schema,
       warehouse: process.env.SNOWFLAKE_WAREHOUSE || "COMPUTE_WH",
     });
-    conn.connect((err, c) => (err ? reject(err) : resolve(c)));
+    conn.connect((err, c) => {
+      if (err) {
+        console.error("Snowflake Connection Error:", err.message);
+        reject(err);
+      } else {
+        resolve(c);
+      }
+    });
   });
 }
 
