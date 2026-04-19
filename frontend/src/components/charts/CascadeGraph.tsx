@@ -77,6 +77,7 @@ interface RemovalLogEntry {
 interface Props {
   zone?: Zone | null;
   ecosystem?: string | null;
+  selectedLocation?: string | null;
 }
 
 const LEVEL_COLORS: Record<string, string> = {
@@ -124,7 +125,7 @@ const TROPHIC_LAYERS: Record<string, number> = {
   decomposer: 0.92,
 };
 
-export default function CascadeGraph({ zone, ecosystem }: Props) {
+export default function CascadeGraph({ zone, ecosystem, selectedLocation }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const gRef = useRef<SVGGElement>(null);
@@ -370,7 +371,8 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
 
   const downloadReport = useCallback(() => {
     if (removalLog.length === 0) return;
-    const ecoName = removalLog[0].ecosystem;
+    const ecoName = selectedEcosystem || zone?.name || removalLog[0].ecosystem;
+    const locationName = selectedLocation?.trim() || zone?.name || "Not specified";
     const totalUniqueVictims = new Set(removalLog.flatMap((e) => e.cascadeVictimNames)).size;
     const totalDirectRemovals = removalLog.length;
     const totalCascaded = removalLog.reduce((s, e) => s + e.cascadeVictimCount, 0);
@@ -450,16 +452,18 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     };
 
     doc.setFillColor(7, 10, 8);
-    doc.rect(0, 0, pageWidth, 84, "F");
+    doc.rect(0, 0, pageWidth, 86, "F");
     doc.setTextColor(255, 255, 255);
+    const centerX = pageWidth / 2;
     doc.setFont("times", "bold");
     doc.setFontSize(22);
-    doc.text("BioScope Cascade Removal Report", margin, 34);
+    doc.text("BioScope Cascade Removal Report", centerX, 31, { align: "center" });
     doc.setFont("times", "normal");
     doc.setFontSize(10.5);
-    doc.text(`Ecosystem: ${ecoName}`, margin, 54);
-    doc.text(`Generated ${new Date().toLocaleString()}`, margin, 68);
-    y = 110;
+    doc.text(`Neighborhood: ${locationName}`, centerX - 95, 50, { align: "center" });
+    doc.text(`Ecosystem: ${ecoName}`, centerX + 95, 50, { align: "center" });
+    doc.text(`Generated ${new Date().toLocaleString()}`, centerX, 69, { align: "center" });
+    y = 102;
     doc.setTextColor(textColor[0], textColor[1], textColor[2]);
 
     addSection("Abstract");
@@ -633,7 +637,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     doc.text("Data source: iNaturalist citizen science observations", pageWidth - margin, footerY, { align: "right" });
 
     doc.save(`bioscope-cascade-report-${ecoName.replace(/[^a-zA-Z0-9]/g, "-").toLowerCase()}-${new Date().toISOString().slice(0, 10)}.pdf`);
-  }, [removalLog, removedNodes]);
+  }, [removalLog, removedNodes, selectedEcosystem, selectedLocation, zone]);
 
   const logRemoval = useCallback((removed: GraphNode, victims: GraphNode[], totalCollapsed: number, totalSpecies: number, aiText: string | null) => {
     const trophicLevelsHit = Array.from(new Set(victims.map((v) => v.trophic_level)));

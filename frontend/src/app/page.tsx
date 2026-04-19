@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useAppData } from "@/context/DataContext";
@@ -29,9 +29,55 @@ export default function Home() {
   const index = data?.ecosystem_index ?? {};
 
   const [selectedEcosystem, setSelectedEcosystem] = useState<string | null>(null);
+  const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
   const [searchValue, setSearchValue] = useState("");
   const [searching, setSearching] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const toTitleCase = useCallback((value: string) => {
+    return value
+      .trim()
+      .toLowerCase()
+      .split(/\s+/)
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  }, []);
+
+  const allLocationOptions = useMemo(() => {
+    const options: Array<{ name: string; ecosystem: string }> = [];
+    for (const [ecoName, eco] of Object.entries(index)) {
+      for (const zone of eco.zones ?? []) {
+        options.push({ name: zone.name, ecosystem: ecoName });
+      }
+
+      for (const keyword of eco.keywords ?? []) {
+        const cleaned = String(keyword).trim();
+        if (cleaned.length < 3) continue;
+        options.push({ name: toTitleCase(cleaned), ecosystem: ecoName });
+      }
+    }
+    return options;
+  }, [index, toTitleCase]);
+
+  const searchSuggestions = useMemo(() => {
+    const q = searchValue.trim().toLowerCase();
+    if (q.length < 2) return [] as Array<{ name: string; ecosystem: string }>;
+
+    const deduped = new Map<string, { name: string; ecosystem: string }>();
+    for (const option of allLocationOptions) {
+      if (option.name.toLowerCase().includes(q)) {
+        deduped.set(option.name.toLowerCase(), option);
+      }
+    }
+    return Array.from(deduped.values()).slice(0, 8);
+  }, [searchValue, allLocationOptions]);
+
+  const selectLocation = useCallback((ecosystemName: string, locationName: string) => {
+    setSelectedEcosystem(ecosystemName);
+    setSelectedLocation(locationName);
+    sessionStorage.setItem("ecosystemSelected", "true");
+    window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: true } }));
+  }, []);
 
   const handleSearch = useCallback(async (query: string) => {
     const q = query.trim();
@@ -48,13 +94,19 @@ export default function Home() {
 
     const lowerQ = q.toLowerCase();
 
+    // 0. Exact neighborhood match from known zones
+    const exactZone = allLocationOptions.find((option) => option.name.toLowerCase() === lowerQ);
+    if (exactZone) {
+      selectLocation(exactZone.ecosystem, exactZone.name);
+      setSearching(false);
+      return;
+    }
+
     // 1. Direct Keyword Match (Fast)
     for (const [name, eco] of Object.entries(index)) {
       if (name.toLowerCase().includes(lowerQ) || eco.keywords.some((k: string) => k.toLowerCase().includes(lowerQ))) {
-        setSelectedEcosystem(name);
-        sessionStorage.setItem("ecosystemSelected", "true");
-        // Emit event to hide navbar
-        window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: true } }));
+        const matchedZone = (eco.zones ?? []).find((z: { name: string }) => z.name.toLowerCase().includes(lowerQ));
+        selectLocation(name, matchedZone?.name || toTitleCase(q));
         setSearching(false);
         return;
       }
@@ -84,10 +136,8 @@ export default function Home() {
         const answer = d?.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
         
         if (answer && answer !== "UNKNOWN" && index[answer]) {
-          setSelectedEcosystem(answer);
-          sessionStorage.setItem("ecosystemSelected", "true");
-          // Emit event to hide navbar
-          window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: true } }));
+          const matchedZone = (index[answer].zones ?? []).find((z: { name: string }) => z.name.toLowerCase().includes(lowerQ));
+          selectLocation(answer, matchedZone?.name || toTitleCase(q));
           setSearching(false);
           return;
         }
@@ -98,7 +148,7 @@ export default function Home() {
 
     setError("No available data for this area. Try a specific San Diego neighborhood or park.");
     setSearching(false);
-  }, [data, index]);
+  }, [allLocationOptions, data, index, selectLocation, toTitleCase]);
 
   if (loading) {
     return (
@@ -158,6 +208,25 @@ export default function Home() {
                   </svg>
                 )}
               </button>
+
+              {searchSuggestions.length > 0 && searchValue.trim().length >= 2 && (
+                <div className="absolute left-0 right-0 top-[calc(100%+8px)] z-30 bg-[#090909] border border-white/[0.08] rounded-md overflow-hidden">
+                  {searchSuggestions.map((suggestion) => (
+                    <button
+                      key={`${suggestion.ecosystem}-${suggestion.name}`}
+                      onClick={() => {
+                        setSearchValue(suggestion.name);
+                        setError(null);
+                        selectLocation(suggestion.ecosystem, suggestion.name);
+                      }}
+                      className="w-full text-left px-4 py-2.5 hover:bg-white/[0.04] transition border-b last:border-b-0 border-white/[0.04]"
+                    >
+                      <span className="block text-sm text-white/80">{suggestion.name}</span>
+                      <span className="block text-[11px] text-white/35 font-mono">{suggestion.ecosystem}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {error && (
@@ -181,9 +250,7 @@ export default function Home() {
                     onClick={() => {
                       // Find matching ecosystem ID or start search
                       const ecoName = Object.keys(index).find(k => k.toLowerCase().includes(loc.id.toLowerCase())) || Object.keys(index)[0];
-                      setSelectedEcosystem(ecoName);
-                      sessionStorage.setItem("ecosystemSelected", "true");
-                      window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: true } }));
+                      selectLocation(ecoName, loc.name);
                     }}
                     className="flex items-center justify-between p-5 border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] hover:border-emerald-500/10 transition-all group rounded-lg"
                   >
@@ -218,6 +285,7 @@ export default function Home() {
   }
 
   const currentEco = selectedEcosystem ? index[selectedEcosystem] : null;
+  const locationLabel = selectedLocation?.trim() || "Selected Location";
 
   return (
     <main className="min-h-screen bg-[#030303]">
@@ -225,7 +293,7 @@ export default function Home() {
       <div className="sticky top-0 z-50 border-b border-white/[0.04]" style={{ background: "rgba(3,3,3,0.9)", backdropFilter: "blur(20px)" }}>
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <button onClick={() => { setSelectedEcosystem(null); sessionStorage.setItem("ecosystemSelected", "false"); window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: false } })); }} className="text-white/20 hover:text-white/50 transition mr-1">
+            <button onClick={() => { setSelectedEcosystem(null); setSelectedLocation(null); sessionStorage.setItem("ecosystemSelected", "false"); window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: false } })); }} className="text-white/20 hover:text-white/50 transition mr-1">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
               </svg>
@@ -233,7 +301,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <img src="/logo.png" className="w-5 h-5 object-contain opacity-60" />
               <div>
-                <h1 className="text-sm font-medium text-white/60">{selectedEcosystem}</h1>
+                <h1 className="text-sm font-medium text-white/80">{locationLabel} &rarr; {selectedEcosystem}</h1>
                 <p className="text-xs text-white/15 font-mono">{currentEco?.species_count} species &middot; {currentEco?.zone_count} zones</p>
               </div>
             </div>
@@ -257,7 +325,7 @@ export default function Home() {
         </section>
 
         <section>
-          <CascadeGraph ecosystem={selectedEcosystem} />
+          <CascadeGraph ecosystem={selectedEcosystem} selectedLocation={selectedLocation} />
         </section>
 
         <section>
