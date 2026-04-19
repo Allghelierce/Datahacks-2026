@@ -1,0 +1,196 @@
+region,year,year_month,unique_species,observation_count
+Border Field,2023,2023-01,5,5
+Border Field,2024,2024-01,9,9
+Border Field,2025,2025-01,3,3
+Otay Mesa,2023,2023-01,45,45
+Otay Mesa,2024,2024-01,49,49
+Otay Mesa,2025,2025-01,47,47
+Otay Mesa,2026,2026-01,22,22
+Otay Mountain,2023,2023-01,143,143
+Otay Mountain,2024,2024-01,159,159
+Otay Mountain,2025,2025-01,135,135
+Otay Mountain,2026,2026-01,93,93
+Tecate,2023,2023-01,65,65
+Tecate,2024,2024-01,72,72
+Tecate,2025,2025-01,63,63
+Tecate,2026,2026-01,33,33
+Campo,2023,2023-01,29,29
+Campo,2024,2024-01,29,29
+Campo,2025,2025-01,22,22
+Campo,2026,2026-01,10,10
+Jacumba,2023,2023-01,9,9
+Jacumba,2024,2024-01,15,15
+Jacumba,2025,2025-01,7,7
+Jacumba,2026,2026-01,5,5
+Mountain Empire,2023,2023-01,12,12
+Mountain Empire,2024,2024-01,11,11
+Mountain Empire,2025,2025-01,7,7
+Mountain Empire,2026,2026-01,3,3
+Imperial Beach,2023,2023-01,12,12
+Imperial Beach,2024,2024-01,14,14
+Imperial Beach,2025,2025-01,11,11
+Imperial Beach,2026,2026-01,8,8
+Chula Vista,2023,2023-01,85,85
+Chula Vista,2024,2024-01,96,96
+Chula Vista,2025,2025-01,92,92
+Chula Vista,2026,2026-01,48,48
+Jamul,2023,2023-01,104,104
+Jamul,2024,2024-01,137,137
+Jamul,2025,2025-01,121,121
+Jamul,2026,2026-01,78,78
+Alpine,2023,2023-01,78,78
+Alpine,2024,2024-01,80,80
+Alpine,2025,2025-01,85,85
+Alpine,2026,2026-01,42,42
+Pine Valley,2023,2023-01,35,35
+Pine Valley,2024,2024-01,41,41
+Pine Valley,2025,2025-01,31,31
+Pine Valley,2026,2026-01,17,17
+Mount Laguna,2023,2023-01,20,20
+Mount Laguna,2024,2024-01,20,20
+Mount Laguna,2025,2025-01,14,14
+Mount Laguna,2026,2026-01,11,11
+Anza-Borrego South,2023,2023-01,18,18
+Anza-Borrego South,2024,2024-01,21,21
+Anza-Borrego South,2025,2025-01,14,14
+Anza-Borrego South,2026,2026-01,6,6
+Coronado,2023,2023-01,16,16
+Coronado,2024,2024-01,20,20
+Coronado,2025,2025-01,18,18
+Coronado,2026,2026-01,6,6
+National City,2023,2023-01,127,127
+National City,2024,2024-01,135,135
+National City,2025,2025-01,130,130
+National City,2026,2026-01,87,87
+Spring Valley,2023,2023-01,120,120
+Spring Valley,2024,2024-01,139,139
+Spring Valley,2025,2025-01,116,116
+Spring Valley,2026,2026-01,74,74
+El Cajon,2023,2023-01,73,73
+El Cajon,2024,2024-01,83,83
+El Cajon,2025,2025-01,70,70
+El Cajon,2026,2026-01,30,30
+Cuyamaca,2023,2023-01,48,48
+Cuyamaca,2024,2024-01,48,48
+Cuyamaca,2025,2025-01,37,37
+Cuyamaca,2026,2026-01,16,16
+Julian,2023,2023-01,36,36
+Julian,2024,2024-01,40,40
+Julian,2025,2025-01,26,26
+Julian,2026,2026-01,14,14
+Anza-Borrego Central,2023,2023-01,17,17
+Anza-Borrego Central,2024,2024-01,13,13
+Anza-Borrego Central,2025,2025-01,16,16
+Anza-Borrego Central,2026,2026-01,5,5
+Point Loma,2023,2023-01,23,23
+Point Loma,2024,2024-01,22,22
+Point Loma,2025,2025-01,19,19
+Point Loma,2026,2026-01,6,6
+Downtown SD,2023,2023-01,131,131
+Downtown SD,2024,2024-01,133,133
+Downtown SD,2025,2025-01,111,111
+Downtown SD,2026,2026-01,81,81
+Mission Valley,2023,2023-01,89,89
+Mission Valley,2024,2024-01,94,94
+Mission Valley,2025,2025-01,101,101
+Mission Valley,2026,2026-01,60,60
+Santee,2023,2023-01,65,65
+Santee,2024,2024-01,74,74
+Santee,2025,2025-01,72,72
+Santee,2026,2026-01,37,37
+Ramona,2023,2023-01,48,48
+Ramona,2024,2024-01,54,54
+Ramona,2025,2025-01,44,44
+Ramona,2026,2026-01,12,12
+Santa Ysabel,2023,2023-01,50,50
+Santa Ysabel,2024,2024-01,43,43
+Santa Ysabel,2025,2025-01,54,54
+Santa Ysabel,2026,2026-01,15,15
+Borrego Springs,2023,2023-01,18,18
+Borrego Springs,2024,2024-01,15,15
+Borrego Springs,2025,2025-01,11,11
+Borrego Springs,2026,2026-01,10,10
+Mission Bay,2023,2023-01,22,22
+Mission Bay,2024,2024-01,20,20
+Mission Bay,2025,2025-01,19,19
+Mission Bay,2026,2026-01,10,10
+Balboa Park,2023,2023-01,143,143
+Balboa Park,2024,2024-01,142,142
+Balboa Park,2025,2025-01,129,129
+Balboa Park,2026,2026-01,94,94
+Mission Trails,2023,2023-01,83,83
+Mission Trails,2024,2024-01,88,88
+Mission Trails,2025,2025-01,89,89
+Mission Trails,2026,2026-01,58,58
+Poway,2023,2023-01,50,50
+Poway,2024,2024-01,60,60
+Poway,2025,2025-01,52,52
+Poway,2026,2026-01,29,29
+San Pasqual,2023,2023-01,61,61
+San Pasqual,2024,2024-01,54,54
+San Pasqual,2025,2025-01,51,51
+San Pasqual,2026,2026-01,19,19
+Palomar Mountain,2023,2023-01,45,45
+Palomar Mountain,2024,2024-01,48,48
+Palomar Mountain,2025,2025-01,46,46
+Palomar Mountain,2026,2026-01,22,22
+Anza-Borrego North,2023,2023-01,22,22
+Anza-Borrego North,2024,2024-01,13,13
+Anza-Borrego North,2025,2025-01,9,9
+Anza-Borrego North,2026,2026-01,11,11
+La Jolla,2023,2023-01,9,9
+La Jolla,2024,2024-01,11,11
+La Jolla,2025,2025-01,11,11
+La Jolla,2026,2026-01,1,1
+Miramar,2023,2023-01,87,87
+Miramar,2024,2024-01,100,100
+Miramar,2025,2025-01,86,86
+Miramar,2026,2026-01,42,42
+Scripps Ranch,2023,2023-01,70,70
+Scripps Ranch,2024,2024-01,70,70
+Scripps Ranch,2025,2025-01,75,75
+Scripps Ranch,2026,2026-01,37,37
+Rancho Bernardo,2023,2023-01,40,40
+Rancho Bernardo,2024,2024-01,29,29
+Rancho Bernardo,2025,2025-01,37,37
+Rancho Bernardo,2026,2026-01,15,15
+Escondido,2023,2023-01,39,39
+Escondido,2024,2024-01,40,40
+Escondido,2025,2025-01,34,34
+Escondido,2026,2026-01,13,13
+Valley Center,2023,2023-01,32,32
+Valley Center,2024,2024-01,31,31
+Valley Center,2025,2025-01,26,26
+Valley Center,2026,2026-01,20,20
+Palomar East,2023,2023-01,16,16
+Palomar East,2024,2024-01,15,15
+Palomar East,2025,2025-01,8,8
+Palomar East,2026,2026-01,7,7
+Del Mar,2023,2023-01,65,65
+Del Mar,2024,2024-01,62,62
+Del Mar,2025,2025-01,57,57
+Del Mar,2026,2026-01,25,25
+Carmel Valley,2023,2023-01,108,108
+Carmel Valley,2024,2024-01,114,114
+Carmel Valley,2025,2025-01,115,115
+Carmel Valley,2026,2026-01,66,66
+Rancho Santa Fe,2023,2023-01,61,61
+Rancho Santa Fe,2024,2024-01,62,62
+Rancho Santa Fe,2025,2025-01,62,62
+Rancho Santa Fe,2026,2026-01,30,30
+San Marcos,2023,2023-01,54,54
+San Marcos,2024,2024-01,49,49
+San Marcos,2025,2025-01,46,46
+San Marcos,2026,2026-01,18,18
+Vista,2023,2023-01,52,52
+Vista,2024,2024-01,58,58
+Vista,2025,2025-01,50,50
+Vista,2026,2026-01,21,21
+Fallbrook,2023,2023-01,55,55
+Fallbrook,2024,2024-01,62,62
+Fallbrook,2025,2025-01,46,46
+Fallbrook,2026,2026-01,33,33
+Temecula Border,2023,2023-01,20,20
+Temecula Border,2024,2024-01,24,24
+Temecula Border,2025,2025-01,21,21
+Temecula Border,2026,2026-01,12,12

@@ -7,8 +7,11 @@ import { useAppData } from "@/context/DataContext";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CollapseTimeline from "@/components/ui/CollapseTimeline";
 import ConservationReport from "@/components/ui/ConservationReport";
+import Navbar from "@/components/ui/Navbar";
+import AskBioScope from "@/components/ui/AskBioScope";
 
 const CascadeGraph = dynamic(() => import("@/components/charts/CascadeGraph"), { ssr: false });
+const ThreatMap = dynamic(() => import("@/components/map/ThreatMap"), { ssr: false });
 
 const SHORT_LABELS: Record<string, string> = {
   "Pacific Coast & Tidepools": "Coast",
@@ -95,23 +98,27 @@ export default function Home() {
     return (
       <main className="min-h-screen bg-[#030303] flex flex-col items-center justify-center gap-6">
         <div className="w-12 h-12 border-4 border-emerald-500/20 border-t-emerald-500 rounded-full animate-spin" />
-        <p className="text-white/30 text-xs font-mono tracking-widest uppercase animate-pulse">Initializing BioScope Data Cloud...</p>
+        <p className="text-white/30 text-xs font-mono tracking-widest uppercase animate-pulse">Initializing bioscope Data Cloud...</p>
       </main>
     );
   }
 
   if (!selectedEcosystem) {
     return (
-      <main className="min-h-screen bg-[#030303] flex items-center justify-center px-6">
-        <div className="w-full max-w-xl">
+      <main className="min-h-screen bg-[#030303]">
+        <div className="flex flex-col items-center justify-center min-h-[90vh] px-6">
+          <div className="w-full max-w-xl">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
             {/* Title */}
-            <div className="mb-10">
-              <h1 className="text-lg font-semibold tracking-tight text-white/80 mb-1">
-                Bio<span className="gradient-text">Scope</span>
-              </h1>
-              <p className="text-[10px] uppercase tracking-[0.25em] text-white/15">San Diego County</p>
-            </div>
+             <div className="mb-10 flex items-center gap-3">
+               <img src="/logo.png" alt="logo" className="w-8 h-8 object-contain" />
+               <div>
+                 <h1 className="text-xl font-bold tracking-tight text-white/80 fancy-brand">
+                   bioscope
+                 </h1>
+                 <p className="text-[10px] uppercase tracking-[0.25em] text-white/15">San Diego County</p>
+               </div>
+             </div>
 
             {/* Main prompt */}
             <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white/80 mb-2 leading-tight">
@@ -182,6 +189,8 @@ export default function Home() {
             )}
           </motion.div>
         </div>
+
+        </div>
       </main>
     );
   }
@@ -191,7 +200,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#030303]">
       {/* Top bar */}
-      <div className="sticky top-0 z-50 border-b border-white/[0.04]" style={{ background: "rgba(3,3,3,0.9)", backdropFilter: "blur(12px)" }}>
+      <div className="sticky top-0 z-50 border-b border-white/[0.04]" style={{ background: "rgba(3,3,3,0.9)", backdropFilter: "blur(20px)" }}>
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <button onClick={() => setSelectedEcosystem(null)} className="text-white/20 hover:text-white/50 transition mr-1">
@@ -199,9 +208,12 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
               </svg>
             </button>
-            <div>
-              <h1 className="text-xs font-medium text-white/60">{selectedEcosystem}</h1>
-              <p className="text-[9px] text-white/15 font-mono">{currentEco?.species_count} species &middot; {currentEco?.zone_count} zones</p>
+            <div className="flex items-center gap-2">
+              <img src="/logo.png" className="w-5 h-5 object-contain opacity-60" />
+              <div>
+                <h1 className="text-xs font-medium text-white/60">{selectedEcosystem}</h1>
+                <p className="text-[9px] text-white/15 font-mono">{currentEco?.species_count} species &middot; {currentEco?.zone_count} zones</p>
+              </div>
             </div>
           </div>
           {currentEco?.keystones?.[0] && (
@@ -213,6 +225,15 @@ export default function Home() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-10 space-y-14">
+        <section>
+          <SectionHeader
+            id="ask"
+            title="Ask BioScope"
+            subtitle="Query 77K observations with Snowflake Cortex AI"
+          />
+          <AskBioScope />
+        </section>
+
         <section>
           <SectionHeader
             id="cascade"

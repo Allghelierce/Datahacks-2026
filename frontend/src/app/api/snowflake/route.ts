@@ -30,6 +30,7 @@ export async function GET(req: NextRequest) {
   const action = req.nextUrl.searchParams.get("action");
   const species = req.nextUrl.searchParams.get("species");
   const zone = req.nextUrl.searchParams.get("zone");
+  const question = req.nextUrl.searchParams.get("question");
 
   try {
     const conn = await getConnection();
@@ -74,8 +75,47 @@ export async function GET(req: NextRequest) {
         `);
         return NextResponse.json({ analysis: rows[0]?.ANALYSIS });
 
+      case "ask": {
+        if (!question) return NextResponse.json({ error: "question param required" }, { status: 400 });
+        const safeQ = question.replace(/'/g, "''");
+        rows = await executeQuery(conn, `
+          SELECT SNOWFLAKE.CORTEX.COMPLETE('mistral-large',
+            CONCAT(
+              'You are BioScope, a biodiversity intelligence system for San Diego County. ',
+              'You have access to 77,000 iNaturalist observations of threatened species across 49 ecological zones. ',
+              'Key data: species include Torrey Pine, Brown Pelican, Monarch Butterfly, Red Diamond Rattlesnake, and 56 others. ',
+              'Zones span from Pacific Coast tidepools to Anza-Borrego Desert. ',
+              'Answer this question concisely (2-3 sentences): ${safeQ}'
+            )
+          ) AS answer
+        `);
+        return NextResponse.json({ answer: rows[0]?.ANSWER });
+      }
+
+      case "species_lookup": {
+        if (!species) return NextResponse.json({ error: "species param required" }, { status: 400 });
+        const safeSp = species.replace(/'/g, "''");
+        rows = await executeQuery(conn, `
+          SELECT
+            scientific_name,
+            common_name,
+            iconic_taxon_name AS taxon_group,
+            COUNT(*) AS observation_count,
+            COUNT(DISTINCT place_guess) AS locations_found,
+            MIN(observed_on) AS first_seen,
+            MAX(observed_on) AS last_seen
+          FROM threatened_species
+          WHERE LOWER(scientific_name) LIKE LOWER('%${safeSp}%')
+             OR LOWER(common_name) LIKE LOWER('%${safeSp}%')
+          GROUP BY scientific_name, common_name, iconic_taxon_name
+          ORDER BY observation_count DESC
+          LIMIT 5
+        `);
+        return NextResponse.json({ results: rows });
+      }
+
       default:
-        return NextResponse.json({ error: "Unknown action. Use: analyze_species, zone_biodiversity, species_rankings, yearly_trends, taxonomic_breakdown, cortex_analyze" }, { status: 400 });
+        return NextResponse.json({ error: "Unknown action" }, { status: 400 });
     }
   } catch (err: any) {
     return NextResponse.json({ error: err.message }, { status: 500 });
