@@ -494,7 +494,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     const sLinks: SimLink[] = graphEdges.filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target)).map((e) => ({ source: nodeMap.get(e.source)!, target: nodeMap.get(e.target)!, edgeType: e.type })).filter((l) => l.source && l.target);
     
     const trophicGroups = Object.keys(TROPHIC_LAYERS);
-    const clusterRadius = Math.min(dims.w, dims.h) * 0.55;
+    const clusterRadius = Math.min(dims.w, dims.h) * 0.38;
     const clusterCenters: Record<string, { x: number; y: number }> = {};
     trophicGroups.forEach((g, i) => {
       const angle = (2 * Math.PI * i) / trophicGroups.length - Math.PI / 2;
@@ -783,14 +783,14 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
               {Object.keys(TROPHIC_LAYERS).map((level, i) => {
                 const trophicKeys = Object.keys(TROPHIC_LAYERS);
                 const angle = (2 * Math.PI * i) / trophicKeys.length - Math.PI / 2;
-                const cr = Math.min(dims.w, dims.h) * 0.55;
-                const lx = dims.w / 2 + Math.cos(angle) * (cr * 1.25);
-                const ly = dims.h / 2 + Math.sin(angle) * (cr * 1.25);
+                const cr = Math.min(dims.w, dims.h) * 0.45;
+                const lx = dims.w / 2 + Math.cos(angle) * (cr * 1.85);
+                const ly = dims.h / 2 + Math.sin(angle) * (cr * 1.85);
                 const label = level.replace(/_/g, " ");
                 const color = LEVEL_COLORS[level] || "#666";
                 return (
-                  <g key={`cluster-${level}`}>
-                    <text x={lx} y={ly + 4} fill={color} fontSize={11} opacity={0.2} textAnchor="middle" fontWeight="600" style={{ textTransform: "uppercase", letterSpacing: "0.15em" }}>{label}</text>
+                  <g key={`cluster-${level}`} pointerEvents="none">
+                    <text x={lx} y={ly + 4} fill={color} fontSize={14} opacity={0.25} textAnchor="middle" fontWeight="800" style={{ textTransform: "uppercase", letterSpacing: "0.2em", paintOrder: "stroke", stroke: "rgba(6,10,7,0.4)", strokeWidth: 4 }}>{label}</text>
                   </g>
                 );
               })}
@@ -954,7 +954,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
             )}
           </AnimatePresence>
           {removalLog.length > 0 && (
-            <div className="absolute top-4 left-4 z-10 w-56 max-h-[60%] overflow-y-auto border border-white/[0.06] rounded-xl backdrop-blur-xl" style={{ background: "rgba(6,10,7,0.92)" }}>
+            <div className="absolute top-4 right-4 z-10 w-56 max-h-[60%] overflow-y-auto border border-white/[0.06] rounded-xl backdrop-blur-xl" style={{ background: "rgba(6,10,7,0.92)" }}>
               <div className="p-3 border-b border-white/[0.06]">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] uppercase tracking-wider text-red-400/70 font-mono font-medium">Removal Log</span>
