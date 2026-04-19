@@ -18,11 +18,16 @@ TROPHIC_MAP = {
     "Reptilia": {"level": "secondary_consumer", "label": "Secondary Consumers", "order": 2},
     "Mammalia": {"level": "tertiary_consumer", "label": "Tertiary Consumers", "order": 3},
     "Aves": {"level": "tertiary_consumer", "label": "Tertiary Consumers", "order": 3},
-    "Animalia": {"level": "primary_consumer", "label": "Primary Consumers", "order": 1},
+    "Animalia": {"level": "secondary_consumer", "label": "Secondary Consumers", "order": 2},
 }
 
 POLLINATOR_ORDERS = {"Lepidoptera", "Hymenoptera"}
 PREDATOR_ORDERS = {"Accipitriformes", "Falconiformes", "Strigiformes", "Carnivora", "Squamata"}
+SECONDARY_ORDERS = {"Rajiformes", "Myliobatiformes", "Perciformes", "Scorpaeniformes",
+                    "Pleuronectiformes", "Tetraodontiformes", "Siluriformes",
+                    "Coleoptera", "Orthoptera", "Hemiptera", "Odonata", "Mantodea"}
+TERTIARY_ORDERS = {"Lamniformes", "Carcharhiniformes", "Pelecaniformes", "Suliformes",
+                   "Charadriiformes", "Anseriformes"}
 
 DEPENDENCY_CHAINS = [
     {"from": "producer", "to": "primary_consumer", "label": "food source"},
@@ -212,6 +217,10 @@ def get_trophic(iconic, order):
         return "pollinator", "Pollinators", 1.5
     if order in PREDATOR_ORDERS:
         return "apex_predator", "Apex Predators", 4
+    if order in TERTIARY_ORDERS:
+        return "tertiary_consumer", "Tertiary Consumers", 3
+    if order in SECONDARY_ORDERS:
+        return "secondary_consumer", "Secondary Consumers", 2
     info = TROPHIC_MAP.get(iconic, {"level": "unknown", "label": "Unknown", "order": -1})
     return info["level"], info["label"], info["order"]
 
@@ -989,7 +998,7 @@ with open("frontend/public/data/ecosystem-graphs.json", "w") as f:
 print("Wrote frontend/public/data/ecosystem-graphs.json")
 
 # 2. Lightweight TypeScript Bridge (Only types and tiny constants)
-ts_output = f'''// Auto-generated types and metadata from {INPUT}
+ts_output = f'''// Auto-generated types and metadata from {INPUT_DIR}
 // Source data is fetched from /data/app-data.json to keep bundle size small.
 
 import ecosystemData from "./ecosystemIndex.json";

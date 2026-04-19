@@ -173,8 +173,8 @@
   "Apostichopus parvimensis": {
     "id": "Apostichopus parvimensis",
     "common_name": "Warty sea cucumber",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Synallactida",
     "family": "Stichopodidae"
@@ -398,8 +398,8 @@
   "Hypanus dipterurus": {
     "id": "Hypanus dipterurus",
     "common_name": "Diamond Stingray",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Myliobatiformes",
     "family": "Dasyatidae"
@@ -1001,8 +1001,8 @@
   "Isurus oxyrinchus": {
     "id": "Isurus oxyrinchus",
     "common_name": "Shortfin Mako",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Lamniformes",
     "family": "Lamnidae"
@@ -1028,8 +1028,8 @@
   "Pseudobatos productus": {
     "id": "Pseudobatos productus",
     "common_name": "Shovelnose Guitarfish",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Rhinopristiformes",
     "family": "Rhinobatidae"
@@ -1892,8 +1892,8 @@
   "Notorynchus cepedianus": {
     "id": "Notorynchus cepedianus",
     "common_name": "Broadnose Sevengill Shark",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Hexanchiformes",
     "family": "Hexanchidae"
@@ -2144,8 +2144,8 @@
   "Streptocephalus woottoni": {
     "id": "Streptocephalus woottoni",
     "common_name": "Riverside Fairy Shrimp",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Anostraca",
     "family": "Streptocephalidae"
@@ -2216,8 +2216,8 @@
   "Cicindela latesignata": {
     "id": "Cicindela latesignata",
     "common_name": "Western Beach Tiger Beetle",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Insecta",
     "order": "Coleoptera",
     "family": "Cicindelidae"
@@ -2882,8 +2882,8 @@
   "Galeorhinus galeus": {
     "id": "Galeorhinus galeus",
     "common_name": "School Shark",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Carcharhiniformes",
     "family": "Triakidae"
@@ -2981,8 +2981,8 @@
   "Alopias vulpinus": {
     "id": "Alopias vulpinus",
     "common_name": "Thresher Shark",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Lamniformes",
     "family": "Alopiidae"
@@ -3116,8 +3116,8 @@
   "Gymnura marmorata": {
     "id": "Gymnura marmorata",
     "common_name": "California Butterfly Ray",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Myliobatiformes",
     "family": "Gymnuridae"
@@ -3161,8 +3161,8 @@
   "Cicindelidia trifasciata sigmoidea": {
     "id": "Cicindelidia trifasciata sigmoidea",
     "common_name": "Mudflat Tiger Beetle",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Insecta",
     "order": "Coleoptera",
     "family": "Cicindelidae"
@@ -3278,8 +3278,8 @@
   "Carcharodon carcharias": {
     "id": "Carcharodon carcharias",
     "common_name": "Great White Shark",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Lamniformes",
     "family": "Lamnidae"
@@ -3377,8 +3377,8 @@
   "Squatina californica": {
     "id": "Squatina californica",
     "common_name": "Pacific Angelshark",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Squatiniformes",
     "family": "Squatinidae"
@@ -3548,8 +3548,8 @@
   "Eunota gabbii": {
     "id": "Eunota gabbii",
     "common_name": "Western Tidal Flat Tiger Beetle",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Insecta",
     "order": "Coleoptera",
     "family": "Cicindelidae"
@@ -3674,8 +3674,8 @@
   "Branchinecta sandiegonensis": {
     "id": "Branchinecta sandiegonensis",
     "common_name": "San Diego Fairy Shrimp",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Anostraca",
     "family": "Branchinectidae"
@@ -4052,8 +4052,8 @@
   "Rhionaeschna psilus": {
     "id": "Rhionaeschna psilus",
     "common_name": "Turquoise-tipped Darner",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Insecta",
     "order": "Odonata",
     "family": "Aeshnidae"
@@ -4268,8 +4268,8 @@
   "Cyzicus californicus": {
     "id": "Cyzicus californicus",
     "common_name": "California Clam Shrimp",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Animalia",
     "order": "Spinicaudata",
     "family": "Cyzicidae"
@@ -4403,8 +4403,8 @@
   "Cicindela hirticollis gravida": {
     "id": "Cicindela hirticollis gravida",
     "common_name": "Pacific Hairy-necked Tiger Beetle",
-    "trophic_level": "primary_consumer",
-    "trophic_label": "Primary Consumers",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
     "iconic_taxon": "Insecta",
     "order": "Coleoptera",
     "family": "Cicindelidae"

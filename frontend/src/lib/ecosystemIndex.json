@@ -35,8 +35,29 @@
       ],
       "zone_count": 7,
       "species_count": 155,
-      "edge_count": 534,
-      "keystones": [],
+      "edge_count": 103,
+      "keystones": [
+        {
+          "common_name": "Green Abalone",
+          "zone_keystone_score": 0.045
+        },
+        {
+          "common_name": "Giant Sphinx",
+          "zone_keystone_score": 0.032
+        },
+        {
+          "common_name": "Costa's Hummingbird",
+          "zone_keystone_score": 0.013
+        },
+        {
+          "common_name": "Southern California Shoulderband",
+          "zone_keystone_score": 0.013
+        },
+        {
+          "common_name": "Least Sandpiper",
+          "zone_keystone_score": 0.006
+        }
+      ],
       "zones": [
         {
           "id": "0-0",
@@ -77,8 +98,8 @@
         {
           "id": "6-0",
           "name": "Del Mar",
-          "grade": "B",
-          "score": 65.0
+          "grade": "C",
+          "score": 64.0
         }
       ]
     },
@@ -113,11 +134,27 @@
       ],
       "zone_count": 7,
       "species_count": 175,
-      "edge_count": 921,
+      "edge_count": 122,
       "keystones": [
         {
-          "common_name": "Woven-spored microlichen",
-          "zone_keystone_score": 0.063
+          "common_name": "Green Abalone",
+          "zone_keystone_score": 0.029
+        },
+        {
+          "common_name": "",
+          "zone_keystone_score": 0.029
+        },
+        {
+          "common_name": "Costa's Hummingbird",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Western Tidal Flat Tiger Beetle",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Western Beach Tiger Beetle",
+          "zone_keystone_score": 0.006
         }
       ],
       "zones": [
@@ -125,19 +162,19 @@
           "id": "0-1",
           "name": "Otay Mesa",
           "grade": "C",
-          "score": 61.5
+          "score": 61.0
         },
         {
           "id": "1-1",
           "name": "Chula Vista",
           "grade": "B",
-          "score": 67.9
+          "score": 66.9
         },
         {
           "id": "2-1",
           "name": "National City",
           "grade": "B",
-          "score": 72.6
+          "score": 71.6
         },
         {
           "id": "2-2",
@@ -160,8 +197,8 @@
         {
           "id": "5-1",
           "name": "Miramar",
-          "grade": "B",
-          "score": 66.0
+          "grade": "C",
+          "score": 64.5
         }
       ]
     },
@@ -200,15 +237,27 @@
       ],
       "zone_count": 8,
       "species_count": 175,
-      "edge_count": 752,
+      "edge_count": 136,
       "keystones": [
         {
-          "common_name": "Woven-spored microlichen",
-          "zone_keystone_score": 0.282
+          "common_name": "",
+          "zone_keystone_score": 0.023
         },
         {
-          "common_name": "Powdery Sea-Fog Lichen",
+          "common_name": "Green Abalone",
           "zone_keystone_score": 0.017
+        },
+        {
+          "common_name": "Arroyo Toad",
+          "zone_keystone_score": 0.017
+        },
+        {
+          "common_name": "Costa's Hummingbird",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Large-blotched Ensatina",
+          "zone_keystone_score": 0.011
         }
       ],
       "zones": [
@@ -216,7 +265,7 @@
           "id": "1-2",
           "name": "Jamul",
           "grade": "B",
-          "score": 75.5
+          "score": 74.5
         },
         {
           "id": "1-3",
@@ -258,7 +307,7 @@
           "id": "6-1",
           "name": "Carmel Valley",
           "grade": "B",
-          "score": 71.3
+          "score": 70.8
         }
       ]
     },
@@ -292,11 +341,27 @@
       ],
       "zone_count": 7,
       "species_count": 175,
-      "edge_count": 595,
+      "edge_count": 140,
       "keystones": [
         {
           "common_name": "Wavy Cap",
-          "zone_keystone_score": 0.034
+          "zone_keystone_score": 0.029
+        },
+        {
+          "common_name": "Sonoran Blue",
+          "zone_keystone_score": 0.023
+        },
+        {
+          "common_name": "Arroyo Toad",
+          "zone_keystone_score": 0.017
+        },
+        {
+          "common_name": "Costa's Hummingbird",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Green Abalone",
+          "zone_keystone_score": 0.011
         }
       ],
       "zones": [
@@ -376,22 +441,26 @@
       ],
       "zone_count": 4,
       "species_count": 63,
-      "edge_count": 51,
+      "edge_count": 20,
       "keystones": [
         {
-          "common_name": "Southern California clematis",
-          "zone_keystone_score": 0.323
-        },
-        {
-          "common_name": "Behr's Metalmark",
-          "zone_keystone_score": 0.242
-        },
-        {
-          "common_name": "Costa's Hummingbird",
+          "common_name": "Loki Hairstreak",
           "zone_keystone_score": 0.048
         },
         {
-          "common_name": "California thistle",
+          "common_name": "Costa's Hummingbird",
+          "zone_keystone_score": 0.032
+        },
+        {
+          "common_name": "Desert Bighorn Sheep",
+          "zone_keystone_score": 0.032
+        },
+        {
+          "common_name": "Tricolored Blackbird",
+          "zone_keystone_score": 0.016
+        },
+        {
+          "common_name": "Mojave Desert Tortoise",
           "zone_keystone_score": 0.016
         }
       ],
@@ -458,8 +527,29 @@
       ],
       "zone_count": 7,
       "species_count": 175,
-      "edge_count": 416,
-      "keystones": [],
+      "edge_count": 144,
+      "keystones": [
+        {
+          "common_name": "Smoky Arrowhead Blue",
+          "zone_keystone_score": 0.023
+        },
+        {
+          "common_name": "Costa's Hummingbird",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Large-blotched Ensatina",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Arroyo Toad",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Leanira Checkerspot",
+          "zone_keystone_score": 0.011
+        }
+      ],
       "zones": [
         {
           "id": "3-4",
@@ -531,11 +621,27 @@
       ],
       "zone_count": 8,
       "species_count": 175,
-      "edge_count": 404,
+      "edge_count": 128,
       "keystones": [
         {
           "common_name": "",
-          "zone_keystone_score": 0.103
+          "zone_keystone_score": 0.046
+        },
+        {
+          "common_name": "Sonoran Blue",
+          "zone_keystone_score": 0.017
+        },
+        {
+          "common_name": "Costa's Hummingbird",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Large-blotched Ensatina",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Greater Yellowlegs",
+          "zone_keystone_score": 0.006
         }
       ],
       "zones": [
@@ -621,11 +727,27 @@
       ],
       "zone_count": 4,
       "species_count": 175,
-      "edge_count": 904,
+      "edge_count": 144,
       "keystones": [
         {
-          "common_name": "Woven-spored microlichen",
-          "zone_keystone_score": 0.034
+          "common_name": "Green Abalone",
+          "zone_keystone_score": 0.029
+        },
+        {
+          "common_name": "",
+          "zone_keystone_score": 0.029
+        },
+        {
+          "common_name": "Arroyo Toad",
+          "zone_keystone_score": 0.017
+        },
+        {
+          "common_name": "Costa's Hummingbird",
+          "zone_keystone_score": 0.011
+        },
+        {
+          "common_name": "Western Beach Tiger Beetle",
+          "zone_keystone_score": 0.011
         }
       ],
       "zones": [
@@ -664,16 +786,16 @@
     "trophicBreakdown": {
       "producer": 264,
       "apex_predator": 42,
-      "tertiary_consumer": 103,
-      "primary_consumer": 39,
+      "tertiary_consumer": 107,
+      "secondary_consumer": 34,
+      "primary_consumer": 21,
       "pollinator": 30,
-      "secondary_consumer": 20,
       "decomposer": 7
     },
     "healthDistribution": {
       "F": 1,
-      "C": 26,
-      "B": 14,
+      "C": 28,
+      "B": 12,
       "D": 8
     },
     "ecosystemCount": 8

@@ -1,20 +1,20 @@
 region,total_observations,unique_species,shannon_index,biodiversity_score
 Border Field,23,12,0,34.3
-Otay Mesa,607,83,0,61.5
+Otay Mesa,607,83,0,61.0
 Otay Mountain,6826,204,0,71.0
 Tecate,996,111,0,64.2
 Campo,193,56,0,56.0
 Jacumba,82,22,0,47.0
 Mountain Empire,69,21,0,42.4
 Imperial Beach,99,24,0,52.7
-Chula Vista,4207,136,0,67.9
-Jamul,2485,177,0,75.5
+Chula Vista,4207,136,0,66.9
+Jamul,2485,177,0,74.5
 Alpine,1320,123,0,64.7
 Pine Valley,248,65,0,60.5
 Mount Laguna,134,37,0,49.9
 Anza-Borrego South,145,34,0,47.7
 Coronado,114,38,0,51.3
-National City,8825,186,0,72.6
+National City,8825,186,0,71.6
 Spring Valley,4204,192,0,71.0
 El Cajon,1277,111,0,61.5
 Cuyamaca,435,70,0,58.0
@@ -35,14 +35,14 @@ San Pasqual,803,96,0,62.5
 Palomar Mountain,1080,75,0,59.5
 Anza-Borrego North,1066,31,0,44.1
 La Jolla,40,24,0,45.9
-Miramar,2182,149,0,66.0
+Miramar,2182,149,0,64.5
 Scripps Ranch,1688,102,0,62.9
 Rancho Bernardo,433,59,0,59.5
 Escondido,531,66,0,59.0
 Valley Center,492,54,0,61.8
 Palomar East,133,23,0,51.0
-Del Mar,849,110,0,65.0
-Carmel Valley,2606,172,0,71.3
+Del Mar,849,110,0,64.0
+Carmel Valley,2606,172,0,70.8
 Rancho Santa Fe,897,98,0,62.0
 San Marcos,646,84,0,61.0
 Vista,691,87,0,64.0

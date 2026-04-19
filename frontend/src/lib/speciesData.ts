@@ -1,4 +1,4 @@
-// Auto-generated types and metadata from data/threatened_species.csv
+// Auto-generated types and metadata from data
 // Source data is fetched from /data/app-data.json to keep bundle size small.
 
 import ecosystemData from "./ecosystemIndex.json";

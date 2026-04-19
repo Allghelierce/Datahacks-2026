@@ -288,13 +288,17 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
 
   const getCascadeVictims = useCallback((removedId: string): Set<string> => {
     const victims = new Set<string>();
+    const gone = new Set([removedId, ...removedNodes]);
     const queue = [removedId];
     while (queue.length > 0) {
       const current = queue.shift()!;
       for (const edge of graphEdges) {
-        if (edge.source === current && !victims.has(edge.target) && !removedNodes.has(edge.target)) {
-          const altSources = graphEdges.filter((e) => e.target === edge.target && e.source !== current).map((e) => e.source).filter((s) => !removedNodes.has(s) && s !== removedId && !victims.has(s));
-          if (altSources.length === 0) { victims.add(edge.target); queue.push(edge.target); }
+        if (edge.source === current && !victims.has(edge.target) && !gone.has(edge.target)) {
+          const totalSources = graphEdges.filter((e) => e.target === edge.target).map((e) => e.source);
+          const remaining = totalSources.filter((s) => !gone.has(s) && !victims.has(s));
+          if (remaining.length <= Math.floor(totalSources.length * 0.5)) {
+            victims.add(edge.target); gone.add(edge.target); queue.push(edge.target);
+          }
         }
       }
     }
@@ -305,14 +309,16 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     const tree = new Map<string, string[]>();
     tree.set(removedId, []);
     const victims = new Set<string>();
+    const gone = new Set([removedId, ...removedNodes]);
     const queue = [removedId];
     while (queue.length > 0) {
       const current = queue.shift()!;
       for (const edge of graphEdges) {
-        if (edge.source === current && !victims.has(edge.target) && !removedNodes.has(edge.target)) {
-          const altSources = graphEdges.filter((e) => e.target === edge.target && e.source !== current).map((e) => e.source).filter((s) => !removedNodes.has(s) && s !== removedId && !victims.has(s));
-          if (altSources.length === 0) {
-            victims.add(edge.target);
+        if (edge.source === current && !victims.has(edge.target) && !gone.has(edge.target)) {
+          const totalSources = graphEdges.filter((e) => e.target === edge.target).map((e) => e.source);
+          const remaining = totalSources.filter((s) => !gone.has(s) && !victims.has(s));
+          if (remaining.length <= Math.floor(totalSources.length * 0.5)) {
+            victims.add(edge.target); gone.add(edge.target);
             if (!tree.has(current)) tree.set(current, []);
             tree.get(current)!.push(edge.target);
             queue.push(edge.target);
@@ -931,7 +937,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                   {selectedData.zone_count != null && <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Zones</div><div className="text-sm font-semibold text-white">{selectedData.zone_count}</div></div>}
                   <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Trophic Level</div><div className="text-sm font-semibold capitalize" style={{ color: LEVEL_COLORS[selectedData.trophic_level] }}>{selectedData.trophic_level.replace("_", " ")}</div></div>
                   <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Keystone</div><div className={`text-sm font-semibold ${(dynamicKeystoneScores.get(selectedData.id) ?? 0) > 0.01 ? "text-orange-400" : "text-white/60"}`}>{((dynamicKeystoneScores.get(selectedData.id) ?? 0) * 100).toFixed(1)}%</div></div>
-                  <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">YoY Trend</div><div className={`text-sm font-semibold ${selectedData.decline_trend < -30 ? "text-red-400" : selectedData.decline_trend < 0 ? "text-orange-400" : "text-emerald-400"}`}>{selectedData.decline_trend > 0 ? "+" : ""}{selectedData.decline_trend.toFixed(1)}%</div></div>
+                  <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Observation Trend</div><div className={`text-sm font-semibold ${selectedData.decline_trend < -30 ? "text-red-400" : selectedData.decline_trend < 0 ? "text-orange-400" : "text-emerald-400"}`}>{selectedData.decline_trend > 0 ? "+" : ""}{selectedData.decline_trend.toFixed(1)}%</div><div className="text-[8px] text-white/20 mt-0.5">first vs last recorded year</div></div>
                   <div className="bg-white/5 rounded-lg p-2"><div className="text-[10px] text-white/30 uppercase">Cascade</div><div className={`text-sm font-semibold ${selectedCascadePct > 30 ? "text-red-400" : selectedCascadePct > 15 ? "text-orange-400" : "text-emerald-400"}`}>{selectedCascadePct.toFixed(1)}%</div></div>
                 </div>
                 {selectedData.family && <div className="text-xs text-white/40 mb-3">{selectedData.family} · {selectedData.order}</div>}
