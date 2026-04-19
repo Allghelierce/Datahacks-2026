@@ -24,7 +24,8 @@ export default function StatsGrid({ regions, decliningRegions }: Props) {
   const avgScore = regions.length
     ? (regions.reduce((s, r) => s + r.biodiversity_score, 0) / regions.length).toFixed(2)
     : "—";
-  const growingCount = regions.length - decliningRegions.length;
+  const decliningCount = decliningRegions.filter((d) => d.pct_change < 0).length;
+  const growingCount = regions.length - decliningCount;
 
   const cards = [
     {
@@ -55,7 +56,7 @@ export default function StatsGrid({ regions, decliningRegions }: Props) {
       icon: ArrowTrendingUpIcon,
       label: "Growing Regions",
       value: `${growingCount}/${regions.length}`,
-      sub: `${decliningRegions.length} declining`,
+      sub: `${decliningCount} declining`,
       color: "teal",
       accent: "bg-teal-400",
     },

@@ -23,9 +23,10 @@ interface Props {
 
 function CustomTooltip({ active, payload, label }: any) {
   if (!active || !payload?.length) return null;
-  const [year, month] = (label as string).split("-");
+  const parts = (label as string).split("-");
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  const formatted = `${monthNames[parseInt(month) - 1]} ${year}`;
+  const monthIdx = parts.length >= 2 ? parseInt(parts[1]) - 1 : -1;
+  const formatted = monthIdx >= 0 && monthIdx < 12 ? `${monthNames[monthIdx]} ${parts[0]}` : (label as string);
 
   return (
     <div className="bg-gray-900/95 backdrop-blur-sm rounded-xl px-5 py-4 shadow-2xl border border-white/10 min-w-[200px]">

@@ -107,7 +107,11 @@ Provide:
 
 Keep the response under 200 words and accessible to a general audience."""
 
-    response = model.generate_content(prompt)
+    try:
+        response = model.generate_content(prompt)
+    except Exception as e:
+        print(f"Gemini API error: {e}")
+        return cors_response(502, {"error": "Failed to generate explanation"})
 
     return cors_response(200, {
         "region": region_name,

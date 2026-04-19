@@ -2,48 +2,87 @@
 
 ## Event: DataHacks 2026, UCSD Rec Gym, April 18-19 (36 hours)
 ## Team: 4 people, vibecoding approach
-## Tracks: Cloud Development (primary) + Data Analytics (secondary)
+## Track: Data Analytics (primary)
+## Bonus Challenges: Best Use of [X] Data ($1500), Best Innovation w/ Google Build With AI
 
 ---
 
 ## Strategy Overview
 
-**Project:** BioScope — a biodiversity monitoring dashboard that ingests iNaturalist observation data, processes it through a cloud pipeline, and presents interactive regional biodiversity insights with AI-powered explanations.
+**Project:** BioScope — a biodiversity intelligence platform that transforms iNaturalist citizen science data into keystone species identification, ecosystem risk assessment, and conservation priority reports for San Diego County.
 
-**Why this wins:** Clean end-to-end data story, hits 7+ sponsor challenges with one coherent project, judges see a working product with real data flowing through every layer.
+**Why this wins:** We don't just visualize data — we derive new intelligence. Keystone species identification via cascade impact analysis, decline-linked risk flagging, and AI-generated conservation reports turn raw observations into something a conservation org would actually use.
 
-**One-liner for judges:** "BioScope turns millions of citizen science observations into actionable biodiversity intelligence for any region in the US."
+**One-liner for judges:** "BioScope identifies which species your ecosystem can't afford to lose — and which ones are already disappearing."
+
+**Core analytical features:**
+1. **Keystone Species Identification** — Programmatic cascade removal simulation across every species, ranked by ecosystem impact percentage
+2. **Decline-Linked Risk Assessment** — Cross-reference keystone scores with YoY observation trends to flag species that are both critical AND declining
+3. **Zone-Aware Food Web Analysis** — Per-zone dependency graphs showing actual trophic structure, not generic models
+4. **AI Conservation Reports** — Gemini generates actionable conservation narratives from structured cascade + decline data
 
 ---
 
-## Challenges Targeted (7+ total)
+## Challenges Targeted
 
-| # | Challenge | Prize | Effort | Priority |
-|---|-----------|-------|--------|----------|
-| 1 | Best Use of Databricks | ~$1000 (JBL Speaker bundle) | Medium | HIGH |
-| 2 | Best Use of Snowflake API | Raspberry Pi 4 | Low | HIGH |
-| 3 | Best Use of AWS Services | ~$1000 (Record Player bundle) | Medium | HIGH |
-| 4 | Best Innovation w/ Google Build With AI | Google Swag Duffle | Medium | HIGH |
-| 5 | Best Use of DigitalOcean | Retro Mouse | Low | HIGH |
-| 6 | Best Use of Gemini API (MLH) | Swag Kits | FREE (overlaps #4) | HIGH |
-| 7 | Best Use of [X] Data | ~$1500 (DJI Drone) | FREE (core project) | HIGH |
-
-**Bonus stretch challenges (if time permits):**
-- Most Innovative Idea ($200) — free to enter, just submit
-- Most Viral Idea ($300) — post demo videos/screenshots on social media during event
-- Best Use of ElevenLabs (Wireless Earbuds) — add voice narration to region explanations (~1hr)
+| # | Challenge | Prize | Why We Win | Priority |
+|---|-----------|-------|-----------|----------|
+| 1 | **Best Use of [X] Data** | ~$1500 (DJI Drone) | Core project — keystone identification and cascade analysis are novel derived intelligence from raw citizen science data | PRIMARY |
+| 2 | **Best Innovation w/ Google Build With AI** | Google Swag Duffle | Gemini generates conservation risk reports from structured cascade + decline data — not generic summaries, actionable recommendations | PRIMARY |
+| 3 | Best Use of Gemini API (MLH) | Swag Kits | Overlaps #2 — same Gemini integration | BONUS |
 
 **What to say to each challenge judge:**
 
 | Challenge | Key talking point |
 |-----------|-------------------|
-| Databricks | "We used Databricks for the full data engineering pipeline — ingestion, cleaning, Shannon diversity index computation, and export to S3. PySpark let us process thousands of observations efficiently." |
-| Snowflake | "Snowflake serves as our analytical data warehouse. We use external stages to read from S3, and built SQL views for regional rankings, temporal trends, and decline detection — powering all our API queries." |
-| AWS | "Our entire backend runs on AWS — S3 for data lake storage, Lambda for serverless API endpoints, and API Gateway for routing. Zero servers to manage, scales automatically." |
-| Google Build With AI | "Gemini powers our 'Explain This Region' feature — it receives biodiversity metrics as structured context and generates plain-English ecological analysis. We use Gemini 2.0 Flash for speed." |
-| DigitalOcean | "Our Next.js frontend is deployed on DigitalOcean App Platform with automatic deployments from GitHub. Simple, reliable hosting." |
-| Gemini API (MLH) | Same as Google Build With AI — emphasize the prompt engineering and contextual data injection |
-| Best Use of Data | "We transform raw citizen science observations from iNaturalist into a structured biodiversity intelligence platform — computing Shannon diversity indices, tracking species trends, and identifying at-risk regions." |
+| Best Use of Data | "We didn't just visualize iNaturalist data — we derived new intelligence from it. Our cascade impact algorithm identifies keystone species by simulating removal and measuring ecosystem collapse. Cross-referencing with decline trends produces conservation priority rankings that didn't exist in the raw data." |
+| Google Build With AI | "Gemini generates zone-specific conservation reports using structured data: keystone scores, cascade impact percentages, decline trends, and trophic gap analysis. It produces actionable recommendations, not generic summaries — e.g., 'Monarch butterfly is a keystone pollinator declining 30% YoY in La Jolla; loss would cascade to 12 dependent species.'" |
+| Gemini API (MLH) | Same as above — emphasize the structured data injection and conservation-specific prompt engineering |
+
+---
+
+## Cascade Rebuild — 3-Terminal Build Plan
+
+### Terminal 1: Data Pipeline (`scripts/process_data.py`)
+**Goal:** Compute keystone scores and zone-aware dependency graphs.
+
+Changes to `process_data.py`:
+- For each species in `dependency_nodes`, simulate its removal: run BFS cascade through `dependency_edges`, count how many species collapse. Store as `keystone_score` (0.0–1.0 = fraction of ecosystem lost) on each node.
+- Add `decline_trend` to each node: YoY observation change from zone data.
+- Build per-zone dependency subgraphs: for each zone, filter `dependency_nodes` and `dependency_edges` to species present in that zone. Store as `zone_dependency_graphs: Record<zone_id, { nodes: [...], edges: [...] }>`.
+- Export new `KEYSTONE_RANKINGS` array: top species sorted by keystone_score, with fields: `id, common_name, keystone_score, decline_trend, cascade_victims: string[], zones_present: number`.
+- Regenerate `frontend/src/lib/speciesData.ts` with all new fields.
+
+**Output:** Updated `speciesData.ts` with `KEYSTONE_RANKINGS`, per-node `keystone_score`/`decline_trend`, and `ZONE_DEPENDENCY_GRAPHS`.
+
+### Terminal 2: Cascade Visualization (`frontend/src/components/charts/CascadeGraph.tsx`)
+**Goal:** Rewrite the cascade graph to be zone-aware, visually rich, and informative.
+
+Changes to `CascadeGraph.tsx`:
+- Accept optional `zone?: Zone` prop. When set, render that zone's subgraph from `ZONE_DEPENDENCY_GRAPHS[zone.id]`; when unset, render the global graph.
+- Color-code edges by relationship type: green (#34d399) = food source, pink (#f472b6) = pollination, orange (#fb923c) = prey, purple (#a78bfa) = nutrient cycling.
+- Use curved SVG `<path>` (quadratic bezier) instead of `<line>` for edges.
+- Animated cascade: when hovering a node, propagate the red highlight with `setTimeout` delays (150ms per trophic level) so the cascade visually ripples.
+- Add a side info panel (absolute positioned div) on node click showing: species name, common name, observation count, zone count, keystone score, decline trend (with red/green arrow), and cascade impact ("Removing this species collapses X% of the food web").
+- Highlight keystone species (top 3 by score) with a gold ring and small crown/star icon.
+- Flag declining species (negative trend) with a pulsing red outline.
+
+**Reads from:** `ZONE_DEPENDENCY_GRAPHS`, `DEPENDENCY_NODES` (with new `keystone_score`/`decline_trend` fields), `DEPENDENCY_EDGES`.
+
+### Terminal 3: Conservation Report (`frontend/src/components/ui/ConservationReport.tsx` + update `page.tsx`)
+**Goal:** Build a conservation priority report that surfaces keystone + decline analysis.
+
+New file `ConservationReport.tsx`:
+- Import `KEYSTONE_RANKINGS` from `speciesData.ts`.
+- Render a table of top 10 keystone species with columns: Rank, Species, Keystone Score (bar visual), Decline Trend (arrow + %), Cascade Impact (e.g., "14 species, 4 trophic levels"), Priority badge (Critical/High/Medium based on high keystone + negative trend).
+- For species that are both high-keystone AND declining, show a red "CRITICAL PRIORITY" badge.
+- Below the table, render narrative summaries: one line per critical species, e.g., "Loss of Monarch butterfly would collapse 14 species across 4 trophic levels. Currently declining 30% YoY."
+- Accept optional `zone?: Zone` prop to filter to that zone's keystones.
+- Style consistent with existing glass card pattern.
+
+Update `page.tsx`:
+- Import `ConservationReport`.
+- Add a new section after the cascade: `<SectionHeader title="Conservation Priority Report" subtitle="Keystone species ranked by ecosystem impact and decline risk" />` followed by `<ConservationReport zone={selectedZone} />`.
 
 ---
 

@@ -93,7 +93,7 @@ export default function SpeciesDonutChart({ regions, onRegionClick }: Props) {
                 outerRadius={100}
                 dataKey="value"
                 onMouseEnter={(_, index) => setActiveIndex(index)}
-                onClick={(_, index) => onRegionClick(regions[index])}
+                onClick={(_, index) => { if (regions[index]) onRegionClick(regions[index]); }}
                 cursor="pointer"
                 animationDuration={1200}
                 animationEasing="ease-out"

@@ -28,9 +28,10 @@ function CustomTooltip({ active, payload, label }: any) {
   if (!active || !payload?.length) return null;
 
   const date = label as string;
-  const [year, month] = date.split("-");
+  const parts = date.split("-");
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  const formatted = `${monthNames[parseInt(month) - 1]} ${year}`;
+  const monthIdx = parts.length >= 2 ? parseInt(parts[1]) - 1 : -1;
+  const formatted = monthIdx >= 0 && monthIdx < 12 ? `${monthNames[monthIdx]} ${parts[0]}` : date;
 
   return (
     <div className="bg-gray-900/95 backdrop-blur-sm rounded-xl px-5 py-4 shadow-2xl border border-white/10 min-w-[180px]">
@@ -79,12 +80,14 @@ export default function TrendChart({
   const average = useMemo(() => {
     if (!showAverage || !data.length) return null;
     const vals = data.map((d: any) => d[displayKey]).filter(Boolean);
+    if (!vals.length) return null;
     return Math.round(vals.reduce((a: number, b: number) => a + b, 0) / vals.length);
   }, [data, displayKey, showAverage]);
 
   const stats = useMemo(() => {
     if (!data.length) return null;
     const vals = data.map((d: any) => d[displayKey]).filter(Boolean);
+    if (!vals.length) return null;
     const first = vals[0];
     const last = vals[vals.length - 1];
     const change = last - first;

@@ -44,8 +44,10 @@ export default function BiodiversityMap({ regions, onRegionClick, selectedRegion
       <MapContainer
         center={[39.5, -98.35]}
         zoom={4}
+        minZoom={3}
+        maxZoom={8}
         className="h-[500px] md:h-[600px] w-full rounded-2xl"
-        zoomControl={false}
+        zoomControl={true}
       >
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
