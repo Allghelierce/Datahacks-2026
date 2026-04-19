@@ -172,13 +172,12 @@ export default function Home() {
                  <h1 className="text-3xl font-bold tracking-tight text-white/80 fancy-brand">
                    bioscope
                  </h1>
-                 <p className="text-sm uppercase tracking-[0.25em] text-white/40">San Diego County</p>
                </div>
              </div>
 
             {/* Main prompt */}
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white/80 mb-4 leading-tight">
-              Enter a location. <span className="text-lg italic font-normal text-white/30">in SD</span>
+              Enter a location.
             </h2>
             <p className="text-base text-white/40 mb-8">
               Neighborhood, park, or trail — we map the species, food web, and risks.

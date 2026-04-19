@@ -1,50 +1,50 @@
 region,total_observations,unique_species,shannon_index,biodiversity_score
-Border Field,23,12,0,34.3
-Otay Mesa,607,83,0,61.0
-Otay Mountain,6826,204,0,71.0
-Tecate,996,111,0,64.2
-Campo,193,56,0,56.0
-Jacumba,82,22,0,47.0
-Mountain Empire,69,21,0,42.4
-Imperial Beach,99,24,0,52.7
-Chula Vista,4207,136,0,66.9
-Jamul,2485,177,0,74.5
-Alpine,1320,123,0,64.7
-Pine Valley,248,65,0,60.5
-Mount Laguna,134,37,0,49.9
-Anza-Borrego South,145,34,0,47.7
-Coronado,114,38,0,51.3
-National City,8825,186,0,71.6
-Spring Valley,4204,192,0,71.0
-El Cajon,1277,111,0,61.5
-Cuyamaca,435,70,0,58.0
-Julian,242,67,0,59.0
-Anza-Borrego Central,96,34,0,45.9
-Point Loma,133,43,0,55.5
-Downtown SD,10107,180,0,71.5
-Mission Valley,3640,134,0,68.2
-Santee,2342,110,0,65.1
-Ramona,542,85,0,61.5
-Santa Ysabel,763,77,0,59.0
-Borrego Springs,492,22,0,37.7
-Mission Bay,138,44,0,50.1
-Balboa Park,7290,196,0,72.2
-Mission Trails,1694,127,0,68.0
-Poway,540,90,0,64.9
-San Pasqual,803,96,0,62.5
-Palomar Mountain,1080,75,0,59.5
-Anza-Borrego North,1066,31,0,44.1
-La Jolla,40,24,0,45.9
-Miramar,2182,149,0,64.5
-Scripps Ranch,1688,102,0,62.9
-Rancho Bernardo,433,59,0,59.5
-Escondido,531,66,0,59.0
-Valley Center,492,54,0,61.8
-Palomar East,133,23,0,51.0
-Del Mar,849,110,0,64.0
-Carmel Valley,2606,172,0,70.8
-Rancho Santa Fe,897,98,0,62.0
-San Marcos,646,84,0,61.0
-Vista,691,87,0,64.0
-Fallbrook,2014,87,0,65.5
-Temecula Border,642,34,0,56.0
+Border Field,33,21,0,46.7
+Otay Mesa,925,289,0,65.8
+Otay Mountain,20072,1591,0,69.0
+Tecate,2807,691,0,72.5
+Campo,1167,434,0,63.5
+Jacumba,626,242,0,62.5
+Mountain Empire,507,194,0,57.9
+Imperial Beach,139,53,0,57.1
+Chula Vista,19910,1752,0,70.8
+Jamul,17193,1909,0,74.5
+Alpine,6334,1099,0,69.7
+Pine Valley,1432,485,0,70.7
+Mount Laguna,958,347,0,65.5
+Anza-Borrego South,841,277,0,62.5
+Coronado,163,76,0,54.9
+National City,43467,2677,0,73.2
+Spring Valley,33803,2481,0,71.5
+El Cajon,7760,1196,0,66.0
+Cuyamaca,1751,545,0,65.5
+Julian,1384,431,0,68.8
+Anza-Borrego Central,499,186,0,61.0
+Point Loma,247,113,0,61.5
+Downtown SD,63668,3521,0,75.8
+Mission Valley,21529,1810,0,76.1
+Santee,11753,1529,0,68.3
+Ramona,3386,792,0,66.5
+Santa Ysabel,4278,685,0,65.5
+Borrego Springs,1800,213,0,56.6
+Mission Bay,232,113,0,59.0
+Balboa Park,28922,2371,0,71.0
+Mission Trails,12868,1684,0,70.9
+Poway,3125,767,0,65.2
+San Pasqual,5323,867,0,66.0
+Palomar Mountain,3280,421,0,68.7
+Anza-Borrego North,1810,198,0,59.4
+La Jolla,112,75,0,62.0
+Miramar,16019,1774,0,66.5
+Scripps Ranch,13524,1587,0,70.7
+Rancho Bernardo,4292,748,0,63.0
+Escondido,7024,888,0,65.0
+Valley Center,2703,410,0,69.3
+Palomar East,427,115,0,59.5
+Del Mar,4574,935,0,69.1
+Carmel Valley,23345,2429,0,71.9
+Rancho Santa Fe,8440,1442,0,66.0
+San Marcos,5757,1153,0,67.5
+Vista,5113,737,0,67.5
+Fallbrook,14006,816,0,75.5
+Temecula Border,2675,298,0,73.7

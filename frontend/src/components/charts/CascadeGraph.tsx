@@ -1041,14 +1041,14 @@ export default function CascadeGraph({ zone, ecosystem, selectedLocation }: Prop
                     if (d > maxDist) maxDist = d;
                   }
                 }
-                const labelDist = cr + Math.max(maxDist, 80) + 30;
+                const labelDist = cr + Math.max(maxDist, 80) + 60;
                 const lx = dims.w / 2 + Math.cos(angle) * labelDist;
                 const ly = dims.h / 2 + Math.sin(angle) * labelDist;
                 const label = level.replace(/_/g, " ");
                 const color = LEVEL_COLORS[level] || "#666";
                 return (
                   <g key={`cluster-${level}`} pointerEvents="none">
-                    <text x={lx} y={ly + 4} fill={color} fontSize={11} opacity={0.35} textAnchor="middle" fontWeight="700" style={{ textTransform: "uppercase", letterSpacing: "0.15em" }}>{label}</text>
+                    <text x={lx} y={ly + 4} fill={color} fontSize={10} opacity={0.12} textAnchor="middle" fontWeight="600" style={{ textTransform: "uppercase", letterSpacing: "0.15em", paintOrder: "stroke", stroke: "rgba(6,10,7,0.8)", strokeWidth: 4 }}>{label}</text>
                   </g>
                 );
               })}
@@ -1309,7 +1309,7 @@ export default function CascadeGraph({ zone, ecosystem, selectedLocation }: Prop
             <div className="p-4">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" style={{ animation: aiLoading ? "pulse 1.5s infinite" : "none" }} />
-                <span className="text-[10px] uppercase tracking-wider text-emerald-400/70 font-medium">{aiLoading ? "Generating ecological assessment..." : "AI Ecological Assessment"}</span>
+                <span className="text-[10px] uppercase tracking-wider text-emerald-400/70 font-medium">{aiLoading ? "Generating ecological assessment..." : "snowflake assessment"}</span>
                 <span className="text-[9px] text-white/20 ml-auto">Snowflake Cortex AI · Gemini fallback</span>
               </div>
               {aiLoading ? <div className="flex gap-1">{[0, 1, 2].map((i) => <div key={i} className="h-2 rounded-full bg-white/5 animate-pulse" style={{ width: `${30 + i * 20}%`, animationDelay: `${i * 0.15}s` }} />)}</div> : <p className="text-sm text-white/60 leading-relaxed">{aiInterpretation}</p>}

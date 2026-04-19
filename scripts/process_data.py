@@ -32,6 +32,8 @@ TERTIARY_ORDERS = {"Lamniformes", "Carcharhiniformes", "Pelecaniformes", "Sulifo
 DEPENDENCY_CHAINS = [
     {"from": "producer", "to": "primary_consumer", "label": "food source"},
     {"from": "producer", "to": "pollinator", "label": "pollination"},
+    {"from": "producer", "to": "secondary_consumer", "label": "food source"},
+    {"from": "producer", "to": "tertiary_consumer", "label": "food source"},
     {"from": "primary_consumer", "to": "secondary_consumer", "label": "prey"},
     {"from": "primary_consumer", "to": "tertiary_consumer", "label": "prey"},
     {"from": "pollinator", "to": "secondary_consumer", "label": "prey"},
@@ -40,6 +42,7 @@ DEPENDENCY_CHAINS = [
     {"from": "secondary_consumer", "to": "apex_predator", "label": "prey"},
     {"from": "tertiary_consumer", "to": "apex_predator", "label": "prey"},
     {"from": "decomposer", "to": "producer", "label": "nutrient cycling"},
+    {"from": "producer", "to": "decomposer", "label": "food source"},
 ]
 
 LAT_MIN, LAT_MAX = 32.53, 33.22
@@ -183,16 +186,13 @@ for (r, c), name in ZONE_NAMES.items():
 
 import glob
 
-csv_files = glob.glob(os.path.join(INPUT_DIR, "*.csv"))
-# Also check for nested CSV dirs (like observations-711984.csv/)
-for entry in glob.glob("observations-*.csv"):
-    nested = glob.glob(os.path.join(entry, "*.csv"))
-    csv_files.extend(nested)
+csv_files = [os.path.join(INPUT_DIR, "threatened_species.csv")]
 
 rows = []
 seen_ids = set()
-for csv_file in csv_files:
-    print(f"Reading {csv_file}...")
+for csv_file in sorted(csv_files):
+    count_before = len(rows)
+    print(f"Reading {csv_file}...", flush=True)
     with open(csv_file) as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -202,8 +202,9 @@ for csv_file in csv_files:
             if obs_id:
                 seen_ids.add(obs_id)
             rows.append(row)
+    print(f"  → {len(rows) - count_before} new rows (total: {len(rows)})", flush=True)
 
-print(f"Loaded {len(rows)} observations from {len(csv_files)} files ({len(seen_ids)} unique IDs)")
+print(f"Loaded {len(rows)} observations from {len(csv_files)} files ({len(seen_ids)} unique IDs)", flush=True)
 
 def get_zone(lat, lng):
     r = int((lat - LAT_MIN) / (LAT_MAX - LAT_MIN) * GRID_ROWS)
@@ -408,8 +409,8 @@ for (r, c), data in sorted(zones.items()):
 dependency_nodes = []
 dependency_edges = []
 
-# Ensure minimum representation from each trophic level
-MIN_PER_LEVEL = 5
+GRAPH_CAP = 500
+MIN_PER_LEVEL = 40
 all_by_level = defaultdict(list)
 for sp in all_species.values():
     all_by_level[sp["trophic_level"]].append(sp)
@@ -417,14 +418,21 @@ for level in all_by_level:
     all_by_level[level].sort(key=lambda s: species_observations[s["scientific_name"]], reverse=True)
 
 top_species_set = set()
-# First, guarantee minimum per level
+# Guarantee balanced trophic representation
 for level, sps in all_by_level.items():
     for sp in sps[:MIN_PER_LEVEL]:
         top_species_set.add(sp["scientific_name"])
-# Include ALL species — we have 505, enough for rich ecosystem variation
+# Fill remaining slots by observation count
 all_sorted = sorted(all_species.values(), key=lambda s: species_observations[s["scientific_name"]], reverse=True)
 for sp in all_sorted:
+    if len(top_species_set) >= GRAPH_CAP:
+        break
     top_species_set.add(sp["scientific_name"])
+
+print(f"\nGraph species cap: {len(top_species_set)} (from {len(all_species)} total)", flush=True)
+for level in sorted(all_by_level.keys()):
+    count = sum(1 for sid in top_species_set if all_species[sid]["trophic_level"] == level)
+    print(f"  {level}: {count}", flush=True)
 
 top_species = [all_species[sid] for sid in top_species_set]
 top_species.sort(key=lambda s: species_observations[s["scientific_name"]], reverse=True)
@@ -497,9 +505,9 @@ def query_globi(taxon_name, cache):
             data = json.loads(resp.read().decode())
         interactions = []
         for row in data.get("data", []):
-            if len(row) >= 4:
-                interaction_type = row[1] if len(row) > 1 else ""
-                target_name = row[2] if len(row) > 2 else ""
+            if len(row) >= 12:
+                interaction_type = row[9] or ""
+                target_name = row[11] or ""
                 if target_name and interaction_type:
                     interactions.append({
                         "target": target_name,
@@ -512,22 +520,21 @@ def query_globi(taxon_name, cache):
         cache[taxon_name] = []
         return []
 
-print("\n─── Fetching GloBI interactions ───")
+print("\n─── Fetching GloBI interactions ───", flush=True)
 globi_cache = load_globi_cache()
 cached_count = sum(1 for sid in top_species_ids if sid in globi_cache)
 to_fetch = [sid for sid in top_species_ids if sid not in globi_cache]
-print(f"  {cached_count} cached, {len(to_fetch)} to fetch")
+print(f"  {cached_count} cached, {len(to_fetch)} to fetch", flush=True)
 
 globi_edges = []
 globi_species_with_edges = set()
 
 for i, sid in enumerate(to_fetch):
-    if i > 0 and i % 10 == 0:
-        print(f"  Fetched {i}/{len(to_fetch)}...")
-    interactions = query_globi(sid, globi_cache)
-    if i % 50 == 0:
+    if i > 0 and i % 100 == 0:
+        print(f"  Fetched {i}/{len(to_fetch)}...", flush=True)
         save_globi_cache(globi_cache)
-    _time.sleep(0.15)
+    interactions = query_globi(sid, globi_cache)
+    _time.sleep(0.1)
 
 save_globi_cache(globi_cache)
 
