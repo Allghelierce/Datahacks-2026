@@ -28,14 +28,14 @@ Core features: cascade removal simulation, decline-linked risk flagging, zone-aw
 
 ## Snowflake
 - Account: otipiuk-tmb54945
-- Database: BIOSCOPE, table: threatened_species (77K rows)
+- Database: BIOSCOPE, table: threatened_species (432K rows)
 - Views: zone_biodiversity, species_rankings, yearly_trends, taxonomic_breakdown
 - Cortex AI confirmed working (mistral-7b, mistral-large)
 - Custom function: `analyze_species(name)` for AI ecological assessments
 
 ## Key Data
 - 60 threatened species tracked across 49 zones in San Diego County
-- 77K iNaturalist observations loaded in Snowflake
+- 432K iNaturalist observations loaded in Snowflake
 - Species photos from iNaturalist in `speciesPhotos.ts`
 - Ecosystem index with 8 ecosystem types, keyword search, Gemini-powered location matching
 
@@ -49,7 +49,7 @@ Core features: cascade removal simulation, decline-linked risk flagging, zone-aw
 ## Judge Talking Points
 - **Data challenge:** "We derived new intelligence — cascade impact algorithm simulates species removal and measures ecosystem collapse."
 - **Gemini challenge:** "Structured data injection, not generic summaries. Keystone scores, cascade impacts, decline trends → actionable recommendations."
-- **Snowflake challenge:** "Cortex AI runs ecological analysis inside the warehouse — no external API needed. 77K observations with analytical views."
+- **Snowflake challenge:** "Cortex AI runs ecological analysis inside the warehouse — no external API needed. 432K observations with analytical views."
 
 ## Env Vars
 ```

@@ -137,6 +137,7 @@ export default function CascadeGraph({ zone, ecosystem, selectedLocation }: Prop
   const [dims, setDims] = useState({ w: 900, h: 600 });
   const [simNodes, setSimNodes] = useState<SimNode[]>([]);
   const [simLinks, setSimLinks] = useState<SimLink[]>([]);
+  const [clusterPositions, setClusterPositions] = useState<{ level: string; x: number; y: number }[]>([]);
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const hoverTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const setHoveredThrottled = useCallback((id: string | null) => {
@@ -362,6 +363,8 @@ export default function CascadeGraph({ zone, ecosystem, selectedLocation }: Prop
       setRemovedNodes((prev) => { const next = new Set(prev); accumulated.forEach((v) => next.add(v)); return next; });
       setAnimatedVictims(new Set());
       setCascadeAnimating(false);
+      setSelectedNode(null);
+      setHoveredNode(null);
       const removedNode = graphNodes.find((n) => n.id === removedId);
       const victimList = Array.from(accumulated).filter((vid) => vid !== removedId).map((vid) => graphNodes.find((n) => n.id === vid)).filter(Boolean) as GraphNode[];
       if (removedNode) generateInterpretation(removedNode, victimList, accumulated.size, graphNodes.length);
@@ -730,20 +733,34 @@ export default function CascadeGraph({ zone, ecosystem, selectedLocation }: Prop
     const sLinks: SimLink[] = graphEdges.filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target)).map((e) => ({ source: nodeMap.get(e.source)!, target: nodeMap.get(e.target)!, edgeType: e.type })).filter((l) => l.source && l.target);
     
     const trophicGroups = Object.keys(TROPHIC_LAYERS);
-    const clusterRadius = Math.min(dims.w, dims.h) * 0.42;
+    const groupCounts: Record<string, number> = {};
+    sNodes.forEach((n) => { groupCounts[n.data.trophic_level] = (groupCounts[n.data.trophic_level] || 0) + 1; });
+
+    const baseR = Math.max(dims.w, dims.h) * 0.42;
     const clusterCenters: Record<string, { x: number; y: number }> = {};
-    trophicGroups.forEach((g, i) => {
-      const angle = (2 * Math.PI * i) / trophicGroups.length - Math.PI / 2;
-      clusterCenters[g] = { x: dims.w / 2 + Math.cos(angle) * clusterRadius, y: dims.h / 2 + Math.sin(angle) * clusterRadius };
+    let cumAngle = -Math.PI / 2;
+    const totalNodes = sNodes.length || 1;
+    trophicGroups.forEach((g) => {
+      const frac = (groupCounts[g] || 1) / totalNodes;
+      const arcLen = frac * 2 * Math.PI;
+      const angle = cumAngle + arcLen / 2;
+      clusterCenters[g] = { x: dims.w / 2 + Math.cos(angle) * baseR, y: dims.h / 2 + Math.sin(angle) * baseR };
+      cumAngle += arcLen;
+    });
+    setClusterPositions(trophicGroups.map((g) => ({ level: g, x: clusterCenters[g].x, y: clusterCenters[g].y })));
+
+    sNodes.forEach((n) => {
+      const c = clusterCenters[n.data.trophic_level];
+      if (c) { n.x = c.x + (Math.random() - 0.5) * 60; n.y = c.y + (Math.random() - 0.5) * 60; }
     });
 
     const sim = forceSimulation<SimNode>(sNodes)
-      .force("link", forceLink<SimNode, SimLink>(sLinks).id((d) => d.data.id).distance(40).strength(0.02))
-      .force("charge", forceManyBody<SimNode>().strength(-100).distanceMax(180))
-      .force("collide", forceCollide<SimNode>().radius((d) => d.radius + 8).strength(1.0).iterations(4))
-      .force("x", forceX<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { x: dims.w / 2 }).x).strength(0.6))
-      .force("y", forceY<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { y: dims.h / 2 }).y).strength(0.6))
-      .alphaDecay(0.03).velocityDecay(0.4);
+      .force("link", forceLink<SimNode, SimLink>(sLinks).id((d) => d.data.id).distance(30).strength(0.005))
+      .force("charge", forceManyBody<SimNode>().strength(-8).distanceMax(50))
+      .force("collide", forceCollide<SimNode>().radius((d) => d.radius + 8).strength(0.8).iterations(2))
+      .force("x", forceX<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { x: dims.w / 2 }).x).strength(1.5))
+      .force("y", forceY<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { y: dims.h / 2 }).y).strength(1.5))
+      .alphaDecay(0.06).velocityDecay(0.6);
 
     const drag = d3Drag<any, SimNode>()
       .on("start", (event, d) => {
@@ -1027,28 +1044,12 @@ export default function CascadeGraph({ zone, ecosystem, selectedLocation }: Prop
             <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="0.4" fill="rgba(110,231,183,0.06)" /></pattern>
             <rect width={dims.w} height={dims.h} fill="url(#dot-grid)" pointerEvents="none" />
             <g ref={gRef} transform={transform.toString()}>
-              {Object.keys(TROPHIC_LAYERS).map((level, i) => {
-                const trophicKeys = Object.keys(TROPHIC_LAYERS);
-                const angle = (2 * Math.PI * i) / trophicKeys.length - Math.PI / 2;
-                const cr = Math.min(dims.w, dims.h) * 0.42;
-                const cx = dims.w / 2 + Math.cos(angle) * cr;
-                const cy = dims.h / 2 + Math.sin(angle) * cr;
-                const groupNodes = simNodes.filter((n) => n.data.trophic_level === level);
-                let maxDist = 0;
-                for (const n of groupNodes) {
-                  if (n.x != null && n.y != null) {
-                    const d = Math.sqrt((n.x - cx) ** 2 + (n.y - cy) ** 2) + n.radius;
-                    if (d > maxDist) maxDist = d;
-                  }
-                }
-                const labelDist = cr + Math.max(maxDist, 80) + 60;
-                const lx = dims.w / 2 + Math.cos(angle) * labelDist;
-                const ly = dims.h / 2 + Math.sin(angle) * labelDist;
+              {clusterPositions.map(({ level, x, y }) => {
                 const label = level.replace(/_/g, " ");
                 const color = LEVEL_COLORS[level] || "#666";
                 return (
                   <g key={`cluster-${level}`} pointerEvents="none">
-                    <text x={lx} y={ly + 4} fill={color} fontSize={10} opacity={0.12} textAnchor="middle" fontWeight="600" style={{ textTransform: "uppercase", letterSpacing: "0.15em", paintOrder: "stroke", stroke: "rgba(6,10,7,0.8)", strokeWidth: 4 }}>{label}</text>
+                    <text x={x} y={y} fill={color} fontSize={13} opacity={0.6} textAnchor="middle" dominantBaseline="central" fontWeight="800" style={{ textTransform: "uppercase", letterSpacing: "0.15em" }}>{label}</text>
                   </g>
                 );
               })}

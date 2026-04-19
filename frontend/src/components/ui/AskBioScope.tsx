@@ -101,7 +101,7 @@ export default function AskBioScope() {
       )}
 
       <div className="mt-3 text-[8px] text-white/8 font-mono">
-        powered by snowflake cortex ai &middot; queries 77k observations in real time
+        powered by snowflake cortex ai &middot; queries 432k observations in real time
       </div>
     </div>
   );

@@ -316,7 +316,7 @@ export default function Home() {
           <SectionHeader
             id="ask"
             title="Ask BioScope"
-            subtitle="Query 77K observations with Snowflake Cortex AI"
+            subtitle="Query 432K observations with Snowflake Cortex AI"
           />
           <AskBioScope />
         </section>

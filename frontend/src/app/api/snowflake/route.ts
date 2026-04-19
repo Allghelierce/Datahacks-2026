@@ -91,7 +91,7 @@ export async function GET(req: NextRequest) {
           SELECT SNOWFLAKE.CORTEX.COMPLETE('mistral-large',
             CONCAT(
               'You are BioScope, a biodiversity intelligence system for San Diego County. ',
-              'You have access to 77,000 iNaturalist observations of threatened species across 49 ecological zones. ',
+              'You have access to 432,000 iNaturalist observations of threatened species across 49 ecological zones. ',
               'Key data: species include Torrey Pine, Brown Pelican, Monarch Butterfly, Red Diamond Rattlesnake, and 56 others. ',
               'Zones span from Pacific Coast tidepools to Anza-Borrego Desert. ',
               'Answer this question concisely (2-3 sentences): ${safeQ}'
