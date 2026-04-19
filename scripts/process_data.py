@@ -455,7 +455,12 @@ for node in dependency_nodes:
 # ─── GloBI: fetch real species interactions ───
 import urllib.request
 import urllib.parse
+import ssl
 import time as _time
+
+_ssl_ctx = ssl.create_default_context()
+_ssl_ctx.check_hostname = False
+_ssl_ctx.verify_mode = ssl.CERT_NONE
 
 GLOBI_CACHE_FILE = "data/globi_cache.json"
 GLOBI_INTERACTION_MAP = {
@@ -488,7 +493,7 @@ def query_globi(taxon_name, cache):
     url = f"https://api.globalbioticinteractions.org/interaction?sourceTaxon={encoded}&type=json&limit=50"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "BioScope/1.0"})
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        with urllib.request.urlopen(req, timeout=10, context=_ssl_ctx) as resp:
             data = json.loads(resp.read().decode())
         interactions = []
         for row in data.get("data", []):
