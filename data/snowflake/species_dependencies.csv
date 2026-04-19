@@ -1,24 +1,623 @@
 source,target,relationship_type,strength
+Stereum hirsutum,Quercus,food source,0.91
+Anthopleura elegantissima,Chlorophyta,food source,0.35
+Anthopleura elegantissima,Actinopterygii,food source,0.38
+Anthopleura elegantissima,Arthropoda,food source,0.3
+Atriplex prostrata,Bromus diandrus,food source,0.46
+Melaleuca nesophila,Bombus sonorus,pollination,0.92
+Salsola,Portulaca oleracea,food source,0.79
+Salsola,Lepus californicus,food source,0.58
+Avena barbata,Bromus diandrus,food source,0.97
+Avena barbata,Urtica urens,food source,1.0
+Avena barbata,Capsella bursa-pastoris,food source,1.0
+Panoquina errans,Salicornia,food source,0.9
+Lanius ludovicianus,Uta stansburiana elegans,food source,0.71
+Lanius ludovicianus,Tamarix ramosissima,food source,0.76
+Anthopleura,Pagurus samuelis,food source,0.6
+Anthopleura,Strongylocentrotus purpuratus,food source,0.7
+Anthopleura,Pachygrapsus crassipes,food source,0.47
+Anthopleura,Panulirus interruptus,food source,0.58
+Anthopleura,Pugettia producta,food source,0.78
+Anthopleura,Anthopleura sola,food source,0.54
+Anthopleura,Tivela stultorum,prey,0.5
+Pachygrapsus crassipes,Strongylocentrotus purpuratus,food source,0.9
+Avena,Polypogon monspeliensis,food source,0.75
+Avena,Centaurea melitensis,food source,0.79
+Avena,Malva parviflora,food source,0.85
+Avena,Cynara cardunculus,food source,0.9
+Avena,Glebionis coronaria,food source,0.83
+Avena,Malva,food source,0.88
+Avena,Cryptantha,food source,0.68
+Melilotus indicus,Bromus hordeaceus,food source,1.0
+Melilotus indicus,Avena barbata,food source,0.97
+Anas platyrhynchos domesticus,Trachemys scripta,food source,0.77
+Anas platyrhynchos domesticus,Nycticorax nycticorax,food source,0.74
+Anas platyrhynchos domesticus,Trachemys scripta elegans,food source,0.73
+Cylindropuntia fosbergii,Cylindropuntia ganderi ganderi,food source,0.64
+Psittacara erythrogenys,Eucalyptus,food source,0.57
+Oloptum miliaceum,Avena,food source,0.71
+Oloptum miliaceum,Bromus,food source,0.69
+Agrocybe pediades,Poaceae,food source,0.87
+Pagurus samuelis,Phragmatopoma californica,food source,0.75
+Pagurus samuelis,Pagurus venturensis,food source,0.86
+Pagurus samuelis,Pachygrapsus crassipes,food source,0.53
+Pagurus samuelis,Anthopleura sola,food source,0.62
+Bombus sonorus,Limonium perezii,food source,0.71
+Bombus sonorus,Mesembryanthemum crystallinum,food source,0.67
+Bombus sonorus,Carpobrotus edulis,food source,0.63
+Bombus sonorus,Liliopsida,food source,0.32
+Bombus sonorus,Tropaeolum majus,food source,0.71
+Bombus sonorus,Magnoliopsida,food source,0.3
+Bombus sonorus,Malacothamnus,food source,0.4
+Bombus sonorus,Melilotus albus,food source,0.44
+Bombus sonorus,Astragalus,food source,0.31
+Bombus sonorus,Salvia,food source,0.35
+Allium haematochiton,Avena,food source,0.61
+Allium haematochiton,Bromus,food source,0.5
+Euphorbia maculata,Amaranthus albus,food source,0.86
+Euphorbia maculata,Tribulus terrestris,food source,0.8
+Euphorbia maculata,Capsella bursa-pastoris,food source,0.89
+Panulirus interruptus,Haliotis rufescens,food source,0.5
+Panulirus interruptus,Phragmatopoma californica,food source,1.0
+Panulirus interruptus,Strongylocentrotus purpuratus,food source,0.9
+Panulirus interruptus,Actinopterygii,food source,0.52
+Panulirus interruptus,Animalia,food source,0.32
+Panulirus interruptus,Chlorophyta,food source,0.48
+Bromus diandrus,Torilis arvensis,food source,1.0
+Bromus diandrus,Avena barbata,food source,0.94
+Plantago major,Convolvulus arvensis,food source,0.89
+Elgaria multicarinata,Masticophis lateralis,food source,0.82
+Crotalus oreganus helleri,Neotoma macrotis,food source,0.94
+Crotalus oreganus helleri,Uta stansburiana elegans,food source,0.88
+Crotalus oreganus helleri,Otospermophilus beecheyi,food source,0.93
+Crotalus oreganus helleri,Lampropeltis californiae,food source,0.97
+Crotalus oreganus helleri,Sylvilagus audubonii,food source,0.93
+Crotalus oreganus helleri,Megascapheus bottae,food source,0.9
+Crotalus oreganus helleri,Sceloporus orcutti,food source,0.97
+Crotalus oreganus helleri,Sceloporus occidentalis longipes,food source,0.94
+Crotalus oreganus helleri,Sceloporus occidentalis,food source,0.95
+Crotalus oreganus helleri,Sylvilagus,food source,0.93
+Crotalus oreganus helleri,Neotoma,food source,0.89
+Crotalus oreganus helleri,Mammalia,food source,0.93
+Crotalus oreganus helleri,Uta stansburiana,food source,0.88
+Pollicipes polymerus,Phragmatopoma californica,food source,1.0
+Xerocomellus dryophilus,Quercus,food source,0.81
+Charadrius vociferus,Poaceae,food source,0.64
+Charadrius vociferus,Trifolium repens,food source,0.88
+Charadrius vociferus,Canis latrans,food source,0.58
+Charadrius vociferus,Otospermophilus beecheyi,food source,0.63
+Charadrius vociferus,Didelphis virginiana,food source,0.77
+Charadrius vociferus,Calidris minutilla,food source,1.0
+Charadrius vociferus,Procyon lotor,food source,0.74
+Charadrius vociferus,Mephitis mephitis,food source,0.67
+Foeniculum vulgare,Malva parviflora,food source,0.81
+Camissoniopsis,Logfia gallica,food source,1.0
+Camissoniopsis,Cryptantha,food source,0.93
+Camissoniopsis,Silene gallica,food source,1.0
+Camissoniopsis,Bromus,food source,0.97
+Camissoniopsis,Erodium cicutarium,food source,0.93
+Camissoniopsis,Bromus hordeaceus,food source,1.0
+Lamarckia aurea,Bromus rubens,food source,0.76
+Lamarckia aurea,Avena fatua,food source,0.9
+Lamarckia aurea,Quercus dumosa,food source,0.82
+Lamarckia aurea,Bromus,food source,0.81
+Lamarckia aurea,Avena,food source,0.86
+Myoporum laetum,Crassula ovata,food source,0.88
+Schinus molle,Ganoderma polychromum,food source,0.71
+Rumex crispus,Polypogon monspeliensis,food source,0.83
+Rumex crispus,Apium graveolens,food source,0.85
+Rumex crispus,Bombus crotchii,food source,0.93
+Collybia nuda,Quercus,food source,0.62
+Mephitis mephitis,Agelaius tricolor,food source,0.84
+Mephitis mephitis,Charadrius vociferus,food source,0.86
+Mephitis mephitis,Trachemys scripta,food source,0.86
+Gymnopilus,Bryophyta,food source,0.67
+Gymnopilus,Quercus,food source,0.75
+Cotula australis,Tribulus terrestris,food source,0.67
+Cotula australis,Marrubium vulgare,food source,0.71
+Cotula australis,Amsinckia,food source,0.61
+Bolbitius titubans,Poaceae,food source,0.62
+Fungi,Quercus,parasitism,0.97
+Elgaria multicarinata webbii,Sceloporus occidentalis,prey,0.79
+Elgaria multicarinata webbii,Armadillidium vulgare,prey,0.94
+Pugettia producta,Chlorophyta,food source,0.39
+Urtica urens,Malva parviflora,food source,0.88
+Urtica urens,Tribulus terrestris,food source,0.77
+Urtica urens,Hypochaeris glabra,food source,0.79
+Mammalia,Lynx rufus,food source,0.93
+Masticophis lateralis,Sceloporus occidentalis,prey,0.76
+Masticophis lateralis,Uta stansburiana,prey,0.76
+Masticophis lateralis,Elgaria multicarinata,prey,0.84
+Masticophis lateralis,Elgaria multicarinata,food source,0.84
+Masticophis lateralis,Sceloporus occidentalis,food source,0.76
+Masticophis lateralis,Plestiodon skiltonianus,prey,0.91
+Masticophis lateralis,Sceloporus orcutti,prey,0.88
+Ricinus communis,Cirsium vulgare,food source,0.62
+Ricinus communis,Tribulus terrestris,food source,0.6
+Parmelioideae,Xanthoparmelia,parasitism,0.85
+Phoca vitulina,Carnivora,food source,0.3
+Phoca vitulina,Canis latrans,food source,0.3
+Carpobrotus chilensis,Carpobrotus edulis,food source,0.84
+Ovis canadensis,Lepus californicus,food source,0.35
+Ovis canadensis,Ovis canadensis nelsoni,food source,0.92
+Ovis canadensis,Canis latrans,food source,0.3
+Ovis canadensis,Puma concolor,food source,0.3
+Canis latrans,Poales,food source,1.0
+Buteo swainsoni,Charadrius vociferus,food source,0.32
+Buteo swainsoni,Eucalyptus,food source,0.33
+Buteo swainsoni,Canis latrans,food source,0.3
+Buteo swainsoni,Mephitis mephitis,food source,0.3
+Buteo swainsoni,Lepus californicus,food source,0.3
+Buteo swainsoni,Mammalia,food source,0.3
+Cupaniopsis anacardioides,Laetiporus gilbertsonii,food source,0.68
+Pituophis catenifer,Elgaria multicarinata,food source,0.97
+Pituophis catenifer,Sylvilagus audubonii,food source,0.93
+Pituophis catenifer,Urocyon cinereoargenteus,food source,0.95
+Pituophis catenifer,Canis latrans,food source,0.91
+Lamium amplexicaule,Senecio vulgaris,food source,0.9
+Lamium amplexicaule,Convolvulus arvensis,food source,0.85
+Lamium amplexicaule,Erodium cicutarium,food source,0.69
+Avena fatua,Bromus rubens,food source,0.76
+Avena fatua,Bromus diandrus,food source,0.83
+Avena fatua,Bromus hordeaceus,food source,0.9
+Avena fatua,Vicia villosa,food source,0.87
+Avena fatua,Melilotus albus,food source,0.85
+Avena fatua,Erodium botrys,food source,0.86
+Psathyrellaceae,Rhamnus,food source,0.89
+Dichondra occidentalis,Quercus,food source,0.41
+Emerita analoga,Actinopterygii,food source,0.52
+Xylorhiza orcuttii,Apodemia virgulti,pollination,0.3
+Bromus rubens,Bromus diandrus,food source,1.0
+Bromus rubens,Torilis arvensis,food source,1.0
+Bromus rubens,Bromus hordeaceus,food source,1.0
+Bromus rubens,Avena barbata,food source,1.0
+Bromus rubens,Malva,food source,1.0
+Bromus rubens,Erodium botrys,food source,1.0
+Bromus rubens,Silene gallica,food source,1.0
+Bromus rubens,Oxalis corniculata,food source,0.95
+Leptosyne maritima,Apodemia virgulti,food source,0.39
+Leptosyne maritima,Apodemia virgulti,pollination,0.39
+Lactuca serriola,Ehrharta erecta,food source,0.94
+Lactuca serriola,Malva parviflora,food source,0.96
+Washingtonia robusta,Calypte costae,food source,0.61
+Washingtonia robusta,Passer domesticus,food source,0.71
+Portulaca oleracea,Cirsium vulgare,food source,0.81
+Portulaca oleracea,Tribulus terrestris,food source,0.87
+Colias harfordii,Astragalus,food source,0.5
+Colias harfordii,Trifolium hirtum,food source,0.45
+Colias harfordii,Astragalus,parasitism,0.5
+Contumyces rosellus,Poaceae,food source,0.62
+Contumyces rosellus,Festuca myuros,food source,0.72
+Contumyces rosellus,Bryophyta,food source,0.62
+Contumyces rosellus,Quercus,food source,0.69
+Contumyces rosellus,Erodium moschatum,food source,0.88
+Zalophus californianus,Phoca vitulina richardii,food source,1.0
+Zalophus californianus,Larus heermanni,food source,0.93
+Zalophus californianus,Pelecanus occidentalis,food source,0.7
+Zalophus californianus,Delphinus delphis,food source,0.92
+Zalophus californianus,Tursiops truncatus,food source,0.9
+Zalophus californianus,Haliaeetus leucocephalus,food source,0.3
+Calypte costae,Parkinsonia aculeata,food source,0.85
+Calypte costae,Agave americana,food source,0.95
+Calypte costae,Tamarix ramosissima,food source,0.86
+Agaricus,Poaceae,food source,0.82
+Pisaster giganteus,Haliotis rufescens,food source,0.5
+Pisaster giganteus,Phragmatopoma californica,food source,0.75
+Trachemys scripta elegans,Poaceae,food source,0.62
+Trachemys scripta elegans,Felis catus,food source,0.81
+Trachemys scripta elegans,Haliaeetus leucocephalus,food source,0.81
+Stellaria media,Vinca major,food source,0.93
+Tetraclita rubescens,Chthamalus dalli,food source,1.0
+Tamarix ramosissima,Poales,food source,0.88
+Salicornia,Cotula coronopifolia,food source,0.45
+Salicornia,Galium aparine,food source,0.3
+Otospermophilus beecheyi,Megascapheus bottae,food source,0.95
+Otospermophilus beecheyi,Sceloporus occidentalis longipes,food source,1.0
+Otospermophilus beecheyi,Strongylocentrotus purpuratus,food source,1.0
+Otospermophilus beecheyi,Lysimachia arvensis,food source,1.0
+Otospermophilus beecheyi,Carpobrotus edulis,food source,1.0
+Otospermophilus beecheyi,Crotalus oreganus helleri,food source,0.95
+Otospermophilus beecheyi,Bromus diandrus,food source,1.0
+Otospermophilus beecheyi,Cylindropuntia,food source,0.87
+Otospermophilus beecheyi,Poaceae,food source,0.95
+Otospermophilus beecheyi,Nicotiana glauca,food source,1.0
+Otospermophilus beecheyi,Hirschfeldia incana,food source,0.97
+Otospermophilus beecheyi,Sciurus niger,food source,1.0
+Otospermophilus beecheyi,Lepus californicus,food source,0.87
+Otospermophilus beecheyi,Sylvilagus bachmani,food source,1.0
+Otospermophilus beecheyi,Sylvilagus audubonii,food source,0.95
+Otospermophilus beecheyi,Felis catus,food source,1.0
+Otospermophilus beecheyi,Canis latrans,food source,0.93
+Otospermophilus beecheyi,Magnoliopsida,food source,0.89
+Otospermophilus beecheyi,Urocyon cinereoargenteus,food source,0.97
+Otospermophilus beecheyi,Charadrius vociferus,food source,0.96
+Zerene eurydice,Helminthotheca echioides,food source,0.47
+Zerene eurydice,Vicia villosa,food source,0.6
+Lynx rufus,Neotoma,food source,0.95
+Tribulus terrestris,Cotula australis,food source,0.87
+Tribulus terrestris,Cirsium vulgare,food source,0.81
+Tribulus terrestris,Amaranthus albus,food source,0.97
+Odocoileus hemionus fuliginatus,Arctostaphylos,food source,0.78
+Odocoileus hemionus fuliginatus,Didelphis virginiana,food source,0.8
+Odocoileus hemionus fuliginatus,Puma concolor,food source,0.83
+Odocoileus hemionus fuliginatus,Canis latrans,food source,0.67
+Odocoileus hemionus fuliginatus,Lynx rufus,food source,0.72
+Pentagramma,Bromus hordeaceus,food source,1.0
+Pentagramma,Avena barbata,food source,0.89
+Pentagramma,Marah,food source,0.92
+Pentagramma,Poales,food source,0.91
+Amanita velosa,Quercus,food source,0.69
+Sonchus oleraceus,Lamium amplexicaule,food source,0.9
+Sonchus oleraceus,Solanum elaeagnifolium,food source,0.9
+Sonchus oleraceus,Cynodon dactylon,food source,0.9
+Sonchus oleraceus,Tribulus terrestris,food source,0.93
+Malacothamnus,Bombus sonorus,food source,1.0
+Mutarda nigra,Sylvilagus audubonii,food source,0.59
+Cynara cardunculus,Bombus crotchii,food source,0.67
+Trachemys scripta,Procyon lotor,food source,0.62
+Trachemys scripta,Canis latrans,food source,0.51
+Trachemys scripta,Lithobates catesbeianus,food source,0.67
+Trachemys scripta,Mephitis mephitis,food source,0.53
+Trachemys scripta,Didelphis virginiana,food source,0.63
+Circus hudsonius,Aspidoscelis tigris,food source,0.55
+Circus hudsonius,Lepus californicus,food source,0.52
+Circus hudsonius,Animalia,food source,0.68
+Circus hudsonius,Mammalia,food source,0.6
+Malva parviflora,Erodium moschatum,food source,0.92
+Malva parviflora,Urtica urens,food source,0.85
+Malva parviflora,Tribulus terrestris,food source,0.7
+Strongylocentrotus purpuratus,Corallina officinalis,prey,0.88
+Erodium cicutarium,Centaurea melitensis,food source,1.0
+Erodium cicutarium,Avena barbata,food source,1.0
+Amsinckia,Avena barbata,food source,0.94
+Amsinckia,Erodium botrys,food source,0.93
+Drosanthemum floribundum,Polypogon monspeliensis,food source,0.5
+Crassula ovata,Myoporum laetum,food source,1.0
+Hypochaeris glabra,Bromus diandrus,food source,0.89
+Hypochaeris glabra,Erodium cicutarium,food source,0.79
+Hypochaeris glabra,Bromus hordeaceus,food source,0.97
+Hypochaeris glabra,Avena barbata,food source,0.89
+Hypochaeris glabra,Erodium botrys,food source,0.97
+Hypochaeris glabra,Plantago lanceolata,food source,0.91
+Hypochaeris glabra,Trifolium hirtum,food source,0.97
+Apodemia virgulti,Bahiopsis laciniata,food source,0.92
+Apodemia virgulti,Cryptantha,food source,0.88
+Apodemia virgulti,Centaurea melitensis,food source,1.0
+Apodemia virgulti,Hirschfeldia incana,food source,0.92
+Apodemia virgulti,Magnoliopsida,food source,0.81
+Chthamalus dalli,Tetraclita rubescens,food source,0.78
+Echium candicans,Danaus plexippus,food source,0.65
+Ganoderma polychromum,Quercus,food source,0.78
+Ganoderma polychromum,Schinus molle,food source,0.87
+Ganoderma polychromum,Schinus molle,parasitism,0.87
+Cenchrus setaceus,Poaceae,food source,0.72
+Cenchrus setaceus,Bromus,food source,0.75
+Schismus barbatus,Sylvilagus,food source,0.97
+Schismus barbatus,Canis latrans,food source,0.91
+Schismus barbatus,Urocyon cinereoargenteus,food source,0.95
+Leratiomyces ceres,Poaceae,food source,0.38
+Logfia gallica,Melilotus indicus,food source,0.78
+Logfia gallica,Lasthenia,food source,0.75
+Logfia gallica,Cryptantha,food source,0.7
+Logfia gallica,Erodium botrys,food source,0.97
+Logfia gallica,Silene gallica,food source,0.94
+Raphanus,Bromus diandrus,food source,0.54
+Raphanus,Conium maculatum,food source,0.8
+Montagnea arenaria,Cryptantha,food source,0.7
+Montagnea arenaria,Poaceae,food source,0.72
+Neotoma macrotis,Crotalus oreganus helleri,food source,0.76
+Cylindropuntia,Calypte costae,pollination,0.78
+Cylindropuntia,Solanum elaeagnifolium,food source,0.72
+Haliotis fulgens,Animalia,food source,0.32
+Laetiporus gilbertsonii,Cupaniopsis anacardioides,food source,1.0
+Laetiporus gilbertsonii,Quercus,food source,0.66
+Laetiporus gilbertsonii,Eucalyptus,food source,0.9
+Oxalis pes-caprae,Bombus crotchii,food source,0.67
+Gazania,Bromus hordeaceus,food source,0.73
+Nasturtium officinale,Lactuca serriola,food source,0.88
+Plantago lanceolata,Torilis arvensis,food source,0.82
+Plantago lanceolata,Pseudognaphalium luteoalbum,food source,0.71
+Volvopluteus gloiocephalus,Poaceae,food source,0.64
+Mesocentrotus franciscanus,Codium fragile,food source,0.7
+Pseudacris cadaverina,Pseudacris regilla,food source,0.68
+Armillaria mellea,Ceanothus,food source,0.7
+Habrodais grunus,Quercus,parasitism,0.3
+Habrodais grunus,Quercus,food source,0.3
+Haliaeetus leucocephalus,Didelphis virginiana,food source,0.8
+Haliaeetus leucocephalus,Felis catus,food source,0.78
+Haliaeetus leucocephalus,Odocoileus hemionus,food source,0.71
+Haliaeetus leucocephalus,Procyon lotor,food source,0.74
+Haliaeetus leucocephalus,Charadrius vociferus,food source,0.71
+Haliaeetus leucocephalus,Zalophus californianus,food source,0.5
+Haliaeetus leucocephalus,Phoca vitulina,food source,0.38
+Carpobrotus edulis,Oxalis pes-caprae,food source,0.86
+Carpobrotus edulis,Bombus crotchii,food source,0.63
+Carpobrotus edulis,Carpobrotus chilensis,food source,0.89
+Gambusia affinis,Animalia,prey,0.59
+Lampropeltis californiae,Crotalus pyrrhus,food source,0.85
+Lampropeltis californiae,Lichanura orcutti,food source,0.86
+Lampropeltis californiae,Dipsosaurus dorsalis,food source,0.58
+Lythrum hyssopifolia,Polypogon monspeliensis,food source,0.83
+Lythrum hyssopifolia,Cotula coronopifolia,food source,1.0
+Lythrum hyssopifolia,Hordeum murinum,food source,0.82
+Lythrum hyssopifolia,Rumex crispus,food source,0.97
+Marrubium vulgare,Cotula australis,food source,0.96
+Marrubium vulgare,Bombus crotchii,food source,0.9
+Lactarius alnicola,Quercus,food source,0.78
+Trifolium hirtum,Erodium cicutarium,food source,0.69
+Trifolium hirtum,Avena barbata,food source,0.81
+Trifolium hirtum,Sonchus asper,food source,0.83
+Trifolium hirtum,Erodium botrys,food source,0.97
+Trifolium hirtum,Hypochaeris glabra,food source,0.85
+Omphalotus olivascens,Eucalyptus,parasitism,0.95
+Omphalotus olivascens,Arctostaphylos,parasitism,0.85
+Abronia maritima,Cakile maritima,food source,0.9
+Abronia maritima,Pluvialis squatarola,food source,1.0
+Abronia maritima,Danaus plexippus,food source,0.3
+Abronia maritima,Danaus plexippus,pollination,0.3
+Crotalus ruber,Sceloporus orcutti,food source,0.94
+Crotalus ruber,Sylvilagus audubonii,food source,0.88
+Crotalus ruber,Mammalia,food source,0.9
+Crotalus ruber,Sylvilagus,food source,0.97
+Crotalus ruber,Aspidoscelis tigris,prey,0.89
+Crotalus ruber,Sylvilagus audubonii,prey,0.88
+Crotalus ruber,Otospermophilus beecheyi,prey,0.84
+Festuca myuros,Bromus hordeaceus,food source,0.93
+Bromus hordeaceus,Lactuca serriola,food source,0.85
+Bromus hordeaceus,Hordeum murinum,food source,0.85
+Pagurus venturensis,Pagurus samuelis,food source,0.6
+Pseudognaphalium luteoalbum,Cryptantha,food source,0.68
+Pseudognaphalium luteoalbum,Plantago lanceolata,food source,0.91
+Pseudognaphalium luteoalbum,Polypogon monspeliensis,food source,0.75
+Pseudognaphalium luteoalbum,Amsinckia,food source,0.69
+Pseudognaphalium luteoalbum,Bromus,food source,0.75
+Uta stansburiana elegans,Sceloporus occidentalis longipes,food source,0.97
+Uta stansburiana elegans,Crotalus oreganus helleri,food source,0.88
+Uta stansburiana elegans,Lanius ludovicianus,food source,1.0
+Uta stansburiana elegans,Sceloporus occidentalis,food source,0.86
+Uta stansburiana elegans,Felis catus,food source,1.0
+Sciurus niger,Asteraceae,food source,0.39
+Sciurus niger,Poales,food source,0.5
+Vicia villosa,Bombus crotchii,food source,0.87
+Vicia villosa,Trifolium repens,food source,0.94
+Vicia villosa,Solanum elaeagnifolium,food source,0.83
+Parkinsonia aculeata,Calypte costae,food source,0.61
+Sonchus asper,Lamium amplexicaule,food source,0.97
+Sonchus asper,Solanum elaeagnifolium,food source,0.97
+Sonchus asper,Cynodon dactylon,food source,1.0
+Sonchus asper,Tribulus terrestris,food source,0.93
+Chlorophyllum molybdites,Quercus,parasitism,0.53
+Anthopleura sola,Pagurus samuelis,food source,0.8
+Anthopleura sola,Strongylocentrotus purpuratus,food source,0.9
+Anthopleura sola,Pachygrapsus crassipes,food source,0.8
+Anthopleura sola,Panulirus interruptus,food source,0.83
+Anthopleura sola,Pugettia producta,food source,0.89
+Anthopleura sola,Tivela stultorum,prey,1.0
+Oncosiphon pilulifer,Apodemia virgulti,pollination,0.68
+Lysimachia arvensis,Silene gallica,food source,1.0
+Batrachoseps major,Armadillidium vulgare,prey,0.84
+Batrachoseps major,Armadillidium vulgare,food source,0.84
+Bromus,Quercus,parasitism,0.97
+Satyrium auretorum,Quercus dumosa,parasitism,0.3
+Satyrium auretorum,Quercus,parasitism,0.34
+Satyrium auretorum,Quercus,food source,0.34
+Satyrium auretorum,Quercus dumosa,food source,0.3
+Urocyon cinereoargenteus,Opuntia,food source,0.94
+Urocyon cinereoargenteus,Neotoma,food source,0.92
+Urocyon cinereoargenteus,Schismus barbatus,food source,0.88
+Urocyon cinereoargenteus,Lynx rufus,food source,0.88
+Centaurea melitensis,Apodemia virgulti,food source,0.87
+Centaurea melitensis,Bombus crotchii,food source,0.93
+Ammospermophilus leucurus,Dipsosaurus dorsalis,food source,0.75
+Ammospermophilus leucurus,Cylindropuntia,food source,0.32
+Ammospermophilus leucurus,Sylvilagus audubonii,food source,0.3
+Ammospermophilus leucurus,Canis latrans,food source,0.3
+Ammospermophilus leucurus,Lynx rufus,food source,0.3
+Ammospermophilus leucurus,Otospermophilus beecheyi,food source,0.3
+Candolleomyces candolleanus,Poaceae,food source,0.67
+Candolleomyces candolleanus,Arundo donax,parasitism,0.86
+Hordeum murinum,Ehrharta erecta,food source,0.94
+Hordeum murinum,Bromus hordeaceus,food source,0.93
+Hordeum murinum,Lactuca serriola,food source,0.88
+Hordeum murinum,Lythrum hyssopifolia,food source,0.9
+Hordeum murinum,Avena fatua,food source,0.93
+Hordeum murinum,Convolvulus arvensis,food source,0.89
+Hordeum murinum,Carduus pycnocephalus,food source,0.93
+Helvella dryophila,Lactarius rufulus,food source,0.87
+Helvella dryophila,Quercus,food source,0.84
+Helvella dryophila,Poales,food source,0.75
+Uta stansburiana,Sceloporus occidentalis longipes,food source,1.0
+Uta stansburiana,Aspidoscelis tigris,food source,0.95
+Uta stansburiana,Lanius ludovicianus,food source,0.97
+Uta stansburiana,Arthropoda,food source,0.97
+Calochortus weedii weedii,Calochortus weedii,pollination,0.93
+Chlosyne gabbii,Asteraceae,parasitism,0.54
+Chlosyne gabbii,Poaceae,food source,0.56
+Chlosyne gabbii,Asteraceae,food source,0.54
+Brassiceae,Urtica urens,food source,0.85
+Brassiceae,Tribulus terrestris,food source,0.73
+Calosaturnia walterorum,Arctostaphylos,food source,0.3
+Calosaturnia walterorum,Arctostaphylos,parasitism,0.3
+Falco peregrinus,Tamarix ramosissima,food source,0.7
+Falco peregrinus,Procyon lotor,food source,0.76
+Falco peregrinus,Pelecanus occidentalis,food source,0.9
+Opuntia ficus-indica,Agrocybe pediades,food source,0.59
+Polypogon monspeliensis,Bromus rubens,food source,0.95
+Polypogon monspeliensis,Euphorbia peplus,food source,1.0
+Polypogon monspeliensis,Bromus hordeaceus,food source,1.0
+Polypogon monspeliensis,Pseudognaphalium luteoalbum,food source,0.96
+Polypogon monspeliensis,Conium maculatum,food source,1.0
+Tharsalea gorgon,Amsinckia,food source,0.31
+Tharsalea gorgon,Brassiceae,food source,0.3
+Limonium,Limonium sinuatum,food source,0.89
+Thamnophis hammondii,Batrachoseps major,prey,0.9
+Thamnophis hammondii,Lithobates catesbeianus,prey,0.9
+Thamnophis hammondii,Spea hammondii,prey,1.0
+Thamnophis hammondii,Anaxyrus boreas,prey,0.91
+Thamnophis hammondii,Pseudacris regilla,prey,0.85
+Thamnophis hammondii,Lithobates catesbeianus,food source,0.9
+Eucalyptus,Crassula ovata,food source,1.0
+Eucalyptus,Malephora crocea,food source,1.0
+Eucalyptus,Myoporum laetum,food source,1.0
+Eucalyptus,Carpobrotus edulis,food source,1.0
+Rallus obsoletus,Leptuca crenulata,food source,0.88
+Rallus obsoletus,Pachygrapsus crassipes,prey,0.67
+Rallus obsoletus,Pachygrapsus crassipes,food source,0.67
+Bodianus pulcher,Strongylocentrotus purpuratus,food source,0.9
+Bodianus pulcher,Panulirus interruptus,food source,0.75
+Bodianus pulcher,Mesocentrotus franciscanus,food source,0.86
+Bodianus pulcher,Phragmatopoma californica,prey,0.88
+Pituophis catenifer annectens,Sylvilagus bachmani,food source,1.0
+Pituophis catenifer annectens,Sylvilagus,food source,0.97
+Pituophis catenifer annectens,Otospermophilus beecheyi,food source,0.93
+Pituophis catenifer annectens,Sylvilagus,prey,0.97
+Pituophis catenifer annectens,Sylvilagus audubonii,prey,0.95
+Anaxyrus boreas,Poaceae,food source,0.82
+Anaxyrus boreas,Pseudacris regilla,food source,0.8
+Procyon lotor,Danaus plexippus,food source,0.97
+Procyon lotor,Carnivora,food source,0.81
+Meleagris gallopavo,Agaricus,food source,0.85
+Didelphis virginiana,Charadrius vociferus,food source,0.82
+Didelphis virginiana,Trachemys scripta,food source,0.86
+Arctostaphylos,Quercus,food source,0.78
+Pluvialis squatarola,Abronia maritima,food source,0.89
+Pluvialis squatarola,Calidris minutilla,food source,0.44
+Pluvialis squatarola,Falco peregrinus,food source,0.3
+Limonium perezii,Poaceae,food source,0.41
+Limonium perezii,Raphanus,food source,0.84
+Limonium perezii,Bombus sonorus,food source,1.0
+Nannopterum auritum,Phoca vitulina richardii,food source,0.8
+Nannopterum auritum,Larus heermanni,food source,0.79
+Nannopterum auritum,Pandion haliaetus,food source,0.86
+Nannopterum auritum,Pelecanus occidentalis,food source,0.9
+Nannopterum auritum,Eucalyptus,food source,0.86
+Nannopterum auritum,Phoca vitulina,food source,1.0
+Nannopterum auritum,Pelecanus occidentalis californicus,food source,0.86
+Camissoniopsis bistorta,Pseudognaphalium luteoalbum,food source,0.75
+Camissoniopsis bistorta,Sisymbrium orientale,food source,0.62
+Dipsacus sativus,Danaus plexippus,food source,0.3
+Streptopelia decaocto,Tamarix,food source,0.82
+Streptopelia decaocto,Felis catus,food source,0.93
+Tursiops truncatus,Procyon lotor,food source,0.3
+Tursiops truncatus,Zalophus californianus,food source,0.64
+Tursiops truncatus,Phoca vitulina,food source,0.88
+Tursiops truncatus,Pelecanus occidentalis,food source,0.5
+Neotoma,Canis latrans,food source,0.86
+Neotoma,Lynx rufus,food source,0.9
+Megascapheus bottae,Otospermophilus beecheyi,food source,0.88
+Megascapheus bottae,Felis catus,food source,1.0
+Megascapheus bottae,Sylvilagus audubonii,food source,0.88
+Megascapheus bottae,Canis latrans,food source,0.88
+Megascapheus bottae,Lynx rufus,food source,0.9
+Euphydryas editha,Erodium cicutarium,food source,0.3
+Euphydryas editha,Plantago lanceolata,food source,0.5
+Tivela stultorum,Animalia,food source,0.3
+Heterodontus francisci,Panulirus interruptus,food source,0.67
+Heterodontus francisci,Animalia,prey,0.3
+Heterodontus francisci,Arthropoda,prey,0.3
+Triakis semifasciata,Panulirus interruptus,food source,0.75
+Schizophyllum commune,Quercus,food source,0.69
+Schizophyllum commune,Poaceae,food source,0.62
+Schizophyllum commune,Mammalia,food source,0.6
+Ferocactus viridescens,Schizophyllum commune,food source,0.67
+Lichanura orcutti,Passer domesticus,food source,0.79
+Atriplex semibaccata,Limonium sinuatum,food source,0.94
+Agaricus californicus,Quercus engelmannii,food source,0.67
+Agaricus californicus,Eucalyptus,food source,0.9
+Acmispon,Bombus crotchii,food source,1.0
+Bahiopsis laciniata,Apodemia virgulti,food source,0.58
+Lecanoromycetes,Odocoileus hemionus,parasitism,1.0
+Puma concolor,Procyon lotor,food source,0.76
+Puma concolor,Canis latrans,food source,0.67
+Puma concolor,Lepus californicus,food source,0.74
+Puma concolor,Meleagris gallopavo,food source,0.79
+Puma concolor,Mammalia,food source,0.7
+Puma concolor,Lynx rufus,food source,0.75
+Puma concolor,Ovis canadensis,food source,0.67
+Pelecanus occidentalis,Sternula antillarum,food source,0.88
+Pelecanus occidentalis,Thalasseus elegans,food source,1.0
+Pelecanus occidentalis,Zalophus californianus,food source,1.0
+Pelecanus occidentalis,Phoca vitulina,food source,1.0
+Pelecanus occidentalis,Tursiops truncatus,food source,1.0
+Schinus terebinthifolia,Bidens pilosa,food source,0.94
+Cotula coronopifolia,Apium graveolens,food source,0.7
+Pseudacris regilla,Armadillidium vulgare,food source,0.97
+Pseudacris regilla,Lithobates catesbeianus,food source,1.0
+Pseudacris regilla,Anaxyrus boreas,food source,1.0
+Pseudacris regilla,Pseudacris cadaverina,food source,0.9
+Phytolacca icosandra,Convolvulus arvensis,food source,0.56
+Phytolacca icosandra,Quercus,food source,0.44
+Phytolacca icosandra,Cynodon dactylon,food source,0.47
+Hirschfeldia incana,Torilis arvensis,food source,1.0
+Hirschfeldia incana,Centaurea melitensis,food source,0.94
+Hirschfeldia incana,Malva parviflora,food source,0.96
+Hirschfeldia incana,Bombus crotchii,food source,0.97
+Hirschfeldia incana,Cynodon dactylon,food source,0.93
+Hirschfeldia incana,Bromus diandrus,food source,0.94
+Calochortus weedii,Bombus crotchii,pollination,0.97
+Calochortus weedii,Bombus sonorus,pollination,1.0
+Naematelia aurantia,Stereum hirsutum,food source,0.77
+Naematelia aurantia,Quercus,food source,0.75
+Naematelia aurantia,Stereum,parasitism,0.88
+Naematelia aurantia,Stereum hirsutum,parasitism,0.77
+Rattus rattus,Felis catus,food source,0.63
+Pandion haliaetus,Vertebrata,prey,0.61
+Ovis canadensis nelsoni,Lepus californicus,food source,0.32
+Ovis canadensis nelsoni,Ovis canadensis,food source,0.92
+Carduus pycnocephalus,Erodium cicutarium,food source,0.67
+Carduus pycnocephalus,Bombus crotchii,food source,0.87
+Lactarius rufulus,Quercus,food source,0.69
+Lactarius rufulus,Helvella dryophila,food source,0.71
+Olneya tesota,Calypte costae,pollination,0.3
+Erodium botrys,Avena barbata,food source,0.81
+Erodium botrys,Melilotus indicus,food source,0.78
+Velella velella,Animalia,food source,0.32
+Velella velella,Actinopterygii,food source,0.52
+Vinca major,Stellaria media,food source,0.89
+Nicotiana glauca,Bromus hordeaceus,food source,0.8
+Nicotiana glauca,Ricinus communis,food source,0.91
+Nicotiana glauca,Calypte costae,pollination,0.67
+Helminthotheca echioides,Melilotus albus,food source,0.7
+Helminthotheca echioides,Hirschfeldia incana,food source,0.51
+Helminthotheca echioides,Ricinus communis,food source,0.82
+Capsella bursa-pastoris,Lamium amplexicaule,food source,0.83
+Capsella bursa-pastoris,Sonchus asper,food source,0.8
+Capsella bursa-pastoris,Oxalis corniculata,food source,0.95
+Amanita ocreata,Quercus,food source,0.75
+Lonchura punctulata,Melinis repens,food source,0.8
+Lonchura punctulata,Poales,food source,0.59
+Lonchura punctulata,Poaceae,food source,0.51
+Lonchura punctulata,Cenchrus setaceus,food source,0.69
+Tringa melanoleuca,Calidris minutilla,food source,0.83
+Patiria miniata,Zalophus californianus,food source,0.79
+Tharsalea hermes,Rhamnus,parasitism,0.39
+Agelaius tricolor,Avena,food source,0.5
+Agelaius tricolor,Animalia,food source,0.44
+Agelaius tricolor,Magnoliopsida,food source,0.4
+Agelaius tricolor,Arthropoda,food source,0.43
+Medicago polymorpha,Erodium moschatum,food source,0.96
+Medicago polymorpha,Melilotus indicus,food source,0.76
+Delphinus delphis,Zalophus californianus,food source,0.79
+Solanum umbelliferum,Eucalyptus,food source,1.0
+Solanum umbelliferum,Salvia,food source,0.94
+Chenopodiastrum murale,Lysimachia arvensis,food source,0.76
+Sceloporus occidentalis longipes,Sceloporus orcutti,food source,0.84
+Sceloporus occidentalis longipes,Uta stansburiana elegans,food source,0.79
+Sceloporus occidentalis longipes,Uta stansburiana,food source,0.81
+Sceloporus occidentalis longipes,Otospermophilus beecheyi,food source,0.79
+Procambarus clarkii,Poaceae,food source,0.64
+Procambarus clarkii,Actinopterygii,food source,0.81
+Procambarus clarkii,Procyon lotor,food source,0.68
+Crotalus pyrrhus,Uta stansburiana,food source,0.79
+Crotalus pyrrhus,Otospermophilus beecheyi,food source,0.72
+Crotalus pyrrhus,Sylvilagus audubonii,food source,0.78
+Pectocarya,Erodium cicutarium,food source,0.69
+Pectocarya,Logfia gallica,food source,0.69
+Pectocarya,Opuntia,food source,0.79
+Pectocarya,Bromus rubens,food source,0.68
+Pectocarya,Avena,food source,0.64
 Magnoliopsida,Danaus plexippus,pollination,1.0
-Calochortus weedii,Danaus plexippus,pollination,1.0
-Calochortus weedii weedii,Danaus plexippus,pollination,1.0
-Acmispon,Danaus plexippus,pollination,0.94
-Erodium cicutarium,Danaus plexippus,pollination,0.91
-Magnoliopsida,Apodemia virgulti,pollination,1.0
-Erodium cicutarium,Apodemia virgulti,pollination,0.97
-Camissoniopsis,Apodemia virgulti,pollination,0.97
-Acmispon,Apodemia virgulti,pollination,0.97
-Asteraceae,Apodemia virgulti,pollination,0.97
 Magnoliopsida,Bombus sonorus,pollination,1.0
-Glebionis coronaria,Bombus sonorus,pollination,1.0
-Oxalis pes-caprae,Bombus sonorus,pollination,1.0
-Bahiopsis laciniata,Bombus sonorus,pollination,1.0
-Foeniculum vulgare,Bombus sonorus,pollination,1.0
-Magnoliopsida,Bombus crotchii,pollination,1.0
-Erodium cicutarium,Bombus crotchii,pollination,1.0
-Melilotus indicus,Bombus crotchii,pollination,1.0
-Camissoniopsis,Bombus crotchii,pollination,1.0
-Poaceae,Bombus crotchii,pollination,1.0
 Magnoliopsida,Panoquina errans,pollination,1.0
 Glebionis coronaria,Panoquina errans,pollination,1.0
 Oxalis pes-caprae,Panoquina errans,pollination,1.0
@@ -38,107 +637,102 @@ Magnoliopsida,Satyrium tetra,pollination,1.0
 Erodium cicutarium,Satyrium tetra,pollination,1.0
 Hirschfeldia incana,Satyrium tetra,pollination,1.0
 Melilotus indicus,Satyrium tetra,pollination,1.0
-Camissoniopsis,Satyrium tetra,pollination,1.0
+Poaceae,Satyrium tetra,pollination,1.0
+Magnoliopsida,Colias harfordii,pollination,1.0
 Erodium cicutarium,Colias harfordii,pollination,1.0
 Melilotus indicus,Colias harfordii,pollination,1.0
-Camissoniopsis,Colias harfordii,pollination,1.0
 Poaceae,Colias harfordii,pollination,1.0
 Calochortus weedii,Colias harfordii,pollination,1.0
+Magnoliopsida,Tharsalea hermes,pollination,1.0
 Erodium cicutarium,Tharsalea hermes,pollination,1.0
 Hirschfeldia incana,Tharsalea hermes,pollination,1.0
 Lysimachia arvensis,Tharsalea hermes,pollination,1.0
 Melilotus indicus,Tharsalea hermes,pollination,1.0
-Marrubium vulgare,Tharsalea hermes,pollination,1.0
+Erodium cicutarium,Strymon istapa,pollination,1.0
 Melilotus indicus,Strymon istapa,pollination,1.0
-Camissoniopsis,Strymon istapa,pollination,1.0
 Centaurea melitensis,Strymon istapa,pollination,1.0
 Poaceae,Strymon istapa,pollination,1.0
 Sonchus oleraceus,Strymon istapa,pollination,1.0
 Calochortus weedii,Zerene eurydice,pollination,1.0
 Acmispon,Zerene eurydice,pollination,1.0
 Calochortus weedii weedii,Zerene eurydice,pollination,1.0
-Melilotus indicus,Zerene eurydice,pollination,0.95
-Camissoniopsis,Zerene eurydice,pollination,0.95
+Poaceae,Zerene eurydice,pollination,0.95
+Sonchus asper,Zerene eurydice,pollination,0.95
 Acmispon,Tharsalea gorgon,pollination,1.0
-Bromus rubens,Tharsalea gorgon,pollination,1.0
 Asteraceae,Tharsalea gorgon,pollination,1.0
 Polypogon monspeliensis,Tharsalea gorgon,pollination,1.0
 Astragalus,Tharsalea gorgon,pollination,1.0
+Phacelia,Tharsalea gorgon,pollination,1.0
 Poaceae,Philotes sonorensis,pollination,1.0
 Calochortus weedii,Philotes sonorensis,pollination,1.0
 Acmispon,Philotes sonorensis,pollination,1.0
 Bryophyta,Philotes sonorensis,pollination,1.0
-Bromus rubens,Philotes sonorensis,pollination,1.0
+Asteraceae,Philotes sonorensis,pollination,1.0
 Glebionis coronaria,Anthophora flavocincta,pollination,1.0
 Oxalis pes-caprae,Anthophora flavocincta,pollination,1.0
 Bahiopsis laciniata,Anthophora flavocincta,pollination,1.0
 Foeniculum vulgare,Anthophora flavocincta,pollination,1.0
-Hirschfeldia incana,Anthophora flavocincta,pollination,1.0
-Hirschfeldia incana,Satyrium auretorum,pollination,1.0
+Lysimachia arvensis,Anthophora flavocincta,pollination,1.0
 Lysimachia arvensis,Satyrium auretorum,pollination,1.0
 Poaceae,Satyrium auretorum,pollination,1.0
 Quercus engelmannii,Satyrium auretorum,pollination,1.0
 Calochortus weedii,Satyrium auretorum,pollination,1.0
-Hirschfeldia incana,Dorymyrmex insanus,pollination,1.0
+Silene gallica,Satyrium auretorum,pollination,1.0
 Lysimachia arvensis,Dorymyrmex insanus,pollination,1.0
 Cenchrus setaceus,Dorymyrmex insanus,pollination,1.0
 Marrubium vulgare,Dorymyrmex insanus,pollination,1.0
 Centaurea melitensis,Dorymyrmex insanus,pollination,1.0
+Sonchus oleraceus,Dorymyrmex insanus,pollination,1.0
 Foeniculum vulgare,Cocytius antaeus,pollination,1.0
 Calochortus weedii,Cocytius antaeus,pollination,1.0
 Galium aparine,Cocytius antaeus,pollination,1.0
 Calochortus weedii weedii,Cocytius antaeus,pollination,1.0
 Polycarpon tetraphyllum,Cocytius antaeus,pollination,1.0
 Cylindropuntia ganderi ganderi,Chlosyne leanira,pollination,1.0
-Poaceae,Chlosyne leanira,pollination,1.0
 Calochortus weedii,Chlosyne leanira,pollination,1.0
 Sonchus asper,Chlosyne leanira,pollination,1.0
 Acmispon,Chlosyne leanira,pollination,1.0
+Pseudognaphalium,Chlosyne leanira,pollination,1.0
 Bahiopsis laciniata,Euphydryas editha quino,pollination,1.0
-Hirschfeldia incana,Euphydryas editha quino,pollination,1.0
 Lysimachia arvensis,Euphydryas editha quino,pollination,1.0
 Marrubium vulgare,Euphydryas editha quino,pollination,1.0
 Centaurea melitensis,Euphydryas editha quino,pollination,1.0
-Calochortus weedii,Glaucopsyche piasus umbrosa,pollination,1.0
+Quercus engelmannii,Euphydryas editha quino,pollination,1.0
 Sonchus asper,Glaucopsyche piasus umbrosa,pollination,1.0
 Acmispon,Glaucopsyche piasus umbrosa,pollination,1.0
 Pseudognaphalium,Glaucopsyche piasus umbrosa,pollination,1.0
 Bryophyta,Glaucopsyche piasus umbrosa,pollination,1.0
-Hirschfeldia incana,Callophrys loki,pollination,1.0
+Asteraceae,Glaucopsyche piasus umbrosa,pollination,1.0
 Brassica tournefortii,Callophrys loki,pollination,1.0
-Bromus rubens,Callophrys loki,pollination,1.0
 Sisymbrium irio,Callophrys loki,pollination,1.0
 Tamarix ramosissima,Callophrys loki,pollination,1.0
+Solanum elaeagnifolium,Callophrys loki,pollination,1.0
+Lasthenia,Callophrys loki,pollination,1.0
 Glebionis coronaria,Pyrgus ruralis lagunae,pollination,1.0
 Oxalis pes-caprae,Pyrgus ruralis lagunae,pollination,1.0
 Bahiopsis laciniata,Pyrgus ruralis lagunae,pollination,1.0
 Foeniculum vulgare,Pyrgus ruralis lagunae,pollination,1.0
-Hirschfeldia incana,Pyrgus ruralis lagunae,pollination,1.0
-Glebionis coronaria,Callophrys loki thornei,pollination,1.0
-Bahiopsis laciniata,Callophrys loki thornei,pollination,1.0
-Foeniculum vulgare,Callophrys loki thornei,pollination,1.0
-Lysimachia arvensis,Callophrys loki thornei,pollination,1.0
-Ferocactus viridescens viridescens,Callophrys loki thornei,pollination,1.0
+Lysimachia arvensis,Pyrgus ruralis lagunae,pollination,1.0
 Lysimachia arvensis,Habrodais grunus,pollination,1.0
 Marrubium vulgare,Habrodais grunus,pollination,1.0
 Quercus engelmannii,Habrodais grunus,pollination,1.0
 Silene gallica,Habrodais grunus,pollination,1.0
 Erodium botrys,Habrodais grunus,pollination,1.0
-Lysimachia arvensis,Apodemia virgulti peninsularis,pollination,1.0
+Glebionis coronaria,Callophrys loki thornei,pollination,1.0
+Bahiopsis laciniata,Callophrys loki thornei,pollination,1.0
+Foeniculum vulgare,Callophrys loki thornei,pollination,1.0
+Ferocactus viridescens viridescens,Callophrys loki thornei,pollination,1.0
+Cenchrus setaceus,Callophrys loki thornei,pollination,1.0
 Marrubium vulgare,Apodemia virgulti peninsularis,pollination,1.0
 Quercus engelmannii,Apodemia virgulti peninsularis,pollination,1.0
 Silene gallica,Apodemia virgulti peninsularis,pollination,1.0
 Erodium botrys,Apodemia virgulti peninsularis,pollination,1.0
+Sonchus asper,Apodemia virgulti peninsularis,pollination,1.0
 Cylindropuntia ganderi ganderi,Chlosyne acastus neumoegeni,pollination,1.0
 Encelia farinosa farinosa,Chlosyne acastus neumoegeni,pollination,1.0
 Sonchus oleraceus,Chlosyne acastus neumoegeni,pollination,1.0
 Brassica tournefortii,Chlosyne acastus neumoegeni,pollination,1.0
 Chenopodiastrum murale,Chlosyne acastus neumoegeni,pollination,1.0
-Glebionis coronaria,Euphydryas editha,pollination,1.0
-Oxalis pes-caprae,Euphydryas editha,pollination,1.0
-Bahiopsis laciniata,Euphydryas editha,pollination,1.0
-Foeniculum vulgare,Euphydryas editha,pollination,1.0
-Lysimachia arvensis,Euphydryas editha,pollination,1.0
 Glebionis coronaria,Chlorostrymon simaethis,pollination,1.0
 Oxalis pes-caprae,Chlorostrymon simaethis,pollination,1.0
 Bahiopsis laciniata,Chlorostrymon simaethis,pollination,1.0
@@ -148,107 +742,75 @@ Cylindropuntia ganderi ganderi,Calosaturnia walterorum,pollination,1.0
 Centaurea melitensis,Calosaturnia walterorum,pollination,1.0
 Quercus engelmannii,Calosaturnia walterorum,pollination,1.0
 Silene gallica,Calosaturnia walterorum,pollination,1.0
-Sonchus asper,Calosaturnia walterorum,pollination,1.0
+Acmispon,Calosaturnia walterorum,pollination,1.0
+Glebionis coronaria,Euphydryas editha,pollination,1.0
+Oxalis pes-caprae,Euphydryas editha,pollination,1.0
+Bahiopsis laciniata,Euphydryas editha,pollination,1.0
+Foeniculum vulgare,Euphydryas editha,pollination,1.0
+Ceanothus verrucosus,Euphydryas editha,pollination,1.0
 Leptosyne maritima,Pachygrapsus crassipes,food source,1.0
-Ferocactus viridescens viridescens,Pachygrapsus crassipes,food source,0.93
-Bergerocactus emoryi,Pachygrapsus crassipes,food source,0.93
-Calochortus weedii weedii,Pachygrapsus crassipes,food source,0.93
-Adolphia californica,Pachygrapsus crassipes,food source,0.87
 Ferocactus viridescens viridescens,Anthopleura sola,food source,1.0
 Bergerocactus emoryi,Anthopleura sola,food source,1.0
 Calochortus weedii weedii,Anthopleura sola,food source,1.0
-Ricinus communis,Anthopleura sola,food source,0.92
-Mesembryanthemum crystallinum,Anthopleura sola,food source,0.92
 Ferocactus viridescens viridescens,Patiria miniata,food source,1.0
 Leptosyne maritima,Patiria miniata,food source,1.0
 Bergerocactus emoryi,Patiria miniata,food source,1.0
 Calochortus weedii weedii,Patiria miniata,food source,1.0
 Rhodophyta,Patiria miniata,food source,1.0
 Acmispon,Pseudacris regilla,food source,0.93
-Bromus rubens,Pseudacris regilla,food source,0.93
 Asteraceae,Pseudacris regilla,food source,0.93
-Cryptantha,Pseudacris regilla,food source,0.93
-Bryophyta,Pseudacris regilla,food source,0.9
 Ferocactus viridescens viridescens,Velella velella,food source,1.0
 Leptosyne maritima,Velella velella,food source,1.0
 Bergerocactus emoryi,Velella velella,food source,1.0
 Calochortus weedii weedii,Velella velella,food source,1.0
 Tropaeolum majus,Velella velella,food source,0.92
-Ferocactus viridescens viridescens,Panulirus interruptus,food source,1.0
-Leptosyne maritima,Panulirus interruptus,food source,1.0
-Bergerocactus emoryi,Panulirus interruptus,food source,1.0
-Asparagus asparagoides,Panulirus interruptus,food source,1.0
-Sonchus,Panulirus interruptus,food source,1.0
 Calochortus weedii weedii,Armadillidium vulgare,food source,1.0
-Sonchus asper,Armadillidium vulgare,food source,0.94
 Pseudognaphalium,Armadillidium vulgare,food source,0.94
-Bryophyta,Armadillidium vulgare,food source,0.94
-Bromus rubens,Armadillidium vulgare,food source,0.94
 Glebionis coronaria,Pollicipes polymerus,food source,1.0
 Oxalis pes-caprae,Pollicipes polymerus,food source,1.0
 Tropaeolum majus,Pollicipes polymerus,food source,1.0
 Ferocactus viridescens viridescens,Pollicipes polymerus,food source,1.0
 Cenchrus setaceus,Pollicipes polymerus,food source,1.0
-Bromus rubens,Anaxyrus boreas,food source,1.0
 Polypogon monspeliensis,Anaxyrus boreas,food source,1.0
-Sonchus asper,Anaxyrus boreas,food source,0.97
 Pseudognaphalium,Anaxyrus boreas,food source,0.97
 Bryophyta,Anaxyrus boreas,food source,0.97
 Ferocactus viridescens viridescens,Pisaster ochraceus,food source,1.0
 Bergerocactus emoryi,Pisaster ochraceus,food source,1.0
 Asparagus asparagoides,Pisaster ochraceus,food source,1.0
 Sonchus,Pisaster ochraceus,food source,1.0
-Oxalis pes-caprae,Pisaster ochraceus,food source,0.91
+Calochortus weedii weedii,Pisaster ochraceus,food source,1.0
+Ferocactus viridescens viridescens,Pagurus samuelis,food source,1.0
 Leptosyne maritima,Pagurus samuelis,food source,1.0
-Bergerocactus emoryi,Pagurus samuelis,food source,1.0
-Adolphia californica,Pagurus samuelis,food source,0.9
-Erigeron bonariensis,Pagurus samuelis,food source,0.9
-Euphorbia misera,Pagurus samuelis,food source,0.9
+Glebionis coronaria,Anthopleura elegantissima,food source,1.0
+Oxalis pes-caprae,Anthopleura elegantissima,food source,1.0
 Tropaeolum majus,Anthopleura elegantissima,food source,1.0
+Ferocactus viridescens viridescens,Anthopleura elegantissima,food source,1.0
 Cenchrus setaceus,Anthopleura elegantissima,food source,1.0
-Nicotiana glauca,Anthopleura elegantissima,food source,1.0
-Ricinus communis,Anthopleura elegantissima,food source,1.0
-Mesembryanthemum crystallinum,Anthopleura elegantissima,food source,1.0
 Tropaeolum majus,Dendraster excentricus,food source,1.0
 Ricinus communis,Dendraster excentricus,food source,1.0
 Mesembryanthemum crystallinum,Dendraster excentricus,food source,1.0
 Brassica tournefortii,Dendraster excentricus,food source,1.0
 Hedypnois rhagadioloides,Dendraster excentricus,food source,1.0
-Leptosyne maritima,Strongylocentrotus purpuratus,food source,1.0
-Bergerocactus emoryi,Strongylocentrotus purpuratus,food source,1.0
-Rhodophyta,Strongylocentrotus purpuratus,food source,1.0
-Tropaeolum majus,Strongylocentrotus purpuratus,food source,0.9
-Ricinus communis,Strongylocentrotus purpuratus,food source,0.9
-Bryophyta,Animalia,food source,1.0
-Poales,Animalia,food source,1.0
-Liliopsida,Animalia,food source,1.0
-Cryptantha,Animalia,food source,0.94
-Chlorophyta,Animalia,food source,0.92
 Leptosyne maritima,Ophiothrix spiculata,food source,1.0
+Bergerocactus emoryi,Ophiothrix spiculata,food source,1.0
 Adolphia californica,Ophiothrix spiculata,food source,0.91
 Erigeron bonariensis,Ophiothrix spiculata,food source,0.91
 Euphorbia misera,Ophiothrix spiculata,food source,0.91
-Rhodophyta,Ophiothrix spiculata,food source,0.91
 Pseudognaphalium,Trachemys scripta elegans,food source,0.96
-Bromus rubens,Trachemys scripta elegans,food source,0.96
 Polypogon monspeliensis,Trachemys scripta elegans,food source,0.96
 Tamarix,Trachemys scripta elegans,food source,0.96
 Bromus,Trachemys scripta elegans,food source,0.96
 Leptosyne maritima,Ophionereis annulata,food source,1.0
+Bergerocactus emoryi,Ophionereis annulata,food source,1.0
 Adolphia californica,Ophionereis annulata,food source,1.0
 Erigeron bonariensis,Ophionereis annulata,food source,1.0
 Salvia munzii,Ophionereis annulata,food source,1.0
-Tropaeolum majus,Ophionereis annulata,food source,0.9
-Bromus rubens,Batrachoseps major,food source,0.93
 Bromus,Batrachoseps major,food source,0.93
 Cryptantha,Batrachoseps major,food source,0.93
 Centaurea melitensis,Batrachoseps major,food source,0.9
 Pseudognaphalium,Batrachoseps major,food source,0.9
-Polypogon monspeliensis,Lithobates catesbeianus,food source,1.0
-Sonchus asper,Lithobates catesbeianus,food source,0.97
 Pseudognaphalium,Lithobates catesbeianus,food source,0.97
 Bryophyta,Lithobates catesbeianus,food source,0.97
-Asteraceae,Lithobates catesbeianus,food source,0.97
 Adolphia californica,Emerita analoga,food source,1.0
 Echium candicans,Emerita analoga,food source,1.0
 Galium aparine,Emerita analoga,food source,1.0
@@ -258,87 +820,71 @@ Tropaeolum majus,Tetraclita rubescens,food source,1.0
 Cenchrus setaceus,Tetraclita rubescens,food source,1.0
 Nicotiana glauca,Tetraclita rubescens,food source,1.0
 Ricinus communis,Tetraclita rubescens,food source,1.0
-Mesembryanthemum crystallinum,Tetraclita rubescens,food source,1.0
+Bergerocactus emoryi,Taliepus nuttallii,food source,1.0
 Sonchus oleraceus,Taliepus nuttallii,food source,0.9
 Limonium perezii,Taliepus nuttallii,food source,0.9
 Adolphia californica,Taliepus nuttallii,food source,0.9
 Erigeron bonariensis,Taliepus nuttallii,food source,0.9
-Euphorbia misera,Taliepus nuttallii,food source,0.9
 Marrubium vulgare,Spea hammondii,food source,0.91
 Quercus engelmannii,Spea hammondii,food source,0.91
 Pseudognaphalium,Spea hammondii,food source,0.91
 Bryophyta,Spea hammondii,food source,0.91
-Asteraceae,Spea hammondii,food source,0.91
 Tropaeolum majus,Leptuca crenulata,food source,1.0
 Cenchrus setaceus,Leptuca crenulata,food source,1.0
 Nicotiana glauca,Leptuca crenulata,food source,1.0
 Ricinus communis,Leptuca crenulata,food source,1.0
-Marrubium vulgare,Leptuca crenulata,food source,1.0
-Pseudognaphalium,Epiactis prolifera,food source,1.0
+Bergerocactus emoryi,Epiactis prolifera,food source,1.0
 Euphorbia misera,Epiactis prolifera,food source,1.0
 Carpobrotus chilensis,Epiactis prolifera,food source,1.0
 Acmispon prostratus,Epiactis prolifera,food source,1.0
-Ricinus communis,Epiactis prolifera,food source,0.89
+Tropaeolum majus,Epiactis prolifera,food source,0.89
 Asteraceae,Pseudacris cadaverina,food source,1.0
+Bryophyta,Pseudacris cadaverina,food source,0.97
 Schismus barbatus,Pseudacris cadaverina,food source,0.97
 Phacelia,Pseudacris cadaverina,food source,0.94
-Cryptantha,Pseudacris cadaverina,food source,0.94
-Bromus,Pseudacris cadaverina,food source,0.9
 Bromus,Procambarus clarkii,food source,1.0
 Marrubium vulgare,Procambarus clarkii,food source,0.96
 Quercus engelmannii,Procambarus clarkii,food source,0.96
+Bryophyta,Procambarus clarkii,food source,0.96
 Hypochaeris glabra,Procambarus clarkii,food source,0.96
-Asteraceae,Procambarus clarkii,food source,0.96
-Cenchrus setaceus,Phragmatopoma californica,food source,1.0
-Nicotiana glauca,Phragmatopoma californica,food source,1.0
-Ricinus communis,Phragmatopoma californica,food source,1.0
-Mesembryanthemum crystallinum,Phragmatopoma californica,food source,1.0
-Pinus torreyana,Phragmatopoma californica,food source,1.0
 Brassica tournefortii,Trachemys scripta,food source,0.95
 Malva parviflora,Trachemys scripta,food source,0.95
-Polypogon monspeliensis,Trachemys scripta,food source,0.95
-Tamarix ramosissima,Trachemys scripta,food source,0.95
-Bromus,Trachemys scripta,food source,0.95
-Poales,Arthropoda,food source,1.0
-Liliopsida,Arthropoda,food source,1.0
-Asteraceae,Arthropoda,food source,0.97
-Cynoglosseae,Arthropoda,food source,0.95
-Schismus barbatus,Arthropoda,food source,0.95
-Cenchrus setaceus,Metacarcinus anthonyi,food source,1.0
+Bryophyta,Arthropoda,food source,1.0
+Tropaeolum majus,Metacarcinus anthonyi,food source,1.0
 Nicotiana glauca,Metacarcinus anthonyi,food source,1.0
+Ricinus communis,Metacarcinus anthonyi,food source,1.0
 Mesembryanthemum crystallinum,Metacarcinus anthonyi,food source,1.0
 Pinus torreyana,Metacarcinus anthonyi,food source,1.0
-Centaurea melitensis,Metacarcinus anthonyi,food source,1.0
 Ceanothus verrucosus,Uca princeps,food source,1.0
-Cenchrus setaceus,Uca princeps,food source,1.0
 Nicotiana glauca,Uca princeps,food source,1.0
+Ricinus communis,Uca princeps,food source,1.0
 Mesembryanthemum crystallinum,Uca princeps,food source,1.0
 Pinus torreyana,Uca princeps,food source,1.0
+Ricinus communis,Ligia occidentalis,food source,1.0
 Mesembryanthemum crystallinum,Ligia occidentalis,food source,1.0
 Brassica tournefortii,Ligia occidentalis,food source,1.0
 Hedypnois rhagadioloides,Ligia occidentalis,food source,1.0
 Adolphia californica,Ligia occidentalis,food source,1.0
-Erigeron bonariensis,Ligia occidentalis,food source,1.0
+Asteraceae,Scolopendra polymorpha,food source,0.97
 Cryptantha,Scolopendra polymorpha,food source,0.97
 Schismus barbatus,Scolopendra polymorpha,food source,0.95
 Cynoglosseae,Scolopendra polymorpha,food source,0.92
 Bromus diandrus,Scolopendra polymorpha,food source,0.89
-Polypogon monspeliensis,Scolopendra polymorpha,food source,0.89
 Rhodophyta,Romaleon antennarium,food source,1.0
+Mesembryanthemum crystallinum,Romaleon antennarium,food source,0.91
 Brassica tournefortii,Romaleon antennarium,food source,0.91
 Hedypnois rhagadioloides,Romaleon antennarium,food source,0.91
 Adolphia californica,Romaleon antennarium,food source,0.91
-Erigeron bonariensis,Romaleon antennarium,food source,0.91
 Carpobrotus chilensis,Heptacarpus sitchensis,food source,1.0
 Schismus barbatus,Heptacarpus sitchensis,food source,1.0
 Malacothamnus,Heptacarpus sitchensis,food source,1.0
 Acmispon prostratus,Heptacarpus sitchensis,food source,1.0
 Nicotiana glauca,Heptacarpus sitchensis,food source,0.88
+Mesembryanthemum crystallinum,Heterodontus francisci,food source,1.0
 Brassica tournefortii,Heterodontus francisci,food source,1.0
 Hedypnois rhagadioloides,Heterodontus francisci,food source,1.0
+Adolphia californica,Heterodontus francisci,food source,1.0
 Erigeron bonariensis,Heterodontus francisci,food source,1.0
-Acacia cyclops,Heterodontus francisci,food source,1.0
-Echium candicans,Heterodontus francisci,food source,1.0
 Asparagus asparagoides,Ophioderma panamense,food source,1.0
 Mesembryanthemum nodiflorum,Ophioderma panamense,food source,0.89
 Euphorbia misera,Ophioderma panamense,food source,0.89
@@ -346,32 +892,31 @@ Sonchus,Ophioderma panamense,food source,0.89
 Codium fragile,Ophioderma panamense,food source,0.89
 Schismus barbatus,Oxidus gracilis,food source,1.0
 Malacothamnus,Oxidus gracilis,food source,1.0
-Nicotiana glauca,Oxidus gracilis,food source,0.94
 Centaurea melitensis,Oxidus gracilis,food source,0.94
 Raphanus raphanistrum,Oxidus gracilis,food source,0.94
-Sonchus oleraceus,Hiltonius,food source,0.96
-Sonchus asper,Hiltonius,food source,0.96
+Brassica tournefortii,Oxidus gracilis,food source,0.94
+Asteraceae,Hiltonius,food source,0.96
 Bromus diandrus,Hiltonius,food source,0.96
 Galium aparine,Hiltonius,food source,0.96
 Salvia,Hiltonius,food source,0.96
+Bromus,Hiltonius,food source,0.96
 Galium aparine,Scutigera coleoptrata,food source,1.0
-Centaurea melitensis,Scutigera coleoptrata,food source,0.95
 Silene gallica,Scutigera coleoptrata,food source,0.95
 Baccharis,Scutigera coleoptrata,food source,0.95
-Hypochaeris glabra,Scutigera coleoptrata,food source,0.95
+Asteraceae,Scutigera coleoptrata,food source,0.95
+Solanum umbelliferum,Scutigera coleoptrata,food source,0.95
+Mesembryanthemum crystallinum,Aplidium californicum,food source,1.0
 Raphanus raphanistrum,Aplidium californicum,food source,1.0
-Sonchus oleraceus,Aplidium californicum,food source,1.0
-Brassica tournefortii,Aplidium californicum,food source,1.0
 Helminthotheca echioides,Aplidium californicum,food source,1.0
 Limonium perezii,Aplidium californicum,food source,1.0
+Silene gallica,Aplidium californicum,food source,1.0
+Mesembryanthemum crystallinum,Anthopleura,food source,1.0
 Pinus torreyana,Anthopleura,food source,1.0
 Raphanus raphanistrum,Anthopleura,food source,1.0
-Sonchus oleraceus,Anthopleura,food source,1.0
 Helminthotheca echioides,Anthopleura,food source,1.0
 Limonium perezii,Anthopleura,food source,1.0
 Pinus torreyana,Chthamalus dalli,food source,1.0
 Raphanus raphanistrum,Chthamalus dalli,food source,1.0
-Sonchus oleraceus,Chthamalus dalli,food source,1.0
 Helminthotheca echioides,Chthamalus dalli,food source,1.0
 Limonium perezii,Chthamalus dalli,food source,1.0
 Euphorbia misera,Pisaster giganteus,food source,1.0
@@ -381,64 +926,59 @@ Malacothamnus,Pisaster giganteus,food source,1.0
 Acmispon prostratus,Pisaster giganteus,food source,1.0
 Liliopsida,Vertebrata,food source,1.0
 Poales,Vertebrata,food source,1.0
-Schismus barbatus,Vertebrata,food source,0.92
 Phacelia,Vertebrata,food source,0.89
 Cryptantha,Vertebrata,food source,0.89
+Solanum umbelliferum,Anaxyrus boreas halophilus,food source,1.0
+Bromus,Anaxyrus boreas halophilus,food source,1.0
+Cryptantha,Anaxyrus boreas halophilus,food source,1.0
+Onagraceae,Anaxyrus boreas halophilus,food source,1.0
+Quercus engelmannii,Anaxyrus boreas halophilus,food source,0.96
 Silene gallica,Porcellio laevis,food source,1.0
 Erodium botrys,Porcellio laevis,food source,1.0
 Hedypnois rhagadioloides,Porcellio laevis,food source,1.0
-Sonchus asper,Porcellio laevis,food source,1.0
 Rumex crispus,Porcellio laevis,food source,1.0
-Solanum umbelliferum,Anaxyrus boreas halophilus,food source,1.0
-Polypogon monspeliensis,Anaxyrus boreas halophilus,food source,1.0
-Bromus,Anaxyrus boreas halophilus,food source,1.0
-Schismus barbatus,Anaxyrus boreas halophilus,food source,1.0
-Cryptantha,Anaxyrus boreas halophilus,food source,1.0
+Solanum umbelliferum,Porcellio laevis,food source,1.0
 Hedypnois rhagadioloides,Pugettia producta,food source,1.0
+Adolphia californica,Pugettia producta,food source,1.0
 Erigeron bonariensis,Pugettia producta,food source,1.0
-Acacia cyclops,Pugettia producta,food source,1.0
-Echium candicans,Pugettia producta,food source,1.0
-Carpobrotus chilensis,Pugettia producta,food source,1.0
 Pinus torreyana,Pagurus venturensis,food source,1.0
 Raphanus raphanistrum,Pagurus venturensis,food source,1.0
-Sonchus oleraceus,Pagurus venturensis,food source,1.0
 Helminthotheca echioides,Pagurus venturensis,food source,1.0
 Limonium perezii,Pagurus venturensis,food source,1.0
 Ceanothus verrucosus,Arbacia stellata,food source,1.0
 Encelia farinosa farinosa,Arbacia stellata,food source,1.0
 Pinus torreyana,Arbacia stellata,food source,1.0
 Raphanus raphanistrum,Arbacia stellata,food source,1.0
-Quercus engelmannii,Arbacia stellata,food source,1.0
+Helminthotheca echioides,Arbacia stellata,food source,1.0
 Ceanothus verrucosus,Metandrocarpa dura,food source,1.0
 Pinus torreyana,Metandrocarpa dura,food source,1.0
 Raphanus raphanistrum,Metandrocarpa dura,food source,1.0
-Helminthotheca echioides,Metandrocarpa dura,food source,1.0
-Limonium perezii,Metandrocarpa dura,food source,1.0
+Silene gallica,Metandrocarpa dura,food source,1.0
+Raphanus raphanistrum sativus,Metandrocarpa dura,food source,1.0
+Pinus torreyana,Muricea californica,food source,1.0
 Raphanus raphanistrum,Muricea californica,food source,1.0
-Helminthotheca echioides,Muricea californica,food source,1.0
-Limonium perezii,Muricea californica,food source,1.0
-Silene gallica,Muricea californica,food source,1.0
 Raphanus raphanistrum sativus,Muricea californica,food source,1.0
-Helminthotheca echioides,Cycloxanthops novemdentatus,food source,1.0
-Limonium perezii,Cycloxanthops novemdentatus,food source,1.0
-Silene gallica,Cycloxanthops novemdentatus,food source,1.0
+Dittrichia graveolens,Muricea californica,food source,1.0
+Erodium botrys,Muricea californica,food source,1.0
 Raphanus raphanistrum sativus,Cycloxanthops novemdentatus,food source,1.0
 Dittrichia graveolens,Cycloxanthops novemdentatus,food source,1.0
+Erodium botrys,Cycloxanthops novemdentatus,food source,1.0
+Hedypnois rhagadioloides,Cycloxanthops novemdentatus,food source,1.0
+Cakile maritima,Cycloxanthops novemdentatus,food source,1.0
 Poales,Anura,food source,1.0
 Liliopsida,Anura,food source,1.0
 Bromus,Anura,food source,1.0
 Cryptantha,Anura,food source,1.0
 Solanum umbelliferum,Anura,food source,0.97
-Helminthotheca echioides,Mesocentrotus franciscanus,food source,1.0
-Silene gallica,Mesocentrotus franciscanus,food source,1.0
-Raphanus raphanistrum sativus,Mesocentrotus franciscanus,food source,1.0
-Dittrichia graveolens,Mesocentrotus franciscanus,food source,1.0
-Erodium botrys,Mesocentrotus franciscanus,food source,1.0
 Hedypnois rhagadioloides,Epiactis,food source,1.0
+Erigeron bonariensis,Epiactis,food source,1.0
 Acacia cyclops,Epiactis,food source,1.0
 Echium candicans,Epiactis,food source,1.0
 Carpobrotus chilensis,Epiactis,food source,1.0
-Solanum nigrum,Epiactis,food source,1.0
+Raphanus raphanistrum sativus,Mesocentrotus franciscanus,food source,1.0
+Dittrichia graveolens,Mesocentrotus franciscanus,food source,1.0
+Erodium botrys,Mesocentrotus franciscanus,food source,1.0
+Cakile maritima,Mesocentrotus franciscanus,food source,1.0
 Euphorbia misera,Amphipholis squamata,food source,0.89
 Carpobrotus chilensis,Amphipholis squamata,food source,0.89
 Asparagus asparagoides,Amphipholis squamata,food source,0.89
@@ -446,59 +986,39 @@ Sonchus,Amphipholis squamata,food source,0.89
 Malacothamnus,Amphipholis squamata,food source,0.89
 Raphanus raphanistrum sativus,Enchiridium punctatum,food source,1.0
 Dittrichia graveolens,Enchiridium punctatum,food source,1.0
-Erodium botrys,Enchiridium punctatum,food source,1.0
-Hedypnois rhagadioloides,Enchiridium punctatum,food source,1.0
 Cakile maritima,Enchiridium punctatum,food source,1.0
-Ferocactus viridescens,Pelecanus occidentalis,food source,0.85
-Brodiaea orcuttii,Pelecanus occidentalis,food source,0.8
-Sonchus,Pelecanus occidentalis,food source,0.8
-Clematis,Pelecanus occidentalis,food source,0.8
-Malacothamnus,Pelecanus occidentalis,food source,0.8
-Bromus,Otospermophilus beecheyi,food source,0.84
-Solanum umbelliferum,Otospermophilus beecheyi,food source,0.81
-Bromus diandrus,Otospermophilus beecheyi,food source,0.81
-Polypogon monspeliensis,Otospermophilus beecheyi,food source,0.81
-Avena barbata,Otospermophilus beecheyi,food source,0.81
-Tamarix ramosissima,Sylvilagus audubonii,food source,0.88
-Phacelia,Sylvilagus audubonii,food source,0.88
-Cynoglosseae,Sylvilagus audubonii,food source,0.88
-Avena barbata,Sylvilagus audubonii,food source,0.88
-Solanum umbelliferum,Sylvilagus audubonii,food source,0.85
+Mesembryanthemum nodiflorum,Enchiridium punctatum,food source,1.0
+Urtica urens,Enchiridium punctatum,food source,1.0
+Erigeron bonariensis,Pelecanus occidentalis,food source,0.85
 Tamarix ramosissima,Nycticorax nycticorax,food source,0.85
 Tamarix,Nycticorax nycticorax,food source,0.85
+Bromus,Nycticorax nycticorax,food source,0.85
 Clematis,Nycticorax nycticorax,food source,0.85
-Malacothamnus,Nycticorax nycticorax,food source,0.85
-Erodium botrys,Nycticorax nycticorax,food source,0.81
 Medicago polymorpha,Nannopterum auritum,food source,0.88
 Solanum umbelliferum,Nannopterum auritum,food source,0.88
 Lactuca serriola,Nannopterum auritum,food source,0.88
 Bromus diandrus,Nannopterum auritum,food source,0.88
 Galium aparine,Nannopterum auritum,food source,0.88
+Cryptantha,Meleagris gallopavo,food source,1.0
 Phacelia,Meleagris gallopavo,food source,0.97
 Avena barbata,Meleagris gallopavo,food source,0.94
 Amsinckia,Meleagris gallopavo,food source,0.94
-Solanum umbelliferum,Meleagris gallopavo,food source,0.91
-Bromus diandrus,Meleagris gallopavo,food source,0.91
 Tamarix ramosissima,Passer domesticus,food source,0.88
+Cryptantha,Passer domesticus,food source,0.88
 Solanum umbelliferum,Passer domesticus,food source,0.85
-Bromus diandrus,Passer domesticus,food source,0.85
-Avena barbata,Passer domesticus,food source,0.85
-Lasthenia,Passer domesticus,food source,0.85
-Quercus engelmannii,Odocoileus hemionus fuliginatus,food source,0.97
-Solanum umbelliferum,Odocoileus hemionus fuliginatus,food source,0.97
 Lactuca serriola,Odocoileus hemionus fuliginatus,food source,0.97
 Bromus diandrus,Odocoileus hemionus fuliginatus,food source,0.97
 Avena barbata,Odocoileus hemionus fuliginatus,food source,0.97
+Cryptantha,Odocoileus hemionus fuliginatus,food source,0.97
+Pooideae,Odocoileus hemionus fuliginatus,food source,0.97
 Sonchus,Larus heermanni,food source,0.93
 Clematis,Larus heermanni,food source,0.93
 Salvia munzii,Larus heermanni,food source,0.93
-Ehrharta erecta,Larus heermanni,food source,0.93
-Dittrichia graveolens,Larus heermanni,food source,0.86
 Echium candicans,Lonchura punctulata,food source,0.95
 Galium aparine,Lonchura punctulata,food source,0.95
 Raphanus raphanistrum sativus,Lonchura punctulata,food source,0.91
 Dittrichia graveolens,Lonchura punctulata,food source,0.91
-Erodium botrys,Lonchura punctulata,food source,0.91
+Urtica urens,Lonchura punctulata,food source,0.91
 Washingtonia robusta,Columba livia domestica,food source,1.0
 Sisymbrium irio,Columba livia domestica,food source,1.0
 Tamarix ramosissima,Columba livia domestica,food source,1.0
@@ -507,23 +1027,19 @@ Oncosiphon pilulifer,Columba livia domestica,food source,1.0
 Phacelia,Odocoileus hemionus,food source,0.94
 Bromus diandrus,Odocoileus hemionus,food source,0.91
 Salvia,Odocoileus hemionus,food source,0.91
-Cynoglosseae,Odocoileus hemionus,food source,0.91
-Avena barbata,Odocoileus hemionus,food source,0.91
 Ferocactus viridescens,Pelecanus occidentalis californicus,food source,0.93
+Erigeron bonariensis,Pelecanus occidentalis californicus,food source,0.86
 Euphorbia misera,Pelecanus occidentalis californicus,food source,0.86
 Echium candicans,Pelecanus occidentalis californicus,food source,0.79
-Brodiaea orcuttii,Pelecanus occidentalis californicus,food source,0.79
-Solanum nigrum,Pelecanus occidentalis californicus,food source,0.79
 Echium candicans,Sciurus niger,food source,1.0
 Solanum nigrum,Sciurus niger,food source,1.0
 Salsola australis,Sciurus niger,food source,1.0
 Lobularia maritima,Sciurus niger,food source,1.0
-Clematis,Sciurus niger,food source,1.0
 Avena barbata,Sturnus vulgaris,food source,0.97
 Lactuca serriola,Sturnus vulgaris,food source,0.94
+Bromus diandrus,Sturnus vulgaris,food source,0.94
 Galium aparine,Sturnus vulgaris,food source,0.94
 Salvia,Sturnus vulgaris,food source,0.94
-Cynoglosseae,Sturnus vulgaris,food source,0.94
 Avena barbata,Streptopelia decaocto,food source,0.94
 Pooideae,Streptopelia decaocto,food source,0.94
 Lactuca serriola,Streptopelia decaocto,food source,0.91
@@ -532,128 +1048,83 @@ Cynoglosseae,Streptopelia decaocto,food source,0.91
 Carpobrotus,Tursiops truncatus,food source,1.0
 Salvia munzii,Tursiops truncatus,food source,1.0
 Malephora,Tursiops truncatus,food source,1.0
-Raphanus raphanistrum sativus,Tursiops truncatus,food source,0.9
-Dittrichia graveolens,Tursiops truncatus,food source,0.9
 Salvia,Didelphis virginiana,food source,0.97
-Lactuca serriola,Didelphis virginiana,food source,0.93
-Cynoglosseae,Didelphis virginiana,food source,0.93
-Clematis,Didelphis virginiana,food source,0.93
-Pooideae,Didelphis virginiana,food source,0.93
-Lactuca serriola,Charadrius vociferus,food source,0.89
-Salvia,Charadrius vociferus,food source,0.89
-Clematis,Charadrius vociferus,food source,0.89
-Galium aparine,Charadrius vociferus,food source,0.86
-Tamarix ramosissima,Charadrius vociferus,food source,0.86
 Echium candicans,Anas platyrhynchos domesticus,food source,1.0
 Clematis,Anas platyrhynchos domesticus,food source,1.0
 Raphanus raphanistrum sativus,Anas platyrhynchos domesticus,food source,0.95
 Dittrichia graveolens,Anas platyrhynchos domesticus,food source,0.95
-Erodium botrys,Anas platyrhynchos domesticus,food source,0.95
+Urtica urens,Anas platyrhynchos domesticus,food source,0.95
 Raphanus raphanistrum sativus,Egretta rufescens,food source,1.0
 Dittrichia graveolens,Egretta rufescens,food source,1.0
 Cakile maritima,Egretta rufescens,food source,1.0
 Mesembryanthemum nodiflorum,Egretta rufescens,food source,1.0
 Urtica urens,Egretta rufescens,food source,1.0
 Phacelia,Aphelocoma californica obscura,food source,0.94
+Avena barbata,Aphelocoma californica obscura,food source,0.94
 Amsinckia,Aphelocoma californica obscura,food source,0.94
 Lactuca serriola,Aphelocoma californica obscura,food source,0.91
 Opuntia,Aphelocoma californica obscura,food source,0.91
-Ceanothus,Aphelocoma californica obscura,food source,0.91
 Clematis,Calidris minutilla,food source,1.0
 Medicago polymorpha,Calidris minutilla,food source,0.94
-Erodium moschatum,Calidris minutilla,food source,0.94
-Lactuca serriola,Calidris minutilla,food source,0.94
-Salvia,Calidris minutilla,food source,0.94
-Cynoglosseae,Calypte costae,food source,0.92
-Phacelia,Calypte costae,food source,0.89
-Tamarix,Calypte costae,food source,0.86
-Lasthenia,Calypte costae,food source,0.86
-Onagraceae,Calypte costae,food source,0.86
+Tamarix ramosissima,Megascapheus bottae,food source,0.85
+Lasthenia,Megascapheus bottae,food source,0.85
+Galium aparine,Megascapheus bottae,food source,0.82
+Clematis,Tringa melanoleuca,food source,1.0
 Medicago polymorpha,Tringa melanoleuca,food source,0.94
 Erodium moschatum,Tringa melanoleuca,food source,0.94
+Lactuca serriola,Tringa melanoleuca,food source,0.94
 Solanum nigrum,Tringa melanoleuca,food source,0.94
-Nasturtium officinale,Tringa melanoleuca,food source,0.94
-Salvia,Tringa melanoleuca,food source,0.94
-Lasthenia,Megascapheus bottae,food source,0.85
-Hypochaeris glabra,Megascapheus bottae,food source,0.82
-Phacelia,Megascapheus bottae,food source,0.82
-Amsinckia,Megascapheus bottae,food source,0.82
-Sisymbrium irio,Megascapheus bottae,food source,0.8
 Carpobrotus chilensis,Thalasseus elegans,food source,1.0
 Acmispon prostratus,Thalasseus elegans,food source,1.0
+Euphorbia misera,Thalasseus elegans,food source,0.92
 Acacia cyclops,Thalasseus elegans,food source,0.92
-Solanum nigrum,Thalasseus elegans,food source,0.92
-Atriplex semibaccata,Thalasseus elegans,food source,0.92
+Dittrichia graveolens,Pluvialis squatarola,food source,1.0
 Cakile maritima,Pluvialis squatarola,food source,1.0
 Mesembryanthemum nodiflorum,Pluvialis squatarola,food source,1.0
 Urtica urens,Pluvialis squatarola,food source,1.0
-Washingtonia robusta,Pluvialis squatarola,food source,1.0
-Carpobrotus edulis,Pluvialis squatarola,food source,1.0
+Echium candicans,Rallus obsoletus,food source,1.0
 Salvia munzii,Rallus obsoletus,food source,1.0
 Isocoma,Rallus obsoletus,food source,1.0
 Harpagonella palmeri,Rallus obsoletus,food source,1.0
 Eryngium aristulatum parishii,Rallus obsoletus,food source,1.0
-Acmispon prostratus,Rallus obsoletus,food source,1.0
-Liliopsida,Mammalia,food source,1.0
-Poales,Mammalia,food source,1.0
-Onagraceae,Mammalia,food source,0.9
-Astragalus,Mammalia,food source,0.88
-Amsinckia,Mammalia,food source,0.88
+Phacelia,Melanerpes formicivorus bairdi,food source,1.0
 Brodiaea orcuttii,Melanerpes formicivorus bairdi,food source,0.96
 Salvia,Melanerpes formicivorus bairdi,food source,0.96
+Cynoglosseae,Melanerpes formicivorus bairdi,food source,0.96
 Pooideae,Melanerpes formicivorus bairdi,food source,0.96
-Liliopsida,Melanerpes formicivorus bairdi,food source,0.96
-Amsinckia,Melanerpes formicivorus bairdi,food source,0.96
 Mesembryanthemum nodiflorum,Anarhynchus nivosus,food source,1.0
-Urtica urens,Anarhynchus nivosus,food source,1.0
 Washingtonia robusta,Anarhynchus nivosus,food source,1.0
 Carpobrotus edulis,Anarhynchus nivosus,food source,1.0
 Chenopodiastrum murale,Anarhynchus nivosus,food source,1.0
+Medicago polymorpha,Anarhynchus nivosus,food source,1.0
 Ferocactus viridescens,Amazona viridigenalis,food source,0.9
+Clematis,Amazona viridigenalis,food source,0.8
 Malacothamnus,Amazona viridigenalis,food source,0.8
 Liliopsida,Amazona viridigenalis,food source,0.8
 Harpagonella palmeri,Amazona viridigenalis,food source,0.8
-Urtica urens,Amazona viridigenalis,food source,0.75
-Sisymbrium irio,Lepus californicus,food source,0.87
-Tamarix,Lepus californicus,food source,0.87
-Astragalus,Lepus californicus,food source,0.87
-Amsinckia,Lepus californicus,food source,0.87
-Sisymbrium orientale,Lepus californicus,food source,0.87
+Phacelia,Neotoma,food source,0.95
 Lasthenia,Neotoma,food source,0.89
-Amsinckia,Neotoma,food source,0.89
-Astragalus,Neotoma,food source,0.84
-Pooideae,Neotoma,food source,0.84
-Onagraceae,Neotoma,food source,0.84
-Urtica urens,Zosterops simplex,food source,1.0
 Washingtonia robusta,Zosterops simplex,food source,1.0
 Carpobrotus edulis,Zosterops simplex,food source,1.0
 Chenopodiastrum murale,Zosterops simplex,food source,1.0
 Medicago polymorpha,Zosterops simplex,food source,1.0
-Medicago polymorpha,Sylvilagus,food source,0.93
-Tamarix,Sylvilagus,food source,0.93
-Pentagramma,Sylvilagus,food source,0.93
-Amsinckia,Sylvilagus,food source,0.93
-Onagraceae,Sylvilagus,food source,0.93
+Mutarda nigra,Zosterops simplex,food source,1.0
+Salvia,Sylvilagus,food source,0.97
+Clematis,Sylvilagus bachmani,food source,1.0
 Rumex crispus,Sylvilagus bachmani,food source,0.96
-Malacothamnus,Sylvilagus bachmani,food source,0.96
-Medicago polymorpha,Sylvilagus bachmani,food source,0.93
-Hypochaeris glabra,Sylvilagus bachmani,food source,0.93
-Carduus pycnocephalus,Sylvilagus bachmani,food source,0.93
+Salvia,Sylvilagus bachmani,food source,0.96
+Tamarix ramosissima,Lanius ludovicianus,food source,0.93
+Cynoglosseae,Lanius ludovicianus,food source,0.9
 Tamarix,Lanius ludovicianus,food source,0.87
-Chenopodiastrum murale,Lanius ludovicianus,food source,0.83
-Sisymbrium irio,Lanius ludovicianus,food source,0.83
-Lasthenia,Lanius ludovicianus,food source,0.83
-Onagraceae,Lanius ludovicianus,food source,0.83
+Cynoglosseae,Neotoma macrotis,food source,0.88
 Pooideae,Neotoma macrotis,food source,0.88
+Amsinckia,Neotoma macrotis,food source,0.88
 Onagraceae,Neotoma macrotis,food source,0.88
-Nasturtium officinale,Neotoma macrotis,food source,0.85
-Cirsium vulgare,Neotoma macrotis,food source,0.85
-Ceanothus,Neotoma macrotis,food source,0.85
 Ferocactus viridescens,Psittacara erythrogenys,food source,0.94
 Salvia munzii,Psittacara erythrogenys,food source,0.82
 Harpagonella palmeri,Psittacara erythrogenys,food source,0.82
+Euphorbia misera,Psittacara erythrogenys,food source,0.76
 Brodiaea orcuttii,Psittacara erythrogenys,food source,0.76
-Atriplex semibaccata,Psittacara erythrogenys,food source,0.76
 Cylindropuntia ganderi ganderi,Ammospermophilus leucurus,food source,0.91
 Encelia farinosa farinosa,Ammospermophilus leucurus,food source,0.91
 Sisymbrium irio,Ammospermophilus leucurus,food source,0.91
@@ -662,23 +1133,18 @@ Cochemiea tetrancistra,Ammospermophilus leucurus,food source,0.91
 Cylindropuntia ganderi ganderi,Ovis canadensis,food source,1.0
 Cochemiea tetrancistra,Ovis canadensis,food source,1.0
 Astragalus,Ovis canadensis,food source,0.92
-Cylindropuntia,Ovis canadensis,food source,0.92
-Encelia farinosa farinosa,Ovis canadensis,food source,0.83
-Hypochaeris glabra,Agelaius tricolor,food source,0.95
+Salvia,Agelaius tricolor,food source,0.95
 Hordeum murinum,Agelaius tricolor,food source,0.95
+Cynoglosseae,Agelaius tricolor,food source,0.95
 Solanum elaeagnifolium,Agelaius tricolor,food source,0.95
-Lasthenia,Agelaius tricolor,food source,0.95
-Rumex crispus,Agelaius tricolor,food source,0.89
 Cylindropuntia ganderi ganderi,Ovis canadensis nelsoni,food source,1.0
 Cochemiea tetrancistra,Ovis canadensis nelsoni,food source,1.0
 Astragalus,Ovis canadensis nelsoni,food source,0.92
-Onagraceae,Ovis canadensis nelsoni,food source,0.83
-Cylindropuntia,Ovis canadensis nelsoni,food source,0.83
+Cynoglosseae,Ovis canadensis nelsoni,food source,0.92
 Salvia munzii,Sternula antillarum,food source,0.88
 Ferocactus viridescens,Sternula antillarum,food source,0.88
 Isocoma,Sternula antillarum,food source,0.81
 Harpagonella palmeri,Sternula antillarum,food source,0.81
-Acacia cyclops,Sternula antillarum,food source,0.75
 Tribulus terrestris,Rattus rattus,food source,1.0
 Medicago polymorpha,Rattus rattus,food source,0.94
 Baccharis,Rattus rattus,food source,0.94
@@ -688,7 +1154,6 @@ Carpobrotus chilensis,Delphinus delphis,food source,0.92
 Acmispon prostratus,Delphinus delphis,food source,0.92
 Acacia cyclops,Delphinus delphis,food source,0.83
 Solanum nigrum,Delphinus delphis,food source,0.83
-Atriplex semibaccata,Delphinus delphis,food source,0.83
 Haliotis fulgens,Urobatis halleri,prey,0.9
 Haliotis rufescens,Urobatis halleri,prey,0.2
 Haliotis fulgens,Apostichopus parvimensis,prey,1.0
@@ -705,11 +1170,6 @@ Glyptostoma newberryanum,Micropterus nigricans,prey,0.75
 Xerarionta stearnsiana,Micropterus nigricans,prey,0.35
 Helminthoglypta traskii,Micropterus nigricans,prey,0.35
 Anadenulus cockerelli,Micropterus nigricans,prey,0.3
-Helminthoglypta tudiculata,Actinopterygii,prey,0.81
-Glyptostoma newberryanum,Actinopterygii,prey,0.67
-Xerarionta stearnsiana,Actinopterygii,prey,0.43
-Anadenulus cockerelli,Actinopterygii,prey,0.33
-Helminthoglypta traskii,Actinopterygii,prey,0.29
 Haliotis fulgens,Hypanus dipterurus,prey,0.88
 Haliotis rufescens,Hypanus dipterurus,prey,0.12
 Helminthoglypta tudiculata,Bodianus pulcher,prey,0.46
@@ -725,641 +1185,508 @@ Pachygrapsus crassipes,Triakis semifasciata,prey,1.0
 Anthopleura sola,Triakis semifasciata,prey,1.0
 Velella velella,Triakis semifasciata,prey,1.0
 Pseudacris regilla,Sceloporus occidentalis,prey,0.9
-Scolopendra polymorpha,Sceloporus occidentalis,prey,0.81
-Arthropoda,Sceloporus occidentalis,prey,0.79
-Anaxyrus boreas,Sceloporus occidentalis,prey,0.76
-Spea hammondii,Sceloporus occidentalis,prey,0.76
-Pachygrapsus crassipes,Zalophus californianus,prey,0.93
-Spea hammondii,Zalophus californianus,prey,0.93
-Anthopleura sola,Zalophus californianus,prey,0.86
-Velella velella,Zalophus californianus,prey,0.86
-Panulirus interruptus,Zalophus californianus,prey,0.86
-Pseudacris regilla,Canis latrans,prey,0.95
-Scolopendra polymorpha,Canis latrans,prey,0.88
-Arthropoda,Canis latrans,prey,0.84
-Vertebrata,Canis latrans,prey,0.79
-Anaxyrus boreas,Canis latrans,prey,0.77
 Pseudacris regilla,Pandion haliaetus,prey,0.89
 Armadillidium vulgare,Pandion haliaetus,prey,0.86
 Spea hammondii,Pandion haliaetus,prey,0.86
 Animalia,Pandion haliaetus,prey,0.82
-Arthropoda,Pandion haliaetus,prey,0.82
 Pseudacris regilla,Uta stansburiana elegans,prey,0.93
 Scolopendra polymorpha,Uta stansburiana elegans,prey,0.9
-Arthropoda,Uta stansburiana elegans,prey,0.86
-Vertebrata,Uta stansburiana elegans,prey,0.81
-Anaxyrus boreas,Uta stansburiana elegans,prey,0.79
 Pseudacris regilla,Crotalus oreganus helleri,prey,0.93
 Scolopendra polymorpha,Crotalus oreganus helleri,prey,0.83
-Arthropoda,Crotalus oreganus helleri,prey,0.81
-Vertebrata,Crotalus oreganus helleri,prey,0.79
-Anaxyrus boreas,Crotalus oreganus helleri,prey,0.76
 Velella velella,Phoca vitulina richardii,prey,1.0
 Pachygrapsus crassipes,Phoca vitulina richardii,prey,0.9
 Anthopleura sola,Phoca vitulina richardii,prey,0.9
-Patiria miniata,Phoca vitulina richardii,prey,0.9
-Panulirus interruptus,Phoca vitulina richardii,prey,0.9
-Pseudacris regilla,Lynx rufus,prey,0.9
-Scolopendra polymorpha,Lynx rufus,prey,0.85
-Vertebrata,Lynx rufus,prey,0.85
-Arthropoda,Lynx rufus,prey,0.82
-Anaxyrus boreas,Lynx rufus,prey,0.8
-Pseudacris regilla,Elgaria multicarinata,prey,0.97
 Spea hammondii,Elgaria multicarinata,prey,0.91
 Arthropoda,Elgaria multicarinata,prey,0.91
 Scolopendra polymorpha,Elgaria multicarinata,prey,0.91
-Armadillidium vulgare,Elgaria multicarinata,prey,0.88
-Pseudacris regilla,Uta stansburiana,prey,0.9
 Scolopendra polymorpha,Uta stansburiana,prey,0.88
-Arthropoda,Uta stansburiana,prey,0.86
-Vertebrata,Uta stansburiana,prey,0.83
-Anaxyrus boreas,Uta stansburiana,prey,0.79
 Scolopendra polymorpha,Pituophis catenifer annectens,prey,0.9
+Arthropoda,Pituophis catenifer annectens,prey,0.85
 Vertebrata,Pituophis catenifer annectens,prey,0.85
 Anaxyrus boreas,Pituophis catenifer annectens,prey,0.82
 Animalia,Pituophis catenifer annectens,prey,0.8
-Armadillidium vulgare,Pituophis catenifer annectens,prey,0.78
-Armadillidium vulgare,Procyon lotor,prey,0.88
-Animalia,Procyon lotor,prey,0.85
-Spea hammondii,Procyon lotor,prey,0.85
-Vertebrata,Procyon lotor,prey,0.85
-Anaxyrus boreas,Procyon lotor,prey,0.82
-Animalia,Mephitis mephitis,prey,0.83
-Spea hammondii,Mephitis mephitis,prey,0.83
-Vertebrata,Mephitis mephitis,prey,0.83
-Anura,Mephitis mephitis,prey,0.83
-Armadillidium vulgare,Mephitis mephitis,prey,0.81
+Arthropoda,Mephitis mephitis,prey,0.89
+Scolopendra polymorpha,Mephitis mephitis,prey,0.89
+Scolopendra polymorpha,Crotalus ruber,prey,0.9
+Arthropoda,Crotalus ruber,prey,0.85
+Vertebrata,Crotalus ruber,prey,0.85
+Anaxyrus boreas,Crotalus ruber,prey,0.79
 Animalia,Crotalus ruber,prey,0.77
-Lithobates catesbeianus,Crotalus ruber,prey,0.74
-Spea hammondii,Crotalus ruber,prey,0.74
-Pseudacris cadaverina,Crotalus ruber,prey,0.74
-Anura,Crotalus ruber,prey,0.74
+Scolopendra polymorpha,Phrynosoma blainvillii,prey,0.89
+Arthropoda,Phrynosoma blainvillii,prey,0.87
+Anaxyrus boreas,Phrynosoma blainvillii,prey,0.84
 Spea hammondii,Phrynosoma blainvillii,prey,0.84
-Anura,Phrynosoma blainvillii,prey,0.79
-Armadillidium vulgare,Phrynosoma blainvillii,prey,0.76
-Animalia,Phrynosoma blainvillii,prey,0.76
-Lithobates catesbeianus,Phrynosoma blainvillii,prey,0.76
+Vertebrata,Phrynosoma blainvillii,prey,0.82
+Anaxyrus boreas,Lampropeltis californiae,prey,0.82
+Arthropoda,Lampropeltis californiae,prey,0.82
+Vertebrata,Lampropeltis californiae,prey,0.8
 Armadillidium vulgare,Lampropeltis californiae,prey,0.78
-Animalia,Lampropeltis californiae,prey,0.75
-Lithobates catesbeianus,Lampropeltis californiae,prey,0.75
-Anura,Lampropeltis californiae,prey,0.75
-Batrachoseps major,Lampropeltis californiae,prey,0.72
-Animalia,Sceloporus occidentalis longipes,prey,0.85
-Anura,Sceloporus occidentalis longipes,prey,0.85
-Batrachoseps major,Sceloporus occidentalis longipes,prey,0.79
-Armadillidium vulgare,Sceloporus occidentalis longipes,prey,0.76
-Lithobates catesbeianus,Sceloporus occidentalis longipes,prey,0.76
-Lithobates catesbeianus,Falco peregrinus,prey,0.8
-Anura,Falco peregrinus,prey,0.8
-Batrachoseps major,Falco peregrinus,prey,0.77
-Trachemys scripta elegans,Falco peregrinus,prey,0.73
-Porcellio laevis,Falco peregrinus,prey,0.73
-Batrachoseps major,Elgaria multicarinata webbii,prey,0.79
-Lithobates catesbeianus,Elgaria multicarinata webbii,prey,0.79
-Anura,Elgaria multicarinata webbii,prey,0.79
-Trachemys scripta elegans,Elgaria multicarinata webbii,prey,0.73
-Pseudacris cadaverina,Elgaria multicarinata webbii,prey,0.7
+Arthropoda,Sceloporus occidentalis longipes,prey,0.88
+Arthropoda,Falco peregrinus,prey,0.87
+Armadillidium vulgare,Falco peregrinus,prey,0.83
+Vertebrata,Falco peregrinus,prey,0.83
+Anaxyrus boreas,Falco peregrinus,prey,0.8
+Spea hammondii,Elgaria multicarinata webbii,prey,0.91
+Armadillidium vulgare,Elgaria multicarinata webbii,prey,0.88
+Anaxyrus boreas,Elgaria multicarinata webbii,prey,0.85
+Animalia,Elgaria multicarinata webbii,prey,0.82
+Vertebrata,Elgaria multicarinata webbii,prey,0.82
+Armadillidium vulgare,Aspidoscelis hyperythrus,prey,0.92
 Batrachoseps major,Aspidoscelis hyperythrus,prey,0.92
-Lithobates catesbeianus,Aspidoscelis hyperythrus,prey,0.84
-Procambarus clarkii,Aspidoscelis hyperythrus,prey,0.84
-Anura,Aspidoscelis hyperythrus,prey,0.84
-Trachemys scripta elegans,Aspidoscelis hyperythrus,prey,0.8
-Lithobates catesbeianus,Sceloporus orcutti,prey,0.81
-Pseudacris cadaverina,Sceloporus orcutti,prey,0.81
-Batrachoseps major,Sceloporus orcutti,prey,0.72
-Anaxyrus boreas halophilus,Sceloporus orcutti,prey,0.72
-Procambarus clarkii,Sceloporus orcutti,prey,0.69
-Trachemys scripta elegans,Circus hudsonius,prey,0.84
-Batrachoseps major,Circus hudsonius,prey,0.84
-Porcellio laevis,Circus hudsonius,prey,0.84
-Procambarus clarkii,Circus hudsonius,prey,0.8
-Hiltonius,Circus hudsonius,prey,0.8
+Spea hammondii,Aspidoscelis hyperythrus,prey,0.92
+Animalia,Aspidoscelis hyperythrus,prey,0.88
+Vertebrata,Aspidoscelis hyperythrus,prey,0.88
+Anura,Sceloporus orcutti,prey,0.84
+Armadillidium vulgare,Circus hudsonius,prey,1.0
+Animalia,Circus hudsonius,prey,0.92
+Lithobates catesbeianus,Circus hudsonius,prey,0.92
+Vertebrata,Circus hudsonius,prey,0.92
+Anura,Circus hudsonius,prey,0.88
+Armadillidium vulgare,Anolis carolinensis,prey,1.0
+Animalia,Anolis carolinensis,prey,1.0
 Batrachoseps major,Anolis carolinensis,prey,1.0
-Procambarus clarkii,Anolis carolinensis,prey,1.0
-Trachemys scripta elegans,Anolis carolinensis,prey,0.93
-Trachemys scripta,Anolis carolinensis,prey,0.93
-Oxidus gracilis,Anolis carolinensis,prey,0.93
-Pseudacris cadaverina,Urocyon cinereoargenteus,prey,0.74
-Trachemys scripta elegans,Urocyon cinereoargenteus,prey,0.66
-Procambarus clarkii,Urocyon cinereoargenteus,prey,0.66
-Anaxyrus boreas halophilus,Urocyon cinereoargenteus,prey,0.66
-Porcellio laevis,Urocyon cinereoargenteus,prey,0.61
+Lithobates catesbeianus,Anolis carolinensis,prey,1.0
+Spea hammondii,Anolis carolinensis,prey,1.0
+Animalia,Urocyon cinereoargenteus,prey,0.82
+Spea hammondii,Urocyon cinereoargenteus,prey,0.79
+Anura,Aspidoscelis tigris,prey,0.76
 Pseudacris cadaverina,Aspidoscelis tigris,prey,0.74
-Anaxyrus boreas halophilus,Aspidoscelis tigris,prey,0.63
-Procambarus clarkii,Aspidoscelis tigris,prey,0.61
-Trachemys scripta elegans,Aspidoscelis tigris,prey,0.55
-Porcellio laevis,Aspidoscelis tigris,prey,0.53
-Pseudacris cadaverina,Pituophis catenifer,prey,0.74
-Procambarus clarkii,Pituophis catenifer,prey,0.67
-Anaxyrus boreas halophilus,Pituophis catenifer,prey,0.67
-Trachemys scripta elegans,Pituophis catenifer,prey,0.64
-Porcellio laevis,Pituophis catenifer,prey,0.62
+Anura,Pituophis catenifer,prey,0.79
+Armadillidium vulgare,Pituophis catenifer,prey,0.77
+Lithobates catesbeianus,Pituophis catenifer,prey,0.77
+Spea hammondii,Pituophis catenifer,prey,0.77
+Batrachoseps major,Pituophis catenifer,prey,0.74
 Ophiothrix spiculata,Phoca vitulina,prey,0.88
-Taliepus nuttallii,Phoca vitulina,prey,0.88
-Epiactis prolifera,Phoca vitulina,prey,0.88
-Oxidus gracilis,Phoca vitulina,prey,0.88
-Pachygrapsus crassipes,Phoca vitulina,prey,0.75
 Pseudacris cadaverina,Puma concolor,prey,0.9
-Anaxyrus boreas halophilus,Puma concolor,prey,0.73
-Procambarus clarkii,Puma concolor,prey,0.63
-Porcellio laevis,Puma concolor,prey,0.6
-Hiltonius,Puma concolor,prey,0.57
-Pseudacris cadaverina,Haliaeetus leucocephalus,prey,0.85
-Anaxyrus boreas halophilus,Haliaeetus leucocephalus,prey,0.81
-Porcellio laevis,Haliaeetus leucocephalus,prey,0.73
-Trachemys scripta,Haliaeetus leucocephalus,prey,0.65
-Hiltonius,Haliaeetus leucocephalus,prey,0.65
+Lithobates catesbeianus,Puma concolor,prey,0.8
+Anura,Puma concolor,prey,0.8
+Lithobates catesbeianus,Haliaeetus leucocephalus,prey,0.92
+Anura,Haliaeetus leucocephalus,prey,0.92
+Batrachoseps major,Haliaeetus leucocephalus,prey,0.85
+Anura,Plestiodon skiltonianus,prey,0.88
+Lithobates catesbeianus,Plestiodon skiltonianus,prey,0.84
+Batrachoseps major,Plestiodon skiltonianus,prey,0.81
 Anaxyrus boreas halophilus,Plestiodon skiltonianus,prey,0.78
-Porcellio laevis,Plestiodon skiltonianus,prey,0.69
-Hiltonius,Plestiodon skiltonianus,prey,0.59
-Trachemys scripta,Plestiodon skiltonianus,prey,0.56
-Scutigera coleoptrata,Plestiodon skiltonianus,prey,0.56
-Anaxyrus boreas halophilus,Thamnophis hammondii,prey,0.66
-Hiltonius,Thamnophis hammondii,prey,0.55
-Trachemys scripta,Thamnophis hammondii,prey,0.53
-Scutigera coleoptrata,Thamnophis hammondii,prey,0.5
-Oxidus gracilis,Thamnophis hammondii,prey,0.42
+Anura,Thamnophis hammondii,prey,0.76
+Batrachoseps major,Thamnophis hammondii,prey,0.71
+Lithobates catesbeianus,Thamnophis hammondii,prey,0.71
+Pseudacris cadaverina,Thamnophis hammondii,prey,0.71
+Procambarus clarkii,Thamnophis hammondii,prey,0.66
+Pseudacris cadaverina,Dipsosaurus dorsalis,prey,0.75
+Lithobates catesbeianus,Dipsosaurus dorsalis,prey,0.42
 Hiltonius,Dipsosaurus dorsalis,prey,0.42
-Trachemys scripta,Dipsosaurus dorsalis,prey,0.25
-Oxidus gracilis,Dipsosaurus dorsalis,prey,0.17
-Scutigera coleoptrata,Dipsosaurus dorsalis,prey,0.17
-Patiria miniata,Dipsosaurus dorsalis,prey,0.1
-Trachemys scripta,Lichanura orcutti,prey,0.49
-Hiltonius,Lichanura orcutti,prey,0.49
-Scutigera coleoptrata,Lichanura orcutti,prey,0.41
-Oxidus gracilis,Lichanura orcutti,prey,0.35
-Pachygrapsus crassipes,Lichanura orcutti,prey,0.19
-Hiltonius,Masticophis lateralis,prey,0.58
-Trachemys scripta,Masticophis lateralis,prey,0.55
-Scutigera coleoptrata,Masticophis lateralis,prey,0.55
-Oxidus gracilis,Masticophis lateralis,prey,0.48
-Pachygrapsus crassipes,Masticophis lateralis,prey,0.3
+Pseudacris cadaverina,Lichanura orcutti,prey,0.81
+Procambarus clarkii,Lichanura orcutti,prey,0.62
+Anaxyrus boreas halophilus,Lichanura orcutti,prey,0.62
+Trachemys scripta elegans,Lichanura orcutti,prey,0.57
+Pseudacris cadaverina,Masticophis lateralis,prey,0.76
+Anaxyrus boreas halophilus,Masticophis lateralis,prey,0.73
+Procambarus clarkii,Masticophis lateralis,prey,0.7
+Porcellio laevis,Masticophis lateralis,prey,0.67
+Trachemys scripta elegans,Falco columbarius,prey,0.96
+Procambarus clarkii,Falco columbarius,prey,0.91
 Trachemys scripta,Falco columbarius,prey,0.87
-Oxidus gracilis,Falco columbarius,prey,0.7
-Scutigera coleoptrata,Falco columbarius,prey,0.7
-Pachygrapsus crassipes,Falco columbarius,prey,0.43
-Anthopleura sola,Falco columbarius,prey,0.43
-Oxidus gracilis,Carnivora,prey,0.49
-Scutigera coleoptrata,Carnivora,prey,0.49
-Pachygrapsus crassipes,Carnivora,prey,0.3
-Anthopleura sola,Carnivora,prey,0.3
-Panulirus interruptus,Carnivora,prey,0.3
-Scutigera coleoptrata,Crotalus pyrrhus,prey,0.35
-Anthopleura sola,Crotalus pyrrhus,prey,0.12
-Panulirus interruptus,Crotalus pyrrhus,prey,0.12
-Pisaster ochraceus,Crotalus pyrrhus,prey,0.12
-Dendraster excentricus,Crotalus pyrrhus,prey,0.12
-Anthopleura sola,Felis catus,prey,0.41
-Panulirus interruptus,Felis catus,prey,0.41
-Dendraster excentricus,Felis catus,prey,0.41
-Emerita analoga,Felis catus,prey,0.41
-Velella velella,Felis catus,prey,0.37
-Panulirus interruptus,Buteo swainsoni,prey,0.36
-Anthopleura sola,Buteo swainsoni,prey,0.27
-Patiria miniata,Buteo swainsoni,prey,0.27
-Velella velella,Buteo swainsoni,prey,0.27
-Pollicipes polymerus,Buteo swainsoni,prey,0.27
-Dendraster excentricus,Anniella stebbinsi,prey,0.39
-Velella velella,Anniella stebbinsi,prey,0.36
-Panulirus interruptus,Anniella stebbinsi,prey,0.36
-Emerita analoga,Anniella stebbinsi,prey,0.36
-Patiria miniata,Anniella stebbinsi,prey,0.32
+Hiltonius,Falco columbarius,prey,0.83
+Porcellio laevis,Falco columbarius,prey,0.83
+Pseudacris cadaverina,Carnivora,prey,0.7
+Trachemys scripta elegans,Carnivora,prey,0.68
+Anaxyrus boreas halophilus,Carnivora,prey,0.68
+Anaxyrus boreas halophilus,Crotalus pyrrhus,prey,0.62
+Procambarus clarkii,Crotalus pyrrhus,prey,0.59
+Trachemys scripta elegans,Crotalus pyrrhus,prey,0.56
+Porcellio laevis,Crotalus pyrrhus,prey,0.5
+Anaxyrus boreas halophilus,Buteo swainsoni,prey,0.91
+Trachemys scripta elegans,Buteo swainsoni,prey,0.73
+Trachemys scripta,Buteo swainsoni,prey,0.73
+Hiltonius,Buteo swainsoni,prey,0.64
+Porcellio laevis,Buteo swainsoni,prey,0.64
+Anaxyrus boreas halophilus,Anniella stebbinsi,prey,0.75
+Porcellio laevis,Anniella stebbinsi,prey,0.71
+Trachemys scripta,Anniella stebbinsi,prey,0.64
+Hiltonius,Anniella stebbinsi,prey,0.64
+Scutigera coleoptrata,Anniella stebbinsi,prey,0.61
 Lecanoromycetes,Magnoliopsida,nutrient cycling,1.0
-Fungi,Magnoliopsida,nutrient cycling,1.0
-Agaricales,Magnoliopsida,nutrient cycling,1.0
-Agaricomycetes,Magnoliopsida,nutrient cycling,1.0
-Basidiomycota,Magnoliopsida,nutrient cycling,1.0
 Fungi,Glebionis coronaria,nutrient cycling,1.0
 Lecanoromycetes,Glebionis coronaria,nutrient cycling,1.0
 Agaricomycetes,Glebionis coronaria,nutrient cycling,1.0
 Agrocybe pediades,Glebionis coronaria,nutrient cycling,1.0
-Agaricales,Glebionis coronaria,nutrient cycling,0.96
 Acarospora socialis,Cylindropuntia ganderi ganderi,nutrient cycling,1.0
 Fungi,Cylindropuntia ganderi ganderi,nutrient cycling,0.93
 Lecanoromycetes,Cylindropuntia ganderi ganderi,nutrient cycling,0.93
 Montagnea arenaria,Cylindropuntia ganderi ganderi,nutrient cycling,0.79
-Agaricales,Cylindropuntia ganderi ganderi,nutrient cycling,0.71
 Fungi,Oxalis pes-caprae,nutrient cycling,1.0
 Lecanoromycetes,Oxalis pes-caprae,nutrient cycling,1.0
 Agaricales,Oxalis pes-caprae,nutrient cycling,1.0
 Agaricomycetes,Oxalis pes-caprae,nutrient cycling,1.0
-Agaricus,Oxalis pes-caprae,nutrient cycling,1.0
 Fungi,Bahiopsis laciniata,nutrient cycling,0.96
 Lecanoromycetes,Bahiopsis laciniata,nutrient cycling,0.96
 Agaricales,Bahiopsis laciniata,nutrient cycling,0.92
 Omphalotus olivascens,Bahiopsis laciniata,nutrient cycling,0.92
-Agaricomycetes,Bahiopsis laciniata,nutrient cycling,0.92
 Fungi,Foeniculum vulgare,nutrient cycling,1.0
 Lecanoromycetes,Foeniculum vulgare,nutrient cycling,0.95
 Agaricales,Foeniculum vulgare,nutrient cycling,0.95
 Agaricomycetes,Foeniculum vulgare,nutrient cycling,0.95
 Agrocybe pediades,Foeniculum vulgare,nutrient cycling,0.95
-Lecanoromycetes,Erodium cicutarium,nutrient cycling,0.98
-Acarospora socialis,Erodium cicutarium,nutrient cycling,0.98
-Fungi,Erodium cicutarium,nutrient cycling,0.95
-Agaricales,Erodium cicutarium,nutrient cycling,0.9
-Agaricomycetes,Erodium cicutarium,nutrient cycling,0.83
 Lecanoromycetes,Hirschfeldia incana,nutrient cycling,1.0
 Agaricales,Hirschfeldia incana,nutrient cycling,0.97
-Acarospora socialis,Hirschfeldia incana,nutrient cycling,0.97
-Fungi,Hirschfeldia incana,nutrient cycling,0.95
-Agaricomycetes,Hirschfeldia incana,nutrient cycling,0.92
+Fungi,Lysimachia arvensis,nutrient cycling,0.97
 Agaricomycetes,Lysimachia arvensis,nutrient cycling,0.97
-Omphalotus olivascens,Lysimachia arvensis,nutrient cycling,0.91
-Agrocybe pediades,Lysimachia arvensis,nutrient cycling,0.91
-Xanthoparmelia cumberlandia,Lysimachia arvensis,nutrient cycling,0.91
-Acarospora socialis,Lysimachia arvensis,nutrient cycling,0.91
+Agaricales,Lysimachia arvensis,nutrient cycling,0.94
+Fungi,Ceanothus verrucosus,nutrient cycling,1.0
+Agaricales,Ceanothus verrucosus,nutrient cycling,1.0
+Agaricomycetes,Ceanothus verrucosus,nutrient cycling,1.0
 Psathyrellaceae,Ceanothus verrucosus,nutrient cycling,1.0
 Ganoderma,Ceanothus verrucosus,nutrient cycling,1.0
-Agaricus,Ceanothus verrucosus,nutrient cycling,0.93
-Agrocybe pediades,Ceanothus verrucosus,nutrient cycling,0.93
-Cladonia,Ceanothus verrucosus,nutrient cycling,0.93
 Cladonia,Tropaeolum majus,nutrient cycling,1.0
 Psathyrellaceae,Tropaeolum majus,nutrient cycling,1.0
+Agaricales,Tropaeolum majus,nutrient cycling,0.94
 Omphalotus olivascens,Tropaeolum majus,nutrient cycling,0.94
-Agaricus,Tropaeolum majus,nutrient cycling,0.94
-Agrocybe pediades,Tropaeolum majus,nutrient cycling,0.94
+Agaricales,Ferocactus viridescens viridescens,nutrient cycling,0.85
+Agaricomycetes,Ferocactus viridescens viridescens,nutrient cycling,0.85
 Omphalotus olivascens,Ferocactus viridescens viridescens,nutrient cycling,0.81
 Psathyrellaceae,Ferocactus viridescens viridescens,nutrient cycling,0.81
 Basidiomycota,Ferocactus viridescens viridescens,nutrient cycling,0.81
-Agaricus,Ferocactus viridescens viridescens,nutrient cycling,0.77
-Agrocybe pediades,Ferocactus viridescens viridescens,nutrient cycling,0.77
 Acarospora socialis,Cenchrus setaceus,nutrient cycling,0.97
 Agaricineae,Cenchrus setaceus,nutrient cycling,0.97
+Agaricomycetes,Cenchrus setaceus,nutrient cycling,0.93
 Agaricus,Cenchrus setaceus,nutrient cycling,0.93
-Agrocybe pediades,Cenchrus setaceus,nutrient cycling,0.93
-Basidiomycota,Cenchrus setaceus,nutrient cycling,0.93
 Acarospora socialis,Encelia farinosa farinosa,nutrient cycling,1.0
 Montagnea arenaria,Encelia farinosa farinosa,nutrient cycling,0.86
 Basidiomycota,Encelia farinosa farinosa,nutrient cycling,0.81
 Xanthoparmelia,Encelia farinosa farinosa,nutrient cycling,0.76
 Agaricus,Encelia farinosa farinosa,nutrient cycling,0.71
+Agaricomycetes,Nicotiana glauca,nutrient cycling,1.0
 Agaricus,Nicotiana glauca,nutrient cycling,1.0
 Agrocybe pediades,Nicotiana glauca,nutrient cycling,0.96
 Acarospora socialis,Nicotiana glauca,nutrient cycling,0.96
-Basidiomycota,Nicotiana glauca,nutrient cycling,0.96
-Omphalotus olivascens,Nicotiana glauca,nutrient cycling,0.92
 Acarospora socialis,Melilotus indicus,nutrient cycling,0.97
 Xanthoparmelia cumberlandia,Melilotus indicus,nutrient cycling,0.95
-Xanthoparmelia,Melilotus indicus,nutrient cycling,0.92
-Omphalotus olivascens,Melilotus indicus,nutrient cycling,0.89
-Agaricus,Melilotus indicus,nutrient cycling,0.89
 Cladonia,Ricinus communis,nutrient cycling,1.0
 Omphalotus olivascens,Ricinus communis,nutrient cycling,0.95
-Psathyrellaceae,Ricinus communis,nutrient cycling,0.95
-Candolleomyces candolleanus,Ricinus communis,nutrient cycling,0.95
-Agaricineae,Ricinus communis,nutrient cycling,0.95
+Agaricus,Ricinus communis,nutrient cycling,0.95
 Omphalotus olivascens,Marrubium vulgare,nutrient cycling,0.97
+Agrocybe pediades,Marrubium vulgare,nutrient cycling,0.97
 Xanthoparmelia,Marrubium vulgare,nutrient cycling,0.94
-Stereum hirsutum,Marrubium vulgare,nutrient cycling,0.9
-Xanthoparmelia cumberlandia,Marrubium vulgare,nutrient cycling,0.9
-Candelaria pacifica,Marrubium vulgare,nutrient cycling,0.9
+Acarospora socialis,Marrubium vulgare,nutrient cycling,0.94
+Acarospora socialis,Camissoniopsis,nutrient cycling,0.97
+Agrocybe pediades,Camissoniopsis,nutrient cycling,0.87
 Xanthoparmelia cumberlandia,Camissoniopsis,nutrient cycling,0.87
 Xanthoparmelia,Camissoniopsis,nutrient cycling,0.87
-Candelaria pacifica,Camissoniopsis,nutrient cycling,0.82
-Parmelioideae,Camissoniopsis,nutrient cycling,0.79
-Basidiomycota,Camissoniopsis,nutrient cycling,0.79
+Omphalotus olivascens,Camissoniopsis,nutrient cycling,0.82
 Psathyrellaceae,Mesembryanthemum crystallinum,nutrient cycling,1.0
+Agaricus,Mesembryanthemum crystallinum,nutrient cycling,0.94
+Agrocybe pediades,Mesembryanthemum crystallinum,nutrient cycling,0.94
 Cladonia,Mesembryanthemum crystallinum,nutrient cycling,0.94
-Agaricineae,Mesembryanthemum crystallinum,nutrient cycling,0.94
-Basidiomycota,Mesembryanthemum crystallinum,nutrient cycling,0.94
-Xanthoparmelia,Mesembryanthemum crystallinum,nutrient cycling,0.89
+Agaricus,Pinus torreyana,nutrient cycling,1.0
+Agrocybe pediades,Pinus torreyana,nutrient cycling,1.0
 Cladonia,Pinus torreyana,nutrient cycling,1.0
 Volvopluteus gloiocephalus,Pinus torreyana,nutrient cycling,1.0
 Chlorophyllum molybdites,Pinus torreyana,nutrient cycling,1.0
-Psathyrellaceae,Pinus torreyana,nutrient cycling,1.0
-Leratiomyces ceres,Pinus torreyana,nutrient cycling,1.0
-Xanthoparmelia cumberlandia,Centaurea melitensis,nutrient cycling,0.94
-Xanthoparmelia,Centaurea melitensis,nutrient cycling,0.94
-Candelaria pacifica,Centaurea melitensis,nutrient cycling,0.91
-Stereum hirsutum,Centaurea melitensis,nutrient cycling,0.88
-Psathyrellaceae,Centaurea melitensis,nutrient cycling,0.88
+Acarospora socialis,Centaurea melitensis,nutrient cycling,0.97
 Agaricineae,Raphanus raphanistrum,nutrient cycling,1.0
+Agaricus,Raphanus raphanistrum,nutrient cycling,0.96
 Xanthoparmelia,Raphanus raphanistrum,nutrient cycling,0.96
 Candelaria pacifica,Raphanus raphanistrum,nutrient cycling,0.96
 Stereum hirsutum,Raphanus raphanistrum,nutrient cycling,0.92
-Xanthoparmelia cumberlandia,Raphanus raphanistrum,nutrient cycling,0.92
-Xanthoparmelia cumberlandia,Poaceae,nutrient cycling,0.87
-Xanthoparmelia,Poaceae,nutrient cycling,0.87
-Candelaria pacifica,Poaceae,nutrient cycling,0.82
-Basidiomycota,Poaceae,nutrient cycling,0.82
-Parmelioideae,Poaceae,nutrient cycling,0.79
+Xanthoparmelia,Sonchus oleraceus,nutrient cycling,0.83
 Agaricineae,Sonchus oleraceus,nutrient cycling,0.83
+Basidiomycota,Sonchus oleraceus,nutrient cycling,0.83
 Xanthoparmelia cumberlandia,Sonchus oleraceus,nutrient cycling,0.8
 Candelaria pacifica,Sonchus oleraceus,nutrient cycling,0.77
-Parmelioideae,Sonchus oleraceus,nutrient cycling,0.74
-Stereum hirsutum,Sonchus oleraceus,nutrient cycling,0.71
+Xanthoparmelia,Quercus engelmannii,nutrient cycling,0.97
+Xanthoparmelia cumberlandia,Quercus engelmannii,nutrient cycling,0.94
 Candelaria pacifica,Quercus engelmannii,nutrient cycling,0.91
 Stereum hirsutum,Quercus engelmannii,nutrient cycling,0.88
-Parmelioideae,Quercus engelmannii,nutrient cycling,0.88
-Psathyrellaceae,Quercus engelmannii,nutrient cycling,0.85
-Amanita,Quercus engelmannii,nutrient cycling,0.85
 Podaxis pistillaris,Xylorhiza orcuttii,nutrient cycling,1.0
 Montagnea arenaria,Xylorhiza orcuttii,nutrient cycling,1.0
+Basidiomycota,Xylorhiza orcuttii,nutrient cycling,1.0
 Helvella dryophila,Xylorhiza orcuttii,nutrient cycling,0.4
 Ganoderma polychromum,Xylorhiza orcuttii,nutrient cycling,0.4
-Agaricineae,Xylorhiza orcuttii,nutrient cycling,0.4
+Xanthoparmelia cumberlandia,Calochortus weedii,nutrient cycling,0.81
+Xanthoparmelia,Calochortus weedii,nutrient cycling,0.79
+Psathyrellaceae,Calochortus weedii,nutrient cycling,0.74
 Parmelioideae,Calochortus weedii,nutrient cycling,0.74
-Candelaria pacifica,Calochortus weedii,nutrient cycling,0.74
-Stereum hirsutum,Calochortus weedii,nutrient cycling,0.71
-Agaricineae,Calochortus weedii,nutrient cycling,0.69
-Cladonia,Calochortus weedii,nutrient cycling,0.67
+Xanthoparmelia cumberlandia,Brassica tournefortii,nutrient cycling,0.78
+Basidiomycota,Brassica tournefortii,nutrient cycling,0.78
+Xanthoparmelia,Brassica tournefortii,nutrient cycling,0.76
 Agaricineae,Brassica tournefortii,nutrient cycling,0.73
 Montagnea arenaria,Brassica tournefortii,nutrient cycling,0.73
-Stereum hirsutum,Brassica tournefortii,nutrient cycling,0.68
-Parmelioideae,Brassica tournefortii,nutrient cycling,0.68
-Lactarius alnicola,Brassica tournefortii,nutrient cycling,0.65
 Cladonia,Helminthotheca echioides,nutrient cycling,1.0
 Chlorophyllum molybdites,Helminthotheca echioides,nutrient cycling,1.0
+Psathyrellaceae,Helminthotheca echioides,nutrient cycling,1.0
 Candolleomyces candolleanus,Helminthotheca echioides,nutrient cycling,1.0
-Stereum hirsutum,Helminthotheca echioides,nutrient cycling,0.95
-Laetiporus gilbertsonii,Helminthotheca echioides,nutrient cycling,0.95
 Cladonia,Limonium perezii,nutrient cycling,0.94
 Volvopluteus gloiocephalus,Limonium perezii,nutrient cycling,0.94
 Candolleomyces candolleanus,Limonium perezii,nutrient cycling,0.94
-Laetiporus gilbertsonii,Limonium perezii,nutrient cycling,0.88
-Lactarius alnicola,Limonium perezii,nutrient cycling,0.88
+Agaricineae,Limonium perezii,nutrient cycling,0.94
+Psathyrellaceae,Leptosyne maritima,nutrient cycling,0.76
+Cladonia,Leptosyne maritima,nutrient cycling,0.71
+Basidiomycota,Leptosyne maritima,nutrient cycling,0.71
 Laetiporus gilbertsonii,Leptosyne maritima,nutrient cycling,0.67
 Chlorophyllum molybdites,Leptosyne maritima,nutrient cycling,0.67
-Candolleomyces candolleanus,Leptosyne maritima,nutrient cycling,0.67
-Volvopluteus gloiocephalus,Leptosyne maritima,nutrient cycling,0.62
-Lactarius alnicola,Leptosyne maritima,nutrient cycling,0.62
-Amanita,Silene gallica,nutrient cycling,0.9
-Parmelioideae,Silene gallica,nutrient cycling,0.9
-Lactarius alnicola,Silene gallica,nutrient cycling,0.84
-Helvella dryophila,Silene gallica,nutrient cycling,0.84
-Ganoderma polychromum,Silene gallica,nutrient cycling,0.84
+Stereum hirsutum,Silene gallica,nutrient cycling,0.97
+Cladonia,Raphanus raphanistrum sativus,nutrient cycling,1.0
+Stereum hirsutum,Raphanus raphanistrum sativus,nutrient cycling,0.95
 Volvopluteus gloiocephalus,Raphanus raphanistrum sativus,nutrient cycling,0.95
 Candolleomyces candolleanus,Raphanus raphanistrum sativus,nutrient cycling,0.95
-Contumyces rosellus,Raphanus raphanistrum sativus,nutrient cycling,0.95
-Lactarius alnicola,Raphanus raphanistrum sativus,nutrient cycling,0.9
-Cladonia chlorophaea,Raphanus raphanistrum sativus,nutrient cycling,0.9
-Lactarius alnicola,Dittrichia graveolens,nutrient cycling,0.89
-Candolleomyces candolleanus,Dittrichia graveolens,nutrient cycling,0.89
-Xerocomellus dryophilus,Dittrichia graveolens,nutrient cycling,0.89
-Gymnopilus,Dittrichia graveolens,nutrient cycling,0.89
-Volvopluteus gloiocephalus,Dittrichia graveolens,nutrient cycling,0.85
-Lactarius alnicola,Erodium botrys,nutrient cycling,0.9
-Amanita,Erodium botrys,nutrient cycling,0.9
-Parmelioideae,Erodium botrys,nutrient cycling,0.9
-Ganoderma polychromum,Erodium botrys,nutrient cycling,0.86
-Candolleomyces candolleanus,Erodium botrys,nutrient cycling,0.86
-Lactarius alnicola,Hedypnois rhagadioloides,nutrient cycling,0.87
-Candolleomyces candolleanus,Hedypnois rhagadioloides,nutrient cycling,0.87
-Amanita,Hedypnois rhagadioloides,nutrient cycling,0.83
-Xerocomellus dryophilus,Hedypnois rhagadioloides,nutrient cycling,0.83
-Gymnopus dryophilus,Hedypnois rhagadioloides,nutrient cycling,0.83
+Agaricineae,Raphanus raphanistrum sativus,nutrient cycling,0.95
+Stereum hirsutum,Dittrichia graveolens,nutrient cycling,0.93
+Xanthoparmelia cumberlandia,Dittrichia graveolens,nutrient cycling,0.93
+Agaricineae,Dittrichia graveolens,nutrient cycling,0.93
+Candelaria pacifica,Dittrichia graveolens,nutrient cycling,0.93
+Basidiomycota,Dittrichia graveolens,nutrient cycling,0.93
+Stereum hirsutum,Hedypnois rhagadioloides,nutrient cycling,0.9
+Xanthoparmelia cumberlandia,Hedypnois rhagadioloides,nutrient cycling,0.9
+Agaricineae,Hedypnois rhagadioloides,nutrient cycling,0.9
+Candelaria pacifica,Hedypnois rhagadioloides,nutrient cycling,0.9
+Basidiomycota,Hedypnois rhagadioloides,nutrient cycling,0.9
 Volvopluteus gloiocephalus,Cakile maritima,nutrient cycling,1.0
 Chlorophyllum molybdites,Cakile maritima,nutrient cycling,1.0
 Leratiomyces ceres,Cakile maritima,nutrient cycling,1.0
-Laetiporus gilbertsonii,Cakile maritima,nutrient cycling,0.9
-Schizophyllum commune,Cakile maritima,nutrient cycling,0.9
-Amanita,Sonchus asper,nutrient cycling,0.77
-Ganoderma polychromum,Sonchus asper,nutrient cycling,0.77
-Helvella dryophila,Sonchus asper,nutrient cycling,0.74
-Xerocomellus dryophilus,Sonchus asper,nutrient cycling,0.74
-Naematelia aurantia,Sonchus asper,nutrient cycling,0.74
+Candolleomyces candolleanus,Cakile maritima,nutrient cycling,1.0
+Candelaria pacifica,Sonchus asper,nutrient cycling,0.89
+Parmelioideae,Sonchus asper,nutrient cycling,0.86
+Stereum hirsutum,Sonchus asper,nutrient cycling,0.83
 Laetiporus gilbertsonii,Mesembryanthemum nodiflorum,nutrient cycling,0.88
 Chlorophyllum molybdites,Mesembryanthemum nodiflorum,nutrient cycling,0.88
+Candolleomyces candolleanus,Mesembryanthemum nodiflorum,nutrient cycling,0.88
 Volvopluteus gloiocephalus,Mesembryanthemum nodiflorum,nutrient cycling,0.82
-Cladonia chlorophaea,Mesembryanthemum nodiflorum,nutrient cycling,0.82
-Agaricus californicus,Mesembryanthemum nodiflorum,nutrient cycling,0.82
+Lactarius alnicola,Mesembryanthemum nodiflorum,nutrient cycling,0.82
 Xerocomellus dryophilus,Quercus dumosa,nutrient cycling,0.88
+Candelaria pacifica,Quercus dumosa,nutrient cycling,0.88
 Volvopluteus gloiocephalus,Quercus dumosa,nutrient cycling,0.82
-Cladonia chlorophaea,Quercus dumosa,nutrient cycling,0.82
-Agaricus californicus,Quercus dumosa,nutrient cycling,0.82
-Ganoderma polychromum,Quercus dumosa,nutrient cycling,0.82
-Amanita,Urtica urens,nutrient cycling,0.85
-Xerocomellus dryophilus,Urtica urens,nutrient cycling,0.85
-Ganoderma,Urtica urens,nutrient cycling,0.85
-Gymnopilus,Urtica urens,nutrient cycling,0.85
-Agaricus californicus,Urtica urens,nutrient cycling,0.81
+Candelaria pacifica,Urtica urens,nutrient cycling,0.96
+Lactarius alnicola,Urtica urens,nutrient cycling,0.85
+Parmelioideae,Acmispon,nutrient cycling,0.76
 Montagnea arenaria,Acmispon,nutrient cycling,0.71
 Amanita,Acmispon,nutrient cycling,0.68
 Helvella dryophila,Acmispon,nutrient cycling,0.68
 Ganoderma polychromum,Acmispon,nutrient cycling,0.68
-Xerocomellus dryophilus,Acmispon,nutrient cycling,0.66
+Parmelioideae,Washingtonia robusta,nutrient cycling,0.88
 Contumyces rosellus,Washingtonia robusta,nutrient cycling,0.88
+Lactarius alnicola,Washingtonia robusta,nutrient cycling,0.83
 Agaricus californicus,Washingtonia robusta,nutrient cycling,0.83
-Schizophyllum commune,Washingtonia robusta,nutrient cycling,0.79
-Cladonia chlorophaea,Washingtonia robusta,nutrient cycling,0.79
-Amanita,Washingtonia robusta,nutrient cycling,0.79
+Candolleomyces candolleanus,Washingtonia robusta,nutrient cycling,0.83
 Montagnea arenaria,Cylindropuntia fosbergii,nutrient cycling,0.7
+Parmelioideae,Cylindropuntia fosbergii,nutrient cycling,0.7
 Ganoderma polychromum,Cylindropuntia fosbergii,nutrient cycling,0.6
 Naematelia aurantia,Cylindropuntia fosbergii,nutrient cycling,0.6
 Astraeus,Cylindropuntia fosbergii,nutrient cycling,0.6
-Laetiporus gilbertsonii,Cylindropuntia fosbergii,nutrient cycling,0.5
 Contumyces rosellus,Conium maculatum,nutrient cycling,0.95
+Volvopluteus gloiocephalus,Conium maculatum,nutrient cycling,0.9
 Agaricus californicus,Conium maculatum,nutrient cycling,0.9
-Gymnopus dryophilus,Conium maculatum,nutrient cycling,0.9
-Schizophyllum commune,Conium maculatum,nutrient cycling,0.85
-Cladonia chlorophaea,Conium maculatum,nutrient cycling,0.85
 Laetiporus gilbertsonii,Bergerocactus emoryi,nutrient cycling,0.7
 Chlorophyllum molybdites,Bergerocactus emoryi,nutrient cycling,0.7
+Lactarius alnicola,Bergerocactus emoryi,nutrient cycling,0.65
 Cladonia chlorophaea,Bergerocactus emoryi,nutrient cycling,0.65
 Agaricus californicus,Bergerocactus emoryi,nutrient cycling,0.65
-Ganoderma,Bergerocactus emoryi,nutrient cycling,0.65
 Laetiporus gilbertsonii,Carpobrotus edulis,nutrient cycling,0.95
-Chlorophyllum molybdites,Carpobrotus edulis,nutrient cycling,0.95
-Cladonia chlorophaea,Carpobrotus edulis,nutrient cycling,0.95
-Agaricus californicus,Carpobrotus edulis,nutrient cycling,0.95
-Contumyces rosellus,Carpobrotus edulis,nutrient cycling,0.95
+Parmelioideae,Pseudognaphalium,nutrient cycling,0.81
+Lactarius alnicola,Pseudognaphalium,nutrient cycling,0.75
+Amanita,Pseudognaphalium,nutrient cycling,0.75
 Ganoderma polychromum,Pseudognaphalium,nutrient cycling,0.75
 Helvella dryophila,Pseudognaphalium,nutrient cycling,0.72
-Xerocomellus dryophilus,Pseudognaphalium,nutrient cycling,0.72
-Gymnopilus,Pseudognaphalium,nutrient cycling,0.72
-Gymnopus dryophilus,Pseudognaphalium,nutrient cycling,0.69
-Montagnea arenaria,Chenopodiastrum murale,nutrient cycling,0.73
+Parmelioideae,Chenopodiastrum murale,nutrient cycling,0.76
+Ganoderma polychromum,Chenopodiastrum murale,nutrient cycling,0.73
+Lactarius alnicola,Chenopodiastrum murale,nutrient cycling,0.7
 Xerocomellus dryophilus,Chenopodiastrum murale,nutrient cycling,0.7
 Naematelia aurantia,Chenopodiastrum murale,nutrient cycling,0.7
-Helvella dryophila,Chenopodiastrum murale,nutrient cycling,0.67
-Ganoderma,Chenopodiastrum murale,nutrient cycling,0.67
+Lactarius alnicola,Selaginella cinerascens,nutrient cycling,1.0
 Cladonia chlorophaea,Selaginella cinerascens,nutrient cycling,1.0
 Agaricus californicus,Selaginella cinerascens,nutrient cycling,1.0
 Gymnopilus,Selaginella cinerascens,nutrient cycling,1.0
-Chlorophyllum molybdites,Selaginella cinerascens,nutrient cycling,0.94
-Ganoderma,Selaginella cinerascens,nutrient cycling,0.94
+Laetiporus gilbertsonii,Selaginella cinerascens,nutrient cycling,0.94
 Gymnopilus,Medicago polymorpha,nutrient cycling,0.89
+Amanita,Medicago polymorpha,nutrient cycling,0.86
 Helvella dryophila,Medicago polymorpha,nutrient cycling,0.86
+Xerocomellus dryophilus,Medicago polymorpha,nutrient cycling,0.86
 Gymnopus dryophilus,Medicago polymorpha,nutrient cycling,0.86
-Schizophyllum commune,Medicago polymorpha,nutrient cycling,0.82
-Ganoderma,Medicago polymorpha,nutrient cycling,0.82
-Montagnea arenaria,Bryophyta,nutrient cycling,0.72
+Amanita,Bryophyta,nutrient cycling,0.72
 Helvella dryophila,Bryophyta,nutrient cycling,0.69
-Naematelia aurantia,Bryophyta,nutrient cycling,0.67
-Gymnopilus,Bryophyta,nutrient cycling,0.67
-Gymnopus dryophilus,Bryophyta,nutrient cycling,0.64
+Xerocomellus dryophilus,Bryophyta,nutrient cycling,0.69
+Agaricus californicus,Mutarda nigra,nutrient cycling,0.88
+Xerocomellus dryophilus,Mutarda nigra,nutrient cycling,0.88
 Gymnopus dryophilus,Mutarda nigra,nutrient cycling,0.88
 Contumyces rosellus,Mutarda nigra,nutrient cycling,0.88
 Schizophyllum commune,Mutarda nigra,nutrient cycling,0.83
-Lactarius rufulus,Mutarda nigra,nutrient cycling,0.83
-Amanita ocreata,Mutarda nigra,nutrient cycling,0.83
+Chlorophyllum molybdites,Schinus terebinthifolia,nutrient cycling,1.0
 Schizophyllum commune,Schinus terebinthifolia,nutrient cycling,0.94
+Cladonia chlorophaea,Schinus terebinthifolia,nutrient cycling,0.94
+Agaricus californicus,Schinus terebinthifolia,nutrient cycling,0.94
 Ganoderma,Schinus terebinthifolia,nutrient cycling,0.94
-Gymnopilus,Schinus terebinthifolia,nutrient cycling,0.94
-Contumyces rosellus,Schinus terebinthifolia,nutrient cycling,0.94
-Leratiomyces ceres,Schinus terebinthifolia,nutrient cycling,0.88
+Amanita,Rumex crispus,nutrient cycling,0.87
+Xerocomellus dryophilus,Rumex crispus,nutrient cycling,0.83
 Gymnopus dryophilus,Rumex crispus,nutrient cycling,0.83
 Ganoderma,Rumex crispus,nutrient cycling,0.83
-Gymnopilus,Rumex crispus,nutrient cycling,0.83
-Stereum,Rumex crispus,nutrient cycling,0.8
-Naematelia aurantia,Rumex crispus,nutrient cycling,0.8
-Naematelia aurantia,Bromus rubens,nutrient cycling,0.68
-Gymnopus dryophilus,Bromus rubens,nutrient cycling,0.66
-Amanita ocreata,Bromus rubens,nutrient cycling,0.66
-Astraeus,Bromus rubens,nutrient cycling,0.66
-Schizophyllum commune,Bromus rubens,nutrient cycling,0.63
-Naematelia aurantia,Baccharis,nutrient cycling,0.75
-Bolbitius titubans,Baccharis,nutrient cycling,0.75
-Contumyces rosellus,Baccharis,nutrient cycling,0.75
-Schizophyllum commune,Baccharis,nutrient cycling,0.71
-Russula,Baccharis,nutrient cycling,0.71
-Contumyces rosellus,Erodium moschatum,nutrient cycling,0.88
-Lactarius rufulus,Erodium moschatum,nutrient cycling,0.83
-Russula,Erodium moschatum,nutrient cycling,0.79
-Amanita velosa,Erodium moschatum,nutrient cycling,0.79
-Amanita ocreata,Erodium moschatum,nutrient cycling,0.75
+Amanita,Bromus rubens,nutrient cycling,0.76
+Gymnopilus,Baccharis,nutrient cycling,0.82
+Amanita,Baccharis,nutrient cycling,0.79
+Xerocomellus dryophilus,Baccharis,nutrient cycling,0.75
+Gymnopus dryophilus,Baccharis,nutrient cycling,0.75
+Ganoderma,Baccharis,nutrient cycling,0.75
+Gymnopus dryophilus,Erodium moschatum,nutrient cycling,0.88
+Gymnopilus,Erodium moschatum,nutrient cycling,0.88
+Cladonia chlorophaea,Adolphia californica,nutrient cycling,0.8
+Gymnopilus,Adolphia californica,nutrient cycling,0.8
+Schizophyllum commune,Adolphia californica,nutrient cycling,0.75
 Leratiomyces ceres,Adolphia californica,nutrient cycling,0.75
 Russula,Adolphia californica,nutrient cycling,0.75
-Lactarius rufulus,Adolphia californica,nutrient cycling,0.7
-Amanita ocreata,Adolphia californica,nutrient cycling,0.7
-Stereum,Adolphia californica,nutrient cycling,0.7
+Schizophyllum commune,Asphodelus fistulosus,nutrient cycling,0.91
+Amanita,Asphodelus fistulosus,nutrient cycling,0.91
+Gymnopus dryophilus,Asphodelus fistulosus,nutrient cycling,0.91
+Gymnopilus,Asphodelus fistulosus,nutrient cycling,0.86
 Bolbitius titubans,Asphodelus fistulosus,nutrient cycling,0.86
-Lactarius rufulus,Asphodelus fistulosus,nutrient cycling,0.82
-Russula,Asphodelus fistulosus,nutrient cycling,0.82
-Amanita ocreata,Asphodelus fistulosus,nutrient cycling,0.82
-Stereum,Asphodelus fistulosus,nutrient cycling,0.82
+Schizophyllum commune,Erigeron bonariensis,nutrient cycling,0.8
+Gymnopus dryophilus,Erigeron bonariensis,nutrient cycling,0.8
+Ganoderma,Erigeron bonariensis,nutrient cycling,0.8
 Bolbitius titubans,Erigeron bonariensis,nutrient cycling,0.76
 Lactarius rufulus,Erigeron bonariensis,nutrient cycling,0.72
-Amanita ocreata,Erigeron bonariensis,nutrient cycling,0.72
-Stereum,Erigeron bonariensis,nutrient cycling,0.72
-Amanita velosa,Erigeron bonariensis,nutrient cycling,0.72
+Gymnopus dryophilus,Hypochaeris glabra,nutrient cycling,0.76
+Ganoderma,Hypochaeris glabra,nutrient cycling,0.73
 Naematelia aurantia,Hypochaeris glabra,nutrient cycling,0.73
-Amanita ocreata,Hypochaeris glabra,nutrient cycling,0.7
-Stereum,Hypochaeris glabra,nutrient cycling,0.7
-Bolbitius titubans,Hypochaeris glabra,nutrient cycling,0.7
-Lactarius rufulus,Hypochaeris glabra,nutrient cycling,0.67
+Cladonia chlorophaea,Cortaderia selloana,nutrient cycling,0.94
+Ganoderma,Cortaderia selloana,nutrient cycling,0.89
 Leratiomyces ceres,Cortaderia selloana,nutrient cycling,0.83
 Lactarius rufulus,Cortaderia selloana,nutrient cycling,0.83
 Russula,Cortaderia selloana,nutrient cycling,0.83
-Amanita ocreata,Cortaderia selloana,nutrient cycling,0.83
-Stereum,Cortaderia selloana,nutrient cycling,0.83
-Stereum,Asteraceae,nutrient cycling,0.59
-Bolbitius titubans,Asteraceae,nutrient cycling,0.59
-Astraeus,Asteraceae,nutrient cycling,0.59
-Lactarius rufulus,Asteraceae,nutrient cycling,0.56
-Armillaria mellea,Asteraceae,nutrient cycling,0.56
+Naematelia aurantia,Asteraceae,nutrient cycling,0.63
+Amanita ocreata,Asteraceae,nutrient cycling,0.61
+Ganoderma,Asteraceae,nutrient cycling,0.61
+Amanita ocreata,Solanum umbelliferum,nutrient cycling,0.71
 Stereum,Solanum umbelliferum,nutrient cycling,0.69
 Bolbitius titubans,Solanum umbelliferum,nutrient cycling,0.69
+Lactarius rufulus,Solanum umbelliferum,nutrient cycling,0.66
 Astraeus,Solanum umbelliferum,nutrient cycling,0.66
-Armillaria mellea,Solanum umbelliferum,nutrient cycling,0.66
-Russula,Solanum umbelliferum,nutrient cycling,0.63
+Cladonia chlorophaea,Cynara cardunculus,nutrient cycling,0.9
+Lactarius rufulus,Cynara cardunculus,nutrient cycling,0.9
+Amanita ocreata,Cynara cardunculus,nutrient cycling,0.9
 Bolbitius titubans,Cynara cardunculus,nutrient cycling,0.9
-Russula,Cynara cardunculus,nutrient cycling,0.8
-Amanita velosa,Cynara cardunculus,nutrient cycling,0.8
-Chlorophyllum,Cynara cardunculus,nutrient cycling,0.8
-Collybia nuda,Cynara cardunculus,nutrient cycling,0.75
+Cladonia chlorophaea,Limonium sinuatum,nutrient cycling,0.89
+Amanita ocreata,Limonium sinuatum,nutrient cycling,0.89
 Chlorophyllum,Limonium sinuatum,nutrient cycling,0.89
-Collybia nuda,Limonium sinuatum,nutrient cycling,0.89
-Bolbitius titubans,Limonium sinuatum,nutrient cycling,0.89
-Leratiomyces ceres,Limonium sinuatum,nutrient cycling,0.83
-Russula,Limonium sinuatum,nutrient cycling,0.78
-Amanita velosa,Lactuca serriola,nutrient cycling,0.65
-Collybia nuda,Lactuca serriola,nutrient cycling,0.65
-Astraeus,Lactuca serriola,nutrient cycling,0.65
-Armillaria mellea,Lactuca serriola,nutrient cycling,0.65
-Chlorophyllum,Lactuca serriola,nutrient cycling,0.5
+Amanita ocreata,Lactuca serriola,nutrient cycling,0.71
+Stereum,Lactuca serriola,nutrient cycling,0.71
+Bolbitius titubans,Carduus pycnocephalus,nutrient cycling,0.82
+Lactarius rufulus,Carduus pycnocephalus,nutrient cycling,0.79
+Stereum,Carduus pycnocephalus,nutrient cycling,0.79
 Amanita velosa,Carduus pycnocephalus,nutrient cycling,0.79
-Collybia nuda,Carduus pycnocephalus,nutrient cycling,0.75
-Astraeus,Carduus pycnocephalus,nutrient cycling,0.75
-Armillaria mellea,Carduus pycnocephalus,nutrient cycling,0.71
-Chlorophyllum,Carduus pycnocephalus,nutrient cycling,0.61
+Cladonia chlorophaea,Euphorbia misera,nutrient cycling,0.62
 Leratiomyces ceres,Euphorbia misera,nutrient cycling,0.56
+Russula,Euphorbia misera,nutrient cycling,0.56
 Chlorophyllum,Euphorbia misera,nutrient cycling,0.56
 Collybia nuda,Euphorbia misera,nutrient cycling,0.56
-Amanita velosa,Euphorbia misera,nutrient cycling,0.5
-Armillaria mellea,Euphorbia misera,nutrient cycling,0.44
 Leratiomyces ceres,Acacia cyclops,nutrient cycling,0.82
+Russula,Acacia cyclops,nutrient cycling,0.82
+Amanita ocreata,Acacia cyclops,nutrient cycling,0.82
 Chlorophyllum,Acacia cyclops,nutrient cycling,0.82
 Collybia nuda,Acacia cyclops,nutrient cycling,0.82
-Amanita velosa,Acacia cyclops,nutrient cycling,0.76
-Armillaria mellea,Acacia cyclops,nutrient cycling,0.65
+Lactarius rufulus,Echium candicans,nutrient cycling,0.77
+Russula,Echium candicans,nutrient cycling,0.77
+Amanita ocreata,Echium candicans,nutrient cycling,0.77
 Chlorophyllum,Echium candicans,nutrient cycling,0.77
-Amanita velosa,Echium candicans,nutrient cycling,0.73
-Collybia nuda,Echium candicans,nutrient cycling,0.73
-Astraeus,Echium candicans,nutrient cycling,0.64
-Armillaria mellea,Echium candicans,nutrient cycling,0.59
+Bolbitius titubans,Echium candicans,nutrient cycling,0.77
+Bolbitius titubans,Brodiaea orcuttii,nutrient cycling,0.75
+Stereum,Brodiaea orcuttii,nutrient cycling,0.72
 Astraeus,Brodiaea orcuttii,nutrient cycling,0.72
-Collybia nuda,Brodiaea orcuttii,nutrient cycling,0.62
-Armillaria mellea,Brodiaea orcuttii,nutrient cycling,0.62
-Chlorophyllum,Brodiaea orcuttii,nutrient cycling,0.5
-Podaxis pistillaris,Brodiaea orcuttii,nutrient cycling,0.03
-Podaxis pistillaris,Carpobrotus,nutrient cycling,0.1
-Podaxis pistillaris,Carpobrotus chilensis,nutrient cycling,0.1
-Podaxis pistillaris,Opuntia ficus-indica,nutrient cycling,0.05
-Podaxis pistillaris,Apium graveolens,nutrient cycling,0.04
-Podaxis pistillaris,Euphorbia peplus,nutrient cycling,0.1
+Amanita velosa,Brodiaea orcuttii,nutrient cycling,0.69
+Russula,Brodiaea orcuttii,nutrient cycling,0.66
+Leratiomyces ceres,Carpobrotus,nutrient cycling,0.83
+Chlorophyllum,Carpobrotus,nutrient cycling,0.83
+Collybia nuda,Carpobrotus,nutrient cycling,0.83
+Russula,Carpobrotus,nutrient cycling,0.78
+Stereum,Carpobrotus,nutrient cycling,0.78
+Leratiomyces ceres,Carpobrotus chilensis,nutrient cycling,0.78
+Russula,Carpobrotus chilensis,nutrient cycling,0.78
+Chlorophyllum,Carpobrotus chilensis,nutrient cycling,0.78
+Collybia nuda,Carpobrotus chilensis,nutrient cycling,0.78
+Chlorophyllum,Opuntia ficus-indica,nutrient cycling,0.85
+Collybia nuda,Opuntia ficus-indica,nutrient cycling,0.85
+Stereum,Opuntia ficus-indica,nutrient cycling,0.8
+Amanita velosa,Opuntia ficus-indica,nutrient cycling,0.75
+Astraeus,Opuntia ficus-indica,nutrient cycling,0.7
+Stereum,Apium graveolens,nutrient cycling,0.74
+Amanita velosa,Apium graveolens,nutrient cycling,0.7
+Astraeus,Apium graveolens,nutrient cycling,0.7
+Chlorophyllum,Euphorbia peplus,nutrient cycling,0.89
+Collybia nuda,Euphorbia peplus,nutrient cycling,0.84
+Stereum,Euphorbia peplus,nutrient cycling,0.79
+Amanita velosa,Euphorbia peplus,nutrient cycling,0.79
+Amanita velosa,Artemisia palmeri,nutrient cycling,0.89
+Collybia nuda,Artemisia palmeri,nutrient cycling,0.89
+Armillaria mellea,Artemisia palmeri,nutrient cycling,0.83
+Astraeus,Artemisia palmeri,nutrient cycling,0.72
 Podaxis pistillaris,Artemisia palmeri,nutrient cycling,0.1
+Amanita velosa,Schinus molle,nutrient cycling,0.7
+Astraeus,Schinus molle,nutrient cycling,0.7
+Armillaria mellea,Schinus molle,nutrient cycling,0.7
+Podaxis pistillaris,Schinus molle,nutrient cycling,0.1
+Astraeus,Dudleya saxosa aloides,nutrient cycling,0.62
+Armillaria mellea,Dudleya saxosa aloides,nutrient cycling,0.56
+Podaxis pistillaris,Dudleya saxosa aloides,nutrient cycling,0.38
+Armillaria mellea,Sisymbrium irio,nutrient cycling,0.51
+Podaxis pistillaris,Sisymbrium irio,nutrient cycling,0.2
+Armillaria mellea,Opuntia,nutrient cycling,0.64
+Podaxis pistillaris,Opuntia,nutrient cycling,0.15
+Armillaria mellea,Solanum nigrum,nutrient cycling,0.65
+Podaxis pistillaris,Solanum nigrum,nutrient cycling,0.08
+Armillaria mellea,Galium aparine,nutrient cycling,0.65
+Podaxis pistillaris,Galium aparine,nutrient cycling,0.03
 Liliopsida,Fungi,food source,1.0
 Poales,Fungi,food source,1.0
+Cynoglosseae,Fungi,food source,0.82
 Lasthenia,Fungi,food source,0.8
 Chlorophyta,Fungi,food source,0.8
-Onagraceae,Fungi,food source,0.8
+Liliopsida,Lecanoromycetes,food source,1.0
 Poales,Lecanoromycetes,food source,1.0
 Astragalus,Lecanoromycetes,food source,0.82
+Amsinckia,Lecanoromycetes,food source,0.82
 Chlorophyta,Lecanoromycetes,food source,0.82
-Sisymbrium irio,Lecanoromycetes,food source,0.8
-Pooideae,Lecanoromycetes,food source,0.8
 Poales,Agaricales,food source,1.0
+Liliopsida,Agaricales,food source,1.0
 Pooideae,Agaricales,food source,0.85
+Amsinckia,Agaricales,food source,0.85
 Chlorophyta,Agaricales,food source,0.85
-Pentagramma,Agaricales,food source,0.82
-Hordeum murinum,Agaricales,food source,0.82
 Ceanothus,Omphalotus olivascens,food source,0.89
 Pooideae,Omphalotus olivascens,food source,0.89
 Brodiaea orcuttii,Omphalotus olivascens,food source,0.86
 Pentagramma,Omphalotus olivascens,food source,0.86
-Lasthenia,Omphalotus olivascens,food source,0.86
+Clematis,Omphalotus olivascens,food source,0.86
+Liliopsida,Agaricomycetes,food source,1.0
+Poales,Agaricomycetes,food source,1.0
 Ceanothus,Agaricomycetes,food source,0.89
 Chlorophyta,Agaricomycetes,food source,0.89
-Quercus,Agaricomycetes,food source,0.86
-Hypochaeris glabra,Agaricomycetes,food source,0.84
-Brodiaea orcuttii,Agaricomycetes,food source,0.84
+Pooideae,Agaricomycetes,food source,0.86
 Ceanothus,Stereum hirsutum,food source,0.97
 Pentagramma,Stereum hirsutum,food source,0.94
+Pooideae,Stereum hirsutum,food source,0.94
 Quercus,Stereum hirsutum,food source,0.94
-Rumex crispus,Stereum hirsutum,food source,0.9
-Hypochaeris glabra,Stereum hirsutum,food source,0.9
+Amsinckia,Agaricus,food source,0.94
 Tamarix,Agaricus,food source,0.91
 Pentagramma,Agaricus,food source,0.91
-Hordeum murinum,Agaricus,food source,0.91
-Cynodon dactylon,Agaricus,food source,0.91
-Sisymbrium orientale,Agaricus,food source,0.91
-Hypochaeris glabra,Agrocybe pediades,food source,0.94
+Poales,Agaricus,food source,0.91
 Ceanothus,Agrocybe pediades,food source,0.94
+Lasthenia,Agrocybe pediades,food source,0.94
 Cirsium vulgare,Agrocybe pediades,food source,0.91
 Pentagramma,Agrocybe pediades,food source,0.91
-Quercus,Agrocybe pediades,food source,0.91
 Rumex crispus,Cladonia,food source,0.93
 Brodiaea orcuttii,Cladonia,food source,0.93
 Vicia villosa,Cladonia,food source,0.93
 Nasturtium officinale,Cladonia,food source,0.93
 Crocanthemum,Cladonia,food source,0.93
-Hordeum murinum,Laetiporus gilbertsonii,food source,0.96
 Rumex crispus,Laetiporus gilbertsonii,food source,0.92
 Crocanthemum,Laetiporus gilbertsonii,food source,0.92
 Melilotus albus,Laetiporus gilbertsonii,food source,0.92
 Cirsium vulgare,Laetiporus gilbertsonii,food source,0.92
 Cirsium vulgare,Volvopluteus gloiocephalus,food source,1.0
-Pentagramma,Volvopluteus gloiocephalus,food source,1.0
 Trifolium hirtum,Volvopluteus gloiocephalus,food source,1.0
 Bromus hordeaceus,Volvopluteus gloiocephalus,food source,1.0
-Medicago polymorpha,Volvopluteus gloiocephalus,food source,0.96
+Rumex crispus,Volvopluteus gloiocephalus,food source,0.96
+Carduus pycnocephalus,Volvopluteus gloiocephalus,food source,0.96
 Ceanothus,Xanthoparmelia cumberlandia,food source,0.89
+Lasthenia,Xanthoparmelia cumberlandia,food source,0.89
 Quercus,Xanthoparmelia cumberlandia,food source,0.86
 Cirsium vulgare,Xanthoparmelia cumberlandia,food source,0.83
-Pentagramma,Xanthoparmelia cumberlandia,food source,0.83
-Hordeum murinum,Xanthoparmelia cumberlandia,food source,0.83
+Liliopsida,Xanthoparmelia cumberlandia,food source,0.83
 Cylindropuntia ganderi ganderi,Podaxis pistillaris,food source,1.0
 Encelia farinosa farinosa,Podaxis pistillaris,food source,1.0
 Cochemiea tetrancistra,Podaxis pistillaris,food source,1.0
@@ -1367,34 +1694,32 @@ Selaginella eremophila,Podaxis pistillaris,food source,1.0
 Cylindropuntia,Podaxis pistillaris,food source,1.0
 Nasturtium officinale,Xanthoparmelia,food source,0.91
 Ceanothus,Xanthoparmelia,food source,0.91
+Lasthenia,Xanthoparmelia,food source,0.91
 Quercus,Xanthoparmelia,food source,0.91
-Brodiaea orcuttii,Xanthoparmelia,food source,0.88
-Cirsium vulgare,Xanthoparmelia,food source,0.88
-Rumex crispus,Lactarius alnicola,food source,0.96
 Carduus pycnocephalus,Lactarius alnicola,food source,0.96
 Lamarckia aurea,Lactarius alnicola,food source,0.96
 Nasturtium officinale,Lactarius alnicola,food source,0.96
 Logfia gallica,Lactarius alnicola,food source,0.96
+Crocanthemum,Lactarius alnicola,food source,0.96
+Brodiaea orcuttii,Schizophyllum commune,food source,1.0
 Lythrum hyssopifolia,Schizophyllum commune,food source,1.0
-Rumex crispus,Schizophyllum commune,food source,0.96
 Carduus pycnocephalus,Schizophyllum commune,food source,0.96
 Lamarckia aurea,Schizophyllum commune,food source,0.96
-Nasturtium officinale,Schizophyllum commune,food source,0.96
+Astragalus,Acarospora socialis,food source,0.85
+Lasthenia,Acarospora socialis,food source,0.85
+Onagraceae,Acarospora socialis,food source,0.85
 Sisymbrium irio,Acarospora socialis,food source,0.83
 Sisymbrium orientale,Acarospora socialis,food source,0.83
-Opuntia,Acarospora socialis,food source,0.8
-Chenopodiastrum murale,Acarospora socialis,food source,0.78
-Hordeum murinum,Acarospora socialis,food source,0.78
 Chenopodiastrum murale,Chlorophyllum molybdites,food source,1.0
 Mutarda nigra,Chlorophyllum molybdites,food source,1.0
 Erodium moschatum,Chlorophyllum molybdites,food source,1.0
 Carduus pycnocephalus,Chlorophyllum molybdites,food source,1.0
 Malva parviflora,Chlorophyllum molybdites,food source,1.0
+Ceanothus,Psathyrellaceae,food source,0.91
 Vicia villosa,Psathyrellaceae,food source,0.88
 Clematis pauciflora,Psathyrellaceae,food source,0.88
 Cirsium vulgare,Psathyrellaceae,food source,0.88
 Quercus,Psathyrellaceae,food source,0.88
-Nasturtium officinale,Psathyrellaceae,food source,0.84
 Chenopodiastrum murale,Cladonia chlorophaea,food source,1.0
 Mutarda nigra,Cladonia chlorophaea,food source,1.0
 Erodium moschatum,Cladonia chlorophaea,food source,1.0
@@ -1404,110 +1729,106 @@ Lamarckia aurea,Agaricus californicus,food source,0.96
 Clematis pauciflora,Agaricus californicus,food source,0.96
 Lythrum hyssopifolia,Agaricus californicus,food source,0.96
 Bromus hordeaceus,Agaricus californicus,food source,0.96
-Urtica urens,Agaricus californicus,food source,0.92
+Carduus pycnocephalus,Agaricus californicus,food source,0.92
+Brodiaea orcuttii,Amanita,food source,0.93
 Nasturtium officinale,Amanita,food source,0.93
 Crocanthemum,Amanita,food source,0.93
 Cirsium vulgare,Amanita,food source,0.93
-Plantago major,Amanita,food source,0.93
-Quercus,Amanita,food source,0.93
+Ceanothus,Amanita,food source,0.93
 Quercus,Helvella dryophila,food source,0.96
+Nasturtium officinale,Helvella dryophila,food source,0.93
 Clematis pauciflora,Helvella dryophila,food source,0.93
 Calasterella californica,Helvella dryophila,food source,0.93
-Vicia villosa,Helvella dryophila,food source,0.89
-Logfia gallica,Helvella dryophila,food source,0.89
-Urtica urens,Leratiomyces ceres,food source,1.0
 Washingtonia robusta,Leratiomyces ceres,food source,1.0
 Carpobrotus edulis,Leratiomyces ceres,food source,1.0
 Chenopodiastrum murale,Leratiomyces ceres,food source,1.0
 Mutarda nigra,Leratiomyces ceres,food source,1.0
+Schinus terebinthifolia,Leratiomyces ceres,food source,1.0
+Onagraceae,Ganoderma polychromum,food source,0.96
+Nasturtium officinale,Ganoderma polychromum,food source,0.93
 Crocanthemum,Ganoderma polychromum,food source,0.93
-Plantago major,Ganoderma polychromum,food source,0.93
-Cynodon dactylon,Ganoderma polychromum,food source,0.93
-Opuntia,Ganoderma polychromum,food source,0.89
-Vicia villosa,Ganoderma polychromum,food source,0.89
-Lamarckia aurea,Candolleomyces candolleanus,food source,1.0
+Cirsium vulgare,Ganoderma polychromum,food source,0.93
 Lythrum hyssopifolia,Candolleomyces candolleanus,food source,1.0
 Bromus hordeaceus,Candolleomyces candolleanus,food source,1.0
-Carduus pycnocephalus,Candolleomyces candolleanus,food source,0.96
+Nasturtium officinale,Candolleomyces candolleanus,food source,0.96
 Logfia gallica,Candolleomyces candolleanus,food source,0.96
+Senecio vulgaris,Candolleomyces candolleanus,food source,0.96
 Logfia gallica,Xerocomellus dryophilus,food source,0.96
 Senecio vulgaris,Xerocomellus dryophilus,food source,0.96
 Clematis pauciflora,Xerocomellus dryophilus,food source,0.96
 Calasterella californica,Xerocomellus dryophilus,food source,0.96
-Carduus pycnocephalus,Xerocomellus dryophilus,food source,0.93
+Quercus,Xerocomellus dryophilus,food source,0.96
+Brodiaea orcuttii,Lactarius rufulus,food source,1.0
 Crocanthemum,Lactarius rufulus,food source,1.0
-Carduus pycnocephalus,Lactarius rufulus,food source,0.96
-Lamarckia aurea,Lactarius rufulus,food source,0.96
-Logfia gallica,Lactarius rufulus,food source,0.96
+Malacothamnus,Lactarius rufulus,food source,1.0
 Senecio vulgaris,Lactarius rufulus,food source,0.96
 Clematis pauciflora,Russula,food source,0.92
-Hordeum murinum,Russula,food source,0.92
+Quercus,Russula,food source,0.92
 Harpagonella palmeri,Russula,food source,0.92
+Brodiaea orcuttii,Russula,food source,0.88
 Malva parviflora,Russula,food source,0.88
-Lamarckia aurea,Russula,food source,0.88
-Lamarckia aurea,Gymnopus dryophilus,food source,1.0
-Logfia gallica,Gymnopus dryophilus,food source,1.0
 Senecio vulgaris,Gymnopus dryophilus,food source,1.0
 Lythrum hyssopifolia,Gymnopus dryophilus,food source,1.0
 Trifolium hirtum,Gymnopus dryophilus,food source,1.0
+Bromus hordeaceus,Gymnopus dryophilus,food source,1.0
+Malacothamnus,Gymnopus dryophilus,food source,1.0
+Poales,Agaricineae,food source,1.0
+Chlorophyta,Agaricineae,food source,0.95
+Pseudognaphalium luteoalbum,Agaricineae,food source,0.9
+Onagraceae,Agaricineae,food source,0.9
+Chenopodiastrum murale,Agaricineae,food source,0.87
+Cirsium vulgare,Amanita ocreata,food source,1.0
 Plantago major,Amanita ocreata,food source,0.96
 Vinca major,Amanita ocreata,food source,0.96
+Quercus,Amanita ocreata,food source,0.96
 Opuntia,Amanita ocreata,food source,0.92
-Vicia villosa,Amanita ocreata,food source,0.92
-Crocanthemum,Amanita ocreata,food source,0.92
-Chlorophyta,Agaricineae,food source,0.95
-Hordeum murinum,Agaricineae,food source,0.94
-Pseudognaphalium luteoalbum,Agaricineae,food source,0.9
-Lamarckia aurea,Agaricineae,food source,0.87
-Lythrum hyssopifolia,Agaricineae,food source,0.87
 Crocanthemum,Stereum,food source,0.96
 Plantago major,Stereum,food source,0.96
-Lythrum hyssopifolia,Stereum,food source,0.96
 Vinca major,Stereum,food source,0.96
 Solanum elaeagnifolium,Stereum,food source,0.96
-Logfia gallica,Amanita velosa,food source,1.0
 Crocanthemum,Amanita velosa,food source,1.0
 Senecio vulgaris,Amanita velosa,food source,1.0
-Lythrum hyssopifolia,Amanita velosa,food source,1.0
 Trifolium hirtum,Amanita velosa,food source,1.0
+Bromus hordeaceus,Amanita velosa,food source,1.0
+Capsella bursa-pastoris,Amanita velosa,food source,1.0
+Sisymbrium irio,Montagnea arenaria,food source,0.93
+Astragalus,Montagnea arenaria,food source,0.87
 Cylindropuntia,Montagnea arenaria,food source,0.87
-Sisymbrium orientale,Montagnea arenaria,food source,0.83
-Opuntia,Montagnea arenaria,food source,0.8
-Gutierrezia,Montagnea arenaria,food source,0.77
-Baccharis,Montagnea arenaria,food source,0.73
+Tamarix,Montagnea arenaria,food source,0.83
+Onagraceae,Montagnea arenaria,food source,0.83
 Plantago major,Ganoderma,food source,0.96
-Logfia gallica,Ganoderma,food source,0.92
 Senecio vulgaris,Ganoderma,food source,0.92
-Lythrum hyssopifolia,Ganoderma,food source,0.92
-Trifolium hirtum,Ganoderma,food source,0.92
+Bromus hordeaceus,Ganoderma,food source,0.92
+Stellaria media,Ganoderma,food source,0.92
+Capsella bursa-pastoris,Ganoderma,food source,0.92
 Lamium amplexicaule,Naematelia aurantia,food source,0.92
 Cynodon dactylon,Naematelia aurantia,food source,0.92
+Onagraceae,Naematelia aurantia,food source,0.92
 Sisymbrium orientale,Naematelia aurantia,food source,0.92
 Senecio vulgaris,Naematelia aurantia,food source,0.88
-Melilotus albus,Naematelia aurantia,food source,0.88
 Euphorbia maculata,Gymnopilus,food source,0.96
 Senecio vulgaris,Gymnopilus,food source,0.96
 Clematis pauciflora,Gymnopilus,food source,0.96
 Calasterella californica,Gymnopilus,food source,0.96
-Trifolium hirtum,Gymnopilus,food source,0.96
+Cynodon dactylon,Gymnopilus,food source,0.96
+Astragalus,Parmelioideae,food source,0.94
+Onagraceae,Parmelioideae,food source,0.94
 Sisymbrium orientale,Parmelioideae,food source,0.94
 Opuntia,Parmelioideae,food source,0.9
 Vicia villosa,Parmelioideae,food source,0.9
-Cynodon dactylon,Parmelioideae,food source,0.9
-Clematis pauciflora,Parmelioideae,food source,0.87
-Urtica urens,Chlorophyllum,food source,1.0
 Washingtonia robusta,Chlorophyllum,food source,1.0
 Mutarda nigra,Chlorophyllum,food source,1.0
 Erodium moschatum,Chlorophyllum,food source,1.0
 Opuntia ficus-indica,Chlorophyllum,food source,1.0
+Euphorbia peplus,Chlorophyllum,food source,1.0
 Clematis pauciflora,Candelaria pacifica,food source,0.94
 Calasterella californica,Candelaria pacifica,food source,0.91
 Opuntia,Candelaria pacifica,food source,0.88
 Vicia villosa,Candelaria pacifica,food source,0.88
 Plantago major,Candelaria pacifica,food source,0.88
+Clematis pauciflora,Collybia nuda,food source,1.0
 Plantago major,Collybia nuda,food source,1.0
-Bromus hordeaceus,Collybia nuda,food source,1.0
-Senecio vulgaris,Collybia nuda,food source,0.95
+Opuntia,Collybia nuda,food source,0.95
 Lamium amplexicaule,Collybia nuda,food source,0.95
 Sairocarpus,Collybia nuda,food source,0.95
 Plantago major,Bolbitius titubans,food source,1.0
@@ -1517,21 +1838,21 @@ Lamium amplexicaule,Bolbitius titubans,food source,0.96
 Solanum elaeagnifolium,Bolbitius titubans,food source,0.96
 Quercus berberidifolia × engelmannii,Astraeus,food source,0.92
 Sisymbrium orientale,Astraeus,food source,0.92
+Tamarix,Astraeus,food source,0.88
+Plantago major,Astraeus,food source,0.88
 Gutierrezia,Astraeus,food source,0.88
-Trifolium hirtum,Astraeus,food source,0.88
-Bromus hordeaceus,Astraeus,food source,0.88
+Opuntia,Armillaria mellea,food source,0.91
 Calasterella californica,Armillaria mellea,food source,0.91
 Vinca major,Armillaria mellea,food source,0.91
-Bromus hordeaceus,Armillaria mellea,food source,0.91
 Lamium amplexicaule,Armillaria mellea,food source,0.87
 Solanum elaeagnifolium,Armillaria mellea,food source,0.87
+Tamarix,Contumyces rosellus,food source,1.0
+Sisymbrium irio,Contumyces rosellus,food source,0.96
 Sisymbrium orientale,Contumyces rosellus,food source,0.96
 Euphorbia maculata,Contumyces rosellus,food source,0.92
 Oncosiphon pilulifer,Contumyces rosellus,food source,0.92
-Melinis repens,Contumyces rosellus,food source,0.92
-Trifolium hirtum,Contumyces rosellus,food source,0.92
 Chlorophyta,Basidiomycota,food source,0.87
-Trifolium hirtum,Basidiomycota,food source,0.8
-Bromus hordeaceus,Basidiomycota,food source,0.8
+Sisymbrium irio,Basidiomycota,food source,0.83
+Sisymbrium orientale,Basidiomycota,food source,0.83
+Opuntia,Basidiomycota,food source,0.77
 Euphorbia maculata,Basidiomycota,food source,0.77
-Calasterella californica,Basidiomycota,food source,0.77

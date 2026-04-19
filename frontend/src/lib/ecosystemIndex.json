@@ -35,27 +35,27 @@
       ],
       "zone_count": 7,
       "species_count": 175,
-      "edge_count": 313,
+      "edge_count": 412,
       "keystones": [
         {
-          "common_name": "Orcutt's brodiaea",
-          "zone_keystone_score": 0.063
-        },
-        {
-          "common_name": "Smooth Cat's Ear",
+          "common_name": "Common Pill Woodlouse",
           "zone_keystone_score": 0.057
         },
         {
-          "common_name": "curled dock",
+          "common_name": "hairy curtain crust",
           "zone_keystone_score": 0.046
         },
         {
-          "common_name": "hairy curtain crust",
+          "common_name": "Cumberland Rock Shield",
           "zone_keystone_score": 0.04
         },
         {
-          "common_name": "field and button mushrooms",
-          "zone_keystone_score": 0.04
+          "common_name": "Southern Pacific Rattlesnake",
+          "zone_keystone_score": 0.029
+        },
+        {
+          "common_name": "Western Toad",
+          "zone_keystone_score": 0.029
         }
       ],
       "zones": [
@@ -134,27 +134,27 @@
       ],
       "zone_count": 7,
       "species_count": 175,
-      "edge_count": 294,
+      "edge_count": 377,
       "keystones": [
         {
-          "common_name": "curled dock",
+          "common_name": "rabbit-tobaccos",
+          "zone_keystone_score": 0.109
+        },
+        {
+          "common_name": "Common Pill Woodlouse",
           "zone_keystone_score": 0.092
         },
         {
-          "common_name": "Smooth Cat's Ear",
-          "zone_keystone_score": 0.086
-        },
-        {
-          "common_name": "rabbit-tobaccos",
-          "zone_keystone_score": 0.046
-        },
-        {
-          "common_name": "Red Brome",
-          "zone_keystone_score": 0.046
-        },
-        {
           "common_name": "hairy curtain crust",
-          "zone_keystone_score": 0.046
+          "zone_keystone_score": 0.057
+        },
+        {
+          "common_name": "Southern Pacific Rattlesnake",
+          "zone_keystone_score": 0.052
+        },
+        {
+          "common_name": "curled dock",
+          "zone_keystone_score": 0.034
         }
       ],
       "zones": [
@@ -237,27 +237,27 @@
       ],
       "zone_count": 8,
       "species_count": 175,
-      "edge_count": 285,
+      "edge_count": 365,
       "keystones": [
-        {
-          "common_name": "Smooth Cat's Ear",
-          "zone_keystone_score": 0.086
-        },
-        {
-          "common_name": "curled dock",
-          "zone_keystone_score": 0.052
-        },
         {
           "common_name": "hairy curtain crust",
           "zone_keystone_score": 0.046
         },
         {
-          "common_name": "Orcutt's brodiaea",
-          "zone_keystone_score": 0.046
+          "common_name": "rabbit-tobaccos",
+          "zone_keystone_score": 0.04
         },
         {
-          "common_name": "pixie cup and reindeer lichens",
+          "common_name": "curled dock",
           "zone_keystone_score": 0.04
+        },
+        {
+          "common_name": "Southern Pacific Rattlesnake",
+          "zone_keystone_score": 0.029
+        },
+        {
+          "common_name": "Western Toad",
+          "zone_keystone_score": 0.029
         }
       ],
       "zones": [
@@ -341,27 +341,27 @@
       ],
       "zone_count": 7,
       "species_count": 175,
-      "edge_count": 375,
+      "edge_count": 470,
       "keystones": [
         {
-          "common_name": "California Tree Frog",
-          "zone_keystone_score": 0.04
+          "common_name": "Weed's Mariposa Lily",
+          "zone_keystone_score": 0.621
+        },
+        {
+          "common_name": "Dicots",
+          "zone_keystone_score": 0.609
+        },
+        {
+          "common_name": "Sonoran Bumble Bee",
+          "zone_keystone_score": 0.609
+        },
+        {
+          "common_name": "Monocots",
+          "zone_keystone_score": 0.609
         },
         {
           "common_name": "",
-          "zone_keystone_score": 0.034
-        },
-        {
-          "common_name": "Coast Barrel cactus",
-          "zone_keystone_score": 0.029
-        },
-        {
-          "common_name": "pixie cup and reindeer lichens",
-          "zone_keystone_score": 0.029
-        },
-        {
-          "common_name": "Stubble Rosegill",
-          "zone_keystone_score": 0.029
+          "zone_keystone_score": 0.103
         }
       ],
       "zones": [
@@ -441,27 +441,27 @@
       ],
       "zone_count": 4,
       "species_count": 147,
-      "edge_count": 319,
+      "edge_count": 401,
       "keystones": [
         {
-          "common_name": "oaks",
-          "zone_keystone_score": 0.062
+          "common_name": "Oak-loving Elfin Saddle",
+          "zone_keystone_score": 0.068
         },
         {
-          "common_name": "Ceanothus",
-          "zone_keystone_score": 0.055
+          "common_name": "California Ground Squirrel",
+          "zone_keystone_score": 0.034
         },
         {
-          "common_name": "California asterella",
-          "zone_keystone_score": 0.041
+          "common_name": "oak-loving bolete",
+          "zone_keystone_score": 0.034
+        },
+        {
+          "common_name": "Honey Mushroom",
+          "zone_keystone_score": 0.034
         },
         {
           "common_name": "California Tree Frog",
-          "zone_keystone_score": 0.034
-        },
-        {
-          "common_name": "matchweeds and snakeweeds",
-          "zone_keystone_score": 0.034
+          "zone_keystone_score": 0.027
         }
       ],
       "zones": [
@@ -527,27 +527,27 @@
       ],
       "zone_count": 7,
       "species_count": 175,
-      "edge_count": 384,
+      "edge_count": 471,
       "keystones": [
         {
-          "common_name": "California Tree Frog",
-          "zone_keystone_score": 0.029
+          "common_name": "",
+          "zone_keystone_score": 0.213
+        },
+        {
+          "common_name": "Ceanothus",
+          "zone_keystone_score": 0.098
+        },
+        {
+          "common_name": "Grasses, Sedges, Cattails, and Allies",
+          "zone_keystone_score": 0.069
+        },
+        {
+          "common_name": "castor bean",
+          "zone_keystone_score": 0.046
         },
         {
           "common_name": "hairy curtain crust",
-          "zone_keystone_score": 0.023
-        },
-        {
-          "common_name": "Red-eared Slider",
-          "zone_keystone_score": 0.023
-        },
-        {
-          "common_name": "pixie cup and reindeer lichens",
-          "zone_keystone_score": 0.017
-        },
-        {
-          "common_name": "Cumberland Rock Shield",
-          "zone_keystone_score": 0.017
+          "zone_keystone_score": 0.04
         }
       ],
       "zones": [
@@ -621,27 +621,27 @@
       ],
       "zone_count": 8,
       "species_count": 175,
-      "edge_count": 404,
+      "edge_count": 505,
       "keystones": [
         {
-          "common_name": "golden milkcap",
+          "common_name": "Ceanothus",
+          "zone_keystone_score": 0.052
+        },
+        {
+          "common_name": "castor bean",
+          "zone_keystone_score": 0.04
+        },
+        {
+          "common_name": "Bull Thistle",
           "zone_keystone_score": 0.034
         },
         {
-          "common_name": "hairy curtain crust",
-          "zone_keystone_score": 0.023
+          "common_name": "watercress",
+          "zone_keystone_score": 0.029
         },
         {
           "common_name": "Cumberland Rock Shield",
-          "zone_keystone_score": 0.017
-        },
-        {
-          "common_name": "rock shield lichens",
-          "zone_keystone_score": 0.017
-        },
-        {
-          "common_name": "California Tree Frog",
-          "zone_keystone_score": 0.011
+          "zone_keystone_score": 0.029
         }
       ],
       "zones": [
@@ -727,26 +727,26 @@
       ],
       "zone_count": 4,
       "species_count": 175,
-      "edge_count": 311,
+      "edge_count": 382,
       "keystones": [
         {
           "common_name": "curled dock",
-          "zone_keystone_score": 0.138
-        },
-        {
-          "common_name": "Smooth Cat's Ear",
-          "zone_keystone_score": 0.092
-        },
-        {
-          "common_name": "Western Hardwood Sulphur Shelf",
-          "zone_keystone_score": 0.086
+          "zone_keystone_score": 0.057
         },
         {
           "common_name": "hairy curtain crust",
+          "zone_keystone_score": 0.057
+        },
+        {
+          "common_name": "rabbit-tobaccos",
           "zone_keystone_score": 0.046
         },
         {
-          "common_name": "Orcutt's brodiaea",
+          "common_name": "Western Hardwood Sulphur Shelf",
+          "zone_keystone_score": 0.046
+        },
+        {
+          "common_name": "Southern Pacific Rattlesnake",
           "zone_keystone_score": 0.04
         }
       ],

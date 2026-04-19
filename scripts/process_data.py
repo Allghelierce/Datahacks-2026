@@ -186,7 +186,8 @@ for (r, c), name in ZONE_NAMES.items():
 
 import glob
 
-csv_files = [os.path.join(INPUT_DIR, "threatened_species.csv")]
+csv_files = glob.glob(os.path.join(INPUT_DIR, "*.csv"))
+csv_files = [f for f in csv_files if "/snowflake/" not in f]
 
 rows = []
 seen_ids = set()

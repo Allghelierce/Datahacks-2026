@@ -1,0 +1,501 @@
+scientific_name,common_name,trophic_level,iconic_taxon,taxon_order,family,observation_count,zone_count,decline_trend,keystone_score,habitat
+Sceloporus occidentalis,Western Fence Lizard,apex_predator,Reptilia,Squamata,Phrynosomatidae,9496,42,0.0,0.0,terrestrial
+Zalophus californianus,California Sea Lion,apex_predator,Mammalia,Carnivora,Otariidae,5775,14,0.0,0.0,terrestrial
+Magnoliopsida,Dicots,producer,Plantae,,,4647,47,-25.8,0.0,terrestrial
+Pelecanus occidentalis,Brown Pelican,tertiary_consumer,Aves,Pelecaniformes,Pelecanidae,4586,20,-43.3,0.0,terrestrial
+Otospermophilus beecheyi,California Ground Squirrel,tertiary_consumer,Mammalia,Rodentia,Sciuridae,4578,43,0.0,0.002,terrestrial
+Danaus plexippus,Monarch,pollinator,Insecta,Lepidoptera,Nymphalidae,3796,34,-61.2,0.0,terrestrial
+Canis latrans,Coyote,apex_predator,Mammalia,Carnivora,Canidae,3628,43,0.0,0.0,terrestrial
+Sylvilagus audubonii,Desert Cottontail,tertiary_consumer,Mammalia,Lagomorpha,Leporidae,3430,41,0.0,0.0,terrestrial
+Pandion haliaetus,Osprey,apex_predator,Aves,Accipitriformes,Pandionidae,3317,28,-53.9,0.0,terrestrial
+Nycticorax nycticorax,Black-crowned Night Heron,tertiary_consumer,Aves,Pelecaniformes,Ardeidae,3303,27,-45.6,0.0,terrestrial
+Pachygrapsus crassipes,Striped Shore Crab,secondary_consumer,Animalia,Decapoda,Grapsidae,3156,15,0.0,0.0,unknown
+Glebionis coronaria,Garland Daisy,producer,Plantae,Asterales,Asteraceae,3129,23,-19.3,0.0,terrestrial
+Anthopleura sola,Sunburst Anemone,secondary_consumer,Animalia,Actiniaria,Actiniidae,3017,13,0.0,0.002,unknown
+Nannopterum auritum,Double-crested Cormorant,tertiary_consumer,Aves,Suliformes,Phalacrocoracidae,2978,25,-29.5,0.0,terrestrial
+Meleagris gallopavo,Wild Turkey,tertiary_consumer,Aves,Galliformes,Phasianidae,2878,33,-10.7,0.0,terrestrial
+Fungi,Fungi Including Lichens,decomposer,Fungi,,,2521,44,0.0,0.0,terrestrial
+Uta stansburiana elegans,Western Side-blotched Lizard,apex_predator,Reptilia,Squamata,Phrynosomatidae,2342,42,0.0,0.0,terrestrial
+Patiria miniata,Bat Star,secondary_consumer,Animalia,Valvatida,Asterinidae,2335,11,0.0,0.0,unknown
+Cylindropuntia ganderi ganderi,,producer,Plantae,Caryophyllales,Cactaceae,2266,14,-26.5,0.0,terrestrial
+Oxalis pes-caprae,Bermuda buttercup,producer,Plantae,Oxalidales,Oxalidaceae,2197,21,18.8,0.0,terrestrial
+Bahiopsis laciniata,Tornleaf Goldeneye,producer,Plantae,Asterales,Asteraceae,2126,24,-69.6,0.0,terrestrial
+Foeniculum vulgare,fennel,producer,Plantae,Apiales,Apiaceae,1994,22,-54.5,0.0,terrestrial
+Crotalus oreganus helleri,Southern Pacific Rattlesnake,apex_predator,Reptilia,Squamata,Viperidae,1936,42,0.0,0.0,terrestrial
+Pseudacris regilla,Pacific chorus frog,secondary_consumer,Amphibia,Anura,Hylidae,1914,41,0.0,0.0,freshwater
+Passer domesticus,House Sparrow,tertiary_consumer,Aves,Passeriformes,Passeridae,1859,34,-60.4,0.0,terrestrial
+Odocoileus hemionus fuliginatus,Southern Mule Deer,tertiary_consumer,Mammalia,Artiodactyla,Cervidae,1810,29,0.0,0.0,terrestrial
+Erodium cicutarium,Redstem Stork's-bill,producer,Plantae,Geraniales,Geraniaceae,1788,42,-47.5,0.0,terrestrial
+Velella velella,By-the-wind Sailor,secondary_consumer,Animalia,Anthoathecata,Porpitidae,1784,12,0.0,0.0,unknown
+Larus heermanni,Heermann's Gull,tertiary_consumer,Aves,Charadriiformes,Laridae,1716,14,-40.4,0.0,terrestrial
+Hirschfeldia incana,Shortpod Mustard,producer,Plantae,Brassicales,Brassicaceae,1714,37,-55.4,0.0,terrestrial
+Panulirus interruptus,California Spiny Lobster,secondary_consumer,Animalia,Decapoda,Palinuridae,1712,12,0.0,0.002,unknown
+Lysimachia arvensis,scarlet pimpernel,producer,Plantae,Ericales,Primulaceae,1691,34,-64.4,0.0,terrestrial
+Ceanothus verrucosus,Wart-stemmed Ceanothus,producer,Plantae,Rosales,Rhamnaceae,1683,15,-71.7,0.0,terrestrial
+Tropaeolum majus,garden nasturtium,producer,Plantae,Brassicales,Tropaeolaceae,1651,17,47.0,0.0,terrestrial
+Lonchura punctulata,Scaly-breasted Munia,tertiary_consumer,Aves,Passeriformes,Estrildidae,1614,22,-50.7,0.002,terrestrial
+Ferocactus viridescens viridescens,Coast Barrel cactus,producer,Plantae,Caryophyllales,Cactaceae,1597,26,-77.3,0.0,terrestrial
+Cenchrus setaceus,Fountain Grass,producer,Plantae,Poales,Poaceae,1566,29,-24.4,0.0,terrestrial
+Encelia farinosa farinosa,,producer,Plantae,Asterales,Asteraceae,1526,21,-54.1,0.0,terrestrial
+Nicotiana glauca,tree tobacco,producer,Plantae,Solanales,Solanaceae,1519,26,-60.5,0.0,terrestrial
+Melilotus indicus,small melilot,producer,Plantae,Fabales,Fabaceae,1499,37,-33.9,0.0,terrestrial
+Phoca vitulina richardii,Pacific Harbor Seal,apex_predator,Mammalia,Carnivora,Phocidae,1473,10,0.0,0.0,terrestrial
+Apodemia virgulti,Behr's Metalmark,pollinator,Insecta,Lepidoptera,Riodinidae,1469,38,-48.0,0.0,terrestrial
+Lynx rufus,Bobcat,apex_predator,Mammalia,Carnivora,Felidae,1465,40,0.0,0.0,terrestrial
+Elgaria multicarinata,Southern Alligator Lizard,apex_predator,Reptilia,Squamata,Anguidae,1430,32,0.0,0.0,terrestrial
+Ricinus communis,castor bean,producer,Plantae,Malpighiales,Euphorbiaceae,1412,22,-30.9,0.0,terrestrial
+Uta stansburiana,Common Side-blotched Lizard,apex_predator,Reptilia,Squamata,Phrynosomatidae,1397,42,-66.7,0.0,terrestrial
+Marrubium vulgare,White Horehound,producer,Plantae,Lamiales,Lamiaceae,1391,31,-43.3,0.002,terrestrial
+Camissoniopsis,Suncups,producer,Plantae,Myrtales,Onagraceae,1374,39,-54.3,0.004,terrestrial
+Mesembryanthemum crystallinum,Crystalline ice plant,producer,Plantae,Caryophyllales,Aizoaceae,1332,18,-58.5,0.0,terrestrial
+Lecanoromycetes,Common Lichens,decomposer,Fungi,,,1327,44,0.0,0.0,terrestrial
+Columba livia domestica,Feral Pigeon,tertiary_consumer,Aves,Columbiformes,Columbidae,1320,20,-56.4,0.0,terrestrial
+Pinus torreyana,Torrey pine,producer,Plantae,Pinales,Pinaceae,1289,11,-76.4,0.0,terrestrial
+Centaurea melitensis,Maltese star-thistle,producer,Plantae,Asterales,Asteraceae,1253,33,-53.3,0.0,terrestrial
+Raphanus raphanistrum,Wild radish,producer,Plantae,Brassicales,Brassicaceae,1227,24,539.1,0.0,terrestrial
+Poaceae,Grasses,producer,Plantae,Poales,Poaceae,1191,39,-50.3,0.0,terrestrial
+Sonchus oleraceus,Common Sow-thistle,producer,Plantae,Asterales,Asteraceae,1189,35,-39.5,0.0,terrestrial
+Armadillidium vulgare,Common Pill Woodlouse,secondary_consumer,Animalia,Isopoda,Armadillidiidae,1126,31,0.0,0.0,unknown
+Quercus engelmannii,Engelmann oak,producer,Plantae,Fagales,Fagaceae,1119,33,-63.4,0.0,terrestrial
+Odocoileus hemionus,Mule Deer,tertiary_consumer,Mammalia,Artiodactyla,Cervidae,1117,35,0.0,0.0,terrestrial
+Pelecanus occidentalis californicus,California Brown Pelican,tertiary_consumer,Aves,Pelecaniformes,Pelecanidae,1112,14,-91.5,0.0,terrestrial
+Xylorhiza orcuttii,Orcutt's Woodyaster,producer,Plantae,Asterales,Asteraceae,1110,5,-65.8,0.0,terrestrial
+Sciurus niger,Eastern Fox Squirrel,tertiary_consumer,Mammalia,Rodentia,Sciuridae,1087,17,0.0,0.0,terrestrial
+Agaricales,Common Gilled Mushrooms and Allies,decomposer,Fungi,Agaricales,,1084,40,0.0,0.0,terrestrial
+Pituophis catenifer annectens,San Diego Gopher Snake,apex_predator,Reptilia,Squamata,Colubridae,1084,40,0.0,0.0,terrestrial
+Calochortus weedii,Weed's Mariposa Lily,producer,Plantae,Liliales,Liliaceae,1084,42,-99.5,0.0,terrestrial
+Sturnus vulgaris,European Starling,tertiary_consumer,Aves,Passeriformes,Sturnidae,1072,33,-43.2,0.0,terrestrial
+Pollicipes polymerus,Gooseneck Barnacle,secondary_consumer,Animalia,Pollicipedomorpha,Pollicipedidae,1066,10,0.0,0.0,unknown
+Anaxyrus boreas,Western Toad,secondary_consumer,Amphibia,Anura,Bufonidae,1066,33,0.0,0.0,freshwater
+Brassica tournefortii,Saharan Mustard,producer,Plantae,Brassicales,Brassicaceae,1057,37,-46.9,0.0,terrestrial
+Pisaster ochraceus,Ochre Sea Star,secondary_consumer,Animalia,Forcipulatida,Asteriidae,1045,11,0.0,0.0,unknown
+Procyon lotor,Common Raccoon,apex_predator,Mammalia,Carnivora,Procyonidae,1036,34,0.0,0.0,terrestrial
+Pagurus samuelis,Blueband Hermit Crab,secondary_consumer,Animalia,Decapoda,Paguridae,1035,10,0.0,0.0,unknown
+Helminthotheca echioides,bristly oxtongue,producer,Plantae,Asterales,Asteraceae,1020,19,-44.1,0.0,terrestrial
+Omphalotus olivascens,western jack-o'-lantern,decomposer,Fungi,Agaricales,Omphalotaceae,1013,35,0.0,0.0,terrestrial
+Mephitis mephitis,Striped Skunk,apex_predator,Mammalia,Carnivora,Mephitidae,1006,36,0.0,0.0,terrestrial
+Limonium perezii,Perez's sea lavender,producer,Plantae,Caryophyllales,Plumbaginaceae,995,17,-85.4,0.002,terrestrial
+Leptosyne maritima,Sea Dahlia,producer,Plantae,Asterales,Asteraceae,976,21,-61.7,0.0,terrestrial
+Agaricomycetes,"Mushrooms, Bracket Fungi, Puffballs, and Allies",decomposer,Fungi,,,973,37,0.0,0.0,terrestrial
+Silene gallica,Small-flowered Catchfly,producer,Plantae,Caryophyllales,Caryophyllaceae,947,31,-55.8,0.0,terrestrial
+Crotalus ruber,Red Diamond Rattlesnake,apex_predator,Reptilia,Squamata,Viperidae,941,39,-46.3,0.0,terrestrial
+Raphanus raphanistrum sativus,garden radish,producer,Plantae,Brassicales,Brassicaceae,940,21,-98.9,0.0,terrestrial
+Streptopelia decaocto,Eurasian Collared-Dove,tertiary_consumer,Aves,Columbiformes,Columbidae,936,34,-49.3,0.002,terrestrial
+Dittrichia graveolens,Stinkwort,producer,Plantae,Asterales,Asteraceae,927,27,-91.5,0.0,terrestrial
+Erodium botrys,Mediterranean Stork's-bill,producer,Plantae,Geraniales,Geraniaceae,920,29,-47.9,0.0,terrestrial
+Phrynosoma blainvillii,Blainville's Horned Lizard,apex_predator,Reptilia,Squamata,Phrynosomatidae,918,38,-71.2,0.0,terrestrial
+Hedypnois rhagadioloides,Cretanweed,producer,Plantae,Asterales,Asteraceae,912,30,-39.7,0.0,terrestrial
+Lampropeltis californiae,California King Snake,apex_predator,Reptilia,Squamata,Colubridae,893,40,-85.7,0.0,terrestrial
+Anthopleura elegantissima,Aggregating Anemone,secondary_consumer,Animalia,Actiniaria,Actiniidae,879,8,0.0,0.0,unknown
+Sceloporus occidentalis longipes,Great Basin Fence Lizard,apex_predator,Reptilia,Squamata,Phrynosomatidae,879,34,0.0,0.0,terrestrial
+Cakile maritima,European Searocket,producer,Plantae,Brassicales,Brassicaceae,875,10,-47.0,0.0,terrestrial
+Dendraster excentricus,Eccentric Sand Dollar,secondary_consumer,Animalia,Echinolampadacea,Dendrasteridae,866,12,0.0,0.0,unknown
+Falco peregrinus,Peregrine Falcon,apex_predator,Aves,Falconiformes,Falconidae,865,30,-78.8,0.0,terrestrial
+Sonchus asper,prickly sowthistle,producer,Plantae,Asterales,Asteraceae,863,35,-31.8,0.0,terrestrial
+Mesembryanthemum nodiflorum,Slender Iceplant,producer,Plantae,Caryophyllales,Aizoaceae,834,17,-57.2,0.0,terrestrial
+Quercus dumosa,Nuttall's scrub oak,producer,Plantae,Fagales,Fagaceae,830,17,-66.7,0.0,terrestrial
+Urtica urens,Dwarf Nettle,producer,Plantae,Rosales,Urticaceae,821,27,-26.0,0.0,terrestrial
+Tursiops truncatus,Common Bottlenose Dolphin,tertiary_consumer,Mammalia,Artiodactyla,Delphinidae,819,10,0.0,0.0,terrestrial
+Acmispon,deervetch,producer,Plantae,Fabales,Fabaceae,818,41,-28.4,0.0,terrestrial
+Elgaria multicarinata webbii,San Diego Alligator Lizard,apex_predator,Reptilia,Squamata,Anguidae,814,33,0.0,0.0,terrestrial
+Didelphis virginiana,Virginia Opossum,tertiary_consumer,Mammalia,Didelphimorphia,Didelphidae,813,30,0.0,0.0,terrestrial
+Washingtonia robusta,Mexican Fan Palm,producer,Plantae,Arecales,Arecaceae,808,24,5.8,0.0,terrestrial
+Charadrius vociferus,Killdeer,tertiary_consumer,Aves,Charadriiformes,Charadriidae,807,28,65.7,0.002,terrestrial
+Cylindropuntia fosbergii,Mason Valley Cholla,producer,Plantae,Caryophyllales,Cactaceae,802,10,17.8,0.0,terrestrial
+Conium maculatum,poison hemlock,producer,Plantae,Apiales,Apiaceae,799,20,-45.4,0.0,terrestrial
+Aspidoscelis hyperythrus,Orange-throated Whiptail,apex_predator,Reptilia,Squamata,Teiidae,799,25,-67.2,0.0,terrestrial
+Bergerocactus emoryi,Golden-spined Cereus,producer,Plantae,Caryophyllales,Cactaceae,796,20,-54.3,0.0,terrestrial
+Carpobrotus edulis,sea fig,producer,Plantae,Caryophyllales,Aizoaceae,780,19,-44.7,0.0,terrestrial
+Pseudognaphalium,rabbit-tobaccos,producer,Plantae,Asterales,Asteraceae,777,36,8.0,0.0,terrestrial
+Chenopodiastrum murale,nettle-leaved goosefoot,producer,Plantae,Caryophyllales,Amaranthaceae,775,33,-54.5,0.0,terrestrial
+Selaginella cinerascens,Ashy Spikemoss,producer,Plantae,Selaginellales,Selaginellaceae,771,17,-61.6,0.0,terrestrial
+Anas platyrhynchos domesticus,Domestic Mallard,tertiary_consumer,Aves,Anseriformes,Anatidae,769,20,-62.1,0.0,terrestrial
+Medicago polymorpha,bur clover,producer,Plantae,Fabales,Fabaceae,767,28,-49.1,0.0,terrestrial
+Bryophyta,Mosses,producer,Plantae,,,764,39,-39.9,0.0,terrestrial
+Strongylocentrotus purpuratus,Pacific Purple Sea Urchin,secondary_consumer,Animalia,Camarodonta,Strongylocentrotidae,764,10,0.0,0.002,unknown
+Egretta rufescens,Reddish Egret,tertiary_consumer,Aves,Pelecaniformes,Ardeidae,761,7,-22.6,0.0,terrestrial
+Mutarda nigra,Black Mustard,producer,Plantae,Brassicales,Brassicaceae,760,24,20.3,0.0,terrestrial
+Schinus terebinthifolia,Brazilian pepper,producer,Plantae,Sapindales,Anacardiaceae,759,17,-22.9,0.002,terrestrial
+Rumex crispus,curled dock,producer,Plantae,Caryophyllales,Polygonaceae,752,30,-57.7,0.0,terrestrial
+Bromus rubens,Red Brome,producer,Plantae,Poales,Poaceae,751,38,-26.8,0.004,terrestrial
+Baccharis,,producer,Plantae,Asterales,Asteraceae,744,28,-79.8,0.0,terrestrial
+Erodium moschatum,musk stork's-bill,producer,Plantae,Geraniales,Geraniaceae,741,24,-4.0,0.0,terrestrial
+Adolphia californica,California adolphia,producer,Plantae,Rosales,Rhamnaceae,740,20,-65.2,0.0,terrestrial
+Asphodelus fistulosus,Onion-Leafed Asphodel,producer,Plantae,Asparagales,Asphodelaceae,738,22,-26.1,0.0,terrestrial
+Aphelocoma californica obscura,Belding's Scrub-Jay,tertiary_consumer,Aves,Passeriformes,Corvidae,738,33,-39.8,0.0,terrestrial
+Animalia,Animals,secondary_consumer,Animalia,,,735,34,0.0,0.0,unknown
+Sceloporus orcutti,Granite Spiny Lizard,apex_predator,Reptilia,Squamata,Phrynosomatidae,735,32,0.0,0.0,terrestrial
+Erigeron bonariensis,Flax-leaved Horseweed,producer,Plantae,Asterales,Asteraceae,723,25,-94.8,0.0,terrestrial
+Stereum hirsutum,hairy curtain crust,decomposer,Fungi,Russulales,Stereaceae,722,31,0.0,0.0,terrestrial
+Calidris minutilla,Least Sandpiper,tertiary_consumer,Aves,Charadriiformes,Scolopacidae,722,18,15.9,0.0,terrestrial
+Circus hudsonius,Northern Harrier,apex_predator,Aves,Accipitriformes,Accipitridae,721,25,-34.9,0.0,terrestrial
+Hypochaeris glabra,Smooth Cat's Ear,producer,Plantae,Asterales,Asteraceae,720,33,-24.7,0.002,terrestrial
+Ophiothrix spiculata,Western Spiny Brittle Star,secondary_consumer,Animalia,Amphilepidida,Ophiotrichidae,718,11,0.0,0.0,unknown
+Cortaderia selloana,Pampas Grass,producer,Plantae,Poales,Poaceae,718,18,-47.6,0.0,terrestrial
+Calypte costae,Costa's Hummingbird,tertiary_consumer,Aves,Apodiformes,Trochilidae,716,36,-61.3,0.004,terrestrial
+Asteraceae,"Sunflowers, Daisies, Asters, and Allies",producer,Plantae,Asterales,Asteraceae,716,41,-36.9,0.0,terrestrial
+Megascapheus bottae,,tertiary_consumer,Mammalia,Rodentia,Geomyidae,715,40,0.0,0.0,terrestrial
+Tringa melanoleuca,Greater Yellowlegs,tertiary_consumer,Aves,Charadriiformes,Scolopacidae,715,16,-22.0,0.0,terrestrial
+Anolis carolinensis,Green Anole,apex_predator,Reptilia,Squamata,Anolidae,714,14,0.0,0.0,terrestrial
+Solanum umbelliferum,,producer,Plantae,Solanales,Solanaceae,713,35,-52.0,0.002,terrestrial
+Trachemys scripta elegans,Red-eared Slider,secondary_consumer,Reptilia,Testudines,Emydidae,697,26,0.0,0.0,terrestrial
+Cynara cardunculus,Artichoke Thistle,producer,Plantae,Asterales,Asteraceae,682,20,-71.0,0.0,terrestrial
+Thalasseus elegans,Elegant Tern,tertiary_consumer,Aves,Charadriiformes,Laridae,677,12,-69.6,0.0,terrestrial
+Ophionereis annulata,Banded Brittle Star,secondary_consumer,Animalia,Amphilepidida,Ophionereididae,673,10,0.0,0.0,unknown
+Limonium sinuatum,Blue statice,producer,Plantae,Caryophyllales,Plumbaginaceae,661,18,-50.6,0.0,terrestrial
+Lactuca serriola,prickly lettuce,producer,Plantae,Asterales,Asteraceae,656,34,-76.2,0.002,terrestrial
+Carduus pycnocephalus,Italian thistle,producer,Plantae,Asterales,Asteraceae,644,28,-58.7,0.0,terrestrial
+Urocyon cinereoargenteus,Gray Fox,apex_predator,Mammalia,Carnivora,Canidae,641,38,0.0,0.002,terrestrial
+Pluvialis squatarola,Black-bellied Plover,tertiary_consumer,Aves,Charadriiformes,Charadriidae,637,8,-7.6,0.002,terrestrial
+Batrachoseps major,Southern California Slender Salamander,secondary_consumer,Amphibia,Caudata,Plethodontidae,634,30,0.0,0.0,freshwater
+Rallus obsoletus,Ridgway's Rail,tertiary_consumer,Aves,Gruiformes,Rallidae,629,10,-68.9,0.0,terrestrial
+Euphorbia misera,cliff spurge,producer,Plantae,Malpighiales,Euphorbiaceae,622,16,-86.5,0.0,terrestrial
+Aspidoscelis tigris,Western Whiptail,apex_predator,Reptilia,Squamata,Teiidae,620,38,0.0,0.0,terrestrial
+Agaricus,field and button mushrooms,decomposer,Fungi,Agaricales,Agaricaceae,617,33,0.0,0.0,terrestrial
+Lithobates catesbeianus,American Bullfrog,secondary_consumer,Amphibia,Anura,Ranidae,610,30,0.0,0.0,freshwater
+Acacia cyclops,western coastal wattle,producer,Plantae,Fabales,Fabaceae,610,17,-33.1,0.0,terrestrial
+Agrocybe pediades,Common Fieldcap,decomposer,Fungi,Agaricales,Hymenogastraceae,604,34,0.0,0.0,terrestrial
+Pituophis catenifer,Gopher Snake,apex_predator,Reptilia,Squamata,Colubridae,604,39,0.0,0.0,terrestrial
+Echium candicans,Pride of Madeira,producer,Plantae,Boraginales,Boraginaceae,601,22,-63.3,0.0,terrestrial
+Brodiaea orcuttii,Orcutt's brodiaea,producer,Plantae,Asparagales,Asparagaceae,590,32,-91.5,0.0,terrestrial
+Phoca vitulina,Harbor Seal,apex_predator,Mammalia,Carnivora,Phocidae,585,8,0.0,0.0,terrestrial
+Carpobrotus,sea figs,producer,Plantae,Caryophyllales,Aizoaceae,583,18,-73.4,0.0,terrestrial
+Urobatis halleri,Haller's Round Ray,secondary_consumer,Animalia,Myliobatiformes,Urotrygonidae,575,10,0.0,0.0,unknown
+Carpobrotus chilensis,Chilean sea fig,producer,Plantae,Caryophyllales,Aizoaceae,574,18,-13.4,0.0,terrestrial
+Opuntia ficus-indica,Indian fig opuntia,producer,Plantae,Caryophyllales,Cactaceae,571,20,-47.8,0.0,terrestrial
+Apium graveolens,Celery,producer,Plantae,Apiales,Apiaceae,562,27,-32.5,0.0,terrestrial
+Euphorbia peplus,Petty Spurge,producer,Plantae,Malpighiales,Euphorbiaceae,560,19,-48.1,0.0,terrestrial
+Artemisia palmeri,San Diego Sagewort,producer,Plantae,Asterales,Asteraceae,555,18,-79.1,0.0,terrestrial
+Schinus molle,Peruvian Pepper Tree,producer,Plantae,Sapindales,Anacardiaceae,550,23,-38.0,0.0,terrestrial
+Bromus diandrus,great brome,producer,Plantae,Poales,Poaceae,548,35,-18.0,0.0,terrestrial
+Dudleya saxosa aloides,Desert liveforever,producer,Plantae,Saxifragales,Crassulaceae,548,16,-90.5,0.0,terrestrial
+Sisymbrium irio,London rocket,producer,Plantae,Brassicales,Brassicaceae,546,35,-47.0,0.0,terrestrial
+Malva parviflora,cheeseweed mallow,producer,Plantae,Malvales,Malvaceae,545,26,-7.8,0.0,terrestrial
+Opuntia,Prickly Pears,producer,Plantae,Caryophyllales,Cactaceae,544,33,-43.7,0.0,terrestrial
+Solanum nigrum,black nightshade,producer,Plantae,Solanales,Solanaceae,542,26,-51.7,0.0,terrestrial
+Mammalia,Mammals,tertiary_consumer,Mammalia,,,539,40,0.0,0.0,terrestrial
+Cladonia,pixie cup and reindeer lichens,decomposer,Fungi,Lecanorales,Cladoniaceae,535,28,0.0,0.0,terrestrial
+Emerita analoga,Pacific Sand Crab,secondary_consumer,Animalia,Decapoda,Hippidae,535,12,0.0,0.0,unknown
+Bombus sonorus,Sonoran Bumble Bee,pollinator,Insecta,Hymenoptera,Apidae,531,12,-99.1,0.004,terrestrial
+Tetraclita rubescens,Pink Volcano Barnacle,secondary_consumer,Animalia,Balanomorpha,Tetraclitidae,529,9,0.0,0.0,unknown
+Galium aparine,catchweed bedstraw,producer,Plantae,Gentianales,Rubiaceae,527,34,-19.5,0.0,terrestrial
+Taliepus nuttallii,Southern Kelp Crab,secondary_consumer,Animalia,Decapoda,Epialtidae,526,10,0.0,0.0,unknown
+Melanerpes formicivorus bairdi,Pacific Acorn Woodpecker,tertiary_consumer,Aves,Piciformes,Picidae,524,26,277.3,0.0,terrestrial
+Puma concolor,Mountain Lion,apex_predator,Mammalia,Carnivora,Felidae,522,30,0.0,0.0,terrestrial
+Polypogon monspeliensis,rabbitfoot grass,producer,Plantae,Poales,Poaceae,520,36,-72.7,0.0,terrestrial
+Lamarckia aurea,goldentop grass,producer,Plantae,Poales,Poaceae,512,29,-54.9,0.008,terrestrial
+Cistus creticus,Hoary Rock-rose,producer,Plantae,Malvales,Cistaceae,507,19,-49.7,0.0,terrestrial
+Triakis semifasciata,Leopard Shark,tertiary_consumer,Animalia,Carcharhiniformes,Triakidae,505,9,0.0,0.0,unknown
+Euphorbia maculata,Spotted spurge,producer,Plantae,Malpighiales,Euphorbiaceae,502,28,-83.0,0.006,terrestrial
+Spea hammondii,Western Spadefoot,secondary_consumer,Amphibia,Anura,Scaphiopodidae,501,33,-85.5,0.0,freshwater
+Leptuca crenulata,Mexican Fiddler Crab,secondary_consumer,Animalia,Decapoda,Ocypodidae,497,8,0.0,0.0,unknown
+Atriplex semibaccata,berry saltbush,producer,Plantae,Caryophyllales,Amaranthaceae,494,22,-66.0,0.0,terrestrial
+Vicia villosa,hairy vetch,producer,Plantae,Fabales,Fabaceae,486,30,-56.7,0.002,terrestrial
+Volutaria tubuliflora,Tubular Knapweed,producer,Plantae,Asterales,Asteraceae,485,8,-51.0,0.0,terrestrial
+Anarhynchus nivosus,Snowy Plover,tertiary_consumer,Aves,Charadriiformes,Charadriidae,481,9,-56.5,0.0,terrestrial
+Asparagus asparagoides,Cape Smilax,producer,Plantae,Asparagales,Asparagaceae,475,17,16.2,0.0,terrestrial
+Arundo donax,giant reed,producer,Plantae,Poales,Poaceae,471,22,-42.7,0.0,terrestrial
+Laetiporus gilbertsonii,Western Hardwood Sulphur Shelf,decomposer,Fungi,Polyporales,Laetiporaceae,470,25,0.0,0.002,terrestrial
+Rumex spinosus,Devil's Thorn,producer,Plantae,Caryophyllales,Polygonaceae,469,18,26.4,0.0,terrestrial
+Nasturtium officinale,watercress,producer,Plantae,Brassicales,Brassicaceae,468,31,-56.8,0.0,terrestrial
+Oloptum miliaceum,Smilo Grass,producer,Plantae,Poales,Poaceae,465,25,-71.7,0.0,terrestrial
+Epiactis prolifera,Brooding Anemone,secondary_consumer,Animalia,Actiniaria,Actiniidae,463,9,0.0,0.0,unknown
+Salvia,Sages,producer,Plantae,Lamiales,Lamiaceae,463,34,13.4,0.0,terrestrial
+Malva,Mallows,producer,Plantae,Malvales,Malvaceae,460,25,-60.0,0.0,terrestrial
+Logfia gallica,narrowleaf cottonrose,producer,Plantae,Asterales,Asteraceae,458,29,-60.9,0.002,terrestrial
+Salsola australis,Southern Russian Thistle,producer,Plantae,Caryophyllales,Amaranthaceae,456,26,-33.3,0.0,terrestrial
+Pseudacris cadaverina,California Tree Frog,secondary_consumer,Amphibia,Anura,Hylidae,456,31,0.0,0.0,freshwater
+Crocanthemum,Frostweeds,producer,Plantae,Malvales,Cistaceae,456,29,-43.1,0.0,terrestrial
+Eucalyptus,eucalyptus,producer,Plantae,Myrtales,Myrtaceae,455,21,-39.1,0.006,terrestrial
+Procambarus clarkii,Red Swamp Crayfish,secondary_consumer,Animalia,Decapoda,Cambaridae,455,26,0.0,0.0,unknown
+Tamarix ramosissima,saltcedar,producer,Plantae,Caryophyllales,Tamaricaceae,449,37,-67.3,0.0,terrestrial
+Helminthoglypta tudiculata,Southern California Shoulderband,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,448,25,35.7,0.0,aquatic
+Senecio vulgaris,common groundsel,producer,Plantae,Asterales,Asteraceae,448,29,-8.8,0.0,terrestrial
+Clematis pauciflora,Southern California clematis,producer,Plantae,Ranunculales,Ranunculaceae,442,31,-51.9,0.0,terrestrial
+Melilotus albus,White Sweetclover,producer,Plantae,Fabales,Fabaceae,440,27,-73.9,0.0,terrestrial
+Phragmatopoma californica,California Sandcastle Worm,secondary_consumer,Animalia,,Sabellariidae,436,8,0.0,0.0,unknown
+Volvopluteus gloiocephalus,Stubble Rosegill,decomposer,Fungi,Agaricales,Pluteaceae,429,25,0.0,0.0,terrestrial
+Acacia redolens,vanilla-scented wattle,producer,Plantae,Fabales,Fabaceae,425,17,17.6,0.0,terrestrial
+Lobularia maritima,sweet alyssum,producer,Plantae,Brassicales,Brassicaceae,424,23,-7.3,0.0,terrestrial
+Amazona viridigenalis,Red-crowned Amazon,tertiary_consumer,Aves,Psittaciformes,Psittacidae,422,20,-35.4,0.0,terrestrial
+Tamarix,Tamarisks,producer,Plantae,Caryophyllales,Tamaricaceae,420,34,-45.7,0.0,terrestrial
+Astragalus,milkvetches,producer,Plantae,Fabales,Fabaceae,419,36,-44.4,0.0,terrestrial
+Cirsium vulgare,Bull Thistle,producer,Plantae,Asterales,Asteraceae,417,32,-75.3,0.0,terrestrial
+Plantago lanceolata,ribwort plantain,producer,Plantae,Lamiales,Plantaginaceae,417,22,-55.2,0.0,terrestrial
+Trachemys scripta,Pond Slider,secondary_consumer,Reptilia,Testudines,Emydidae,415,22,0.0,0.0,terrestrial
+Haliaeetus leucocephalus,Bald Eagle,apex_predator,Aves,Accipitriformes,Accipitridae,413,26,-33.7,0.0,terrestrial
+Bombus crotchii,Crotch's Bumble Bee,pollinator,Insecta,Hymenoptera,Apidae,411,30,-92.3,0.0,terrestrial
+Lamium amplexicaule,henbit deadnettle,producer,Plantae,Lamiales,Lamiaceae,411,29,-59.7,0.002,terrestrial
+Phacelia,Scorpionweeds,producer,Plantae,Boraginales,Boraginaceae,409,38,14.5,0.0,terrestrial
+Arthropoda,Arthropods,secondary_consumer,Animalia,,,408,37,0.0,0.0,unknown
+Bromus,bromes,producer,Plantae,Poales,Poaceae,406,36,18.2,0.0,terrestrial
+Xanthoparmelia cumberlandia,Cumberland Rock Shield,decomposer,Fungi,Lecanorales,Parmeliaceae,405,36,0.0,0.0,terrestrial
+Pentagramma,,producer,Plantae,Polypodiales,Pteridaceae,404,33,-21.7,0.002,terrestrial
+Oncosiphon pilulifer,stinknet,producer,Plantae,Asterales,Asteraceae,402,28,-50.9,0.0,terrestrial
+Podaxis pistillaris,Desert Shaggymane,decomposer,Fungi,Agaricales,Agaricaceae,398,8,0.0,0.0,terrestrial
+Silybum marianum,milk thistle,producer,Plantae,Asterales,Asteraceae,398,22,-59.7,0.0,terrestrial
+Xanthoparmelia,rock shield lichens,decomposer,Fungi,Lecanorales,Parmeliaceae,396,34,0.0,0.0,terrestrial
+Limonium,Sea-Lavenders,producer,Plantae,Caryophyllales,Plumbaginaceae,396,16,-66.1,0.0,terrestrial
+Plestiodon skiltonianus,Western Skink,apex_predator,Reptilia,Squamata,Scincidae,395,32,0.0,0.0,terrestrial
+Thamnophis hammondii,Two-striped Garter Snake,apex_predator,Reptilia,Squamata,Colubridae,393,38,-50.0,0.0,terrestrial
+Lactarius alnicola,golden milkcap,decomposer,Fungi,Russulales,Russulaceae,391,27,0.0,0.0,terrestrial
+Schizophyllum commune,splitgill mushroom,decomposer,Fungi,Agaricales,Schizophyllaceae,387,24,0.0,0.0,terrestrial
+Ceanothus,Ceanothus,producer,Plantae,Rosales,Rhamnaceae,387,33,-97.3,0.0,terrestrial
+Plantago major,greater plantain,producer,Plantae,Lamiales,Plantaginaceae,386,29,-65.1,0.0,terrestrial
+Lepus californicus,Black-tailed Jackrabbit,tertiary_consumer,Mammalia,Lagomorpha,Leporidae,385,31,0.0,0.0,terrestrial
+Acarospora socialis,Yellow Cobblestone Lichen,decomposer,Fungi,Acarosporales,Acarosporaceae,384,41,0.0,0.0,terrestrial
+Calasterella californica,California asterella,producer,Plantae,Marchantiales,Aytoniaceae,383,31,-96.8,0.0,terrestrial
+Metacarcinus anthonyi,Yellow Rock Crab,secondary_consumer,Animalia,Decapoda,Cancridae,382,9,0.0,0.0,unknown
+Hordeum murinum,wall barley,producer,Plantae,Poales,Poaceae,381,33,-40.5,0.014,terrestrial
+Cochemiea tetrancistra,Common Fishhook Cactus,producer,Plantae,Caryophyllales,Cactaceae,378,15,-5.0,0.0,terrestrial
+Olneya tesota,desert ironwood,producer,Plantae,Fabales,Fabaceae,378,7,-73.6,0.0,terrestrial
+Plocamium pacificum,,producer,Plantae,Plocamiales,Plocamiaceae,376,8,7.7,0.0,terrestrial
+Gutierrezia,matchweeds and snakeweeds,producer,Plantae,Asterales,Asteraceae,376,32,-33.3,0.0,terrestrial
+Oenothera speciosa,Pinkladies,producer,Plantae,Myrtales,Onagraceae,370,16,-62.8,0.0,terrestrial
+Sonchus,sow thistles,producer,Plantae,Asterales,Asteraceae,370,27,-45.9,0.0,terrestrial
+Erigeron sumatrensis,tropical horseweed,producer,Plantae,Asterales,Asteraceae,368,21,-65.1,0.0,terrestrial
+Uca princeps,Large Mexican Fiddler Crab,secondary_consumer,Animalia,Decapoda,Ocypodidae,366,5,0.0,0.0,unknown
+Apostichopus parvimensis,Warty sea cucumber,secondary_consumer,Animalia,Synallactida,Stichopodidae,365,9,-83.6,0.0,unknown
+Salsola,Russian Thistles,producer,Plantae,Caryophyllales,Amaranthaceae,363,27,-56.2,0.002,terrestrial
+Juncus acutus leopoldii,Southwestern Spiny Rush,producer,Plantae,Poales,Juncaceae,363,20,-78.6,0.0,terrestrial
+Chlorophyllum molybdites,Green-spored Parasol,decomposer,Fungi,Agaricales,Agaricaceae,363,19,0.0,0.0,terrestrial
+Ligia occidentalis,Western Sea Slater,secondary_consumer,Animalia,Isopoda,Ligiidae,362,10,0.0,0.0,unknown
+Matthiola incana,hoary stock,producer,Plantae,Brassicales,Brassicaceae,361,9,-17.5,0.0,terrestrial
+Lythrum hyssopifolia,Hyssop Loosestrife,producer,Plantae,Myrtales,Lythraceae,359,30,-86.2,0.014,terrestrial
+Sairocarpus,,producer,Plantae,Lamiales,Plantaginaceae,359,26,-77.6,0.0,terrestrial
+Neotoma,Woodrats,tertiary_consumer,Mammalia,Rodentia,Cricetidae,357,38,0.0,0.0,terrestrial
+Chamaebatia australis,southern mountain misery,producer,Plantae,Rosales,Rosaceae,356,21,-55.1,0.0,terrestrial
+Scolopendra polymorpha,Common Desert Centipede,secondary_consumer,Animalia,Scolopendromorpha,Scolopendridae,353,38,0.0,0.0,unknown
+Vinca major,greater periwinkle,producer,Plantae,Gentianales,Apocynaceae,353,27,-1.2,0.002,terrestrial
+Melinis repens,Natal Grass,producer,Plantae,Poales,Poaceae,352,25,7.2,0.0,terrestrial
+Cynoglosseae,,producer,Plantae,Boraginales,Boraginaceae,352,37,-15.1,0.0,terrestrial
+Codium fragile,Dead Man's Fingers,producer,Plantae,Bryopsidales,Codiaceae,350,10,-36.7,0.0,terrestrial
+Haliotis fulgens,Green Abalone,primary_consumer,Mollusca,Lepetellida,Haliotidae,350,15,-36.5,0.01,aquatic
+Solanum elaeagnifolium,silverleaf nightshade,producer,Plantae,Solanales,Solanaceae,348,29,-82.8,0.0,terrestrial
+Romaleon antennarium,Pacific Rock Crab,secondary_consumer,Animalia,Decapoda,Cancridae,346,11,0.0,0.0,unknown
+Heptacarpus sitchensis,Red-banded Transparent Shrimp,secondary_consumer,Animalia,Decapoda,Thoridae,346,8,0.0,0.0,unknown
+Calochortus weedii weedii,,producer,Plantae,Liliales,Liliaceae,344,39,-98.2,0.0,terrestrial
+Trifolium hirtum,Rose Clover,producer,Plantae,Fabales,Fabaceae,343,29,-82.5,0.0,terrestrial
+Heterodontus francisci,Horn Shark,secondary_consumer,Animalia,Heterodontiformes,Heterodontidae,340,9,0.0,0.0,unknown
+Dipsosaurus dorsalis,Desert Iguana,apex_predator,Reptilia,Squamata,Iguanidae,337,12,0.0,0.0,terrestrial
+Avena barbata,slender wild oat,producer,Plantae,Poales,Poaceae,334,36,-67.0,0.004,terrestrial
+Lycium californicum,California boxthorn,producer,Plantae,Solanales,Solanaceae,334,10,-81.2,0.0,terrestrial
+Schismus barbatus,common Mediterranean grass,producer,Plantae,Poales,Poaceae,332,41,-34.0,0.0,terrestrial
+Cyperus alternifolius,Umbrella Papyrus,producer,Plantae,Poales,Cyperaceae,332,21,-30.6,0.0,terrestrial
+Malephora crocea,coppery mesemb,producer,Plantae,Caryophyllales,Aizoaceae,331,18,-37.9,0.0,terrestrial
+Ophioderma panamense,Panama Serpent Star,secondary_consumer,Animalia,Ophiacanthida,Ophiodermatidae,331,9,0.0,0.0,unknown
+Clematis,Clematis and leatherflowers,producer,Plantae,Ranunculales,Ranunculaceae,330,33,-56.7,0.0,terrestrial
+Zosterops simplex,Swinhoe's White-eye,tertiary_consumer,Aves,Passeriformes,Zosteropidae,328,14,114.3,0.0,terrestrial
+Cotula coronopifolia,Brass Buttons,producer,Plantae,Asterales,Asteraceae,327,22,-33.0,0.0,terrestrial
+Psathyrellaceae,Brittlestems and Allies,decomposer,Fungi,Agaricales,Psathyrellaceae,325,32,0.0,0.002,terrestrial
+Oxidus gracilis,Greenhouse Millipede,secondary_consumer,Animalia,Polydesmida,Paradoxosomatidae,324,18,0.0,0.0,unknown
+Hiltonius,,secondary_consumer,Animalia,Spirobolida,Spirobolidae,322,23,0.0,0.0,unknown
+Trifolium repens,white clover,producer,Plantae,Fabales,Fabaceae,319,17,-55.7,0.0,terrestrial
+Agave americana,American century plant,producer,Plantae,Asparagales,Asparagaceae,319,19,-35.5,0.0,terrestrial
+Corallina officinalis,Common Coralline,producer,Plantae,Corallinales,Corallinaceae,318,8,-62.7,0.0,terrestrial
+Sylvilagus,Cottontail Rabbits,tertiary_consumer,Mammalia,Lagomorpha,Leporidae,314,30,0.0,0.0,terrestrial
+Poales,"Grasses, Sedges, Cattails, and Allies",producer,Plantae,Poales,,314,32,-8.8,0.0,terrestrial
+Asterellopsis palmeri,Palmer's asterella,producer,Plantae,Marchantiales,Aytoniaceae,312,21,-82.9,0.0,terrestrial
+Scutigera coleoptrata,House Centipede,secondary_consumer,Animalia,Scutigeromorpha,Scutigeridae,311,20,0.0,0.0,unknown
+Cladonia chlorophaea,Mealy Pixie Cup,decomposer,Fungi,Lecanorales,Cladoniaceae,309,20,0.0,0.0,terrestrial
+Camissoniopsis bistorta,California sun cup,producer,Plantae,Myrtales,Onagraceae,306,22,-82.9,0.002,terrestrial
+Dichondra occidentalis,western ponysfoot,producer,Plantae,Solanales,Convolvulaceae,305,15,11.5,0.0,terrestrial
+Olea europaea,Olive,producer,Plantae,Lamiales,Oleaceae,305,21,-28.6,0.0,terrestrial
+Cryptantha,Annual Cryptanthas,producer,Plantae,Boraginales,Boraginaceae,302,40,-96.5,0.0,terrestrial
+Bromus hordeaceus,common soft brome,producer,Plantae,Poales,Poaceae,302,30,-35.3,0.024,terrestrial
+Phoenix canariensis,Canary Island palm,producer,Plantae,Arecales,Arecaceae,301,18,-74.3,0.0,terrestrial
+Cotula australis,Common Cotula,producer,Plantae,Asterales,Asteraceae,301,23,-32.6,0.0,terrestrial
+Fossombronia,Frillworts,producer,Plantae,Fossombroniales,Fossombroniaceae,299,24,-55.2,0.0,terrestrial
+Malacothamnus,bushmallows,producer,Plantae,Malvales,Malvaceae,298,30,71.4,0.0,terrestrial
+Crassula ovata,jade plant,producer,Plantae,Saxifragales,Crassulaceae,298,17,91.4,0.002,terrestrial
+Aplidium californicum,Pacific Sea Pork,secondary_consumer,Animalia,Aplousobranchia,Polyclinidae,297,9,0.0,0.0,unknown
+Gazania,Treasure Flowers,producer,Plantae,Asterales,Asteraceae,297,22,-6.7,0.0,terrestrial
+Rhodophyta,red algae,producer,Plantae,,,297,11,-17.9,0.0,terrestrial
+Lichanura orcutti,Coastal Rosy Boa,apex_predator,Reptilia,Squamata,Boidae,297,37,0.0,0.0,terrestrial
+Torilis arvensis,common hedge parsley,producer,Plantae,Apiales,Apiaceae,295,22,-92.9,0.0,terrestrial
+Lepidium didymum,Lesser swine-cress,producer,Plantae,Brassicales,Brassicaceae,295,18,-40.0,0.0,terrestrial
+Sylvilagus bachmani,Brush Rabbit,tertiary_consumer,Mammalia,Lagomorpha,Leporidae,294,27,0.0,0.0,terrestrial
+Pooideae,,producer,Plantae,Poales,Poaceae,292,35,8.5,0.0,terrestrial
+Acacia,wattles,producer,Plantae,Fabales,Fabaceae,291,18,-69.3,0.0,terrestrial
+Pseudognaphalium luteoalbum,Jersey Cudweed,producer,Plantae,Asterales,Asteraceae,289,28,-67.7,0.002,terrestrial
+Iva hayesiana,San Diego marsh-elder,producer,Plantae,Asterales,Asteraceae,288,17,-81.8,0.0,terrestrial
+Lanius ludovicianus,Loggerhead Shrike,tertiary_consumer,Aves,Passeriformes,Laniidae,286,30,-71.8,0.0,terrestrial
+Liliopsida,Monocots,producer,Plantae,,,286,34,-27.5,0.0,terrestrial
+Anthopleura,,secondary_consumer,Animalia,Actiniaria,Actiniidae,285,7,0.0,0.0,unknown
+Agaricus californicus,California Agaricus,decomposer,Fungi,Agaricales,Agaricaceae,285,24,0.0,0.0,terrestrial
+Lasthenia,goldfields,producer,Plantae,Asterales,Asteraceae,282,36,-30.0,0.0,terrestrial
+Pinus coulteri,Coulter pine,producer,Plantae,Pinales,Pinaceae,280,15,-61.2,0.0,terrestrial
+Abronia maritima,red sand-verbena,producer,Plantae,Caryophyllales,Nyctaginaceae,279,9,-67.2,0.0,terrestrial
+Amanita,amanita mushrooms,decomposer,Fungi,Agaricales,Amanitaceae,278,29,0.0,0.0,terrestrial
+Salvia munzii,Munz's sage,producer,Plantae,Lamiales,Lamiaceae,278,23,-84.7,0.0,terrestrial
+Chthamalus dalli,Little Brown Barnacle,secondary_consumer,Animalia,Balanomorpha,Chthamalidae,278,7,0.0,0.0,unknown
+Sidalcea,Checkerblooms,producer,Plantae,Malvales,Malvaceae,275,21,-66.3,0.0,terrestrial
+Isocoma,Jimmyweeds and Goldenbushes,producer,Plantae,Asterales,Asteraceae,275,25,-71.0,0.0,terrestrial
+Gambusia affinis,Western Mosquitofish,secondary_consumer,Actinopterygii,Cyprinodontiformes,Poeciliidae,275,24,-49.3,0.0,aquatic
+Phyllospadix,surfgrasses,producer,Plantae,Alismatales,Zosteraceae,272,9,-58.4,0.0,terrestrial
+Masticophis lateralis,Striped Racer,apex_predator,Reptilia,Squamata,Colubridae,270,33,0.0,0.0,terrestrial
+Pisaster giganteus,Giant Sea Star,secondary_consumer,Animalia,Forcipulatida,Asteriidae,269,8,0.0,0.002,unknown
+Helvella dryophila,Oak-loving Elfin Saddle,decomposer,Fungi,Pezizales,Helvellaceae,269,28,0.0,0.0,terrestrial
+Leratiomyces ceres,Chip Cherries,decomposer,Fungi,Agaricales,Strophariaceae,268,15,0.0,0.0,terrestrial
+Raphanus,Radishes,producer,Plantae,Brassicales,Brassicaceae,268,19,-53.0,0.0,terrestrial
+Vertebrata,Vertebrates,secondary_consumer,Animalia,,,268,36,0.0,0.0,unknown
+Ganoderma polychromum,,decomposer,Fungi,Polyporales,Polyporaceae,267,28,0.0,0.002,terrestrial
+Candolleomyces candolleanus,Pale Brittlestem,decomposer,Fungi,Agaricales,Psathyrellaceae,267,26,0.0,0.002,terrestrial
+Falco columbarius,Merlin,apex_predator,Aves,Falconiformes,Falconidae,265,23,-13.7,0.0,terrestrial
+Xerocomellus dryophilus,oak-loving bolete,decomposer,Fungi,Boletales,Boletaceae,264,27,0.0,0.0,terrestrial
+Atriplex prostrata,Creeping Saltbush,producer,Plantae,Caryophyllales,Amaranthaceae,260,16,-92.9,0.0,terrestrial
+Convolvulus arvensis,field bindweed,producer,Plantae,Solanales,Convolvulaceae,260,27,-81.1,0.0,terrestrial
+Neotoma macrotis,Big-eared Woodrat,tertiary_consumer,Mammalia,Rodentia,Cricetidae,259,34,0.0,0.0,terrestrial
+Carnivora,Carnivorans,apex_predator,Mammalia,Carnivora,,258,37,0.0,0.0,terrestrial
+Melaleuca nesophila,Showy Honey-myrtle,producer,Plantae,Myrtales,Myrtaceae,256,13,-44.7,0.0,terrestrial
+Cynodon dactylon,Bermuda grass,producer,Plantae,Poales,Poaceae,256,30,-54.2,0.0,terrestrial
+Brassiceae,,producer,Plantae,Brassicales,Brassicaceae,255,25,-53.7,0.0,terrestrial
+Ehrharta erecta,panic veldtgrass,producer,Plantae,Poales,Poaceae,254,18,-36.9,0.0,terrestrial
+Anaxyrus boreas halophilus,California Toad,secondary_consumer,Amphibia,Anura,Bufonidae,254,26,0.0,0.0,freshwater
+Lactarius rufulus,Southern Candy Cap,decomposer,Fungi,Russulales,Russulaceae,254,23,0.0,0.0,terrestrial
+Porcellio laevis,Swift Woodlouse,secondary_consumer,Animalia,Isopoda,Porcellionidae,254,24,0.0,0.0,unknown
+Myoporum parvifolium,Creeping Myoporum,producer,Plantae,Lamiales,Scrophulariaceae,253,17,-26.7,0.0,terrestrial
+Dimorphotheca,Afro-Australian daisies,producer,Plantae,Asterales,Asteraceae,253,19,-30.6,0.0,terrestrial
+Psittacara erythrogenys,Red-masked Parakeet,tertiary_consumer,Aves,Psittaciformes,Psittacidae,251,17,-44.0,0.0,terrestrial
+Pugettia producta,Northern Kelp Crab,secondary_consumer,Animalia,Decapoda,Epialtidae,251,9,0.0,0.0,unknown
+Russula,brittlegills,decomposer,Fungi,Russulales,Russulaceae,248,24,0.0,0.0,terrestrial
+Ammospermophilus leucurus,White-tailed Antelope Squirrel,tertiary_consumer,Mammalia,Rodentia,Sciuridae,247,11,0.0,0.0,terrestrial
+Gymnopus dryophilus,Oak-loving Gymnopus,decomposer,Fungi,Agaricales,Omphalotaceae,246,25,0.0,0.0,terrestrial
+Pagurus venturensis,Ventura Hermit Crab,secondary_consumer,Animalia,Decapoda,Paguridae,246,7,0.0,0.0,unknown
+Agaricineae,,decomposer,Fungi,Agaricales,,246,31,0.0,0.0,terrestrial
+Amanita ocreata,Western Destroying Angel,decomposer,Fungi,Agaricales,Amanitaceae,246,25,0.0,0.0,terrestrial
+Amsinckia,Fiddlenecks,producer,Plantae,Boraginales,Boraginaceae,244,36,-11.1,0.0,terrestrial
+Ovis canadensis,Bighorn Sheep,tertiary_consumer,Mammalia,Artiodactyla,Bovidae,243,12,0.0,0.0,terrestrial
+Quercus,oaks,producer,Plantae,Fagales,Fagaceae,240,32,-93.6,0.0,terrestrial
+Arbacia stellata,Black Starry Sea Urchin,secondary_consumer,Animalia,Arbacioida,Arbaciidae,240,2,0.0,0.0,unknown
+Stellaria media,common chickweed,producer,Plantae,Caryophyllales,Caryophyllaceae,238,28,-32.7,0.002,terrestrial
+Metandrocarpa dura,Fused Orange Social Ascidian,secondary_consumer,Animalia,Stolidobranchia,Styelidae,238,7,0.0,0.0,unknown
+Stereum,,decomposer,Fungi,Russulales,Stereaceae,238,24,0.0,0.0,terrestrial
+Amanita velosa,springtime amanita,decomposer,Fungi,Agaricales,Amanitaceae,237,22,0.0,0.0,terrestrial
+Ophioglossum californicum,California adder's-tongue,producer,Plantae,Ophioglossales,Ophioglossaceae,237,20,-65.0,0.0,terrestrial
+Allium haematochiton,red-skinned onion,producer,Plantae,Asparagales,Amaryllidaceae,236,18,-77.2,0.0,terrestrial
+Drosanthemum floribundum,Pale dewplant,producer,Plantae,Caryophyllales,Aizoaceae,236,18,-70.1,0.0,terrestrial
+Montagnea arenaria,Desert Inkcap,decomposer,Fungi,Agaricales,Coprinaceae,236,30,0.0,0.0,terrestrial
+Acacia longifolia,Longleaf Wattle,producer,Plantae,Fabales,Fabaceae,236,15,-58.7,0.0,terrestrial
+Ganoderma,"Artist's Brackets, Reishi, and Allies",decomposer,Fungi,Polyporales,Polyporaceae,234,26,0.0,0.0,terrestrial
+Muricea californica,California Golden Gorgonian,secondary_consumer,Animalia,Malacalcyonacea,Plexauridae,234,8,0.0,0.0,unknown
+Pseudobatos productus,Shovelnose Guitarfish,secondary_consumer,Animalia,Rhinopristiformes,Rhinobatidae,233,10,-74.0,0.0,unknown
+Parkinsonia aculeata,Mexican palo verde,producer,Plantae,Fabales,Fabaceae,232,26,-31.8,0.0,terrestrial
+Myoporum laetum,Ngaio,producer,Plantae,Lamiales,Scrophulariaceae,231,15,8.8,0.002,terrestrial
+Cycloxanthops novemdentatus,Nine-tooth Pebble Crab,secondary_consumer,Animalia,Decapoda,Xanthidae,231,7,0.0,0.0,unknown
+Arctostaphylos,bearberries and manzanitas,producer,Plantae,Ericales,Ericaceae,230,27,-71.9,0.0,terrestrial
+Naematelia aurantia,golden ear,decomposer,Fungi,Tremellales,Naemateliaceae,229,26,0.0,0.0,terrestrial
+Ehrharta longiflora,longflower veldtgrass,producer,Plantae,Poales,Poaceae,228,17,-43.8,0.0,terrestrial
+Polycarpon tetraphyllum,fourleaf manyseed,producer,Plantae,Caryophyllales,Caryophyllaceae,227,22,-67.6,0.0,terrestrial
+Anura,Frogs and Toads,secondary_consumer,Amphibia,Anura,,226,31,0.0,0.0,freshwater
+Gymnopilus,rustgills and gyms,decomposer,Fungi,Agaricales,Hymenogastraceae,226,26,0.0,0.0,terrestrial
+Avena fatua,wild oat,producer,Plantae,Poales,Poaceae,226,29,-8.3,0.006,terrestrial
+Parmelioideae,typical shield lichens,decomposer,Fungi,Lecanorales,Parmeliaceae,223,31,0.0,0.0,terrestrial
+Selaginella eremophila,Desert Spikemoss,producer,Plantae,Selaginellales,Selaginellaceae,223,10,-49.2,0.0,terrestrial
+Epiactis,,secondary_consumer,Animalia,Actiniaria,Actiniidae,222,10,0.0,0.0,unknown
+Mesocentrotus franciscanus,Red Sea Urchin,secondary_consumer,Animalia,Camarodonta,Strongylocentrotidae,222,7,0.0,0.002,unknown
+Micropterus nigricans,Largemouth Bass,secondary_consumer,Actinopterygii,Centrarchiformes,Centrarchidae,222,20,-63.4,0.0,aquatic
+Romneya,Matilija poppies,producer,Plantae,Ranunculales,Papaveraceae,222,22,-77.4,0.0,terrestrial
+Bloomeria clevelandii,San Diego goldenstar,producer,Plantae,Asparagales,Asparagaceae,221,17,-68.0,0.0,terrestrial
+Harpagonella palmeri,Palmer's grapplinghook,producer,Plantae,Boraginales,Boraginaceae,221,30,-90.8,0.0,terrestrial
+Taraxacum officinale,common dandelion,producer,Plantae,Asterales,Asteraceae,220,26,-72.3,0.0,terrestrial
+Verbascum thapsus,great mullein,producer,Plantae,Lamiales,Scrophulariaceae,220,16,-69.8,0.0,terrestrial
+Festuca myuros,rattail sixweeks grass,producer,Plantae,Poales,Poaceae,219,29,-46.2,0.0,terrestrial
+Quercus berberidifolia × engelmannii,,producer,Plantae,Fagales,Fagaceae,219,28,211.1,0.0,terrestrial
+Pulicaria paludosa,Spanish False Fleabane,producer,Plantae,Asterales,Asteraceae,219,13,-73.0,0.0,terrestrial
+Crotalus pyrrhus,Southwestern Speckled Rattlesnake,apex_predator,Reptilia,Squamata,Viperidae,219,34,0.0,0.0,terrestrial
+Chlorophyllum,,decomposer,Fungi,Agaricales,Agaricaceae,218,17,0.0,0.0,terrestrial
+Agelaius tricolor,Tricolored Blackbird,tertiary_consumer,Aves,Passeriformes,Icteridae,217,19,-37.1,0.0,terrestrial
+Dipsacus sativus,fuller's teasel,producer,Plantae,Dipsacales,Caprifoliaceae,216,6,72.2,0.0,terrestrial
+Capsella bursa-pastoris,shepherd's-purse,producer,Plantae,Brassicales,Brassicaceae,216,28,-37.9,0.002,terrestrial
+Felis catus,Domestic Cat,apex_predator,Mammalia,Carnivora,Felidae,215,27,0.0,0.0,terrestrial
+Candelaria pacifica,Pacific Candleflame Lichen,decomposer,Fungi,Candelariales,Candelariaceae,215,32,0.0,0.0,terrestrial
+Pectocarya,combseeds,producer,Plantae,Boraginales,Boraginaceae,214,29,65.1,0.004,terrestrial
+Fraxinus uhdei,Shamel Ash,producer,Plantae,Lamiales,Oleaceae,213,20,-15.8,0.0,terrestrial
+Sisymbrium altissimum,Tall Tumblemustard,producer,Plantae,Brassicales,Brassicaceae,212,20,-38.3,0.0,terrestrial
+Eryngium aristulatum parishii,san diego button-celery,producer,Plantae,Apiales,Apiaceae,211,16,-93.0,0.0,terrestrial
+Portulaca oleracea,Common Purslane,producer,Plantae,Caryophyllales,Portulacaceae,211,29,-87.1,0.0,terrestrial
+Bidens pilosa,Hairy Beggarticks,producer,Plantae,Asterales,Asteraceae,211,16,-39.2,0.0,terrestrial
+Amphipholis squamata,Dwarf Brittle Star,secondary_consumer,Animalia,Amphilepidida,Amphiuridae,210,9,0.0,0.0,unknown
+Malephora,Fingerfigs,producer,Plantae,Caryophyllales,Aizoaceae,209,18,-61.4,0.0,terrestrial
+Chlorophyta,green algae,producer,Plantae,,,209,23,-48.8,0.0,terrestrial
+Ovis canadensis nelsoni,Desert Bighorn Sheep,tertiary_consumer,Mammalia,Artiodactyla,Bovidae,209,12,-55.7,0.0,terrestrial
+Onagraceae,evening primrose family,producer,Plantae,Myrtales,Onagraceae,209,36,-16.1,0.0,terrestrial
+Sisymbrium orientale,eastern rocket,producer,Plantae,Brassicales,Brassicaceae,208,34,-48.4,0.0,terrestrial
+Salicornia,pickleweeds,producer,Plantae,Caryophyllales,Amaranthaceae,207,10,-70.4,0.0,terrestrial
+Eriophyllum wallacei rubellum,Wallace's white woollydaisy,producer,Plantae,Asterales,Asteraceae,206,8,-77.2,0.0,terrestrial
+Ferocactus viridescens,San Diego Barrel Cactus,producer,Plantae,Caryophyllales,Cactaceae,205,24,966.7,0.0,terrestrial
+Collybia nuda,Blewit,decomposer,Fungi,Agaricales,Clitocybaceae,204,22,0.0,0.0,terrestrial
+Actinopterygii,Ray-finned Fishes,secondary_consumer,Actinopterygii,,,204,21,-70.7,0.0,aquatic
+Bolbitius titubans,yellow fieldcap,decomposer,Fungi,Agaricales,Bolbitiaceae,203,24,0.0,0.0,terrestrial
+Enchiridium punctatum,,secondary_consumer,Animalia,Polycladida,Prosthiostomidae,203,7,0.0,0.0,unknown
+Hypanus dipterurus,Diamond Stingray,secondary_consumer,Animalia,Myliobatiformes,Dasyatidae,203,8,-68.8,0.0,unknown
+Sternula antillarum,Least Tern,tertiary_consumer,Aves,Charadriiformes,Laridae,201,16,37.0,0.0,terrestrial
+Bodianus pulcher,California Sheephead,secondary_consumer,Actinopterygii,Labriformes,Labridae,201,13,-23.1,0.0,aquatic
+Rattus rattus,Black Rat,tertiary_consumer,Mammalia,Rodentia,Muridae,198,18,0.0,0.0,terrestrial
+Astraeus,Barometer Earthstars,decomposer,Fungi,Boletales,Diplocystidaceae,197,25,0.0,0.0,terrestrial
+Cylindropuntia,chollas,producer,Plantae,Caryophyllales,Cactaceae,197,31,-12.4,0.0,terrestrial
+Acmispon prostratus,Nuttall's Acmispon,producer,Plantae,Fabales,Fabaceae,197,14,-97.3,0.0,terrestrial
+Marah,Man-roots,producer,Plantae,Cucurbitales,Cucurbitaceae,197,25,263.6,0.0,terrestrial
+Armillaria mellea,Honey Mushroom,decomposer,Fungi,Agaricales,Physalacriaceae,196,23,0.0,0.008,terrestrial
+Acanthomintha ilicifolia,San Diego Thornmint,producer,Plantae,Lamiales,Lamiaceae,195,24,-74.0,0.0,terrestrial
+Tribulus terrestris,puncture vine,producer,Plantae,Zygophyllales,Zygophyllaceae,195,30,-81.0,0.004,terrestrial
+Yucca gigantea,Spineless Yucca,producer,Plantae,Asparagales,Asparagaceae,194,17,-9.3,0.0,terrestrial
+Avena,Oats,producer,Plantae,Poales,Poaceae,193,28,17.9,0.002,terrestrial
+Myliobatis californica,Bat Ray,secondary_consumer,Animalia,Myliobatiformes,Myliobatidae,193,11,0.0,0.0,unknown
+Amaranthus albus,prostrate pigweed,producer,Plantae,Caryophyllales,Amaranthaceae,193,29,-76.9,0.0,terrestrial
+Contumyces rosellus,rosy navel,decomposer,Fungi,Hymenochaetales,Rickenellaceae,192,24,0.0,0.002,terrestrial
+Phytolacca icosandra,Tropical Pokeweed,producer,Plantae,Caryophyllales,Phytolaccaceae,192,16,-42.9,0.0,terrestrial
+Cupaniopsis anacardioides,Tuckeroo,producer,Plantae,Sapindales,Sapindaceae,191,17,-18.2,0.0,terrestrial
+Rhamnus,Buckthorns,producer,Plantae,Rosales,Rhamnaceae,191,28,-34.9,0.0,terrestrial
+Panoquina errans,Wandering Skipper,pollinator,Insecta,Lepidoptera,Hesperiidae,189,9,-90.2,0.002,terrestrial
+Basidiomycota,Basidiomycete Fungi,decomposer,Fungi,,,189,35,0.0,0.0,terrestrial
+Oxalis corniculata,Creeping Woodsorrel,producer,Plantae,Oxalidales,Oxalidaceae,189,20,-50.0,0.0,terrestrial
+Ipomoea indica,oceanblue morning glory,producer,Plantae,Solanales,Convolvulaceae,189,14,-81.1,0.0,terrestrial
+Delphinus delphis,Common Dolphin,tertiary_consumer,Mammalia,Artiodactyla,Delphinidae,189,12,0.0,0.0,terrestrial
+Buteo swainsoni,Swainson's Hawk,apex_predator,Aves,Accipitriformes,Accipitridae,188,11,-95.1,0.0,terrestrial
+Anniella stebbinsi,San Diegan Legless Lizard,apex_predator,Reptilia,Squamata,Anguidae,182,28,-56.5,0.0,terrestrial
+Glyptostoma newberryanum,San Diego Chestnut,primary_consumer,Mollusca,Stylommatophora,Megomphicidae,178,19,81.2,0.0,aquatic
+Xerarionta stearnsiana,Speckled Cactussnail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,159,11,150.0,0.0,aquatic
+Chlosyne gabbii,Gabb's Checkerspot,pollinator,Insecta,Lepidoptera,Nymphalidae,156,22,-62.1,0.0,terrestrial
+Danaus plexippus plexippus,Migratory Monarch,pollinator,Insecta,Lepidoptera,Nymphalidae,142,18,650.0,0.0,terrestrial
+Satyrium tetra,Mountain Mahogany Hairstreak,pollinator,Insecta,Lepidoptera,Lycaenidae,109,16,-11.6,0.0,terrestrial
+Colias harfordii,Harford's Sulphur,pollinator,Insecta,Lepidoptera,Pieridae,87,19,-91.2,0.002,terrestrial
+Sonorelix borregoensis,Borrego Desertsnail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,85,6,-41.4,0.0,aquatic
+Tharsalea hermes,Hermes Copper,pollinator,Insecta,Lepidoptera,Lycaenidae,85,11,-79.7,0.0,terrestrial
+Strymon istapa,Mallow Scrub-Hairstreak,pollinator,Insecta,Lepidoptera,Lycaenidae,53,17,-54.5,0.0,terrestrial
+Zerene eurydice,California Dogface,pollinator,Insecta,Lepidoptera,Pieridae,52,21,-90.0,0.004,terrestrial
+Tharsalea gorgon,Gorgon Copper,pollinator,Insecta,Lepidoptera,Lycaenidae,40,12,233.3,0.002,terrestrial
+Philotes sonorensis,Sonoran Blue,pollinator,Insecta,Lepidoptera,Lycaenidae,35,10,-71.4,0.0,terrestrial
+Anthophora flavocincta,,pollinator,Insecta,Hymenoptera,Apidae,34,1,-96.7,0.0,terrestrial
+Satyrium auretorum,Gold-hunter's Hairstreak,pollinator,Insecta,Lepidoptera,Lycaenidae,29,11,60.0,0.0,terrestrial
+Dorymyrmex insanus,Crazy Pyramid Ant,pollinator,Insecta,Hymenoptera,Formicidae,26,10,-86.7,0.0,terrestrial
+Cocytius antaeus,Giant Sphinx,pollinator,Insecta,Lepidoptera,Sphingidae,23,12,100.0,0.0,terrestrial
+Rothelix lowei,Palomar Shoulderband,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,21,2,250.0,0.0,aquatic
+Helminthoglypta traskii,Trask Shoulderband Snail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,15,7,-77.8,0.0,aquatic
+Chlosyne leanira,Leanira Checkerspot,pollinator,Insecta,Lepidoptera,Nymphalidae,14,5,100.0,0.0,terrestrial
+Helminthoglypta coelata,Mesa Shoulderband Snail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,14,6,-60.0,0.0,aquatic
+Helminthoglypta tudiculata fairbanksi,Deluz Shoulderband Snail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,14,3,-87.5,0.0,aquatic
+Euphydryas editha quino,Quino Checkerspot,pollinator,Insecta,Lepidoptera,Nymphalidae,13,4,-33.3,0.0,terrestrial
+Anadenulus cockerelli,American Keeled Slug,primary_consumer,Mollusca,Stylommatophora,Ariolimacidae,11,8,-57.1,0.0,aquatic
+Glaucopsyche piasus umbrosa,Smoky Arrowhead Blue,pollinator,Insecta,Lepidoptera,Lycaenidae,10,4,-66.7,0.0,terrestrial
+Callophrys loki,Loki Hairstreak,pollinator,Insecta,Lepidoptera,Lycaenidae,7,5,-80.0,0.0,terrestrial
+Sonorelix harperi,Mountain Spring Desertsnail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,6,4,-50.0,0.0,aquatic
+Haplotrema transfuga,Striate Lancetooth Snail,primary_consumer,Mollusca,Stylommatophora,Haplotrematidae,5,4,0.0,0.0,aquatic
+Pyrgus ruralis lagunae,Laguna Mountains Checkered-Skipper,pollinator,Insecta,Lepidoptera,Hesperiidae,4,1,100.0,0.0,terrestrial
+Habrodais grunus,Golden Hairstreak,pollinator,Insecta,Lepidoptera,Lycaenidae,4,2,200.0,0.0,terrestrial
+Helminthoglypta montezuma,Montezuma Shoulderband Snail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,4,1,-66.7,0.0,aquatic
+Callophrys loki thornei,Thorne's Hairstreak,pollinator,Insecta,Lepidoptera,Lycaenidae,4,2,-50.0,0.0,terrestrial
+Helminthoglypta milleri,Peak Shoulderband Snail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,3,3,-50.0,0.0,aquatic
+Haliotis rufescens,Red Abalone,primary_consumer,Mollusca,Lepetellida,Haliotidae,3,2,-50.0,0.0,aquatic
+Rothelix warnerfontis,Warner Springs Shoulderband,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,3,2,0.0,0.0,aquatic
+Apodemia virgulti peninsularis,Peninsular Metalmark,pollinator,Insecta,Lepidoptera,Riodinidae,2,2,0.0,0.0,terrestrial
+Helminthoglypta edwardsi,Pine Valley Shoulderband Snail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,2,2,0.0,0.0,aquatic
+Tivela stultorum,Pismo Clam,primary_consumer,Mollusca,Venerida,Veneridae,2,1,0.0,0.0,aquatic
+Chlosyne acastus neumoegeni,Neumoegen’s Checkerspot,pollinator,Insecta,Lepidoptera,Nymphalidae,2,2,0.0,0.0,terrestrial
+Rothelix cuyamacensis,Cuyamaca Shoulderband,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,1,1,0.0,0.0,aquatic
+Helminthoglypta thermimontis,Anza Shoulderband Snail,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,1,1,0.0,0.0,aquatic
+Chlorostrymon simaethis,Silver-banded Hairstreak,pollinator,Insecta,Lepidoptera,Lycaenidae,1,1,0.0,0.0,terrestrial
+Calosaturnia walterorum,Walter's Silkmoth,pollinator,Insecta,Lepidoptera,Saturniidae,1,1,0.0,0.0,terrestrial
+Euphydryas editha,Edith's Checkerspot,pollinator,Insecta,Lepidoptera,Nymphalidae,1,1,0.0,0.0,terrestrial
+Rothelix rhodophila,Azalea Shoulderband,primary_consumer,Mollusca,Stylommatophora,Xanthonychidae,1,1,0.0,0.0,aquatic

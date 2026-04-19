@@ -179,7 +179,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white/80 mb-4 leading-tight">
               Enter a location.
             </h2>
-            <p className="text-base text-white/40 mb-8">
+            <p className="text-base text-white/60 mb-8">
               Neighborhood, park, or trail — we map the species, food web, and risks.
             </p>
 
@@ -191,7 +191,7 @@ export default function Home() {
                 onChange={(e) => { setSearchValue(e.target.value); setError(null); }}
                 onKeyDown={(e) => { if (e.key === "Enter") handleSearch(searchValue); }}
                 placeholder="Mission Trails, Torrey Pines, Cuyamaca..."
-                className="w-full bg-white/[0.03] border border-white/[0.06] px-4 py-3.5 text-lg text-white/80 placeholder-white/15 focus:outline-none focus:border-emerald-500/20 transition font-light"
+                className="w-full bg-white/[0.03] border border-white/[0.06] px-4 py-3.5 text-lg text-white/80 placeholder-white/30 focus:outline-none focus:border-emerald-500/20 transition font-light"
                 autoFocus
               />
               <button
@@ -234,7 +234,7 @@ export default function Home() {
 
             {/* Popular Locations */}
             <div className="mt-10">
-              <p className="text-sm uppercase tracking-[0.2em] text-white/12 mb-6">Browse Popular Locations</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-white/30 mb-6 font-medium">Browse Popular Locations</p>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { id: "Coastal", name: "Torrey Pines", type: "Coastal Sage Scrub", risk: "Moderate", color: "text-amber-400" },
@@ -255,7 +255,7 @@ export default function Home() {
                   >
                     <div className="text-left">
                       <span className="block text-base text-white/70 group-hover:text-white transition font-medium">{loc.name}</span>
-                      <span className="block text-sm text-white/15 uppercase tracking-wide mt-1 transition group-hover:text-white/30">{loc.type}</span>
+                      <span className="block text-sm text-white/35 uppercase tracking-wide mt-1 transition group-hover:text-white/50">{loc.type}</span>
                     </div>
                     <div className="text-right">
                       <span className={`block text-sm font-bold uppercase tracking-widest transition ${loc.color}`}>{loc.risk} Risk</span>
@@ -305,11 +305,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {currentEco?.keystones?.[0] && (
-            <span className="hidden md:block text-xs text-emerald-400/25 font-mono">
-              keystone: {currentEco.keystones[0].common_name}
-            </span>
-          )}
+          <span className="hidden md:block text-[10px] text-emerald-400/20 font-mono tracking-[0.3em] uppercase">
+            datahacks 2026
+          </span>
         </div>
       </div>
 
