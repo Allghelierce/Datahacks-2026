@@ -39,6 +39,13 @@ Core features: cascade removal simulation, decline-linked risk flagging, zone-aw
 - Species photos from iNaturalist in `speciesPhotos.ts`
 - Ecosystem index with 8 ecosystem types, keyword search, Gemini-powered location matching
 
+## Graph Data Pipeline (`scripts/process_data.py`)
+- All 60 threatened species categorized by trophic level based on taxon class
+- Global pool: up to 250 species, min 5 per trophic level, rest filled by observation count
+- Per ecosystem: intersects global pool with species observed in that ecosystem's zones, caps at 150 per ecosystem (5 per trophic level guaranteed, rest by observation count)
+- Edges built via trophic chain rules (producers→consumers→predators), not random
+- Keystone scores computed via cascade removal simulation (how many species collapse if removed)
+
 ## Judge Talking Points
 - **Data challenge:** "We derived new intelligence — cascade impact algorithm simulates species removal and measures ecosystem collapse."
 - **Gemini challenge:** "Structured data injection, not generic summaries. Keystone scores, cascade impacts, decline trends → actionable recommendations."

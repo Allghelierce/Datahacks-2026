@@ -2,9 +2,10 @@ import csv
 import json
 import math
 import os
+import random
 from collections import Counter, defaultdict
 
-INPUT = "data/threatened_species.csv"
+INPUT_DIR = "data"
 OUTPUT = "frontend/src/lib/speciesData.ts"
 
 TROPHIC_MAP = {
@@ -115,6 +116,43 @@ ECOSYSTEM_TYPES = {
     },
 }
 
+HABITAT_MAP = {
+    "Plantae": "terrestrial",
+    "Fungi": "terrestrial",
+    "Insecta": "terrestrial",
+    "Arachnida": "terrestrial",
+    "Mammalia": "terrestrial",
+    "Aves": "terrestrial",
+    "Reptilia": "terrestrial",
+    "Amphibia": "freshwater",
+    "Actinopterygii": "aquatic",
+    "Mollusca": "aquatic",
+    "Animalia": "unknown",
+}
+
+MARINE_ORDERS = {
+    "Myliobatiformes", "Lamniformes", "Carcharhiniformes", "Squatiniformes",
+    "Rajiformes", "Synallactida", "Perciformes", "Scorpaeniformes",
+}
+MARINE_FAMILIES = {
+    "Stichopodidae", "Haliotidae", "Dasyatidae", "Alopiidae", "Triakidae",
+    "Squatinidae", "Rhinobatidae",
+}
+
+def get_habitat(iconic, order, family):
+    if order in MARINE_ORDERS or family in MARINE_FAMILIES:
+        return "marine"
+    return HABITAT_MAP.get(iconic, "unknown")
+
+def habitats_compatible(h1, h2):
+    if h1 == "unknown" or h2 == "unknown":
+        return True
+    if h1 == h2:
+        return True
+    if {h1, h2} == {"freshwater", "terrestrial"}:
+        return True
+    return False
+
 ZONE_NAME_TO_COORDS = {}  # populated after ZONE_NAMES
 
 ZONE_NAMES = {
@@ -138,11 +176,29 @@ ZONE_NAMES = {
 for (r, c), name in ZONE_NAMES.items():
     ZONE_NAME_TO_COORDS[name] = (r, c)
 
-with open(INPUT) as f:
-    reader = csv.DictReader(f)
-    rows = list(reader)
+import glob
 
-print(f"Loaded {len(rows)} observations")
+csv_files = glob.glob(os.path.join(INPUT_DIR, "*.csv"))
+# Also check for nested CSV dirs (like observations-711984.csv/)
+for entry in glob.glob("observations-*.csv"):
+    nested = glob.glob(os.path.join(entry, "*.csv"))
+    csv_files.extend(nested)
+
+rows = []
+seen_ids = set()
+for csv_file in csv_files:
+    print(f"Reading {csv_file}...")
+    with open(csv_file) as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            obs_id = row.get("id", "")
+            if obs_id and obs_id in seen_ids:
+                continue
+            if obs_id:
+                seen_ids.add(obs_id)
+            rows.append(row)
+
+print(f"Loaded {len(rows)} observations from {len(csv_files)} files ({len(seen_ids)} unique IDs)")
 
 def get_zone(lat, lng):
     r = int((lat - LAT_MIN) / (LAT_MAX - LAT_MIN) * GRID_ROWS)
@@ -356,19 +412,20 @@ top_species_set = set()
 for level, sps in all_by_level.items():
     for sp in sps[:MIN_PER_LEVEL]:
         top_species_set.add(sp["scientific_name"])
-# Then fill remaining slots from top by observation count
+# Include ALL species — we have 505, enough for rich ecosystem variation
 all_sorted = sorted(all_species.values(), key=lambda s: species_observations[s["scientific_name"]], reverse=True)
 for sp in all_sorted:
-    if len(top_species_set) >= 250:
-        break
     top_species_set.add(sp["scientific_name"])
 
 top_species = [all_species[sid] for sid in top_species_set]
 top_species.sort(key=lambda s: species_observations[s["scientific_name"]], reverse=True)
 top_species_ids = {sp["scientific_name"] for sp in top_species}
 
+species_habitat = {}
 for sp in top_species:
     sid = sp["scientific_name"]
+    habitat = get_habitat(sp["iconic_taxon"], sp["order"], sp["family"])
+    species_habitat[sid] = habitat
     dependency_nodes.append({
         "id": sid,
         "common_name": sp["common_name"],
@@ -402,16 +459,22 @@ for chain in DEPENDENCY_CHAINS:
             continue
 
         zone_count = len(tn_zones)
-        if zone_count <= 10:
-            max_src = 1
-        elif zone_count <= 25:
+        if zone_count <= 5:
             max_src = 2
-        else:
+        elif zone_count <= 15:
             max_src = 3
+        elif zone_count <= 30:
+            max_src = 4
+        else:
+            max_src = 5
 
+        tn_habitat = species_habitat.get(tn["id"], "unknown")
         candidates = []
         for fn in from_nodes:
             if fn["id"] == tn["id"]:
+                continue
+            fn_habitat = species_habitat.get(fn["id"], "unknown")
+            if not habitats_compatible(fn_habitat, tn_habitat):
                 continue
             fn_zones = species_zones[fn["id"]]
             overlap = len(fn_zones & tn_zones)
@@ -615,27 +678,45 @@ for eco_name, eco_info in ECOSYSTEM_TYPES.items():
         if zk in zones:
             eco_species.update(zones[zk]["species"])
 
-    # Intersect with our 150-species dependency graph, cap at 30 for performance
     eco_node_ids = top_species_ids & eco_species
     if len(eco_node_ids) < 3:
         continue
 
-    # If too many, pick top 150: ensure trophic balance then fill by observation count
-    if len(eco_node_ids) > 150:
+    # Cap at random 150-200: prioritize species with most observations in THIS ecosystem's zones
+    eco_cap = 175
+    if len(eco_node_ids) > eco_cap:
+        # Count observations per species within this ecosystem's zones
+        eco_obs = Counter()
+        for zk in eco_zone_keys:
+            if zk in zones:
+                for row_data in zones[zk]["observations"] if "observations" in zones[zk] else []:
+                    pass
+        # Use zone overlap + observation count to rank species by ecosystem relevance
         eco_by_level = defaultdict(list)
         for nid in eco_node_ids:
             node = next(n for n in dependency_nodes if n["id"] == nid)
-            eco_by_level[node["trophic_level"]].append((nid, node["observations"]))
+            # Score: observation count weighted by how many of THIS ecosystem's zones the species appears in
+            sp_zones = species_zones[nid]
+            eco_zone_set = set(eco_zone_keys)
+            overlap = len(sp_zones & eco_zone_set)
+            relevance = node["observations"] * (1 + overlap * 2)
+            eco_by_level[node["trophic_level"]].append((nid, relevance))
         for lv in eco_by_level:
             eco_by_level[lv].sort(key=lambda x: x[1], reverse=True)
+        # Guarantee trophic balance: top 8 per level
         kept = set()
         for lv, sps in eco_by_level.items():
-            for sp_id, _ in sps[:5]:
+            for sp_id, _ in sps[:8]:
                 kept.add(sp_id)
-        remaining = [(nid, next(n["observations"] for n in dependency_nodes if n["id"] == nid)) for nid in eco_node_ids - kept]
-        remaining.sort(key=lambda x: x[1], reverse=True)
-        for nid, _ in remaining:
-            if len(kept) >= 150:
+        # Fill remaining by relevance score
+        all_ranked = []
+        for lv, sps in eco_by_level.items():
+            for sp_id, score in sps:
+                if sp_id not in kept:
+                    all_ranked.append((sp_id, score))
+        all_ranked.sort(key=lambda x: x[1], reverse=True)
+        for nid, _ in all_ranked:
+            if len(kept) >= eco_cap:
                 break
             kept.add(nid)
         eco_node_ids = kept

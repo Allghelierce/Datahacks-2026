@@ -101,13 +101,13 @@ export default function StatsGrid({ regions, decliningRegions }: Props) {
         >
           <div className={`absolute top-0 left-0 w-full h-[2px] ${card.accent} opacity-40`} />
 
-          <div className=\"flex items-start justify-between mb-4\">
-            <card.icon className=\"w-9 h-9 opacity-50 group-hover:opacity-70 transition-opacity\" />
+          <div className="flex items-start justify-between mb-4">
+            <card.icon className="w-9 h-9 opacity-50 group-hover:opacity-70 transition-opacity" />
             <div className={`w-2 h-2 rounded-full ${card.accent} opacity-40`} />
           </div>
-          <div className=\"text-sm uppercase tracking-[0.15em] opacity-50 mb-2\">{card.label}</div>
-          <div className=\"text-3xl font-bold text-white mb-1\">{card.value}</div>
-          <div className=\"text-sm opacity-40\">{card.sub}</div>
+          <div className="text-sm uppercase tracking-[0.15em] opacity-50 mb-2">{card.label}</div>
+          <div className="text-3xl font-bold text-white mb-1">{card.value}</div>
+          <div className="text-sm opacity-40">{card.sub}</div>
         </motion.div>
       ))}
     </div>

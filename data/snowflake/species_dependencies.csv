@@ -1,594 +1,1825 @@
 source,target,relationship_type,strength
 Quercus engelmannii,Helminthoglypta tudiculata,food source,1.0
 Calochortus weedii,Helminthoglypta tudiculata,food source,1.0
+Brodiaea orcuttii,Helminthoglypta tudiculata,food source,0.96
+Clematis pauciflora,Helminthoglypta tudiculata,food source,0.96
 Calochortus weedii,Apostichopus parvimensis,food source,1.0
+Leptosyne maritima,Apostichopus parvimensis,food source,1.0
+Bergerocactus emoryi,Apostichopus parvimensis,food source,1.0
 Calochortus weedii,Haliotis fulgens,food source,1.0
 Leptosyne maritima,Haliotis fulgens,food source,1.0
+Calochortus weedii weedii,Haliotis fulgens,food source,1.0
 Bahiopsis laciniata,Pseudobatos productus,food source,1.0
+Calochortus weedii,Pseudobatos productus,food source,1.0
+Leptosyne maritima,Pseudobatos productus,food source,1.0
 Calochortus weedii,Hypanus dipterurus,food source,1.0
+Leptosyne maritima,Hypanus dipterurus,food source,1.0
+Bergerocactus emoryi,Hypanus dipterurus,food source,1.0
 Quercus engelmannii,Glyptostoma newberryanum,food source,1.0
 Calochortus weedii,Glyptostoma newberryanum,food source,1.0
+Brodiaea orcuttii,Glyptostoma newberryanum,food source,1.0
+Calochortus weedii weedii,Glyptostoma newberryanum,food source,1.0
 Bahiopsis laciniata,Xerarionta stearnsiana,food source,1.0
 Calochortus weedii,Xerarionta stearnsiana,food source,1.0
+Clematis pauciflora,Xerarionta stearnsiana,food source,1.0
 Calochortus weedii,Galeorhinus galeus,food source,1.0
+Leptosyne maritima,Galeorhinus galeus,food source,1.0
+Calochortus weedii weedii,Galeorhinus galeus,food source,1.0
 Calochortus weedii,Cicindela latesignata,food source,1.0
+Leptosyne maritima,Cicindela latesignata,food source,1.0
+Bergerocactus emoryi,Cicindela latesignata,food source,1.0
 Dudleya saxosa aloides,Sonorelix borregoensis,food source,1.0
+Cochemiea tetrancistra,Sonorelix borregoensis,food source,1.0
+Senna covesii,Sonorelix borregoensis,food source,1.0
 Bahiopsis laciniata,Eunota gabbii,food source,1.0
+Calochortus weedii,Eunota gabbii,food source,1.0
 Bahiopsis laciniata,Gymnura marmorata,food source,1.0
+Ceanothus verrucosus,Gymnura marmorata,food source,1.0
+Pinus torreyana,Gymnura marmorata,food source,1.0
 Calochortus weedii,Squatina californica,food source,1.0
+Leptosyne maritima,Squatina californica,food source,1.0
+Bergerocactus emoryi,Squatina californica,food source,1.0
+Calochortus weedii,Cicindelidia trifasciata sigmoidea,food source,1.0
+Leptosyne maritima,Cicindelidia trifasciata sigmoidea,food source,1.0
+Bergerocactus emoryi,Cicindelidia trifasciata sigmoidea,food source,1.0
+Bahiopsis laciniata,Carcharodon carcharias,food source,1.0
+Pinus torreyana,Carcharodon carcharias,food source,1.0
+Bahiopsis laciniata,Rothelix lowei,food source,1.0
+Quercus engelmannii,Rothelix lowei,food source,1.0
+Calochortus weedii,Alopias vulpinus,food source,1.0
+Leptosyne maritima,Alopias vulpinus,food source,1.0
+Bergerocactus emoryi,Alopias vulpinus,food source,1.0
+Bahiopsis laciniata,Helminthoglypta traskii,food source,1.0
+Quercus engelmannii,Helminthoglypta traskii,food source,1.0
+Calochortus weedii,Helminthoglypta traskii,food source,1.0
+Bahiopsis laciniata,Helminthoglypta tudiculata fairbanksi,food source,1.0
+Pinus torreyana,Helminthoglypta tudiculata fairbanksi,food source,1.0
+Calochortus weedii,Helminthoglypta coelata,food source,1.0
+Leptosyne maritima,Helminthoglypta coelata,food source,1.0
+Bergerocactus emoryi,Helminthoglypta coelata,food source,1.0
+Bahiopsis laciniata,Notorynchus cepedianus,food source,1.0
+Ceanothus verrucosus,Notorynchus cepedianus,food source,1.0
+Quercus engelmannii,Anadenulus cockerelli,food source,1.0
+Calochortus weedii,Anadenulus cockerelli,food source,1.0
+Brodiaea orcuttii,Anadenulus cockerelli,food source,1.0
+Bahiopsis laciniata,Branchinecta sandiegonensis,food source,1.0
+Quercus engelmannii,Branchinecta sandiegonensis,food source,1.0
+Calochortus weedii,Branchinecta sandiegonensis,food source,1.0
+Cochemiea tetrancistra,Sonorelix harperi,food source,1.0
+Selaginella eremophila,Sonorelix harperi,food source,1.0
+Bahiopsis laciniata,Isurus oxyrinchus,food source,1.0
+Calochortus weedii,Isurus oxyrinchus,food source,1.0
+Leptosyne maritima,Isurus oxyrinchus,food source,1.0
+Bahiopsis laciniata,Haplotrema transfuga,food source,1.0
+Quercus engelmannii,Haplotrema transfuga,food source,1.0
+Quercus engelmannii,Helminthoglypta montezuma,food source,1.0
+Xylorhiza orcuttii,Helminthoglypta montezuma,food source,1.0
+Quercus engelmannii,Rothelix warnerfontis,food source,1.0
+Calochortus weedii,Rothelix warnerfontis,food source,1.0
+Bahiopsis laciniata,Haliotis rufescens,food source,1.0
+Calochortus weedii,Haliotis rufescens,food source,1.0
+Quercus engelmannii,Helminthoglypta milleri,food source,1.0
+Calochortus weedii,Helminthoglypta milleri,food source,1.0
+Bahiopsis laciniata,Streptocephalus woottoni,food source,1.0
+Pinus torreyana,Streptocephalus woottoni,food source,1.0
+Bahiopsis laciniata,Cicindela hirticollis gravida,food source,1.0
+Calochortus weedii,Cicindela hirticollis gravida,food source,1.0
+Quercus engelmannii,Helminthoglypta edwardsi,food source,1.0
+Calochortus weedii,Helminthoglypta edwardsi,food source,1.0
+Bahiopsis laciniata,Tivela stultorum,food source,1.0
+Ceanothus verrucosus,Tivela stultorum,food source,1.0
+Quercus engelmannii,Rothelix cuyamacensis,food source,1.0
+Calochortus weedii,Rothelix cuyamacensis,food source,1.0
+Bahiopsis laciniata,Rhionaeschna psilus,food source,1.0
+Ceanothus verrucosus,Rhionaeschna psilus,food source,1.0
+Bahiopsis laciniata,Cyzicus californicus,food source,1.0
+Ceanothus verrucosus,Cyzicus californicus,food source,1.0
+Quercus engelmannii,Rothelix rhodophila,food source,1.0
+Calochortus weedii,Rothelix rhodophila,food source,1.0
+Quercus engelmannii,Helminthoglypta thermimontis,food source,1.0
+Calochortus weedii,Helminthoglypta thermimontis,food source,1.0
 Calochortus weedii,Danaus plexippus,pollination,1.0
 Calochortus weedii weedii,Danaus plexippus,pollination,1.0
 Quercus engelmannii,Danaus plexippus,pollination,0.85
+Brodiaea orcuttii,Danaus plexippus,pollination,0.82
+Clematis pauciflora,Danaus plexippus,pollination,0.76
 Calochortus weedii,Apodemia virgulti,pollination,0.95
 Calochortus weedii weedii,Apodemia virgulti,pollination,0.89
 Quercus engelmannii,Apodemia virgulti,pollination,0.87
+Clematis pauciflora,Apodemia virgulti,pollination,0.82
+Brodiaea orcuttii,Apodemia virgulti,pollination,0.79
 Bahiopsis laciniata,Bombus sonorus,pollination,1.0
 Calochortus weedii,Bombus sonorus,pollination,1.0
+Limonium perezii,Bombus sonorus,pollination,1.0
 Calochortus weedii,Bombus crotchii,pollination,0.97
 Quercus engelmannii,Bombus crotchii,pollination,0.93
 Calochortus weedii weedii,Bombus crotchii,pollination,0.93
+Clematis pauciflora,Bombus crotchii,pollination,0.9
 Bahiopsis laciniata,Panoquina errans,pollination,1.0
+Ceanothus verrucosus,Panoquina errans,pollination,1.0
+Calochortus weedii,Panoquina errans,pollination,1.0
 Calochortus weedii,Chlosyne gabbii,pollination,1.0
 Quercus engelmannii,Chlosyne gabbii,pollination,0.95
+Brodiaea orcuttii,Chlosyne gabbii,pollination,0.91
+Calochortus weedii weedii,Chlosyne gabbii,pollination,0.91
 Calochortus weedii,Danaus plexippus plexippus,pollination,1.0
 Calochortus weedii weedii,Danaus plexippus plexippus,pollination,1.0
+Quercus engelmannii,Danaus plexippus plexippus,pollination,0.94
+Clematis pauciflora,Danaus plexippus plexippus,pollination,0.94
 Quercus engelmannii,Satyrium tetra,pollination,0.94
 Calochortus weedii,Satyrium tetra,pollination,0.94
+Calochortus weedii weedii,Satyrium tetra,pollination,0.94
+Cirsium occidentale californicum,Satyrium tetra,pollination,0.94
 Calochortus weedii,Colias harfordii,pollination,1.0
 Quercus engelmannii,Colias harfordii,pollination,0.95
+Calochortus weedii weedii,Colias harfordii,pollination,0.95
+Brodiaea orcuttii,Colias harfordii,pollination,0.79
 Quercus engelmannii,Tharsalea hermes,pollination,1.0
 Calochortus weedii,Tharsalea hermes,pollination,1.0
+Brodiaea orcuttii,Tharsalea hermes,pollination,1.0
 Calochortus weedii,Strymon istapa,pollination,1.0
 Clematis pauciflora,Strymon istapa,pollination,0.94
+Calochortus weedii weedii,Strymon istapa,pollination,0.94
+Harpagonella palmeri,Strymon istapa,pollination,0.94
 Calochortus weedii,Zerene eurydice,pollination,1.0
 Calochortus weedii weedii,Zerene eurydice,pollination,1.0
+Quercus engelmannii,Zerene eurydice,pollination,0.9
+Brodiaea orcuttii,Zerene eurydice,pollination,0.9
 Calochortus weedii,Tharsalea gorgon,pollination,0.92
 Calochortus weedii weedii,Tharsalea gorgon,pollination,0.92
+Quercus engelmannii,Tharsalea gorgon,pollination,0.83
 Calochortus weedii,Philotes sonorensis,pollination,1.0
+Quercus engelmannii,Philotes sonorensis,pollination,0.9
+Calochortus weedii weedii,Philotes sonorensis,pollination,0.9
 Bahiopsis laciniata,Anthophora flavocincta,pollination,1.0
+Ceanothus verrucosus,Anthophora flavocincta,pollination,1.0
 Quercus engelmannii,Satyrium auretorum,pollination,1.0
 Calochortus weedii,Satyrium auretorum,pollination,1.0
+Brodiaea orcuttii,Satyrium auretorum,pollination,1.0
+Quercus engelmannii,Dorymyrmex insanus,pollination,1.0
+Calochortus weedii,Dorymyrmex insanus,pollination,1.0
+Brodiaea orcuttii,Dorymyrmex insanus,pollination,1.0
+Calochortus weedii,Cocytius antaeus,pollination,1.0
+Calochortus weedii weedii,Cocytius antaeus,pollination,1.0
+Bahiopsis laciniata,Cocytius antaeus,pollination,0.92
+Calochortus weedii,Chlosyne leanira,pollination,1.0
+Cochemiea tetrancistra,Chlosyne leanira,pollination,1.0
+Bahiopsis laciniata,Euphydryas editha quino,pollination,1.0
+Quercus engelmannii,Euphydryas editha quino,pollination,1.0
+Calochortus weedii,Glaucopsyche piasus umbrosa,pollination,1.0
+Brodiaea orcuttii,Glaucopsyche piasus umbrosa,pollination,1.0
+Juncus acutus leopoldii,Callophrys loki,pollination,0.8
+Harpagonella palmeri,Callophrys loki,pollination,0.8
+Quercus engelmannii,Habrodais grunus,pollination,1.0
+Calochortus weedii,Habrodais grunus,pollination,1.0
+Bahiopsis laciniata,Callophrys loki thornei,pollination,1.0
+Quercus engelmannii,Callophrys loki thornei,pollination,1.0
+Bahiopsis laciniata,Pyrgus ruralis lagunae,pollination,1.0
+Quercus engelmannii,Pyrgus ruralis lagunae,pollination,1.0
+Quercus engelmannii,Apodemia virgulti peninsularis,pollination,1.0
+Calochortus weedii,Apodemia virgulti peninsularis,pollination,1.0
+Dudleya saxosa aloides,Chlosyne acastus neumoegeni,pollination,1.0
+Olneya tesota,Chlosyne acastus neumoegeni,pollination,1.0
+Quercus engelmannii,Calosaturnia walterorum,pollination,1.0
+Calochortus weedii,Calosaturnia walterorum,pollination,1.0
+Bahiopsis laciniata,Euphydryas editha,pollination,1.0
+Ceanothus verrucosus,Euphydryas editha,pollination,1.0
+Bahiopsis laciniata,Chlorostrymon simaethis,pollination,1.0
+Ceanothus verrucosus,Chlorostrymon simaethis,pollination,1.0
 Helminthoglypta tudiculata,Spea hammondii,prey,0.76
 Glyptostoma newberryanum,Spea hammondii,prey,0.58
 Haliotis fulgens,Spea hammondii,prey,0.33
+Xerarionta stearnsiana,Spea hammondii,prey,0.3
+Pseudobatos productus,Spea hammondii,prey,0.27
 Haliotis fulgens,Bodianus pulcher,prey,0.92
 Apostichopus parvimensis,Bodianus pulcher,prey,0.69
+Pseudobatos productus,Bodianus pulcher,prey,0.69
 Helminthoglypta tudiculata,Ensatina eschscholtzii klauberi,prey,0.53
 Glyptostoma newberryanum,Ensatina eschscholtzii klauberi,prey,0.4
+Sonorelix borregoensis,Ensatina eschscholtzii klauberi,prey,0.27
 Haliotis fulgens,Stereolepis gigas,prey,1.0
+Alopias vulpinus,Stereolepis gigas,prey,0.89
+Apostichopus parvimensis,Stereolepis gigas,prey,0.78
 Sonorelix borregoensis,Cyprinodon macularius,prey,1.0
+Glyptostoma newberryanum,Cyprinodon macularius,prey,0.33
 Haliotis fulgens,Chelonia mydas,prey,0.91
 Pseudobatos productus,Chelonia mydas,prey,0.73
+Squatina californica,Chelonia mydas,prey,0.73
 Helminthoglypta tudiculata,Anaxyrus californicus,prey,0.83
 Glyptostoma newberryanum,Anaxyrus californicus,prey,0.67
+Anadenulus cockerelli,Anaxyrus californicus,prey,0.33
+Branchinecta sandiegonensis,Anaxyrus californicus,prey,0.22
+Haliotis fulgens,Mola mola,prey,1.0
+Helminthoglypta tudiculata,Mola mola,prey,0.83
+Pseudobatos productus,Mola mola,prey,0.83
+Sonorelix borregoensis,Gopherus agassizii,prey,0.62
+Glyptostoma newberryanum,Gopherus agassizii,prey,0.25
+Sonorelix harperi,Gopherus agassizii,prey,0.25
+Helminthoglypta tudiculata,Actinemys pallida,prey,0.86
+Glyptostoma newberryanum,Actinemys pallida,prey,0.43
+Haliotis fulgens,Actinemys pallida,prey,0.29
+Cicindela latesignata,Hippocampus ingens,prey,1.0
+Squatina californica,Hippocampus ingens,prey,1.0
+Helminthoglypta tudiculata,Sebastes paucispinis,prey,1.0
+Haliotis fulgens,Sebastes paucispinis,prey,1.0
+Helminthoglypta tudiculata,Gasterosteus aculeatus williamsoni,prey,0.5
+Helminthoglypta milleri,Gasterosteus aculeatus williamsoni,prey,0.5
+Helminthoglypta tudiculata,Chelydra serpentina,prey,1.0
+Glyptostoma newberryanum,Chelydra serpentina,prey,1.0
+Helminthoglypta tudiculata,Terrapene ornata,prey,1.0
+Haliotis fulgens,Terrapene ornata,prey,1.0
+Helminthoglypta tudiculata,Centrochelys sulcata,prey,1.0
+Haliotis fulgens,Centrochelys sulcata,prey,1.0
+Helminthoglypta tudiculata,Terrapene triunguis,prey,1.0
+Glyptostoma newberryanum,Terrapene triunguis,prey,1.0
+Helminthoglypta tudiculata,Testudo horsfieldii,prey,1.0
+Pseudobatos productus,Testudo horsfieldii,prey,1.0
+Helminthoglypta edwardsi,Rana draytonii,prey,1.0
+Helminthoglypta tudiculata,Thunnus orientalis,prey,1.0
+Pseudobatos productus,Thunnus orientalis,prey,1.0
 Haliotis fulgens,Pelecanus occidentalis,prey,0.7
 Helminthoglypta tudiculata,Pelecanus occidentalis,prey,0.65
+Pseudobatos productus,Pelecanus occidentalis,prey,0.5
+Glyptostoma newberryanum,Pelecanus occidentalis,prey,0.5
 Helminthoglypta tudiculata,Nycticorax nycticorax,prey,0.74
 Glyptostoma newberryanum,Nycticorax nycticorax,prey,0.63
 Haliotis fulgens,Nycticorax nycticorax,prey,0.44
+Pseudobatos productus,Nycticorax nycticorax,prey,0.37
 Helminthoglypta tudiculata,Nannopterum auritum,prey,0.76
 Glyptostoma newberryanum,Nannopterum auritum,prey,0.64
+Haliotis fulgens,Nannopterum auritum,prey,0.48
+Pseudobatos productus,Nannopterum auritum,prey,0.36
 Haliotis fulgens,Larus heermanni,prey,0.79
 Helminthoglypta tudiculata,Larus heermanni,prey,0.71
+Pseudobatos productus,Larus heermanni,prey,0.71
 Haliotis fulgens,Pelecanus occidentalis californicus,prey,0.86
 Pseudobatos productus,Pelecanus occidentalis californicus,prey,0.71
+Alopias vulpinus,Pelecanus occidentalis californicus,prey,0.71
 Helminthoglypta tudiculata,Charadrius vociferus,prey,0.68
 Glyptostoma newberryanum,Charadrius vociferus,prey,0.57
 Haliotis fulgens,Charadrius vociferus,prey,0.43
+Pseudobatos productus,Charadrius vociferus,prey,0.36
 Pseudobatos productus,Egretta rufescens,prey,1.0
+Hypanus dipterurus,Egretta rufescens,prey,1.0
+Squatina californica,Egretta rufescens,prey,1.0
 Helminthoglypta tudiculata,Calidris minutilla,prey,0.78
 Glyptostoma newberryanum,Calidris minutilla,prey,0.67
+Haliotis fulgens,Calidris minutilla,prey,0.56
+Pseudobatos productus,Calidris minutilla,prey,0.56
 Helminthoglypta tudiculata,Calypte costae,prey,0.56
 Glyptostoma newberryanum,Calypte costae,prey,0.44
 Xerarionta stearnsiana,Calypte costae,prey,0.28
+Haliotis fulgens,Calypte costae,prey,0.22
+Pseudobatos productus,Calypte costae,prey,0.22
 Helminthoglypta tudiculata,Tringa melanoleuca,prey,0.81
 Glyptostoma newberryanum,Tringa melanoleuca,prey,0.69
+Haliotis fulgens,Tringa melanoleuca,prey,0.5
+Pseudobatos productus,Tringa melanoleuca,prey,0.5
 Haliotis fulgens,Thalasseus elegans,prey,0.92
 Pseudobatos productus,Thalasseus elegans,prey,0.83
+Squatina californica,Thalasseus elegans,prey,0.75
 Pseudobatos productus,Pluvialis squatarola,prey,1.0
+Haliotis fulgens,Pluvialis squatarola,prey,0.88
+Hypanus dipterurus,Pluvialis squatarola,prey,0.88
 Haliotis fulgens,Rallus obsoletus,prey,0.9
+Pseudobatos productus,Rallus obsoletus,prey,0.8
+Helminthoglypta tudiculata,Rallus obsoletus,prey,0.7
 Haliotis fulgens,Anarhynchus nivosus,prey,0.89
+Pseudobatos productus,Anarhynchus nivosus,prey,0.89
+Squatina californica,Anarhynchus nivosus,prey,0.89
 Helminthoglypta tudiculata,Amazona viridigenalis,prey,0.65
 Glyptostoma newberryanum,Amazona viridigenalis,prey,0.65
+Haliotis fulgens,Amazona viridigenalis,prey,0.55
+Xerarionta stearnsiana,Amazona viridigenalis,prey,0.5
 Helminthoglypta tudiculata,Lanius ludovicianus,prey,0.53
 Glyptostoma newberryanum,Lanius ludovicianus,prey,0.47
 Pseudobatos productus,Lanius ludovicianus,prey,0.23
+Xerarionta stearnsiana,Lanius ludovicianus,prey,0.23
 Haliotis fulgens,Psittacara erythrogenys,prey,0.65
 Helminthoglypta tudiculata,Psittacara erythrogenys,prey,0.59
+Glyptostoma newberryanum,Psittacara erythrogenys,prey,0.59
+Xerarionta stearnsiana,Psittacara erythrogenys,prey,0.59
 Helminthoglypta tudiculata,Agelaius tricolor,prey,0.74
 Glyptostoma newberryanum,Agelaius tricolor,prey,0.58
+Xerarionta stearnsiana,Agelaius tricolor,prey,0.37
+Anadenulus cockerelli,Agelaius tricolor,prey,0.32
 Sonorelix borregoensis,Ovis canadensis nelsoni,prey,0.5
-Glyptostoma newberryanum,Ovis canadensis nelsoni,prey,0.08
+Sonorelix harperi,Ovis canadensis nelsoni,prey,0.25
+Helminthoglypta edwardsi,Ovis canadensis nelsoni,prey,0.17
 Haliotis fulgens,Sternula antillarum,prey,0.81
 Pseudobatos productus,Sternula antillarum,prey,0.62
+Squatina californica,Sternula antillarum,prey,0.62
+Alopias vulpinus,Sternula antillarum,prey,0.62
 Haliotis fulgens,Passerculus sandwichensis beldingi,prey,0.88
+Pseudobatos productus,Passerculus sandwichensis beldingi,prey,0.75
+Cicindela latesignata,Passerculus sandwichensis beldingi,prey,0.75
 Helminthoglypta tudiculata,Vireo bellii pusillus,prey,0.8
 Glyptostoma newberryanum,Vireo bellii pusillus,prey,0.7
+Haliotis fulgens,Vireo bellii pusillus,prey,0.5
+Pseudobatos productus,Vireo bellii pusillus,prey,0.5
 Pseudobatos productus,Puffinus opisthomelas,prey,1.0
+Haliotis fulgens,Puffinus opisthomelas,prey,0.9
+Alopias vulpinus,Puffinus opisthomelas,prey,0.9
 Pseudobatos productus,Calidris alpina,prey,1.0
+Hypanus dipterurus,Calidris alpina,prey,1.0
 Pseudobatos productus,Mareca penelope,prey,1.0
+Squatina californica,Mareca penelope,prey,1.0
+Haliotis fulgens,Mareca penelope,prey,0.83
 Sonorelix borregoensis,Polioptila melanura,prey,0.8
+Sonorelix harperi,Polioptila melanura,prey,0.4
 Helminthoglypta tudiculata,Amazona finschi,prey,0.86
 Glyptostoma newberryanum,Amazona finschi,prey,0.71
+Haliotis fulgens,Amazona finschi,prey,0.57
 Apostichopus parvimensis,Eschrichtius robustus,prey,1.0
+Haliotis fulgens,Eschrichtius robustus,prey,1.0
+Pseudobatos productus,Eschrichtius robustus,prey,0.83
 Helminthoglypta tudiculata,Selasphorus rufus,prey,0.79
 Glyptostoma newberryanum,Selasphorus rufus,prey,0.68
+Xerarionta stearnsiana,Selasphorus rufus,prey,0.42
+Haliotis fulgens,Selasphorus rufus,prey,0.32
 Pseudobatos productus,Calidris canutus,prey,1.0
+Hypanus dipterurus,Calidris canutus,prey,1.0
 Helminthoglypta tudiculata,Limnodromus griseus,prey,0.83
+Haliotis fulgens,Limnodromus griseus,prey,0.83
+Pseudobatos productus,Limnodromus griseus,prey,0.83
 Helminthoglypta tudiculata,Limnodromus scolopaceus,prey,0.75
+Glyptostoma newberryanum,Limnodromus scolopaceus,prey,0.75
+Pseudobatos productus,Limnodromus scolopaceus,prey,0.5
 Helminthoglypta tudiculata,Podiceps auritus,prey,0.78
+Haliotis fulgens,Podiceps auritus,prey,0.78
+Pseudobatos productus,Podiceps auritus,prey,0.78
 Haliotis fulgens,Tringa flavipes,prey,1.0
+Pseudobatos productus,Tringa flavipes,prey,1.0
 Pseudobatos productus,Clangula hyemalis,prey,1.0
+Hypanus dipterurus,Clangula hyemalis,prey,1.0
+Squatina californica,Clangula hyemalis,prey,1.0
 Helminthoglypta tudiculata,Contopus cooperi,prey,0.67
 Glyptostoma newberryanum,Contopus cooperi,prey,0.52
+Xerarionta stearnsiana,Contopus cooperi,prey,0.38
+Haliotis fulgens,Contopus cooperi,prey,0.33
 Pseudobatos productus,Arenaria interpres,prey,1.0
+Haliotis fulgens,Arenaria interpres,prey,0.86
+Alopias vulpinus,Arenaria interpres,prey,0.86
 Pseudobatos productus,Rallus obsoletus levipes,prey,1.0
+Helminthoglypta tudiculata,Rallus obsoletus levipes,prey,0.83
+Haliotis fulgens,Rallus obsoletus levipes,prey,0.83
 Apostichopus parvimensis,Gavia adamsii,prey,1.0
+Haliotis fulgens,Gavia adamsii,prey,1.0
 Pseudobatos productus,Limosa fedoa,prey,1.0
+Hypanus dipterurus,Limosa fedoa,prey,1.0
+Squatina californica,Limosa fedoa,prey,1.0
 Helminthoglypta tudiculata,Botaurus exilis,prey,1.0
+Haliotis fulgens,Botaurus exilis,prey,0.71
+Glyptostoma newberryanum,Botaurus exilis,prey,0.71
 Haliotis fulgens,Sternula antillarum browni,prey,0.88
+Pseudobatos productus,Sternula antillarum browni,prey,0.88
+Helminthoglypta tudiculata,Sternula antillarum browni,prey,0.75
 Helminthoglypta tudiculata,Campylorhynchus brunneicapillus sandiegensis,prey,0.75
-Pseudobatos productus,Melanitta americana,prey,1.0
+Glyptostoma newberryanum,Campylorhynchus brunneicapillus sandiegensis,prey,0.75
+Xerarionta stearnsiana,Campylorhynchus brunneicapillus sandiegensis,prey,0.62
 Haliotis fulgens,Passerculus sandwichensis rostratus,prey,1.0
+Gymnura marmorata,Passerculus sandwichensis rostratus,prey,1.0
+Pseudobatos productus,Melanitta americana,prey,1.0
+Hypanus dipterurus,Melanitta americana,prey,1.0
 Haliotis fulgens,Ptychoramphus aleuticus,prey,1.0
+Pseudobatos productus,Ptychoramphus aleuticus,prey,1.0
+Alopias vulpinus,Ptychoramphus aleuticus,prey,1.0
 Haliotis fulgens,Amazona oratrix,prey,1.0
+Pseudobatos productus,Amazona oratrix,prey,1.0
 Helminthoglypta tudiculata,Amazona finschi × viridigenalis,prey,0.7
+Haliotis fulgens,Amazona finschi × viridigenalis,prey,0.7
+Pseudobatos productus,Amazona finschi × viridigenalis,prey,0.7
 Helminthoglypta tudiculata,Polioptila californica californica,prey,0.82
 Glyptostoma newberryanum,Polioptila californica californica,prey,0.73
+Haliotis fulgens,Polioptila californica californica,prey,0.64
 Haliotis fulgens,Balaenoptera musculus,prey,1.0
+Pseudobatos productus,Balaenoptera musculus,prey,1.0
+Alopias vulpinus,Balaenoptera musculus,prey,1.0
 Haliotis fulgens,Ammospiza nelsoni,prey,1.0
+Pseudobatos productus,Ammospiza nelsoni,prey,1.0
 Haliotis fulgens,Anarhynchus nivosus nivosus,prey,1.0
+Pseudobatos productus,Anarhynchus nivosus nivosus,prey,1.0
+Helminthoglypta tudiculata,Botaurus lentiginosus,prey,0.8
+Glyptostoma newberryanum,Botaurus lentiginosus,prey,0.8
+Haliotis fulgens,Ardenna grisea,prey,0.78
+Pseudobatos productus,Ardenna grisea,prey,0.78
+Cicindela latesignata,Ardenna grisea,prey,0.67
+Haliotis fulgens,Megaptera novaeangliae,prey,1.0
+Pseudobatos productus,Megaptera novaeangliae,prey,0.83
+Cicindela latesignata,Megaptera novaeangliae,prey,0.83
+Apostichopus parvimensis,Zonotrichia querula,prey,1.0
+Haliotis fulgens,Zonotrichia querula,prey,1.0
+Helminthoglypta tudiculata,Cygnus buccinator,prey,1.0
+Haliotis fulgens,Cygnus buccinator,prey,1.0
+Helminthoglypta tudiculata,Mycteria americana,prey,1.0
+Glyptostoma newberryanum,Mycteria americana,prey,1.0
+Haliotis fulgens,Rissa tridactyla,prey,1.0
+Pseudobatos productus,Rissa tridactyla,prey,1.0
+Alopias vulpinus,Rissa tridactyla,prey,1.0
+Pseudobatos productus,Ardenna creatopus,prey,1.0
+Haliotis fulgens,Ardenna creatopus,prey,0.86
+Hypanus dipterurus,Ardenna creatopus,prey,0.86
+Xerarionta stearnsiana,Calidris pugnax,prey,1.0
+Haplotrema transfuga,Calidris pugnax,prey,1.0
+Haliotis fulgens,Anarhynchus montanus,prey,1.0
+Pseudobatos productus,Anarhynchus montanus,prey,1.0
+Haliotis fulgens,Synthliboramphus scrippsi,prey,0.86
+Pseudobatos productus,Synthliboramphus scrippsi,prey,0.86
+Squatina californica,Synthliboramphus scrippsi,prey,0.86
+Haliotis fulgens,Polioptila californica,prey,1.0
+Pseudobatos productus,Polioptila californica,prey,1.0
+Haliotis fulgens,Chlidonias niger,prey,1.0
+Pseudobatos productus,Chlidonias niger,prey,1.0
+Haliotis fulgens,Balaenoptera physalus,prey,1.0
+Pseudobatos productus,Balaenoptera physalus,prey,0.83
+Cicindela latesignata,Balaenoptera physalus,prey,0.83
+Helminthoglypta tudiculata,Riparia riparia,prey,0.75
+Pseudobatos productus,Riparia riparia,prey,0.75
+Helminthoglypta tudiculata,Branta hutchinsii leucopareia,prey,0.6
+Pseudobatos productus,Branta hutchinsii leucopareia,prey,0.6
+Haliotis fulgens,Antigone canadensis,prey,1.0
+Pseudobatos productus,Antigone canadensis,prey,1.0
+Helminthoglypta tudiculata,Bison bison,prey,1.0
+Haliotis fulgens,Bison bison,prey,1.0
+Helminthoglypta tudiculata,Coccyzus americanus,prey,0.5
+Glyptostoma newberryanum,Coccyzus americanus,prey,0.5
+Xerarionta stearnsiana,Coccyzus americanus,prey,0.33
+Apostichopus parvimensis,Balaenoptera musculus musculus,prey,1.0
+Haliotis fulgens,Balaenoptera musculus musculus,prey,1.0
+Helminthoglypta tudiculata,Calcarius ornatus,prey,1.0
+Apostichopus parvimensis,Calcarius ornatus,prey,1.0
+Helminthoglypta tudiculata,Lasiurus cinereus,prey,0.8
+Glyptostoma newberryanum,Lasiurus cinereus,prey,0.8
+Haliotis fulgens,Calidris pusilla,prey,1.0
+Pseudobatos productus,Calidris pusilla,prey,1.0
+Helminthoglypta tudiculata,Corynorhinus townsendii,prey,0.2
+Haliotis fulgens,Corynorhinus townsendii,prey,0.2
+Pseudobatos productus,Phoebastria nigripes,prey,1.0
+Hypanus dipterurus,Phoebastria nigripes,prey,1.0
+Helminthoglypta tudiculata,Colinus virginianus,prey,1.0
+Haliotis fulgens,Colinus virginianus,prey,1.0
+Helminthoglypta tudiculata,Anser cygnoides,prey,1.0
+Glyptostoma newberryanum,Anser cygnoides,prey,1.0
+Haliotis fulgens,Cypseloides niger,prey,1.0
+Xerarionta stearnsiana,Cypseloides niger,prey,1.0
+Helminthoglypta tudiculata,Setophaga striata,prey,0.75
+Pseudobatos productus,Setophaga striata,prey,0.75
+Sonorelix harperi,Toxostoma bendirei,prey,1.0
+Sonorelix borregoensis,Leuconotopicus albolarvatus,prey,0.67
+Glyptostoma newberryanum,Leuconotopicus albolarvatus,prey,0.33
+Helminthoglypta tudiculata,Hesperiphona vespertina,prey,1.0
+Helminthoglypta milleri,Hesperiphona vespertina,prey,1.0
+Helminthoglypta tudiculata,Empidonax traillii brewsteri,prey,0.5
+Haliotis fulgens,Empidonax traillii brewsteri,prey,0.5
+Apostichopus parvimensis,Synthliboramphus craveri,prey,1.0
+Haliotis fulgens,Synthliboramphus craveri,prey,1.0
+Helminthoglypta tudiculata,Euphagus carolinus,prey,1.0
+Haliotis fulgens,Euphagus carolinus,prey,1.0
+Helminthoglypta tudiculata,Dipodomys stephensi,prey,1.0
+Glyptostoma newberryanum,Dipodomys stephensi,prey,1.0
+Helminthoglypta tudiculata,Ardenna bulleri,prey,1.0
+Apostichopus parvimensis,Ardenna bulleri,prey,1.0
+Haliotis fulgens,Calidris mauri,prey,1.0
+Pseudobatos productus,Calidris mauri,prey,1.0
+Helminthoglypta tudiculata,Agapornis fischeri,prey,0.5
+Apostichopus parvimensis,Agapornis fischeri,prey,0.5
+Helminthoglypta tudiculata,Choeronycteris mexicana,prey,1.0
+Pseudobatos productus,Choeronycteris mexicana,prey,1.0
+Helminthoglypta tudiculata,Pterodroma cookii,prey,1.0
+Apostichopus parvimensis,Pterodroma cookii,prey,1.0
+Helminthoglypta tudiculata,Hydrobates leucorhous,prey,1.0
+Apostichopus parvimensis,Hydrobates leucorhous,prey,1.0
+Helminthoglypta tudiculata,Lasionycteris noctivagans,prey,1.0
+Glyptostoma newberryanum,Lasionycteris noctivagans,prey,1.0
+Apostichopus parvimensis,Ardenna carneipes,prey,1.0
+Haliotis fulgens,Ardenna carneipes,prey,1.0
+Helminthoglypta tudiculata,Hydrobates homochroa,prey,1.0
+Apostichopus parvimensis,Hydrobates homochroa,prey,1.0
+Apostichopus parvimensis,Hydrobates socorroensis,prey,1.0
+Haliotis fulgens,Hydrobates socorroensis,prey,1.0
+Helminthoglypta tudiculata,Empidonax traillii extimus,prey,1.0
+Glyptostoma newberryanum,Empidonax traillii extimus,prey,1.0
+Apostichopus parvimensis,Pseudorca crassidens,prey,1.0
+Haliotis fulgens,Pseudorca crassidens,prey,1.0
+Helminthoglypta tudiculata,Anthus spragueii,prey,1.0
+Pseudobatos productus,Anthus spragueii,prey,1.0
+Haliotis fulgens,Calidris ferruginea,prey,1.0
+Pseudobatos productus,Calidris ferruginea,prey,1.0
+Haliotis fulgens,Tursiops truncatus,prey,1.0
+Pseudobatos productus,Tursiops truncatus,prey,1.0
 Apodemia virgulti,Spea hammondii,prey,0.91
 Danaus plexippus,Spea hammondii,prey,0.85
 Bombus crotchii,Spea hammondii,prey,0.79
+Chlosyne gabbii,Spea hammondii,prey,0.61
+Zerene eurydice,Spea hammondii,prey,0.52
 Danaus plexippus,Bodianus pulcher,prey,0.77
 Apodemia virgulti,Bodianus pulcher,prey,0.62
+Bombus sonorus,Bodianus pulcher,prey,0.62
 Apodemia virgulti,Ensatina eschscholtzii klauberi,prey,1.0
 Danaus plexippus,Ensatina eschscholtzii klauberi,prey,0.93
+Zerene eurydice,Ensatina eschscholtzii klauberi,prey,0.93
 Danaus plexippus,Stereolepis gigas,prey,0.89
+Apodemia virgulti,Stereolepis gigas,prey,0.67
+Bombus sonorus,Stereolepis gigas,prey,0.67
 Apodemia virgulti,Cyprinodon macularius,prey,1.0
+Danaus plexippus,Cyprinodon macularius,prey,0.67
 Danaus plexippus,Chelonia mydas,prey,0.91
 Apodemia virgulti,Chelonia mydas,prey,0.73
+Bombus sonorus,Chelonia mydas,prey,0.73
 Apodemia virgulti,Anaxyrus californicus,prey,1.0
 Danaus plexippus,Anaxyrus californicus,prey,0.94
+Bombus crotchii,Anaxyrus californicus,prey,0.89
+Satyrium tetra,Anaxyrus californicus,prey,0.72
+Danaus plexippus,Mola mola,prey,1.0
+Apodemia virgulti,Mola mola,prey,1.0
+Bombus sonorus,Mola mola,prey,1.0
+Apodemia virgulti,Gopherus agassizii,prey,0.75
+Colias harfordii,Gopherus agassizii,prey,0.62
+Danaus plexippus,Gopherus agassizii,prey,0.5
+Apodemia virgulti,Actinemys pallida,prey,1.0
+Danaus plexippus,Actinemys pallida,prey,0.86
+Bombus crotchii,Actinemys pallida,prey,0.86
+Danaus plexippus,Hippocampus ingens,prey,1.0
+Apodemia virgulti,Hippocampus ingens,prey,1.0
+Danaus plexippus,Sebastes paucispinis,prey,1.0
+Apodemia virgulti,Sebastes paucispinis,prey,1.0
+Danaus plexippus,Gasterosteus aculeatus williamsoni,prey,1.0
+Apodemia virgulti,Gasterosteus aculeatus williamsoni,prey,1.0
+Danaus plexippus,Chelydra serpentina,prey,1.0
+Apodemia virgulti,Chelydra serpentina,prey,1.0
+Danaus plexippus,Terrapene ornata,prey,1.0
+Apodemia virgulti,Terrapene ornata,prey,1.0
+Danaus plexippus,Centrochelys sulcata,prey,1.0
+Apodemia virgulti,Centrochelys sulcata,prey,1.0
+Danaus plexippus,Terrapene triunguis,prey,1.0
+Apodemia virgulti,Terrapene triunguis,prey,1.0
+Danaus plexippus,Testudo horsfieldii,prey,1.0
+Apodemia virgulti,Testudo horsfieldii,prey,1.0
+Apodemia virgulti,Rana draytonii,prey,1.0
+Chlosyne gabbii,Rana draytonii,prey,1.0
+Danaus plexippus,Thunnus orientalis,prey,1.0
+Apodemia virgulti,Thunnus orientalis,prey,1.0
 Danaus plexippus,Pelecanus occidentalis,prey,0.85
 Apodemia virgulti,Pelecanus occidentalis,prey,0.75
+Bombus crotchii,Pelecanus occidentalis,prey,0.75
+Bombus sonorus,Pelecanus occidentalis,prey,0.6
 Danaus plexippus,Nycticorax nycticorax,prey,0.81
 Apodemia virgulti,Nycticorax nycticorax,prey,0.81
 Bombus crotchii,Nycticorax nycticorax,prey,0.81
+Danaus plexippus plexippus,Nycticorax nycticorax,prey,0.59
 Apodemia virgulti,Nannopterum auritum,prey,0.88
 Bombus crotchii,Nannopterum auritum,prey,0.88
+Danaus plexippus,Nannopterum auritum,prey,0.84
+Danaus plexippus plexippus,Nannopterum auritum,prey,0.64
 Danaus plexippus,Larus heermanni,prey,1.0
 Apodemia virgulti,Larus heermanni,prey,0.86
+Bombus sonorus,Larus heermanni,prey,0.79
 Danaus plexippus,Pelecanus occidentalis californicus,prey,0.86
 Apodemia virgulti,Pelecanus occidentalis californicus,prey,0.71
+Bombus crotchii,Pelecanus occidentalis californicus,prey,0.71
 Danaus plexippus,Charadrius vociferus,prey,0.86
 Apodemia virgulti,Charadrius vociferus,prey,0.86
 Bombus crotchii,Charadrius vociferus,prey,0.86
+Danaus plexippus plexippus,Charadrius vociferus,prey,0.61
 Danaus plexippus,Egretta rufescens,prey,1.0
+Apodemia virgulti,Egretta rufescens,prey,1.0
+Bombus sonorus,Egretta rufescens,prey,1.0
 Danaus plexippus,Calidris minutilla,prey,0.94
 Apodemia virgulti,Calidris minutilla,prey,0.94
+Bombus crotchii,Calidris minutilla,prey,0.94
+Danaus plexippus plexippus,Calidris minutilla,prey,0.67
 Apodemia virgulti,Calypte costae,prey,0.86
 Danaus plexippus,Calypte costae,prey,0.75
 Bombus crotchii,Calypte costae,prey,0.72
+Danaus plexippus plexippus,Calypte costae,prey,0.47
+Zerene eurydice,Calypte costae,prey,0.47
 Danaus plexippus,Tringa melanoleuca,prey,0.94
 Apodemia virgulti,Tringa melanoleuca,prey,0.94
+Bombus crotchii,Tringa melanoleuca,prey,0.94
+Danaus plexippus plexippus,Tringa melanoleuca,prey,0.69
 Danaus plexippus,Thalasseus elegans,prey,0.92
 Apodemia virgulti,Thalasseus elegans,prey,0.83
+Bombus sonorus,Thalasseus elegans,prey,0.83
 Danaus plexippus,Pluvialis squatarola,prey,1.0
+Apodemia virgulti,Pluvialis squatarola,prey,1.0
+Bombus sonorus,Pluvialis squatarola,prey,1.0
 Danaus plexippus,Rallus obsoletus,prey,1.0
+Apodemia virgulti,Rallus obsoletus,prey,0.9
+Bombus sonorus,Rallus obsoletus,prey,0.8
 Danaus plexippus,Anarhynchus nivosus,prey,1.0
+Apodemia virgulti,Anarhynchus nivosus,prey,1.0
+Bombus sonorus,Anarhynchus nivosus,prey,1.0
 Danaus plexippus,Amazona viridigenalis,prey,0.85
 Apodemia virgulti,Amazona viridigenalis,prey,0.75
+Bombus crotchii,Amazona viridigenalis,prey,0.75
+Danaus plexippus plexippus,Amazona viridigenalis,prey,0.65
 Apodemia virgulti,Lanius ludovicianus,prey,0.83
 Bombus crotchii,Lanius ludovicianus,prey,0.7
 Danaus plexippus,Lanius ludovicianus,prey,0.67
+Chlosyne gabbii,Lanius ludovicianus,prey,0.47
 Danaus plexippus,Psittacara erythrogenys,prey,0.82
 Apodemia virgulti,Psittacara erythrogenys,prey,0.71
+Bombus crotchii,Psittacara erythrogenys,prey,0.71
+Danaus plexippus plexippus,Psittacara erythrogenys,prey,0.59
 Apodemia virgulti,Agelaius tricolor,prey,0.95
 Bombus crotchii,Agelaius tricolor,prey,0.89
+Danaus plexippus,Agelaius tricolor,prey,0.84
+Chlosyne gabbii,Agelaius tricolor,prey,0.68
 Apodemia virgulti,Ovis canadensis nelsoni,prey,0.67
 Colias harfordii,Ovis canadensis nelsoni,prey,0.58
+Danaus plexippus,Ovis canadensis nelsoni,prey,0.5
 Danaus plexippus,Sternula antillarum,prey,0.88
 Apodemia virgulti,Sternula antillarum,prey,0.75
+Bombus sonorus,Sternula antillarum,prey,0.69
+Bombus crotchii,Sternula antillarum,prey,0.69
 Danaus plexippus,Passerculus sandwichensis beldingi,prey,0.88
+Apodemia virgulti,Passerculus sandwichensis beldingi,prey,0.75
+Bombus sonorus,Passerculus sandwichensis beldingi,prey,0.75
 Danaus plexippus,Vireo bellii pusillus,prey,0.95
 Apodemia virgulti,Vireo bellii pusillus,prey,0.9
+Bombus crotchii,Vireo bellii pusillus,prey,0.9
+Danaus plexippus plexippus,Vireo bellii pusillus,prey,0.75
 Danaus plexippus,Puffinus opisthomelas,prey,1.0
+Apodemia virgulti,Puffinus opisthomelas,prey,0.9
+Bombus sonorus,Puffinus opisthomelas,prey,0.9
 Danaus plexippus,Calidris alpina,prey,1.0
+Apodemia virgulti,Calidris alpina,prey,1.0
 Danaus plexippus,Mareca penelope,prey,1.0
+Apodemia virgulti,Mareca penelope,prey,1.0
+Bombus sonorus,Mareca penelope,prey,1.0
 Danaus plexippus,Polioptila melanura,prey,0.6
+Apodemia virgulti,Polioptila melanura,prey,0.6
 Danaus plexippus,Amazona finschi,prey,1.0
 Apodemia virgulti,Amazona finschi,prey,1.0
+Bombus crotchii,Amazona finschi,prey,1.0
 Danaus plexippus,Eschrichtius robustus,prey,0.83
+Apodemia virgulti,Eschrichtius robustus,prey,0.67
+Bombus sonorus,Eschrichtius robustus,prey,0.67
 Danaus plexippus,Selasphorus rufus,prey,1.0
 Apodemia virgulti,Selasphorus rufus,prey,1.0
+Bombus crotchii,Selasphorus rufus,prey,0.84
+Danaus plexippus plexippus,Selasphorus rufus,prey,0.79
 Danaus plexippus,Calidris canutus,prey,1.0
+Apodemia virgulti,Calidris canutus,prey,1.0
 Danaus plexippus,Limnodromus griseus,prey,1.0
+Apodemia virgulti,Limnodromus griseus,prey,1.0
+Bombus sonorus,Limnodromus griseus,prey,1.0
 Apodemia virgulti,Limnodromus scolopaceus,prey,1.0
+Bombus crotchii,Limnodromus scolopaceus,prey,1.0
+Danaus plexippus,Limnodromus scolopaceus,prey,0.88
 Danaus plexippus,Podiceps auritus,prey,1.0
+Apodemia virgulti,Podiceps auritus,prey,1.0
+Bombus sonorus,Podiceps auritus,prey,1.0
 Danaus plexippus,Tringa flavipes,prey,1.0
+Apodemia virgulti,Tringa flavipes,prey,1.0
 Danaus plexippus,Clangula hyemalis,prey,1.0
+Apodemia virgulti,Clangula hyemalis,prey,1.0
+Bombus sonorus,Clangula hyemalis,prey,1.0
 Apodemia virgulti,Contopus cooperi,prey,1.0
 Danaus plexippus,Contopus cooperi,prey,0.9
+Bombus crotchii,Contopus cooperi,prey,0.81
+Chlosyne gabbii,Contopus cooperi,prey,0.62
 Danaus plexippus,Arenaria interpres,prey,1.0
+Apodemia virgulti,Arenaria interpres,prey,0.86
+Bombus sonorus,Arenaria interpres,prey,0.86
 Danaus plexippus,Rallus obsoletus levipes,prey,1.0
+Apodemia virgulti,Rallus obsoletus levipes,prey,1.0
+Bombus sonorus,Rallus obsoletus levipes,prey,1.0
 Danaus plexippus,Gavia adamsii,prey,1.0
+Apodemia virgulti,Gavia adamsii,prey,1.0
 Danaus plexippus,Limosa fedoa,prey,1.0
+Apodemia virgulti,Limosa fedoa,prey,1.0
+Bombus sonorus,Limosa fedoa,prey,1.0
 Danaus plexippus,Botaurus exilis,prey,1.0
+Apodemia virgulti,Botaurus exilis,prey,1.0
+Bombus crotchii,Botaurus exilis,prey,1.0
 Danaus plexippus,Sternula antillarum browni,prey,1.0
+Apodemia virgulti,Sternula antillarum browni,prey,0.88
+Bombus sonorus,Sternula antillarum browni,prey,0.88
 Danaus plexippus,Campylorhynchus brunneicapillus sandiegensis,prey,1.0
-Danaus plexippus,Melanitta americana,prey,1.0
+Apodemia virgulti,Campylorhynchus brunneicapillus sandiegensis,prey,1.0
+Bombus crotchii,Campylorhynchus brunneicapillus sandiegensis,prey,1.0
 Danaus plexippus,Passerculus sandwichensis rostratus,prey,1.0
+Apodemia virgulti,Passerculus sandwichensis rostratus,prey,1.0
+Danaus plexippus,Melanitta americana,prey,1.0
+Apodemia virgulti,Melanitta americana,prey,1.0
 Danaus plexippus,Ptychoramphus aleuticus,prey,1.0
+Apodemia virgulti,Ptychoramphus aleuticus,prey,1.0
+Bombus sonorus,Ptychoramphus aleuticus,prey,1.0
 Danaus plexippus,Amazona oratrix,prey,1.0
+Apodemia virgulti,Amazona oratrix,prey,1.0
 Danaus plexippus,Amazona finschi × viridigenalis,prey,1.0
+Apodemia virgulti,Amazona finschi × viridigenalis,prey,0.9
+Bombus sonorus,Amazona finschi × viridigenalis,prey,0.9
 Danaus plexippus,Polioptila californica californica,prey,1.0
 Apodemia virgulti,Polioptila californica californica,prey,1.0
+Bombus crotchii,Polioptila californica californica,prey,1.0
 Danaus plexippus,Balaenoptera musculus,prey,1.0
+Apodemia virgulti,Balaenoptera musculus,prey,0.86
+Bombus sonorus,Balaenoptera musculus,prey,0.86
 Danaus plexippus,Ammospiza nelsoni,prey,1.0
+Apodemia virgulti,Ammospiza nelsoni,prey,1.0
 Danaus plexippus,Anarhynchus nivosus nivosus,prey,1.0
+Apodemia virgulti,Anarhynchus nivosus nivosus,prey,0.8
+Danaus plexippus,Botaurus lentiginosus,prey,1.0
+Apodemia virgulti,Botaurus lentiginosus,prey,1.0
+Danaus plexippus,Ardenna grisea,prey,0.89
+Apodemia virgulti,Ardenna grisea,prey,0.78
+Bombus sonorus,Ardenna grisea,prey,0.67
+Danaus plexippus,Megaptera novaeangliae,prey,1.0
+Apodemia virgulti,Megaptera novaeangliae,prey,0.83
+Bombus sonorus,Megaptera novaeangliae,prey,0.83
+Danaus plexippus,Zonotrichia querula,prey,0.6
+Apodemia virgulti,Zonotrichia querula,prey,0.4
+Danaus plexippus,Cygnus buccinator,prey,1.0
+Apodemia virgulti,Cygnus buccinator,prey,1.0
+Danaus plexippus,Mycteria americana,prey,1.0
+Apodemia virgulti,Mycteria americana,prey,1.0
+Danaus plexippus,Rissa tridactyla,prey,1.0
+Apodemia virgulti,Rissa tridactyla,prey,1.0
+Bombus sonorus,Rissa tridactyla,prey,1.0
+Danaus plexippus,Ardenna creatopus,prey,1.0
+Apodemia virgulti,Ardenna creatopus,prey,0.86
+Bombus sonorus,Ardenna creatopus,prey,0.86
+Danaus plexippus,Calidris pugnax,prey,1.0
+Apodemia virgulti,Calidris pugnax,prey,1.0
+Danaus plexippus,Anarhynchus montanus,prey,1.0
+Apodemia virgulti,Anarhynchus montanus,prey,1.0
+Danaus plexippus,Synthliboramphus scrippsi,prey,0.86
+Apodemia virgulti,Synthliboramphus scrippsi,prey,0.86
+Bombus sonorus,Synthliboramphus scrippsi,prey,0.86
+Danaus plexippus,Polioptila californica,prey,1.0
+Apodemia virgulti,Polioptila californica,prey,1.0
+Danaus plexippus,Chlidonias niger,prey,1.0
+Apodemia virgulti,Chlidonias niger,prey,1.0
+Danaus plexippus,Balaenoptera physalus,prey,1.0
+Apodemia virgulti,Balaenoptera physalus,prey,0.83
+Bombus sonorus,Balaenoptera physalus,prey,0.83
+Danaus plexippus,Riparia riparia,prey,1.0
+Apodemia virgulti,Riparia riparia,prey,1.0
+Danaus plexippus,Branta hutchinsii leucopareia,prey,1.0
+Apodemia virgulti,Branta hutchinsii leucopareia,prey,1.0
+Danaus plexippus,Antigone canadensis,prey,1.0
+Apodemia virgulti,Antigone canadensis,prey,0.5
+Danaus plexippus,Bison bison,prey,1.0
+Apodemia virgulti,Bison bison,prey,1.0
+Danaus plexippus,Coccyzus americanus,prey,0.83
+Apodemia virgulti,Coccyzus americanus,prey,0.83
+Bombus crotchii,Coccyzus americanus,prey,0.67
+Danaus plexippus,Balaenoptera musculus musculus,prey,1.0
+Apodemia virgulti,Balaenoptera musculus musculus,prey,1.0
+Danaus plexippus,Calcarius ornatus,prey,1.0
+Apodemia virgulti,Calcarius ornatus,prey,1.0
+Danaus plexippus,Lasiurus cinereus,prey,1.0
+Apodemia virgulti,Lasiurus cinereus,prey,1.0
+Danaus plexippus,Calidris pusilla,prey,1.0
+Apodemia virgulti,Calidris pusilla,prey,1.0
+Apodemia virgulti,Corynorhinus townsendii,prey,0.8
+Chlosyne gabbii,Corynorhinus townsendii,prey,0.6
+Danaus plexippus,Phoebastria nigripes,prey,1.0
+Apodemia virgulti,Phoebastria nigripes,prey,1.0
+Danaus plexippus,Colinus virginianus,prey,1.0
+Apodemia virgulti,Colinus virginianus,prey,1.0
+Danaus plexippus,Anser cygnoides,prey,1.0
+Apodemia virgulti,Anser cygnoides,prey,1.0
+Danaus plexippus,Cypseloides niger,prey,1.0
+Apodemia virgulti,Cypseloides niger,prey,1.0
+Danaus plexippus,Setophaga striata,prey,1.0
+Apodemia virgulti,Setophaga striata,prey,1.0
+Apodemia virgulti,Toxostoma bendirei,prey,0.5
+Bombus crotchii,Toxostoma bendirei,prey,0.5
+Danaus plexippus,Leuconotopicus albolarvatus,prey,1.0
+Apodemia virgulti,Leuconotopicus albolarvatus,prey,1.0
+Danaus plexippus,Hesperiphona vespertina,prey,1.0
+Apodemia virgulti,Hesperiphona vespertina,prey,1.0
+Danaus plexippus,Empidonax traillii brewsteri,prey,1.0
+Apodemia virgulti,Empidonax traillii brewsteri,prey,1.0
+Danaus plexippus,Synthliboramphus craveri,prey,1.0
+Apodemia virgulti,Synthliboramphus craveri,prey,0.67
+Danaus plexippus,Euphagus carolinus,prey,1.0
+Apodemia virgulti,Euphagus carolinus,prey,1.0
+Danaus plexippus,Dipodomys stephensi,prey,1.0
+Apodemia virgulti,Dipodomys stephensi,prey,1.0
+Danaus plexippus,Ardenna bulleri,prey,1.0
+Apodemia virgulti,Ardenna bulleri,prey,1.0
+Danaus plexippus,Calidris mauri,prey,1.0
+Apodemia virgulti,Calidris mauri,prey,1.0
+Danaus plexippus,Agapornis fischeri,prey,1.0
+Apodemia virgulti,Agapornis fischeri,prey,1.0
+Danaus plexippus,Choeronycteris mexicana,prey,1.0
+Apodemia virgulti,Choeronycteris mexicana,prey,1.0
+Danaus plexippus,Pterodroma cookii,prey,1.0
+Apodemia virgulti,Pterodroma cookii,prey,1.0
+Danaus plexippus,Hydrobates leucorhous,prey,1.0
+Apodemia virgulti,Hydrobates leucorhous,prey,1.0
+Danaus plexippus,Lasionycteris noctivagans,prey,1.0
+Apodemia virgulti,Lasionycteris noctivagans,prey,1.0
+Danaus plexippus,Ardenna carneipes,prey,1.0
+Apodemia virgulti,Ardenna carneipes,prey,1.0
+Danaus plexippus,Hydrobates homochroa,prey,1.0
+Apodemia virgulti,Hydrobates homochroa,prey,1.0
+Danaus plexippus,Hydrobates socorroensis,prey,1.0
+Apodemia virgulti,Hydrobates socorroensis,prey,1.0
+Danaus plexippus,Empidonax traillii extimus,prey,1.0
+Apodemia virgulti,Empidonax traillii extimus,prey,1.0
+Danaus plexippus,Pseudorca crassidens,prey,1.0
+Apodemia virgulti,Pseudorca crassidens,prey,1.0
+Danaus plexippus,Anthus spragueii,prey,1.0
+Apodemia virgulti,Anthus spragueii,prey,1.0
+Danaus plexippus,Calidris ferruginea,prey,1.0
+Apodemia virgulti,Calidris ferruginea,prey,1.0
+Danaus plexippus,Tursiops truncatus,prey,1.0
+Apodemia virgulti,Tursiops truncatus,prey,1.0
 Spea hammondii,Pelecanus occidentalis,prey,0.85
 Bodianus pulcher,Pelecanus occidentalis,prey,0.65
+Chelonia mydas,Pelecanus occidentalis,prey,0.55
+Stereolepis gigas,Pelecanus occidentalis,prey,0.45
 Spea hammondii,Nycticorax nycticorax,prey,0.85
 Anaxyrus californicus,Nycticorax nycticorax,prey,0.44
 Bodianus pulcher,Nycticorax nycticorax,prey,0.41
+Chelonia mydas,Nycticorax nycticorax,prey,0.33
 Spea hammondii,Nannopterum auritum,prey,0.84
 Anaxyrus californicus,Nannopterum auritum,prey,0.48
+Bodianus pulcher,Nannopterum auritum,prey,0.44
+Chelonia mydas,Nannopterum auritum,prey,0.36
 Spea hammondii,Larus heermanni,prey,0.93
 Bodianus pulcher,Larus heermanni,prey,0.71
+Chelonia mydas,Larus heermanni,prey,0.71
 Spea hammondii,Pelecanus occidentalis californicus,prey,0.86
 Bodianus pulcher,Pelecanus occidentalis californicus,prey,0.86
+Chelonia mydas,Pelecanus occidentalis californicus,prey,0.71
 Spea hammondii,Charadrius vociferus,prey,0.82
 Anaxyrus californicus,Charadrius vociferus,prey,0.43
 Bodianus pulcher,Charadrius vociferus,prey,0.39
+Chelonia mydas,Charadrius vociferus,prey,0.32
 Spea hammondii,Egretta rufescens,prey,0.86
+Bodianus pulcher,Egretta rufescens,prey,0.86
+Chelonia mydas,Egretta rufescens,prey,0.86
 Spea hammondii,Calidris minutilla,prey,0.89
 Bodianus pulcher,Calidris minutilla,prey,0.5
+Chelonia mydas,Calidris minutilla,prey,0.5
+Stereolepis gigas,Calidris minutilla,prey,0.39
 Spea hammondii,Calypte costae,prey,0.67
 Anaxyrus californicus,Calypte costae,prey,0.39
 Ensatina eschscholtzii klauberi,Calypte costae,prey,0.36
+Gopherus agassizii,Calypte costae,prey,0.22
+Bodianus pulcher,Calypte costae,prey,0.19
 Spea hammondii,Tringa melanoleuca,prey,0.94
 Bodianus pulcher,Tringa melanoleuca,prey,0.44
+Chelonia mydas,Tringa melanoleuca,prey,0.44
+Anaxyrus californicus,Tringa melanoleuca,prey,0.44
 Spea hammondii,Thalasseus elegans,prey,0.83
 Bodianus pulcher,Thalasseus elegans,prey,0.83
+Chelonia mydas,Thalasseus elegans,prey,0.75
 Spea hammondii,Pluvialis squatarola,prey,0.88
+Bodianus pulcher,Pluvialis squatarola,prey,0.88
+Chelonia mydas,Pluvialis squatarola,prey,0.88
 Spea hammondii,Rallus obsoletus,prey,0.9
+Bodianus pulcher,Rallus obsoletus,prey,0.8
+Chelonia mydas,Rallus obsoletus,prey,0.8
 Spea hammondii,Anarhynchus nivosus,prey,0.89
+Bodianus pulcher,Anarhynchus nivosus,prey,0.78
+Chelonia mydas,Anarhynchus nivosus,prey,0.78
 Spea hammondii,Amazona viridigenalis,prey,0.85
 Bodianus pulcher,Amazona viridigenalis,prey,0.55
+Chelonia mydas,Amazona viridigenalis,prey,0.45
+Stereolepis gigas,Amazona viridigenalis,prey,0.35
 Spea hammondii,Lanius ludovicianus,prey,0.67
 Ensatina eschscholtzii klauberi,Lanius ludovicianus,prey,0.33
 Anaxyrus californicus,Lanius ludovicianus,prey,0.33
+Gopherus agassizii,Lanius ludovicianus,prey,0.27
 Spea hammondii,Psittacara erythrogenys,prey,0.82
 Bodianus pulcher,Psittacara erythrogenys,prey,0.65
+Chelonia mydas,Psittacara erythrogenys,prey,0.59
+Stereolepis gigas,Psittacara erythrogenys,prey,0.41
 Spea hammondii,Agelaius tricolor,prey,0.89
 Anaxyrus californicus,Agelaius tricolor,prey,0.58
+Ensatina eschscholtzii klauberi,Agelaius tricolor,prey,0.37
+Actinemys pallida,Agelaius tricolor,prey,0.26
 Ensatina eschscholtzii klauberi,Ovis canadensis nelsoni,prey,0.58
+Gopherus agassizii,Ovis canadensis nelsoni,prey,0.58
 Spea hammondii,Ovis canadensis nelsoni,prey,0.25
 Spea hammondii,Sternula antillarum,prey,0.75
 Bodianus pulcher,Sternula antillarum,prey,0.69
+Chelonia mydas,Sternula antillarum,prey,0.69
+Stereolepis gigas,Sternula antillarum,prey,0.56
 Chelonia mydas,Passerculus sandwichensis beldingi,prey,1.0
+Bodianus pulcher,Passerculus sandwichensis beldingi,prey,0.88
+Spea hammondii,Passerculus sandwichensis beldingi,prey,0.75
 Spea hammondii,Vireo bellii pusillus,prey,0.9
 Bodianus pulcher,Vireo bellii pusillus,prey,0.45
+Chelonia mydas,Vireo bellii pusillus,prey,0.45
+Anaxyrus californicus,Vireo bellii pusillus,prey,0.4
 Spea hammondii,Puffinus opisthomelas,prey,0.9
+Bodianus pulcher,Puffinus opisthomelas,prey,0.9
+Chelonia mydas,Puffinus opisthomelas,prey,0.8
 Spea hammondii,Calidris alpina,prey,1.0
+Bodianus pulcher,Calidris alpina,prey,1.0
 Bodianus pulcher,Mareca penelope,prey,1.0
+Spea hammondii,Mareca penelope,prey,0.83
+Chelonia mydas,Mareca penelope,prey,0.83
 Ensatina eschscholtzii klauberi,Polioptila melanura,prey,0.6
+Gopherus agassizii,Polioptila melanura,prey,0.6
 Spea hammondii,Amazona finschi,prey,0.93
 Bodianus pulcher,Amazona finschi,prey,0.5
+Chelonia mydas,Amazona finschi,prey,0.5
 Bodianus pulcher,Eschrichtius robustus,prey,1.0
+Stereolepis gigas,Eschrichtius robustus,prey,0.83
+Chelonia mydas,Eschrichtius robustus,prey,0.83
 Spea hammondii,Selasphorus rufus,prey,0.84
 Anaxyrus californicus,Selasphorus rufus,prey,0.42
+Ensatina eschscholtzii klauberi,Selasphorus rufus,prey,0.37
+Chelonia mydas,Selasphorus rufus,prey,0.37
 Bodianus pulcher,Calidris canutus,prey,1.0
+Chelonia mydas,Calidris canutus,prey,1.0
 Spea hammondii,Limnodromus griseus,prey,1.0
+Chelonia mydas,Limnodromus griseus,prey,1.0
+Bodianus pulcher,Limnodromus griseus,prey,0.83
 Spea hammondii,Limnodromus scolopaceus,prey,0.88
+Bodianus pulcher,Limnodromus scolopaceus,prey,0.5
+Chelonia mydas,Limnodromus scolopaceus,prey,0.5
 Spea hammondii,Podiceps auritus,prey,0.89
+Bodianus pulcher,Podiceps auritus,prey,0.67
+Chelonia mydas,Podiceps auritus,prey,0.67
 Spea hammondii,Tringa flavipes,prey,1.0
+Bodianus pulcher,Tringa flavipes,prey,1.0
 Spea hammondii,Clangula hyemalis,prey,1.0
+Bodianus pulcher,Clangula hyemalis,prey,0.83
+Chelonia mydas,Clangula hyemalis,prey,0.83
 Spea hammondii,Contopus cooperi,prey,0.81
 Ensatina eschscholtzii klauberi,Contopus cooperi,prey,0.48
+Anaxyrus californicus,Contopus cooperi,prey,0.43
+Chelonia mydas,Contopus cooperi,prey,0.38
 Bodianus pulcher,Arenaria interpres,prey,1.0
+Chelonia mydas,Arenaria interpres,prey,1.0
+Spea hammondii,Arenaria interpres,prey,0.86
 Spea hammondii,Rallus obsoletus levipes,prey,1.0
+Bodianus pulcher,Rallus obsoletus levipes,prey,1.0
+Chelonia mydas,Rallus obsoletus levipes,prey,0.83
 Bodianus pulcher,Gavia adamsii,prey,1.0
+Stereolepis gigas,Gavia adamsii,prey,1.0
 Bodianus pulcher,Limosa fedoa,prey,1.0
+Chelonia mydas,Limosa fedoa,prey,1.0
+Spea hammondii,Limosa fedoa,prey,0.83
 Spea hammondii,Botaurus exilis,prey,1.0
+Anaxyrus californicus,Botaurus exilis,prey,0.57
+Bodianus pulcher,Botaurus exilis,prey,0.43
 Spea hammondii,Sternula antillarum browni,prey,1.0
+Bodianus pulcher,Sternula antillarum browni,prey,0.75
+Chelonia mydas,Sternula antillarum browni,prey,0.75
 Spea hammondii,Campylorhynchus brunneicapillus sandiegensis,prey,0.88
-Bodianus pulcher,Melanitta americana,prey,1.0
+Chelonia mydas,Campylorhynchus brunneicapillus sandiegensis,prey,0.5
+Anaxyrus californicus,Campylorhynchus brunneicapillus sandiegensis,prey,0.5
 Chelonia mydas,Passerculus sandwichensis rostratus,prey,1.0
+Spea hammondii,Passerculus sandwichensis rostratus,prey,0.8
+Bodianus pulcher,Melanitta americana,prey,1.0
+Chelonia mydas,Melanitta americana,prey,1.0
 Spea hammondii,Ptychoramphus aleuticus,prey,0.88
+Bodianus pulcher,Ptychoramphus aleuticus,prey,0.88
+Stereolepis gigas,Ptychoramphus aleuticus,prey,0.75
 Spea hammondii,Amazona oratrix,prey,1.0
+Bodianus pulcher,Amazona oratrix,prey,1.0
 Spea hammondii,Amazona finschi × viridigenalis,prey,0.9
+Chelonia mydas,Amazona finschi × viridigenalis,prey,0.8
+Bodianus pulcher,Amazona finschi × viridigenalis,prey,0.7
 Spea hammondii,Polioptila californica californica,prey,0.91
 Bodianus pulcher,Polioptila californica californica,prey,0.64
+Chelonia mydas,Polioptila californica californica,prey,0.64
 Spea hammondii,Balaenoptera musculus,prey,0.86
+Bodianus pulcher,Balaenoptera musculus,prey,0.86
+Stereolepis gigas,Balaenoptera musculus,prey,0.86
 Spea hammondii,Ammospiza nelsoni,prey,1.0
+Bodianus pulcher,Ammospiza nelsoni,prey,1.0
 Spea hammondii,Anarhynchus nivosus nivosus,prey,0.8
+Bodianus pulcher,Anarhynchus nivosus nivosus,prey,0.8
+Spea hammondii,Botaurus lentiginosus,prey,1.0
+Bodianus pulcher,Botaurus lentiginosus,prey,0.4
+Spea hammondii,Ardenna grisea,prey,0.89
+Bodianus pulcher,Ardenna grisea,prey,0.89
+Chelonia mydas,Ardenna grisea,prey,0.78
+Spea hammondii,Megaptera novaeangliae,prey,0.83
+Chelonia mydas,Megaptera novaeangliae,prey,0.83
+Bodianus pulcher,Megaptera novaeangliae,prey,0.67
+Bodianus pulcher,Zonotrichia querula,prey,1.0
+Spea hammondii,Zonotrichia querula,prey,0.8
+Spea hammondii,Cygnus buccinator,prey,1.0
+Bodianus pulcher,Cygnus buccinator,prey,1.0
+Spea hammondii,Mycteria americana,prey,1.0
+Anaxyrus californicus,Mycteria americana,prey,0.67
+Bodianus pulcher,Rissa tridactyla,prey,1.0
+Chelonia mydas,Rissa tridactyla,prey,1.0
+Spea hammondii,Rissa tridactyla,prey,0.83
+Bodianus pulcher,Ardenna creatopus,prey,1.0
+Chelonia mydas,Ardenna creatopus,prey,1.0
+Spea hammondii,Ardenna creatopus,prey,0.86
+Spea hammondii,Calidris pugnax,prey,1.0
+Bodianus pulcher,Calidris pugnax,prey,0.5
+Spea hammondii,Anarhynchus montanus,prey,1.0
+Bodianus pulcher,Anarhynchus montanus,prey,1.0
+Bodianus pulcher,Synthliboramphus scrippsi,prey,1.0
+Spea hammondii,Synthliboramphus scrippsi,prey,0.71
+Stereolepis gigas,Synthliboramphus scrippsi,prey,0.71
+Spea hammondii,Polioptila californica,prey,1.0
+Bodianus pulcher,Polioptila californica,prey,1.0
+Spea hammondii,Chlidonias niger,prey,1.0
+Bodianus pulcher,Chlidonias niger,prey,0.67
+Spea hammondii,Balaenoptera physalus,prey,0.83
+Chelonia mydas,Balaenoptera physalus,prey,0.83
+Bodianus pulcher,Balaenoptera physalus,prey,0.67
+Spea hammondii,Riparia riparia,prey,1.0
+Bodianus pulcher,Riparia riparia,prey,0.75
+Spea hammondii,Branta hutchinsii leucopareia,prey,0.8
+Bodianus pulcher,Branta hutchinsii leucopareia,prey,0.6
+Spea hammondii,Antigone canadensis,prey,1.0
+Bodianus pulcher,Antigone canadensis,prey,1.0
+Spea hammondii,Bison bison,prey,1.0
+Anaxyrus californicus,Bison bison,prey,1.0
+Spea hammondii,Coccyzus americanus,prey,0.5
+Ensatina eschscholtzii klauberi,Coccyzus americanus,prey,0.33
+Anaxyrus californicus,Coccyzus americanus,prey,0.33
+Bodianus pulcher,Balaenoptera musculus musculus,prey,1.0
+Stereolepis gigas,Balaenoptera musculus musculus,prey,1.0
+Spea hammondii,Calcarius ornatus,prey,1.0
+Bodianus pulcher,Calcarius ornatus,prey,1.0
+Spea hammondii,Lasiurus cinereus,prey,0.8
+Bodianus pulcher,Lasiurus cinereus,prey,0.4
+Spea hammondii,Calidris pusilla,prey,1.0
+Bodianus pulcher,Calidris pusilla,prey,1.0
+Spea hammondii,Corynorhinus townsendii,prey,0.6
+Ensatina eschscholtzii klauberi,Corynorhinus townsendii,prey,0.4
+Bodianus pulcher,Phoebastria nigripes,prey,1.0
+Chelonia mydas,Phoebastria nigripes,prey,1.0
+Spea hammondii,Colinus virginianus,prey,1.0
+Chelonia mydas,Colinus virginianus,prey,1.0
+Spea hammondii,Anser cygnoides,prey,1.0
+Anaxyrus californicus,Anser cygnoides,prey,1.0
+Chelonia mydas,Cypseloides niger,prey,1.0
+Mola mola,Cypseloides niger,prey,1.0
+Spea hammondii,Setophaga striata,prey,0.75
+Bodianus pulcher,Setophaga striata,prey,0.75
+Ensatina eschscholtzii klauberi,Leuconotopicus albolarvatus,prey,1.0
+Spea hammondii,Leuconotopicus albolarvatus,prey,0.67
+Spea hammondii,Hesperiphona vespertina,prey,1.0
+Ensatina eschscholtzii klauberi,Hesperiphona vespertina,prey,1.0
+Spea hammondii,Empidonax traillii brewsteri,prey,1.0
+Anaxyrus californicus,Empidonax traillii brewsteri,prey,1.0
+Spea hammondii,Synthliboramphus craveri,prey,1.0
+Bodianus pulcher,Synthliboramphus craveri,prey,1.0
+Spea hammondii,Euphagus carolinus,prey,1.0
+Bodianus pulcher,Euphagus carolinus,prey,1.0
+Spea hammondii,Dipodomys stephensi,prey,1.0
+Anaxyrus californicus,Dipodomys stephensi,prey,1.0
+Spea hammondii,Ardenna bulleri,prey,1.0
+Bodianus pulcher,Ardenna bulleri,prey,1.0
+Spea hammondii,Calidris mauri,prey,1.0
+Bodianus pulcher,Calidris mauri,prey,1.0
+Spea hammondii,Agapornis fischeri,prey,0.5
+Bodianus pulcher,Agapornis fischeri,prey,0.5
+Spea hammondii,Choeronycteris mexicana,prey,1.0
+Bodianus pulcher,Choeronycteris mexicana,prey,1.0
+Spea hammondii,Pterodroma cookii,prey,1.0
+Bodianus pulcher,Pterodroma cookii,prey,1.0
+Spea hammondii,Hydrobates leucorhous,prey,1.0
+Bodianus pulcher,Hydrobates leucorhous,prey,1.0
+Spea hammondii,Lasionycteris noctivagans,prey,1.0
+Bodianus pulcher,Ardenna carneipes,prey,1.0
+Stereolepis gigas,Ardenna carneipes,prey,1.0
+Spea hammondii,Hydrobates homochroa,prey,1.0
+Bodianus pulcher,Hydrobates homochroa,prey,1.0
+Bodianus pulcher,Hydrobates socorroensis,prey,1.0
+Stereolepis gigas,Hydrobates socorroensis,prey,1.0
+Spea hammondii,Empidonax traillii extimus,prey,1.0
+Ensatina eschscholtzii klauberi,Empidonax traillii extimus,prey,1.0
+Bodianus pulcher,Pseudorca crassidens,prey,1.0
+Stereolepis gigas,Pseudorca crassidens,prey,1.0
+Spea hammondii,Anthus spragueii,prey,1.0
+Bodianus pulcher,Anthus spragueii,prey,1.0
+Spea hammondii,Calidris ferruginea,prey,1.0
+Bodianus pulcher,Calidris ferruginea,prey,1.0
+Spea hammondii,Tursiops truncatus,prey,1.0
+Bodianus pulcher,Tursiops truncatus,prey,1.0
 Spea hammondii,Pandion haliaetus,prey,0.86
 Anaxyrus californicus,Pandion haliaetus,prey,0.46
 Bodianus pulcher,Pandion haliaetus,prey,0.43
+Chelonia mydas,Pandion haliaetus,prey,0.36
 Spea hammondii,Crotalus ruber,prey,0.74
 Anaxyrus californicus,Crotalus ruber,prey,0.41
 Ensatina eschscholtzii klauberi,Crotalus ruber,prey,0.36
+Gopherus agassizii,Crotalus ruber,prey,0.21
+Bodianus pulcher,Crotalus ruber,prey,0.18
 Spea hammondii,Phrynosoma blainvillii,prey,0.84
 Anaxyrus californicus,Phrynosoma blainvillii,prey,0.47
 Ensatina eschscholtzii klauberi,Phrynosoma blainvillii,prey,0.39
+Bodianus pulcher,Phrynosoma blainvillii,prey,0.24
+Chelonia mydas,Phrynosoma blainvillii,prey,0.24
 Spea hammondii,Falco peregrinus,prey,0.8
 Anaxyrus californicus,Falco peregrinus,prey,0.47
 Bodianus pulcher,Falco peregrinus,prey,0.37
+Chelonia mydas,Falco peregrinus,prey,0.33
 Spea hammondii,Aspidoscelis hyperythrus,prey,0.92
 Anaxyrus californicus,Aspidoscelis hyperythrus,prey,0.48
+Bodianus pulcher,Aspidoscelis hyperythrus,prey,0.4
+Chelonia mydas,Aspidoscelis hyperythrus,prey,0.36
 Spea hammondii,Circus hudsonius,prey,0.84
 Anaxyrus californicus,Circus hudsonius,prey,0.48
+Ensatina eschscholtzii klauberi,Circus hudsonius,prey,0.36
+Bodianus pulcher,Circus hudsonius,prey,0.32
 Spea hammondii,Haliaeetus leucocephalus,prey,0.88
 Anaxyrus californicus,Haliaeetus leucocephalus,prey,0.62
 Ensatina eschscholtzii klauberi,Haliaeetus leucocephalus,prey,0.5
+Actinemys pallida,Haliaeetus leucocephalus,prey,0.23
 Spea hammondii,Thamnophis hammondii,prey,0.87
 Anaxyrus californicus,Thamnophis hammondii,prey,0.47
 Ensatina eschscholtzii klauberi,Thamnophis hammondii,prey,0.37
+Bodianus pulcher,Thamnophis hammondii,prey,0.29
+Chelonia mydas,Thamnophis hammondii,prey,0.26
 Spea hammondii,Falco columbarius,prey,0.87
 Anaxyrus californicus,Falco columbarius,prey,0.48
+Bodianus pulcher,Falco columbarius,prey,0.35
+Chelonia mydas,Falco columbarius,prey,0.35
 Spea hammondii,Buteo swainsoni,prey,0.73
 Ensatina eschscholtzii klauberi,Buteo swainsoni,prey,0.45
+Anaxyrus californicus,Buteo swainsoni,prey,0.45
 Spea hammondii,Anniella stebbinsi,prey,0.86
 Anaxyrus californicus,Anniella stebbinsi,prey,0.5
 Bodianus pulcher,Anniella stebbinsi,prey,0.32
+Chelonia mydas,Anniella stebbinsi,prey,0.32
 Spea hammondii,Diadophis punctatus similis,prey,0.9
 Anaxyrus californicus,Diadophis punctatus similis,prey,0.5
 Ensatina eschscholtzii klauberi,Diadophis punctatus similis,prey,0.37
+Bodianus pulcher,Diadophis punctatus similis,prey,0.33
 Spea hammondii,Accipiter striatus,prey,0.84
 Anaxyrus californicus,Accipiter striatus,prey,0.48
+Ensatina eschscholtzii klauberi,Accipiter striatus,prey,0.36
+Bodianus pulcher,Accipiter striatus,prey,0.28
 Spea hammondii,Asio otus,prey,0.57
 Ensatina eschscholtzii klauberi,Asio otus,prey,0.5
+Gopherus agassizii,Asio otus,prey,0.43
 Spea hammondii,Plestiodon skiltonianus interparietalis,prey,0.89
 Anaxyrus californicus,Plestiodon skiltonianus interparietalis,prey,0.48
 Ensatina eschscholtzii klauberi,Plestiodon skiltonianus interparietalis,prey,0.33
+Bodianus pulcher,Plestiodon skiltonianus interparietalis,prey,0.3
 Ensatina eschscholtzii klauberi,Lampropeltis multifasciata,prey,1.0
 Spea hammondii,Lampropeltis multifasciata,prey,0.64
+Anaxyrus californicus,Lampropeltis multifasciata,prey,0.55
 Spea hammondii,Salvadora hexalepis virgultea,prey,0.87
 Anaxyrus californicus,Salvadora hexalepis virgultea,prey,0.65
+Ensatina eschscholtzii klauberi,Salvadora hexalepis virgultea,prey,0.48
+Actinemys pallida,Salvadora hexalepis virgultea,prey,0.22
 Spea hammondii,Aspidoscelis tigris stejnegeri,prey,0.8
 Anaxyrus californicus,Aspidoscelis tigris stejnegeri,prey,0.8
+Ensatina eschscholtzii klauberi,Aspidoscelis tigris stejnegeri,prey,0.47
 Spea hammondii,Masticophis fuliginosus,prey,0.91
 Anaxyrus californicus,Masticophis fuliginosus,prey,0.36
+Ensatina eschscholtzii klauberi,Masticophis fuliginosus,prey,0.27
+Spea hammondii,Taxidea taxus,prey,0.5
+Ensatina eschscholtzii klauberi,Taxidea taxus,prey,0.4
+Anaxyrus californicus,Taxidea taxus,prey,0.4
+Spea hammondii,Arizona elegans occidentalis,prey,0.92
+Anaxyrus californicus,Arizona elegans occidentalis,prey,0.58
+Ensatina eschscholtzii klauberi,Arizona elegans occidentalis,prey,0.5
+Gopherus agassizii,Phrynosoma mcallii,prey,1.0
+Cyprinodon macularius,Phrynosoma mcallii,prey,0.5
+Spea hammondii,Lampropeltis californiae,prey,1.0
+Bodianus pulcher,Lampropeltis californiae,prey,0.5
+Gopherus agassizii,Uma notata,prey,1.0
+Cyprinodon macularius,Uma notata,prey,0.67
+Spea hammondii,Coleonyx variegatus abbotti,prey,0.86
+Anaxyrus californicus,Coleonyx variegatus abbotti,prey,0.71
+Ensatina eschscholtzii klauberi,Coleonyx variegatus abbotti,prey,0.43
+Spea hammondii,Puma concolor couguar,prey,0.75
+Anaxyrus californicus,Puma concolor couguar,prey,0.5
+Gopherus agassizii,Puma concolor couguar,prey,0.5
+Spea hammondii,Buteo lineatus,prey,1.0
+Bodianus pulcher,Buteo lineatus,prey,0.5
+Spea hammondii,Arctocephalus townsendi,prey,0.75
+Bodianus pulcher,Arctocephalus townsendi,prey,0.75
+Spea hammondii,Uta stansburiana,prey,1.0
+Bodianus pulcher,Uta stansburiana,prey,1.0
+Spea hammondii,Falco peregrinus pealei,prey,1.0
+Bodianus pulcher,Falco peregrinus pealei,prey,1.0
+Gopherus agassizii,Xantusia gracilis,prey,1.0
+Bodianus pulcher,Enhydra lutris nereis,prey,1.0
+Stereolepis gigas,Enhydra lutris nereis,prey,1.0
+Spea hammondii,Gambelia copeii,prey,1.0
+Anaxyrus californicus,Gambelia copeii,prey,1.0
+Spea hammondii,Zalophus californianus,prey,1.0
+Bodianus pulcher,Zalophus californianus,prey,1.0
+Spea hammondii,Athene cunicularia hypugaea,prey,1.0
+Bodianus pulcher,Athene cunicularia hypugaea,prey,1.0
+Spea hammondii,Enhydra lutris,prey,1.0
+Bodianus pulcher,Enhydra lutris,prey,1.0
+Spea hammondii,Strix occidentalis,prey,0.5
+Ensatina eschscholtzii klauberi,Strix occidentalis,prey,0.5
+Spea hammondii,Elgaria multicarinata,prey,1.0
+Bodianus pulcher,Elgaria multicarinata,prey,1.0
+Spea hammondii,Eumetopias jubatus,prey,1.0
+Bodianus pulcher,Eumetopias jubatus,prey,1.0
+Spea hammondii,Buteo albonotatus,prey,1.0
+Bodianus pulcher,Buteo albonotatus,prey,1.0
+Spea hammondii,Bassariscus astutus octavus,prey,1.0
+Ensatina eschscholtzii klauberi,Bassariscus astutus octavus,prey,1.0
 Nannopterum auritum,Pandion haliaetus,prey,0.86
 Charadrius vociferus,Pandion haliaetus,prey,0.86
 Nycticorax nycticorax,Pandion haliaetus,prey,0.82
+Calypte costae,Pandion haliaetus,prey,0.71
 Calypte costae,Crotalus ruber,prey,0.85
 Lanius ludovicianus,Crotalus ruber,prey,0.74
 Charadrius vociferus,Crotalus ruber,prey,0.59
+Nycticorax nycticorax,Crotalus ruber,prey,0.56
+Nannopterum auritum,Crotalus ruber,prey,0.54
 Calypte costae,Phrynosoma blainvillii,prey,0.79
 Lanius ludovicianus,Phrynosoma blainvillii,prey,0.66
 Charadrius vociferus,Phrynosoma blainvillii,prey,0.63
+Nycticorax nycticorax,Phrynosoma blainvillii,prey,0.58
+Nannopterum auritum,Phrynosoma blainvillii,prey,0.55
 Charadrius vociferus,Falco peregrinus,prey,0.83
 Calypte costae,Falco peregrinus,prey,0.83
 Nycticorax nycticorax,Falco peregrinus,prey,0.77
+Nannopterum auritum,Falco peregrinus,prey,0.77
 Nycticorax nycticorax,Aspidoscelis hyperythrus,prey,0.88
 Nannopterum auritum,Aspidoscelis hyperythrus,prey,0.84
+Charadrius vociferus,Aspidoscelis hyperythrus,prey,0.84
+Calypte costae,Aspidoscelis hyperythrus,prey,0.8
 Calypte costae,Circus hudsonius,prey,0.96
 Charadrius vociferus,Circus hudsonius,prey,0.88
+Nycticorax nycticorax,Circus hudsonius,prey,0.8
+Nannopterum auritum,Circus hudsonius,prey,0.76
 Calypte costae,Haliaeetus leucocephalus,prey,0.85
 Charadrius vociferus,Haliaeetus leucocephalus,prey,0.77
 Nycticorax nycticorax,Haliaeetus leucocephalus,prey,0.69
+Nannopterum auritum,Haliaeetus leucocephalus,prey,0.69
 Calypte costae,Thamnophis hammondii,prey,0.71
 Charadrius vociferus,Thamnophis hammondii,prey,0.63
 Nycticorax nycticorax,Thamnophis hammondii,prey,0.61
+Nannopterum auritum,Thamnophis hammondii,prey,0.58
+Lanius ludovicianus,Thamnophis hammondii,prey,0.58
 Nycticorax nycticorax,Falco columbarius,prey,0.91
 Calypte costae,Falco columbarius,prey,0.91
+Nannopterum auritum,Falco columbarius,prey,0.87
+Charadrius vociferus,Falco columbarius,prey,0.87
 Nannopterum auritum,Buteo swainsoni,prey,0.82
 Charadrius vociferus,Buteo swainsoni,prey,0.82
+Calypte costae,Buteo swainsoni,prey,0.82
 Calypte costae,Anniella stebbinsi,prey,0.79
 Nycticorax nycticorax,Anniella stebbinsi,prey,0.71
 Nannopterum auritum,Anniella stebbinsi,prey,0.64
+Charadrius vociferus,Anniella stebbinsi,prey,0.64
 Calypte costae,Diadophis punctatus similis,prey,0.8
 Nycticorax nycticorax,Diadophis punctatus similis,prey,0.73
 Charadrius vociferus,Diadophis punctatus similis,prey,0.73
+Nannopterum auritum,Diadophis punctatus similis,prey,0.7
 Calypte costae,Accipiter striatus,prey,0.96
 Charadrius vociferus,Accipiter striatus,prey,0.8
+Nycticorax nycticorax,Accipiter striatus,prey,0.76
+Nannopterum auritum,Accipiter striatus,prey,0.72
 Calypte costae,Asio otus,prey,0.93
 Lanius ludovicianus,Asio otus,prey,0.79
+Selasphorus rufus,Asio otus,prey,0.64
 Calypte costae,Plestiodon skiltonianus interparietalis,prey,0.85
 Nycticorax nycticorax,Plestiodon skiltonianus interparietalis,prey,0.74
 Charadrius vociferus,Plestiodon skiltonianus interparietalis,prey,0.7
+Lanius ludovicianus,Plestiodon skiltonianus interparietalis,prey,0.63
 Calypte costae,Lampropeltis multifasciata,prey,0.82
 Contopus cooperi,Lampropeltis multifasciata,prey,0.82
+Ovis canadensis nelsoni,Lampropeltis multifasciata,prey,0.64
 Calypte costae,Salvadora hexalepis virgultea,prey,0.87
 Nannopterum auritum,Salvadora hexalepis virgultea,prey,0.7
+Charadrius vociferus,Salvadora hexalepis virgultea,prey,0.7
+Nycticorax nycticorax,Salvadora hexalepis virgultea,prey,0.65
 Calypte costae,Aspidoscelis tigris stejnegeri,prey,0.87
 Nycticorax nycticorax,Aspidoscelis tigris stejnegeri,prey,0.6
+Charadrius vociferus,Aspidoscelis tigris stejnegeri,prey,0.6
 Lanius ludovicianus,Masticophis fuliginosus,prey,0.73
 Calypte costae,Masticophis fuliginosus,prey,0.64
+Agelaius tricolor,Masticophis fuliginosus,prey,0.55
+Calypte costae,Taxidea taxus,prey,0.9
+Lanius ludovicianus,Taxidea taxus,prey,0.8
+Ovis canadensis nelsoni,Taxidea taxus,prey,0.6
+Calypte costae,Arizona elegans occidentalis,prey,0.92
+Lanius ludovicianus,Arizona elegans occidentalis,prey,0.75
+Nycticorax nycticorax,Arizona elegans occidentalis,prey,0.58
+Calypte costae,Phrynosoma mcallii,prey,1.0
+Lanius ludovicianus,Phrynosoma mcallii,prey,1.0
+Nycticorax nycticorax,Lampropeltis californiae,prey,1.0
+Charadrius vociferus,Lampropeltis californiae,prey,1.0
+Calypte costae,Uma notata,prey,1.0
+Lanius ludovicianus,Uma notata,prey,1.0
+Calypte costae,Coleonyx variegatus abbotti,prey,1.0
+Selasphorus rufus,Coleonyx variegatus abbotti,prey,1.0
+Nycticorax nycticorax,Coleonyx variegatus abbotti,prey,0.86
+Calypte costae,Puma concolor couguar,prey,1.0
+Lanius ludovicianus,Puma concolor couguar,prey,0.88
+Charadrius vociferus,Puma concolor couguar,prey,0.75
+Calypte costae,Buteo lineatus,prey,1.0
+Lanius ludovicianus,Buteo lineatus,prey,1.0
+Pelecanus occidentalis,Arctocephalus townsendi,prey,1.0
+Nycticorax nycticorax,Arctocephalus townsendi,prey,1.0
+Pelecanus occidentalis,Uta stansburiana,prey,1.0
+Nycticorax nycticorax,Uta stansburiana,prey,1.0
+Pelecanus occidentalis,Falco peregrinus pealei,prey,1.0
+Nycticorax nycticorax,Falco peregrinus pealei,prey,1.0
+Charadrius vociferus,Xantusia gracilis,prey,1.0
+Calypte costae,Xantusia gracilis,prey,1.0
+Pelecanus occidentalis,Enhydra lutris nereis,prey,1.0
+Nycticorax nycticorax,Enhydra lutris nereis,prey,1.0
+Pelecanus occidentalis,Zalophus californianus,prey,1.0
+Nycticorax nycticorax,Zalophus californianus,prey,1.0
+Pelecanus occidentalis,Athene cunicularia hypugaea,prey,1.0
+Nycticorax nycticorax,Athene cunicularia hypugaea,prey,1.0
+Pelecanus occidentalis,Enhydra lutris,prey,1.0
+Nycticorax nycticorax,Enhydra lutris,prey,1.0
+Calypte costae,Strix occidentalis,prey,1.0
+Selasphorus rufus,Strix occidentalis,prey,1.0
+Pelecanus occidentalis,Elgaria multicarinata,prey,1.0
+Nycticorax nycticorax,Elgaria multicarinata,prey,1.0
+Pelecanus occidentalis,Eumetopias jubatus,prey,1.0
+Nycticorax nycticorax,Eumetopias jubatus,prey,1.0
+Pelecanus occidentalis,Buteo albonotatus,prey,1.0
+Nycticorax nycticorax,Buteo albonotatus,prey,1.0
+Nycticorax nycticorax,Petrosaurus mearnsi,prey,1.0
+Calypte costae,Petrosaurus mearnsi,prey,1.0
+Nycticorax nycticorax,Bassariscus astutus octavus,prey,1.0
+Nannopterum auritum,Bassariscus astutus octavus,prey,1.0
 Texosporium sancti-jacobi,Bahiopsis laciniata,nutrient cycling,0.25
 Niebla cephalota,Bahiopsis laciniata,nutrient cycling,0.17
+Niebla ceruchis,Bahiopsis laciniata,nutrient cycling,0.12
+Placynthiella oligotropha,Bahiopsis laciniata,nutrient cycling,0.08
 Texosporium sancti-jacobi,Ceanothus verrucosus,nutrient cycling,0.4
 Niebla cephalota,Ceanothus verrucosus,nutrient cycling,0.27
+Niebla ceruchis,Ceanothus verrucosus,nutrient cycling,0.2
 Texosporium sancti-jacobi,Pinus torreyana,nutrient cycling,0.45
 Niebla cephalota,Pinus torreyana,nutrient cycling,0.36
+Niebla ceruchis,Pinus torreyana,nutrient cycling,0.27
 Texosporium sancti-jacobi,Quercus engelmannii,nutrient cycling,0.18
 Niebla cephalota,Quercus engelmannii,nutrient cycling,0.09
 Niebla ceruchis,Quercus engelmannii,nutrient cycling,0.06
+Placynthiella oligotropha,Quercus engelmannii,nutrient cycling,0.06
+Trapeliopsis glaucopholis,Quercus engelmannii,nutrient cycling,0.03
 Texosporium sancti-jacobi,Calochortus weedii,nutrient cycling,0.14
 Niebla cephalota,Calochortus weedii,nutrient cycling,0.1
 Niebla ceruchis,Calochortus weedii,nutrient cycling,0.07
+Placynthiella oligotropha,Calochortus weedii,nutrient cycling,0.05
+Trapeliopsis glaucopholis,Calochortus weedii,nutrient cycling,0.02
 Texosporium sancti-jacobi,Limonium perezii,nutrient cycling,0.35
 Niebla cephalota,Limonium perezii,nutrient cycling,0.24
+Niebla ceruchis,Limonium perezii,nutrient cycling,0.18
+Placynthiella oligotropha,Limonium perezii,nutrient cycling,0.12
 Texosporium sancti-jacobi,Leptosyne maritima,nutrient cycling,0.24
 Niebla cephalota,Leptosyne maritima,nutrient cycling,0.19
+Niebla ceruchis,Leptosyne maritima,nutrient cycling,0.14
+Placynthiella oligotropha,Leptosyne maritima,nutrient cycling,0.1
 Texosporium sancti-jacobi,Quercus dumosa,nutrient cycling,0.38
 Niebla cephalota,Quercus dumosa,nutrient cycling,0.25
+Niebla ceruchis,Quercus dumosa,nutrient cycling,0.19
+Placynthiella oligotropha,Quercus dumosa,nutrient cycling,0.12
 Texosporium sancti-jacobi,Bergerocactus emoryi,nutrient cycling,0.3
 Niebla cephalota,Bergerocactus emoryi,nutrient cycling,0.2
+Niebla ceruchis,Bergerocactus emoryi,nutrient cycling,0.15
+Placynthiella oligotropha,Bergerocactus emoryi,nutrient cycling,0.1
 Texosporium sancti-jacobi,Selaginella cinerascens,nutrient cycling,0.35
 Niebla cephalota,Selaginella cinerascens,nutrient cycling,0.24
+Niebla ceruchis,Selaginella cinerascens,nutrient cycling,0.18
+Placynthiella oligotropha,Selaginella cinerascens,nutrient cycling,0.12
 Texosporium sancti-jacobi,Adolphia californica,nutrient cycling,0.3
 Niebla cephalota,Adolphia californica,nutrient cycling,0.2
+Niebla ceruchis,Adolphia californica,nutrient cycling,0.15
+Placynthiella oligotropha,Adolphia californica,nutrient cycling,0.1
 Texosporium sancti-jacobi,Euphorbia misera,nutrient cycling,0.25
 Niebla cephalota,Euphorbia misera,nutrient cycling,0.25
+Niebla ceruchis,Euphorbia misera,nutrient cycling,0.19
+Placynthiella oligotropha,Euphorbia misera,nutrient cycling,0.12
 Texosporium sancti-jacobi,Brodiaea orcuttii,nutrient cycling,0.19
 Niebla cephalota,Brodiaea orcuttii,nutrient cycling,0.09
 Niebla ceruchis,Brodiaea orcuttii,nutrient cycling,0.06
+Placynthiella oligotropha,Brodiaea orcuttii,nutrient cycling,0.06
+Trapeliopsis glaucopholis,Brodiaea orcuttii,nutrient cycling,0.03
 Texosporium sancti-jacobi,Artemisia palmeri,nutrient cycling,0.33
 Niebla cephalota,Artemisia palmeri,nutrient cycling,0.17
+Niebla ceruchis,Artemisia palmeri,nutrient cycling,0.11
+Placynthiella oligotropha,Artemisia palmeri,nutrient cycling,0.11
 Turbinellus kauffmanii,Dudleya saxosa aloides,nutrient cycling,0.06
 Texosporium sancti-jacobi,Clematis pauciflora,nutrient cycling,0.19
 Niebla cephalota,Clematis pauciflora,nutrient cycling,0.13
 Niebla ceruchis,Clematis pauciflora,nutrient cycling,0.1
+Placynthiella oligotropha,Clematis pauciflora,nutrient cycling,0.06
+Trapeliopsis glaucopholis,Clematis pauciflora,nutrient cycling,0.03
 Texosporium sancti-jacobi,Juncus acutus leopoldii,nutrient cycling,0.3
 Niebla cephalota,Juncus acutus leopoldii,nutrient cycling,0.15
+Niebla ceruchis,Juncus acutus leopoldii,nutrient cycling,0.1
+Placynthiella oligotropha,Juncus acutus leopoldii,nutrient cycling,0.1
 Texosporium sancti-jacobi,Chamaebatia australis,nutrient cycling,0.29
 Niebla cephalota,Chamaebatia australis,nutrient cycling,0.14
+Niebla ceruchis,Chamaebatia australis,nutrient cycling,0.1
+Placynthiella oligotropha,Chamaebatia australis,nutrient cycling,0.1
 Texosporium sancti-jacobi,Calochortus weedii weedii,nutrient cycling,0.15
 Niebla cephalota,Calochortus weedii weedii,nutrient cycling,0.1
 Niebla ceruchis,Calochortus weedii weedii,nutrient cycling,0.08
+Placynthiella oligotropha,Calochortus weedii weedii,nutrient cycling,0.05
+Trapeliopsis glaucopholis,Calochortus weedii weedii,nutrient cycling,0.03
 Texosporium sancti-jacobi,Lycium californicum,nutrient cycling,0.4
+Niebla cephalota,Lycium californicum,nutrient cycling,0.4
+Niebla ceruchis,Lycium californicum,nutrient cycling,0.3
 Texosporium sancti-jacobi,Camissoniopsis bistorta,nutrient cycling,0.23
 Niebla cephalota,Camissoniopsis bistorta,nutrient cycling,0.18
+Niebla ceruchis,Camissoniopsis bistorta,nutrient cycling,0.14
+Placynthiella oligotropha,Camissoniopsis bistorta,nutrient cycling,0.09
 Texosporium sancti-jacobi,Dichondra occidentalis,nutrient cycling,0.4
 Niebla cephalota,Dichondra occidentalis,nutrient cycling,0.27
+Niebla ceruchis,Dichondra occidentalis,nutrient cycling,0.2
 Texosporium sancti-jacobi,Iva hayesiana,nutrient cycling,0.35
 Niebla cephalota,Iva hayesiana,nutrient cycling,0.18
+Niebla ceruchis,Iva hayesiana,nutrient cycling,0.12
+Placynthiella oligotropha,Iva hayesiana,nutrient cycling,0.12
 Texosporium sancti-jacobi,Pinus coulteri,nutrient cycling,0.07
+Trapeliopsis glaucopholis,Pinus coulteri,nutrient cycling,0.07
 Turbinellus kauffmanii,Pinus coulteri,nutrient cycling,0.07
 Niebla cephalota,Abronia maritima,nutrient cycling,0.44
+Texosporium sancti-jacobi,Abronia maritima,nutrient cycling,0.33
+Niebla ceruchis,Abronia maritima,nutrient cycling,0.33
 Texosporium sancti-jacobi,Salvia munzii,nutrient cycling,0.26
 Niebla cephalota,Salvia munzii,nutrient cycling,0.17
+Niebla ceruchis,Salvia munzii,nutrient cycling,0.13
+Placynthiella oligotropha,Salvia munzii,nutrient cycling,0.09
 Texosporium sancti-jacobi,Ophioglossum californicum,nutrient cycling,0.3
 Niebla cephalota,Ophioglossum californicum,nutrient cycling,0.2
+Niebla ceruchis,Ophioglossum californicum,nutrient cycling,0.15
+Placynthiella oligotropha,Ophioglossum californicum,nutrient cycling,0.1
 Texosporium sancti-jacobi,Allium haematochiton,nutrient cycling,0.28
 Niebla cephalota,Allium haematochiton,nutrient cycling,0.17
+Niebla ceruchis,Allium haematochiton,nutrient cycling,0.11
+Placynthiella oligotropha,Allium haematochiton,nutrient cycling,0.11
 Texosporium sancti-jacobi,Bloomeria clevelandii,nutrient cycling,0.35
 Niebla cephalota,Bloomeria clevelandii,nutrient cycling,0.18
+Niebla ceruchis,Bloomeria clevelandii,nutrient cycling,0.12
+Placynthiella oligotropha,Bloomeria clevelandii,nutrient cycling,0.12
 Texosporium sancti-jacobi,Harpagonella palmeri,nutrient cycling,0.2
 Niebla cephalota,Harpagonella palmeri,nutrient cycling,0.13
 Niebla ceruchis,Harpagonella palmeri,nutrient cycling,0.1
+Placynthiella oligotropha,Harpagonella palmeri,nutrient cycling,0.07
 Texosporium sancti-jacobi,Eryngium aristulatum parishii,nutrient cycling,0.38
 Niebla cephalota,Eryngium aristulatum parishii,nutrient cycling,0.19
+Niebla ceruchis,Eryngium aristulatum parishii,nutrient cycling,0.12
+Placynthiella oligotropha,Eryngium aristulatum parishii,nutrient cycling,0.12
 Texosporium sancti-jacobi,Ferocactus viridescens,nutrient cycling,0.25
 Niebla cephalota,Ferocactus viridescens,nutrient cycling,0.17
+Niebla ceruchis,Ferocactus viridescens,nutrient cycling,0.12
+Placynthiella oligotropha,Ferocactus viridescens,nutrient cycling,0.08
 Texosporium sancti-jacobi,Acmispon prostratus,nutrient cycling,0.29
 Niebla cephalota,Acmispon prostratus,nutrient cycling,0.29
+Niebla ceruchis,Acmispon prostratus,nutrient cycling,0.21
 Texosporium sancti-jacobi,Acanthomintha ilicifolia,nutrient cycling,0.25
 Niebla cephalota,Acanthomintha ilicifolia,nutrient cycling,0.12
+Niebla ceruchis,Acanthomintha ilicifolia,nutrient cycling,0.08
+Placynthiella oligotropha,Acanthomintha ilicifolia,nutrient cycling,0.08
 Texosporium sancti-jacobi,Cirsium occidentale,nutrient cycling,0.18
 Niebla cephalota,Cirsium occidentale,nutrient cycling,0.11
 Niebla ceruchis,Cirsium occidentale,nutrient cycling,0.07
+Placynthiella oligotropha,Cirsium occidentale,nutrient cycling,0.07
 Texosporium sancti-jacobi,Pinus torreyana torreyana,nutrient cycling,0.6
+Niebla ceruchis,Pinus torreyana torreyana,nutrient cycling,0.6
 Turbinellus kauffmanii,Calochortus concolor,nutrient cycling,0.07
 Texosporium sancti-jacobi,Calochortus dunnii,nutrient cycling,0.06
 Niebla cephalota,Calochortus dunnii,nutrient cycling,0.06
+Psilocybe cyanescens,Calochortus dunnii,nutrient cycling,0.06
 Texosporium sancti-jacobi,Oxalis californica,nutrient cycling,0.31
 Niebla cephalota,Oxalis californica,nutrient cycling,0.19
+Niebla ceruchis,Oxalis californica,nutrient cycling,0.12
+Placynthiella oligotropha,Oxalis californica,nutrient cycling,0.12
 Texosporium sancti-jacobi,Pogogyne abramsii,nutrient cycling,0.86
+Niebla cephalota,Pogogyne abramsii,nutrient cycling,0.43
+Niebla ceruchis,Pogogyne abramsii,nutrient cycling,0.29
 Niebla cephalota,Thermopsis californica semota,nutrient cycling,0.09
 Texosporium sancti-jacobi,Hesperocyparis forbesii,nutrient cycling,0.12
+Turbinellus kauffmanii,Hesperocyparis forbesii,nutrient cycling,0.12
 Texosporium sancti-jacobi,Dudleya brevifolia,nutrient cycling,0.43
+Niebla ceruchis,Dudleya brevifolia,nutrient cycling,0.29
+Niebla cephalota,Dudleya brevifolia,nutrient cycling,0.29
 Texosporium sancti-jacobi,Agave shawii shawii,nutrient cycling,0.33
 Niebla cephalota,Agave shawii shawii,nutrient cycling,0.27
+Niebla ceruchis,Agave shawii shawii,nutrient cycling,0.2
 Texosporium sancti-jacobi,Chloropyron maritimum maritimum,nutrient cycling,0.25
+Niebla cephalota,Chloropyron maritimum maritimum,nutrient cycling,0.25
+Niebla ceruchis,Chloropyron maritimum maritimum,nutrient cycling,0.12
 Texosporium sancti-jacobi,Ambrosia chenopodiifolia,nutrient cycling,0.38
+Niebla ceruchis,Ambrosia chenopodiifolia,nutrient cycling,0.25
+Niebla cephalota,Ambrosia chenopodiifolia,nutrient cycling,0.25
 Texosporium sancti-jacobi,Clarkia delicata,nutrient cycling,0.17
 Niebla cephalota,Clarkia delicata,nutrient cycling,0.09
+Niebla ceruchis,Clarkia delicata,nutrient cycling,0.04
+Placynthiella oligotropha,Clarkia delicata,nutrient cycling,0.04
 Texosporium sancti-jacobi,Diplacus clevelandii,nutrient cycling,0.06
 Niebla cephalota,Diplacus clevelandii,nutrient cycling,0.06
+Psilocybe cyanescens,Diplacus clevelandii,nutrient cycling,0.06
 Texosporium sancti-jacobi,Lilium humboldtii ocellatum,nutrient cycling,0.14
 Niebla cephalota,Lilium humboldtii ocellatum,nutrient cycling,0.05
+Trapeliopsis glaucopholis,Lilium humboldtii ocellatum,nutrient cycling,0.05
+Turbinellus kauffmanii,Lilium humboldtii ocellatum,nutrient cycling,0.05
 Texosporium sancti-jacobi,Ceanothus otayensis,nutrient cycling,0.25
 Texosporium sancti-jacobi,Dudleya variegata,nutrient cycling,0.35
 Niebla cephalota,Dudleya variegata,nutrient cycling,0.18
+Niebla ceruchis,Dudleya variegata,nutrient cycling,0.12
+Placynthiella oligotropha,Dudleya variegata,nutrient cycling,0.12
 Texosporium sancti-jacobi,Holocarpha virgata elongata,nutrient cycling,0.32
 Niebla cephalota,Holocarpha virgata elongata,nutrient cycling,0.16
+Niebla ceruchis,Holocarpha virgata elongata,nutrient cycling,0.11
+Placynthiella oligotropha,Holocarpha virgata elongata,nutrient cycling,0.11
 Texosporium sancti-jacobi,Romneya coulteri,nutrient cycling,0.33
 Niebla cephalota,Romneya coulteri,nutrient cycling,0.22
+Niebla ceruchis,Romneya coulteri,nutrient cycling,0.17
+Placynthiella oligotropha,Romneya coulteri,nutrient cycling,0.11
 Texosporium sancti-jacobi,Grindelia hallii,nutrient cycling,0.07
+Trapeliopsis glaucopholis,Grindelia hallii,nutrient cycling,0.07
 Turbinellus kauffmanii,Grindelia hallii,nutrient cycling,0.07
 Texosporium sancti-jacobi,Comarostaphylis diversifolia diversifolia,nutrient cycling,0.33
 Niebla cephalota,Comarostaphylis diversifolia diversifolia,nutrient cycling,0.17
+Niebla ceruchis,Comarostaphylis diversifolia diversifolia,nutrient cycling,0.11
+Placynthiella oligotropha,Comarostaphylis diversifolia diversifolia,nutrient cycling,0.11
 Texosporium sancti-jacobi,Heterotheca sessiliflora sessiliflora,nutrient cycling,0.36
 Niebla cephalota,Heterotheca sessiliflora sessiliflora,nutrient cycling,0.36
+Niebla ceruchis,Heterotheca sessiliflora sessiliflora,nutrient cycling,0.27
 Texosporium sancti-jacobi,Arctostaphylos glandulosa crassifolia,nutrient cycling,0.5
-Texosporium sancti-jacobi,Muhlenbergia microsperma,nutrient cycling,0.21
-Niebla cephalota,Muhlenbergia microsperma,nutrient cycling,0.17
+Niebla ceruchis,Arctostaphylos glandulosa crassifolia,nutrient cycling,0.2
+Niebla cephalota,Arctostaphylos glandulosa crassifolia,nutrient cycling,0.2
 Texosporium sancti-jacobi,Brodiaea filifolia,nutrient cycling,0.45
 Niebla ceruchis,Brodiaea filifolia,nutrient cycling,0.18
+Niebla cephalota,Brodiaea filifolia,nutrient cycling,0.18
+Texosporium sancti-jacobi,Muhlenbergia microsperma,nutrient cycling,0.21
+Niebla cephalota,Muhlenbergia microsperma,nutrient cycling,0.17
+Niebla ceruchis,Muhlenbergia microsperma,nutrient cycling,0.12
+Placynthiella oligotropha,Muhlenbergia microsperma,nutrient cycling,0.08
 Texosporium sancti-jacobi,Ambrosia monogyra,nutrient cycling,0.25
 Niebla cephalota,Ambrosia monogyra,nutrient cycling,0.25
-Texosporium sancti-jacobi,Phacelia stellaris,nutrient cycling,0.29
+Niebla ceruchis,Ambrosia monogyra,nutrient cycling,0.17
 Niebla cephalota,Tetracoccus dioicus,nutrient cycling,0.17
+Texosporium sancti-jacobi,Phacelia stellaris,nutrient cycling,0.29
+Niebla cephalota,Phacelia stellaris,nutrient cycling,0.29
+Niebla ceruchis,Phacelia stellaris,nutrient cycling,0.14
 Texosporium sancti-jacobi,Phacelia campanularia,nutrient cycling,0.27
 Niebla cephalota,Phacelia campanularia,nutrient cycling,0.14
+Niebla ceruchis,Phacelia campanularia,nutrient cycling,0.09
+Placynthiella oligotropha,Phacelia campanularia,nutrient cycling,0.09
 Texosporium sancti-jacobi,Cirsium occidentale californicum,nutrient cycling,0.14
 Niebla ceruchis,Cirsium occidentale californicum,nutrient cycling,0.09
+Niebla cephalota,Cirsium occidentale californicum,nutrient cycling,0.09
+Placynthiella oligotropha,Cirsium occidentale californicum,nutrient cycling,0.09
 Texosporium sancti-jacobi,Eucalyptus cladocalyx,nutrient cycling,0.43
 Niebla cephalota,Eucalyptus cladocalyx,nutrient cycling,0.29
-Turbinellus kauffmanii,Pseudotsuga macrocarpa,nutrient cycling,0.2
+Niebla ceruchis,Eucalyptus cladocalyx,nutrient cycling,0.21
 Texosporium sancti-jacobi,Phoenix canariensis,nutrient cycling,0.43
 Niebla cephalota,Phoenix canariensis,nutrient cycling,0.29
+Niebla ceruchis,Phoenix canariensis,nutrient cycling,0.21
+Turbinellus kauffmanii,Pseudotsuga macrocarpa,nutrient cycling,0.2
 Texosporium sancti-jacobi,Chaenactis artemisiifolia,nutrient cycling,0.27
 Niebla ceruchis,Chaenactis artemisiifolia,nutrient cycling,0.07
+Niebla cephalota,Chaenactis artemisiifolia,nutrient cycling,0.07
 Texosporium sancti-jacobi,Convolvulus simulans,nutrient cycling,0.33
 Niebla cephalota,Convolvulus simulans,nutrient cycling,0.2
+Niebla ceruchis,Convolvulus simulans,nutrient cycling,0.13
 Texosporium sancti-jacobi,Cistanthe maritima,nutrient cycling,0.31
 Niebla ceruchis,Cistanthe maritima,nutrient cycling,0.23
+Niebla cephalota,Cistanthe maritima,nutrient cycling,0.23
+Texosporium sancti-jacobi,Rosa minutifolia,nutrient cycling,0.33
+Psilocybe cyanescens,Rosa minutifolia,nutrient cycling,0.33
 Texosporium sancti-jacobi,Baccharis vanessae,nutrient cycling,0.21
 Niebla ceruchis,Baccharis vanessae,nutrient cycling,0.07
-Texosporium sancti-jacobi,Rosa minutifolia,nutrient cycling,0.33
+Niebla cephalota,Baccharis vanessae,nutrient cycling,0.07
+Psilocybe cyanescens,Pogogyne nudiuscula,nutrient cycling,0.25
 Niebla cephalota,Suaeda taxifolia,nutrient cycling,0.44
-Turbinellus kauffmanii,Dudleya saxosa,nutrient cycling,0.1
+Texosporium sancti-jacobi,Suaeda taxifolia,nutrient cycling,0.33
+Niebla ceruchis,Suaeda taxifolia,nutrient cycling,0.33
 Texosporium sancti-jacobi,Ceanothus cyaneus,nutrient cycling,0.43
+Trapeliopsis glaucopholis,Ceanothus cyaneus,nutrient cycling,0.14
+Turbinellus kauffmanii,Dudleya saxosa,nutrient cycling,0.1
+Texosporium sancti-jacobi,Suaeda esteroa,nutrient cycling,0.25
+Niebla cephalota,Suaeda esteroa,nutrient cycling,0.25
 Texosporium sancti-jacobi,Pentachaeta aurea aurea,nutrient cycling,0.27
 Niebla ceruchis,Pentachaeta aurea aurea,nutrient cycling,0.09
-Texosporium sancti-jacobi,Suaeda esteroa,nutrient cycling,0.25
+Niebla cephalota,Pentachaeta aurea aurea,nutrient cycling,0.09
+Placynthiella oligotropha,Pentachaeta aurea aurea,nutrient cycling,0.09
+Texosporium sancti-jacobi,Asplenium vespertinum,nutrient cycling,0.23
+Trapeliopsis glaucopholis,Asplenium vespertinum,nutrient cycling,0.08
 Texosporium sancti-jacobi,Ambrosia pumila,nutrient cycling,0.38
 Niebla ceruchis,Ambrosia pumila,nutrient cycling,0.08
-Texosporium sancti-jacobi,Asplenium vespertinum,nutrient cycling,0.23
-Texosporium sancti-jacobi,Nolina interrata,nutrient cycling,0.22
+Niebla cephalota,Ambrosia pumila,nutrient cycling,0.08
 Texosporium sancti-jacobi,Chorizanthe polygonoides longispina,nutrient cycling,0.29
 Niebla cephalota,Chorizanthe polygonoides longispina,nutrient cycling,0.19
-Texosporium sancti-jacobi,Frankenia palmeri,nutrient cycling,0.22
+Niebla ceruchis,Chorizanthe polygonoides longispina,nutrient cycling,0.14
+Placynthiella oligotropha,Chorizanthe polygonoides longispina,nutrient cycling,0.1
+Texosporium sancti-jacobi,Nolina interrata,nutrient cycling,0.22
+Niebla cephalota,Nolina interrata,nutrient cycling,0.11
+Trapeliopsis glaucopholis,Nolina interrata,nutrient cycling,0.11
 Texosporium sancti-jacobi,Deinandra conjugens,nutrient cycling,0.25
-Texosporium sancti-jacobi,Monardella hypoleuca lanata,nutrient cycling,0.14
-Niebla cephalota,Monardella hypoleuca lanata,nutrient cycling,0.07
+Niebla cephalota,Deinandra conjugens,nutrient cycling,0.25
+Texosporium sancti-jacobi,Frankenia palmeri,nutrient cycling,0.22
+Niebla cephalota,Frankenia palmeri,nutrient cycling,0.22
+Niebla ceruchis,Frankenia palmeri,nutrient cycling,0.11
 Texosporium sancti-jacobi,Platanthera cooperi,nutrient cycling,0.32
 Niebla cephalota,Platanthera cooperi,nutrient cycling,0.16
+Niebla ceruchis,Platanthera cooperi,nutrient cycling,0.11
+Placynthiella oligotropha,Platanthera cooperi,nutrient cycling,0.11
+Texosporium sancti-jacobi,Monardella hypoleuca lanata,nutrient cycling,0.14
+Niebla cephalota,Monardella hypoleuca lanata,nutrient cycling,0.07
+Psilocybe cyanescens,Monardella hypoleuca lanata,nutrient cycling,0.07
 Texosporium sancti-jacobi,Geothallus tuberosus,nutrient cycling,0.55
 Niebla cephalota,Geothallus tuberosus,nutrient cycling,0.36
+Niebla ceruchis,Geothallus tuberosus,nutrient cycling,0.27
+Psilocybe cyanescens,Quercus cedrosensis,nutrient cycling,0.33
 Texosporium sancti-jacobi,Epipactis gigantea,nutrient cycling,0.14
 Niebla ceruchis,Epipactis gigantea,nutrient cycling,0.07
+Niebla cephalota,Epipactis gigantea,nutrient cycling,0.07
 Turbinellus kauffmanii,Limnanthes alba parishii,nutrient cycling,0.09
 Texosporium sancti-jacobi,Hosackia crassifolia otayensis,nutrient cycling,0.17
+Niebla cephalota,Hosackia crassifolia otayensis,nutrient cycling,0.17
+Psilocybe cyanescens,Hosackia crassifolia otayensis,nutrient cycling,0.17
 Texosporium sancti-jacobi,Lilium humboldtii,nutrient cycling,0.05
 Niebla cephalota,Lilium humboldtii,nutrient cycling,0.05
+Psilocybe cyanescens,Lilium humboldtii,nutrient cycling,0.05
+Turbinellus kauffmanii,Lilium humboldtii,nutrient cycling,0.05
 Texosporium sancti-jacobi,Stemodia durantifolia,nutrient cycling,0.38
 Niebla cephalota,Stemodia durantifolia,nutrient cycling,0.23
+Niebla ceruchis,Stemodia durantifolia,nutrient cycling,0.15
 Texosporium sancti-jacobi,Sphenopholis interrupta californica,nutrient cycling,0.3
 Niebla cephalota,Sphenopholis interrupta californica,nutrient cycling,0.2
+Niebla ceruchis,Sphenopholis interrupta californica,nutrient cycling,0.15
+Placynthiella oligotropha,Sphenopholis interrupta californica,nutrient cycling,0.1
 Texosporium sancti-jacobi,Azolla filiculoides,nutrient cycling,0.38
 Niebla cephalota,Azolla filiculoides,nutrient cycling,0.15
+Niebla ceruchis,Azolla filiculoides,nutrient cycling,0.08
 Turbinellus kauffmanii,Euonymus occidentalis parishii,nutrient cycling,0.25
 Texosporium sancti-jacobi,Corethrogyne filaginifolia linifolia,nutrient cycling,0.5
+Niebla ceruchis,Corethrogyne filaginifolia linifolia,nutrient cycling,0.33
+Niebla cephalota,Corethrogyne filaginifolia linifolia,nutrient cycling,0.33
+Psilocybe cyanescens,Ornithostaphylos oppositifolia,nutrient cycling,1.0
 Texosporium sancti-jacobi,Dudleya viscida,nutrient cycling,0.29
+Niebla ceruchis,Dudleya viscida,nutrient cycling,0.14
+Niebla cephalota,Dudleya viscida,nutrient cycling,0.14
 Texosporium sancti-jacobi,Allium marvinii,nutrient cycling,0.08
+Trapeliopsis glaucopholis,Allium marvinii,nutrient cycling,0.08
 Texosporium sancti-jacobi,Chorizanthe orcuttiana,nutrient cycling,0.5
+Niebla ceruchis,Chorizanthe orcuttiana,nutrient cycling,0.33
+Niebla cephalota,Chorizanthe orcuttiana,nutrient cycling,0.33
 Texosporium sancti-jacobi,Dicranostegia orcuttiana,nutrient cycling,0.33
+Niebla cephalota,Dicranostegia orcuttiana,nutrient cycling,0.17
+Psilocybe cyanescens,Dicranostegia orcuttiana,nutrient cycling,0.17
 Turbinellus kauffmanii,Symphyotrichum defoliatum,nutrient cycling,0.11
 Texosporium sancti-jacobi,Juglans californica,nutrient cycling,0.24
 Niebla ceruchis,Juglans californica,nutrient cycling,0.12
+Niebla cephalota,Juglans californica,nutrient cycling,0.12
+Placynthiella oligotropha,Juglans californica,nutrient cycling,0.12
 Niebla ceruchis,Chaenactis glabriuscula glabriuscula,nutrient cycling,0.15
 Niebla cephalota,Chaenactis glabriuscula glabriuscula,nutrient cycling,0.15
-Texosporium sancti-jacobi,Clinopodium chandleri,nutrient cycling,0.12
-Texosporium sancti-jacobi,Eucalyptus conferruminata,nutrient cycling,0.45
-Niebla cephalota,Eucalyptus conferruminata,nutrient cycling,0.36
+Texosporium sancti-jacobi,Chaenactis glabriuscula glabriuscula,nutrient cycling,0.08
 Texosporium sancti-jacobi,Chorizanthe leptotheca,nutrient cycling,0.06
 Turbinellus kauffmanii,Chorizanthe leptotheca,nutrient cycling,0.06
+Texosporium sancti-jacobi,Eucalyptus conferruminata,nutrient cycling,0.45
+Niebla cephalota,Eucalyptus conferruminata,nutrient cycling,0.36
+Niebla ceruchis,Eucalyptus conferruminata,nutrient cycling,0.27
+Texosporium sancti-jacobi,Clinopodium chandleri,nutrient cycling,0.12
+Niebla cephalota,Clinopodium chandleri,nutrient cycling,0.12
+Psilocybe cyanescens,Clinopodium chandleri,nutrient cycling,0.12
 Texosporium sancti-jacobi,Erysimum ammophilum,nutrient cycling,0.6
+Niebla ceruchis,Erysimum ammophilum,nutrient cycling,0.4
 Texosporium sancti-jacobi,Navarretia fossalis,nutrient cycling,0.44
+Niebla ceruchis,Navarretia fossalis,nutrient cycling,0.22
+Niebla cephalota,Navarretia fossalis,nutrient cycling,0.22
 Texosporium sancti-jacobi,Fremontodendron mexicanum,nutrient cycling,0.17
+Niebla cephalota,Fremontodendron mexicanum,nutrient cycling,0.17
+Psilocybe cyanescens,Fremontodendron mexicanum,nutrient cycling,0.17
 Texosporium sancti-jacobi,Berberis nevinii,nutrient cycling,0.62
+Niebla ceruchis,Berberis nevinii,nutrient cycling,0.25
+Niebla cephalota,Berberis nevinii,nutrient cycling,0.25
 Texosporium sancti-jacobi,Packera ganderi,nutrient cycling,0.11
+Niebla cephalota,Packera ganderi,nutrient cycling,0.11
+Turbinellus kauffmanii,Packera ganderi,nutrient cycling,0.11
 Texosporium sancti-jacobi,Deinandra paniculata,nutrient cycling,0.4
+Niebla ceruchis,Deinandra paniculata,nutrient cycling,0.1
+Niebla cephalota,Deinandra paniculata,nutrient cycling,0.1
 Niebla cephalota,Cylindropuntia californica californica,nutrient cycling,0.29
+Texosporium sancti-jacobi,Cylindropuntia californica californica,nutrient cycling,0.14
+Niebla ceruchis,Cylindropuntia californica californica,nutrient cycling,0.14
 Texosporium sancti-jacobi,Microseris douglasii platycarpha,nutrient cycling,0.42
 Niebla ceruchis,Microseris douglasii platycarpha,nutrient cycling,0.17
+Niebla cephalota,Microseris douglasii platycarpha,nutrient cycling,0.17
 Texosporium sancti-jacobi,Isocoma menziesii decumbens,nutrient cycling,0.31
 Niebla cephalota,Isocoma menziesii decumbens,nutrient cycling,0.19
+Niebla ceruchis,Isocoma menziesii decumbens,nutrient cycling,0.12
+Placynthiella oligotropha,Isocoma menziesii decumbens,nutrient cycling,0.12
+Texosporium sancti-jacobi,Senecio aphanactis,nutrient cycling,0.33
+Niebla ceruchis,Senecio aphanactis,nutrient cycling,0.33
+Texosporium sancti-jacobi,Monardella viminea,nutrient cycling,0.62
+Niebla ceruchis,Monardella viminea,nutrient cycling,0.12
+Niebla cephalota,Monardella viminea,nutrient cycling,0.12
+Niebla ceruchis,Aphanisma blitoides,nutrient cycling,1.0
+Niebla cephalota,Aphanisma blitoides,nutrient cycling,1.0
+Texosporium sancti-jacobi,Orcuttia californica,nutrient cycling,0.67
+Trapeliopsis glaucopholis,Orcuttia californica,nutrient cycling,0.17
+Psilocybe cyanescens,Orcuttia californica,nutrient cycling,0.17
+Texosporium sancti-jacobi,Arctostaphylos otayensis,nutrient cycling,0.14
+Niebla cephalota,Arctostaphylos otayensis,nutrient cycling,0.14
+Psilocybe cyanescens,Arctostaphylos otayensis,nutrient cycling,0.14
+Turbinellus kauffmanii,Caulanthus simulans,nutrient cycling,0.1
+Texosporium sancti-jacobi,Nemacaulis denudata denudata,nutrient cycling,0.44
+Niebla cephalota,Nemacaulis denudata denudata,nutrient cycling,0.44
+Niebla ceruchis,Nemacaulis denudata denudata,nutrient cycling,0.33
+Texosporium sancti-jacobi,Cirsium occidentale occidentale,nutrient cycling,0.43
+Niebla cephalota,Cirsium occidentale occidentale,nutrient cycling,0.29
+Niebla ceruchis,Cirsium occidentale occidentale,nutrient cycling,0.14
+Texosporium sancti-jacobi,Nama stenocarpa,nutrient cycling,0.14
+Psilocybe cyanescens,Nama stenocarpa,nutrient cycling,0.14
+Turbinellus kauffmanii,Nama stenocarpa,nutrient cycling,0.14
+Turbinellus kauffmanii,Calochortus palmeri munzii,nutrient cycling,0.33
+Texosporium sancti-jacobi,Pseudognaphalium leucocephalum,nutrient cycling,0.25
+Niebla ceruchis,Pseudognaphalium leucocephalum,nutrient cycling,0.25
+Texosporium sancti-jacobi,Atriplex pacifica,nutrient cycling,0.44
+Niebla cephalota,Atriplex pacifica,nutrient cycling,0.44
+Niebla ceruchis,Atriplex pacifica,nutrient cycling,0.33
+Texosporium sancti-jacobi,Leptosyne gigantea,nutrient cycling,0.5
+Niebla ceruchis,Leptosyne gigantea,nutrient cycling,0.5
+Texosporium sancti-jacobi,Lepidium virginicum menziesii,nutrient cycling,0.5
+Niebla cephalota,Lepidium virginicum menziesii,nutrient cycling,0.25
+Niebla ceruchis,Lepidium virginicum menziesii,nutrient cycling,0.17
+Turbinellus kauffmanii,Scutellaria bolanderi austromontana,nutrient cycling,0.17
+Texosporium sancti-jacobi,Ericameria palmeri palmeri,nutrient cycling,0.11
+Psilocybe cyanescens,Ericameria palmeri palmeri,nutrient cycling,0.11
+Psilocybe cyanescens,Dudleya blochmaniae,nutrient cycling,0.25
+Texosporium sancti-jacobi,Pistia stratiotes,nutrient cycling,0.8
+Niebla ceruchis,Pistia stratiotes,nutrient cycling,0.2
+Psilocybe cyanescens,Calandrinia breweri,nutrient cycling,0.14
+Turbinellus kauffmanii,Calandrinia breweri,nutrient cycling,0.14
+Texosporium sancti-jacobi,Centromadia pungens laevis,nutrient cycling,0.33
+Niebla ceruchis,Hesperocyparis macrocarpa,nutrient cycling,0.5
+Niebla cephalota,Hesperocyparis macrocarpa,nutrient cycling,0.5
+Texosporium sancti-jacobi,Plagiobothrys collinus californicus,nutrient cycling,0.5
+Niebla ceruchis,Plagiobothrys collinus californicus,nutrient cycling,0.38
+Niebla cephalota,Plagiobothrys collinus californicus,nutrient cycling,0.38
+Texosporium sancti-jacobi,Eucalyptus leucoxylon,nutrient cycling,0.8
+Niebla cephalota,Eucalyptus leucoxylon,nutrient cycling,0.4
+Texosporium sancti-jacobi,Phacelia hubbyi,nutrient cycling,0.6
+Niebla ceruchis,Phacelia hubbyi,nutrient cycling,0.2
+Turbinellus kauffmanii,Phoradendron libocedri,nutrient cycling,0.25
+Texosporium sancti-jacobi,Astragalus deanei,nutrient cycling,0.2
+Texosporium sancti-jacobi,Castilleja affinis affinis,nutrient cycling,0.5
+Niebla ceruchis,Castilleja affinis affinis,nutrient cycling,0.33
+Niebla cephalota,Castilleja affinis affinis,nutrient cycling,0.33
+Texosporium sancti-jacobi,Thorneochloa diegoensis,nutrient cycling,0.33
+Texosporium sancti-jacobi,Quercus lobata,nutrient cycling,0.67
+Texosporium sancti-jacobi,Ribes viburnifolium,nutrient cycling,0.6
+Trapeliopsis glaucopholis,Ribes viburnifolium,nutrient cycling,0.2
+Texosporium sancti-jacobi,Centromadia parryi australis,nutrient cycling,0.33
+Niebla ceruchis,Centromadia parryi australis,nutrient cycling,0.33
+Texosporium sancti-jacobi,Eucalyptus rudis,nutrient cycling,0.4
+Niebla cephalota,Eucalyptus rudis,nutrient cycling,0.4
+Psilocybe cyanescens,Dudleya blochmaniae blochmaniae,nutrient cycling,0.5
+Texosporium sancti-jacobi,Triquetrella californica,nutrient cycling,1.0
+Trapeliopsis glaucopholis,Triquetrella californica,nutrient cycling,0.33
+Texosporium sancti-jacobi,Jacaranda mimosifolia,nutrient cycling,0.67
+Niebla cephalota,Jacaranda mimosifolia,nutrient cycling,0.33
+Texosporium sancti-jacobi,Nassella cernua,nutrient cycling,0.75
+Niebla ceruchis,Nassella cernua,nutrient cycling,0.5
+Turbinellus kauffmanii,Androsace elongata acuta,nutrient cycling,0.5
+Texosporium sancti-jacobi,Eucalyptus cornuta,nutrient cycling,0.67
+Niebla ceruchis,Eucalyptus cornuta,nutrient cycling,0.67
+Texosporium sancti-jacobi,Chaenactis glabriuscula orcuttiana,nutrient cycling,0.25
+Niebla ceruchis,Chaenactis glabriuscula orcuttiana,nutrient cycling,0.25
+Psilocybe cyanescens,Echinodorus berteroi,nutrient cycling,0.5
+Texosporium sancti-jacobi,Atriplex coulteri,nutrient cycling,0.33
+Psilocybe cyanescens,Atriplex coulteri,nutrient cycling,0.33
+Niebla ceruchis,Mucronea californica,nutrient cycling,1.0
+Niebla cephalota,Mucronea californica,nutrient cycling,1.0
+Texosporium sancti-jacobi,Lasthenia glabrata coulteri,nutrient cycling,1.0
+Niebla ceruchis,Lasthenia glabrata coulteri,nutrient cycling,0.67
+Texosporium sancti-jacobi,Aloina bifrons,nutrient cycling,0.75
+Niebla ceruchis,Aloina bifrons,nutrient cycling,0.5
+Niebla cephalota,Tortula californica,nutrient cycling,1.0
+Niebla ceruchis,Tortula californica,nutrient cycling,0.5
+Texosporium sancti-jacobi,Macadamia integrifolia,nutrient cycling,0.5
+Texosporium sancti-jacobi,Pinus radiata,nutrient cycling,0.5
+Niebla ceruchis,Ulmus americana,nutrient cycling,0.5
+Niebla cephalota,Ulmus americana,nutrient cycling,0.5
+Texosporium sancti-jacobi,Juglans hindsii,nutrient cycling,1.0
+Niebla ceruchis,Juglans hindsii,nutrient cycling,1.0
+Texosporium sancti-jacobi,Crumia latifolia,nutrient cycling,1.0
+Texosporium sancti-jacobi,Pyracantha koidzumii,nutrient cycling,0.5
+Niebla ceruchis,Pyracantha koidzumii,nutrient cycling,0.5
+Texosporium sancti-jacobi,Najas marina,nutrient cycling,0.5
+Turbinellus kauffmanii,Najas marina,nutrient cycling,0.5
+Texosporium sancti-jacobi,Corymbia calophylla,nutrient cycling,0.5
+Niebla ceruchis,Corymbia calophylla,nutrient cycling,0.5
+Texosporium sancti-jacobi,Galium proliferum,nutrient cycling,0.5
+Psilocybe cyanescens,Galium proliferum,nutrient cycling,0.5
+Texosporium sancti-jacobi,Tecoma stans,nutrient cycling,1.0
+Trapeliopsis glaucopholis,Tecoma stans,nutrient cycling,1.0
+Texosporium sancti-jacobi,Juncus phaeocephalus,nutrient cycling,1.0
+Niebla ceruchis,Juncus phaeocephalus,nutrient cycling,1.0
+Texosporium sancti-jacobi,Eucalyptus melliodora,nutrient cycling,1.0
+Texosporium sancti-jacobi,Pinus muricata,nutrient cycling,1.0
+Texosporium sancti-jacobi,Aphyllon parishii brachylobum,nutrient cycling,1.0
+Niebla ceruchis,Aphyllon parishii brachylobum,nutrient cycling,1.0
+Texosporium sancti-jacobi,Tortula amplexa,nutrient cycling,1.0
+Niebla ceruchis,Tortula amplexa,nutrient cycling,1.0
+Texosporium sancti-jacobi,Lantana depressa,nutrient cycling,1.0
+Texosporium sancti-jacobi,Eucalyptus botryoides,nutrient cycling,1.0
+Texosporium sancti-jacobi,Malva assurgentiflora assurgentiflora,nutrient cycling,1.0
+Texosporium sancti-jacobi,Agave potatorum,nutrient cycling,1.0
+Texosporium sancti-jacobi,Azolla microphylla,nutrient cycling,1.0

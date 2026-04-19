@@ -92,6 +92,59 @@ export async function GET(req: NextRequest) {
         return NextResponse.json({ answer: rows[0]?.ANSWER });
       }
 
+      case "ecosystem_species": {
+        if (!zone) return NextResponse.json({ error: "zone param required (comma-separated zone names)" }, { status: 400 });
+        const zoneNames = zone.split(",").map(z => z.trim().replace(/'/g, "''"));
+        const zoneLikeClause = zoneNames.map(z => `place_guess LIKE '%${z}%'`).join(" OR ");
+        rows = await executeQuery(conn, `
+          SELECT
+            scientific_name,
+            common_name,
+            iconic_taxon_name AS taxon_group,
+            COUNT(*) AS observation_count,
+            COUNT(DISTINCT place_guess) AS locations_found,
+            MIN(observed_on) AS first_seen,
+            MAX(observed_on) AS last_seen
+          FROM threatened_species
+          WHERE ${zoneLikeClause}
+          GROUP BY scientific_name, common_name, iconic_taxon_name
+          ORDER BY observation_count DESC
+          LIMIT 200
+        `);
+        return NextResponse.json({ species: rows, ecosystem: zone, total: rows.length });
+      }
+
+      case "ecosystem_stats": {
+        if (!zone) return NextResponse.json({ error: "zone param required" }, { status: 400 });
+        const ecoZones = zone.split(",").map(z => z.trim().replace(/'/g, "''"));
+        const ecoLike = ecoZones.map(z => `place_guess LIKE '%${z}%'`).join(" OR ");
+        const [speciesRows, trendRows, taxonRows] = await Promise.all([
+          executeQuery(conn, `
+            SELECT COUNT(DISTINCT scientific_name) AS unique_species,
+                   COUNT(*) AS total_observations,
+                   COUNT(DISTINCT place_guess) AS unique_locations
+            FROM threatened_species WHERE ${ecoLike}
+          `),
+          executeQuery(conn, `
+            SELECT YEAR(observed_on) AS year, COUNT(DISTINCT scientific_name) AS species_count,
+                   COUNT(*) AS obs_count
+            FROM threatened_species WHERE ${ecoLike}
+            GROUP BY YEAR(observed_on) ORDER BY year
+          `),
+          executeQuery(conn, `
+            SELECT iconic_taxon_name AS taxon, COUNT(DISTINCT scientific_name) AS species_count,
+                   COUNT(*) AS observation_count
+            FROM threatened_species WHERE ${ecoLike}
+            GROUP BY iconic_taxon_name ORDER BY observation_count DESC
+          `),
+        ]);
+        return NextResponse.json({
+          summary: speciesRows[0],
+          trends: trendRows,
+          taxonomy: taxonRows,
+        });
+      }
+
       case "species_lookup": {
         if (!species) return NextResponse.json({ error: "species param required" }, { status: 400 });
         const safeSp = species.replace(/'/g, "''");
