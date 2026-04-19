@@ -135,6 +135,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
   const [animatedVictims, setAnimatedVictims] = useState<Set<string>>(new Set());
   const [transform, setTransform] = useState<ZoomTransform>(zoomIdentity);
   const [aiInterpretation, setAiInterpretation] = useState<string | null>(null);
+  const [cascadeTree, setCascadeTree] = useState<{ root: string; tree: Map<string, string[]> } | null>(null);
   const [aiLoading, setAiLoading] = useState(false);
   const [selectedEcosystem, setSelectedEcosystem] = useState<string | null>(ecosystem ?? null);
   const [ecoSearchQuery, setEcoSearchQuery] = useState("");
@@ -154,7 +155,12 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
   const zoomBehavior = useMemo(() => {
     return d3Zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.1, 8])
-      .filter((event) => !event.button)
+      .filter((event) => {
+        if (event.button) return false;
+        const t = event.target as Element;
+        if (t.closest?.(".node-group")) return event.type === "wheel";
+        return true;
+      })
       .on("zoom", (event) => {
         const g = select(gRef.current);
         g.attr("transform", event.transform);
@@ -167,9 +173,11 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
   useEffect(() => {
     const svg = svgRef.current;
     if (!svg) return;
-    select(svg).call(zoomBehavior as any);
-    return () => { select(svg).on(".zoom", null); };
-  }, [zoomBehavior]);
+    const sel = select(svg);
+    sel.call(zoomBehavior as any);
+    sel.on("dblclick.zoom", null);
+    return () => { sel.on(".zoom", null); };
+  }, [zoomBehavior, showEcoBrowser]);
 
   useEffect(() => {
     setGraphsLoading(true);
@@ -200,7 +208,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     if (!el) return;
     const obs = new ResizeObserver((entries) => {
       const { width } = entries[0].contentRect;
-      setDims({ w: width, h: Math.max(550, width * 0.6) });
+      setDims({ w: width, h: Math.max(850, Math.min(window.innerHeight * 0.85, width * 1.0)) });
     });
     obs.observe(el);
     return () => obs.disconnect();
@@ -273,11 +281,35 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     return victims;
   }, [removedNodes, graphEdges]);
 
+  const getCascadeTree = useCallback((removedId: string): Map<string, string[]> => {
+    const tree = new Map<string, string[]>();
+    tree.set(removedId, []);
+    const victims = new Set<string>();
+    const queue = [removedId];
+    while (queue.length > 0) {
+      const current = queue.shift()!;
+      for (const edge of graphEdges) {
+        if (edge.source === current && !victims.has(edge.target) && !removedNodes.has(edge.target)) {
+          const altSources = graphEdges.filter((e) => e.target === edge.target && e.source !== current).map((e) => e.source).filter((s) => !removedNodes.has(s) && s !== removedId && !victims.has(s));
+          if (altSources.length === 0) {
+            victims.add(edge.target);
+            if (!tree.has(current)) tree.set(current, []);
+            tree.get(current)!.push(edge.target);
+            queue.push(edge.target);
+          }
+        }
+      }
+    }
+    return tree;
+  }, [removedNodes, graphEdges]);
+
   const cascadeVictims = hoveredNode ? getCascadeVictims(hoveredNode) : new Set<string>();
   const cascadeImpactPct = hoveredNode ? ((cascadeVictims.size + 1) / graphNodes.length) * 100 : 0;
 
   const animateCascade = useCallback((removedId: string) => {
     const victims = getCascadeVictims(removedId);
+    const tree = getCascadeTree(removedId);
+    setCascadeTree({ root: removedId, tree });
     setCascadeAnimating(true);
     setAnimatedVictims(new Set());
     const trophicOrder = ["producer", "decomposer", "pollinator", "primary_consumer", "secondary_consumer", "tertiary_consumer", "apex_predator"];
@@ -475,7 +507,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
         <div className="flex items-center gap-3 flex-wrap">
           {!zone && <button onClick={() => { if (showEcoBrowser) setShowEcoBrowser(false); else { setShowEcoBrowser(true); setSelectedEcosystem(null); } }} className="text-xs px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 transition">{showEcoBrowser ? "Show Full Graph" : "Browse Ecosystems"}</button>}
           {hoveredNode && cascadeVictims.size > 0 && <span className="text-sm text-orange-400 font-medium animate-pulse">cascade impact: {cascadeImpactPct.toFixed(1)}%</span>}
-          {totalRemoved > 0 && (<><span className="text-sm text-red-400 font-medium">{totalRemoved} removed</span><button onClick={() => { setRemovedNodes(new Set()); setSelectedNode(null); setAiInterpretation(null); }} className="text-xs px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white/60 transition">Reset</button></>)}
+          {totalRemoved > 0 && (<><span className="text-sm text-red-400 font-medium">{totalRemoved} removed</span><button onClick={() => { setRemovedNodes(new Set()); setSelectedNode(null); setAiInterpretation(null); setCascadeTree(null); }} className="text-xs px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white/60 transition">Reset</button></>)}
         </div>
       </div>
 
@@ -548,12 +580,12 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
       {(!showEcoBrowser || zone) && (
         <div className="relative rounded-xl overflow-hidden border border-white/[0.04]" style={{ background: "#060a07" }}>
           <div className="absolute inset-0 pointer-events-none z-[1]" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, transparent 40%, rgba(0,0,0,0.6) 100%)" }} />
-          <svg 
-            ref={svgRef} 
-            width={dims.w} 
-            height={dims.h} 
-            className="w-full cursor-grab active:cursor-grabbing outline-none" 
-            onClick={() => { setSelectedNode(null); setSnowflakeData(null); if (searchQuery && svgRef.current) { setSearchQuery(""); select(svgRef.current).transition().duration(400).call(zoomBehavior.transform as any, zoomIdentity); } }}
+          <svg
+            ref={svgRef}
+            width={dims.w}
+            height={dims.h}
+            className="w-full cursor-grab active:cursor-grabbing outline-none"
+            style={{ touchAction: "none" }}
           >
             <style>
               {`
@@ -567,16 +599,29 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
             </style>
             <defs>
               <radialGradient id="bg-gradient" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(16,70,32,0.04)" /><stop offset="60%" stopColor="rgba(6,10,7,0)" /></radialGradient>
+              {Object.entries(EDGE_COLORS_BRIGHT).map(([type, color]) => (
+                <marker key={`arrow-${type}`} id={`arrow-${type.replace(/\s+/g, "-")}`} viewBox="0 0 10 6" refX="9" refY="3" markerWidth="8" markerHeight="5" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 3 L 0 6 z" fill={color} opacity={0.7} />
+                </marker>
+              ))}
+              {Object.entries(EDGE_COLORS).map(([type, color]) => (
+                <marker key={`arrow-dim-${type}`} id={`arrow-dim-${type.replace(/\s+/g, "-")}`} viewBox="0 0 10 6" refX="9" refY="3" markerWidth="6" markerHeight="4" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 3 L 0 6 z" fill={color} />
+                </marker>
+              ))}
+              <marker id="arrow-cascade" viewBox="0 0 10 6" refX="9" refY="3" markerWidth="8" markerHeight="5" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 3 L 0 6 z" fill="#ef4444" opacity={0.9} />
+              </marker>
               {simNodes.map(node => (
                 <clipPath key={`clip-${node.data.id}`} id={`clip-${node.data.id.replace(/[^a-zA-Z0-9]/g, "-")}`}>
                   <circle cx={node.x} cy={node.y} r={node.radius + (hoveredNode === node.data.id ? 4.5 : 0.5)} />
                 </clipPath>
               ))}
             </defs>
-            <rect width={dims.w} height={dims.h} fill="#060a07" />
-            <rect width={dims.w} height={dims.h} fill="url(#bg-gradient)" />
+            <rect width={dims.w} height={dims.h} fill="#060a07" onClick={() => { setSelectedNode(null); setSnowflakeData(null); if (searchQuery) { setSearchQuery(""); select(svgRef.current!).transition().duration(400).call(zoomBehavior.transform as any, zoomIdentity); } }} />
+            <rect width={dims.w} height={dims.h} fill="url(#bg-gradient)" pointerEvents="none" />
             <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="0.4" fill="rgba(110,231,183,0.06)" /></pattern>
-            <rect width={dims.w} height={dims.h} fill="url(#dot-grid)" />
+            <rect width={dims.w} height={dims.h} fill="url(#dot-grid)" pointerEvents="none" />
             <g ref={gRef} transform={transform.toString()}>
               {simLinks.map((link, i) => {
                 const src = link.source as SimNode; const tgt = link.target as SimNode;
@@ -590,16 +635,19 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                 const dist = Math.sqrt(dx * dx + dy * dy); const curv = Math.min(30, dist * 0.15);
                 const nx = -dy / (dist || 1); const ny = dx / (dist || 1);
                 const path = `M ${src.x} ${src.y} Q ${mx + nx * curv} ${my + ny * curv} ${tgt.x} ${tgt.y}`;
+                const markerId = link.edgeType.replace(/\s+/g, "-");
+                const arrowId = isCascadeEdge || isAnimCascade ? "arrow-cascade" : isFocused ? `arrow-${markerId}` : `arrow-dim-${markerId}`;
                 return (
                   <g key={i}>
-                    <path 
-                      d={path} 
-                      fill="none" 
-                      stroke={isCascadeEdge || isAnimCascade ? "#ef4444" : isFocused ? EDGE_COLORS_BRIGHT[link.edgeType] || "#fff" : dimmed ? "rgba(255,255,255,0.01)" : EDGE_COLORS[link.edgeType] || "rgba(255,255,255,0.05)"} 
-                      strokeWidth={isCascadeEdge || isAnimCascade ? 1.5 : isFocused ? 1 : 0.4} 
-                      opacity={dimmed ? 0.15 : 1} 
-                      strokeDasharray={isCascadeEdge ? "5 3" : isFocused ? "none" : "2 4"} 
+                    <path
+                      d={path}
+                      fill="none"
+                      stroke={isCascadeEdge || isAnimCascade ? "#ef4444" : isFocused ? EDGE_COLORS_BRIGHT[link.edgeType] || "#fff" : dimmed ? "rgba(255,255,255,0.01)" : EDGE_COLORS[link.edgeType] || "rgba(255,255,255,0.05)"}
+                      strokeWidth={isCascadeEdge || isAnimCascade ? 1.5 : isFocused ? 1 : 0.4}
+                      opacity={dimmed ? 0.15 : 1}
+                      strokeDasharray={isCascadeEdge ? "5 3" : isFocused ? "none" : "2 4"}
                       className={isFocused || isCascadeEdge || isAnimCascade ? "pulse-edge" : ""}
+                      markerEnd={dimmed ? undefined : `url(#${arrowId})`}
                     />
                     {isCascadeEdge && <circle r="2.5" fill="#ef4444" opacity={0.9}><animateMotion dur="1.2s" repeatCount="indefinite" path={path} /></circle>}
                   </g>
@@ -615,6 +663,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                 const isConnected = connectedTo.has(node.data.id); const isCascadeVictim = cascadeVictims.has(node.data.id);
                 const isAnimVictim = animatedVictims.has(node.data.id); const isDeclining = node.data.decline_trend < -30;
                 const dimmed = activeId && !isHovered && !isSelected && !isConnected && !isCascadeVictim;
+                const isKeystone = (node.data.zone_keystone_score ?? node.data.keystone_score ?? 0) > 0.02;
                 const r = isHovered || isSelected ? node.radius + 6 : node.radius + 2;
                 let rippleX = 0, rippleY = 0;
                 if (hNode && !isHovered) {
@@ -653,7 +702,8 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                     {!dimmed && <circle cx={node.x} cy={node.y} r={r + 12} fill={color} opacity={isHovered || isSelected ? 0.18 : 0.06}  />}
                     {isDeclining && !dimmed && !isCascadeVictim && <circle cx={node.x} cy={node.y} r={r + 5} fill="none" stroke="#f97316" strokeWidth={0.8} strokeDasharray="2 2" opacity={0.4}><animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" /></circle>}
                     {isAnimVictim && <circle cx={node.x} cy={node.y} r={r} fill="none" stroke="#ef4444" strokeWidth={2} opacity={0}><animate attributeName="r" from={String(r)} to={String(r + 30)} dur="0.7s" fill="freeze" /><animate attributeName="opacity" from="0.8" to="0" dur="0.7s" fill="freeze" /></circle>}
-                    <circle cx={node.x} cy={node.y} r={r} fill={isCascadeVictim || isAnimVictim ? "rgba(239,68,68,0.3)" : "#0a0f0b"} stroke={isSelected ? "#fff" : isHovered ? "rgba(255,255,255,0.7)" : isCascadeVictim ? "#ef4444" : color} strokeWidth={isSelected ? 2.5 : isHovered ? 2 : 1.5} opacity={isCascadeVictim ? 0.4 : 1} />
+                    {isKeystone && !dimmed && !isCascadeVictim && <circle cx={node.x} cy={node.y} r={r + 7} fill="none" stroke="#fbbf24" strokeWidth={1} strokeDasharray="3 2" opacity={0.5}><animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite" /></circle>}
+                    <circle cx={node.x} cy={node.y} r={r} fill={isCascadeVictim || isAnimVictim ? "rgba(239,68,68,0.3)" : "#0a0f0b"} stroke={isSelected ? "#fff" : isHovered ? "rgba(255,255,255,0.7)" : isCascadeVictim ? "#ef4444" : isKeystone ? "#fbbf24" : color} strokeWidth={isSelected ? 2.5 : isHovered ? 2 : isKeystone ? 2 : 1.5} opacity={isCascadeVictim ? 0.4 : 1} />
                     {(() => {
                       const photoUrl = speciesPhotos[node.data.id];
                       const clipId = `clip-${node.data.id.replace(/[^a-zA-Z0-9]/g, "-")}`;
@@ -675,7 +725,8 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                       return <circle cx={node.x} cy={node.y} r={r - 2} fill={`${color}30`} style={{ pointerEvents: "none" }} />;
                     })()}
                     {(isCascadeVictim || isAnimVictim) && <text x={node.x} y={(node.y ?? 0) + r * 0.35} textAnchor="middle" fill="#ef4444" fontSize={r * 1.4} fontWeight="bold" style={{ pointerEvents: "none" }}>{"\u00d7"}</text>}
-                    {(isHovered || isSelected) && <text x={node.x} y={(node.y ?? 0) + r + 12} textAnchor="middle" fill={isCascadeVictim ? "rgba(239,68,68,0.6)" : "#fff"} fontSize={10} fontWeight="600" letterSpacing="0.01em" paintOrder="stroke" stroke="rgba(6,10,7,0.9)" strokeWidth={4} style={{ textDecoration: isCascadeVictim ? "line-through" : "none" }}>{node.data.common_name || node.data.id}</text>}
+                    {isKeystone && !dimmed && !isCascadeVictim && <text x={node.x} y={(node.y ?? 0) - r - 6} textAnchor="middle" fill="#fbbf24" fontSize={9} opacity={0.6} style={{ pointerEvents: "none" }}>★</text>}
+                    {(isHovered || isSelected) && <text x={node.x} y={(node.y ?? 0) + r + 12} textAnchor="middle" fill={isCascadeVictim ? "rgba(239,68,68,0.6)" : isKeystone ? "#fbbf24" : "#fff"} fontSize={10} fontWeight="600" letterSpacing="0.01em" paintOrder="stroke" stroke="rgba(6,10,7,0.9)" strokeWidth={4} style={{ textDecoration: isCascadeVictim ? "line-through" : "none" }}>{node.data.common_name || node.data.id}</text>}
                   </g>
                 );
               });
@@ -751,8 +802,49 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
         )}
       </AnimatePresence>
 
+      {cascadeTree && cascadeTree.tree.size > 1 && (() => {
+        const { root, tree } = cascadeTree;
+        const rootNode = graphNodes.find((n) => n.id === root);
+        const renderBranch = (nodeId: string, depth: number): React.ReactNode => {
+          const node = graphNodes.find((n) => n.id === nodeId);
+          if (!node) return null;
+          const children = tree.get(nodeId) || [];
+          const color = LEVEL_COLORS[node.trophic_level] || "#64748b";
+          const isRoot = depth === 0;
+          return (
+            <div key={nodeId} className={depth > 0 ? "ml-6 border-l border-white/[0.06] pl-4" : ""}>
+              <div className="flex items-center gap-2 py-1.5">
+                {depth > 0 && <svg width="12" height="12" className="shrink-0 -ml-[21px] mr-1"><path d="M 0 0 L 6 6 L 12 0" fill="none" stroke="rgba(239,68,68,0.3)" strokeWidth="1.5" /></svg>}
+                <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: isRoot ? "#ef4444" : color, opacity: isRoot ? 1 : 0.7 }} />
+                <span className={`text-xs font-medium ${isRoot ? "text-red-400" : "text-white/60"}`}>
+                  {node.common_name || node.id}
+                </span>
+                <span className="text-[9px] text-white/20 capitalize">{node.trophic_level.replace(/_/g, " ")}</span>
+                {isRoot && <span className="text-[9px] px-1.5 py-0.5 rounded bg-red-500/15 text-red-400/70 font-mono">REMOVED</span>}
+                {children.length > 0 && <span className="text-[9px] text-red-400/40 font-mono">→ {children.length}</span>}
+              </div>
+              {children.map((cid) => renderBranch(cid, depth + 1))}
+            </div>
+          );
+        };
+        return (
+          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} transition={{ duration: 0.4, delay: 0.2 }} className="mt-4 rounded-xl border border-red-500/10 overflow-hidden" style={{ background: "rgba(14,6,6,0.5)" }}>
+            <div className="p-4">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-red-400" />
+                <span className="text-[10px] uppercase tracking-wider text-red-400/70 font-medium">Cascade Flowchart</span>
+                <span className="text-[9px] text-white/20 ml-auto">{tree.size - 1} species collapsed</span>
+              </div>
+              <div className="max-h-64 overflow-y-auto pr-2 scrollbar-thin">
+                {renderBranch(root, 0)}
+              </div>
+            </div>
+          </motion.div>
+        );
+      })()}
+
       <div className="mt-4 flex items-center justify-between text-xs text-white/30">
-        <span>Drag to pan · Click to inspect · <span className="text-orange-400/50">◌ = declining</span></span>
+        <span>Drag to pan · Click to inspect · <span className="text-orange-400/50">◌ = declining</span> · <span className="text-amber-400/50">★ = keystone</span></span>
         <span>{simNodes.length} species · {simLinks.length} connections{selectedEcosystem && ` in ${selectedEcosystem}`}{zone && ` in ${zone.name}`}</span>
       </div>
     </motion.div>
