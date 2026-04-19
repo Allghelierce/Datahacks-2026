@@ -194,7 +194,7 @@ export default function Home() {
 
             {/* Footer stats */}
             {data && (
-              <div className="mt-10 flex items-center gap-4 text-xs text-white/10 font-mono tracking-wide">
+              <div className="mt-10 flex items-center gap-4 text-xs text-white/45 font-mono tracking-wide">
                 <span>{data.global_stats.totalSpecies} species</span>
                 <span className="text-white/5">|</span>
                 <span>{data.global_stats.totalObservations.toLocaleString()} observations</span>
