@@ -78,13 +78,13 @@ interface Props {
 }
 
 const LEVEL_COLORS: Record<string, string> = {
-  producer: "#6ee7b7",
-  pollinator: "#fda4af",
+  producer: "#34d399",
+  pollinator: "#f9a8d4",
   primary_consumer: "#fcd34d",
-  secondary_consumer: "#67e8f9",
-  tertiary_consumer: "#a5b4fc",
-  apex_predator: "#fca5a5",
-  decomposer: "#c4b5fd",
+  secondary_consumer: "#38bdf8",
+  tertiary_consumer: "#818cf8",
+  apex_predator: "#f87171",
+  decomposer: "#a78bfa",
 };
 
 const EDGE_COLORS: Record<string, string> = {
@@ -494,7 +494,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     const sLinks: SimLink[] = graphEdges.filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target)).map((e) => ({ source: nodeMap.get(e.source)!, target: nodeMap.get(e.target)!, edgeType: e.type })).filter((l) => l.source && l.target);
     
     const trophicGroups = Object.keys(TROPHIC_LAYERS);
-    const clusterRadius = Math.min(dims.w, dims.h) * 0.38;
+    const clusterRadius = Math.min(dims.w, dims.h) * 0.55;
     const clusterCenters: Record<string, { x: number; y: number }> = {};
     trophicGroups.forEach((g, i) => {
       const angle = (2 * Math.PI * i) / trophicGroups.length - Math.PI / 2;
@@ -502,11 +502,11 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     });
 
     const sim = forceSimulation<SimNode>(sNodes)
-      .force("link", forceLink<SimNode, SimLink>(sLinks).id((d) => d.data.id).distance(50).strength(0.03))
-      .force("charge", forceManyBody<SimNode>().strength(-80).distanceMax(200))
-      .force("collide", forceCollide<SimNode>().radius((d) => d.radius + 10).strength(0.9).iterations(3))
-      .force("x", forceX<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { x: dims.w / 2 }).x).strength(0.35))
-      .force("y", forceY<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { y: dims.h / 2 }).y).strength(0.35))
+      .force("link", forceLink<SimNode, SimLink>(sLinks).id((d) => d.data.id).distance(40).strength(0.02))
+      .force("charge", forceManyBody<SimNode>().strength(-60).distanceMax(180))
+      .force("collide", forceCollide<SimNode>().radius((d) => d.radius + 8).strength(0.9).iterations(3))
+      .force("x", forceX<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { x: dims.w / 2 }).x).strength(0.55))
+      .force("y", forceY<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { y: dims.h / 2 }).y).strength(0.55))
       .alphaDecay(0.03).velocityDecay(0.4);
 
     const drag = d3Drag<any, SimNode>()
@@ -783,9 +783,9 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
               {Object.keys(TROPHIC_LAYERS).map((level, i) => {
                 const trophicKeys = Object.keys(TROPHIC_LAYERS);
                 const angle = (2 * Math.PI * i) / trophicKeys.length - Math.PI / 2;
-                const cr = Math.min(dims.w, dims.h) * 0.45;
-                const lx = dims.w / 2 + Math.cos(angle) * (cr * 1.85);
-                const ly = dims.h / 2 + Math.sin(angle) * (cr * 1.85);
+                const cr = Math.min(dims.w, dims.h) * 0.55;
+                const lx = dims.w / 2 + Math.cos(angle) * (cr * 1.55);
+                const ly = dims.h / 2 + Math.sin(angle) * (cr * 1.55);
                 const label = level.replace(/_/g, " ");
                 const color = LEVEL_COLORS[level] || "#666";
                 return (

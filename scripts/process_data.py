@@ -443,35 +443,147 @@ node_by_level = defaultdict(list)
 for node in dependency_nodes:
     node_by_level[node["trophic_level"]].append(node)
 
-# Build edges with realistic specialization:
-# - Species with narrow ranges (few zones) are specialists → 1 food source
-# - Species with medium ranges → 2 food sources
-# - Widespread species → 3 food sources
-# This creates natural vulnerability: narrow-range species cascade easily
+# ─── GloBI: fetch real species interactions ───
+import urllib.request
+import urllib.parse
+import time as _time
+
+GLOBI_CACHE_FILE = "data/globi_cache.json"
+GLOBI_INTERACTION_MAP = {
+    "eats": "food source",
+    "preysOn": "prey",
+    "pollinates": "pollination",
+    "parasiteOf": "parasitism",
+    "interactsWith": "food source",
+    "hasHost": "parasitism",
+    "flowersVisitedBy": "pollination",
+    "visitedBy": "pollination",
+}
+
+def load_globi_cache():
+    if os.path.exists(GLOBI_CACHE_FILE):
+        with open(GLOBI_CACHE_FILE) as f:
+            return json.load(f)
+    return {}
+
+def save_globi_cache(cache):
+    os.makedirs(os.path.dirname(GLOBI_CACHE_FILE), exist_ok=True)
+    with open(GLOBI_CACHE_FILE, "w") as f:
+        json.dump(cache, f)
+
+def query_globi(taxon_name, cache):
+    if taxon_name in cache:
+        return cache[taxon_name]
+
+    encoded = urllib.parse.quote(taxon_name)
+    url = f"https://api.globalbioticinteractions.org/interaction?sourceTaxon={encoded}&type=json&limit=50"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "BioScope/1.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode())
+        interactions = []
+        for row in data.get("data", []):
+            if len(row) >= 4:
+                interaction_type = row[1] if len(row) > 1 else ""
+                target_name = row[2] if len(row) > 2 else ""
+                if target_name and interaction_type:
+                    interactions.append({
+                        "target": target_name,
+                        "type": interaction_type,
+                    })
+        cache[taxon_name] = interactions
+        return interactions
+    except Exception as e:
+        print(f"    GloBI error for {taxon_name}: {e}")
+        cache[taxon_name] = []
+        return []
+
+print("\n─── Fetching GloBI interactions ───")
+globi_cache = load_globi_cache()
+cached_count = sum(1 for sid in top_species_ids if sid in globi_cache)
+to_fetch = [sid for sid in top_species_ids if sid not in globi_cache]
+print(f"  {cached_count} cached, {len(to_fetch)} to fetch")
+
+globi_edges = []
+globi_species_with_edges = set()
+
+for i, sid in enumerate(to_fetch):
+    if i > 0 and i % 10 == 0:
+        print(f"  Fetched {i}/{len(to_fetch)}...")
+    interactions = query_globi(sid, globi_cache)
+    if i % 50 == 0:
+        save_globi_cache(globi_cache)
+    _time.sleep(0.15)
+
+save_globi_cache(globi_cache)
+
+for sid in top_species_ids:
+    interactions = globi_cache.get(sid, [])
+    for inter in interactions:
+        target = inter["target"]
+        itype = inter["type"]
+        edge_type = GLOBI_INTERACTION_MAP.get(itype)
+        if not edge_type:
+            continue
+        if target in top_species_ids and target != sid:
+            sid_habitat = species_habitat.get(sid, "unknown")
+            target_habitat = species_habitat.get(target, "unknown")
+            if not habitats_compatible(sid_habitat, target_habitat):
+                continue
+            overlap = len(species_zones[sid] & species_zones[target])
+            strength = round(overlap / max(len(species_zones[target]), 1), 2) if overlap > 0 else 0.5
+            globi_edges.append({
+                "source": sid,
+                "target": target,
+                "type": edge_type,
+                "strength": max(strength, 0.3),
+            })
+            globi_species_with_edges.add(sid)
+            globi_species_with_edges.add(target)
+
+# Deduplicate GloBI edges
+seen_edges = set()
+for e in globi_edges:
+    key = (e["source"], e["target"], e["type"])
+    if key not in seen_edges:
+        seen_edges.add(key)
+        dependency_edges.append(e)
+
+print(f"  GloBI: {len(seen_edges)} real edges from {len(globi_species_with_edges)} species")
+
+# ─── Synthetic fallback for species without GloBI data ───
+print("\nBuilding synthetic edges for species without GloBI data...")
+synthetic_count = 0
+MAX_INCOMING = 3
+MAX_OUTGOING = 4
+
+outgoing_count = defaultdict(int)
+for e in dependency_edges:
+    outgoing_count[e["source"]] += 1
 
 for chain in DEPENDENCY_CHAINS:
     from_nodes = node_by_level.get(chain["from"], [])
     to_nodes = node_by_level.get(chain["to"], [])
 
     for tn in to_nodes:
+        existing_sources = {e["source"] for e in dependency_edges if e["target"] == tn["id"]}
+        if len(existing_sources) >= MAX_INCOMING:
+            continue
+
         tn_zones = species_zones[tn["id"]]
         if not tn_zones:
             continue
 
         zone_count = len(tn_zones)
-        if zone_count <= 5:
-            max_src = 2
-        elif zone_count <= 15:
-            max_src = 3
-        elif zone_count <= 30:
-            max_src = 4
-        else:
-            max_src = 5
+        need = max(0, MAX_INCOMING - len(existing_sources))
 
         tn_habitat = species_habitat.get(tn["id"], "unknown")
+        tn_family = all_species.get(tn["id"], {}).get("family", "")
         candidates = []
         for fn in from_nodes:
-            if fn["id"] == tn["id"]:
+            if fn["id"] == tn["id"] or fn["id"] in existing_sources:
+                continue
+            if outgoing_count[fn["id"]] >= MAX_OUTGOING:
                 continue
             fn_habitat = species_habitat.get(fn["id"], "unknown")
             if not habitats_compatible(fn_habitat, tn_habitat):
@@ -479,17 +591,27 @@ for chain in DEPENDENCY_CHAINS:
             fn_zones = species_zones[fn["id"]]
             overlap = len(fn_zones & tn_zones)
             if overlap > 0:
-                strength = round(overlap / max(zone_count, 1), 2)
-                candidates.append((fn, strength, overlap))
+                zone_score = overlap / max(zone_count, 1)
+                family_bonus = 0.3 if all_species.get(fn["id"], {}).get("family", "") == tn_family else 0
+                score = round(zone_score + family_bonus, 2)
+                candidates.append((fn, score, overlap))
 
         candidates.sort(key=lambda x: x[1], reverse=True)
-        for fn, strength, overlap in candidates[:max_src]:
-            dependency_edges.append({
-                "source": fn["id"],
-                "target": tn["id"],
-                "type": chain["label"],
-                "strength": strength,
-            })
+        for fn, score, overlap in candidates[:need]:
+            edge_key = (fn["id"], tn["id"], chain["label"])
+            if edge_key not in seen_edges:
+                seen_edges.add(edge_key)
+                dependency_edges.append({
+                    "source": fn["id"],
+                    "target": tn["id"],
+                    "type": chain["label"],
+                    "strength": min(score, 1.0),
+                })
+                outgoing_count[fn["id"]] += 1
+                synthetic_count += 1
+
+print(f"  Synthetic fallback: {synthetic_count} edges added")
+print(f"  Total edges: {len(dependency_edges)}")
 
 
 # ─── Keystone score computation ───
