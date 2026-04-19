@@ -31,42 +31,63 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
 
   const handleSearch = useCallback(async (query: string) => {
-    if (!query.trim() || !data) return;
+    const q = query.trim();
+    if (!q || !data) return;
+    
+    // Quick validation for junk/short input
+    if (q.length < 3) {
+      setError("Please enter a more specific location in San Diego.");
+      return;
+    }
+
     setSearching(true);
     setError(null);
 
-    const q = query.toLowerCase().trim();
+    const lowerQ = q.toLowerCase();
 
+    // 1. Direct Keyword Match (Fast)
     for (const [name, eco] of Object.entries(index)) {
-      if (name.toLowerCase().includes(q) || eco.keywords.some((k: string) => k.includes(q))) {
+      if (name.toLowerCase().includes(lowerQ) || eco.keywords.some((k: string) => k.toLowerCase().includes(lowerQ))) {
         setSelectedEcosystem(name);
         setSearching(false);
         return;
       }
     }
 
+    // 2. AI Categorization Match (Smart)
     const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
     if (apiKey) {
-      const ecoList = Object.keys(index).join("\n");
-      const prompt = `You are a San Diego County geography expert. The user wants to explore biodiversity near "${query}" in San Diego County. Which ecosystem type best matches? Reply with ONLY the exact name:\n${ecoList}`;
+      const ecoList = Object.keys(index).join(", ");
+      const prompt = `You are a San Diego County geography and ecology expert. 
+        The user typed: "${q}". 
+        Is this a real location, landmark, or neighborhood in San Diego County?
+        If YES, which of these ecosystem types best describes it: ${ecoList}?
+        If NO or if it is not in San Diego County, reply ONLY with the word "UNKNOWN".
+        Reply with ONLY the exact ecosystem name or "UNKNOWN".`;
 
       try {
         const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { maxOutputTokens: 60, temperature: 0.1 } }),
+          body: JSON.stringify({ 
+            contents: [{ parts: [{ text: prompt }] }], 
+            generationConfig: { maxOutputTokens: 20, temperature: 0.1 } 
+          }),
         });
         const d = await res.json();
         const answer = d?.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
-        if (answer && index[answer]) {
+        
+        if (answer && answer !== "UNKNOWN" && index[answer]) {
           setSelectedEcosystem(answer);
           setSearching(false);
           return;
         }
-      } catch { /* fallback */ }
+      } catch (e) {
+        console.error("AI Search Error:", e);
+      }
     }
 
-    setError("No match found. Try a San Diego neighborhood or landmark.");
+    setError("No available data for this area. Try a specific San Diego neighborhood or park.");
     setSearching(false);
   }, [data, index]);
 

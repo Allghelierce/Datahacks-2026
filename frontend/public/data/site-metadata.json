@@ -1,0 +1,5682 @@
+{
+  "global_stats": {
+    "totalSpecies": 505,
+    "totalObservations": 77101,
+    "totalZones": 49,
+    "zonesAtRisk": 9,
+    "trophicBreakdown": {
+      "producer": 264,
+      "apex_predator": 42,
+      "tertiary_consumer": 103,
+      "primary_consumer": 39,
+      "pollinator": 30,
+      "secondary_consumer": 20,
+      "decomposer": 7
+    },
+    "healthDistribution": {
+      "F": 1,
+      "C": 26,
+      "B": 14,
+      "D": 8
+    },
+    "ecosystemCount": 8
+  },
+  "zones": [
+    {
+      "id": "0-0",
+      "name": "Border Field",
+      "lat": 32.5793,
+      "lng": -117.4914,
+      "health": {
+        "grade": "F",
+        "score": 34.3,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "No pollinators detected \u2014 plant reproduction at risk"
+          },
+          {
+            "type": "warning",
+            "message": "No apex predators \u2014 prey populations may be uncontrolled"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 40% year-over-year"
+          },
+          {
+            "type": "critical",
+            "message": "Only 2/6 trophic levels present \u2014 food web has major gaps"
+          }
+        ],
+        "trophic_completeness": 33,
+        "trend_pct": -40.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 9,
+          "species": [
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Calochortus weedii",
+            "Chloropyron maritimum maritimum",
+            "Cistanthe maritima",
+            "Euphorbia misera",
+            "Ferocactus viridescens",
+            "Frankenia palmeri",
+            "Leptosyne maritima"
+          ]
+        },
+        "pollinator": {
+          "count": 0,
+          "species": []
+        },
+        "primary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "secondary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "tertiary_consumer": {
+          "count": 3,
+          "species": [
+            "Amazona viridigenalis",
+            "Nycticorax nycticorax",
+            "Sternula antillarum"
+          ]
+        },
+        "apex_predator": {
+          "count": 0,
+          "species": []
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 12,
+      "total_observations": 23,
+      "yearly_species": {
+        "2023": 5,
+        "2024": 9,
+        "2025": 3
+      }
+    },
+    {
+      "id": "0-1",
+      "name": "Otay Mesa",
+      "lat": 32.5793,
+      "lng": -117.2743,
+      "health": {
+        "grade": "C",
+        "score": 61.5,
+        "risks": [
+          {
+            "type": "warning",
+            "message": "Low pollinator diversity \u2014 ecosystem fragile"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 51% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -51.1
+      },
+      "trophic": {
+        "producer": {
+          "count": 32,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Ambrosia chenopodiifolia",
+            "Ambrosia monogyra",
+            "Ambrosia pumila",
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Chloropyron maritimum maritimum",
+            "Chorizanthe polygonoides longispina",
+            "Cistanthe maritima",
+            "Dicranostegia orcuttiana"
+          ]
+        },
+        "pollinator": {
+          "count": 1,
+          "species": [
+            "Danaus plexippus"
+          ]
+        },
+        "primary_consumer": {
+          "count": 11,
+          "species": [
+            "Alopias vulpinus",
+            "Apostichopus parvimensis",
+            "Cicindela hirticollis gravida",
+            "Cicindela latesignata",
+            "Cicindelidia trifasciata sigmoidea",
+            "Eunota gabbii",
+            "Haliotis fulgens",
+            "Haliotis rufescens",
+            "Helminthoglypta coelata",
+            "Isurus oxyrinchus",
+            "Pseudobatos productus"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 4,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Spea hammondii",
+            "Stereolepis gigas"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 27,
+          "species": [
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona viridigenalis",
+            "Anarhynchus nivosus nivosus",
+            "Antigone canadensis",
+            "Ardenna creatopus",
+            "Ardenna grisea",
+            "Arenaria interpres",
+            "Balaenoptera musculus",
+            "Balaenoptera physalus",
+            "Calidris minutilla",
+            "Charadrius vociferus",
+            "Eschrichtius robustus",
+            "Larus heermanni",
+            "Megaptera novaeangliae",
+            "Nycticorax nycticorax"
+          ]
+        },
+        "apex_predator": {
+          "count": 8,
+          "species": [
+            "Anniella stebbinsi",
+            "Aspidoscelis hyperythrus",
+            "Diadophis punctatus similis",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Thamnophis hammondii",
+            "Zalophus californianus"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 83,
+      "total_observations": 607,
+      "yearly_species": {
+        "2023": 45,
+        "2024": 49,
+        "2025": 47,
+        "2026": 22
+      }
+    },
+    {
+      "id": "0-2",
+      "name": "Otay Mountain",
+      "lat": 32.5793,
+      "lng": -117.0571,
+      "health": {
+        "grade": "B",
+        "score": 71.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 35% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -35.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 92,
+          "species": [
+            "Abronia maritima",
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Allium haematochiton",
+            "Ambrosia chenopodiifolia",
+            "Ambrosia monogyra",
+            "Ambrosia pumila",
+            "Arctostaphylos otayensis",
+            "Artemisia palmeri",
+            "Atriplex coulteri",
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Bloomeria clevelandii"
+          ]
+        },
+        "pollinator": {
+          "count": 9,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Callophrys loki",
+            "Chlosyne gabbii",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Dorymyrmex insanus",
+            "Panoquina errans"
+          ]
+        },
+        "primary_consumer": {
+          "count": 15,
+          "species": [
+            "Alopias vulpinus",
+            "Cicindela hirticollis gravida",
+            "Cicindela latesignata",
+            "Cicindelidia trifasciata sigmoidea",
+            "Eunota gabbii",
+            "Gymnura marmorata",
+            "Haliotis fulgens",
+            "Haplotrema transfuga",
+            "Hypanus dipterurus",
+            "Pseudobatos productus",
+            "Rhionaeschna psilus",
+            "Squatina californica",
+            "Streptocephalus woottoni",
+            "Tivela stultorum",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 4,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Hippocampus ingens",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 61,
+          "species": [
+            "Agelaius tricolor",
+            "Amazona finschi",
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona oratrix",
+            "Amazona viridigenalis",
+            "Ammospiza nelsoni",
+            "Anarhynchus montanus",
+            "Anarhynchus nivosus",
+            "Anarhynchus nivosus nivosus",
+            "Antigone canadensis",
+            "Ardenna creatopus",
+            "Ardenna grisea",
+            "Arenaria interpres",
+            "Botaurus lentiginosus",
+            "Branta hutchinsii leucopareia"
+          ]
+        },
+        "apex_predator": {
+          "count": 22,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Aspidoscelis hyperythrus",
+            "Athene cunicularia hypugaea",
+            "Buteo albonotatus",
+            "Buteo lineatus",
+            "Buteo swainsoni",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Elgaria multicarinata",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Falco peregrinus pealei",
+            "Haliaeetus leucocephalus"
+          ]
+        },
+        "decomposer": {
+          "count": 1,
+          "species": [
+            "Psilocybe cyanescens"
+          ]
+        }
+      },
+      "total_species": 204,
+      "total_observations": 6826,
+      "yearly_species": {
+        "2023": 143,
+        "2024": 159,
+        "2025": 135,
+        "2026": 93
+      }
+    },
+    {
+      "id": "0-3",
+      "name": "Tecate",
+      "lat": 32.5793,
+      "lng": -116.84,
+      "health": {
+        "grade": "C",
+        "score": 64.2,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 49% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -49.2
+      },
+      "trophic": {
+        "producer": {
+          "count": 70,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Adolphia californica",
+            "Allium haematochiton",
+            "Ambrosia chenopodiifolia",
+            "Ambrosia monogyra",
+            "Ambrosia pumila",
+            "Arctostaphylos otayensis",
+            "Asplenium vespertinum",
+            "Astragalus deanei",
+            "Astragalus oocarpus",
+            "Atriplex pacifica",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Bloomeria clevelandii"
+          ]
+        },
+        "pollinator": {
+          "count": 10,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Callophrys loki",
+            "Callophrys loki thornei",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Euphydryas editha quino",
+            "Tharsalea hermes",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 6,
+          "species": [
+            "Branchinecta sandiegonensis",
+            "Glyptostoma newberryanum",
+            "Haplotrema transfuga",
+            "Helminthoglypta traskii",
+            "Helminthoglypta tudiculata",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 2,
+          "species": [
+            "Gopherus agassizii",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 10,
+          "species": [
+            "Agelaius tricolor",
+            "Amazona viridigenalis",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Campylorhynchus brunneicapillus sandiegensis",
+            "Charadrius vociferus",
+            "Lanius ludovicianus",
+            "Nycticorax nycticorax",
+            "Psittacara erythrogenys",
+            "Vireo bellii pusillus"
+          ]
+        },
+        "apex_predator": {
+          "count": 13,
+          "species": [
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis californiae",
+            "Masticophis fuliginosus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Puma concolor couguar",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 111,
+      "total_observations": 996,
+      "yearly_species": {
+        "2023": 65,
+        "2024": 72,
+        "2025": 63,
+        "2026": 33
+      }
+    },
+    {
+      "id": "0-4",
+      "name": "Campo",
+      "lat": 32.5793,
+      "lng": -116.6229,
+      "health": {
+        "grade": "C",
+        "score": 56.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 66% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -65.5
+      },
+      "trophic": {
+        "producer": {
+          "count": 33,
+          "species": [
+            "Allium haematochiton",
+            "Artemisia palmeri",
+            "Asplenium vespertinum",
+            "Astragalus deanei",
+            "Bahiopsis laciniata",
+            "Brodiaea orcuttii",
+            "Calandrinia breweri",
+            "Calochortus dunnii",
+            "Calochortus weedii",
+            "Ceanothus otayensis",
+            "Chamaebatia australis",
+            "Chorizanthe leptotheca",
+            "Chorizanthe polygonoides longispina",
+            "Cirsium occidentale californicum",
+            "Clarkia delicata"
+          ]
+        },
+        "pollinator": {
+          "count": 5,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Satyrium auretorum",
+            "Strymon istapa"
+          ]
+        },
+        "primary_consumer": {
+          "count": 2,
+          "species": [
+            "Helminthoglypta tudiculata",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 1,
+          "species": [
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 4,
+          "species": [
+            "Agelaius tricolor",
+            "Calypte costae",
+            "Corynorhinus townsendii",
+            "Lanius ludovicianus"
+          ]
+        },
+        "apex_predator": {
+          "count": 11,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Aspidoscelis hyperythrus",
+            "Buteo lineatus",
+            "Crotalus ruber",
+            "Masticophis fuliginosus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 56,
+      "total_observations": 193,
+      "yearly_species": {
+        "2023": 29,
+        "2024": 29,
+        "2025": 22,
+        "2026": 10
+      }
+    },
+    {
+      "id": "0-5",
+      "name": "Jacumba",
+      "lat": 32.5793,
+      "lng": -116.4057,
+      "health": {
+        "grade": "D",
+        "score": 47.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 44% year-over-year"
+          }
+        ],
+        "trophic_completeness": 83,
+        "trend_pct": -44.4
+      },
+      "trophic": {
+        "producer": {
+          "count": 12,
+          "species": [
+            "Astragalus douglasii perstrictus",
+            "Bursera filicifolia",
+            "Calochortus concolor",
+            "Calochortus weedii",
+            "Cirsium occidentale",
+            "Clematis pauciflora",
+            "Deinandra floribunda",
+            "Diplacus clevelandii",
+            "Dudleya abramsii abramsii",
+            "Hesperocyparis forbesii",
+            "Lathyrus splendens",
+            "Quercus engelmannii"
+          ]
+        },
+        "pollinator": {
+          "count": 4,
+          "species": [
+            "Apodemia virgulti",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Philotes sonorensis"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Helminthoglypta tudiculata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 1,
+          "species": [
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "apex_predator": {
+          "count": 4,
+          "species": [
+            "Crotalus ruber",
+            "Masticophis fuliginosus",
+            "Phrynosoma blainvillii",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 22,
+      "total_observations": 82,
+      "yearly_species": {
+        "2023": 9,
+        "2024": 15,
+        "2025": 7,
+        "2026": 5
+      }
+    },
+    {
+      "id": "0-6",
+      "name": "Mountain Empire",
+      "lat": 32.5793,
+      "lng": -116.1886,
+      "health": {
+        "grade": "D",
+        "score": 42.4,
+        "risks": [
+          {
+            "type": "warning",
+            "message": "Low pollinator diversity \u2014 ecosystem fragile"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 75% year-over-year"
+          }
+        ],
+        "trophic_completeness": 67,
+        "trend_pct": -75.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 8,
+          "species": [
+            "Astragalus douglasii perstrictus",
+            "Cochemiea tetrancistra",
+            "Deinandra floribunda",
+            "Ferocactus cylindraceus",
+            "Harpagonella palmeri",
+            "Juncus acutus leopoldii",
+            "Juniperus californica",
+            "Linanthus maculatus emaculatus"
+          ]
+        },
+        "pollinator": {
+          "count": 1,
+          "species": [
+            "Callophrys loki"
+          ]
+        },
+        "primary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "secondary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "tertiary_consumer": {
+          "count": 4,
+          "species": [
+            "Agelaius tricolor",
+            "Calypte costae",
+            "Lanius ludovicianus",
+            "Nycticorax nycticorax"
+          ]
+        },
+        "apex_predator": {
+          "count": 8,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Crotalus ruber",
+            "Falco columbarius",
+            "Petrosaurus mearnsi",
+            "Plestiodon skiltonianus interparietalis",
+            "Taxidea taxus"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 21,
+      "total_observations": 69,
+      "yearly_species": {
+        "2023": 12,
+        "2024": 11,
+        "2025": 7,
+        "2026": 3
+      }
+    },
+    {
+      "id": "1-0",
+      "name": "Imperial Beach",
+      "lat": 32.6779,
+      "lng": -117.4914,
+      "health": {
+        "grade": "C",
+        "score": 52.7,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "No pollinators detected \u2014 plant reproduction at risk"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 33% year-over-year"
+          }
+        ],
+        "trophic_completeness": 83,
+        "trend_pct": -33.3
+      },
+      "trophic": {
+        "producer": {
+          "count": 9,
+          "species": [
+            "Acmispon prostratus",
+            "Agave shawii shawii",
+            "Bergerocactus emoryi",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Cistanthe maritima",
+            "Euphorbia misera",
+            "Frankenia palmeri",
+            "Leptosyne maritima"
+          ]
+        },
+        "pollinator": {
+          "count": 0,
+          "species": []
+        },
+        "primary_consumer": {
+          "count": 4,
+          "species": [
+            "Apostichopus parvimensis",
+            "Cicindelidia trifasciata sigmoidea",
+            "Haliotis fulgens",
+            "Helminthoglypta coelata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 1,
+          "species": [
+            "Bodianus pulcher"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 9,
+          "species": [
+            "Amazona viridigenalis",
+            "Charadrius vociferus",
+            "Eschrichtius robustus",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Pelecanus occidentalis",
+            "Psittacara erythrogenys",
+            "Synthliboramphus scrippsi",
+            "Thalasseus elegans"
+          ]
+        },
+        "apex_predator": {
+          "count": 1,
+          "species": [
+            "Pandion haliaetus"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 24,
+      "total_observations": 99,
+      "yearly_species": {
+        "2023": 12,
+        "2024": 14,
+        "2025": 11,
+        "2026": 8
+      }
+    },
+    {
+      "id": "1-1",
+      "name": "Chula Vista",
+      "lat": 32.6779,
+      "lng": -117.2743,
+      "health": {
+        "grade": "B",
+        "score": 67.9,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 44% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -43.5
+      },
+      "trophic": {
+        "producer": {
+          "count": 51,
+          "species": [
+            "Abronia maritima",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Ambrosia monogyra",
+            "Aphanisma blitoides",
+            "Atriplex pacifica",
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta",
+            "Ceanothus verrucosus",
+            "Chaenactis glabriuscula glabriuscula",
+            "Chloropyron maritimum maritimum"
+          ]
+        },
+        "pollinator": {
+          "count": 8,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Cocytius antaeus",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Panoquina errans",
+            "Strymon istapa"
+          ]
+        },
+        "primary_consumer": {
+          "count": 10,
+          "species": [
+            "Alopias vulpinus",
+            "Apostichopus parvimensis",
+            "Cicindela latesignata",
+            "Gymnura marmorata",
+            "Haliotis fulgens",
+            "Helminthoglypta coelata",
+            "Hypanus dipterurus",
+            "Pseudobatos productus",
+            "Squatina californica",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 5,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Hippocampus ingens",
+            "Mola mola",
+            "Stereolepis gigas"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 51,
+          "species": [
+            "Agapornis fischeri",
+            "Amazona finschi",
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona viridigenalis",
+            "Anarhynchus nivosus",
+            "Anarhynchus nivosus nivosus",
+            "Ardenna carneipes",
+            "Ardenna creatopus",
+            "Ardenna grisea",
+            "Arenaria interpres",
+            "Balaenoptera musculus",
+            "Balaenoptera musculus musculus",
+            "Balaenoptera physalus",
+            "Branta hutchinsii leucopareia",
+            "Calidris canutus"
+          ]
+        },
+        "apex_predator": {
+          "count": 9,
+          "species": [
+            "Anniella stebbinsi",
+            "Arctocephalus townsendi",
+            "Aspidoscelis hyperythrus",
+            "Circus hudsonius",
+            "Diadophis punctatus similis",
+            "Enhydra lutris nereis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Pandion haliaetus"
+          ]
+        },
+        "decomposer": {
+          "count": 2,
+          "species": [
+            "Niebla cephalota",
+            "Niebla ceruchis"
+          ]
+        }
+      },
+      "total_species": 136,
+      "total_observations": 4207,
+      "yearly_species": {
+        "2023": 85,
+        "2024": 96,
+        "2025": 92,
+        "2026": 48
+      }
+    },
+    {
+      "id": "1-2",
+      "name": "Jamul",
+      "lat": 32.6779,
+      "lng": -117.0571,
+      "health": {
+        "grade": "B",
+        "score": 75.5,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 25% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -25.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 85,
+          "species": [
+            "Abronia maritima",
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Allium haematochiton",
+            "Ambrosia monogyra",
+            "Arctostaphylos otayensis",
+            "Artemisia palmeri",
+            "Atriplex pacifica",
+            "Azolla filiculoides",
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Bloomeria clevelandii",
+            "Brodiaea orcuttii"
+          ]
+        },
+        "pollinator": {
+          "count": 9,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Cocytius antaeus",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Dorymyrmex insanus",
+            "Panoquina errans",
+            "Strymon istapa"
+          ]
+        },
+        "primary_consumer": {
+          "count": 11,
+          "species": [
+            "Anadenulus cockerelli",
+            "Cicindela latesignata",
+            "Cicindelidia trifasciata sigmoidea",
+            "Eunota gabbii",
+            "Glyptostoma newberryanum",
+            "Helminthoglypta coelata",
+            "Helminthoglypta tudiculata",
+            "Hypanus dipterurus",
+            "Pseudobatos productus",
+            "Squatina californica",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 7,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Chelydra serpentina",
+            "Hippocampus ingens",
+            "Spea hammondii",
+            "Testudo horsfieldii",
+            "Thunnus orientalis"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 49,
+          "species": [
+            "Amazona finschi",
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona viridigenalis",
+            "Anarhynchus nivosus",
+            "Anthus spragueii",
+            "Ardenna creatopus",
+            "Ardenna grisea",
+            "Arenaria interpres",
+            "Branta hutchinsii leucopareia",
+            "Calidris alpina",
+            "Calidris canutus",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Campylorhynchus brunneicapillus sandiegensis",
+            "Charadrius vociferus"
+          ]
+        },
+        "apex_predator": {
+          "count": 15,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Asio otus",
+            "Aspidoscelis hyperythrus",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 1,
+          "species": [
+            "Niebla cephalota"
+          ]
+        }
+      },
+      "total_species": 177,
+      "total_observations": 2485,
+      "yearly_species": {
+        "2023": 104,
+        "2024": 137,
+        "2025": 121,
+        "2026": 78
+      }
+    },
+    {
+      "id": "1-3",
+      "name": "Alpine",
+      "lat": 32.6779,
+      "lng": -116.84,
+      "health": {
+        "grade": "C",
+        "score": 64.7,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 46% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -46.2
+      },
+      "trophic": {
+        "producer": {
+          "count": 71,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Adolphia californica",
+            "Allium haematochiton",
+            "Ambrosia monogyra",
+            "Ambrosia pumila",
+            "Arctostaphylos otayensis",
+            "Artemisia palmeri",
+            "Asplenium vespertinum",
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Bloomeria clevelandii",
+            "Brodiaea orcuttii",
+            "Calandrinia breweri",
+            "Calochortus dunnii",
+            "Calochortus weedii"
+          ]
+        },
+        "pollinator": {
+          "count": 11,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Callophrys loki thornei",
+            "Chlosyne gabbii",
+            "Cocytius antaeus",
+            "Danaus plexippus",
+            "Euphydryas editha",
+            "Euphydryas editha quino",
+            "Satyrium auretorum",
+            "Satyrium tetra",
+            "Strymon istapa"
+          ]
+        },
+        "primary_consumer": {
+          "count": 6,
+          "species": [
+            "Anadenulus cockerelli",
+            "Glyptostoma newberryanum",
+            "Haplotrema transfuga",
+            "Helminthoglypta traskii",
+            "Helminthoglypta tudiculata",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 1,
+          "species": [
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 17,
+          "species": [
+            "Agelaius tricolor",
+            "Amazona viridigenalis",
+            "Botaurus lentiginosus",
+            "Calidris minutilla",
+            "Calidris pugnax",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Contopus cooperi",
+            "Lanius ludovicianus",
+            "Lasionycteris noctivagans",
+            "Lasiurus cinereus",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Psittacara erythrogenys",
+            "Selasphorus rufus"
+          ]
+        },
+        "apex_predator": {
+          "count": 17,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Asio otus",
+            "Aspidoscelis hyperythrus",
+            "Circus hudsonius",
+            "Coleonyx variegatus abbotti",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Masticophis fuliginosus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 123,
+      "total_observations": 1320,
+      "yearly_species": {
+        "2023": 78,
+        "2024": 80,
+        "2025": 85,
+        "2026": 42
+      }
+    },
+    {
+      "id": "1-4",
+      "name": "Pine Valley",
+      "lat": 32.6779,
+      "lng": -116.6229,
+      "health": {
+        "grade": "C",
+        "score": 60.5,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 51% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -51.4
+      },
+      "trophic": {
+        "producer": {
+          "count": 34,
+          "species": [
+            "Allium haematochiton",
+            "Allium marvinii",
+            "Asplenium vespertinum",
+            "Astragalus deanei",
+            "Astragalus oocarpus",
+            "Bahiopsis laciniata",
+            "Brodiaea orcuttii",
+            "Calandrinia breweri",
+            "Calochortus concolor",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Chaenactis artemisiifolia",
+            "Chamaebatia australis",
+            "Chorizanthe leptotheca",
+            "Cirsium occidentale"
+          ]
+        },
+        "pollinator": {
+          "count": 9,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Euphydryas editha quino",
+            "Philotes sonorensis",
+            "Satyrium auretorum",
+            "Satyrium tetra",
+            "Tharsalea hermes"
+          ]
+        },
+        "primary_consumer": {
+          "count": 2,
+          "species": [
+            "Glyptostoma newberryanum",
+            "Helminthoglypta tudiculata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Actinemys pallida",
+            "Anaxyrus californicus",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 8,
+          "species": [
+            "Calidris minutilla",
+            "Charadrius vociferus",
+            "Contopus cooperi",
+            "Lanius ludovicianus",
+            "Limnodromus scolopaceus",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Tringa melanoleuca"
+          ]
+        },
+        "apex_predator": {
+          "count": 9,
+          "species": [
+            "Anniella stebbinsi",
+            "Crotalus ruber",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Masticophis fuliginosus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 65,
+      "total_observations": 248,
+      "yearly_species": {
+        "2023": 35,
+        "2024": 41,
+        "2025": 31,
+        "2026": 17
+      }
+    },
+    {
+      "id": "1-5",
+      "name": "Mount Laguna",
+      "lat": 32.6779,
+      "lng": -116.4057,
+      "health": {
+        "grade": "D",
+        "score": 49.9,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 45% year-over-year"
+          }
+        ],
+        "trophic_completeness": 67,
+        "trend_pct": -45.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 17,
+          "species": [
+            "Astragalus deanei",
+            "Astragalus douglasii perstrictus",
+            "Calochortus concolor",
+            "Calochortus palmeri munzii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Chaenactis glabriuscula glabriuscula",
+            "Chorizanthe leptotheca",
+            "Cirsium occidentale californicum",
+            "Clematis pauciflora",
+            "Deinandra floribunda",
+            "Diplacus clevelandii",
+            "Dudleya abramsii abramsii",
+            "Lathyrus splendens",
+            "Phacelia campanularia"
+          ]
+        },
+        "pollinator": {
+          "count": 7,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Satyrium tetra",
+            "Tharsalea gorgon"
+          ]
+        },
+        "primary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "secondary_consumer": {
+          "count": 2,
+          "species": [
+            "Anaxyrus californicus",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "apex_predator": {
+          "count": 11,
+          "species": [
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Aspidoscelis tigris stejnegeri",
+            "Diadophis punctatus similis",
+            "Gambelia copeii",
+            "Masticophis fuliginosus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Taxidea taxus",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 37,
+      "total_observations": 134,
+      "yearly_species": {
+        "2023": 20,
+        "2024": 20,
+        "2025": 14,
+        "2026": 11
+      }
+    },
+    {
+      "id": "1-6",
+      "name": "Anza-Borrego South",
+      "lat": 32.6779,
+      "lng": -116.1886,
+      "health": {
+        "grade": "D",
+        "score": 47.7,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 67% year-over-year"
+          }
+        ],
+        "trophic_completeness": 83,
+        "trend_pct": -66.7
+      },
+      "trophic": {
+        "producer": {
+          "count": 20,
+          "species": [
+            "Astragalus douglasii perstrictus",
+            "Brickellia atractyloides arguta",
+            "Calochortus concolor",
+            "Caulanthus simulans",
+            "Chaenactis glabriuscula glabriuscula",
+            "Cirsium occidentale californicum",
+            "Clematis pauciflora",
+            "Cochemiea tetrancistra",
+            "Deinandra floribunda",
+            "Dudleya abramsii abramsii",
+            "Harpagonella palmeri",
+            "Juncus acutus leopoldii",
+            "Lathyrus splendens",
+            "Matelea parvifolia",
+            "Mentzelia hirsutissima"
+          ]
+        },
+        "pollinator": {
+          "count": 4,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Callophrys loki",
+            "Satyrium tetra"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Sonorelix harperi"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "tertiary_consumer": {
+          "count": 4,
+          "species": [
+            "Agelaius tricolor",
+            "Calypte costae",
+            "Lanius ludovicianus",
+            "Toxostoma bendirei"
+          ]
+        },
+        "apex_predator": {
+          "count": 5,
+          "species": [
+            "Anniella stebbinsi",
+            "Aspidoscelis tigris stejnegeri",
+            "Crotalus ruber",
+            "Masticophis fuliginosus",
+            "Phrynosoma blainvillii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 34,
+      "total_observations": 145,
+      "yearly_species": {
+        "2023": 18,
+        "2024": 21,
+        "2025": 14,
+        "2026": 6
+      }
+    },
+    {
+      "id": "2-0",
+      "name": "Coronado",
+      "lat": 32.7764,
+      "lng": -117.4914,
+      "health": {
+        "grade": "C",
+        "score": 51.3,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "No pollinators detected \u2014 plant reproduction at risk"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 62% year-over-year"
+          }
+        ],
+        "trophic_completeness": 83,
+        "trend_pct": -62.5
+      },
+      "trophic": {
+        "producer": {
+          "count": 18,
+          "species": [
+            "Acmispon prostratus",
+            "Agave shawii shawii",
+            "Arctostaphylos glandulosa crassifolia",
+            "Bergerocactus emoryi",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Chloropyron maritimum maritimum",
+            "Chorizanthe orcuttiana",
+            "Cistanthe maritima",
+            "Dudleya brevifolia",
+            "Euphorbia misera",
+            "Ferocactus viridescens",
+            "Frankenia palmeri",
+            "Heterotheca sessiliflora sessiliflora",
+            "Isocoma menziesii decumbens"
+          ]
+        },
+        "pollinator": {
+          "count": 0,
+          "species": []
+        },
+        "primary_consumer": {
+          "count": 5,
+          "species": [
+            "Apostichopus parvimensis",
+            "Cicindela latesignata",
+            "Cicindelidia trifasciata sigmoidea",
+            "Galeorhinus galeus",
+            "Haliotis fulgens"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 2,
+          "species": [
+            "Bodianus pulcher",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 9,
+          "species": [
+            "Amazona viridigenalis",
+            "Ardenna grisea",
+            "Charadrius vociferus",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Pelecanus occidentalis",
+            "Pelecanus occidentalis californicus",
+            "Psittacara erythrogenys",
+            "Zonotrichia querula"
+          ]
+        },
+        "apex_predator": {
+          "count": 4,
+          "species": [
+            "Aspidoscelis hyperythrus",
+            "Falco peregrinus",
+            "Pandion haliaetus",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 38,
+      "total_observations": 114,
+      "yearly_species": {
+        "2023": 16,
+        "2024": 20,
+        "2025": 18,
+        "2026": 6
+      }
+    },
+    {
+      "id": "2-1",
+      "name": "National City",
+      "lat": 32.7764,
+      "lng": -117.2743,
+      "health": {
+        "grade": "B",
+        "score": 72.6,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 31% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -31.5
+      },
+      "trophic": {
+        "producer": {
+          "count": 81,
+          "species": [
+            "Abronia maritima",
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Ambrosia chenopodiifolia",
+            "Ambrosia monogyra",
+            "Ambrosia pumila",
+            "Arctostaphylos glandulosa crassifolia",
+            "Artemisia palmeri",
+            "Atriplex pacifica",
+            "Azolla filiculoides",
+            "Bahiopsis laciniata",
+            "Berberis nevinii",
+            "Bergerocactus emoryi"
+          ]
+        },
+        "pollinator": {
+          "count": 8,
+          "species": [
+            "Anthophora flavocincta",
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Dorymyrmex insanus",
+            "Panoquina errans"
+          ]
+        },
+        "primary_consumer": {
+          "count": 16,
+          "species": [
+            "Alopias vulpinus",
+            "Apostichopus parvimensis",
+            "Cicindela latesignata",
+            "Cicindelidia trifasciata sigmoidea",
+            "Eunota gabbii",
+            "Galeorhinus galeus",
+            "Glyptostoma newberryanum",
+            "Gymnura marmorata",
+            "Haliotis fulgens",
+            "Helminthoglypta coelata",
+            "Helminthoglypta tudiculata",
+            "Hypanus dipterurus",
+            "Isurus oxyrinchus",
+            "Notorynchus cepedianus",
+            "Pseudobatos productus"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 6,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Hippocampus ingens",
+            "Mola mola",
+            "Spea hammondii",
+            "Stereolepis gigas"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 59,
+          "species": [
+            "Amazona finschi",
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona oratrix",
+            "Amazona viridigenalis",
+            "Ammospiza nelsoni",
+            "Anarhynchus montanus",
+            "Anarhynchus nivosus",
+            "Ardenna creatopus",
+            "Ardenna grisea",
+            "Arenaria interpres",
+            "Balaenoptera musculus",
+            "Balaenoptera musculus musculus",
+            "Balaenoptera physalus",
+            "Calcarius ornatus",
+            "Calidris alpina"
+          ]
+        },
+        "apex_predator": {
+          "count": 15,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arctocephalus townsendi",
+            "Aspidoscelis hyperythrus",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Enhydra lutris",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Falco peregrinus pealei",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 1,
+          "species": [
+            "Texosporium sancti-jacobi"
+          ]
+        }
+      },
+      "total_species": 186,
+      "total_observations": 8825,
+      "yearly_species": {
+        "2023": 127,
+        "2024": 135,
+        "2025": 130,
+        "2026": 87
+      }
+    },
+    {
+      "id": "2-2",
+      "name": "Spring Valley",
+      "lat": 32.7764,
+      "lng": -117.0571,
+      "health": {
+        "grade": "B",
+        "score": 71.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 38% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -38.3
+      },
+      "trophic": {
+        "producer": {
+          "count": 112,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave potatorum",
+            "Agave shawii shawii",
+            "Allium haematochiton",
+            "Aloina bifrons",
+            "Ambrosia monogyra",
+            "Ambrosia pumila",
+            "Arctostaphylos otayensis",
+            "Artemisia palmeri",
+            "Asplenium vespertinum",
+            "Atriplex coulteri",
+            "Atriplex pacifica",
+            "Azolla filiculoides"
+          ]
+        },
+        "pollinator": {
+          "count": 8,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Dorymyrmex insanus",
+            "Strymon istapa",
+            "Tharsalea hermes"
+          ]
+        },
+        "primary_consumer": {
+          "count": 13,
+          "species": [
+            "Anadenulus cockerelli",
+            "Branchinecta sandiegonensis",
+            "Cicindela latesignata",
+            "Cicindelidia trifasciata sigmoidea",
+            "Eunota gabbii",
+            "Glyptostoma newberryanum",
+            "Gymnura marmorata",
+            "Haliotis fulgens",
+            "Helminthoglypta coelata",
+            "Helminthoglypta traskii",
+            "Helminthoglypta tudiculata",
+            "Squatina californica",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 7,
+          "species": [
+            "Anaxyrus californicus",
+            "Centrochelys sulcata",
+            "Chelonia mydas",
+            "Hippocampus ingens",
+            "Mola mola",
+            "Spea hammondii",
+            "Terrapene ornata"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 33,
+          "species": [
+            "Agelaius tricolor",
+            "Amazona finschi",
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona viridigenalis",
+            "Anarhynchus nivosus",
+            "Anser cygnoides",
+            "Balaenoptera physalus",
+            "Botaurus exilis",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Campylorhynchus brunneicapillus sandiegensis",
+            "Charadrius vociferus",
+            "Colinus virginianus",
+            "Contopus cooperi",
+            "Cypseloides niger"
+          ]
+        },
+        "apex_predator": {
+          "count": 18,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Aspidoscelis hyperythrus",
+            "Aspidoscelis tigris stejnegeri",
+            "Buteo swainsoni",
+            "Circus hudsonius",
+            "Coleonyx variegatus abbotti",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis"
+          ]
+        },
+        "decomposer": {
+          "count": 1,
+          "species": [
+            "Texosporium sancti-jacobi"
+          ]
+        }
+      },
+      "total_species": 192,
+      "total_observations": 4204,
+      "yearly_species": {
+        "2023": 120,
+        "2024": 139,
+        "2025": 116,
+        "2026": 74
+      }
+    },
+    {
+      "id": "2-3",
+      "name": "El Cajon",
+      "lat": 32.7764,
+      "lng": -116.84,
+      "health": {
+        "grade": "C",
+        "score": 61.5,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 59% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -58.9
+      },
+      "trophic": {
+        "producer": {
+          "count": 73,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Adolphia californica",
+            "Allium haematochiton",
+            "Allium marvinii",
+            "Ambrosia chenopodiifolia",
+            "Ambrosia monogyra",
+            "Ambrosia pumila",
+            "Arctostaphylos otayensis",
+            "Artemisia palmeri",
+            "Asplenium vespertinum",
+            "Astragalus oocarpus",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Bloomeria clevelandii",
+            "Brodiaea orcuttii"
+          ]
+        },
+        "pollinator": {
+          "count": 7,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Satyrium tetra",
+            "Tharsalea hermes"
+          ]
+        },
+        "primary_consumer": {
+          "count": 5,
+          "species": [
+            "Anadenulus cockerelli",
+            "Glyptostoma newberryanum",
+            "Haplotrema transfuga",
+            "Helminthoglypta tudiculata",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 2,
+          "species": [
+            "Anaxyrus californicus",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 9,
+          "species": [
+            "Agelaius tricolor",
+            "Amazona finschi",
+            "Amazona viridigenalis",
+            "Calypte costae",
+            "Lanius ludovicianus",
+            "Nycticorax nycticorax",
+            "Psittacara erythrogenys",
+            "Selasphorus rufus",
+            "Vireo bellii pusillus"
+          ]
+        },
+        "apex_predator": {
+          "count": 15,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Aspidoscelis hyperythrus",
+            "Aspidoscelis tigris stejnegeri",
+            "Circus hudsonius",
+            "Coleonyx variegatus abbotti",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 111,
+      "total_observations": 1277,
+      "yearly_species": {
+        "2023": 73,
+        "2024": 83,
+        "2025": 70,
+        "2026": 30
+      }
+    },
+    {
+      "id": "2-4",
+      "name": "Cuyamaca",
+      "lat": 32.7764,
+      "lng": -116.6229,
+      "health": {
+        "grade": "C",
+        "score": 58.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 67% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -66.7
+      },
+      "trophic": {
+        "producer": {
+          "count": 43,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Allium marvinii",
+            "Arctostaphylos otayensis",
+            "Artemisia palmeri",
+            "Asplenium vespertinum",
+            "Bloomeria clevelandii",
+            "Brodiaea orcuttii",
+            "Calochortus concolor",
+            "Calochortus dunnii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta",
+            "Chaenactis artemisiifolia",
+            "Chaenactis glabriuscula glabriuscula",
+            "Chamaebatia australis"
+          ]
+        },
+        "pollinator": {
+          "count": 10,
+          "species": [
+            "Apodemia virgulti",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Philotes sonorensis",
+            "Satyrium auretorum",
+            "Satyrium tetra",
+            "Tharsalea gorgon",
+            "Tharsalea hermes",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Helminthoglypta tudiculata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 4,
+          "species": [
+            "Actinemys pallida",
+            "Anaxyrus californicus",
+            "Ensatina eschscholtzii klauberi",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 1,
+          "species": [
+            "Contopus cooperi"
+          ]
+        },
+        "apex_predator": {
+          "count": 11,
+          "species": [
+            "Anniella stebbinsi",
+            "Aspidoscelis tigris stejnegeri",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis multifasciata",
+            "Masticophis fuliginosus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 70,
+      "total_observations": 435,
+      "yearly_species": {
+        "2023": 48,
+        "2024": 48,
+        "2025": 37,
+        "2026": 16
+      }
+    },
+    {
+      "id": "2-5",
+      "name": "Julian",
+      "lat": 32.7764,
+      "lng": -116.4057,
+      "health": {
+        "grade": "C",
+        "score": 59.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 61% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -61.1
+      },
+      "trophic": {
+        "producer": {
+          "count": 39,
+          "species": [
+            "Allium marvinii",
+            "Astragalus douglasii perstrictus",
+            "Boechera johnstonii",
+            "Brodiaea orcuttii",
+            "Calochortus concolor",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Carlowrightia arizonica",
+            "Chaenactis artemisiifolia",
+            "Chaenactis glabriuscula glabriuscula",
+            "Chaenactis parishii",
+            "Chorizanthe leptotheca",
+            "Chorizanthe polygonoides longispina",
+            "Cirsium occidentale",
+            "Cirsium occidentale californicum"
+          ]
+        },
+        "pollinator": {
+          "count": 8,
+          "species": [
+            "Apodemia virgulti",
+            "Calosaturnia walterorum",
+            "Chlosyne gabbii",
+            "Chlosyne leanira",
+            "Colias harfordii",
+            "Satyrium auretorum",
+            "Satyrium tetra",
+            "Tharsalea gorgon"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Helminthoglypta edwardsi"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 4,
+          "species": [
+            "Ensatina eschscholtzii klauberi",
+            "Gopherus agassizii",
+            "Rana draytonii",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 5,
+          "species": [
+            "Calypte costae",
+            "Contopus cooperi",
+            "Corynorhinus townsendii",
+            "Lanius ludovicianus",
+            "Ovis canadensis nelsoni"
+          ]
+        },
+        "apex_predator": {
+          "count": 10,
+          "species": [
+            "Arizona elegans occidentalis",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Lampropeltis multifasciata",
+            "Masticophis fuliginosus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Puma concolor couguar",
+            "Taxidea taxus",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 67,
+      "total_observations": 242,
+      "yearly_species": {
+        "2023": 36,
+        "2024": 40,
+        "2025": 26,
+        "2026": 14
+      }
+    },
+    {
+      "id": "2-6",
+      "name": "Anza-Borrego Central",
+      "lat": 32.7764,
+      "lng": -116.1886,
+      "health": {
+        "grade": "D",
+        "score": 45.9,
+        "risks": [
+          {
+            "type": "warning",
+            "message": "Low pollinator diversity \u2014 ecosystem fragile"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 71% year-over-year"
+          }
+        ],
+        "trophic_completeness": 83,
+        "trend_pct": -70.6
+      },
+      "trophic": {
+        "producer": {
+          "count": 23,
+          "species": [
+            "Astragalus douglasii perstrictus",
+            "Astragalus insularis harwoodii",
+            "Brickellia atractyloides arguta",
+            "Calochortus concolor",
+            "Carlowrightia arizonica",
+            "Caulanthus simulans",
+            "Chaenactis carphoclinia peirsonii",
+            "Chaenactis glabriuscula glabriuscula",
+            "Cirsium occidentale",
+            "Cochemiea tetrancistra",
+            "Cylindropuntia fosbergii",
+            "Deinandra floribunda",
+            "Eucnide rupestris",
+            "Euphorbia abramsiana",
+            "Harpagonella palmeri"
+          ]
+        },
+        "pollinator": {
+          "count": 1,
+          "species": [
+            "Tharsalea gorgon"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Sonorelix harperi"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "tertiary_consumer": {
+          "count": 6,
+          "species": [
+            "Calypte costae",
+            "Coccyzus americanus",
+            "Lanius ludovicianus",
+            "Ovis canadensis nelsoni",
+            "Polioptila melanura",
+            "Toxostoma bendirei"
+          ]
+        },
+        "apex_predator": {
+          "count": 3,
+          "species": [
+            "Accipiter striatus",
+            "Phrynosoma blainvillii",
+            "Taxidea taxus"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 34,
+      "total_observations": 96,
+      "yearly_species": {
+        "2023": 17,
+        "2024": 13,
+        "2025": 16,
+        "2026": 5
+      }
+    },
+    {
+      "id": "3-0",
+      "name": "Point Loma",
+      "lat": 32.875,
+      "lng": -117.4914,
+      "health": {
+        "grade": "C",
+        "score": 55.5,
+        "risks": [
+          {
+            "type": "warning",
+            "message": "Low pollinator diversity \u2014 ecosystem fragile"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 74% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -73.9
+      },
+      "trophic": {
+        "producer": {
+          "count": 22,
+          "species": [
+            "Arctostaphylos catalinae",
+            "Arctostaphylos glandulosa crassifolia",
+            "Bergerocactus emoryi",
+            "Brodiaea orcuttii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Ceanothus verrucosus",
+            "Chaenactis glabriuscula orcuttiana",
+            "Chorizanthe orcuttiana",
+            "Cistanthe maritima",
+            "Dudleya brevifolia",
+            "Erysimum ammophilum",
+            "Euphorbia misera",
+            "Ferocactus viridescens",
+            "Heterotheca sessiliflora sessiliflora"
+          ]
+        },
+        "pollinator": {
+          "count": 2,
+          "species": [
+            "Danaus plexippus",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 5,
+          "species": [
+            "Apostichopus parvimensis",
+            "Galeorhinus galeus",
+            "Haliotis fulgens",
+            "Hypanus dipterurus",
+            "Squatina californica"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 4,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Spea hammondii",
+            "Stereolepis gigas"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 7,
+          "species": [
+            "Amazona viridigenalis",
+            "Larus heermanni",
+            "Pelecanus occidentalis",
+            "Pelecanus occidentalis californicus",
+            "Psittacara erythrogenys",
+            "Sternula antillarum",
+            "Zonotrichia querula"
+          ]
+        },
+        "apex_predator": {
+          "count": 3,
+          "species": [
+            "Falco peregrinus",
+            "Phrynosoma blainvillii",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 43,
+      "total_observations": 133,
+      "yearly_species": {
+        "2023": 23,
+        "2024": 22,
+        "2025": 19,
+        "2026": 6
+      }
+    },
+    {
+      "id": "3-1",
+      "name": "Downtown SD",
+      "lat": 32.875,
+      "lng": -117.2743,
+      "health": {
+        "grade": "B",
+        "score": 71.5,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 38% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -38.2
+      },
+      "trophic": {
+        "producer": {
+          "count": 89,
+          "species": [
+            "Abronia maritima",
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Allium haematochiton",
+            "Aloina bifrons",
+            "Ambrosia chenopodiifolia",
+            "Ambrosia pumila",
+            "Aphanisma blitoides",
+            "Aphyllon parishii brachylobum",
+            "Arctostaphylos glandulosa crassifolia",
+            "Artemisia palmeri",
+            "Atriplex pacifica",
+            "Bahiopsis laciniata"
+          ]
+        },
+        "pollinator": {
+          "count": 10,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Chlorostrymon simaethis",
+            "Cocytius antaeus",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Dorymyrmex insanus",
+            "Panoquina errans",
+            "Strymon istapa"
+          ]
+        },
+        "primary_consumer": {
+          "count": 16,
+          "species": [
+            "Alopias vulpinus",
+            "Apostichopus parvimensis",
+            "Carcharodon carcharias",
+            "Galeorhinus galeus",
+            "Glyptostoma newberryanum",
+            "Gymnura marmorata",
+            "Haliotis fulgens",
+            "Haliotis rufescens",
+            "Helminthoglypta traskii",
+            "Helminthoglypta tudiculata",
+            "Hypanus dipterurus",
+            "Isurus oxyrinchus",
+            "Notorynchus cepedianus",
+            "Pseudobatos productus",
+            "Squatina californica"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 6,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Mola mola",
+            "Sebastes paucispinis",
+            "Spea hammondii",
+            "Stereolepis gigas"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 39,
+          "species": [
+            "Amazona finschi",
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona viridigenalis",
+            "Ardenna bulleri",
+            "Ardenna creatopus",
+            "Ardenna grisea",
+            "Balaenoptera musculus",
+            "Balaenoptera musculus musculus",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Clangula hyemalis",
+            "Contopus cooperi",
+            "Cypseloides niger",
+            "Egretta rufescens"
+          ]
+        },
+        "apex_predator": {
+          "count": 16,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Asio otus",
+            "Aspidoscelis hyperythrus",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Enhydra lutris nereis",
+            "Eumetopias jubatus",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Salvadora hexalepis virgultea"
+          ]
+        },
+        "decomposer": {
+          "count": 4,
+          "species": [
+            "Niebla cephalota",
+            "Niebla ceruchis",
+            "Placynthiella oligotropha",
+            "Texosporium sancti-jacobi"
+          ]
+        }
+      },
+      "total_species": 180,
+      "total_observations": 10107,
+      "yearly_species": {
+        "2023": 131,
+        "2024": 133,
+        "2025": 111,
+        "2026": 81
+      }
+    },
+    {
+      "id": "3-2",
+      "name": "Mission Valley",
+      "lat": 32.875,
+      "lng": -117.0571,
+      "health": {
+        "grade": "B",
+        "score": 68.2,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 33% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -32.6
+      },
+      "trophic": {
+        "producer": {
+          "count": 76,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Adolphia californica",
+            "Allium haematochiton",
+            "Ambrosia pumila",
+            "Arctostaphylos glandulosa crassifolia",
+            "Artemisia palmeri",
+            "Asplenium vespertinum",
+            "Astragalus deanei",
+            "Azolla filiculoides",
+            "Azolla microphylla",
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Bloomeria clevelandii",
+            "Brodiaea filifolia",
+            "Brodiaea orcuttii"
+          ]
+        },
+        "pollinator": {
+          "count": 11,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Dorymyrmex insanus",
+            "Panoquina errans",
+            "Strymon istapa",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 4,
+          "species": [
+            "Branchinecta sandiegonensis",
+            "Glyptostoma newberryanum",
+            "Helminthoglypta tudiculata",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 2,
+          "species": [
+            "Chelydra serpentina",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 22,
+          "species": [
+            "Agelaius tricolor",
+            "Amazona finschi",
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona viridigenalis",
+            "Botaurus exilis",
+            "Botaurus lentiginosus",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Coccyzus americanus",
+            "Contopus cooperi",
+            "Larus heermanni",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Pelecanus occidentalis",
+            "Podiceps auritus"
+          ]
+        },
+        "apex_predator": {
+          "count": 18,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Asio otus",
+            "Aspidoscelis hyperythrus",
+            "Aspidoscelis tigris stejnegeri",
+            "Buteo swainsoni",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii"
+          ]
+        },
+        "decomposer": {
+          "count": 1,
+          "species": [
+            "Texosporium sancti-jacobi"
+          ]
+        }
+      },
+      "total_species": 134,
+      "total_observations": 3640,
+      "yearly_species": {
+        "2023": 89,
+        "2024": 94,
+        "2025": 101,
+        "2026": 60
+      }
+    },
+    {
+      "id": "3-3",
+      "name": "Santee",
+      "lat": 32.875,
+      "lng": -116.84,
+      "health": {
+        "grade": "B",
+        "score": 65.1,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 43% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -43.1
+      },
+      "trophic": {
+        "producer": {
+          "count": 60,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Allium haematochiton",
+            "Allium marvinii",
+            "Ambrosia monogyra",
+            "Ambrosia pumila",
+            "Artemisia palmeri",
+            "Asplenium vespertinum",
+            "Azolla filiculoides",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Bloomeria clevelandii",
+            "Brodiaea orcuttii",
+            "Calochortus dunnii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii"
+          ]
+        },
+        "pollinator": {
+          "count": 10,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Satyrium auretorum",
+            "Satyrium tetra",
+            "Tharsalea gorgon",
+            "Tharsalea hermes",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 3,
+          "species": [
+            "Glyptostoma newberryanum",
+            "Helminthoglypta milleri",
+            "Helminthoglypta tudiculata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Anaxyrus californicus",
+            "Ensatina eschscholtzii klauberi",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 15,
+          "species": [
+            "Agelaius tricolor",
+            "Amazona finschi",
+            "Amazona viridigenalis",
+            "Anser cygnoides",
+            "Branta hutchinsii leucopareia",
+            "Calypte costae",
+            "Campylorhynchus brunneicapillus sandiegensis",
+            "Charadrius vociferus",
+            "Lanius ludovicianus",
+            "Mycteria americana",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Polioptila californica californica",
+            "Selasphorus rufus",
+            "Vireo bellii pusillus"
+          ]
+        },
+        "apex_predator": {
+          "count": 19,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Asio otus",
+            "Aspidoscelis hyperythrus",
+            "Aspidoscelis tigris stejnegeri",
+            "Bassariscus astutus octavus",
+            "Coleonyx variegatus abbotti",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Masticophis fuliginosus",
+            "Pandion haliaetus"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 110,
+      "total_observations": 2342,
+      "yearly_species": {
+        "2023": 65,
+        "2024": 74,
+        "2025": 72,
+        "2026": 37
+      }
+    },
+    {
+      "id": "3-4",
+      "name": "Ramona",
+      "lat": 32.875,
+      "lng": -116.6229,
+      "health": {
+        "grade": "C",
+        "score": 61.5,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 75% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -75.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 48,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Allium marvinii",
+            "Artemisia palmeri",
+            "Artemisia tridentata tridentata",
+            "Asplenium vespertinum",
+            "Azolla filiculoides",
+            "Brodiaea orcuttii",
+            "Calochortus concolor",
+            "Calochortus dunnii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Chorizanthe leptotheca",
+            "Chorizanthe polygonoides longispina",
+            "Cirsium occidentale",
+            "Cirsium occidentale californicum"
+          ]
+        },
+        "pollinator": {
+          "count": 13,
+          "species": [
+            "Apodemia virgulti",
+            "Apodemia virgulti peninsularis",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Glaucopsyche piasus umbrosa",
+            "Philotes sonorensis",
+            "Satyrium auretorum",
+            "Satyrium tetra",
+            "Strymon istapa",
+            "Tharsalea gorgon",
+            "Tharsalea hermes",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 3,
+          "species": [
+            "Helminthoglypta milleri",
+            "Helminthoglypta tudiculata",
+            "Rothelix cuyamacensis"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 4,
+          "species": [
+            "Anaxyrus californicus",
+            "Ensatina eschscholtzii klauberi",
+            "Gasterosteus aculeatus williamsoni",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 6,
+          "species": [
+            "Agelaius tricolor",
+            "Ardenna grisea",
+            "Calypte costae",
+            "Contopus cooperi",
+            "Larus heermanni",
+            "Selasphorus rufus"
+          ]
+        },
+        "apex_predator": {
+          "count": 11,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Aspidoscelis tigris stejnegeri",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis multifasciata",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 85,
+      "total_observations": 542,
+      "yearly_species": {
+        "2023": 48,
+        "2024": 54,
+        "2025": 44,
+        "2026": 12
+      }
+    },
+    {
+      "id": "3-5",
+      "name": "Santa Ysabel",
+      "lat": 32.875,
+      "lng": -116.4057,
+      "health": {
+        "grade": "C",
+        "score": 59.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 70% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -70.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 45,
+          "species": [
+            "Astragalus insularis harwoodii",
+            "Astragalus oocarpus",
+            "Boechera johnstonii",
+            "Brodiaea orcuttii",
+            "Calochortus concolor",
+            "Calochortus dunnii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Carlowrightia arizonica",
+            "Caulanthus simulans",
+            "Chaenactis artemisiifolia",
+            "Chaenactis parishii",
+            "Chorizanthe leptotheca",
+            "Chorizanthe polygonoides longispina",
+            "Cirsium occidentale"
+          ]
+        },
+        "pollinator": {
+          "count": 14,
+          "species": [
+            "Apodemia virgulti",
+            "Apodemia virgulti peninsularis",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Chlosyne leanira",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Glaucopsyche piasus umbrosa",
+            "Habrodais grunus",
+            "Satyrium auretorum",
+            "Satyrium tetra",
+            "Tharsalea gorgon",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Helminthoglypta edwardsi"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Anaxyrus californicus",
+            "Ensatina eschscholtzii klauberi",
+            "Gasterosteus aculeatus williamsoni"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 4,
+          "species": [
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Contopus cooperi",
+            "Ovis canadensis nelsoni"
+          ]
+        },
+        "apex_predator": {
+          "count": 10,
+          "species": [
+            "Accipiter striatus",
+            "Aspidoscelis tigris stejnegeri",
+            "Circus hudsonius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis multifasciata",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 77,
+      "total_observations": 763,
+      "yearly_species": {
+        "2023": 50,
+        "2024": 43,
+        "2025": 54,
+        "2026": 15
+      }
+    },
+    {
+      "id": "3-6",
+      "name": "Borrego Springs",
+      "lat": 32.875,
+      "lng": -116.1886,
+      "health": {
+        "grade": "D",
+        "score": 37.7,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "No pollinators detected \u2014 plant reproduction at risk"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 44% year-over-year"
+          }
+        ],
+        "trophic_completeness": 50,
+        "trend_pct": -44.4
+      },
+      "trophic": {
+        "producer": {
+          "count": 16,
+          "species": [
+            "Astragalus douglasii perstrictus",
+            "Astragalus insularis harwoodii",
+            "Carlowrightia arizonica",
+            "Caulanthus simulans",
+            "Cochemiea tetrancistra",
+            "Cylindropuntia fosbergii",
+            "Eucnide rupestris",
+            "Euphorbia abramsiana",
+            "Funastrum utahense",
+            "Juncus acutus leopoldii",
+            "Linanthus maculatus emaculatus",
+            "Matelea parvifolia",
+            "Mentzelia hirsutissima",
+            "Olneya tesota",
+            "Selaginella eremophila"
+          ]
+        },
+        "pollinator": {
+          "count": 0,
+          "species": []
+        },
+        "primary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "secondary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "tertiary_consumer": {
+          "count": 5,
+          "species": [
+            "Calypte costae",
+            "Corynorhinus townsendii",
+            "Lanius ludovicianus",
+            "Ovis canadensis nelsoni",
+            "Vireo bellii pusillus"
+          ]
+        },
+        "apex_predator": {
+          "count": 1,
+          "species": [
+            "Crotalus ruber"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 22,
+      "total_observations": 492,
+      "yearly_species": {
+        "2023": 18,
+        "2024": 15,
+        "2025": 11,
+        "2026": 10
+      }
+    },
+    {
+      "id": "4-0",
+      "name": "Mission Bay",
+      "lat": 32.9736,
+      "lng": -117.4914,
+      "health": {
+        "grade": "C",
+        "score": 50.1,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "No pollinators detected \u2014 plant reproduction at risk"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 55% year-over-year"
+          }
+        ],
+        "trophic_completeness": 83,
+        "trend_pct": -54.5
+      },
+      "trophic": {
+        "producer": {
+          "count": 26,
+          "species": [
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Arctostaphylos glandulosa crassifolia",
+            "Bergerocactus emoryi",
+            "Brodiaea orcuttii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Chorizanthe orcuttiana",
+            "Chorizanthe polygonoides longispina",
+            "Cistanthe maritima",
+            "Comarostaphylis diversifolia diversifolia",
+            "Corethrogyne filaginifolia linifolia",
+            "Dudleya brevifolia",
+            "Erysimum ammophilum",
+            "Euphorbia misera"
+          ]
+        },
+        "pollinator": {
+          "count": 0,
+          "species": []
+        },
+        "primary_consumer": {
+          "count": 4,
+          "species": [
+            "Alopias vulpinus",
+            "Apostichopus parvimensis",
+            "Galeorhinus galeus",
+            "Haliotis fulgens"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Stereolepis gigas"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 7,
+          "species": [
+            "Nannopterum auritum",
+            "Passerculus sandwichensis beldingi",
+            "Pelecanus occidentalis",
+            "Pelecanus occidentalis californicus",
+            "Psittacara erythrogenys",
+            "Sternula antillarum",
+            "Zonotrichia querula"
+          ]
+        },
+        "apex_predator": {
+          "count": 4,
+          "species": [
+            "Diadophis punctatus similis",
+            "Falco peregrinus",
+            "Pandion haliaetus",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 44,
+      "total_observations": 138,
+      "yearly_species": {
+        "2023": 22,
+        "2024": 20,
+        "2025": 19,
+        "2026": 10
+      }
+    },
+    {
+      "id": "4-1",
+      "name": "Balboa Park",
+      "lat": 32.9736,
+      "lng": -117.2743,
+      "health": {
+        "grade": "B",
+        "score": 72.2,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 34% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -34.3
+      },
+      "trophic": {
+        "producer": {
+          "count": 97,
+          "species": [
+            "Abronia maritima",
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Allium haematochiton",
+            "Aloina bifrons",
+            "Ambrosia chenopodiifolia",
+            "Ambrosia monogyra",
+            "Aphanisma blitoides",
+            "Arctostaphylos glandulosa crassifolia",
+            "Artemisia palmeri",
+            "Atriplex pacifica",
+            "Azolla filiculoides",
+            "Baccharis vanessae"
+          ]
+        },
+        "pollinator": {
+          "count": 11,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Chlosyne gabbii",
+            "Cocytius antaeus",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Dorymyrmex insanus",
+            "Panoquina errans",
+            "Strymon istapa",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 15,
+          "species": [
+            "Alopias vulpinus",
+            "Apostichopus parvimensis",
+            "Branchinecta sandiegonensis",
+            "Carcharodon carcharias",
+            "Cicindelidia trifasciata sigmoidea",
+            "Galeorhinus galeus",
+            "Glyptostoma newberryanum",
+            "Gymnura marmorata",
+            "Haliotis fulgens",
+            "Helminthoglypta traskii",
+            "Helminthoglypta tudiculata",
+            "Hypanus dipterurus",
+            "Pseudobatos productus",
+            "Squatina californica",
+            "Xerarionta stearnsiana"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 5,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Mola mola",
+            "Spea hammondii",
+            "Stereolepis gigas"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 49,
+          "species": [
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona viridigenalis",
+            "Ammospiza nelsoni",
+            "Anarhynchus nivosus",
+            "Ardenna creatopus",
+            "Arenaria interpres",
+            "Balaenoptera musculus",
+            "Balaenoptera musculus musculus",
+            "Balaenoptera physalus",
+            "Botaurus exilis",
+            "Botaurus lentiginosus",
+            "Calidris alpina",
+            "Calidris canutus",
+            "Calidris minutilla",
+            "Charadrius vociferus"
+          ]
+        },
+        "apex_predator": {
+          "count": 15,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arctocephalus townsendi",
+            "Aspidoscelis hyperythrus",
+            "Buteo swainsoni",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 4,
+          "species": [
+            "Niebla cephalota",
+            "Niebla ceruchis",
+            "Placynthiella oligotropha",
+            "Texosporium sancti-jacobi"
+          ]
+        }
+      },
+      "total_species": 196,
+      "total_observations": 7290,
+      "yearly_species": {
+        "2023": 143,
+        "2024": 142,
+        "2025": 129,
+        "2026": 94
+      }
+    },
+    {
+      "id": "4-2",
+      "name": "Mission Trails",
+      "lat": 32.9736,
+      "lng": -117.0571,
+      "health": {
+        "grade": "B",
+        "score": 68.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 30% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -30.1
+      },
+      "trophic": {
+        "producer": {
+          "count": 76,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Allium haematochiton",
+            "Allium marvinii",
+            "Ambrosia pumila",
+            "Arctostaphylos glandulosa crassifolia",
+            "Artemisia palmeri",
+            "Asplenium vespertinum",
+            "Azolla filiculoides",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Berberis nevinii",
+            "Bergerocactus emoryi",
+            "Bloomeria clevelandii"
+          ]
+        },
+        "pollinator": {
+          "count": 9,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Cocytius antaeus",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Dorymyrmex insanus",
+            "Satyrium tetra",
+            "Strymon istapa"
+          ]
+        },
+        "primary_consumer": {
+          "count": 3,
+          "species": [
+            "Branchinecta sandiegonensis",
+            "Glyptostoma newberryanum",
+            "Helminthoglypta tudiculata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 2,
+          "species": [
+            "Anaxyrus californicus",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 16,
+          "species": [
+            "Agapornis fischeri",
+            "Amazona finschi",
+            "Amazona finschi \u00d7 viridigenalis",
+            "Amazona viridigenalis",
+            "Botaurus lentiginosus",
+            "Branta hutchinsii leucopareia",
+            "Calypte costae",
+            "Campylorhynchus brunneicapillus sandiegensis",
+            "Charadrius vociferus",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Pelecanus occidentalis",
+            "Psittacara erythrogenys",
+            "Selasphorus rufus",
+            "Setophaga striata"
+          ]
+        },
+        "apex_predator": {
+          "count": 19,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Aspidoscelis hyperythrus",
+            "Aspidoscelis tigris stejnegeri",
+            "Circus hudsonius",
+            "Coleonyx variegatus abbotti",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis"
+          ]
+        },
+        "decomposer": {
+          "count": 2,
+          "species": [
+            "Texosporium sancti-jacobi",
+            "Trapeliopsis glaucopholis"
+          ]
+        }
+      },
+      "total_species": 127,
+      "total_observations": 1694,
+      "yearly_species": {
+        "2023": 83,
+        "2024": 88,
+        "2025": 89,
+        "2026": 58
+      }
+    },
+    {
+      "id": "4-3",
+      "name": "Poway",
+      "lat": 32.9736,
+      "lng": -116.84,
+      "health": {
+        "grade": "C",
+        "score": 64.9,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 42% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -42.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 47,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Allium marvinii",
+            "Artemisia palmeri",
+            "Asplenium vespertinum",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Bloomeria clevelandii",
+            "Brodiaea orcuttii",
+            "Calochortus concolor",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta",
+            "Ceanothus cyaneus",
+            "Centromadia parryi australis",
+            "Centromadia pungens laevis"
+          ]
+        },
+        "pollinator": {
+          "count": 8,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Tharsalea hermes",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 3,
+          "species": [
+            "Branchinecta sandiegonensis",
+            "Glyptostoma newberryanum",
+            "Helminthoglypta tudiculata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 4,
+          "species": [
+            "Anaxyrus californicus",
+            "Ensatina eschscholtzii klauberi",
+            "Spea hammondii",
+            "Terrapene triunguis"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 11,
+          "species": [
+            "Amazona finschi",
+            "Amazona viridigenalis",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Lanius ludovicianus",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Selasphorus rufus",
+            "Tringa melanoleuca",
+            "Vireo bellii pusillus"
+          ]
+        },
+        "apex_predator": {
+          "count": 17,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Asio otus",
+            "Aspidoscelis hyperythrus",
+            "Circus hudsonius",
+            "Coleonyx variegatus abbotti",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 90,
+      "total_observations": 540,
+      "yearly_species": {
+        "2023": 50,
+        "2024": 60,
+        "2025": 52,
+        "2026": 29
+      }
+    },
+    {
+      "id": "4-4",
+      "name": "San Pasqual",
+      "lat": 32.9736,
+      "lng": -116.6229,
+      "health": {
+        "grade": "C",
+        "score": 62.5,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 69% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -68.9
+      },
+      "trophic": {
+        "producer": {
+          "count": 54,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Allium haematochiton",
+            "Androsace elongata acuta",
+            "Asplenium vespertinum",
+            "Astragalus oocarpus",
+            "Brodiaea orcuttii",
+            "Calochortus concolor",
+            "Calochortus dunnii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Caulanthus simulans",
+            "Ceanothus cyaneus",
+            "Chaenactis artemisiifolia",
+            "Chorizanthe leptotheca",
+            "Chorizanthe polygonoides longispina"
+          ]
+        },
+        "pollinator": {
+          "count": 14,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Dorymyrmex insanus",
+            "Glaucopsyche piasus umbrosa",
+            "Philotes sonorensis",
+            "Satyrium auretorum",
+            "Satyrium tetra",
+            "Strymon istapa",
+            "Tharsalea gorgon",
+            "Tharsalea hermes",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 2,
+          "species": [
+            "Helminthoglypta milleri",
+            "Helminthoglypta tudiculata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 5,
+          "species": [
+            "Actinemys pallida",
+            "Anaxyrus californicus",
+            "Ensatina eschscholtzii klauberi",
+            "Gasterosteus aculeatus williamsoni",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 8,
+          "species": [
+            "Agelaius tricolor",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Contopus cooperi",
+            "Hesperiphona vespertina",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Pelecanus occidentalis"
+          ]
+        },
+        "apex_predator": {
+          "count": 13,
+          "species": [
+            "Accipiter striatus",
+            "Aspidoscelis hyperythrus",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis multifasciata",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 96,
+      "total_observations": 803,
+      "yearly_species": {
+        "2023": 61,
+        "2024": 54,
+        "2025": 51,
+        "2026": 19
+      }
+    },
+    {
+      "id": "4-5",
+      "name": "Palomar Mountain",
+      "lat": 32.9736,
+      "lng": -116.4057,
+      "health": {
+        "grade": "C",
+        "score": 59.5,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 51% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -51.1
+      },
+      "trophic": {
+        "producer": {
+          "count": 44,
+          "species": [
+            "Allium marvinii",
+            "Astragalus insularis harwoodii",
+            "Boechera johnstonii",
+            "Brodiaea orcuttii",
+            "Calochortus dunnii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Carlowrightia arizonica",
+            "Chorizanthe polygonoides longispina",
+            "Cochemiea tetrancistra",
+            "Cylindropuntia fosbergii",
+            "Delphinium hesperium cuyamacae",
+            "Dieteria asteroides lagunensis",
+            "Diplacus clevelandii",
+            "Dudleya abramsii abramsii"
+          ]
+        },
+        "pollinator": {
+          "count": 10,
+          "species": [
+            "Apodemia virgulti",
+            "Chlosyne gabbii",
+            "Chlosyne leanira",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Glaucopsyche piasus umbrosa",
+            "Philotes sonorensis",
+            "Strymon istapa",
+            "Tharsalea gorgon",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Sonorelix borregoensis"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 2,
+          "species": [
+            "Ensatina eschscholtzii klauberi",
+            "Gasterosteus aculeatus williamsoni"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 6,
+          "species": [
+            "Calypte costae",
+            "Contopus cooperi",
+            "Lanius ludovicianus",
+            "Ovis canadensis nelsoni",
+            "Polioptila melanura",
+            "Selasphorus rufus"
+          ]
+        },
+        "apex_predator": {
+          "count": 12,
+          "species": [
+            "Anniella stebbinsi",
+            "Asio otus",
+            "Buteo swainsoni",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis multifasciata",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Taxidea taxus",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 75,
+      "total_observations": 1080,
+      "yearly_species": {
+        "2023": 45,
+        "2024": 48,
+        "2025": 46,
+        "2026": 22
+      }
+    },
+    {
+      "id": "4-6",
+      "name": "Anza-Borrego North",
+      "lat": 32.9736,
+      "lng": -116.1886,
+      "health": {
+        "grade": "D",
+        "score": 44.1,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "No pollinators detected \u2014 plant reproduction at risk"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 50% year-over-year"
+          }
+        ],
+        "trophic_completeness": 83,
+        "trend_pct": -50.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 23,
+          "species": [
+            "Astragalus douglasii perstrictus",
+            "Astragalus insularis harwoodii",
+            "Carlowrightia arizonica",
+            "Chaenactis carphoclinia peirsonii",
+            "Cochemiea tetrancistra",
+            "Cylindropuntia fosbergii",
+            "Dudleya saxosa",
+            "Dudleya saxosa aloides",
+            "Epipactis gigantea",
+            "Eucnide rupestris",
+            "Euphorbia abramsiana",
+            "Funastrum utahense",
+            "Lathyrus splendens",
+            "Lepidium flavum felipense",
+            "Linanthus maculatus emaculatus"
+          ]
+        },
+        "pollinator": {
+          "count": 0,
+          "species": []
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Sonorelix harperi"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 1,
+          "species": [
+            "Gopherus agassizii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 3,
+          "species": [
+            "Calypte costae",
+            "Lanius ludovicianus",
+            "Ovis canadensis nelsoni"
+          ]
+        },
+        "apex_predator": {
+          "count": 3,
+          "species": [
+            "Asio otus",
+            "Crotalus ruber",
+            "Phrynosoma mcallii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 31,
+      "total_observations": 1066,
+      "yearly_species": {
+        "2023": 22,
+        "2024": 13,
+        "2025": 9,
+        "2026": 11
+      }
+    },
+    {
+      "id": "5-0",
+      "name": "La Jolla",
+      "lat": 33.0721,
+      "lng": -117.4914,
+      "health": {
+        "grade": "D",
+        "score": 45.9,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 89% year-over-year"
+          }
+        ],
+        "trophic_completeness": 83,
+        "trend_pct": -88.9
+      },
+      "trophic": {
+        "producer": {
+          "count": 13,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Comarostaphylis diversifolia diversifolia",
+            "Eryngium aristulatum parishii",
+            "Harpagonella palmeri",
+            "Hazardia orcuttii",
+            "Leptosyne maritima",
+            "Quercus dumosa",
+            "Salvia munzii",
+            "Sphenopholis interrupta californica"
+          ]
+        },
+        "pollinator": {
+          "count": 3,
+          "species": [
+            "Apodemia virgulti",
+            "Cocytius antaeus",
+            "Danaus plexippus"
+          ]
+        },
+        "primary_consumer": {
+          "count": 2,
+          "species": [
+            "Galeorhinus galeus",
+            "Haliotis fulgens"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 0,
+          "species": []
+        },
+        "tertiary_consumer": {
+          "count": 3,
+          "species": [
+            "Corynorhinus townsendii",
+            "Rallus obsoletus",
+            "Sternula antillarum"
+          ]
+        },
+        "apex_predator": {
+          "count": 3,
+          "species": [
+            "Aspidoscelis hyperythrus",
+            "Crotalus ruber",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 24,
+      "total_observations": 40,
+      "yearly_species": {
+        "2023": 9,
+        "2024": 11,
+        "2025": 11,
+        "2026": 1
+      }
+    },
+    {
+      "id": "5-1",
+      "name": "Miramar",
+      "lat": 33.0721,
+      "lng": -117.2743,
+      "health": {
+        "grade": "B",
+        "score": 66.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 52% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -51.7
+      },
+      "trophic": {
+        "producer": {
+          "count": 79,
+          "species": [
+            "Abronia maritima",
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Arctostaphylos glandulosa crassifolia",
+            "Artemisia palmeri",
+            "Atriplex pacifica",
+            "Azolla filiculoides",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Bloomeria clevelandii",
+            "Brodiaea filifolia",
+            "Brodiaea orcuttii"
+          ]
+        },
+        "pollinator": {
+          "count": 9,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Cocytius antaeus",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Panoquina errans",
+            "Strymon istapa",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 8,
+          "species": [
+            "Alopias vulpinus",
+            "Carcharodon carcharias",
+            "Haliotis fulgens",
+            "Helminthoglypta traskii",
+            "Helminthoglypta tudiculata",
+            "Helminthoglypta tudiculata fairbanksi",
+            "Isurus oxyrinchus",
+            "Pseudobatos productus"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 5,
+          "species": [
+            "Bodianus pulcher",
+            "Chelonia mydas",
+            "Mola mola",
+            "Spea hammondii",
+            "Stereolepis gigas"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 34,
+          "species": [
+            "Amazona finschi",
+            "Anarhynchus nivosus",
+            "Anarhynchus nivosus nivosus",
+            "Ardenna grisea",
+            "Arenaria interpres",
+            "Balaenoptera musculus",
+            "Botaurus exilis",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Choeronycteris mexicana",
+            "Contopus cooperi",
+            "Cygnus buccinator",
+            "Lanius ludovicianus",
+            "Larus heermanni"
+          ]
+        },
+        "apex_predator": {
+          "count": 14,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Aspidoscelis hyperythrus",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 149,
+      "total_observations": 2182,
+      "yearly_species": {
+        "2023": 87,
+        "2024": 100,
+        "2025": 86,
+        "2026": 42
+      }
+    },
+    {
+      "id": "5-2",
+      "name": "Scripps Ranch",
+      "lat": 33.0721,
+      "lng": -117.0571,
+      "health": {
+        "grade": "C",
+        "score": 62.9,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 47% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -47.1
+      },
+      "trophic": {
+        "producer": {
+          "count": 54,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Allium haematochiton",
+            "Artemisia palmeri",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Berberis nevinii",
+            "Bloomeria clevelandii",
+            "Brodiaea filifolia",
+            "Brodiaea orcuttii",
+            "Calandrinia breweri",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta"
+          ]
+        },
+        "pollinator": {
+          "count": 8,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Satyrium tetra",
+            "Strymon istapa",
+            "Tharsalea hermes",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 3,
+          "species": [
+            "Glyptostoma newberryanum",
+            "Helminthoglypta traskii",
+            "Helminthoglypta tudiculata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Actinemys pallida",
+            "Anaxyrus californicus",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 16,
+          "species": [
+            "Agelaius tricolor",
+            "Anser cygnoides",
+            "Botaurus exilis",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Campylorhynchus brunneicapillus sandiegensis",
+            "Charadrius vociferus",
+            "Coccyzus americanus",
+            "Lanius ludovicianus",
+            "Lasiurus cinereus",
+            "Limnodromus scolopaceus",
+            "Mycteria americana",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Selasphorus rufus"
+          ]
+        },
+        "apex_predator": {
+          "count": 18,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Aspidoscelis hyperythrus",
+            "Aspidoscelis tigris stejnegeri",
+            "Buteo swainsoni",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 102,
+      "total_observations": 1688,
+      "yearly_species": {
+        "2023": 70,
+        "2024": 70,
+        "2025": 75,
+        "2026": 37
+      }
+    },
+    {
+      "id": "5-3",
+      "name": "Rancho Bernardo",
+      "lat": 33.0721,
+      "lng": -116.84,
+      "health": {
+        "grade": "C",
+        "score": 59.5,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 62% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -62.5
+      },
+      "trophic": {
+        "producer": {
+          "count": 23,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Allium marvinii",
+            "Azolla filiculoides",
+            "Baccharis vanessae",
+            "Brodiaea orcuttii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta",
+            "Centromadia parryi australis",
+            "Chamaebatia australis",
+            "Chorizanthe leptotheca",
+            "Cirsium occidentale",
+            "Clarkia delicata",
+            "Clematis pauciflora",
+            "Convolvulus simulans"
+          ]
+        },
+        "pollinator": {
+          "count": 4,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Danaus plexippus",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 2,
+          "species": [
+            "Glyptostoma newberryanum",
+            "Helminthoglypta tudiculata"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Anaxyrus californicus",
+            "Ensatina eschscholtzii klauberi",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 14,
+          "species": [
+            "Agelaius tricolor",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Contopus cooperi",
+            "Dipodomys stephensi",
+            "Lanius ludovicianus",
+            "Limnodromus scolopaceus",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Pelecanus occidentalis",
+            "Pelecanus occidentalis californicus",
+            "Polioptila californica californica",
+            "Tringa melanoleuca"
+          ]
+        },
+        "apex_predator": {
+          "count": 13,
+          "species": [
+            "Accipiter striatus",
+            "Aspidoscelis hyperythrus",
+            "Aspidoscelis tigris stejnegeri",
+            "Buteo swainsoni",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 59,
+      "total_observations": 433,
+      "yearly_species": {
+        "2023": 40,
+        "2024": 29,
+        "2025": 37,
+        "2026": 15
+      }
+    },
+    {
+      "id": "5-4",
+      "name": "Escondido",
+      "lat": 33.0721,
+      "lng": -116.6229,
+      "health": {
+        "grade": "C",
+        "score": 59.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 67% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -66.7
+      },
+      "trophic": {
+        "producer": {
+          "count": 38,
+          "species": [
+            "Brickellia atractyloides arguta",
+            "Brodiaea orcuttii",
+            "Calochortus concolor",
+            "Calochortus dunnii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta",
+            "Carlowrightia arizonica",
+            "Caulanthus simulans",
+            "Chorizanthe polygonoides longispina",
+            "Cirsium occidentale",
+            "Cirsium occidentale californicum",
+            "Clematis pauciflora",
+            "Cochemiea tetrancistra",
+            "Cylindropuntia fosbergii"
+          ]
+        },
+        "pollinator": {
+          "count": 9,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Philotes sonorensis",
+            "Satyrium auretorum",
+            "Tharsalea gorgon",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Rothelix rhodophila"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Actinemys pallida",
+            "Ensatina eschscholtzii klauberi",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 6,
+          "species": [
+            "Agelaius tricolor",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Lanius ludovicianus",
+            "Leuconotopicus albolarvatus",
+            "Ovis canadensis nelsoni"
+          ]
+        },
+        "apex_predator": {
+          "count": 9,
+          "species": [
+            "Accipiter striatus",
+            "Arizona elegans occidentalis",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis multifasciata",
+            "Phrynosoma blainvillii",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 66,
+      "total_observations": 531,
+      "yearly_species": {
+        "2023": 39,
+        "2024": 40,
+        "2025": 34,
+        "2026": 13
+      }
+    },
+    {
+      "id": "5-5",
+      "name": "Valley Center",
+      "lat": 33.0721,
+      "lng": -116.4057,
+      "health": {
+        "grade": "C",
+        "score": 61.8,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 38% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -37.5
+      },
+      "trophic": {
+        "producer": {
+          "count": 28,
+          "species": [
+            "Brickellia atractyloides arguta",
+            "Calochortus dunnii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Calyptridium arizonicum",
+            "Carlowrightia arizonica",
+            "Carnegiea gigantea",
+            "Caulanthus simulans",
+            "Chaenactis artemisiifolia",
+            "Chorizanthe polygonoides longispina",
+            "Cochemiea tetrancistra",
+            "Cylindropuntia fosbergii",
+            "Downingia concolor brevior",
+            "Dudleya abramsii abramsii",
+            "Dudleya saxosa"
+          ]
+        },
+        "pollinator": {
+          "count": 7,
+          "species": [
+            "Apodemia virgulti",
+            "Callophrys loki",
+            "Chlosyne acastus neumoegeni",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Philotes sonorensis",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Sonorelix borregoensis"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 2,
+          "species": [
+            "Ensatina eschscholtzii klauberi",
+            "Gopherus agassizii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 6,
+          "species": [
+            "Calypte costae",
+            "Coccyzus americanus",
+            "Lanius ludovicianus",
+            "Ovis canadensis nelsoni",
+            "Polioptila melanura",
+            "Selasphorus rufus"
+          ]
+        },
+        "apex_predator": {
+          "count": 10,
+          "species": [
+            "Asio otus",
+            "Aspidoscelis tigris stejnegeri",
+            "Circus hudsonius",
+            "Coleonyx variegatus abbotti",
+            "Crotalus ruber",
+            "Lampropeltis multifasciata",
+            "Phrynosoma blainvillii",
+            "Salvadora hexalepis virgultea",
+            "Strix occidentalis",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 54,
+      "total_observations": 492,
+      "yearly_species": {
+        "2023": 32,
+        "2024": 31,
+        "2025": 26,
+        "2026": 20
+      }
+    },
+    {
+      "id": "5-6",
+      "name": "Palomar East",
+      "lat": 33.0721,
+      "lng": -116.1886,
+      "health": {
+        "grade": "C",
+        "score": 51.0,
+        "risks": [
+          {
+            "type": "warning",
+            "message": "Low pollinator diversity \u2014 ecosystem fragile"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 56% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -56.2
+      },
+      "trophic": {
+        "producer": {
+          "count": 11,
+          "species": [
+            "Carlowrightia arizonica",
+            "Cochemiea tetrancistra",
+            "Dudleya saxosa",
+            "Dudleya saxosa aloides",
+            "Lepidium flavum felipense",
+            "Matelea parvifolia",
+            "Mentzelia hirsutissima",
+            "Olneya tesota",
+            "Phacelia campanularia",
+            "Selaginella eremophila",
+            "Senna covesii"
+          ]
+        },
+        "pollinator": {
+          "count": 1,
+          "species": [
+            "Apodemia virgulti"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Sonorelix borregoensis"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 2,
+          "species": [
+            "Cyprinodon macularius",
+            "Gopherus agassizii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 3,
+          "species": [
+            "Calypte costae",
+            "Lanius ludovicianus",
+            "Ovis canadensis nelsoni"
+          ]
+        },
+        "apex_predator": {
+          "count": 5,
+          "species": [
+            "Asio otus",
+            "Crotalus ruber",
+            "Phrynosoma mcallii",
+            "Puma concolor couguar",
+            "Uma notata"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 23,
+      "total_observations": 133,
+      "yearly_species": {
+        "2023": 16,
+        "2024": 15,
+        "2025": 8,
+        "2026": 7
+      }
+    },
+    {
+      "id": "6-0",
+      "name": "Del Mar",
+      "lat": 33.1707,
+      "lng": -117.4914,
+      "health": {
+        "grade": "B",
+        "score": 65.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 62% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -61.5
+      },
+      "trophic": {
+        "producer": {
+          "count": 47,
+          "species": [
+            "Abronia maritima",
+            "Abronia villosa aurita",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Allium haematochiton",
+            "Atriplex coulteri",
+            "Atriplex pacifica",
+            "Azolla filiculoides",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Bergerocactus emoryi",
+            "Brodiaea filifolia",
+            "Brodiaea orcuttii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii"
+          ]
+        },
+        "pollinator": {
+          "count": 6,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Chlosyne gabbii",
+            "Cocytius antaeus",
+            "Danaus plexippus"
+          ]
+        },
+        "primary_consumer": {
+          "count": 11,
+          "species": [
+            "Alopias vulpinus",
+            "Carcharodon carcharias",
+            "Cicindela latesignata",
+            "Haliotis fulgens",
+            "Helminthoglypta tudiculata",
+            "Helminthoglypta tudiculata fairbanksi",
+            "Hypanus dipterurus",
+            "Isurus oxyrinchus",
+            "Pseudobatos productus",
+            "Squatina californica",
+            "Streptocephalus woottoni"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 4,
+          "species": [
+            "Actinemys pallida",
+            "Anaxyrus californicus",
+            "Sebastes paucispinis",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 31,
+          "species": [
+            "Agelaius tricolor",
+            "Amazona finschi",
+            "Anarhynchus nivosus",
+            "Anarhynchus nivosus nivosus",
+            "Balaenoptera musculus",
+            "Balaenoptera physalus",
+            "Bison bison",
+            "Botaurus exilis",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Chlidonias niger",
+            "Clangula hyemalis",
+            "Egretta rufescens",
+            "Empidonax traillii brewsteri"
+          ]
+        },
+        "apex_predator": {
+          "count": 11,
+          "species": [
+            "Arctocephalus townsendi",
+            "Aspidoscelis hyperythrus",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco peregrinus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Salvadora hexalepis virgultea",
+            "Taxidea taxus",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 110,
+      "total_observations": 849,
+      "yearly_species": {
+        "2023": 65,
+        "2024": 62,
+        "2025": 57,
+        "2026": 25
+      }
+    },
+    {
+      "id": "6-1",
+      "name": "Carmel Valley",
+      "lat": 33.1707,
+      "lng": -117.2743,
+      "health": {
+        "grade": "B",
+        "score": 71.3,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 39% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -38.9
+      },
+      "trophic": {
+        "producer": {
+          "count": 94,
+          "species": [
+            "Abronia maritima",
+            "Abronia villosa aurita",
+            "Acanthomintha ilicifolia",
+            "Acmispon prostratus",
+            "Adolphia californica",
+            "Agave shawii shawii",
+            "Allium haematochiton",
+            "Ambrosia chenopodiifolia",
+            "Ambrosia monogyra",
+            "Ambrosia pumila",
+            "Arctostaphylos glandulosa crassifolia",
+            "Arctostaphylos rainbowensis",
+            "Artemisia palmeri",
+            "Azolla filiculoides",
+            "Baccharis vanessae"
+          ]
+        },
+        "pollinator": {
+          "count": 11,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Bombus sonorus",
+            "Chlosyne gabbii",
+            "Cocytius antaeus",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Panoquina errans",
+            "Strymon istapa",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 12,
+          "species": [
+            "Alopias vulpinus",
+            "Anadenulus cockerelli",
+            "Branchinecta sandiegonensis",
+            "Cyzicus californicus",
+            "Galeorhinus galeus",
+            "Glyptostoma newberryanum",
+            "Haliotis fulgens",
+            "Helminthoglypta tudiculata",
+            "Helminthoglypta tudiculata fairbanksi",
+            "Isurus oxyrinchus",
+            "Pseudobatos productus",
+            "Squatina californica"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 6,
+          "species": [
+            "Actinemys pallida",
+            "Anaxyrus californicus",
+            "Bodianus pulcher",
+            "Chelydra serpentina",
+            "Spea hammondii",
+            "Stereolepis gigas"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 33,
+          "species": [
+            "Agelaius tricolor",
+            "Amazona finschi",
+            "Amazona viridigenalis",
+            "Anarhynchus nivosus",
+            "Bison bison",
+            "Botaurus exilis",
+            "Calidris minutilla",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Cygnus buccinator",
+            "Dipodomys stephensi",
+            "Euphagus carolinus",
+            "Lanius ludovicianus",
+            "Larus heermanni",
+            "Lasiurus cinereus"
+          ]
+        },
+        "apex_predator": {
+          "count": 16,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Aspidoscelis hyperythrus",
+            "Aspidoscelis tigris stejnegeri",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Enhydra lutris",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis",
+            "Puma concolor couguar"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 172,
+      "total_observations": 2606,
+      "yearly_species": {
+        "2023": 108,
+        "2024": 114,
+        "2025": 115,
+        "2026": 66
+      }
+    },
+    {
+      "id": "6-2",
+      "name": "Rancho Santa Fe",
+      "lat": 33.1707,
+      "lng": -117.0571,
+      "health": {
+        "grade": "C",
+        "score": 62.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 51% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -50.8
+      },
+      "trophic": {
+        "producer": {
+          "count": 56,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Adolphia californica",
+            "Allium haematochiton",
+            "Allium marvinii",
+            "Ambrosia pumila",
+            "Arctostaphylos rainbowensis",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Berberis nevinii",
+            "Brodiaea filifolia",
+            "Brodiaea orcuttii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta",
+            "Chaenactis glabriuscula glabriuscula"
+          ]
+        },
+        "pollinator": {
+          "count": 8,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Cocytius antaeus",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Dorymyrmex insanus",
+            "Satyrium tetra",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 4,
+          "species": [
+            "Anadenulus cockerelli",
+            "Glyptostoma newberryanum",
+            "Helminthoglypta tudiculata",
+            "Rothelix lowei"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Anaxyrus californicus",
+            "Ensatina eschscholtzii klauberi",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 9,
+          "species": [
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Coccyzus americanus",
+            "Lanius ludovicianus",
+            "Nannopterum auritum",
+            "Nycticorax nycticorax",
+            "Pelecanus occidentalis",
+            "Selasphorus rufus",
+            "Vireo bellii pusillus"
+          ]
+        },
+        "apex_predator": {
+          "count": 18,
+          "species": [
+            "Accipiter striatus",
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Aspidoscelis hyperythrus",
+            "Aspidoscelis tigris stejnegeri",
+            "Buteo swainsoni",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Plestiodon skiltonianus interparietalis"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 98,
+      "total_observations": 897,
+      "yearly_species": {
+        "2023": 61,
+        "2024": 62,
+        "2025": 62,
+        "2026": 30
+      }
+    },
+    {
+      "id": "6-3",
+      "name": "San Marcos",
+      "lat": 33.1707,
+      "lng": -116.84,
+      "health": {
+        "grade": "C",
+        "score": 61.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 67% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -66.7
+      },
+      "trophic": {
+        "producer": {
+          "count": 44,
+          "species": [
+            "Acanthomintha ilicifolia",
+            "Androsace elongata acuta",
+            "Azolla filiculoides",
+            "Baccharis vanessae",
+            "Bahiopsis laciniata",
+            "Brodiaea orcuttii",
+            "Calandrinia breweri",
+            "Calochortus concolor",
+            "Calochortus palmeri munzii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta",
+            "Caulanthus simulans",
+            "Chaenactis artemisiifolia",
+            "Chaenactis glabriuscula glabriuscula"
+          ]
+        },
+        "pollinator": {
+          "count": 14,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Cocytius antaeus",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Euphydryas editha quino",
+            "Habrodais grunus",
+            "Pyrgus ruralis lagunae",
+            "Satyrium tetra",
+            "Strymon istapa",
+            "Tharsalea gorgon",
+            "Tharsalea hermes",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 5,
+          "species": [
+            "Anadenulus cockerelli",
+            "Glyptostoma newberryanum",
+            "Helminthoglypta tudiculata",
+            "Rothelix lowei",
+            "Rothelix warnerfontis"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Anaxyrus californicus",
+            "Ensatina eschscholtzii klauberi",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 4,
+          "species": [
+            "Agelaius tricolor",
+            "Contopus cooperi",
+            "Empidonax traillii extimus",
+            "Nannopterum auritum"
+          ]
+        },
+        "apex_predator": {
+          "count": 13,
+          "species": [
+            "Anniella stebbinsi",
+            "Asio otus",
+            "Aspidoscelis hyperythrus",
+            "Buteo swainsoni",
+            "Crotalus ruber",
+            "Diadophis punctatus similis",
+            "Falco columbarius",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis multifasciata",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Salvadora hexalepis virgultea",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 1,
+          "species": [
+            "Turbinellus kauffmanii"
+          ]
+        }
+      },
+      "total_species": 84,
+      "total_observations": 646,
+      "yearly_species": {
+        "2023": 54,
+        "2024": 49,
+        "2025": 46,
+        "2026": 18
+      }
+    },
+    {
+      "id": "6-4",
+      "name": "Vista",
+      "lat": 33.1707,
+      "lng": -116.6229,
+      "health": {
+        "grade": "C",
+        "score": 64.0,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 60% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -59.6
+      },
+      "trophic": {
+        "producer": {
+          "count": 45,
+          "species": [
+            "Allium marvinii",
+            "Artemisia tridentata tridentata",
+            "Brodiaea orcuttii",
+            "Calochortus concolor",
+            "Calochortus dunnii",
+            "Calochortus palmeri munzii",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta",
+            "Carlowrightia arizonica",
+            "Caulanthus simulans",
+            "Chaenactis artemisiifolia",
+            "Chaenactis glabriuscula glabriuscula",
+            "Chaenactis glabriuscula lanosa",
+            "Chaenactis parishii"
+          ]
+        },
+        "pollinator": {
+          "count": 11,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne gabbii",
+            "Chlosyne leanira",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Philotes sonorensis",
+            "Satyrium auretorum",
+            "Satyrium tetra",
+            "Tharsalea gorgon",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 5,
+          "species": [
+            "Anadenulus cockerelli",
+            "Glyptostoma newberryanum",
+            "Helminthoglypta thermimontis",
+            "Rothelix warnerfontis",
+            "Sonorelix borregoensis"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 5,
+          "species": [
+            "Anaxyrus californicus",
+            "Cyprinodon macularius",
+            "Ensatina eschscholtzii klauberi",
+            "Gopherus agassizii",
+            "Spea hammondii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 8,
+          "species": [
+            "Agelaius tricolor",
+            "Calypte costae",
+            "Contopus cooperi",
+            "Corynorhinus townsendii",
+            "Empidonax traillii brewsteri",
+            "Lanius ludovicianus",
+            "Leuconotopicus albolarvatus",
+            "Ovis canadensis nelsoni"
+          ]
+        },
+        "apex_predator": {
+          "count": 13,
+          "species": [
+            "Anniella stebbinsi",
+            "Arizona elegans occidentalis",
+            "Asio otus",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis multifasciata",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Salvadora hexalepis virgultea",
+            "Taxidea taxus",
+            "Thamnophis hammondii"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 87,
+      "total_observations": 691,
+      "yearly_species": {
+        "2023": 52,
+        "2024": 58,
+        "2025": 50,
+        "2026": 21
+      }
+    },
+    {
+      "id": "6-5",
+      "name": "Fallbrook",
+      "lat": 33.1707,
+      "lng": -116.4057,
+      "health": {
+        "grade": "B",
+        "score": 65.5,
+        "risks": [
+          {
+            "type": "critical",
+            "message": "Species declining 40% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -40.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 43,
+          "species": [
+            "Aloina bifrons",
+            "Artemisia tridentata tridentata",
+            "Calochortus dunnii",
+            "Calochortus palmeri",
+            "Calochortus weedii",
+            "Calochortus weedii weedii",
+            "Camissoniopsis bistorta",
+            "Carlowrightia arizonica",
+            "Caulanthus simulans",
+            "Chaenactis carphoclinia peirsonii",
+            "Chaenactis glabriuscula glabriuscula",
+            "Cirsium occidentale",
+            "Clematis pauciflora",
+            "Cleomella palmeri",
+            "Cochemiea tetrancistra"
+          ]
+        },
+        "pollinator": {
+          "count": 9,
+          "species": [
+            "Apodemia virgulti",
+            "Bombus crotchii",
+            "Chlosyne leanira",
+            "Colias harfordii",
+            "Danaus plexippus",
+            "Danaus plexippus plexippus",
+            "Philotes sonorensis",
+            "Strymon istapa",
+            "Zerene eurydice"
+          ]
+        },
+        "primary_consumer": {
+          "count": 3,
+          "species": [
+            "Helminthoglypta montezuma",
+            "Sonorelix borregoensis",
+            "Sonorelix harperi"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 3,
+          "species": [
+            "Cyprinodon macularius",
+            "Ensatina eschscholtzii klauberi",
+            "Gopherus agassizii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 13,
+          "species": [
+            "Calidris minutilla",
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Contopus cooperi",
+            "Lanius ludovicianus",
+            "Lasiurus cinereus",
+            "Leuconotopicus albolarvatus",
+            "Limnodromus scolopaceus",
+            "Nannopterum auritum",
+            "Ovis canadensis nelsoni",
+            "Polioptila melanura",
+            "Selasphorus rufus",
+            "Tringa melanoleuca"
+          ]
+        },
+        "apex_predator": {
+          "count": 16,
+          "species": [
+            "Accipiter striatus",
+            "Asio otus",
+            "Buteo swainsoni",
+            "Circus hudsonius",
+            "Crotalus ruber",
+            "Falco columbarius",
+            "Falco peregrinus",
+            "Haliaeetus leucocephalus",
+            "Lampropeltis multifasciata",
+            "Pandion haliaetus",
+            "Phrynosoma blainvillii",
+            "Phrynosoma mcallii",
+            "Puma concolor couguar",
+            "Salvadora hexalepis virgultea",
+            "Taxidea taxus"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 87,
+      "total_observations": 2014,
+      "yearly_species": {
+        "2023": 55,
+        "2024": 62,
+        "2025": 46,
+        "2026": 33
+      }
+    },
+    {
+      "id": "6-6",
+      "name": "Temecula Border",
+      "lat": 33.1707,
+      "lng": -116.1886,
+      "health": {
+        "grade": "C",
+        "score": 56.0,
+        "risks": [
+          {
+            "type": "warning",
+            "message": "Low pollinator diversity \u2014 ecosystem fragile"
+          },
+          {
+            "type": "critical",
+            "message": "Species declining 40% year-over-year"
+          }
+        ],
+        "trophic_completeness": 100,
+        "trend_pct": -40.0
+      },
+      "trophic": {
+        "producer": {
+          "count": 18,
+          "species": [
+            "Brickellia atractyloides arguta",
+            "Carlowrightia arizonica",
+            "Chaenactis carphoclinia peirsonii",
+            "Cleomella palmeri",
+            "Cochemiea tetrancistra",
+            "Cryptantha ganderi",
+            "Dudleya saxosa",
+            "Dudleya saxosa aloides",
+            "Eriastrum harwoodii",
+            "Euphorbia abramsiana",
+            "Lepidium flavum felipense",
+            "Matelea parvifolia",
+            "Mentzelia desertorum",
+            "Muhlenbergia microsperma",
+            "Olneya tesota"
+          ]
+        },
+        "pollinator": {
+          "count": 1,
+          "species": [
+            "Chlosyne acastus neumoegeni"
+          ]
+        },
+        "primary_consumer": {
+          "count": 1,
+          "species": [
+            "Sonorelix borregoensis"
+          ]
+        },
+        "secondary_consumer": {
+          "count": 1,
+          "species": [
+            "Gopherus agassizii"
+          ]
+        },
+        "tertiary_consumer": {
+          "count": 5,
+          "species": [
+            "Calypte costae",
+            "Charadrius vociferus",
+            "Lanius ludovicianus",
+            "Ovis canadensis nelsoni",
+            "Polioptila melanura"
+          ]
+        },
+        "apex_predator": {
+          "count": 8,
+          "species": [
+            "Asio otus",
+            "Buteo swainsoni",
+            "Crotalus ruber",
+            "Falco peregrinus",
+            "Phrynosoma mcallii",
+            "Taxidea taxus",
+            "Uma notata",
+            "Xantusia gracilis"
+          ]
+        },
+        "decomposer": {
+          "count": 0,
+          "species": []
+        }
+      },
+      "total_species": 34,
+      "total_observations": 642,
+      "yearly_species": {
+        "2023": 20,
+        "2024": 24,
+        "2025": 21,
+        "2026": 12
+      }
+    }
+  ],
+  "collapse_predictions": [
+    {
+      "zone": "Border Field",
+      "zone_id": "0-0",
+      "grade": "F",
+      "score": 34.3,
+      "missing_levels": [
+        "Pollinator",
+        "Primary Consumer",
+        "Secondary Consumer",
+        "Apex Predator"
+      ],
+      "at_risk_species": [
+        "Bahiopsis laciniata",
+        "Bergerocactus emoryi",
+        "Calochortus weedii",
+        "Chloropyron maritimum maritimum",
+        "Cistanthe maritima"
+      ],
+      "risks": [
+        {
+          "type": "critical",
+          "message": "No pollinators detected \u2014 plant reproduction at risk"
+        },
+        {
+          "type": "warning",
+          "message": "No apex predators \u2014 prey populations may be uncontrolled"
+        },
+        {
+          "type": "critical",
+          "message": "Species declining 40% year-over-year"
+        },
+        {
+          "type": "critical",
+          "message": "Only 2/6 trophic levels present \u2014 food web has major gaps"
+        }
+      ]
+    },
+    {
+      "zone": "Jacumba",
+      "zone_id": "0-5",
+      "grade": "D",
+      "score": 47.0,
+      "missing_levels": [
+        "Tertiary Consumer"
+      ],
+      "at_risk_species": [],
+      "risks": [
+        {
+          "type": "critical",
+          "message": "Species declining 44% year-over-year"
+        }
+      ]
+    },
+    {
+      "zone": "Mountain Empire",
+      "zone_id": "0-6",
+      "grade": "D",
+      "score": 42.4,
+      "missing_levels": [
+        "Primary Consumer",
+        "Secondary Consumer"
+      ],
+      "at_risk_species": [],
+      "risks": [
+        {
+          "type": "warning",
+          "message": "Low pollinator diversity \u2014 ecosystem fragile"
+        },
+        {
+          "type": "critical",
+          "message": "Species declining 75% year-over-year"
+        }
+      ]
+    },
+    {
+      "zone": "Mount Laguna",
+      "zone_id": "1-5",
+      "grade": "D",
+      "score": 49.9,
+      "missing_levels": [
+        "Primary Consumer",
+        "Tertiary Consumer"
+      ],
+      "at_risk_species": [],
+      "risks": [
+        {
+          "type": "critical",
+          "message": "Species declining 45% year-over-year"
+        }
+      ]
+    },
+    {
+      "zone": "Anza-Borrego South",
+      "zone_id": "1-6",
+      "grade": "D",
+      "score": 47.7,
+      "missing_levels": [
+        "Secondary Consumer"
+      ],
+      "at_risk_species": [],
+      "risks": [
+        {
+          "type": "critical",
+          "message": "Species declining 67% year-over-year"
+        }
+      ]
+    },
+    {
+      "zone": "Anza-Borrego Central",
+      "zone_id": "2-6",
+      "grade": "D",
+      "score": 45.9,
+      "missing_levels": [
+        "Secondary Consumer"
+      ],
+      "at_risk_species": [],
+      "risks": [
+        {
+          "type": "warning",
+          "message": "Low pollinator diversity \u2014 ecosystem fragile"
+        },
+        {
+          "type": "critical",
+          "message": "Species declining 71% year-over-year"
+        }
+      ]
+    },
+    {
+      "zone": "Borrego Springs",
+      "zone_id": "3-6",
+      "grade": "D",
+      "score": 37.7,
+      "missing_levels": [
+        "Pollinator",
+        "Primary Consumer",
+        "Secondary Consumer"
+      ],
+      "at_risk_species": [
+        "Astragalus douglasii perstrictus",
+        "Astragalus insularis harwoodii",
+        "Carlowrightia arizonica",
+        "Caulanthus simulans",
+        "Cochemiea tetrancistra"
+      ],
+      "risks": [
+        {
+          "type": "critical",
+          "message": "No pollinators detected \u2014 plant reproduction at risk"
+        },
+        {
+          "type": "critical",
+          "message": "Species declining 44% year-over-year"
+        }
+      ]
+    },
+    {
+      "zone": "Anza-Borrego North",
+      "zone_id": "4-6",
+      "grade": "D",
+      "score": 44.1,
+      "missing_levels": [
+        "Pollinator"
+      ],
+      "at_risk_species": [
+        "Astragalus douglasii perstrictus",
+        "Astragalus insularis harwoodii",
+        "Carlowrightia arizonica",
+        "Chaenactis carphoclinia peirsonii",
+        "Cochemiea tetrancistra"
+      ],
+      "risks": [
+        {
+          "type": "critical",
+          "message": "No pollinators detected \u2014 plant reproduction at risk"
+        },
+        {
+          "type": "critical",
+          "message": "Species declining 50% year-over-year"
+        }
+      ]
+    },
+    {
+      "zone": "La Jolla",
+      "zone_id": "5-0",
+      "grade": "D",
+      "score": 45.9,
+      "missing_levels": [
+        "Secondary Consumer"
+      ],
+      "at_risk_species": [],
+      "risks": [
+        {
+          "type": "critical",
+          "message": "Species declining 89% year-over-year"
+        }
+      ]
+    }
+  ]
+}

@@ -359,7 +359,7 @@ for level, sps in all_by_level.items():
 # Then fill remaining slots from top by observation count
 all_sorted = sorted(all_species.values(), key=lambda s: species_observations[s["scientific_name"]], reverse=True)
 for sp in all_sorted:
-    if len(top_species_set) >= 150:
+    if len(top_species_set) >= 250:
         break
     top_species_set.add(sp["scientific_name"])
 
@@ -620,8 +620,8 @@ for eco_name, eco_info in ECOSYSTEM_TYPES.items():
     if len(eco_node_ids) < 3:
         continue
 
-    # If too many, pick top 30: ensure trophic balance then fill by observation count
-    if len(eco_node_ids) > 30:
+    # If too many, pick top 60: ensure trophic balance then fill by observation count
+    if len(eco_node_ids) > 60:
         eco_by_level = defaultdict(list)
         for nid in eco_node_ids:
             node = next(n for n in dependency_nodes if n["id"] == nid)
@@ -630,12 +630,12 @@ for eco_name, eco_info in ECOSYSTEM_TYPES.items():
             eco_by_level[lv].sort(key=lambda x: x[1], reverse=True)
         kept = set()
         for lv, sps in eco_by_level.items():
-            for sp_id, _ in sps[:3]:
+            for sp_id, _ in sps[:5]:
                 kept.add(sp_id)
         remaining = [(nid, next(n["observations"] for n in dependency_nodes if n["id"] == nid)) for nid in eco_node_ids - kept]
         remaining.sort(key=lambda x: x[1], reverse=True)
         for nid, _ in remaining:
-            if len(kept) >= 30:
+            if len(kept) >= 60:
                 break
             kept.add(nid)
         eco_node_ids = kept
@@ -789,6 +789,8 @@ print("Wrote frontend/public/data/ecosystem-graphs.json")
 ts_output = f'''// Auto-generated types and metadata from {INPUT}
 // Source data is fetched from /data/app-data.json to keep bundle size small.
 
+import ecosystemData from "./ecosystemIndex.json";
+
 export const APP_DATA_URL = "/data/app-data.json";
 
 export interface ZoneNode {{
@@ -887,6 +889,18 @@ export interface Zone {{
   top_families: Record<string, number>;
 }}
 
+export interface EcosystemGraph {{
+  description: string;
+  keywords: string[];
+  zone_count: number;
+  species_count: number;
+  edge_count: number;
+  keystones: ZoneKeystoneEntry[];
+  zones: {{ id: string; name: string; grade: string; score: number }}[];
+  nodes: DependencyNode[];
+  edges: DependencyEdge[];
+}}
+
 export interface CollapsePrediction {{
   zone: string;
   zone_id: string;
@@ -896,12 +910,23 @@ export interface CollapsePrediction {{
   at_risk_species: string[];
   risks: any[];
 }}
+
+export const ECOSYSTEM_INDEX: Record<string, EcosystemIndex> = ecosystemData.ecosystem_index as Record<string, EcosystemIndex>;
+export const GLOBAL_STATS: GlobalStats = ecosystemData.global_stats as GlobalStats;
 '''
 
 with open(OUTPUT, "w") as f:
     f.write(ts_output)
 
 print(f"Wrote {OUTPUT}")
+
+eco_index_data = {
+    "ecosystem_index": {name: {"description": eg["description"], "keywords": eg["keywords"], "zone_count": eg["zone_count"], "species_count": eg["species_count"], "edge_count": eg["edge_count"], "keystones": [{"common_name": k["common_name"], "zone_keystone_score": k["zone_keystone_score"]} for k in eg["keystones"]], "zones": eg["zones"]} for name, eg in ecosystem_graphs.items()},
+    "global_stats": app_data["global_stats"],
+}
+with open("frontend/src/lib/ecosystemIndex.json", "w") as f:
+    json.dump(eco_index_data, f, indent=2)
+print("Wrote frontend/src/lib/ecosystemIndex.json")
 
 
 # ─── Write Additional Outputs ───
@@ -935,6 +960,9 @@ import os
 os.makedirs("data/snowflake", exist_ok=True)
 
 with open("frontend/src/lib/siteMetadata.json", "w") as f:
+    json.dump(frontend_stats, f, indent=2)
+
+with open("frontend/public/data/site-metadata.json", "w") as f:
     json.dump(frontend_stats, f, indent=2)
 
 # 2. Master Species Map (for hydration)

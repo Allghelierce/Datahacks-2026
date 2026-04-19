@@ -4,8 +4,6 @@
 import ecosystemData from "./ecosystemIndex.json";
 
 export const APP_DATA_URL = "/data/app-data.json";
-export const ECOSYSTEM_INDEX: Record<string, EcosystemIndex> = ecosystemData.ecosystem_index as Record<string, EcosystemIndex>;
-export const GLOBAL_STATS: GlobalStats = ecosystemData.global_stats as GlobalStats;
 
 export interface ZoneNode {
   id: string;
@@ -124,3 +122,6 @@ export interface CollapsePrediction {
   at_risk_species: string[];
   risks: any[];
 }
+
+export const ECOSYSTEM_INDEX: Record<string, EcosystemIndex> = ecosystemData.ecosystem_index as Record<string, EcosystemIndex>;
+export const GLOBAL_STATS: GlobalStats = ecosystemData.global_stats as GlobalStats;

@@ -13,38 +13,52 @@ if (!fs.existsSync(MASTER_SPECIES_PATH)) {
 const masterSpecies = JSON.parse(fs.readFileSync(MASTER_SPECIES_PATH, 'utf8'));
 const speciesNames = Object.keys(masterSpecies);
 
-function fetchJSON(url) {
+function fetchJSON(url, retryCount = 0) {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers: { 'User-Agent': 'BioScope/1.0' } }, (res) => {
+    https.get(url, { 
+      headers: { 'User-Agent': 'BioScope/1.0' },
+      timeout: 10000 
+    }, (res) => {
+      if (res.statusCode === 429) {
+        return reject({ code: 429, message: 'Too Many Requests' });
+      }
+      
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
-        try { resolve(JSON.parse(data)); }
-        catch { reject(new Error('Parse error')); }
+        try { 
+          const parsed = JSON.parse(data);
+          resolve(parsed); 
+        } catch (e) { 
+          reject(new Error(`Parse error: ${data.slice(0, 100)}...`)); 
+        }
       });
-    }).on('error', reject);
+    }).on('error', (err) => {
+      reject(err);
+    }).on('timeout', () => {
+      reject(new Error('Request Timeout'));
+    });
   });
 }
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 async function main() {
-  // Load existing photos to avoid re-fetching
   let photos = {};
   if (fs.existsSync(OUTPUT_PATH)) {
     try { photos = JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8')); }
-    catch (e) { console.warn('Could not read existing photos, starting fresh.'); }
+    catch (e) { console.warn('Could not read existing photos.'); }
   }
 
   let found = 0;
   let skipped = 0;
+  let errors = 0;
 
   console.log(`Expansion starting: 0/${speciesNames.length} species checked`);
 
   for (let i = 0; i < speciesNames.length; i++) {
     const name = speciesNames[i];
     
-    // Skip if we already have a URL or have explicitly marked as null
     if (photos[name] !== undefined && photos[name] !== null) {
       skipped++;
       found++;
@@ -52,38 +66,54 @@ async function main() {
     }
 
     const url = `https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(name)}&per_page=1`;
+    let attempts = 0;
+    let success = false;
 
-    try {
-      const data = await fetchJSON(url);
-      if (data.results && data.results.length > 0) {
-        const taxon = data.results[0];
-        if (taxon.default_photo && taxon.default_photo.square_url) {
-          let photoUrl = taxon.default_photo.square_url;
-          photoUrl = photoUrl.replace('/square', '/medium');
-          photos[name] = photoUrl;
-          found++;
-          if (i % 5 === 0) console.log(`[${i + 1}/${speciesNames.length}] ${name} -> OK`);
+    while (attempts < 3 && !success) {
+      try {
+        const data = await fetchJSON(url);
+        success = true;
+        if (data.results && data.results.length > 0) {
+          const taxon = data.results[0];
+          if (taxon.default_photo && (taxon.default_photo.square_url || taxon.default_photo.url)) {
+            let photoUrl = taxon.default_photo.medium_url || taxon.default_photo.url || taxon.default_photo.square_url;
+            photoUrl = photoUrl.replace('/square', '/medium'); // Upgrade if needed
+            photos[name] = photoUrl;
+            found++;
+            console.log(`[${i + 1}/${speciesNames.length}] ${name} -> OK`);
+          } else {
+            photos[name] = null;
+          }
         } else {
           photos[name] = null;
         }
-      } else {
-        photos[name] = null;
+      } catch (e) {
+        attempts++;
+        if (e.code === 429 || attempts < 3) {
+          const wait = e.code === 429 ? 5000 * attempts : 1000 * attempts;
+          console.warn(`[${i + 1}/${speciesNames.length}] ${name} -> Retrying (${attempts}/3) in ${wait}ms...`);
+          await sleep(wait);
+        } else {
+          console.error(`[${i + 1}/${speciesNames.length}] ${name} -> Final Error: ${e.message}`);
+          errors++;
+        }
       }
-    } catch (e) {
-      console.log(`[${i + 1}/${speciesNames.length}] ${name} -> error: ${e.message}`);
     }
 
-    // Rate limit: ~150ms between requests is safe for iNat API if sequential
-    await sleep(150);
+    // Moderate rate limit for success
+    await sleep(200);
     
-    // Periodically save progress
-    if (i % 20 === 0) {
+    if (i % 10 === 0) {
       fs.writeFileSync(OUTPUT_PATH, JSON.stringify(photos, null, 2));
     }
   }
 
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(photos, null, 2));
-  console.log(`\nDone! ${found}/${speciesNames.length} photos ready in ${OUTPUT_PATH} (${skipped} skipped)`);
+  console.log(`\nExpansion Complete:`);
+  console.log(`  - Total: ${speciesNames.length}`);
+  console.log(`  - Found: ${found}`);
+  console.log(`  - Skipped (Cache): ${skipped}`);
+  console.log(`  - Errors: ${errors}`);
 }
 
 main().catch(console.error);

@@ -1,9 +1,8 @@
 "use client";
 
 import { MapContainer, TileLayer, CircleMarker, Tooltip, Rectangle } from "react-leaflet";
-import siteMetadata from "@/lib/siteMetadata.json";
-import type { Zone } from "@/types/data";
-const ZONE_DATA = siteMetadata.zones;
+import { useState, useEffect } from "react";
+import type { Zone } from "@/lib/speciesData";
 import "leaflet/dist/leaflet.css";
 
 const LAT_MIN = 32.53, LAT_MAX = 33.22;
@@ -27,6 +26,10 @@ interface Props {
 }
 
 export default function ThreatMap({ onZoneClick, selectedZoneId }: Props) {
+  const [zoneData, setZoneData] = useState<Zone[]>([]);
+  useEffect(() => {
+    fetch("/data/site-metadata.json").then(r => r.json()).then(d => setZoneData(d.zones));
+  }, []);
   const latStep = (LAT_MAX - LAT_MIN) / GRID_ROWS;
   const lngStep = (LNG_MAX - LNG_MIN) / GRID_COLS;
 
@@ -42,7 +45,7 @@ export default function ThreatMap({ onZoneClick, selectedZoneId }: Props) {
           url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           attribution="&copy; CARTO"
         />
-        {ZONE_DATA.map((zone) => {
+        {zoneData.map((zone) => {
           const [r, c] = zone.id.split("-").map(Number);
           const isSelected = selectedZoneId === zone.id;
           const bounds: [[number, number], [number, number]] = [

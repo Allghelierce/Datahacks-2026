@@ -34,12 +34,16 @@
         "del mar beach"
       ],
       "zone_count": 7,
-      "species_count": 30,
-      "edge_count": 75,
+      "species_count": 60,
+      "edge_count": 164,
       "keystones": [
         {
           "common_name": "Weed's Mariposa Lily",
           "zone_keystone_score": 0.034
+        },
+        {
+          "common_name": "Tornleaf Goldeneye",
+          "zone_keystone_score": 0.017
         }
       ],
       "zones": [
@@ -117,15 +121,19 @@
         "del cerro"
       ],
       "zone_count": 7,
-      "species_count": 30,
-      "edge_count": 87,
+      "species_count": 60,
+      "edge_count": 194,
       "keystones": [
         {
-          "common_name": "Weed's Mariposa Lily",
+          "common_name": "Woven-spored microlichen",
+          "zone_keystone_score": 0.068
+        },
+        {
+          "common_name": "Tornleaf Goldeneye",
           "zone_keystone_score": 0.034
         },
         {
-          "common_name": "Woven-spored microlichen",
+          "common_name": "Weed's Mariposa Lily",
           "zone_keystone_score": 0.034
         }
       ],
@@ -208,16 +216,20 @@
         "pacific highlands ranch"
       ],
       "zone_count": 8,
-      "species_count": 30,
-      "edge_count": 92,
+      "species_count": 60,
+      "edge_count": 192,
       "keystones": [
         {
           "common_name": "Woven-spored microlichen",
-          "zone_keystone_score": 0.069
+          "zone_keystone_score": 0.119
         },
         {
           "common_name": "Tornleaf Goldeneye",
           "zone_keystone_score": 0.034
+        },
+        {
+          "common_name": "Weed's Mariposa Lily",
+          "zone_keystone_score": 0.017
         }
       ],
       "zones": [
@@ -300,12 +312,20 @@
         "boucher hill"
       ],
       "zone_count": 7,
-      "species_count": 30,
-      "edge_count": 76,
+      "species_count": 60,
+      "edge_count": 154,
       "keystones": [
         {
           "common_name": "Tornleaf Goldeneye",
           "zone_keystone_score": 0.034
+        },
+        {
+          "common_name": "Behr's Metalmark",
+          "zone_keystone_score": 0.017
+        },
+        {
+          "common_name": "Weed's Mariposa Lily",
+          "zone_keystone_score": 0.017
         }
       ],
       "zones": [
@@ -384,16 +404,16 @@
         "scissors crossing"
       ],
       "zone_count": 4,
-      "species_count": 29,
-      "edge_count": 14,
+      "species_count": 44,
+      "edge_count": 19,
       "keystones": [
         {
-          "common_name": "Behr's Metalmark",
-          "zone_keystone_score": 0.071
+          "common_name": "Costa's Hummingbird",
+          "zone_keystone_score": 0.07
         },
         {
-          "common_name": "Costa's Hummingbird",
-          "zone_keystone_score": 0.071
+          "common_name": "Behr's Metalmark",
+          "zone_keystone_score": 0.047
         }
       ],
       "zones": [
@@ -458,9 +478,14 @@
         "bonsall"
       ],
       "zone_count": 7,
-      "species_count": 30,
-      "edge_count": 85,
-      "keystones": [],
+      "species_count": 60,
+      "edge_count": 152,
+      "keystones": [
+        {
+          "common_name": "Desert liveforever",
+          "zone_keystone_score": 0.017
+        }
+      ],
       "zones": [
         {
           "id": "3-4",
@@ -531,12 +556,16 @@
         "temecula"
       ],
       "zone_count": 8,
-      "species_count": 30,
-      "edge_count": 75,
+      "species_count": 60,
+      "edge_count": 139,
       "keystones": [
         {
-          "common_name": "Behr's Metalmark",
-          "zone_keystone_score": 0.034
+          "common_name": "",
+          "zone_keystone_score": 0.051
+        },
+        {
+          "common_name": "Desert liveforever",
+          "zone_keystone_score": 0.017
         }
       ],
       "zones": [
@@ -621,15 +650,19 @@
         "hotel del"
       ],
       "zone_count": 4,
-      "species_count": 30,
-      "edge_count": 87,
+      "species_count": 60,
+      "edge_count": 194,
       "keystones": [
         {
-          "common_name": "Weed's Mariposa Lily",
+          "common_name": "Woven-spored microlichen",
+          "zone_keystone_score": 0.068
+        },
+        {
+          "common_name": "Tornleaf Goldeneye",
           "zone_keystone_score": 0.034
         },
         {
-          "common_name": "Woven-spored microlichen",
+          "common_name": "Weed's Mariposa Lily",
           "zone_keystone_score": 0.034
         }
       ],

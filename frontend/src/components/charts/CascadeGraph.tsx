@@ -20,7 +20,17 @@ import {
   type SimulationLinkDatum,
 } from "d3-force";
 import { zoom as d3Zoom, zoomIdentity, type ZoomTransform } from "d3-zoom";
-import { select } from "d3-selection";
+import { select, selectAll } from "d3-selection";
+import { drag as d3Drag } from "d3-drag";
+import { 
+  forceSimulation, 
+  forceLink, 
+  forceManyBody, 
+  forceCenter, 
+  forceCollide, 
+  forceX, 
+  forceY 
+} from "d3-force";
 import "d3-transition";
 import {
   APP_DATA_URL,
@@ -71,10 +81,10 @@ const LEVEL_COLORS: Record<string, string> = {
 };
 
 const EDGE_COLORS: Record<string, string> = {
-  "food source": "rgba(110,231,183,0.08)",
-  pollination: "rgba(253,164,175,0.08)",
-  prey: "rgba(253,186,116,0.08)",
-  "nutrient cycling": "rgba(196,181,253,0.08)",
+  "food source": "rgba(110,231,183,0.18)",
+  pollination: "rgba(253,164,175,0.18)",
+  prey: "rgba(253,186,116,0.18)",
+  "nutrient cycling": "rgba(196,181,253,0.18)",
 };
 
 const EDGE_COLORS_BRIGHT: Record<string, string> = {
@@ -93,6 +103,16 @@ const ECO_ICONS: Record<string, string> = {
   "Inland Valley & Riparian": "\ud83d\udca7",
   "Border & Transition": "\ud83d\uddfa\ufe0f",
   "Urban Parkland": "\ud83c\udfd9\ufe0f",
+};
+
+const TROPHIC_LAYERS: Record<string, number> = {
+  decomposer: 0.9,
+  producer: 0.8,
+  pollinator: 0.6,
+  primary_consumer: 0.5,
+  secondary_consumer: 0.35,
+  tertiary_consumer: 0.2,
+  apex_predator: 0.1,
 };
 
 export default function CascadeGraph({ zone, ecosystem }: Props) {
@@ -298,37 +318,80 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     const hasExisting = prevPositions.current.size > 0;
     const sNodes: SimNode[] = filteredNodes.map((n) => {
       const prev = prevPositions.current.get(n.id);
-      return { data: n, radius: Math.max(4, Math.min(16, Math.sqrt(n.observations) * 0.6)), x: prev?.x ?? dims.w / 2 + (Math.random() - 0.5) * dims.w * 0.5, y: prev?.y ?? dims.h / 2 + (Math.random() - 0.5) * dims.h * 0.5, vx: 0, vy: 0 };
+      return { 
+        data: n, 
+        radius: Math.max(4, Math.min(16, Math.sqrt(n.observations) * 0.6)), 
+        x: prev?.x ?? dims.w / 2 + (Math.random() - 0.5) * dims.w * 0.5, 
+        y: prev?.y ?? dims.h / 2 + (Math.random() - 0.5) * dims.h * 0.5, 
+        vx: 0, 
+        vy: 0 
+      };
     });
     const nodeMap = new Map(sNodes.map((n) => [n.data.id, n]));
     const sLinks: SimLink[] = graphEdges.filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target)).map((e) => ({ source: nodeMap.get(e.source)!, target: nodeMap.get(e.target)!, edgeType: e.type })).filter((l) => l.source && l.target);
+    
+    const drag = d3Drag<any, SimNode>()
+      .on("start", (event, d) => {
+        if (!event.active) sim.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      })
+      .on("drag", (event, d) => {
+        d.fx = event.x;
+        d.fy = event.y;
+      })
+      .on("end", (event, d) => {
+        if (!event.active) sim.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      });
+
     const sim = forceSimulation<SimNode>(sNodes)
-      .force("link", forceLink<SimNode, SimLink>(sLinks).id((d) => d.data.id).distance(120).strength(0.12))
-      .force("charge", forceManyBody<SimNode>().strength(-180).distanceMax(400))
-      .force("center", forceCenter(dims.w / 2, dims.h / 2).strength(0.015))
-      .force("collide", forceCollide<SimNode>().radius((d) => d.radius + 18).strength(0.6).iterations(1))
-      .force("x", forceX<SimNode>(dims.w / 2).strength(0.01))
-      .force("y", forceY<SimNode>(dims.h / 2).strength(0.01))
-      .alphaDecay(0.07).velocityDecay(0.6);
+      .force("link", forceLink<SimNode, SimLink>(sLinks).id((d) => d.data.id).distance(100).strength(0.15))
+      .force("charge", forceManyBody<SimNode>().strength(-220).distanceMax(450))
+      .force("center", forceCenter(dims.w / 2, dims.h / 2).strength(0.02))
+      .force("collide", forceCollide<SimNode>().radius((d) => d.radius + 20).strength(0.7).iterations(1))
+      .force("x", forceX<SimNode>(dims.w / 2).strength(0.04))
+      .force("y", forceY<SimNode>((d) => dims.h * (TROPHIC_LAYERS[d.data.trophic_level] ?? 0.5)).strength(0.12))
+      .alphaDecay(0.06).velocityDecay(0.5);
     if (hasExisting) sim.alpha(0.12).alphaTarget(0);
     simRef.current = sim;
+
+    const svg = select(svgRef.current);
+    const g = select(gRef.current);
+    
+    // Reset transform on fresh load
+    g.attr("transform", zoomIdentity.toString());
+    
+    const zoom = d3Zoom<SVGSVGElement, unknown>()
+      .scaleExtent([0.1, 8])
+      .on("zoom", (event) => {
+        g.attr("transform", event.transform);
+        setTransform(event.transform); // Only for state-aware UI if needed, but performance is in the DOM
+      });
+
+    svg.call(zoom as any);
+
     const tick = () => {
       sim.tick();
       sNodes.forEach((n) => { if (n.x != null && n.y != null) prevPositions.current.set(n.data.id, { x: n.x, y: n.y }); });
-      setSimNodes([...sNodes]); setSimLinks([...sLinks]);
+      setSimNodes([...sNodes]); 
+      setSimLinks([...sLinks]);
       if (sim.alpha() > 0.001) animFrameRef.current = requestAnimationFrame(tick);
     };
     animFrameRef.current = requestAnimationFrame(tick);
-    return () => { sim.stop(); cancelAnimationFrame(animFrameRef.current); };
+    
+    // Apply drag to nodes via selection
+    svg.selectAll(".node-group").data(sNodes).call(drag as any);
+
+    return () => { 
+      sim.stop(); 
+      cancelAnimationFrame(animFrameRef.current);
+      svg.on(".zoom", null);
+    };
   }, [graphNodes, graphEdges, dims, removedNodes, activeTrophicFilters]);
 
-  const zoomRef = useRef<ReturnType<typeof d3Zoom<SVGSVGElement, unknown>> | null>(null);
-  useEffect(() => {
-    const svg = svgRef.current; if (!svg) return;
-    const zb = d3Zoom<SVGSVGElement, unknown>().scaleExtent([0.2, 5]).on("zoom", (e) => { transformRef.current = e.transform; setTransform(e.transform); });
-    zoomRef.current = zb; select(svg).call(zb); select(svg).on("dblclick.zoom", null);
-    return () => { select(svg).on(".zoom", null); };
-  }, []);
+  // Remove the separate zoom useEffect as it's now integrated or redundant
 
   const handleZoomSlider = useCallback((s: number) => {
     const svg = svgRef.current; const zb = zoomRef.current; if (!svg || !zb) return;
@@ -467,7 +530,23 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
       {(!showEcoBrowser || zone) && (
         <div className="relative rounded-xl overflow-hidden border border-white/[0.04]" style={{ background: "#060a07" }}>
           <div className="absolute inset-0 pointer-events-none z-[1]" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, transparent 40%, rgba(0,0,0,0.6) 100%)" }} />
-          <svg ref={svgRef} width={dims.w} height={dims.h} className="w-full cursor-grab active:cursor-grabbing" onClick={() => setSelectedNode(null)}>
+          <svg 
+            ref={svgRef} 
+            width={dims.w} 
+            height={dims.h} 
+            className="w-full cursor-grab active:cursor-grabbing outline-none" 
+            onClick={() => setSelectedNode(null)}
+          >
+            <style>
+              {`
+                @keyframes pulse-edge {
+                  0% { stroke-opacity: 0.4; stroke-width: 0.8; }
+                  50% { stroke-opacity: 1; stroke-width: 1.2; }
+                  100% { stroke-opacity: 0.4; stroke-width: 0.8; }
+                }
+                .pulse-edge { animation: pulse-edge 2s ease-in-out infinite; }
+              `}
+            </style>
             <defs>
               <filter id="node-glow"><feGaussianBlur stdDeviation="6" result="blur" /><feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
               <radialGradient id="bg-gradient" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(16,70,32,0.04)" /><stop offset="60%" stopColor="rgba(6,10,7,0)" /></radialGradient>
@@ -476,7 +555,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
             <rect width={dims.w} height={dims.h} fill="url(#bg-gradient)" />
             <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="0.4" fill="rgba(110,231,183,0.06)" /></pattern>
             <rect width={dims.w} height={dims.h} fill="url(#dot-grid)" />
-            <g ref={gRef} transform={`translate(${transform.x},${transform.y}) scale(${transform.k})`}>
+            <g ref={gRef}>
               {simLinks.map((link, i) => {
                 const src = link.source as SimNode; const tgt = link.target as SimNode;
                 if (src.x == null || tgt.x == null) return null;
@@ -489,7 +568,20 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                 const dist = Math.sqrt(dx * dx + dy * dy); const curv = Math.min(30, dist * 0.15);
                 const nx = -dy / (dist || 1); const ny = dx / (dist || 1);
                 const path = `M ${src.x} ${src.y} Q ${mx + nx * curv} ${my + ny * curv} ${tgt.x} ${tgt.y}`;
-                return (<g key={i}><path d={path} fill="none" stroke={isCascadeEdge || isAnimCascade ? "#ef4444" : isFocused ? EDGE_COLORS_BRIGHT[link.edgeType] || "#fff" : dimmed ? "rgba(255,255,255,0.015)" : EDGE_COLORS[link.edgeType] || "rgba(255,255,255,0.04)"} strokeWidth={isCascadeEdge || isAnimCascade ? 1.5 : isFocused ? 0.8 : 0.3} opacity={dimmed ? 0.15 : 1} strokeDasharray={isCascadeEdge ? "5 3" : "none"} />{isCascadeEdge && <circle r="2.5" fill="#ef4444" opacity={0.9}><animateMotion dur="1.2s" repeatCount="indefinite" path={path} /></circle>}</g>);
+                return (
+                  <g key={i}>
+                    <path 
+                      d={path} 
+                      fill="none" 
+                      stroke={isCascadeEdge || isAnimCascade ? "#ef4444" : isFocused ? EDGE_COLORS_BRIGHT[link.edgeType] || "#fff" : dimmed ? "rgba(255,255,255,0.01)" : EDGE_COLORS[link.edgeType] || "rgba(255,255,255,0.05)"} 
+                      strokeWidth={isCascadeEdge || isAnimCascade ? 1.5 : isFocused ? 1 : 0.4} 
+                      opacity={dimmed ? 0.15 : 1} 
+                      strokeDasharray={isCascadeEdge ? "5 3" : isFocused ? "none" : "2 4"} 
+                      className={isFocused || isCascadeEdge || isAnimCascade ? "pulse-edge" : ""}
+                    />
+                    {isCascadeEdge && <circle r="2.5" fill="#ef4444" opacity={0.9}><animateMotion dur="1.2s" repeatCount="indefinite" path={path} /></circle>}
+                  </g>
+                );
               })}
               {simNodes.map((node) => {
                 if (node.x == null || node.y == null) return null;
@@ -514,7 +606,17 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                 }
                 const nx = node.x + rippleX, ny = node.y + rippleY;
                 return (
-                  <g key={node.data.id} transform={`translate(${rippleX},${rippleY})`} onMouseEnter={() => setHoveredNode(node.data.id)} onMouseLeave={() => setHoveredNode(null)} onClick={(e) => { e.stopPropagation(); if (!cascadeAnimating) setSelectedNode(selectedNode === node.data.id ? null : node.data.id); }} className="cursor-pointer" style={{ transition: "transform 0.25s cubic-bezier(0.22,1,0.36,1), opacity 0.3s ease" }} opacity={dimmed ? 0.25 : 1}>
+                  <g 
+                    key={node.data.id} 
+                    className="node-group cursor-pointer" 
+                    onMouseEnter={() => setHoveredNode(node.data.id)} 
+                    onMouseLeave={() => setHoveredNode(null)} 
+                    onClick={(e) => { 
+                      e.stopPropagation(); 
+                      if (!cascadeAnimating) setSelectedNode(selectedNode === node.data.id ? null : node.data.id); 
+                    }} 
+                    style={{ opacity: dimmed ? 0.25 : 1 }}
+                  >
                     {!dimmed && <circle cx={node.x} cy={node.y} r={r + 12} fill={color} opacity={isHovered || isSelected ? 0.18 : 0.06} filter="url(#node-glow)" />}
                     {isDeclining && !dimmed && !isCascadeVictim && <circle cx={node.x} cy={node.y} r={r + 5} fill="none" stroke="#f97316" strokeWidth={0.8} strokeDasharray="2 2" opacity={0.4}><animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" /></circle>}
                     {isAnimVictim && <circle cx={node.x} cy={node.y} r={r} fill="none" stroke="#ef4444" strokeWidth={2} opacity={0}><animate attributeName="r" from={String(r)} to={String(r + 30)} dur="0.7s" fill="freeze" /><animate attributeName="opacity" from="0.8" to="0" dur="0.7s" fill="freeze" /></circle>}

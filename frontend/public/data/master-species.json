@@ -1,0 +1,4547 @@
+{
+  "Salvia munzii": {
+    "id": "Salvia munzii",
+    "common_name": "Munz's sage",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Dudleya variegata": {
+    "id": "Dudleya variegata",
+    "common_name": "variegated liveforever",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Crassulaceae"
+  },
+  "Bahiopsis laciniata": {
+    "id": "Bahiopsis laciniata",
+    "common_name": "Tornleaf Goldeneye",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Adolphia californica": {
+    "id": "Adolphia californica",
+    "common_name": "California adolphia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Rosales",
+    "family": "Rhamnaceae"
+  },
+  "Pandion haliaetus": {
+    "id": "Pandion haliaetus",
+    "common_name": "Osprey",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Accipitriformes",
+    "family": "Pandionidae"
+  },
+  "Falco peregrinus": {
+    "id": "Falco peregrinus",
+    "common_name": "Peregrine Falcon",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Falconiformes",
+    "family": "Falconidae"
+  },
+  "Pelecanus occidentalis": {
+    "id": "Pelecanus occidentalis",
+    "common_name": "Brown Pelican",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Pelecaniformes",
+    "family": "Pelecanidae"
+  },
+  "Pinus torreyana": {
+    "id": "Pinus torreyana",
+    "common_name": "Torrey pine",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Pinaceae"
+  },
+  "Gavia adamsii": {
+    "id": "Gavia adamsii",
+    "common_name": "Yellow-billed Loon",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Gaviiformes",
+    "family": "Gaviidae"
+  },
+  "Clangula hyemalis": {
+    "id": "Clangula hyemalis",
+    "common_name": "Long-tailed Duck",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae"
+  },
+  "Larus heermanni": {
+    "id": "Larus heermanni",
+    "common_name": "Heermann's Gull",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Laridae"
+  },
+  "Tringa melanoleuca": {
+    "id": "Tringa melanoleuca",
+    "common_name": "Greater Yellowlegs",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Egretta rufescens": {
+    "id": "Egretta rufescens",
+    "common_name": "Reddish Egret",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae"
+  },
+  "Juncus acutus leopoldii": {
+    "id": "Juncus acutus leopoldii",
+    "common_name": "Southwestern Spiny Rush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Juncaceae"
+  },
+  "Lycium californicum": {
+    "id": "Lycium californicum",
+    "common_name": "California boxthorn",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Solanales",
+    "family": "Solanaceae"
+  },
+  "Nycticorax nycticorax": {
+    "id": "Nycticorax nycticorax",
+    "common_name": "Black-crowned Night Heron",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae"
+  },
+  "Nannopterum auritum": {
+    "id": "Nannopterum auritum",
+    "common_name": "Double-crested Cormorant",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Suliformes",
+    "family": "Phalacrocoracidae"
+  },
+  "Euphorbia misera": {
+    "id": "Euphorbia misera",
+    "common_name": "cliff spurge",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Malpighiales",
+    "family": "Euphorbiaceae"
+  },
+  "Acmispon prostratus": {
+    "id": "Acmispon prostratus",
+    "common_name": "Nuttall's Acmispon",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Apostichopus parvimensis": {
+    "id": "Apostichopus parvimensis",
+    "common_name": "Warty sea cucumber",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Synallactida",
+    "family": "Stichopodidae"
+  },
+  "Bergerocactus emoryi": {
+    "id": "Bergerocactus emoryi",
+    "common_name": "Golden-spined Cereus",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Cactaceae"
+  },
+  "Calidris minutilla": {
+    "id": "Calidris minutilla",
+    "common_name": "Least Sandpiper",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Helminthoglypta tudiculata": {
+    "id": "Helminthoglypta tudiculata",
+    "common_name": "Southern California Shoulderband",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Danaus plexippus": {
+    "id": "Danaus plexippus",
+    "common_name": "Monarch",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae"
+  },
+  "Cochemiea tetrancistra": {
+    "id": "Cochemiea tetrancistra",
+    "common_name": "Common Fishhook Cactus",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Cactaceae"
+  },
+  "Selaginella eremophila": {
+    "id": "Selaginella eremophila",
+    "common_name": "Desert Spikemoss",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Selaginellales",
+    "family": "Selaginellaceae"
+  },
+  "Charadrius vociferus": {
+    "id": "Charadrius vociferus",
+    "common_name": "Killdeer",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Charadriidae"
+  },
+  "Eucnide rupestris": {
+    "id": "Eucnide rupestris",
+    "common_name": "annual rock-nettle",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Cornales",
+    "family": "Loasaceae"
+  },
+  "Mentzelia hirsutissima": {
+    "id": "Mentzelia hirsutissima",
+    "common_name": "Hairy Stickleaf",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Cornales",
+    "family": "Loasaceae"
+  },
+  "Selaginella cinerascens": {
+    "id": "Selaginella cinerascens",
+    "common_name": "Ashy Spikemoss",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Selaginellales",
+    "family": "Selaginellaceae"
+  },
+  "Iva hayesiana": {
+    "id": "Iva hayesiana",
+    "common_name": "San Diego marsh-elder",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Senna covesii": {
+    "id": "Senna covesii",
+    "common_name": "Coues' senna",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Spea hammondii": {
+    "id": "Spea hammondii",
+    "common_name": "Western Spadefoot",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Amphibia",
+    "order": "Anura",
+    "family": "Scaphiopodidae"
+  },
+  "Quercus engelmannii": {
+    "id": "Quercus engelmannii",
+    "common_name": "Engelmann oak",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fagales",
+    "family": "Fagaceae"
+  },
+  "Ceanothus verrucosus": {
+    "id": "Ceanothus verrucosus",
+    "common_name": "Wart-stemmed Ceanothus",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Rosales",
+    "family": "Rhamnaceae"
+  },
+  "Leptosyne maritima": {
+    "id": "Leptosyne maritima",
+    "common_name": "Sea Dahlia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Cylindropuntia fosbergii": {
+    "id": "Cylindropuntia fosbergii",
+    "common_name": "Mason Valley Cholla",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Cactaceae"
+  },
+  "Eucalyptus conferruminata": {
+    "id": "Eucalyptus conferruminata",
+    "common_name": "spider gum",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Ovis canadensis nelsoni": {
+    "id": "Ovis canadensis nelsoni",
+    "common_name": "Desert Bighorn Sheep",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Bovidae"
+  },
+  "Pelecanus occidentalis californicus": {
+    "id": "Pelecanus occidentalis californicus",
+    "common_name": "California Brown Pelican",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Pelecaniformes",
+    "family": "Pelecanidae"
+  },
+  "Limonium perezii": {
+    "id": "Limonium perezii",
+    "common_name": "Perez's sea lavender",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Plumbaginaceae"
+  },
+  "Limnodromus scolopaceus": {
+    "id": "Limnodromus scolopaceus",
+    "common_name": "Long-billed Dowitcher",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Ensatina eschscholtzii klauberi": {
+    "id": "Ensatina eschscholtzii klauberi",
+    "common_name": "Large-blotched Ensatina",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Amphibia",
+    "order": "Caudata",
+    "family": "Plethodontidae"
+  },
+  "Quercus dumosa": {
+    "id": "Quercus dumosa",
+    "common_name": "Nuttall's scrub oak",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fagales",
+    "family": "Fagaceae"
+  },
+  "Hypanus dipterurus": {
+    "id": "Hypanus dipterurus",
+    "common_name": "Diamond Stingray",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Myliobatiformes",
+    "family": "Dasyatidae"
+  },
+  "Calypte costae": {
+    "id": "Calypte costae",
+    "common_name": "Costa's Hummingbird",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Apodiformes",
+    "family": "Trochilidae"
+  },
+  "Xylorhiza orcuttii": {
+    "id": "Xylorhiza orcuttii",
+    "common_name": "Orcutt's Woodyaster",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Abronia maritima": {
+    "id": "Abronia maritima",
+    "common_name": "red sand-verbena",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Nyctaginaceae"
+  },
+  "Cylindropuntia californica californica": {
+    "id": "Cylindropuntia californica californica",
+    "common_name": "Snake Cholla",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Cactaceae"
+  },
+  "Pinus coulteri": {
+    "id": "Pinus coulteri",
+    "common_name": "Coulter pine",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Pinaceae"
+  },
+  "Haliaeetus leucocephalus": {
+    "id": "Haliaeetus leucocephalus",
+    "common_name": "Bald Eagle",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae"
+  },
+  "Rallus obsoletus": {
+    "id": "Rallus obsoletus",
+    "common_name": "Ridgway's Rail",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Gruiformes",
+    "family": "Rallidae"
+  },
+  "Olneya tesota": {
+    "id": "Olneya tesota",
+    "common_name": "desert ironwood",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Bloomeria clevelandii": {
+    "id": "Bloomeria clevelandii",
+    "common_name": "San Diego goldenstar",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Asparagaceae"
+  },
+  "Pinus torreyana torreyana": {
+    "id": "Pinus torreyana torreyana",
+    "common_name": "Torrey Pine",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Pinaceae"
+  },
+  "Suaeda taxifolia": {
+    "id": "Suaeda taxifolia",
+    "common_name": "Woolly Seablite",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Amaranthaceae"
+  },
+  "Puffinus opisthomelas": {
+    "id": "Puffinus opisthomelas",
+    "common_name": "Black-vented Shearwater",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Procellariidae"
+  },
+  "Artemisia palmeri": {
+    "id": "Artemisia palmeri",
+    "common_name": "San Diego Sagewort",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Clematis pauciflora": {
+    "id": "Clematis pauciflora",
+    "common_name": "Southern California clematis",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ranunculales",
+    "family": "Ranunculaceae"
+  },
+  "Circus hudsonius": {
+    "id": "Circus hudsonius",
+    "common_name": "Northern Harrier",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae"
+  },
+  "Arctostaphylos rainbowensis": {
+    "id": "Arctostaphylos rainbowensis",
+    "common_name": "rainbow manzanita",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Ericaceae"
+  },
+  "Arctostaphylos glandulosa crassifolia": {
+    "id": "Arctostaphylos glandulosa crassifolia",
+    "common_name": "Del Mar Manzanita",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Ericaceae"
+  },
+  "Dorymyrmex insanus": {
+    "id": "Dorymyrmex insanus",
+    "common_name": "Crazy Pyramid Ant",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Formicidae"
+  },
+  "Lanius ludovicianus": {
+    "id": "Lanius ludovicianus",
+    "common_name": "Loggerhead Shrike",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Laniidae"
+  },
+  "Accipiter striatus": {
+    "id": "Accipiter striatus",
+    "common_name": "Sharp-shinned Hawk",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae"
+  },
+  "Dudleya saxosa aloides": {
+    "id": "Dudleya saxosa aloides",
+    "common_name": "Desert liveforever",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Crassulaceae"
+  },
+  "Ardenna bulleri": {
+    "id": "Ardenna bulleri",
+    "common_name": "Buller's Shearwater",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Procellariidae"
+  },
+  "Matelea parvifolia": {
+    "id": "Matelea parvifolia",
+    "common_name": "Spearleaf",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Gentianales",
+    "family": "Apocynaceae"
+  },
+  "Ericameria palmeri palmeri": {
+    "id": "Ericameria palmeri palmeri",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Tringa flavipes": {
+    "id": "Tringa flavipes",
+    "common_name": "Lesser Yellowlegs",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Calidris alpina": {
+    "id": "Calidris alpina",
+    "common_name": "Dunlin",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Podiceps auritus": {
+    "id": "Podiceps auritus",
+    "common_name": "Horned Grebe",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Podicipediformes",
+    "family": "Podicipedidae"
+  },
+  "Pluvialis squatarola": {
+    "id": "Pluvialis squatarola",
+    "common_name": "Black-bellied Plover",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Charadriidae"
+  },
+  "Botaurus exilis": {
+    "id": "Botaurus exilis",
+    "common_name": "Least Bittern",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae"
+  },
+  "Cygnus buccinator": {
+    "id": "Cygnus buccinator",
+    "common_name": "Trumpeter Swan",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae"
+  },
+  "Passerculus sandwichensis beldingi": {
+    "id": "Passerculus sandwichensis beldingi",
+    "common_name": "Belding's Sparrow",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Passerellidae"
+  },
+  "Puma concolor couguar": {
+    "id": "Puma concolor couguar",
+    "common_name": "North American Mountain Lion",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Mammalia",
+    "order": "Carnivora",
+    "family": "Felidae"
+  },
+  "Psittacara erythrogenys": {
+    "id": "Psittacara erythrogenys",
+    "common_name": "Red-masked Parakeet",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Psittaciformes",
+    "family": "Psittacidae"
+  },
+  "Ophioglossum californicum": {
+    "id": "Ophioglossum californicum",
+    "common_name": "California adder's-tongue",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ophioglossales",
+    "family": "Ophioglossaceae"
+  },
+  "Chamaebatia australis": {
+    "id": "Chamaebatia australis",
+    "common_name": "southern mountain misery",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Rosales",
+    "family": "Rosaceae"
+  },
+  "Hesperocyparis forbesii": {
+    "id": "Hesperocyparis forbesii",
+    "common_name": "Tecate cypress",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Cupressaceae"
+  },
+  "Ceanothus otayensis": {
+    "id": "Ceanothus otayensis",
+    "common_name": "Otay Mountain Ceanothus",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Rosales",
+    "family": "Rhamnaceae"
+  },
+  "Anniella stebbinsi": {
+    "id": "Anniella stebbinsi",
+    "common_name": "San Diegan Legless Lizard",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Anguidae"
+  },
+  "Acanthomintha ilicifolia": {
+    "id": "Acanthomintha ilicifolia",
+    "common_name": "San Diego Thornmint",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Oxalis californica": {
+    "id": "Oxalis californica",
+    "common_name": "California woodsorrel",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Oxalidales",
+    "family": "Oxalidaceae"
+  },
+  "Rosa minutifolia": {
+    "id": "Rosa minutifolia",
+    "common_name": "small-leaved rose",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Rosales",
+    "family": "Rosaceae"
+  },
+  "Haliotis fulgens": {
+    "id": "Haliotis fulgens",
+    "common_name": "Green Abalone",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Lepetellida",
+    "family": "Haliotidae"
+  },
+  "Ferocactus viridescens": {
+    "id": "Ferocactus viridescens",
+    "common_name": "San Diego Barrel Cactus",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Cactaceae"
+  },
+  "Apodemia virgulti": {
+    "id": "Apodemia virgulti",
+    "common_name": "Behr's Metalmark",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Riodinidae"
+  },
+  "Sonorelix borregoensis": {
+    "id": "Sonorelix borregoensis",
+    "common_name": "Borrego Desertsnail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Muhlenbergia microsperma": {
+    "id": "Muhlenbergia microsperma",
+    "common_name": "littleseed muhly",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Poaceae"
+  },
+  "Dudleya brevifolia": {
+    "id": "Dudleya brevifolia",
+    "common_name": "short-leaved liveforever",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Crassulaceae"
+  },
+  "Helminthoglypta traskii": {
+    "id": "Helminthoglypta traskii",
+    "common_name": "Trask Shoulderband Snail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Amazona viridigenalis": {
+    "id": "Amazona viridigenalis",
+    "common_name": "Red-crowned Amazon",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Psittaciformes",
+    "family": "Psittacidae"
+  },
+  "Lupinus longifolius": {
+    "id": "Lupinus longifolius",
+    "common_name": "longleaf bush lupine",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Berberis nevinii": {
+    "id": "Berberis nevinii",
+    "common_name": "Nevin's barberry",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ranunculales",
+    "family": "Berberidaceae"
+  },
+  "Cistanthe maritima": {
+    "id": "Cistanthe maritima",
+    "common_name": "seaside calandrinia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Montiaceae"
+  },
+  "Eucalyptus leucoxylon": {
+    "id": "Eucalyptus leucoxylon",
+    "common_name": "Yellow gum",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Anarhynchus nivosus": {
+    "id": "Anarhynchus nivosus",
+    "common_name": "Snowy Plover",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Charadriidae"
+  },
+  "Glyptostoma newberryanum": {
+    "id": "Glyptostoma newberryanum",
+    "common_name": "San Diego Chestnut",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Megomphicidae"
+  },
+  "Dichondra occidentalis": {
+    "id": "Dichondra occidentalis",
+    "common_name": "western ponysfoot",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Solanales",
+    "family": "Convolvulaceae"
+  },
+  "Polioptila melanura": {
+    "id": "Polioptila melanura",
+    "common_name": "Black-tailed Gnatcatcher",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Polioptilidae"
+  },
+  "Astragalus insularis harwoodii": {
+    "id": "Astragalus insularis harwoodii",
+    "common_name": "harwood's milkvetch",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Plestiodon skiltonianus interparietalis": {
+    "id": "Plestiodon skiltonianus interparietalis",
+    "common_name": "Coronado Skink",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Scincidae"
+  },
+  "Rallus obsoletus levipes": {
+    "id": "Rallus obsoletus levipes",
+    "common_name": "Light-footed Rail",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Gruiformes",
+    "family": "Rallidae"
+  },
+  "Diadophis punctatus similis": {
+    "id": "Diadophis punctatus similis",
+    "common_name": "San Diego Ringneck Snake",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Colubridae"
+  },
+  "Cocytius antaeus": {
+    "id": "Cocytius antaeus",
+    "common_name": "Giant Sphinx",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Sphingidae"
+  },
+  "Branta hutchinsii leucopareia": {
+    "id": "Branta hutchinsii leucopareia",
+    "common_name": "Aleutian Cackling Goose",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae"
+  },
+  "Ambrosia chenopodiifolia": {
+    "id": "Ambrosia chenopodiifolia",
+    "common_name": "San Diego Bursage",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Frankenia palmeri": {
+    "id": "Frankenia palmeri",
+    "common_name": "Palmer's frankenia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Frankeniaceae"
+  },
+  "Crotalus ruber": {
+    "id": "Crotalus ruber",
+    "common_name": "Red Diamond Rattlesnake",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Viperidae"
+  },
+  "Isurus oxyrinchus": {
+    "id": "Isurus oxyrinchus",
+    "common_name": "Shortfin Mako",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Lamniformes",
+    "family": "Lamnidae"
+  },
+  "Agelaius tricolor": {
+    "id": "Agelaius tricolor",
+    "common_name": "Tricolored Blackbird",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Icteridae"
+  },
+  "Calidris canutus": {
+    "id": "Calidris canutus",
+    "common_name": "Red Knot",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Pseudobatos productus": {
+    "id": "Pseudobatos productus",
+    "common_name": "Shovelnose Guitarfish",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Rhinopristiformes",
+    "family": "Rhinobatidae"
+  },
+  "Eryngium aristulatum parishii": {
+    "id": "Eryngium aristulatum parishii",
+    "common_name": "san diego button-celery",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Apiales",
+    "family": "Apiaceae"
+  },
+  "Erysimum ammophilum": {
+    "id": "Erysimum ammophilum",
+    "common_name": "Sand-loving Wallflower",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Brassicales",
+    "family": "Brassicaceae"
+  },
+  "Falco columbarius": {
+    "id": "Falco columbarius",
+    "common_name": "Merlin",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Falconiformes",
+    "family": "Falconidae"
+  },
+  "Asio otus": {
+    "id": "Asio otus",
+    "common_name": "Long-eared Owl",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Strigiformes",
+    "family": "Strigidae"
+  },
+  "Ambrosia pumila": {
+    "id": "Ambrosia pumila",
+    "common_name": "San Diego Ambrosia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Arctostaphylos otayensis": {
+    "id": "Arctostaphylos otayensis",
+    "common_name": "otay manzanita",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Ericaceae"
+  },
+  "Diplacus clevelandii": {
+    "id": "Diplacus clevelandii",
+    "common_name": "Cleveland's bush monkeyflower",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Phrymaceae"
+  },
+  "Agave shawii shawii": {
+    "id": "Agave shawii shawii",
+    "common_name": "shaw agave",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Asparagaceae"
+  },
+  "Eucalyptus cladocalyx": {
+    "id": "Eucalyptus cladocalyx",
+    "common_name": "sugar gum",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Tivela stultorum": {
+    "id": "Tivela stultorum",
+    "common_name": "Pismo Clam",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Venerida",
+    "family": "Veneridae"
+  },
+  "Eryngium pendletonense": {
+    "id": "Eryngium pendletonense",
+    "common_name": "pendleton button-celery",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Apiales",
+    "family": "Apiaceae"
+  },
+  "Camissoniopsis bistorta": {
+    "id": "Camissoniopsis bistorta",
+    "common_name": "California sun cup",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Onagraceae"
+  },
+  "Eschrichtius robustus": {
+    "id": "Eschrichtius robustus",
+    "common_name": "Grey Whale",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Eschrichtiidae"
+  },
+  "Haliotis rufescens": {
+    "id": "Haliotis rufescens",
+    "common_name": "Red Abalone",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Lepetellida",
+    "family": "Haliotidae"
+  },
+  "Phrynosoma mcallii": {
+    "id": "Phrynosoma mcallii",
+    "common_name": "Flat-tailed Horned Lizard",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Phrynosomatidae"
+  },
+  "Phacelia campanularia": {
+    "id": "Phacelia campanularia",
+    "common_name": "desert bluebells",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Boraginales",
+    "family": "Boraginaceae"
+  },
+  "Phrynosoma blainvillii": {
+    "id": "Phrynosoma blainvillii",
+    "common_name": "Blainville's Horned Lizard",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Phrynosomatidae"
+  },
+  "Suaeda esteroa": {
+    "id": "Suaeda esteroa",
+    "common_name": "Estuary Seablite",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Amaranthaceae"
+  },
+  "Chaenactis artemisiifolia": {
+    "id": "Chaenactis artemisiifolia",
+    "common_name": "Artemisia-leaved Chaenactis",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Texosporium sancti-jacobi": {
+    "id": "Texosporium sancti-jacobi",
+    "common_name": "Woven-spored microlichen",
+    "trophic_level": "decomposer",
+    "trophic_label": "Decomposers",
+    "iconic_taxon": "Fungi",
+    "order": "Caliciales",
+    "family": "Caliciaceae"
+  },
+  "Brickellia atractyloides arguta": {
+    "id": "Brickellia atractyloides arguta",
+    "common_name": "pungent brickellbush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Dudleya saxosa": {
+    "id": "Dudleya saxosa",
+    "common_name": "Panamint liveforever",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Crassulaceae"
+  },
+  "Cirsium occidentale": {
+    "id": "Cirsium occidentale",
+    "common_name": "Cobwebby Thistle",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Allium haematochiton": {
+    "id": "Allium haematochiton",
+    "common_name": "red-skinned onion",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Amaryllidaceae"
+  },
+  "Tetracoccus dioicus": {
+    "id": "Tetracoccus dioicus",
+    "common_name": "parry's tetracoccus",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Malpighiales",
+    "family": "Picrodendraceae"
+  },
+  "Phacelia stellaris": {
+    "id": "Phacelia stellaris",
+    "common_name": "Brand's star phacelia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Boraginales",
+    "family": "Boraginaceae"
+  },
+  "Carlowrightia arizonica": {
+    "id": "Carlowrightia arizonica",
+    "common_name": "Arizona carlowrightia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Acanthaceae"
+  },
+  "Jacaranda mimosifolia": {
+    "id": "Jacaranda mimosifolia",
+    "common_name": "blue jacaranda",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Bignoniaceae"
+  },
+  "Thamnophis hammondii": {
+    "id": "Thamnophis hammondii",
+    "common_name": "Two-striped Garter Snake",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Colubridae"
+  },
+  "Mareca penelope": {
+    "id": "Mareca penelope",
+    "common_name": "Eurasian Wigeon",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae"
+  },
+  "Aphanisma blitoides": {
+    "id": "Aphanisma blitoides",
+    "common_name": "San Diego Coastal-Creeper",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Amaranthaceae"
+  },
+  "Polioptila californica": {
+    "id": "Polioptila californica",
+    "common_name": "California Gnatcatcher",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Polioptilidae"
+  },
+  "Eriastrum harwoodii": {
+    "id": "Eriastrum harwoodii",
+    "common_name": "Harwood's Woollystar",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Polemoniaceae"
+  },
+  "Arizona elegans occidentalis": {
+    "id": "Arizona elegans occidentalis",
+    "common_name": "California Glossy Snake",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Colubridae"
+  },
+  "Aspidoscelis hyperythrus": {
+    "id": "Aspidoscelis hyperythrus",
+    "common_name": "Orange-throated Whiptail",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Teiidae"
+  },
+  "Pseudotsuga macrocarpa": {
+    "id": "Pseudotsuga macrocarpa",
+    "common_name": "Bigcone Douglas-fir",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Pinaceae"
+  },
+  "Heterotheca sessiliflora sessiliflora": {
+    "id": "Heterotheca sessiliflora sessiliflora",
+    "common_name": "Beach Goldenaster",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Lepidium flavum felipense": {
+    "id": "Lepidium flavum felipense",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Brassicales",
+    "family": "Brassicaceae"
+  },
+  "Chorizanthe orcuttiana": {
+    "id": "Chorizanthe orcuttiana",
+    "common_name": "Orcutt's spineflower",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Polygonaceae"
+  },
+  "Pinus radiata": {
+    "id": "Pinus radiata",
+    "common_name": "Monterey pine",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Pinaceae"
+  },
+  "Arenaria interpres": {
+    "id": "Arenaria interpres",
+    "common_name": "Ruddy Turnstone",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Masticophis fuliginosus": {
+    "id": "Masticophis fuliginosus",
+    "common_name": "Baja California Coachwhip",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Colubridae"
+  },
+  "Ornithostaphylos oppositifolia": {
+    "id": "Ornithostaphylos oppositifolia",
+    "common_name": "Baja California birdbush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Ericaceae"
+  },
+  "Helminthoglypta coelata": {
+    "id": "Helminthoglypta coelata",
+    "common_name": "Mesa Shoulderband Snail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Neltuma alba": {
+    "id": "Neltuma alba",
+    "common_name": "White Carob Tree",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Rissa tridactyla": {
+    "id": "Rissa tridactyla",
+    "common_name": "Black-legged Kittiwake",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Laridae"
+  },
+  "Atriplex pacifica": {
+    "id": "Atriplex pacifica",
+    "common_name": "south coast saltscale",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Amaranthaceae"
+  },
+  "Romneya coulteri": {
+    "id": "Romneya coulteri",
+    "common_name": "Coulter's matilija poppy",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ranunculales",
+    "family": "Papaveraceae"
+  },
+  "Amazona oratrix": {
+    "id": "Amazona oratrix",
+    "common_name": "Yellow-headed Amazon",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Psittaciformes",
+    "family": "Psittacidae"
+  },
+  "Polioptila californica californica": {
+    "id": "Polioptila californica californica",
+    "common_name": "Coastal California Gnatcatcher",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Polioptilidae"
+  },
+  "Leuconotopicus albolarvatus": {
+    "id": "Leuconotopicus albolarvatus",
+    "common_name": "White-headed Woodpecker",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Piciformes",
+    "family": "Picidae"
+  },
+  "Amazona finschi": {
+    "id": "Amazona finschi",
+    "common_name": "Lilac-crowned Amazon",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Psittaciformes",
+    "family": "Psittacidae"
+  },
+  "Plagiobothrys collinus californicus": {
+    "id": "Plagiobothrys collinus californicus",
+    "common_name": "california popcornflower",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Boraginales",
+    "family": "Boraginaceae"
+  },
+  "Geothallus tuberosus": {
+    "id": "Geothallus tuberosus",
+    "common_name": "Campbell's Liverwort",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Sphaerocarpales",
+    "family": "Sphaerocarpaceae"
+  },
+  "Harpagonella palmeri": {
+    "id": "Harpagonella palmeri",
+    "common_name": "Palmer's grapplinghook",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Boraginales",
+    "family": "Boraginaceae"
+  },
+  "Selasphorus rufus": {
+    "id": "Selasphorus rufus",
+    "common_name": "Rufous Hummingbird",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Apodiformes",
+    "family": "Trochilidae"
+  },
+  "Helminthoglypta montezuma": {
+    "id": "Helminthoglypta montezuma",
+    "common_name": "Montezuma Shoulderband Snail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Leptosyne gigantea": {
+    "id": "Leptosyne gigantea",
+    "common_name": "giant coreopsis",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Funastrum utahense": {
+    "id": "Funastrum utahense",
+    "common_name": "Utah vine milkweed",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Gentianales",
+    "family": "Apocynaceae"
+  },
+  "Phoenix canariensis": {
+    "id": "Phoenix canariensis",
+    "common_name": "Canary Island palm",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Arecales",
+    "family": "Arecaceae"
+  },
+  "Campylorhynchus brunneicapillus sandiegensis": {
+    "id": "Campylorhynchus brunneicapillus sandiegensis",
+    "common_name": "Coastal Cactus Wren",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Troglodytidae"
+  },
+  "Pseudognaphalium leucocephalum": {
+    "id": "Pseudognaphalium leucocephalum",
+    "common_name": "white rabbit-tobacco",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Cyprinodon macularius": {
+    "id": "Cyprinodon macularius",
+    "common_name": "Desert Pupfish",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Actinopterygii",
+    "order": "Cyprinodontiformes",
+    "family": "Cyprinodontidae"
+  },
+  "Anaxyrus californicus": {
+    "id": "Anaxyrus californicus",
+    "common_name": "Arroyo Toad",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Amphibia",
+    "order": "Anura",
+    "family": "Bufonidae"
+  },
+  "Hydrobates homochroa": {
+    "id": "Hydrobates homochroa",
+    "common_name": "Ashy Storm-Petrel",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Hydrobatidae"
+  },
+  "Xerarionta stearnsiana": {
+    "id": "Xerarionta stearnsiana",
+    "common_name": "Speckled Cactussnail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Thalasseus elegans": {
+    "id": "Thalasseus elegans",
+    "common_name": "Elegant Tern",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Laridae"
+  },
+  "Comarostaphylis diversifolia diversifolia": {
+    "id": "Comarostaphylis diversifolia diversifolia",
+    "common_name": "summer holly",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Ericaceae"
+  },
+  "Lepidium virginicum menziesii": {
+    "id": "Lepidium virginicum menziesii",
+    "common_name": "Menzies' pepperweed",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Brassicales",
+    "family": "Brassicaceae"
+  },
+  "Rothelix lowei": {
+    "id": "Rothelix lowei",
+    "common_name": "Palomar Shoulderband",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Caulanthus simulans": {
+    "id": "Caulanthus simulans",
+    "common_name": "Payson's jewelflower",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Brassicales",
+    "family": "Brassicaceae"
+  },
+  "Melanitta americana": {
+    "id": "Melanitta americana",
+    "common_name": "Black Scoter",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae"
+  },
+  "Cryptantha ganderi": {
+    "id": "Cryptantha ganderi",
+    "common_name": "Gander's cryptantha",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Boraginales",
+    "family": "Boraginaceae"
+  },
+  "Ceanothus cyaneus": {
+    "id": "Ceanothus cyaneus",
+    "common_name": "lakeside ceanothus",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Rosales",
+    "family": "Rhamnaceae"
+  },
+  "Nolina interrata": {
+    "id": "Nolina interrata",
+    "common_name": "dehesa nolina",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Asparagaceae"
+  },
+  "Brodiaea orcuttii": {
+    "id": "Brodiaea orcuttii",
+    "common_name": "Orcutt's brodiaea",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Asparagaceae"
+  },
+  "Allium marvinii": {
+    "id": "Allium marvinii",
+    "common_name": "Yucaipa onion",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Amaryllidaceae"
+  },
+  "Buteo swainsoni": {
+    "id": "Buteo swainsoni",
+    "common_name": "Swainson's Hawk",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae"
+  },
+  "Pogogyne abramsii": {
+    "id": "Pogogyne abramsii",
+    "common_name": "San Diego mesa mint",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Brodiaea filifolia": {
+    "id": "Brodiaea filifolia",
+    "common_name": "thread-leaved brodiaea",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Asparagaceae"
+  },
+  "Salvadora hexalepis virgultea": {
+    "id": "Salvadora hexalepis virgultea",
+    "common_name": "Coast Patchnose Snake",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Colubridae"
+  },
+  "Asplenium vespertinum": {
+    "id": "Asplenium vespertinum",
+    "common_name": "western spleenwort",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Polypodiales",
+    "family": "Aspleniaceae"
+  },
+  "Epipactis gigantea": {
+    "id": "Epipactis gigantea",
+    "common_name": "Stream Orchid",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Orchidaceae"
+  },
+  "Convolvulus simulans": {
+    "id": "Convolvulus simulans",
+    "common_name": "small-flowered morning-glory",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Solanales",
+    "family": "Convolvulaceae"
+  },
+  "Euphydryas editha quino": {
+    "id": "Euphydryas editha quino",
+    "common_name": "Quino Checkerspot",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae"
+  },
+  "Amazona finschi \u00d7 viridigenalis": {
+    "id": "Amazona finschi \u00d7 viridigenalis",
+    "common_name": "Lilac-crowned \u00d7 Red-crowned Amazon",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Psittaciformes",
+    "family": "Psittacidae"
+  },
+  "Passerculus sandwichensis rostratus": {
+    "id": "Passerculus sandwichensis rostratus",
+    "common_name": "Large-billed Savannah Sparrow",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Passerellidae"
+  },
+  "Megaptera novaeangliae": {
+    "id": "Megaptera novaeangliae",
+    "common_name": "Humpback Whale",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Balaenopteridae"
+  },
+  "Niebla cephalota": {
+    "id": "Niebla cephalota",
+    "common_name": "Powdery Sea-Fog Lichen",
+    "trophic_level": "decomposer",
+    "trophic_label": "Decomposers",
+    "iconic_taxon": "Fungi",
+    "order": "Lecanorales",
+    "family": "Ramalinaceae"
+  },
+  "Limnodromus griseus": {
+    "id": "Limnodromus griseus",
+    "common_name": "Short-billed Dowitcher",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Ribes viburnifolium": {
+    "id": "Ribes viburnifolium",
+    "common_name": "santa catalina island currant",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Grossulariaceae"
+  },
+  "Calosaturnia walterorum": {
+    "id": "Calosaturnia walterorum",
+    "common_name": "Walter's Silkmoth",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Saturniidae"
+  },
+  "Philotes sonorensis": {
+    "id": "Philotes sonorensis",
+    "common_name": "Sonoran Blue",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Colias harfordii": {
+    "id": "Colias harfordii",
+    "common_name": "Harford's Sulphur",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Pieridae"
+  },
+  "Thorneochloa diegoensis": {
+    "id": "Thorneochloa diegoensis",
+    "common_name": "San Diego needle grass",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Poaceae"
+  },
+  "Notorynchus cepedianus": {
+    "id": "Notorynchus cepedianus",
+    "common_name": "Broadnose Sevengill Shark",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Hexanchiformes",
+    "family": "Hexanchidae"
+  },
+  "Anarhynchus nivosus nivosus": {
+    "id": "Anarhynchus nivosus nivosus",
+    "common_name": "Northern Snowy Plover",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Charadriidae"
+  },
+  "Gopherus agassizii": {
+    "id": "Gopherus agassizii",
+    "common_name": "Mojave Desert Tortoise",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Reptilia",
+    "order": "Testudines",
+    "family": "Testudinidae"
+  },
+  "Bombus sonorus": {
+    "id": "Bombus sonorus",
+    "common_name": "Sonoran Bumble Bee",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Apidae"
+  },
+  "Linanthus maculatus emaculatus": {
+    "id": "Linanthus maculatus emaculatus",
+    "common_name": "Jacumba Mountains Linanthus",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Polemoniaceae"
+  },
+  "Pogogyne nudiuscula": {
+    "id": "Pogogyne nudiuscula",
+    "common_name": "Otay mesa mint",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Mentzelia desertorum": {
+    "id": "Mentzelia desertorum",
+    "common_name": "Desert Blazingstar",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Cornales",
+    "family": "Loasaceae"
+  },
+  "Haplotrema transfuga": {
+    "id": "Haplotrema transfuga",
+    "common_name": "Striate Lancetooth Snail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Haplotrematidae"
+  },
+  "Clinopodium chandleri": {
+    "id": "Clinopodium chandleri",
+    "common_name": "San Miguel savory",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Platanthera cooperi": {
+    "id": "Platanthera cooperi",
+    "common_name": "Cooper's Rein Orchid",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Orchidaceae"
+  },
+  "Calyptridium arizonicum": {
+    "id": "Calyptridium arizonicum",
+    "common_name": "Arizona Pussypaws",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Montiaceae"
+  },
+  "Dudleya viscida": {
+    "id": "Dudleya viscida",
+    "common_name": "Sticky Dudleya",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Crassulaceae"
+  },
+  "Vireo bellii pusillus": {
+    "id": "Vireo bellii pusillus",
+    "common_name": "Least Bell's Vireo",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Vireonidae"
+  },
+  "Baccharis vanessae": {
+    "id": "Baccharis vanessae",
+    "common_name": "Encinitas Baccharis",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Microseris douglasii platycarpha": {
+    "id": "Microseris douglasii platycarpha",
+    "common_name": "small-flowered microseris",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Mucronea californica": {
+    "id": "Mucronea californica",
+    "common_name": "california spineflower",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Polygonaceae"
+  },
+  "Cirsium occidentale californicum": {
+    "id": "Cirsium occidentale californicum",
+    "common_name": "California thistle",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Dudleya abramsii abramsii": {
+    "id": "Dudleya abramsii abramsii",
+    "common_name": "Abrams' liveforever",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Crassulaceae"
+  },
+  "Chelydra serpentina": {
+    "id": "Chelydra serpentina",
+    "common_name": "Common Snapping Turtle",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Reptilia",
+    "order": "Testudines",
+    "family": "Chelydridae"
+  },
+  "Calandrinia breweri": {
+    "id": "Calandrinia breweri",
+    "common_name": "Brewer's redmaids",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Montiaceae"
+  },
+  "Lathyrus splendens": {
+    "id": "Lathyrus splendens",
+    "common_name": "pride-of-California",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Thunnus orientalis": {
+    "id": "Thunnus orientalis",
+    "common_name": "Pacific Bluefin Tuna",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Actinopterygii",
+    "order": "Scombriformes",
+    "family": "Scombridae"
+  },
+  "Coleonyx variegatus abbotti": {
+    "id": "Coleonyx variegatus abbotti",
+    "common_name": "San Diego Banded Gecko",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Eublepharidae"
+  },
+  "Holocarpha virgata elongata": {
+    "id": "Holocarpha virgata elongata",
+    "common_name": "graceful tarplant",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Chorizanthe polygonoides longispina": {
+    "id": "Chorizanthe polygonoides longispina",
+    "common_name": "long-spined spineflower",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Polygonaceae"
+  },
+  "Sphenopholis interrupta californica": {
+    "id": "Sphenopholis interrupta californica",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Poaceae"
+  },
+  "Helminthoglypta edwardsi": {
+    "id": "Helminthoglypta edwardsi",
+    "common_name": "Pine Valley Shoulderband Snail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Pentachaeta aurea aurea": {
+    "id": "Pentachaeta aurea aurea",
+    "common_name": "golden-rayed pentachaeta",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Streptocephalus woottoni": {
+    "id": "Streptocephalus woottoni",
+    "common_name": "Riverside Fairy Shrimp",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Anostraca",
+    "family": "Streptocephalidae"
+  },
+  "Isocoma menziesii decumbens": {
+    "id": "Isocoma menziesii decumbens",
+    "common_name": "decumbent goldenbush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Nemacaulis denudata denudata": {
+    "id": "Nemacaulis denudata denudata",
+    "common_name": "Coast Woolly-heads",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Polygonaceae"
+  },
+  "Chlosyne gabbii": {
+    "id": "Chlosyne gabbii",
+    "common_name": "Gabb's Checkerspot",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae"
+  },
+  "Hosackia crassifolia otayensis": {
+    "id": "Hosackia crassifolia otayensis",
+    "common_name": "Otay Mountain hosackia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Phacelia hubbyi": {
+    "id": "Phacelia hubbyi",
+    "common_name": "Hubby's Phacelia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Boraginales",
+    "family": "Boraginaceae"
+  },
+  "Calochortus dunnii": {
+    "id": "Calochortus dunnii",
+    "common_name": "Dunn's mariposa lily",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Liliales",
+    "family": "Liliaceae"
+  },
+  "Uta stansburiana": {
+    "id": "Uta stansburiana",
+    "common_name": "Common Side-blotched Lizard",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Phrynosomatidae"
+  },
+  "Cicindela latesignata": {
+    "id": "Cicindela latesignata",
+    "common_name": "Western Beach Tiger Beetle",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Insecta",
+    "order": "Coleoptera",
+    "family": "Cicindelidae"
+  },
+  "Botaurus lentiginosus": {
+    "id": "Botaurus lentiginosus",
+    "common_name": "American Bittern",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae"
+  },
+  "Corynorhinus townsendii": {
+    "id": "Corynorhinus townsendii",
+    "common_name": "Townsend's Big-eared Bat",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Chiroptera",
+    "family": "Vespertilionidae"
+  },
+  "Aspidoscelis tigris stejnegeri": {
+    "id": "Aspidoscelis tigris stejnegeri",
+    "common_name": "Coastal Whiptail",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Teiidae"
+  },
+  "Carex obispoensis": {
+    "id": "Carex obispoensis",
+    "common_name": "San Luis Obispo sedge",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Cyperaceae"
+  },
+  "Packera ganderi": {
+    "id": "Packera ganderi",
+    "common_name": "gander's ragwort",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Chaenactis glabriuscula glabriuscula": {
+    "id": "Chaenactis glabriuscula glabriuscula",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Hesperevax caulescens": {
+    "id": "Hesperevax caulescens",
+    "common_name": "hogwallow starfish",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Hesperocyparis stephensonii": {
+    "id": "Hesperocyparis stephensonii",
+    "common_name": "cuyamaca cypress",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Cupressaceae"
+  },
+  "Galium proliferum": {
+    "id": "Galium proliferum",
+    "common_name": "desert bedstraw",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Gentianales",
+    "family": "Rubiaceae"
+  },
+  "Taxidea taxus": {
+    "id": "Taxidea taxus",
+    "common_name": "American Badger",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Mammalia",
+    "order": "Carnivora",
+    "family": "Mustelidae"
+  },
+  "Monardella hypoleuca lanata": {
+    "id": "Monardella hypoleuca lanata",
+    "common_name": "felt-leaved monardella",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Lilium humboldtii ocellatum": {
+    "id": "Lilium humboldtii ocellatum",
+    "common_name": "ocellated Humboldt lily",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Liliales",
+    "family": "Liliaceae"
+  },
+  "Bison bison": {
+    "id": "Bison bison",
+    "common_name": "American Bison",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Bovidae"
+  },
+  "Deinandra conjugens": {
+    "id": "Deinandra conjugens",
+    "common_name": "Otay tarplant",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Buteo lineatus": {
+    "id": "Buteo lineatus",
+    "common_name": "Red-shouldered Hawk",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae"
+  },
+  "Lampropeltis multifasciata": {
+    "id": "Lampropeltis multifasciata",
+    "common_name": "Coast Mountain Kingsnake",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Colubridae"
+  },
+  "Lasiurus cinereus": {
+    "id": "Lasiurus cinereus",
+    "common_name": "Northern Hoary Bat",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Chiroptera",
+    "family": "Vespertilionidae"
+  },
+  "Boechera johnstonii": {
+    "id": "Boechera johnstonii",
+    "common_name": "Johnston's rockcress",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Brassicales",
+    "family": "Brassicaceae"
+  },
+  "Chaenactis parishii": {
+    "id": "Chaenactis parishii",
+    "common_name": "parish's chaenactis",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Androsace elongata acuta": {
+    "id": "Androsace elongata acuta",
+    "common_name": "california androsace",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Primulaceae"
+  },
+  "Cirsium occidentale occidentale": {
+    "id": "Cirsium occidentale occidentale",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Juglans californica": {
+    "id": "Juglans californica",
+    "common_name": "Southern California Walnut",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fagales",
+    "family": "Juglandaceae"
+  },
+  "Chloropyron maritimum maritimum": {
+    "id": "Chloropyron maritimum maritimum",
+    "common_name": "Southern Saltmarsh Bird's-beak",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Orobanchaceae"
+  },
+  "Thermopsis californica semota": {
+    "id": "Thermopsis californica semota",
+    "common_name": "velvety false-lupine",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Limnanthes alba parishii": {
+    "id": "Limnanthes alba parishii",
+    "common_name": "Parish's slender meadowfoam",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Brassicales",
+    "family": "Limnanthaceae"
+  },
+  "Pistia stratiotes": {
+    "id": "Pistia stratiotes",
+    "common_name": "Water Lettuce",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Alismatales",
+    "family": "Araceae"
+  },
+  "Mycteria americana": {
+    "id": "Mycteria americana",
+    "common_name": "Wood Stork",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Ciconiiformes",
+    "family": "Ciconiidae"
+  },
+  "Dudleya multicaulis": {
+    "id": "Dudleya multicaulis",
+    "common_name": "many-stemmed dudleya",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Crassulaceae"
+  },
+  "Dudleya blochmaniae blochmaniae": {
+    "id": "Dudleya blochmaniae blochmaniae",
+    "common_name": "Blochman's Dudleya",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Crassulaceae"
+  },
+  "Fremontodendron mexicanum": {
+    "id": "Fremontodendron mexicanum",
+    "common_name": "Mexican flannelbush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Malvales",
+    "family": "Malvaceae"
+  },
+  "Clarkia delicata": {
+    "id": "Clarkia delicata",
+    "common_name": "delicate clarkia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Onagraceae"
+  },
+  "Phoradendron libocedri": {
+    "id": "Phoradendron libocedri",
+    "common_name": "Incense Cedar Mistletoe",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Santalales",
+    "family": "Santalaceae"
+  },
+  "Stereolepis gigas": {
+    "id": "Stereolepis gigas",
+    "common_name": "Giant Sea Bass",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Actinopterygii",
+    "order": "Acropomatiformes",
+    "family": "Stereolepididae"
+  },
+  "Bodianus pulcher": {
+    "id": "Bodianus pulcher",
+    "common_name": "California Sheephead",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Actinopterygii",
+    "order": "Labriformes",
+    "family": "Labridae"
+  },
+  "Contopus cooperi": {
+    "id": "Contopus cooperi",
+    "common_name": "Olive-sided Flycatcher",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Tyrannidae"
+  },
+  "Lilium humboldtii": {
+    "id": "Lilium humboldtii",
+    "common_name": "Humboldt's Lily",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Liliales",
+    "family": "Liliaceae"
+  },
+  "Lewisia brachycalyx": {
+    "id": "Lewisia brachycalyx",
+    "common_name": "short-sepaled lewisia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Montiaceae"
+  },
+  "Astragalus douglasii perstrictus": {
+    "id": "Astragalus douglasii perstrictus",
+    "common_name": "jacumba milkvetch",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Quercus palmeri": {
+    "id": "Quercus palmeri",
+    "common_name": "Palmer's oak",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fagales",
+    "family": "Fagaceae"
+  },
+  "Actinemys pallida": {
+    "id": "Actinemys pallida",
+    "common_name": "Southwestern Pond Turtle",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Reptilia",
+    "order": "Testudines",
+    "family": "Emydidae"
+  },
+  "Chaenactis glabriuscula orcuttiana": {
+    "id": "Chaenactis glabriuscula orcuttiana",
+    "common_name": "orcutt's pincushion",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Ammospiza nelsoni": {
+    "id": "Ammospiza nelsoni",
+    "common_name": "Nelson's Sparrow",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Passerellidae"
+  },
+  "Balaenoptera physalus": {
+    "id": "Balaenoptera physalus",
+    "common_name": "Fin Whale",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Balaenopteridae"
+  },
+  "Ambrosia monogyra": {
+    "id": "Ambrosia monogyra",
+    "common_name": "Singlewhorl Burrobrush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Zerene eurydice": {
+    "id": "Zerene eurydice",
+    "common_name": "California Dogface",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Pieridae"
+  },
+  "Glaucopsyche piasus umbrosa": {
+    "id": "Glaucopsyche piasus umbrosa",
+    "common_name": "Smoky Arrowhead Blue",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Mola mola": {
+    "id": "Mola mola",
+    "common_name": "Common Mola",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Actinopterygii",
+    "order": "Tetraodontiformes",
+    "family": "Molidae"
+  },
+  "Lepechinia cardiophylla": {
+    "id": "Lepechinia cardiophylla",
+    "common_name": "heart-leaved pitcher sage",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Chorizanthe leptotheca": {
+    "id": "Chorizanthe leptotheca",
+    "common_name": "peninsular spineflower",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Polygonaceae"
+  },
+  "Astragalus oocarpus": {
+    "id": "Astragalus oocarpus",
+    "common_name": "San Diego milkvetch",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Nolina cismontana": {
+    "id": "Nolina cismontana",
+    "common_name": "Chaparral Nolina",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Asparagaceae"
+  },
+  "Quercus lobata": {
+    "id": "Quercus lobata",
+    "common_name": "valley oak",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fagales",
+    "family": "Fagaceae"
+  },
+  "Sebastes paucispinis": {
+    "id": "Sebastes paucispinis",
+    "common_name": "Bocaccio",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Actinopterygii",
+    "order": "Perciformes",
+    "family": "Scorpaenidae"
+  },
+  "Dicranostegia orcuttiana": {
+    "id": "Dicranostegia orcuttiana",
+    "common_name": "orcutt's bird's-beak",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Orobanchaceae"
+  },
+  "Hippocampus ingens": {
+    "id": "Hippocampus ingens",
+    "common_name": "Giant Seahorse",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Actinopterygii",
+    "order": "Syngnathiformes",
+    "family": "Syngnathidae"
+  },
+  "Athene cunicularia hypugaea": {
+    "id": "Athene cunicularia hypugaea",
+    "common_name": "Western Burrowing Owl",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Strigiformes",
+    "family": "Strigidae"
+  },
+  "Quercus cedrosensis": {
+    "id": "Quercus cedrosensis",
+    "common_name": "Cedros Island oak",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fagales",
+    "family": "Fagaceae"
+  },
+  "Monardella stoneana": {
+    "id": "Monardella stoneana",
+    "common_name": "Jennifer's monardella",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Nassella cernua": {
+    "id": "Nassella cernua",
+    "common_name": "nodding needle grass",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Poaceae"
+  },
+  "Astragalus deanei": {
+    "id": "Astragalus deanei",
+    "common_name": "dean's milkvetch",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fabales",
+    "family": "Fabaceae"
+  },
+  "Poa atropurpurea": {
+    "id": "Poa atropurpurea",
+    "common_name": "San Bernardino Bluegrass",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Poaceae"
+  },
+  "Apodemia virgulti peninsularis": {
+    "id": "Apodemia virgulti peninsularis",
+    "common_name": "Peninsular Metalmark",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Riodinidae"
+  },
+  "Calochortus palmeri munzii": {
+    "id": "Calochortus palmeri munzii",
+    "common_name": "San Jacinto mariposa lily",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Liliales",
+    "family": "Liliaceae"
+  },
+  "Calochortus concolor": {
+    "id": "Calochortus concolor",
+    "common_name": "goldenbowl mariposa lily",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Liliales",
+    "family": "Liliaceae"
+  },
+  "Navarretia fossalis": {
+    "id": "Navarretia fossalis",
+    "common_name": "Moran's nosegay",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Polemoniaceae"
+  },
+  "Lampropeltis californiae": {
+    "id": "Lampropeltis californiae",
+    "common_name": "California King Snake",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Colubridae"
+  },
+  "Sternula antillarum browni": {
+    "id": "Sternula antillarum browni",
+    "common_name": "California Least Tern",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Laridae"
+  },
+  "Macadamia integrifolia": {
+    "id": "Macadamia integrifolia",
+    "common_name": "Macadamia Tree",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Proteales",
+    "family": "Proteaceae"
+  },
+  "Sternula antillarum": {
+    "id": "Sternula antillarum",
+    "common_name": "Least Tern",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Laridae"
+  },
+  "Calochortus weedii": {
+    "id": "Calochortus weedii",
+    "common_name": "Weed's Mariposa Lily",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Liliales",
+    "family": "Liliaceae"
+  },
+  "Centromadia pungens laevis": {
+    "id": "Centromadia pungens laevis",
+    "common_name": "smooth tarplant",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Panoquina errans": {
+    "id": "Panoquina errans",
+    "common_name": "Wandering Skipper",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Hesperiidae"
+  },
+  "Lasthenia glabrata coulteri": {
+    "id": "Lasthenia glabrata coulteri",
+    "common_name": "coulter's goldfields",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Galeorhinus galeus": {
+    "id": "Galeorhinus galeus",
+    "common_name": "School Shark",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Carcharhiniformes",
+    "family": "Triakidae"
+  },
+  "Downingia concolor brevior": {
+    "id": "Downingia concolor brevior",
+    "common_name": "cuyamaca lake downingia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Campanulaceae"
+  },
+  "Satyrium auretorum": {
+    "id": "Satyrium auretorum",
+    "common_name": "Gold-hunter's Hairstreak",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Calochortus weedii weedii": {
+    "id": "Calochortus weedii weedii",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Liliales",
+    "family": "Liliaceae"
+  },
+  "Xantusia gracilis": {
+    "id": "Xantusia gracilis",
+    "common_name": "Sandstone Night Lizard",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Xantusiidae"
+  },
+  "Satyrium tetra": {
+    "id": "Satyrium tetra",
+    "common_name": "Mountain Mahogany Hairstreak",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Corethrogyne filaginifolia linifolia": {
+    "id": "Corethrogyne filaginifolia linifolia",
+    "common_name": "Del Mar Mesa Sandaster",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Bombus crotchii": {
+    "id": "Bombus crotchii",
+    "common_name": "Crotch's Bumble Bee",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Apidae"
+  },
+  "Orcuttia californica": {
+    "id": "Orcuttia californica",
+    "common_name": "California orcutt grass",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Poaceae"
+  },
+  "Nama stenocarpa": {
+    "id": "Nama stenocarpa",
+    "common_name": "mud nama",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Boraginales",
+    "family": "Boraginaceae"
+  },
+  "Strymon istapa": {
+    "id": "Strymon istapa",
+    "common_name": "Mallow Scrub-Hairstreak",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Alopias vulpinus": {
+    "id": "Alopias vulpinus",
+    "common_name": "Thresher Shark",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Lamniformes",
+    "family": "Alopiidae"
+  },
+  "Stemodia durantifolia": {
+    "id": "Stemodia durantifolia",
+    "common_name": "purple stemodia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Plantaginaceae"
+  },
+  "Ptychoramphus aleuticus": {
+    "id": "Ptychoramphus aleuticus",
+    "common_name": "Cassin's Auklet",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Alcidae"
+  },
+  "Placynthiella oligotropha": {
+    "id": "Placynthiella oligotropha",
+    "common_name": "",
+    "trophic_level": "decomposer",
+    "trophic_label": "Decomposers",
+    "iconic_taxon": "Fungi",
+    "order": "Trapeliales",
+    "family": "Trapeliaceae"
+  },
+  "Pterodroma cookii": {
+    "id": "Pterodroma cookii",
+    "common_name": "Cook's Petrel",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Procellariidae"
+  },
+  "Hydrobates leucorhous": {
+    "id": "Hydrobates leucorhous",
+    "common_name": "Leach's Storm-Petrel",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Hydrobatidae"
+  },
+  "Deinandra paniculata": {
+    "id": "Deinandra paniculata",
+    "common_name": "San Diego Tarweed",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Synthliboramphus scrippsi": {
+    "id": "Synthliboramphus scrippsi",
+    "common_name": "Scripps's Murrelet",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Alcidae"
+  },
+  "Dudleya blochmaniae": {
+    "id": "Dudleya blochmaniae",
+    "common_name": "Blochman's Dudleya",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Saxifragales",
+    "family": "Crassulaceae"
+  },
+  "Delphinium hesperium cuyamacae": {
+    "id": "Delphinium hesperium cuyamacae",
+    "common_name": "cuyamaca larkspur",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ranunculales",
+    "family": "Ranunculaceae"
+  },
+  "Azolla filiculoides": {
+    "id": "Azolla filiculoides",
+    "common_name": "water fern",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Salviniales",
+    "family": "Salviniaceae"
+  },
+  "Abronia villosa aurita": {
+    "id": "Abronia villosa aurita",
+    "common_name": "chaparral sand-verbena",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Nyctaginaceae"
+  },
+  "Grindelia hallii": {
+    "id": "Grindelia hallii",
+    "common_name": "San Diego Gumplant",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Limosa fedoa": {
+    "id": "Limosa fedoa",
+    "common_name": "Marbled Godwit",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Aphyllon parishii brachylobum": {
+    "id": "Aphyllon parishii brachylobum",
+    "common_name": "short-lobed broomrape",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Orobanchaceae"
+  },
+  "Gymnura marmorata": {
+    "id": "Gymnura marmorata",
+    "common_name": "California Butterfly Ray",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Myliobatiformes",
+    "family": "Gymnuridae"
+  },
+  "Eriogonum giganteum formosum": {
+    "id": "Eriogonum giganteum formosum",
+    "common_name": "San Clemente Island buckwheat",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Polygonaceae"
+  },
+  "Chelonia mydas": {
+    "id": "Chelonia mydas",
+    "common_name": "Green Sea Turtle",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Reptilia",
+    "order": "Testudines",
+    "family": "Cheloniidae"
+  },
+  "Tharsalea hermes": {
+    "id": "Tharsalea hermes",
+    "common_name": "Hermes Copper",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Aloina bifrons": {
+    "id": "Aloina bifrons",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pottiales",
+    "family": "Pottiaceae"
+  },
+  "Cicindelidia trifasciata sigmoidea": {
+    "id": "Cicindelidia trifasciata sigmoidea",
+    "common_name": "Mudflat Tiger Beetle",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Insecta",
+    "order": "Coleoptera",
+    "family": "Cicindelidae"
+  },
+  "Juniperus californica": {
+    "id": "Juniperus californica",
+    "common_name": "California juniper",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Cupressaceae"
+  },
+  "Tharsalea gorgon": {
+    "id": "Tharsalea gorgon",
+    "common_name": "Gorgon Copper",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Hazardia orcuttii": {
+    "id": "Hazardia orcuttii",
+    "common_name": "orcutt's hazardia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Balaenoptera musculus": {
+    "id": "Balaenoptera musculus",
+    "common_name": "Blue Whale",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Balaenopteridae"
+  },
+  "Monardella viminea": {
+    "id": "Monardella viminea",
+    "common_name": "willowy monardella",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Arctocephalus townsendi": {
+    "id": "Arctocephalus townsendi",
+    "common_name": "Guadalupe Fur Seal",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Mammalia",
+    "order": "Carnivora",
+    "family": "Otariidae"
+  },
+  "Anthophora flavocincta": {
+    "id": "Anthophora flavocincta",
+    "common_name": "",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Apidae"
+  },
+  "Coccyzus americanus": {
+    "id": "Coccyzus americanus",
+    "common_name": "Yellow-billed Cuckoo",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Cuculiformes",
+    "family": "Cuculidae"
+  },
+  "Pyrgus ruralis lagunae": {
+    "id": "Pyrgus ruralis lagunae",
+    "common_name": "Laguna Mountains Checkered-Skipper",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Hesperiidae"
+  },
+  "Chlosyne leanira": {
+    "id": "Chlosyne leanira",
+    "common_name": "Leanira Checkerspot",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae"
+  },
+  "Empidonax traillii extimus": {
+    "id": "Empidonax traillii extimus",
+    "common_name": "Southwestern Willow Flycatcher",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Tyrannidae"
+  },
+  "Niebla ceruchis": {
+    "id": "Niebla ceruchis",
+    "common_name": "",
+    "trophic_level": "decomposer",
+    "trophic_label": "Decomposers",
+    "iconic_taxon": "Fungi",
+    "order": "Lecanorales",
+    "family": "Ramalinaceae"
+  },
+  "Carcharodon carcharias": {
+    "id": "Carcharodon carcharias",
+    "common_name": "Great White Shark",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Lamniformes",
+    "family": "Lamnidae"
+  },
+  "Tortula amplexa": {
+    "id": "Tortula amplexa",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pottiales",
+    "family": "Pottiaceae"
+  },
+  "Azolla microphylla": {
+    "id": "Azolla microphylla",
+    "common_name": "Mexican mosquito fern",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Salviniales",
+    "family": "Salviniaceae"
+  },
+  "Agave potatorum": {
+    "id": "Agave potatorum",
+    "common_name": "Butterfly Agave",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Asparagaceae"
+  },
+  "Centrochelys sulcata": {
+    "id": "Centrochelys sulcata",
+    "common_name": "African Spurred Tortoise",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Reptilia",
+    "order": "Testudines",
+    "family": "Testudinidae"
+  },
+  "Tursiops truncatus": {
+    "id": "Tursiops truncatus",
+    "common_name": "Common Bottlenose Dolphin",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Delphinidae"
+  },
+  "Scutellaria bolanderi austromontana": {
+    "id": "Scutellaria bolanderi austromontana",
+    "common_name": "southern mountains skullcap",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Lamiaceae"
+  },
+  "Deinandra floribunda": {
+    "id": "Deinandra floribunda",
+    "common_name": "tecate tarplant",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Euonymus occidentalis parishii": {
+    "id": "Euonymus occidentalis parishii",
+    "common_name": "Parish's Burning Bush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Celastrales",
+    "family": "Celastraceae"
+  },
+  "Calidris pusilla": {
+    "id": "Calidris pusilla",
+    "common_name": "Semipalmated Sandpiper",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Leptosiphon grandiflorus": {
+    "id": "Leptosiphon grandiflorus",
+    "common_name": "large-flowered leptosiphon",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Polemoniaceae"
+  },
+  "Squatina californica": {
+    "id": "Squatina californica",
+    "common_name": "Pacific Angelshark",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Squatiniformes",
+    "family": "Squatinidae"
+  },
+  "Eriogonum crocatum": {
+    "id": "Eriogonum crocatum",
+    "common_name": "Conejo buckwheat",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Polygonaceae"
+  },
+  "Artemisia tridentata tridentata": {
+    "id": "Artemisia tridentata tridentata",
+    "common_name": "Basin Big Sagebrush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Dieteria asteroides lagunensis": {
+    "id": "Dieteria asteroides lagunensis",
+    "common_name": "Mount Laguna aster",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Synthliboramphus craveri": {
+    "id": "Synthliboramphus craveri",
+    "common_name": "Craveri's Murrelet",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Alcidae"
+  },
+  "Centromadia parryi australis": {
+    "id": "Centromadia parryi australis",
+    "common_name": "southern tarplant",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Ardenna grisea": {
+    "id": "Ardenna grisea",
+    "common_name": "Sooty Shearwater",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Procellariidae"
+  },
+  "Ulmus americana": {
+    "id": "Ulmus americana",
+    "common_name": "American elm",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Rosales",
+    "family": "Ulmaceae"
+  },
+  "Uma notata": {
+    "id": "Uma notata",
+    "common_name": "Colorado Desert Fringe-toed Lizard",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Phrynosomatidae"
+  },
+  "Chlidonias niger": {
+    "id": "Chlidonias niger",
+    "common_name": "Black Tern",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Laridae"
+  },
+  "Horkelia cuneata puberula": {
+    "id": "Horkelia cuneata puberula",
+    "common_name": "mesa horkelia",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Rosales",
+    "family": "Rosaceae"
+  },
+  "Terrapene ornata": {
+    "id": "Terrapene ornata",
+    "common_name": "Ornate Box Turtle",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Reptilia",
+    "order": "Testudines",
+    "family": "Emydidae"
+  },
+  "Setophaga striata": {
+    "id": "Setophaga striata",
+    "common_name": "Blackpoll Warbler",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Parulidae"
+  },
+  "Agapornis fischeri": {
+    "id": "Agapornis fischeri",
+    "common_name": "Fischer's Lovebird",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Psittaciformes",
+    "family": "Psittaculidae"
+  },
+  "Euphorbia abramsiana": {
+    "id": "Euphorbia abramsiana",
+    "common_name": "Abrams' sandmat",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Malpighiales",
+    "family": "Euphorbiaceae"
+  },
+  "Symphyotrichum defoliatum": {
+    "id": "Symphyotrichum defoliatum",
+    "common_name": "San Bernardino aster",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Riparia riparia": {
+    "id": "Riparia riparia",
+    "common_name": "Bank Swallow",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Hirundinidae"
+  },
+  "Cleomella palmeri": {
+    "id": "Cleomella palmeri",
+    "common_name": "palmer's jackass-clover",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Brassicales",
+    "family": "Cleomaceae"
+  },
+  "Lasionycteris noctivagans": {
+    "id": "Lasionycteris noctivagans",
+    "common_name": "Silver-haired Bat",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Chiroptera",
+    "family": "Vespertilionidae"
+  },
+  "Eunota gabbii": {
+    "id": "Eunota gabbii",
+    "common_name": "Western Tidal Flat Tiger Beetle",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Insecta",
+    "order": "Coleoptera",
+    "family": "Cicindelidae"
+  },
+  "Crumia latifolia": {
+    "id": "Crumia latifolia",
+    "common_name": "Wideleaf Crumia Moss",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pottiales",
+    "family": "Pottiaceae"
+  },
+  "Turbinellus kauffmanii": {
+    "id": "Turbinellus kauffmanii",
+    "common_name": "",
+    "trophic_level": "decomposer",
+    "trophic_label": "Decomposers",
+    "iconic_taxon": "Fungi",
+    "order": "Gomphales",
+    "family": "Gomphaceae"
+  },
+  "Calcarius ornatus": {
+    "id": "Calcarius ornatus",
+    "common_name": "Chestnut-collared Longspur",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Calcariidae"
+  },
+  "Pyracantha koidzumii": {
+    "id": "Pyracantha koidzumii",
+    "common_name": "Taiwan Firethorn",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Rosales",
+    "family": "Rosaceae"
+  },
+  "Arctostaphylos catalinae": {
+    "id": "Arctostaphylos catalinae",
+    "common_name": "Santa Catalina Island manzanita",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Ericales",
+    "family": "Ericaceae"
+  },
+  "Antigone canadensis": {
+    "id": "Antigone canadensis",
+    "common_name": "Sandhill Crane",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Gruiformes",
+    "family": "Gruidae"
+  },
+  "Hesperiphona vespertina": {
+    "id": "Hesperiphona vespertina",
+    "common_name": "Evening Grosbeak",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Fringillidae"
+  },
+  "Falco peregrinus pealei": {
+    "id": "Falco peregrinus pealei",
+    "common_name": "Peale's Peregrine Falcon",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Falconiformes",
+    "family": "Falconidae"
+  },
+  "Ardenna creatopus": {
+    "id": "Ardenna creatopus",
+    "common_name": "Pink-footed Shearwater",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Procellariidae"
+  },
+  "Buteo albonotatus": {
+    "id": "Buteo albonotatus",
+    "common_name": "Zone-tailed Hawk",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae"
+  },
+  "Euphagus carolinus": {
+    "id": "Euphagus carolinus",
+    "common_name": "Rusty Blackbird",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Icteridae"
+  },
+  "Chaenactis carphoclinia peirsonii": {
+    "id": "Chaenactis carphoclinia peirsonii",
+    "common_name": "Peirson's pincushion",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Hesperocyparis macrocarpa": {
+    "id": "Hesperocyparis macrocarpa",
+    "common_name": "Monterey Cypress",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Cupressaceae"
+  },
+  "Branchinecta sandiegonensis": {
+    "id": "Branchinecta sandiegonensis",
+    "common_name": "San Diego Fairy Shrimp",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Anostraca",
+    "family": "Branchinectidae"
+  },
+  "Choeronycteris mexicana": {
+    "id": "Choeronycteris mexicana",
+    "common_name": "Long-tongued Bat",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Chiroptera",
+    "family": "Phyllostomidae"
+  },
+  "Rothelix warnerfontis": {
+    "id": "Rothelix warnerfontis",
+    "common_name": "Warner Springs Shoulderband",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Triquetrella californica": {
+    "id": "Triquetrella californica",
+    "common_name": "Coastal Triquetrella",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pottiales",
+    "family": "Pottiaceae"
+  },
+  "Sonorelix harperi": {
+    "id": "Sonorelix harperi",
+    "common_name": "Mountain Spring Desertsnail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Rothelix cuyamacensis": {
+    "id": "Rothelix cuyamacensis",
+    "common_name": "Cuyamaca Shoulderband",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Anadenulus cockerelli": {
+    "id": "Anadenulus cockerelli",
+    "common_name": "American Keeled Slug",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Ariolimacidae"
+  },
+  "Pseudorca crassidens": {
+    "id": "Pseudorca crassidens",
+    "common_name": "False Killer Whale",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Delphinidae"
+  },
+  "Rothelix rhodophila": {
+    "id": "Rothelix rhodophila",
+    "common_name": "Azalea Shoulderband",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Eucalyptus rudis": {
+    "id": "Eucalyptus rudis",
+    "common_name": "Flooded Gum",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Psilocybe cyanescens": {
+    "id": "Psilocybe cyanescens",
+    "common_name": "Wavy Cap",
+    "trophic_level": "decomposer",
+    "trophic_label": "Decomposers",
+    "iconic_taxon": "Fungi",
+    "order": "Agaricales",
+    "family": "Hymenogastraceae"
+  },
+  "Gambelia copeii": {
+    "id": "Gambelia copeii",
+    "common_name": "Cope's Leopard Lizard",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Crotaphytidae"
+  },
+  "Danaus plexippus plexippus": {
+    "id": "Danaus plexippus plexippus",
+    "common_name": "Migratory Monarch",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae"
+  },
+  "Helminthoglypta thermimontis": {
+    "id": "Helminthoglypta thermimontis",
+    "common_name": "Anza Shoulderband Snail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Zonotrichia querula": {
+    "id": "Zonotrichia querula",
+    "common_name": "Harris's Sparrow",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Passerellidae"
+  },
+  "Toxostoma bendirei": {
+    "id": "Toxostoma bendirei",
+    "common_name": "Bendire's Thrasher",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Mimidae"
+  },
+  "Helminthoglypta milleri": {
+    "id": "Helminthoglypta milleri",
+    "common_name": "Peak Shoulderband Snail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Dipodomys stephensi": {
+    "id": "Dipodomys stephensi",
+    "common_name": "Stephens's Kangaroo Rat",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Rodentia",
+    "family": "Heteromyidae"
+  },
+  "Senecio aphanactis": {
+    "id": "Senecio aphanactis",
+    "common_name": "chaparral ragwort",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Callophrys loki thornei": {
+    "id": "Callophrys loki thornei",
+    "common_name": "Thorne's Hairstreak",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Callophrys loki": {
+    "id": "Callophrys loki",
+    "common_name": "Loki Hairstreak",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Helminthoglypta tudiculata fairbanksi": {
+    "id": "Helminthoglypta tudiculata fairbanksi",
+    "common_name": "Deluz Shoulderband Snail",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Mollusca",
+    "order": "Stylommatophora",
+    "family": "Xanthonychidae"
+  },
+  "Sibaropsis hammittii": {
+    "id": "Sibaropsis hammittii",
+    "common_name": "Hammitt's clay-cress",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Brassicales",
+    "family": "Brassicaceae"
+  },
+  "Mannia californica": {
+    "id": "Mannia californica",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Marchantiales",
+    "family": "Aytoniaceae"
+  },
+  "Chlosyne acastus neumoegeni": {
+    "id": "Chlosyne acastus neumoegeni",
+    "common_name": "Neumoegen\u2019s Checkerspot",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae"
+  },
+  "Ferocactus cylindraceus": {
+    "id": "Ferocactus cylindraceus",
+    "common_name": "California Barrel Cactus",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Cactaceae"
+  },
+  "Muhlenbergia appressa": {
+    "id": "Muhlenbergia appressa",
+    "common_name": "appressed muhly",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Poaceae"
+  },
+  "Zalophus californianus": {
+    "id": "Zalophus californianus",
+    "common_name": "California Sea Lion",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Mammalia",
+    "order": "Carnivora",
+    "family": "Otariidae"
+  },
+  "Anser cygnoides": {
+    "id": "Anser cygnoides",
+    "common_name": "Swan Goose",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae"
+  },
+  "Chaenactis glabriuscula lanosa": {
+    "id": "Chaenactis glabriuscula lanosa",
+    "common_name": "sand buttons",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Forestiera pubescens": {
+    "id": "Forestiera pubescens",
+    "common_name": "Stretchberry",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Oleaceae"
+  },
+  "Riccia californica": {
+    "id": "Riccia californica",
+    "common_name": "California Crystalwort",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Marchantiales",
+    "family": "Ricciaceae"
+  },
+  "Juncus phaeocephalus": {
+    "id": "Juncus phaeocephalus",
+    "common_name": "Brown-headed Rush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Juncaceae"
+  },
+  "Empidonax traillii brewsteri": {
+    "id": "Empidonax traillii brewsteri",
+    "common_name": "Little Willow Flycatcher",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Tyrannidae"
+  },
+  "Cypseloides niger": {
+    "id": "Cypseloides niger",
+    "common_name": "Black Swift",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Apodiformes",
+    "family": "Apodidae"
+  },
+  "Juncus luciensis": {
+    "id": "Juncus luciensis",
+    "common_name": "santa lucia dwarf rush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Poales",
+    "family": "Juncaceae"
+  },
+  "Calochortus palmeri": {
+    "id": "Calochortus palmeri",
+    "common_name": "Palmer's Mariposa Lily",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Liliales",
+    "family": "Liliaceae"
+  },
+  "Enhydra lutris nereis": {
+    "id": "Enhydra lutris nereis",
+    "common_name": "Southern Sea Otter",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Mammalia",
+    "order": "Carnivora",
+    "family": "Mustelidae"
+  },
+  "Juglans hindsii": {
+    "id": "Juglans hindsii",
+    "common_name": "northern California black walnut",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Fagales",
+    "family": "Juglandaceae"
+  },
+  "Echinodorus berteroi": {
+    "id": "Echinodorus berteroi",
+    "common_name": "Erect burhead",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Alismatales",
+    "family": "Alismataceae"
+  },
+  "Brodiaea santarosae": {
+    "id": "Brodiaea santarosae",
+    "common_name": "santa rosa basalt brodiaea",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asparagales",
+    "family": "Asparagaceae"
+  },
+  "Balaenoptera musculus musculus": {
+    "id": "Balaenoptera musculus musculus",
+    "common_name": "Northern Blue Whale",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Balaenopteridae"
+  },
+  "Rhionaeschna psilus": {
+    "id": "Rhionaeschna psilus",
+    "common_name": "Turquoise-tipped Darner",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Insecta",
+    "order": "Odonata",
+    "family": "Aeshnidae"
+  },
+  "Atriplex coulteri": {
+    "id": "Atriplex coulteri",
+    "common_name": "Coulter's saltbush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Amaranthaceae"
+  },
+  "Habrodais grunus": {
+    "id": "Habrodais grunus",
+    "common_name": "Golden Hairstreak",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Hydrobates socorroensis": {
+    "id": "Hydrobates socorroensis",
+    "common_name": "Townsend's Storm-Petrel",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Hydrobatidae"
+  },
+  "Colinus virginianus": {
+    "id": "Colinus virginianus",
+    "common_name": "Northern Bobwhite",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Galliformes",
+    "family": "Odontophoridae"
+  },
+  "Corymbia ficifolia": {
+    "id": "Corymbia ficifolia",
+    "common_name": "Red-flowering gum",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Calidris mauri": {
+    "id": "Calidris mauri",
+    "common_name": "Western Sandpiper",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Eriogonum evanidum": {
+    "id": "Eriogonum evanidum",
+    "common_name": "vanishing wild buckwheat",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Polygonaceae"
+  },
+  "Calidris ferruginea": {
+    "id": "Calidris ferruginea",
+    "common_name": "Curlew Sandpiper",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Najas marina": {
+    "id": "Najas marina",
+    "common_name": "holly-leaved water nymph",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Alismatales",
+    "family": "Hydrocharitaceae"
+  },
+  "Rana draytonii": {
+    "id": "Rana draytonii",
+    "common_name": "California Red-legged Frog",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Amphibia",
+    "order": "Anura",
+    "family": "Ranidae"
+  },
+  "Strix occidentalis": {
+    "id": "Strix occidentalis",
+    "common_name": "Spotted Owl",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Aves",
+    "order": "Strigiformes",
+    "family": "Strigidae"
+  },
+  "Corethrogyne filaginifolia incana": {
+    "id": "Corethrogyne filaginifolia incana",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Asterales",
+    "family": "Asteraceae"
+  },
+  "Anarhynchus montanus": {
+    "id": "Anarhynchus montanus",
+    "common_name": "Mountain Plover",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Charadriidae"
+  },
+  "Eucalyptus robusta": {
+    "id": "Eucalyptus robusta",
+    "common_name": "Swamp Mahogany",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Anthus spragueii": {
+    "id": "Anthus spragueii",
+    "common_name": "Sprague's Pipit",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Passeriformes",
+    "family": "Motacillidae"
+  },
+  "Eucalyptus spathulata": {
+    "id": "Eucalyptus spathulata",
+    "common_name": "Swamp Mallet",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Terrapene triunguis": {
+    "id": "Terrapene triunguis",
+    "common_name": "Three-toed Box Turtle",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Reptilia",
+    "order": "Testudines",
+    "family": "Emydidae"
+  },
+  "Tecoma stans": {
+    "id": "Tecoma stans",
+    "common_name": "yellow trumpet flower",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Bignoniaceae"
+  },
+  "Eucalyptus melliodora": {
+    "id": "Eucalyptus melliodora",
+    "common_name": "Yellow Box",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Suaeda californica": {
+    "id": "Suaeda californica",
+    "common_name": "California seablite",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Amaranthaceae"
+  },
+  "Eucalyptus cornuta": {
+    "id": "Eucalyptus cornuta",
+    "common_name": "Yate",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Bassariscus astutus octavus": {
+    "id": "Bassariscus astutus octavus",
+    "common_name": "Southern California Ringtail",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Mammalia",
+    "order": "Carnivora",
+    "family": "Procyonidae"
+  },
+  "Trapeliopsis glaucopholis": {
+    "id": "Trapeliopsis glaucopholis",
+    "common_name": "",
+    "trophic_level": "decomposer",
+    "trophic_label": "Decomposers",
+    "iconic_taxon": "Fungi",
+    "order": "Trapeliales",
+    "family": "Trapeliaceae"
+  },
+  "Cyzicus californicus": {
+    "id": "Cyzicus californicus",
+    "common_name": "California Clam Shrimp",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Animalia",
+    "order": "Spinicaudata",
+    "family": "Cyzicidae"
+  },
+  "Corymbia calophylla": {
+    "id": "Corymbia calophylla",
+    "common_name": "Marri",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Thysanocarpus laciniatus rigidus": {
+    "id": "Thysanocarpus laciniatus rigidus",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Brassicales",
+    "family": "Brassicaceae"
+  },
+  "Phoebastria nigripes": {
+    "id": "Phoebastria nigripes",
+    "common_name": "Black-footed Albatross",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Diomedeidae"
+  },
+  "Gasterosteus aculeatus williamsoni": {
+    "id": "Gasterosteus aculeatus williamsoni",
+    "common_name": "Unarmored Threespine Stickleback",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Actinopterygii",
+    "order": "Perciformes",
+    "family": "Gasterosteidae"
+  },
+  "Pinus muricata": {
+    "id": "Pinus muricata",
+    "common_name": "bishop pine",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pinales",
+    "family": "Pinaceae"
+  },
+  "Castilleja affinis affinis": {
+    "id": "Castilleja affinis affinis",
+    "common_name": "Coast Paintbrush",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Orobanchaceae"
+  },
+  "Eucalyptus pleurocarpa": {
+    "id": "Eucalyptus pleurocarpa",
+    "common_name": "Tallerack",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Galium angustifolium gracillimum": {
+    "id": "Galium angustifolium gracillimum",
+    "common_name": "slender bedstraw",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Gentianales",
+    "family": "Rubiaceae"
+  },
+  "Fraxinus latifolia": {
+    "id": "Fraxinus latifolia",
+    "common_name": "Oregon Ash",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Oleaceae"
+  },
+  "Bursera filicifolia": {
+    "id": "Bursera filicifolia",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Sapindales",
+    "family": "Burseraceae"
+  },
+  "Petrosaurus mearnsi": {
+    "id": "Petrosaurus mearnsi",
+    "common_name": "Banded Rock Lizard",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Phrynosomatidae"
+  },
+  "Elgaria multicarinata": {
+    "id": "Elgaria multicarinata",
+    "common_name": "Southern Alligator Lizard",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Reptilia",
+    "order": "Squamata",
+    "family": "Anguidae"
+  },
+  "Malva assurgentiflora assurgentiflora": {
+    "id": "Malva assurgentiflora assurgentiflora",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Malvales",
+    "family": "Malvaceae"
+  },
+  "Nymphaea mexicana": {
+    "id": "Nymphaea mexicana",
+    "common_name": "Yellow Waterlily",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Nymphaeales",
+    "family": "Nymphaeaceae"
+  },
+  "Cicindela hirticollis gravida": {
+    "id": "Cicindela hirticollis gravida",
+    "common_name": "Pacific Hairy-necked Tiger Beetle",
+    "trophic_level": "primary_consumer",
+    "trophic_label": "Primary Consumers",
+    "iconic_taxon": "Insecta",
+    "order": "Coleoptera",
+    "family": "Cicindelidae"
+  },
+  "Ardenna carneipes": {
+    "id": "Ardenna carneipes",
+    "common_name": "Flesh-footed Shearwater",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Procellariiformes",
+    "family": "Procellariidae"
+  },
+  "Calidris pugnax": {
+    "id": "Calidris pugnax",
+    "common_name": "Ruff",
+    "trophic_level": "tertiary_consumer",
+    "trophic_label": "Tertiary Consumers",
+    "iconic_taxon": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae"
+  },
+  "Enhydra lutris": {
+    "id": "Enhydra lutris",
+    "common_name": "Sea Otter",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Mammalia",
+    "order": "Carnivora",
+    "family": "Mustelidae"
+  },
+  "Testudo horsfieldii": {
+    "id": "Testudo horsfieldii",
+    "common_name": "Afghan Tortoise",
+    "trophic_level": "secondary_consumer",
+    "trophic_label": "Secondary Consumers",
+    "iconic_taxon": "Reptilia",
+    "order": "Testudines",
+    "family": "Testudinidae"
+  },
+  "Eumetopias jubatus": {
+    "id": "Eumetopias jubatus",
+    "common_name": "Steller Sea Lion",
+    "trophic_level": "apex_predator",
+    "trophic_label": "Apex Predators",
+    "iconic_taxon": "Mammalia",
+    "order": "Carnivora",
+    "family": "Otariidae"
+  },
+  "Cephaloziella turneri": {
+    "id": "Cephaloziella turneri",
+    "common_name": "Turner's Threadwort",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Jungermanniales",
+    "family": "Cephaloziellaceae"
+  },
+  "Lantana depressa": {
+    "id": "Lantana depressa",
+    "common_name": "Pineland Lantana",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Lamiales",
+    "family": "Verbenaceae"
+  },
+  "Tortula californica": {
+    "id": "Tortula californica",
+    "common_name": "California Screw Moss",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Pottiales",
+    "family": "Pottiaceae"
+  },
+  "Eucalyptus botryoides": {
+    "id": "Eucalyptus botryoides",
+    "common_name": "bangalay",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Euphydryas editha": {
+    "id": "Euphydryas editha",
+    "common_name": "Edith's Checkerspot",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Nymphalidae"
+  },
+  "Grimmia moxleyi": {
+    "id": "Grimmia moxleyi",
+    "common_name": "",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Grimmiales",
+    "family": "Grimmiaceae"
+  },
+  "Chlorostrymon simaethis": {
+    "id": "Chlorostrymon simaethis",
+    "common_name": "Silver-banded Hairstreak",
+    "trophic_level": "pollinator",
+    "trophic_label": "Pollinators",
+    "iconic_taxon": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Lycaenidae"
+  },
+  "Eucalyptus preissiana": {
+    "id": "Eucalyptus preissiana",
+    "common_name": "bell-fruited mallee",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Myrtales",
+    "family": "Myrtaceae"
+  },
+  "Carnegiea gigantea": {
+    "id": "Carnegiea gigantea",
+    "common_name": "saguaro",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Cactaceae"
+  },
+  "Opuntia macrocentra": {
+    "id": "Opuntia macrocentra",
+    "common_name": "Black-spined Pricklypear",
+    "trophic_level": "producer",
+    "trophic_label": "Producers",
+    "iconic_taxon": "Plantae",
+    "order": "Caryophyllales",
+    "family": "Cactaceae"
+  }
+}
