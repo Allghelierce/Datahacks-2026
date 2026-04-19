@@ -3,10 +3,37 @@
 import { motion } from "framer-motion";
 import { ShieldExclamationIcon } from "@heroicons/react/24/outline";
 import { useAppData } from "@/context/DataContext";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const { data, loading } = useAppData();
   const GLOBAL_STATS = data?.global_stats;
+  const [showBanner, setShowBanner] = useState(true);
+
+  useEffect(() => {
+    // Check if an ecosystem is selected via session storage
+    const checkEcosystem = () => {
+      const isSelected = sessionStorage.getItem("ecosystemSelected") === "true";
+      setShowBanner(!isSelected);
+    };
+
+    // Check on mount
+    checkEcosystem();
+
+    // Listen for storage changes
+    const handleStorageChange = () => checkEcosystem();
+    window.addEventListener("storage", handleStorageChange);
+    
+    // Also listen for custom event
+    window.addEventListener("ecosystemSelected", handleStorageChange);
+    
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+      window.removeEventListener("ecosystemSelected", handleStorageChange);
+    };
+  }, []);
+
+  if (!showBanner) return null;
 
   return (
     <div className="fixed top-6 right-6 z-[60] pointer-events-none">

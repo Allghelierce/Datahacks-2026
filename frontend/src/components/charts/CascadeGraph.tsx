@@ -698,9 +698,9 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
 
       {selectedEcosystem && currentEco && !showEcoBrowser && (
         <div className="flex items-center gap-3 mb-4 px-3 py-2 rounded-lg border border-emerald-500/10" style={{ background: "rgba(16,70,32,0.08)" }}>
-          <span className="text-lg">{ECO_ICONS[selectedEcosystem] || "\ud83c\udf3f"}</span>
-          <div className="flex-1 min-w-0"><div className="text-sm font-medium text-white/70">{selectedEcosystem}</div><div className="text-[10px] text-white/30 truncate">{currentEco.description}</div></div>
-          <div className="text-[10px] text-white/30">{currentEco.zones.length} zones · {currentEco.species_count} species</div>
+          <span className="text-2xl">{ECO_ICONS[selectedEcosystem] || "\ud83c\udf3f"}</span>
+          <div className="flex-1 min-w-0"><div className="text-base font-medium text-white/70">{selectedEcosystem}</div><div className="text-sm text-white/30 truncate">{currentEco.description}</div></div>
+          <div className="text-sm text-white/30">{currentEco.zones.length} zones · {currentEco.species_count} species</div>
           <button onClick={() => { setSelectedEcosystem(null); setShowEcoBrowser(true); }} className="text-white/30 hover:text-white/60 text-sm shrink-0">×</button>
         </div>
       )}
@@ -708,13 +708,13 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
       {(!showEcoBrowser || zone) && (
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-4">
           <div className="relative flex-1 max-w-xs">
-            <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search species..." className="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white placeholder-white/30 focus:outline-none focus:border-white/25" />
+            <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search species..." className="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-base text-white placeholder-white/30 focus:outline-none focus:border-white/25" />
             {searchQuery && <button onClick={() => { setSearchQuery(""); setSelectedNode(null); if (svgRef.current) select(svgRef.current).transition().duration(400).call(zoomBehavior.transform as any, zoomIdentity); }} className="absolute right-2 top-1/2 -translate-y-1/2 text-white/30 hover:text-white/60">×</button>}
           </div>
           <div className="flex items-center gap-1.5 flex-wrap">
             {Object.entries(LEVEL_COLORS).map(([level, color]) => {
               const active = activeTrophicFilters.has(level);
-              return (<button key={level} onClick={() => toggleFilter(level)} className={`flex items-center gap-1 px-2 py-1 rounded-md text-[10px] transition border ${active ? "border-white/15 bg-white/5" : "border-transparent bg-white/[0.02] opacity-40"}`}><div className="w-2 h-2 rounded-full" style={{ backgroundColor: active ? color : color + "40" }} /><span className="text-white/50 capitalize hidden sm:inline">{level.replace("_", " ")}</span></button>);
+              return (<button key={level} onClick={() => toggleFilter(level)} className={`flex items-center gap-1 px-2 py-1 rounded-md text-xs transition border ${active ? "border-white/15 bg-white/5" : "border-transparent bg-white/[0.02] opacity-40"}`}><div className="w-2 h-2 rounded-full" style={{ backgroundColor: active ? color : color + "40" }} /><span className="text-white/50 capitalize hidden sm:inline">{level.replace("_", " ")}</span></button>);
             })}
           </div>
         </div>
@@ -722,7 +722,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
 
       {(!showEcoBrowser || zone) && !isFullscreen && (
         <div className="flex items-center justify-center gap-4 mb-3">
-          {Object.entries(EDGE_COLORS_BRIGHT).map(([type, color]) => (<div key={type} className="flex items-center gap-1.5"><div className="w-4 h-0.5 rounded" style={{ backgroundColor: color }} /><span className="text-[10px] text-white/30 capitalize">{type}</span></div>))}
+          {Object.entries(EDGE_COLORS_BRIGHT).map(([type, color]) => (<div key={type} className="flex items-center gap-1.5"><div className="w-4 h-0.5 rounded" style={{ backgroundColor: color }} /><span className="text-sm text-white/30 capitalize">{type}</span></div>))}
         </div>
       )}
 
@@ -790,7 +790,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                 const color = LEVEL_COLORS[level] || "#666";
                 return (
                   <g key={`cluster-${level}`} pointerEvents="none">
-                    <text x={lx} y={ly + 4} fill={color} fontSize={14} opacity={0.25} textAnchor="middle" fontWeight="800" style={{ textTransform: "uppercase", letterSpacing: "0.2em", paintOrder: "stroke", stroke: "rgba(6,10,7,0.4)", strokeWidth: 4 }}>{label}</text>
+                    <text x={lx} y={ly + 4} fill={color} fontSize={18} opacity={0.25} textAnchor="middle" fontWeight="800" style={{ textTransform: "uppercase", letterSpacing: "0.2em", paintOrder: "stroke", stroke: "rgba(6,10,7,0.4)", strokeWidth: 4 }}>{label}</text>
                   </g>
                 );
               })}
@@ -900,7 +900,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                     })()}
                     {(isCascadeVictim || isAnimVictim) && <text x={bx} y={by + r * 0.35} textAnchor="middle" fill="#ef4444" fontSize={r * 1.4} fontWeight="bold" style={{ pointerEvents: "none" }}>{"\u00d7"}</text>}
                     {isKeystone && !dimmed && !isCascadeVictim && <text x={bx} y={by - r - 10} textAnchor="middle" fill="#ef4444" fontSize={13} opacity={0.9} style={{ pointerEvents: "none" }}>★</text>}
-                    {(isHovered || isSelected) && <text x={bx} y={by + r + 12} textAnchor="middle" fill={isCascadeVictim ? "rgba(239,68,68,0.6)" : isKeystone ? "rgba(239,68,68,0.7)" : "#fff"} fontSize={10} fontWeight="600" letterSpacing="0.01em" paintOrder="stroke" stroke="rgba(6,10,7,0.9)" strokeWidth={4} style={{ textDecoration: isCascadeVictim ? "line-through" : "none" }}>{node.data.common_name || node.data.id}</text>}
+                    {(isHovered || isSelected) && <text x={bx} y={by + r + 12} textAnchor="middle" fill={isCascadeVictim ? "rgba(239,68,68,0.6)" : isKeystone ? "rgba(239,68,68,0.7)" : "#fff"} fontSize={14} fontWeight="600" letterSpacing="0.01em" paintOrder="stroke" stroke="rgba(6,10,7,0.9)" strokeWidth={4} style={{ textDecoration: isCascadeVictim ? "line-through" : "none" }}>{node.data.common_name || node.data.id}</text>}
                     </g>
                   </g>
                 );

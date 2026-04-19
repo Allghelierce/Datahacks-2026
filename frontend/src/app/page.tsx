@@ -52,6 +52,9 @@ export default function Home() {
     for (const [name, eco] of Object.entries(index)) {
       if (name.toLowerCase().includes(lowerQ) || eco.keywords.some((k: string) => k.toLowerCase().includes(lowerQ))) {
         setSelectedEcosystem(name);
+        sessionStorage.setItem("ecosystemSelected", "true");
+        // Emit event to hide navbar
+        window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: true } }));
         setSearching(false);
         return;
       }
@@ -82,6 +85,9 @@ export default function Home() {
         
         if (answer && answer !== "UNKNOWN" && index[answer]) {
           setSelectedEcosystem(answer);
+          sessionStorage.setItem("ecosystemSelected", "true");
+          // Emit event to hide navbar
+          window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: true } }));
           setSearching(false);
           return;
         }
@@ -124,7 +130,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white/80 mb-4 leading-tight">
               Enter a location.
             </h2>
-            <p className="text-base text-white/60 mb-8">
+            <p className="text-base text-white/40 mb-8">
               Neighborhood, park, or trail — we map the species, food web, and risks.
             </p>
 
@@ -160,8 +166,8 @@ export default function Home() {
 
             {/* Popular Locations */}
             <div className="mt-10">
-              <p className="text-sm uppercase tracking-[0.2em] text-white/12 mb-5">Browse Popular Locations</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <p className="text-sm uppercase tracking-[0.2em] text-white/12 mb-6">Browse Popular Locations</p>
+              <div className="grid grid-cols-2 gap-4">
                 {[
                   { id: "Coastal", name: "Torrey Pines", type: "Coastal Sage Scrub", risk: "Moderate", color: "text-amber-400" },
                   { id: "Urban Forest", name: "Balboa Park", type: "Riparian / Urban", risk: "Low", color: "text-emerald-400" },
@@ -176,16 +182,18 @@ export default function Home() {
                       // Find matching ecosystem ID or start search
                       const ecoName = Object.keys(index).find(k => k.toLowerCase().includes(loc.id.toLowerCase())) || Object.keys(index)[0];
                       setSelectedEcosystem(ecoName);
+                      sessionStorage.setItem("ecosystemSelected", "true");
+                      window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: true } }));
                     }}
-                    className="flex items-center justify-between p-3.5 border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] hover:border-emerald-500/10 transition-all group rounded-lg"
+                    className="flex items-center justify-between p-5 border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] hover:border-emerald-500/10 transition-all group rounded-lg"
                   >
                     <div className="text-left">
-                      <span className="block text-sm text-white/70 group-hover:text-white transition font-medium">{loc.name}</span>
-                      <span className="block text-xs text-white/15 uppercase tracking-wide mt-0.5">{loc.type}</span>
+                      <span className="block text-base text-white/70 group-hover:text-white transition font-medium">{loc.name}</span>
+                      <span className="block text-sm text-white/15 uppercase tracking-wide mt-1 transition group-hover:text-white/30">{loc.type}</span>
                     </div>
                     <div className="text-right">
-                      <span className={`block text-xs font-bold uppercase tracking-widest ${loc.color}`}>{loc.risk} Risk</span>
-                      <span className="block text-[9px] text-white/5 mt-0.5 font-mono">RISK LEVEL</span>
+                      <span className={`block text-sm font-bold uppercase tracking-widest transition ${loc.color}`}>{loc.risk} Risk</span>
+                      <span className="block text-xs text-white/5 mt-0.5 font-mono">RISK LEVEL</span>
                     </div>
                   </button>
                 ))}
@@ -217,7 +225,7 @@ export default function Home() {
       <div className="sticky top-0 z-50 border-b border-white/[0.04]" style={{ background: "rgba(3,3,3,0.9)", backdropFilter: "blur(20px)" }}>
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <button onClick={() => setSelectedEcosystem(null)} className="text-white/20 hover:text-white/50 transition mr-1">
+            <button onClick={() => { setSelectedEcosystem(null); sessionStorage.setItem("ecosystemSelected", "false"); window.dispatchEvent(new CustomEvent("ecosystemSelected", { detail: { selected: false } })); }} className="text-white/20 hover:text-white/50 transition mr-1">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
               </svg>
