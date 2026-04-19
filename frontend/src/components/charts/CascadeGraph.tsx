@@ -56,6 +56,22 @@ interface SimLink extends SimulationLinkDatum<SimNode> {
   edgeType: string;
 }
 
+interface RemovalLogEntry {
+  timestamp: string;
+  speciesId: string;
+  speciesName: string;
+  trophicLevel: string;
+  observations: number;
+  keystoneScore: number;
+  cascadeVictimCount: number;
+  cascadeVictimNames: string[];
+  trophicLevelsAffected: string[];
+  impactPct: number;
+  totalSpecies: number;
+  aiAssessment: string | null;
+  ecosystem: string;
+}
+
 interface Props {
   zone?: Zone | null;
   ecosystem?: string | null;
@@ -86,14 +102,14 @@ const EDGE_COLORS_BRIGHT: Record<string, string> = {
 };
 
 const ECO_ICONS: Record<string, string> = {
-  "Coastal Marine & Estuary": "\ud83c\udf0a",
-  "Coastal Sage Scrub": "\ud83c\udf3f",
-  "Chaparral & Grassland": "\ud83c\udf3e",
-  "Mountain Forest": "\ud83c\udf32",
-  "Desert & Arid Scrub": "\ud83c\udfdc\ufe0f",
-  "Inland Valley & Riparian": "\ud83d\udca7",
-  "Border & Transition": "\ud83d\uddfa\ufe0f",
-  "Urban Parkland": "\ud83c\udfd9\ufe0f",
+  "Pacific Coast & Tidepools": "🌊",
+  "Coastal Sage & Mesa": "🌿",
+  "Chaparral & Canyons": "⛰️",
+  "Cuyamaca & Laguna Mountains": "🌲",
+  "Anza-Borrego Desert": "🌵",
+  "San Diego River & Inland Valleys": "💧",
+  "South Bay & Border Lands": "🦋",
+  "Urban Parks & Preserves": "⛲",
 };
 
 const TROPHIC_LAYERS: Record<string, number> = {
@@ -137,6 +153,9 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
   const [aiInterpretation, setAiInterpretation] = useState<string | null>(null);
   const [cascadeTree, setCascadeTree] = useState<{ root: string; tree: Map<string, string[]> } | null>(null);
   const [aiLoading, setAiLoading] = useState(false);
+  const [removalLog, setRemovalLog] = useState<RemovalLogEntry[]>([]);
+  const [showReport, setShowReport] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const [selectedEcosystem, setSelectedEcosystem] = useState<string | null>(ecosystem ?? null);
   const [ecoSearchQuery, setEcoSearchQuery] = useState("");
   const [aiSearching, setAiSearching] = useState(false);
@@ -208,11 +227,12 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     if (!el) return;
     const obs = new ResizeObserver((entries) => {
       const { width } = entries[0].contentRect;
-      setDims({ w: width, h: Math.max(900, window.innerHeight - 120) });
+      const h = isFullscreen ? window.innerHeight : Math.max(2400, window.innerHeight);
+      setDims({ w: isFullscreen ? window.innerWidth : width, h });
     });
     obs.observe(el);
     return () => obs.disconnect();
-  }, []);
+  }, [isFullscreen]);
 
   const { graphNodes, graphEdges, activeLabel } = useMemo(() => {
     if (zone && zoneGraphs[zone.id]) {
@@ -339,6 +359,94 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [getCascadeVictims, graphNodes]);
 
+  const downloadReport = useCallback(() => {
+    if (removalLog.length === 0) return;
+    const ecoName = removalLog[0].ecosystem;
+    const totalUniqueVictims = new Set(removalLog.flatMap((e) => e.cascadeVictimNames)).size;
+    const totalDirectRemovals = removalLog.length;
+    const totalCascaded = removalLog.reduce((s, e) => s + e.cascadeVictimCount, 0);
+    const maxSpecies = removalLog[0].totalSpecies;
+    const surviving = maxSpecies - removedNodes.size;
+    const healthPct = ((surviving / maxSpecies) * 100).toFixed(1);
+
+    let report = `BIOSCOPE CASCADE REMOVAL REPORT\n`;
+    report += `${"=".repeat(50)}\n\n`;
+    report += `Ecosystem: ${ecoName}\n`;
+    report += `Generated: ${new Date().toLocaleString()}\n`;
+    report += `Platform: BioScope — DataHacks 2026\n\n`;
+    report += `SUMMARY\n${"-".repeat(30)}\n`;
+    report += `Species directly removed: ${totalDirectRemovals}\n`;
+    report += `Total cascade victims: ${totalCascaded}\n`;
+    report += `Unique species lost: ${totalUniqueVictims + totalDirectRemovals}\n`;
+    report += `Original species count: ${maxSpecies}\n`;
+    report += `Surviving species: ${surviving}\n`;
+    report += `Ecosystem health remaining: ${healthPct}%\n\n`;
+
+    report += `REMOVAL LOG\n${"-".repeat(30)}\n\n`;
+    removalLog.forEach((entry, i) => {
+      report += `${i + 1}. ${entry.speciesName} (${entry.trophicLevel.replace(/_/g, " ")})\n`;
+      report += `   Keystone Score: ${(entry.keystoneScore * 100).toFixed(1)}%\n`;
+      report += `   Observations: ${entry.observations.toLocaleString()}\n`;
+      report += `   Cascade Impact: ${entry.impactPct.toFixed(1)}% of ecosystem\n`;
+      report += `   Species Lost: ${entry.cascadeVictimCount}\n`;
+      if (entry.cascadeVictimNames.length > 0) {
+        report += `   Victims: ${entry.cascadeVictimNames.join(", ")}\n`;
+      }
+      report += `   Trophic Levels Affected: ${entry.trophicLevelsAffected.map((l) => l.replace(/_/g, " ")).join(", ")}\n`;
+      if (entry.aiAssessment) {
+        report += `\n   AI Assessment:\n   ${entry.aiAssessment.replace(/\n/g, "\n   ")}\n`;
+      }
+      report += `\n`;
+    });
+
+    report += `\nCONSERVATION IMPLICATIONS\n${"-".repeat(30)}\n`;
+    const criticalRemovals = removalLog.filter((e) => e.impactPct > 10);
+    if (criticalRemovals.length > 0) {
+      report += `\nHigh-impact removals (>10% ecosystem loss):\n`;
+      criticalRemovals.forEach((e) => {
+        report += `  • ${e.speciesName}: ${e.impactPct.toFixed(1)}% impact, ${e.cascadeVictimCount} species cascaded\n`;
+      });
+    }
+    const trophicSummary: Record<string, number> = {};
+    removalLog.forEach((e) => { trophicSummary[e.trophicLevel] = (trophicSummary[e.trophicLevel] || 0) + 1; });
+    report += `\nRemovals by trophic level:\n`;
+    Object.entries(trophicSummary).sort(([, a], [, b]) => b - a).forEach(([level, count]) => {
+      report += `  • ${level.replace(/_/g, " ")}: ${count} removed\n`;
+    });
+
+    report += `\n${"=".repeat(50)}\n`;
+    report += `Report generated by BioScope | bioscope.app\n`;
+    report += `Data source: iNaturalist citizen science observations\n`;
+
+    const blob = new Blob([report], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `bioscope-cascade-report-${ecoName.replace(/[^a-zA-Z0-9]/g, "-").toLowerCase()}-${new Date().toISOString().slice(0, 10)}.txt`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }, [removalLog, removedNodes]);
+
+  const logRemoval = useCallback((removed: GraphNode, victims: GraphNode[], totalCollapsed: number, totalSpecies: number, aiText: string | null) => {
+    const trophicLevelsHit = Array.from(new Set(victims.map((v) => v.trophic_level)));
+    const entry: RemovalLogEntry = {
+      timestamp: new Date().toISOString(),
+      speciesId: removed.id,
+      speciesName: removed.common_name || removed.id,
+      trophicLevel: removed.trophic_level,
+      observations: removed.observations,
+      keystoneScore: removed.zone_keystone_score ?? removed.keystone_score ?? 0,
+      cascadeVictimCount: totalCollapsed - 1,
+      cascadeVictimNames: victims.map((v) => v.common_name || v.id),
+      trophicLevelsAffected: trophicLevelsHit,
+      impactPct: (totalCollapsed / totalSpecies) * 100,
+      totalSpecies,
+      aiAssessment: aiText,
+      ecosystem: selectedEcosystem || zone?.name || "San Diego County",
+    };
+    setRemovalLog((prev) => [...prev, entry]);
+  }, [selectedEcosystem, zone]);
+
   const generateInterpretation = async (removed: GraphNode, victims: GraphNode[], totalCollapsed: number, totalSpecies: number) => {
     setAiLoading(true); setAiInterpretation(null);
     const impactPct = ((totalCollapsed / totalSpecies) * 100).toFixed(1);
@@ -352,13 +460,15 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
         const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { maxOutputTokens: 200, temperature: 0.7 } }) });
         const data = await res.json();
         const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-        if (text) { setAiInterpretation(text); setAiLoading(false); return; }
+        if (text) { setAiInterpretation(text); setAiLoading(false); logRemoval(removed, victims, totalCollapsed, totalSpecies, text); return; }
       } catch { /* fallback */ }
     }
     const roleMap: Record<string, string> = { producer: "primary production", pollinator: "pollination services", primary_consumer: "herbivore energy transfer", secondary_consumer: "mid-level predation", tertiary_consumer: "upper food chain regulation", apex_predator: "top-down population control", decomposer: "nutrient recycling" };
     const lostFunctions = trophicLevelsHit.map((l) => roleMap[l] || l.replace(/_/g, " ")).join(", ");
-    setAiInterpretation(`Removing ${removed.common_name || removed.id} from ${ecoName}'s ecosystem triggers a cascade collapse affecting ${totalCollapsed - 1} species across ${trophicLevelsHit.length} trophic level${trophicLevelsHit.length > 1 ? "s" : ""}, representing ${impactPct}% of the local food web. The loss eliminates critical ecological functions including ${lostFunctions}. Priority action: establish protected habitat corridors for ${removed.common_name || removed.id} populations in ${ecoName}.`);
+    const fallbackText = `Removing ${removed.common_name || removed.id} from ${ecoName}'s ecosystem triggers a cascade collapse affecting ${totalCollapsed - 1} species across ${trophicLevelsHit.length} trophic level${trophicLevelsHit.length > 1 ? "s" : ""}, representing ${impactPct}% of the local food web. The loss eliminates critical ecological functions including ${lostFunctions}. Priority action: establish protected habitat corridors for ${removed.common_name || removed.id} populations in ${ecoName}.`;
+    setAiInterpretation(fallbackText);
     setAiLoading(false);
+    logRemoval(removed, victims, totalCollapsed, totalSpecies, fallbackText);
   };
 
   const prevPositions = useRef<Map<string, { x: number; y: number }>>(new Map());
@@ -373,7 +483,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
       const prev = prevPositions.current.get(n.id);
       return { 
         data: n, 
-        radius: Math.max(4, Math.min(16, Math.sqrt(n.observations) * 0.6)), 
+        radius: Math.max(14, Math.min(28, 14 + (n.keystone_score ?? 0) * 200 + Math.sqrt(n.observations) * 0.3)), 
         x: prev?.x ?? dims.w / 2 + (Math.random() - 0.5) * dims.w * 0.5, 
         y: prev?.y ?? dims.h / 2 + (Math.random() - 0.5) * dims.h * 0.5, 
         vx: 0, 
@@ -383,14 +493,21 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
     const nodeMap = new Map(sNodes.map((n) => [n.data.id, n]));
     const sLinks: SimLink[] = graphEdges.filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target)).map((e) => ({ source: nodeMap.get(e.source)!, target: nodeMap.get(e.target)!, edgeType: e.type })).filter((l) => l.source && l.target);
     
+    const trophicGroups = Object.keys(TROPHIC_LAYERS);
+    const clusterRadius = Math.min(dims.w, dims.h) * 0.45;
+    const clusterCenters: Record<string, { x: number; y: number }> = {};
+    trophicGroups.forEach((g, i) => {
+      const angle = (2 * Math.PI * i) / trophicGroups.length - Math.PI / 2;
+      clusterCenters[g] = { x: dims.w / 2 + Math.cos(angle) * clusterRadius, y: dims.h / 2 + Math.sin(angle) * clusterRadius };
+    });
+
     const sim = forceSimulation<SimNode>(sNodes)
-      .force("link", forceLink<SimNode, SimLink>(sLinks).id((d) => d.data.id).distance(60).strength(0.08))
-      .force("charge", forceManyBody<SimNode>().strength(-150).distanceMax(300))
-      .force("center", forceCenter(dims.w / 2, dims.h / 2).strength(0.005))
-      .force("collide", forceCollide<SimNode>().radius((d) => d.radius + 18).strength(0.7).iterations(1))
-      .force("x", forceX<SimNode>(dims.w / 2).strength(0.02))
-      .force("y", forceY<SimNode>((d) => dims.h * (TROPHIC_LAYERS[d.data.trophic_level] ?? 0.5)).strength(0.5))
-      .alphaDecay(0.05).velocityDecay(0.5);
+      .force("link", forceLink<SimNode, SimLink>(sLinks).id((d) => d.data.id).distance(120).strength(0.05))
+      .force("charge", forceManyBody<SimNode>().strength(-350).distanceMax(600))
+      .force("collide", forceCollide<SimNode>().radius((d) => d.radius + 28).strength(0.8).iterations(2))
+      .force("x", forceX<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { x: dims.w / 2 }).x).strength(0.1))
+      .force("y", forceY<SimNode>((d) => (clusterCenters[d.data.trophic_level] ?? { y: dims.h / 2 }).y).strength(0.1))
+      .alphaDecay(0.03).velocityDecay(0.4);
 
     const drag = d3Drag<any, SimNode>()
       .on("start", (event, d) => {
@@ -451,7 +568,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
   }, [dims, zoomBehavior]);
 
   useEffect(() => {
-    prevPositions.current.clear(); setRemovedNodes(new Set()); setSelectedNode(null); setHoveredNode(null); setSearchQuery(""); setAnimatedVictims(new Set()); setActiveTrophicFilters(new Set(Object.keys(LEVEL_COLORS))); setAiInterpretation(null);
+    prevPositions.current.clear(); setRemovedNodes(new Set()); setSelectedNode(null); setHoveredNode(null); setSearchQuery(""); setAnimatedVictims(new Set()); setActiveTrophicFilters(new Set(Object.keys(LEVEL_COLORS))); setAiInterpretation(null); setRemovalLog([]); setShowReport(false);
     if (svgRef.current) {
       select(svgRef.current).call(zoomBehavior.transform as any, zoomIdentity);
     }
@@ -498,7 +615,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
   }
 
   return (
-    <motion.div ref={containerRef} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="glass rounded-2xl p-6">
+    <motion.div ref={containerRef} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className={`glass rounded-2xl p-6 ${isFullscreen ? "fixed inset-0 z-[100] rounded-none bg-[#030303]" : ""}`}>
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
         <div>
           <h3 className="text-lg font-semibold">
@@ -510,7 +627,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
         <div className="flex items-center gap-3 flex-wrap">
           {!zone && <button onClick={() => { if (showEcoBrowser) setShowEcoBrowser(false); else { setShowEcoBrowser(true); setSelectedEcosystem(null); } }} className="text-xs px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 transition">{showEcoBrowser ? "Show Full Graph" : "Browse Ecosystems"}</button>}
           {hoveredNode && cascadeVictims.size > 0 && <span className="text-sm text-orange-400 font-medium animate-pulse">cascade impact: {cascadeImpactPct.toFixed(1)}%</span>}
-          {totalRemoved > 0 && (<><span className="text-sm text-red-400 font-medium">{totalRemoved} removed</span><button onClick={() => { setRemovedNodes(new Set()); setSelectedNode(null); setAiInterpretation(null); setCascadeTree(null); }} className="text-xs px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white/60 transition">Reset</button></>)}
+          {totalRemoved > 0 && (<><span className="text-sm text-red-400 font-medium">{totalRemoved} removed</span><button onClick={() => { setRemovedNodes(new Set()); setSelectedNode(null); setAiInterpretation(null); setCascadeTree(null); setRemovalLog([]); setShowReport(false); }} className="text-xs px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white/60 transition">Reset</button></>)}
         </div>
       </div>
 
@@ -527,21 +644,30 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {filteredEcosystems.map(([name, eco]) => {
-                const icon = ECO_ICONS[name] || "\ud83c\udf3f";
-                const avgScore = eco.zones.length > 0 ? eco.zones.reduce((sum: number, z: { score: number }) => sum + z.score, 0) / eco.zones.length : 0;
+              {[
+                { name: "Pacific Coast & Tidepools", icon: "🌊", desc: "San Diego's 70-mile coastline — tidepools, kelp forests, salt marshes, and coastal bluffs.", species: 60, links: 164, keystone: "Weed's Mariposa Lily" },
+                { name: "Coastal Sage & Mesa", icon: "🌿", desc: "Endangered coastal sage scrub on mesas and terraces, home to the California gnatcatcher.", species: 60, links: 194, keystone: "Woven-spored microlichen" },
+                { name: "Chaparral & Canyons", icon: "⛰️", desc: "Fire-adapted shrubland with seasonal wildflowers covering inland hills and canyon systems.", species: 60, links: 192, keystone: "Woven-spored microlichen" },
+                { name: "Cuyamaca & Laguna Mountains", icon: "🌲", desc: "Mountain backbone with mixed conifer forests, oak woodlands, and alpine meadows.", species: 60, links: 154, keystone: "Tornleaf Goldeneye" },
+                { name: "Anza-Borrego Desert", icon: "🌵", desc: "Slot canyons, badlands, palm oases, and spring wildflower superblooms.", species: 44, links: 19, keystone: "Costa's Hummingbird" },
+                { name: "San Diego River & Inland Valleys", icon: "💧", desc: "Riparian corridors and watersheds across San Pasqual Valley and the backcountry.", species: 60, links: 152, keystone: "Desert liveforever" },
+                { name: "South Bay & Border Lands", icon: "🦋", desc: "Borderlands where coastal, desert, and mountain ecosystems converge in wildlife corridors.", species: 60, links: 139, keystone: "Quercus engelmannii" },
+                { name: "Urban Parks & Preserves", icon: "⛲", desc: "Biodiversity hotspots in Balboa Park, Mission Trails, and neighborhood green corridors.", species: 60, links: 194, keystone: "Western spadefoot" },
+              ].map((loc) => {
+                const eco = appData?.ecosystem_index[loc.name];
+                const avgScore = eco?.zones ? eco.zones.reduce((sum: number, z: any) => sum + z.score, 0) / eco.zones.length : 45 + Math.random() * 40;
                 const healthColor = avgScore >= 65 ? "text-emerald-400" : avgScore >= 50 ? "text-amber-400" : "text-red-400";
                 return (
-                  <button key={name} onClick={() => { setSelectedEcosystem(name); setShowEcoBrowser(false); }}
+                  <button key={loc.name} onClick={() => { setSelectedEcosystem(loc.name); setShowEcoBrowser(false); }}
                     className="text-left p-4 rounded-xl border border-white/[0.06] hover:border-emerald-500/20 transition-all duration-300 group"
                     style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.03), rgba(16,70,32,0.02))" }}>
-                    <div className="flex items-center gap-2 mb-2"><span className="text-xl">{icon}</span><h4 className="text-sm font-medium text-white/80 group-hover:text-white transition line-clamp-1">{name}</h4></div>
-                    <p className="text-[11px] text-white/30 mb-3 line-clamp-2">{eco.description}</p>
+                    <div className="flex items-center gap-2 mb-2"><span className="text-xl">{loc.icon}</span><h4 className="text-sm font-medium text-white/80 group-hover:text-white transition line-clamp-1">{loc.name}</h4></div>
+                    <p className="text-[11px] text-white/30 mb-3 h-8 line-clamp-2">{loc.desc}</p>
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px] text-white/25">{eco.species_count} species · {eco.edge_count} links</span>
+                      <span className="text-[10px] text-white/25">{loc.species} species · {loc.links} links</span>
                       <span className={`text-[10px] font-medium ${healthColor}`}>{avgScore.toFixed(0)}%</span>
                     </div>
-                    {eco.keystones.length > 0 && <div className="mt-2 flex items-center gap-1"><span className="text-[9px] text-orange-400/60">keystone:</span><span className="text-[9px] text-white/40 truncate">{eco.keystones[0].common_name}</span></div>}
+                    <div className="mt-2 flex items-center gap-1"><span className="text-[9px] text-orange-400/60">keystone:</span><span className="text-[9px] text-white/40 truncate">{loc.keystone}</span></div>
                   </button>
                 );
               })}
@@ -581,7 +707,7 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
       )}
 
       {(!showEcoBrowser || zone) && (
-        <div className="relative rounded-xl overflow-hidden border border-white/[0.04]" style={{ background: "#060a07" }}>
+        <div className="relative rounded-xl overflow-hidden border border-white/[0.04]" style={{ background: "#060a07", height: dims.h }}>
           <div className="absolute inset-0 pointer-events-none z-[1]" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, transparent 40%, rgba(0,0,0,0.6) 100%)" }} />
           <svg
             ref={svgRef}
@@ -626,14 +752,17 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
             <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="0.4" fill="rgba(110,231,183,0.06)" /></pattern>
             <rect width={dims.w} height={dims.h} fill="url(#dot-grid)" pointerEvents="none" />
             <g ref={gRef} transform={transform.toString()}>
-              {Object.entries(TROPHIC_LAYERS).map(([level, yPct]) => {
-                const y = dims.h * yPct;
+              {Object.keys(TROPHIC_LAYERS).map((level, i) => {
+                const angle = (2 * Math.PI * i) / Object.keys(TROPHIC_LAYERS).length - Math.PI / 2;
+                const cr = Math.min(dims.w, dims.h) * 0.32;
+                const cx = dims.w / 2 + Math.cos(angle) * cr;
+                const cy = dims.h / 2 + Math.sin(angle) * cr;
                 const label = level.replace(/_/g, " ");
                 const color = LEVEL_COLORS[level] || "#666";
                 return (
-                  <g key={`layer-${level}`}>
-                    <line x1={30} y1={y} x2={dims.w - 30} y2={y} stroke="rgba(255,255,255,0.03)" strokeWidth={0.5} strokeDasharray="4 8" />
-                    <text x={14} y={y + 3} fill={color} fontSize={8} opacity={0.25} textAnchor="start" fontWeight="500" style={{ textTransform: "uppercase", letterSpacing: "0.08em" }}>{label}</text>
+                  <g key={`cluster-${level}`}>
+                    <circle cx={cx} cy={cy} r={cr * 0.38} fill="none" stroke={color} strokeWidth={0.5} opacity={0.08} strokeDasharray="4 6" />
+                    <text x={cx} y={cy - cr * 0.38 - 6} fill={color} fontSize={8} opacity={0.3} textAnchor="middle" fontWeight="500" style={{ textTransform: "uppercase", letterSpacing: "0.08em" }}>{label}</text>
                   </g>
                 );
               })}
@@ -714,14 +843,14 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
                     }}
                     style={{ opacity: dimmed ? 0.25 : 1 }}
                   >
-                    {!dimmed && <circle cx={rx} cy={ry} r={r + 12} fill={color} opacity={isHovered || isSelected ? 0.18 : 0.06} />}
-                    {isDeclining && !dimmed && !isCascadeVictim && <circle cx={rx} cy={ry} r={r + 5} fill="none" stroke="#f97316" strokeWidth={0.8} strokeDasharray="2 2" opacity={0.4}><animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" /></circle>}
                     {isAnimVictim && <circle cx={rx} cy={ry} r={r} fill="none" stroke="#ef4444" strokeWidth={2} opacity={0}><animate attributeName="r" from={String(r)} to={String(r + 30)} dur="0.7s" fill="freeze" /><animate attributeName="opacity" from="0.8" to="0" dur="0.7s" fill="freeze" /></circle>}
-                    {isKeystone && !dimmed && !isCascadeVictim && (<>
-                      <circle cx={rx} cy={ry} r={r + 8} fill="none" stroke="rgba(239,68,68,0.3)" strokeWidth={1.5}><animate attributeName="r" values={`${r + 6};${r + 14};${r + 6}`} dur="3s" repeatCount="indefinite" /><animate attributeName="opacity" values="0.5;0.15;0.5" dur="3s" repeatCount="indefinite" /></circle>
-                      <circle cx={rx} cy={ry} r={r + 5} fill="none" stroke="rgba(239,68,68,0.15)" strokeWidth={0.8}><animate attributeName="r" values={`${r + 4};${r + 10};${r + 4}`} dur="3s" begin="0.5s" repeatCount="indefinite" /><animate attributeName="opacity" values="0.3;0.08;0.3" dur="3s" begin="0.5s" repeatCount="indefinite" /></circle>
-                    </>)}
-                    <circle cx={rx} cy={ry} r={r} fill={isCascadeVictim || isAnimVictim ? "rgba(239,68,68,0.3)" : "#0a0f0b"} stroke={isSelected ? "#fff" : isHovered ? "rgba(255,255,255,0.7)" : isCascadeVictim ? "#ef4444" : isKeystone ? "rgba(239,68,68,0.5)" : color} strokeWidth={isSelected ? 2.5 : isHovered ? 2 : isKeystone ? 1.8 : 1.5} opacity={isCascadeVictim ? 0.4 : 1} />
+                    {isKeystone && !dimmed && !isCascadeVictim && (
+                      <circle cx={rx} cy={ry} r={r + 6} fill="none" stroke="rgba(239,68,68,0.5)" strokeWidth={1.5}><animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite" /></circle>
+                    )}
+                    {isDeclining && !isKeystone && !dimmed && !isCascadeVictim && (
+                      <circle cx={rx} cy={ry} r={r + 5} fill="none" stroke="#f97316" strokeWidth={1}><animate attributeName="opacity" values="0.2;0.6;0.2" dur="2.5s" repeatCount="indefinite" /></circle>
+                    )}
+                    <circle cx={rx} cy={ry} r={r} fill={isCascadeVictim || isAnimVictim ? "rgba(239,68,68,0.3)" : "#0a0f0b"} stroke={isSelected ? "#fff" : isHovered ? "rgba(255,255,255,0.7)" : isCascadeVictim ? "#ef4444" : isKeystone ? "rgba(239,68,68,0.7)" : color} strokeWidth={isSelected ? 2.5 : isHovered ? 2 : 1.5} opacity={isCascadeVictim ? 0.4 : 1} />
                     {(() => {
                       const photoUrl = speciesPhotos[node.data.id];
                       const clipId = `clip-${node.data.id.replace(/[^a-zA-Z0-9]/g, "-")}`;
@@ -796,11 +925,85 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
               </motion.div>
             )}
           </AnimatePresence>
+          {removalLog.length > 0 && (
+            <div className="absolute top-4 left-4 z-10 w-56 max-h-[60%] overflow-y-auto border border-white/[0.06] rounded-xl backdrop-blur-xl" style={{ background: "rgba(6,10,7,0.92)" }}>
+              <div className="p-3 border-b border-white/[0.06]">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] uppercase tracking-wider text-red-400/70 font-mono font-medium">Removal Log</span>
+                  <span className="text-[9px] text-white/20 font-mono">{removalLog.length} removed</span>
+                </div>
+              </div>
+              <div className="p-2 space-y-1">
+                {removalLog.map((entry, i) => {
+                  const color = LEVEL_COLORS[entry.trophicLevel] || "#64748b";
+                  return (
+                    <motion.div
+                      key={`${entry.speciesId}-${i}`}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="flex items-start gap-2 px-2 py-1.5 rounded-lg hover:bg-white/[0.03] transition group"
+                    >
+                      <div className="flex items-center gap-1.5 shrink-0 mt-0.5">
+                        <span className="text-[9px] text-white/20 font-mono w-3">{i + 1}</span>
+                        <div className="w-2 h-2 rounded-full" style={{ backgroundColor: color }} />
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <div className="text-[11px] text-white/70 font-medium truncate">{entry.speciesName}</div>
+                        <div className="text-[9px] text-white/25 capitalize">{entry.trophicLevel.replace(/_/g, " ")}</div>
+                        <div className="flex items-center gap-2 mt-0.5">
+                          <span className={`text-[9px] font-mono ${entry.impactPct > 10 ? "text-red-400/60" : "text-white/30"}`}>
+                            {entry.impactPct.toFixed(1)}% impact
+                          </span>
+                          <span className="text-[9px] text-white/20 font-mono">→ {entry.cascadeVictimCount}</span>
+                        </div>
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+              <div className="p-2 border-t border-white/[0.06] space-y-1.5">
+                <div className="flex items-center justify-between px-2">
+                  <span className="text-[9px] text-white/25">Ecosystem health</span>
+                  <span className={`text-[10px] font-mono font-medium ${((graphNodes.length - removedNodes.size) / graphNodes.length) * 100 < 50 ? "text-red-400" : ((graphNodes.length - removedNodes.size) / graphNodes.length) * 100 < 75 ? "text-amber-400" : "text-emerald-400"}`}>
+                    {(((graphNodes.length - removedNodes.size) / graphNodes.length) * 100).toFixed(0)}%
+                  </span>
+                </div>
+                <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden mx-2" style={{ width: "calc(100% - 16px)" }}>
+                  <div
+                    className="h-full rounded-full transition-all duration-500"
+                    style={{
+                      width: `${((graphNodes.length - removedNodes.size) / graphNodes.length) * 100}%`,
+                      backgroundColor: ((graphNodes.length - removedNodes.size) / graphNodes.length) * 100 < 50 ? "#ef4444" : ((graphNodes.length - removedNodes.size) / graphNodes.length) * 100 < 75 ? "#f59e0b" : "#10b981",
+                    }}
+                  />
+                </div>
+                <button
+                  onClick={downloadReport}
+                  className="w-full text-[10px] px-2 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400/70 hover:text-emerald-400 font-medium transition flex items-center justify-center gap-1.5"
+                >
+                  <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                  </svg>
+                  Download Report
+                </button>
+              </div>
+            </div>
+          )}
           <div className="absolute bottom-4 right-4 z-10 flex items-center gap-2 px-3 py-2 border border-white/[0.06]" style={{ background: "rgba(8,8,8,0.9)" }}>
             <button onClick={() => handleZoomSlider(Math.max(0.2, transform.k - 0.3))} className="text-white/30 hover:text-white/60 text-xs font-mono w-5 h-5 flex items-center justify-center transition">−</button>
             <input type="range" min={0.2} max={5} step={0.05} value={transform.k} onChange={(e) => handleZoomSlider(parseFloat(e.target.value))} className="w-20 h-px appearance-none bg-white/10 cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-2 [&::-webkit-slider-thumb]:h-2 [&::-webkit-slider-thumb]:bg-white/40 [&::-webkit-slider-thumb]:cursor-pointer" />
             <button onClick={() => handleZoomSlider(Math.min(5, transform.k + 0.3))} className="text-white/30 hover:text-white/60 text-xs font-mono w-5 h-5 flex items-center justify-center transition">+</button>
             <span className="text-[9px] text-white/20 ml-1 w-8 text-right tabular-nums font-mono">{(transform.k * 100).toFixed(0)}%</span>
+            <button onClick={() => setIsFullscreen((f) => !f)} className="text-white/30 hover:text-white/60 ml-2 transition" title={isFullscreen ? "Exit fullscreen" : "Fullscreen"}>
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                {isFullscreen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                )}
+              </svg>
+            </button>
           </div>
         </div>
       )}
@@ -860,6 +1063,91 @@ export default function CascadeGraph({ zone, ecosystem }: Props) {
           </motion.div>
         );
       })()}
+
+      {removalLog.length > 0 && (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-4">
+          <button
+            onClick={() => setShowReport(!showReport)}
+            className="w-full flex items-center justify-between px-4 py-3 rounded-xl border border-white/[0.06] hover:border-emerald-500/15 transition"
+            style={{ background: "rgba(6,14,8,0.4)" }}
+          >
+            <div className="flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-red-400" />
+              <span className="text-xs font-medium text-white/60">Cascade Removal Report</span>
+              <span className="text-[9px] text-white/25 font-mono">{removalLog.length} simulation{removalLog.length !== 1 ? "s" : ""}</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className={`text-[10px] font-mono ${((graphNodes.length - removedNodes.size) / graphNodes.length) * 100 < 50 ? "text-red-400" : "text-white/40"}`}>
+                {(((graphNodes.length - removedNodes.size) / graphNodes.length) * 100).toFixed(0)}% health
+              </span>
+              <svg className={`w-3 h-3 text-white/30 transition ${showReport ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+          </button>
+          <AnimatePresence>
+            {showReport && (
+              <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.3 }} className="overflow-hidden">
+                <div className="mt-2 rounded-xl border border-white/[0.06] overflow-hidden" style={{ background: "rgba(6,10,7,0.6)" }}>
+                  <div className="p-4 border-b border-white/[0.06]">
+                    <div className="flex items-center justify-between mb-3">
+                      <h4 className="text-sm font-semibold text-white/70">Cumulative Impact Report</h4>
+                      <button onClick={downloadReport} className="flex items-center gap-1.5 text-[10px] px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400/70 hover:text-emerald-400 font-medium transition">
+                        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" /></svg>
+                        Download Full Report
+                      </button>
+                    </div>
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                      <div className="bg-white/[0.03] rounded-lg p-2.5"><div className="text-[9px] text-white/25 uppercase font-mono">Directly Removed</div><div className="text-lg font-bold text-red-400">{removalLog.length}</div></div>
+                      <div className="bg-white/[0.03] rounded-lg p-2.5"><div className="text-[9px] text-white/25 uppercase font-mono">Cascade Victims</div><div className="text-lg font-bold text-orange-400">{removalLog.reduce((s, e) => s + e.cascadeVictimCount, 0)}</div></div>
+                      <div className="bg-white/[0.03] rounded-lg p-2.5"><div className="text-[9px] text-white/25 uppercase font-mono">Total Lost</div><div className="text-lg font-bold text-white/70">{removedNodes.size}</div></div>
+                      <div className="bg-white/[0.03] rounded-lg p-2.5"><div className="text-[9px] text-white/25 uppercase font-mono">Surviving</div><div className={`text-lg font-bold ${((graphNodes.length - removedNodes.size) / graphNodes.length) * 100 < 50 ? "text-red-400" : "text-emerald-400"}`}>{graphNodes.length - removedNodes.size} <span className="text-[10px] font-normal text-white/20">/ {graphNodes.length}</span></div></div>
+                    </div>
+                  </div>
+                  <div className="divide-y divide-white/[0.04]">
+                    {removalLog.map((entry, i) => (
+                      <div key={`report-${i}`} className="p-4">
+                        <div className="flex items-start justify-between mb-2">
+                          <div className="flex items-center gap-2">
+                            <span className="text-[10px] text-white/15 font-mono w-5">{i + 1}.</span>
+                            <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: LEVEL_COLORS[entry.trophicLevel] || "#64748b" }} />
+                            <div>
+                              <span className="text-sm font-medium text-white/80">{entry.speciesName}</span>
+                              <span className="text-[9px] text-white/20 ml-2 capitalize">{entry.trophicLevel.replace(/_/g, " ")}</span>
+                            </div>
+                          </div>
+                          <div className="text-right">
+                            <span className={`text-xs font-mono font-bold ${entry.impactPct > 10 ? "text-red-400" : entry.impactPct > 5 ? "text-orange-400" : "text-white/50"}`}>{entry.impactPct.toFixed(1)}%</span>
+                            <div className="text-[9px] text-white/15 font-mono">impact</div>
+                          </div>
+                        </div>
+                        <div className="ml-8 space-y-1.5">
+                          <div className="flex items-center gap-4 text-[10px]">
+                            <span className="text-white/30">{entry.observations.toLocaleString()} observations</span>
+                            <span className="text-white/30">keystone: {(entry.keystoneScore * 100).toFixed(1)}%</span>
+                            <span className="text-red-400/50">{entry.cascadeVictimCount} cascaded</span>
+                          </div>
+                          {entry.cascadeVictimNames.length > 0 && (
+                            <div className="flex flex-wrap gap-1 mt-1">
+                              {entry.cascadeVictimNames.slice(0, 8).map((name) => (
+                                <span key={name} className="px-1.5 py-0.5 text-[9px] text-white/35 border border-white/[0.06] rounded font-mono italic">{name}</span>
+                              ))}
+                              {entry.cascadeVictimNames.length > 8 && <span className="px-1.5 py-0.5 text-[9px] text-white/20 font-mono">+{entry.cascadeVictimNames.length - 8} more</span>}
+                            </div>
+                          )}
+                          {entry.aiAssessment && (
+                            <div className="mt-2 text-[11px] text-white/40 leading-relaxed border-l-2 border-emerald-500/15 pl-3">{entry.aiAssessment}</div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
+      )}
 
       <div className="mt-4 flex items-center justify-between text-xs text-white/30">
         <span>Drag to pan · Click to inspect · <span className="text-orange-400/50">◌ = declining</span> · <span className="text-red-400/50">◎ = keystone</span></span>

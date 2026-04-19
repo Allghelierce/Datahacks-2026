@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAppData } from "@/context/DataContext";
+import { ECOSYSTEM_INDEX } from "@/lib/speciesData";
 
-type GlobalEntry = any; // Will be typed from data
+type GlobalEntry = any;
 interface ZoneKeystoneEntry {
   id: string;
   common_name: string;
@@ -16,16 +17,6 @@ interface ZoneKeystoneEntry {
   trophic_levels_affected: number;
   priority: string;
 }
-
-const TROPHIC_COLORS: Record<string, string> = {
-  producer: "text-white/50",
-  pollinator: "text-white/50",
-  primary_consumer: "text-white/50",
-  secondary_consumer: "text-white/50",
-  tertiary_consumer: "text-white/50",
-  apex_predator: "text-white/60",
-  decomposer: "text-white/50",
-};
 
 interface NormalizedEntry {
   id: string;
@@ -67,7 +58,11 @@ function normalizeZone(e: ZoneKeystoneEntry, totalSpeciesInZone: number): Normal
   };
 }
 
-export default function ConservationReport() {
+interface Props {
+  ecosystem?: string | null;
+}
+
+export default function ConservationReport({ ecosystem }: Props) {
   const { data, loading } = useAppData();
   const [selectedZoneId, setSelectedZoneId] = useState<string | null>(null);
 
@@ -75,10 +70,22 @@ export default function ConservationReport() {
   const KEYSTONE_RANKINGS = data?.keystone_rankings ?? [];
   const ZONE_KEYSTONE_RANKINGS = data?.zone_keystone_rankings ?? {};
 
+  const filteredZones = useMemo(() => {
+    if (!ecosystem || !ECOSYSTEM_INDEX[ecosystem]) return ZONE_DATA;
+    const zoneIds = new Set(ECOSYSTEM_INDEX[ecosystem].zones.map((z) => z.id));
+    return ZONE_DATA.filter((z: any) => zoneIds.has(z.id));
+  }, [ecosystem, ZONE_DATA]);
+
+  useEffect(() => {
+    if (filteredZones.length > 0 && !filteredZones.find((z: any) => z.id === selectedZoneId)) {
+      setSelectedZoneId(filteredZones[0].id);
+    }
+  }, [filteredZones]);
+
   const rankings: NormalizedEntry[] = useMemo(() => {
     if (!data) return [];
     if (selectedZoneId && ZONE_KEYSTONE_RANKINGS[selectedZoneId]) {
-      const zone = ZONE_DATA.find((z) => z.id === selectedZoneId);
+      const zone = ZONE_DATA.find((z: any) => z.id === selectedZoneId);
       const totalSpecies = zone?.total_species ?? data.nodes.length;
       return ZONE_KEYSTONE_RANKINGS[selectedZoneId].map((e: ZoneKeystoneEntry) =>
         normalizeZone(e, totalSpecies)
@@ -106,10 +113,10 @@ export default function ConservationReport() {
         <select
           value={selectedZoneId ?? ""}
           onChange={(e) => setSelectedZoneId(e.target.value || null)}
-          className="bg-white/[0.02] border border-white/[0.05] px-3 py-2 text-[10px] text-white/30 focus:outline-none focus:border-emerald-500/15 min-w-[160px] font-mono"
+          className="bg-white/[0.03] border border-white/[0.08] px-3 py-2 text-[10px] text-white/60 focus:outline-none focus:border-emerald-500/20 min-w-[160px] font-mono"
         >
           <option value="">All zones</option>
-          {ZONE_DATA.map((z) => (
+          {filteredZones.map((z: any) => (
             <option key={z.id} value={z.id}>
               {z.name}
             </option>
@@ -118,17 +125,17 @@ export default function ConservationReport() {
       </div>
 
       {criticalSpecies.length > 0 && (
-        <div className="mb-4 border border-red-500/[0.06] p-3">
-          <div className="text-[9px] text-red-400/40 uppercase tracking-widest font-mono mb-2">
+        <div className="mb-4 border border-red-500/10 p-3">
+          <div className="text-[9px] text-red-400/60 uppercase tracking-widest font-mono mb-2">
             {criticalSpecies.length} critical
           </div>
           <div className="space-y-1.5">
             {criticalSpecies.slice(0, 3).map((s) => (
-              <div key={s.id} className="text-[10px] text-white/30">
-                <span className="text-white/50">{s.common_name || s.id}</span>
+              <div key={s.id} className="text-[10px] text-white/60">
+                <span className="text-white/80">{s.common_name || s.id}</span>
                 {" "}&mdash; {s.speciesLost} species, {s.trophicLevelsAffected} levels
                 {s.declineTrend < 0 && (
-                  <span className="text-red-400/30 font-mono"> {Math.abs(s.declineTrend).toFixed(0)}%&darr;</span>
+                  <span className="text-red-400/50 font-mono"> {Math.abs(s.declineTrend).toFixed(0)}%&darr;</span>
                 )}
               </div>
             ))}
@@ -139,7 +146,7 @@ export default function ConservationReport() {
       <div className="overflow-x-auto">
         <table className="w-full text-xs">
           <thead>
-            <tr className="text-left text-white/12 text-[9px] uppercase tracking-widest border-b border-white/[0.04] font-mono">
+            <tr className="text-left text-white/40 text-[9px] uppercase tracking-widest border-b border-white/[0.06] font-mono">
               <th className="pb-2 pr-4 w-6">#</th>
               <th className="pb-2 pr-4">Species</th>
               <th className="pb-2 pr-4">Role</th>
@@ -160,40 +167,40 @@ export default function ConservationReport() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 10 }}
                     transition={{ delay: i * 0.05 }}
-                    className="border-b border-white/[0.04] last:border-0 hover:bg-white/[0.02] transition"
+                    className="border-b border-white/[0.06] last:border-0 hover:bg-white/[0.02] transition"
                   >
-                    <td className="py-2.5 pr-4 text-white/10 font-mono text-[10px]">{i + 1}</td>
+                    <td className="py-2.5 pr-4 text-white/30 font-mono text-[10px]">{i + 1}</td>
                     <td className="py-2.5 pr-4">
-                      <span className="text-white/50 text-[11px]">{entry.common_name || entry.id}</span>
+                      <span className="text-white/80 text-[11px]">{entry.common_name || entry.id}</span>
                       {entry.common_name && (
-                        <span className="block text-[9px] text-white/12 italic font-mono">{entry.id}</span>
+                        <span className="block text-[9px] text-white/35 italic font-mono">{entry.id}</span>
                       )}
                     </td>
                     <td className="py-2.5 pr-4">
-                      <span className="text-[9px] text-white/20 font-mono capitalize">
+                      <span className="text-[9px] text-white/50 font-mono capitalize">
                         {entry.trophic_level.replace(/_/g, " ")}
                       </span>
                     </td>
                     <td className="py-2.5 pr-4 text-right">
-                      <span className={`font-mono text-[10px] ${entry.cascadeImpactPct >= 5 ? "text-white/60" : "text-white/25"}`}>
+                      <span className={`font-mono text-[10px] ${entry.cascadeImpactPct >= 5 ? "text-white/80" : "text-white/50"}`}>
                         {entry.cascadeImpactPct.toFixed(1)}%
                       </span>
                     </td>
-                    <td className="py-2.5 pr-4 text-right text-white/20 font-mono text-[10px]">
+                    <td className="py-2.5 pr-4 text-right text-white/50 font-mono text-[10px]">
                       {entry.speciesLost}
                     </td>
                     <td className="py-2.5 pr-4 text-right">
-                      <span className={`font-mono text-[10px] ${entry.declineTrend < 0 ? "text-red-400/40" : "text-white/15"}`}>
+                      <span className={`font-mono text-[10px] ${entry.declineTrend < 0 ? "text-red-400/60" : "text-white/40"}`}>
                         {entry.declineTrend > 0 ? "+" : ""}{entry.declineTrend.toFixed(0)}%
                       </span>
                     </td>
                     <td className="py-2.5 text-right">
                       {isCritical ? (
-                        <span className="text-[8px] text-red-400/40 font-mono uppercase tracking-widest">crit</span>
+                        <span className="text-[8px] text-red-400/60 font-mono uppercase tracking-widest">crit</span>
                       ) : entry.priority === "high" ? (
-                        <span className="text-[8px] text-white/20 font-mono uppercase tracking-widest">key</span>
+                        <span className="text-[8px] text-white/40 font-mono uppercase tracking-widest">key</span>
                       ) : (
-                        <span className="text-white/8 text-[10px] font-mono">&mdash;</span>
+                        <span className="text-white/20 text-[10px] font-mono">&mdash;</span>
                       )}
                     </td>
                   </motion.tr>
@@ -204,7 +211,7 @@ export default function ConservationReport() {
         </table>
       </div>
 
-      <div className="mt-4 text-[9px] text-white/8 text-right font-mono">
+      <div className="mt-4 text-[9px] text-white/25 text-right font-mono">
         {rankings.length} analyzed &middot; {criticalSpecies.length} critical
       </div>
     </div>

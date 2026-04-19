@@ -135,7 +135,7 @@ export default function Home() {
                 value={searchValue}
                 onChange={(e) => { setSearchValue(e.target.value); setError(null); }}
                 onKeyDown={(e) => { if (e.key === "Enter") handleSearch(searchValue); }}
-                placeholder="Torrey Pines, Balboa Park, La Jolla..."
+                placeholder="Mission Trails, Torrey Pines, Cuyamaca..."
                 className="w-full bg-white/[0.03] border border-white/[0.06] px-4 py-3.5 text-sm text-white/80 placeholder-white/15 focus:outline-none focus:border-emerald-500/20 transition font-light"
                 autoFocus
               />
@@ -158,20 +158,35 @@ export default function Home() {
               <p className="text-red-400/40 text-xs mb-4">{error}</p>
             )}
 
-            {/* Ecosystem grid */}
-            <div className="mt-8">
-              <p className="text-[9px] uppercase tracking-[0.2em] text-white/12 mb-3">Or choose</p>
-              <div className="grid grid-cols-4 gap-1.5">
-                {Object.entries(index).map(([name, eco]) => (
+            {/* Popular Locations */}
+            <div className="mt-10">
+              <p className="text-[10px] uppercase tracking-[0.2em] text-white/12 mb-5">Browse Popular Locations</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  { id: "Coastal", name: "Torrey Pines", type: "Coastal Sage Scrub", risk: "Moderate", color: "text-amber-400" },
+                  { id: "Urban Forest", name: "Balboa Park", type: "Riparian / Urban", risk: "Low", color: "text-emerald-400" },
+                  { id: "Chaparral", name: "Mission Trails", type: "Chaparral Swath", risk: "Critical", color: "text-red-400" },
+                  { id: "Mountain", name: "Cuyamaca Peak", type: "Montane Forest", risk: "Elevated", color: "text-orange-400" },
+                  { id: "Ocean", name: "La Jolla Cove", type: "Marine Reserve", risk: "Moderate", color: "text-amber-400" },
+                  { id: "Desert", name: "Anza-Borrego", type: "Colorado Desert", risk: "Elevated", color: "text-orange-400" },
+                ].map((loc) => (
                   <button
-                    key={name}
-                    onClick={() => setSelectedEcosystem(name)}
-                    className="text-left px-3 py-2.5 border border-white/[0.04] hover:border-emerald-500/10 hover:bg-white/[0.02] transition-all group"
+                    key={loc.name}
+                    onClick={() => {
+                      // Find matching ecosystem ID or start search
+                      const ecoName = Object.keys(index).find(k => k.toLowerCase().includes(loc.id.toLowerCase())) || Object.keys(index)[0];
+                      setSelectedEcosystem(ecoName);
+                    }}
+                    className="flex items-center justify-between p-3.5 border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] hover:border-emerald-500/10 transition-all group rounded-lg"
                   >
-                    <span className="block text-[11px] text-white/40 group-hover:text-white/60 transition font-medium">
-                      {SHORT_LABELS[name] || name}
-                    </span>
-                    <span className="block text-[9px] text-white/10 mt-0.5 font-mono">{eco.species_count}</span>
+                    <div className="text-left">
+                      <span className="block text-xs text-white/70 group-hover:text-white transition font-medium">{loc.name}</span>
+                      <span className="block text-[9px] text-white/15 uppercase tracking-wide mt-0.5">{loc.type}</span>
+                    </div>
+                    <div className="text-right">
+                      <span className={`block text-[9px] font-bold uppercase tracking-widest ${loc.color}`}>{loc.risk} Risk</span>
+                      <span className="block text-[8px] text-white/5 mt-0.5 font-mono">RISK LEVEL</span>
+                    </div>
                   </button>
                 ))}
               </div>
@@ -249,7 +264,7 @@ export default function Home() {
             title="Conservation Priority"
             subtitle="Ranked by cascade impact"
           />
-          <ConservationReport />
+          <ConservationReport ecosystem={selectedEcosystem} />
         </section>
 
         <section>
@@ -258,7 +273,7 @@ export default function Home() {
             title="Collapse Warnings"
             subtitle="Zones with breakdown indicators"
           />
-          <CollapseTimeline />
+          <CollapseTimeline ecosystem={selectedEcosystem} />
         </section>
       </div>
     </main>
