@@ -84,7 +84,7 @@ export default function GlobalStats() {
   };
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
       {cards.map((card, i) => (
         <motion.div
           key={card.label}
@@ -93,11 +93,11 @@ export default function GlobalStats() {
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: i * 0.07 }}
           whileHover={{ y: -4, transition: { duration: 0.2 } }}
-          className={`relative rounded-2xl bg-gradient-to-br ${colorMap[card.color]} border p-5 cursor-default overflow-hidden group`}
+          className={`relative rounded-2xl bg-gradient-to-br ${colorMap[card.color]} border p-8 cursor-default overflow-hidden group`}
         >
           <div className={`absolute top-0 left-0 w-full h-[2px] ${card.accent} opacity-40`} />
-          <div className="flex items-start justify-between mb-3">
-            <card.icon className="w-7 h-7 opacity-50 group-hover:opacity-70 transition-opacity" />
+          <div className="flex items-start justify-between mb-4">
+            <card.icon className="w-9 h-9 opacity-50 group-hover:opacity-70 transition-opacity" />
             <div className={`w-2 h-2 rounded-full ${card.accent} opacity-40`} />
           </div>
           <div className="text-[10px] uppercase tracking-[0.15em] opacity-50 mb-1">{card.label}</div>

@@ -111,20 +111,20 @@ export default function Home() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
             {/* Title */}
              <div className="mb-10 flex items-center gap-3">
-               <img src="/logo.png" alt="logo" className="w-8 h-8 object-contain" />
+               <img src="/logo.png" alt="logo" className="w-10 h-10 object-contain" />
                <div>
-                 <h1 className="text-xl font-bold tracking-tight text-white/80 fancy-brand">
+                 <h1 className="text-3xl font-bold tracking-tight text-white/80 fancy-brand">
                    bioscope
                  </h1>
-                 <p className="text-[10px] uppercase tracking-[0.25em] text-white/15">San Diego County</p>
+                 <p className="text-sm uppercase tracking-[0.25em] text-white/15">San Diego County</p>
                </div>
              </div>
 
             {/* Main prompt */}
-            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white/80 mb-2 leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white/80 mb-4 leading-tight">
               Enter a location.
             </h2>
-            <p className="text-sm text-white/20 mb-8">
+            <p className="text-base text-white/60 mb-8">
               Neighborhood, park, or trail — we map the species, food web, and risks.
             </p>
 
@@ -136,7 +136,7 @@ export default function Home() {
                 onChange={(e) => { setSearchValue(e.target.value); setError(null); }}
                 onKeyDown={(e) => { if (e.key === "Enter") handleSearch(searchValue); }}
                 placeholder="Mission Trails, Torrey Pines, Cuyamaca..."
-                className="w-full bg-white/[0.03] border border-white/[0.06] px-4 py-3.5 text-sm text-white/80 placeholder-white/15 focus:outline-none focus:border-emerald-500/20 transition font-light"
+                className="w-full bg-white/[0.03] border border-white/[0.06] px-4 py-3.5 text-lg text-white/80 placeholder-white/15 focus:outline-none focus:border-emerald-500/20 transition font-light"
                 autoFocus
               />
               <button
@@ -155,12 +155,12 @@ export default function Home() {
             </div>
 
             {error && (
-              <p className="text-red-400/40 text-xs mb-4">{error}</p>
+              <p className="text-red-400/40 text-sm mb-4">{error}</p>
             )}
 
             {/* Popular Locations */}
             <div className="mt-10">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-white/12 mb-5">Browse Popular Locations</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-white/12 mb-5">Browse Popular Locations</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
                   { id: "Coastal", name: "Torrey Pines", type: "Coastal Sage Scrub", risk: "Moderate", color: "text-amber-400" },
@@ -180,12 +180,12 @@ export default function Home() {
                     className="flex items-center justify-between p-3.5 border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] hover:border-emerald-500/10 transition-all group rounded-lg"
                   >
                     <div className="text-left">
-                      <span className="block text-xs text-white/70 group-hover:text-white transition font-medium">{loc.name}</span>
-                      <span className="block text-[9px] text-white/15 uppercase tracking-wide mt-0.5">{loc.type}</span>
+                      <span className="block text-sm text-white/70 group-hover:text-white transition font-medium">{loc.name}</span>
+                      <span className="block text-xs text-white/15 uppercase tracking-wide mt-0.5">{loc.type}</span>
                     </div>
                     <div className="text-right">
-                      <span className={`block text-[9px] font-bold uppercase tracking-widest ${loc.color}`}>{loc.risk} Risk</span>
-                      <span className="block text-[8px] text-white/5 mt-0.5 font-mono">RISK LEVEL</span>
+                      <span className={`block text-xs font-bold uppercase tracking-widest ${loc.color}`}>{loc.risk} Risk</span>
+                      <span className="block text-[9px] text-white/5 mt-0.5 font-mono">RISK LEVEL</span>
                     </div>
                   </button>
                 ))}
@@ -194,7 +194,7 @@ export default function Home() {
 
             {/* Footer stats */}
             {data && (
-              <div className="mt-10 flex items-center gap-4 text-[9px] text-white/10 font-mono tracking-wide">
+              <div className="mt-10 flex items-center gap-4 text-xs text-white/10 font-mono tracking-wide">
                 <span>{data.global_stats.totalSpecies} species</span>
                 <span className="text-white/5">|</span>
                 <span>{data.global_stats.totalObservations.toLocaleString()} observations</span>
@@ -203,8 +203,7 @@ export default function Home() {
               </div>
             )}
           </motion.div>
-        </div>
-
+          </div>
         </div>
       </main>
     );
@@ -226,13 +225,13 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <img src="/logo.png" className="w-5 h-5 object-contain opacity-60" />
               <div>
-                <h1 className="text-xs font-medium text-white/60">{selectedEcosystem}</h1>
-                <p className="text-[9px] text-white/15 font-mono">{currentEco?.species_count} species &middot; {currentEco?.zone_count} zones</p>
+                <h1 className="text-sm font-medium text-white/60">{selectedEcosystem}</h1>
+                <p className="text-xs text-white/15 font-mono">{currentEco?.species_count} species &middot; {currentEco?.zone_count} zones</p>
               </div>
             </div>
           </div>
           {currentEco?.keystones?.[0] && (
-            <span className="hidden md:block text-[9px] text-emerald-400/25 font-mono">
+            <span className="hidden md:block text-xs text-emerald-400/25 font-mono">
               keystone: {currentEco.keystones[0].common_name}
             </span>
           )}
