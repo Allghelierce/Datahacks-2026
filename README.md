@@ -29,7 +29,7 @@ Built at DataHacks 2026 (UCSD, April 18–19).
 | Storage | Amazon S3 |
 | AI | Google Gemini 2.0 Flash |
 | Data Sources | iNaturalist API, GloBI API |
-| Data Pipeline | Databricks, Spark SQL, Python |
+| Data Pipeline | Spark SQL, Python |
 
 ---
 
